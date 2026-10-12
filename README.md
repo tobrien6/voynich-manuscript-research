@@ -12,6 +12,7 @@ Research on the digitized folios, illustrations, and documented history should a
 
 - [Contribution and PR review guide](CONTRIBUTING.md)
 - [Project brief and research plan](99TOKENS.md)
+- [Illustrated research folio](folio/README.md): five source-linked summary plates for the 99Tokens project page.
 - [Decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md)
 - [Primary source register](research/SOURCES.md)
 - [Pinned transliteration sources and working selection](research/transliteration/DECISION.md)
