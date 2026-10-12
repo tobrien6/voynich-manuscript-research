@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "analysis_id": "known-marker-opportunity-v1",
+  "scope": "Fixed analytically constructed synthetic example; no manuscript inputs or fit",
+  "pins": {
+    "plan": {
+      "path": "research/representation/KNOWN_MARKER_OPPORTUNITY_PLAN.md",
+      "sha256": "0072bc244b8a77f202ea4dd5c1a0bc4b8160e742d6816905d929f8e3d84c15dd"
+    },
+    "lookup_controls": {
+      "path": "scripts/y_prefix_specificity.py",
+      "sha256": "1723ad7bac95d00e7e9466c40287239041215b9e4db7e908e604eda459a7026e"
+    },
+    "parent_lookup": {
+      "path": "scripts/y_layout_prefix.py",
+      "sha256": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3"
+    },
+    "token_type": {
+      "path": "scripts/token_baselines.py",
+      "sha256": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+    },
+    "accepted_control_report": {
+      "path": "research/hypotheses/y-prefix-specificity-v1/results.json",
+      "sha256": "f7ec8ddf9ec941864bc3b5490b4be1561f36bda6c8f97556586911009ecdc511"
+    }
+  }
+}

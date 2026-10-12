@@ -1,0 +1,27 @@
+{
+  "plan_version": 1,
+  "scope": "Exploratory approximate-H whole-text A/B assay; no exact historical replication or significance claim",
+  "seed": 20261012,
+  "trials": 10,
+  "shuffle_frame": "historical-whole-text-v1",
+  "algorithm": "sha256-counter-fisher-yates-v1",
+  "edge_scope": "All N-1 adjacent edges in each surviving flat stream, including native-record joins",
+  "metrics": [
+    "equal_pair_events_A",
+    "distinct_self_repeating_types_B"
+  ],
+  "retain_asterisks": true,
+  "include_all_parser_variants": true,
+  "dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f"
+  },
+  "source_method_url": "https://doi.org/10.1371/journal.pone.0067310",
+  "source_method_locator": "Materials and Methods pp.7 and9",
+  "prior_exposure": "Full source/parsing/caption audit and published target/definitions already inspected; no untouched evaluation"
+}
