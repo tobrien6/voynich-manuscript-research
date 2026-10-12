@@ -23,6 +23,13 @@ Create a versioned record under `research/hypotheses/` when an actual candidate 
 
 Commit the record before running the evaluation. If no objective prediction or check can yet be specified, label the candidate exploratory and describe the evidence needed to make it testable.
 
+Use the [evaluation split record format](evaluation/SPLIT_FORMAT.md) to document
+sampling units, related folios/panels, input identity, and prior exposure. The
+offline checker catches inconsistent declarations and dependency leakage; a
+passing result does not certify untouched material or replace review of the
+actual pre-fit commit. Distinguish material excluded from fitting from a
+stronger claim that it was previously unseen.
+
 ## Run and report the evaluation
 
 Freeze the candidate rules and preprocessing. Apply them to the reserved folios without tuning to those folios. Report all evaluated passages, failures, excluded material, and the reasons for exclusions.
