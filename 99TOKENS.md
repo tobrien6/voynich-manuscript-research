@@ -40,6 +40,25 @@ The [pilot transcription/image-link audit](research/pilot/TRANSCRIPTION_READINES
 
 The [reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) extends the accepted ZL/IT source decision with GC and both RF variants, using the same IVTFF reader. Identical RF alphabet headers conceal different native text, so later analyses must retain exact variant URLs and source hashes. This is a corpus identity check, not a decipherment result.
 
+The [literal-chain boundary audit](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md)
+compares 2,940 native P0 loci eligible in both editions under both comma policies,
+from 3,884 shared present candidates with 944 joint exclusions. The editions have
+identical concatenated, case-preserved ASCII strings at 2,054 loci, but their token
+boundaries disagree at 562 loci under split spacing and 767 under join spacing;
+359 disagree under both policies. Different strings are not aligned. These are
+dependent encoded source representations, including one-token loci and same-line
+fragments, rather than independently verified manuscript words or physical lines.
+
+![Both treatments use the same 2,940 native loci. Split: 1,492 same chain and boundaries, 562 same chain with different boundaries, 886 different chains. Join: 1,287, 767 and 886 respectively.](https://raw.githubusercontent.com/tobrien6/voynich-manuscript-research/main/research/transliteration/figures/token-boundary-concordance.png)
+
+The [figure, exact plotted values and provenance](research/transliteration/figures/TOKEN_BOUNDARIES.md)
+retain the complete category partitions and denominators. Source-informed image
+cases at [f67r1.1](research/panel-regions/67R_BOUNDARY_CASE.md) and
+[f102r1.14–15](research/panel-regions/102R_BOUNDARY_PAIR.md) provide provisional row
+context while leaving glyph regions and word divisions unresolved. No source
+correction, accuracy ranking, independent or untouched evaluation, decipherment,
+or translation follows from literal-string or visible-gap agreement.
+
 The [exploratory token and repetition baselines](research/transliteration/BASELINES.md) compare uncertainty policies on 3,884 shared present P0 loci in ZL3b and IT2a, with [complete recorded results](research/transliteration/token_baselines.json). The primary split/exclude treatment has 272 equal adjacent pairs against a conditional expectation of 270.77; other treatments expose sensitivity to preprocessing. This full-corpus exploration does not provide an untouched evaluation set or validate a decoding rule.
 
 The [token-order control generator](research/token-controls/README.md) supplies reproducible within-row and within-folio-side shuffles that preserve excluded slots and stated sampling constraints. Its committed examples are synthetic. The [split record format and validator](research/evaluation/SPLIT_FORMAT.md) check declared dependencies, input identity, exposure, and freeze chronology; they do not choose real held-out material or prove exposure history. A reviewed image/transcription mapping, a real frozen split, and a first registered hypothesis remain the next steps toward a decipherment test.
