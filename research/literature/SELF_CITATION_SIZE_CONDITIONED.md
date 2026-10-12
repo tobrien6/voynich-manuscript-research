@@ -142,7 +142,7 @@ entire copying family or isolate a particular program rule.
 
 The plan was pushed and remote-verified at
 `75c462c4e52866c05fde302934b85b2bfffa8476`. The synthetic-tested producer and
-four-entry [manifest](self-citation-size-pins.json) were pushed and remote-verified
+four-entry [manifest](frozen/self-citation-size-first-pins.json) were pushed and remote-verified
 at `8c9e3d7186d16ce600137ed779a491e2e7f489aa` **before** new conditional measurements.
 The original manifest pins the first parent report/producer/manifest and plan;
 all 22 parent source/helper/artifact pins are also checked. The producer
