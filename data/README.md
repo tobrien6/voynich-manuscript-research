@@ -12,6 +12,8 @@ The original file comments remain source commentary, not findings independently
 verified by this project.
 
 See the [selection decision and coverage audit](../research/transliteration/DECISION.md).
+Exploratory [token and repetition baselines](../research/transliteration/BASELINES.md)
+compare uncertainty policies on paired loci.
 Run the audit offline with Python 3.10 or later:
 
 ```sh
