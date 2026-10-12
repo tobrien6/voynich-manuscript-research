@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "proposal_id": "68r-layout-2026-10-12-v1",
+  "status": "provisional_layout_correspondence",
+  "usable_as_verified_corpus_join": false,
+  "glyph_alignment_status": "not_reviewed",
+  "independent_review_status": "pending",
+  "inspected_on": "2026-10-12",
+  "timezone": "America/New_York",
+  "observer": "Codex working for tobrien6",
+  "method": "Compare the accepted native-page convention with source P0 locations and a Yale image derivative. Source counts and P0 texts were read before the image; the scan was previously exposed in project inventories. This is not a blinded or independent concordance test.",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+  "yale_label": "68r",
+  "image_oid": "1006196",
+  "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006196",
+  "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006196/full/!2400,2400/0/default.jpg",
+  "inspection_image_sha256": "1d7e9d121435618043e5cbe687810a40dce66f223d78395d25b52c2c9282c71f",
+  "inspection_image_bytes": 716624,
+  "inspection_width": 2400,
+  "inspection_height": 1149,
+  "original_image_width": 7993,
+  "original_image_height": 3828,
+  "naming_reference": {
+    "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "document_issue": "2.0.2, 08/07/2025",
+    "locators": ["section 4.2, printed pages 11-12", "appendix page-name table, printed page 35"],
+    "scope": "The source names f68r1, f68r2 and f68r3, treats plain f68r as a foldout placeholder, and defines recto ordering away from the binding. It does not verify individual image glyph sequences."
+  },
+  "transcription_sources": [
+    {"source_id": "ZL3b", "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"},
+    {"source_id": "IT2a", "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"}
+  ],
+  "dependency_group": "yale-leaves:68",
+  "pages": [
+    {
+      "transcription_page": "f68r1",
+      "proposed_field": "Left field of the displayed scan, closest to the visible binding.",
+      "direct_observations": [
+        "The upper writing has three longer horizontal rows and a short row near the left below them.",
+        "A small circular drawing occupies part of the space near the lower upper-text rows; star-like forms and short writing fill the field below."
+      ],
+      "source_counts_by_edition": {
+        "ZL3b": {"present_loci": 37, "present_loci_by_kind": {"P0": 4, "Pb": 3, "Ls": 29, "Cc": 1}},
+        "IT2a": {"present_loci": 37, "present_loci_by_kind": {"P0": 4, "Pb": 3, "Ls": 29, "Cc": 1}}
+      },
+      "candidate_p0_locations": ["f68r1.1", "f68r1.2", "f68r1.3", "f68r1.4"],
+      "placement_hypothesis": "Locations 1-4 correspond to the upper writing in source order; location 3's drawing-interruption marker may correspond to the row divided by the upper circular drawing.",
+      "placement_status": "not_glyph_verified"
+    },
+    {
+      "transcription_page": "f68r2",
+      "proposed_field": "Middle field of the displayed scan, between the left writing field and the large circular drawing at right.",
+      "direct_observations": [
+        "Five horizontal writing rows appear above and alongside a small upper circular drawing.",
+        "Star-like forms and short writing are scattered below, with another small circular drawing near the foot."
+      ],
+      "source_counts_by_edition": {
+        "ZL3b": {"present_loci": 31, "present_loci_by_kind": {"P0": 5, "Cc": 2, "Ls": 24}},
+        "IT2a": {"present_loci": 31, "present_loci_by_kind": {"P0": 5, "Cc": 2, "Ls": 24}}
+      },
+      "candidate_p0_locations": ["f68r2.1", "f68r2.2", "f68r2.3", "f68r2.4", "f68r2.5"],
+      "placement_hypothesis": "Locations 1-5 correspond to the upper writing in source order; location 5's drawing-interruption marker may correspond to writing divided around the small upper drawing.",
+      "placement_status": "not_glyph_verified"
+    },
+    {
+      "transcription_page": "f68r3",
+      "proposed_field": "Right field containing the large circular drawing.",
+      "direct_observations": [
+        "The circular drawing includes a central face-like form, star-like forms in sectors, and writing along circular and radial paths.",
+        "A visible vertical crease crosses the drawing; the proposed native page is not assigned a boundary at that crease."
+      ],
+      "source_counts_by_edition": {
+        "ZL3b": {"present_loci": 22, "present_loci_by_kind": {"Cc": 2, "Ri": 8, "Ls": 11, "La": 1}},
+        "IT2a": {"present_loci": 22, "present_loci_by_kind": {"Cc": 2, "Ri": 8, "Ls": 11, "La": 1}}
+      },
+      "candidate_p0_locations": [],
+      "placement_hypothesis": "No P0 row assignment is proposed for this page. Its present non-P0 records require a separate image-region review.",
+      "placement_status": "non_p0_regions_unreviewed"
+    }
+  ],
+  "review_tests": [
+    "Compare the nine proposed P0 locations with original-resolution image rows, preserving source order, uncertain spaces, alternatives and drawing interruptions.",
+    "Reject a placement if glyph sequences or drawing-interruption positions disagree; matching row counts alone is insufficient.",
+    "Keep f68r3's present page and non-P0 writing explicit. Do not invent P0 rows, call the page blank, or split the circular drawing into equal-width crops or independent samples."
+  ],
+  "limits": [
+    "No exact pixel region, panel mask, physical-line reconstruction, verified glyph reading, decoding or translation is assigned.",
+    "Native page names and visible creases need not define the same units.",
+    "The three native pages share one leaf and one canvas; they are not independent image samples.",
+    "This is exposed source/image material, not an untouched evaluation set."
+  ]
+}

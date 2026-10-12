@@ -100,6 +100,10 @@ selection gate. Existing controls and source/token tests remain in use.
 
 ## Limits and next test
 
+A [conditional analytic calibration](PREFIX_CONDITIONAL_BOUNDS.md) adds exact
+rational binary-prefix moments and conservative tail upper bounds for the same
+96 comparisons, with the ideal-control assumptions and family adjustment explicit.
+
 Whole-locus exclusions can systematically change the represented sections,
 hands, and text shapes. Clean ASCII notation is not evidence of correct glyph
 identification or readability. Currier labels and paragraph marks remain source
