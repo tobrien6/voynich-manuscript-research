@@ -68,6 +68,11 @@ requires a declared row unit; a locus is not automatically a complete physical
 line. Neither result can be relabeled as a published whole-text statistic by
 changing its display label.
 
+The [distinct repeating-representation follow-up](../transliteration/REPEATING_TYPES.md)
+implements a type count on the accepted modern P0 cohort, with an exact mean
+under its existing fixed-gap within-locus control. It does not reproduce L003's
+historical input, whole-text shuffle scope, or normalized numerical result.
+
 ## Minimum plan for a later replication
 
 1. Select one paper, measurement, table, and null before inspecting new results.
