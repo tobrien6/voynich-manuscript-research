@@ -42,6 +42,8 @@ The [exploratory token and repetition baselines](research/transliteration/BASELI
 
 The [token-order control generator](research/token-controls/README.md) supplies reproducible within-row and within-folio-side shuffles that preserve excluded slots and stated sampling constraints. Its committed examples are synthetic. The [split record format and validator](research/evaluation/SPLIT_FORMAT.md) check declared dependencies, input identity, exposure, and freeze chronology; they do not choose real held-out material or prove exposure history. A reviewed image/transcription mapping, a real frozen split, and a first registered hypothesis remain the next steps toward a decipherment test.
 
+The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records literal EVA q/y-prefix and notation-length contrasts at original first and last token slots under the same uncertainty policies, with [complete results](research/transliteration/locus_positions.json). It uses conditional within-locus controls and explicit eligibility counts. These measurements constrain simple exchangeability within the chosen units; they do not identify a language, cipher, glyph reading, or translation.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
