@@ -50,6 +50,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Grouped symbol prediction](research/baselines/GROUPED_SYMBOL_RESULTS.md): fixed zero/one/two-predecessor token models on 91 image-dependency groups, with all twelve paired treatments and component losses retained.
 - [Literal-chain and token-boundary concordance](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md): fixed-cohort source/spacing comparisons retain identical encoded strings with different boundaries, without adjudicating manuscript word divisions.
 - [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
 - [Constant-older-context prediction control](research/baselines/INITIAL_CONTEXT_CONTROL.md): an analytically constructed positive Q2/Q1 gain from changed smoothing, with no additional older-context information and exact one-context equivalence.
