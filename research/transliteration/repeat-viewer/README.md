@@ -13,9 +13,12 @@ patterns, without modifying those viewers or adding hosting/99 Tokens execution.
 ## Build and open
 
 Python 3.10 or later, Git and the pinned source files are needed to build.
-The builder downloads nothing. Collect the **13** files listed in
+The builder downloads nothing. The [recorded asset helper](../../assets/README.md)
+retrieves the **13** files listed in
 [the accepted review receipts](../immediate_repeat_image_review.json) into
-a local image directory, using each recorded `url` and `file_name` verbatim.
+a local image directory outside Git checkouts, verifying each recorded hash
+before installing a file. Existing verified files are reused. Alternatively,
+collect them using each recorded `url` and `file_name` verbatim.
 They comprise ten JPEG windows and three service-info responses. A changed
 response fails verification; keep the accepted record and inspect the change
 rather than silently replacing a fingerprint. No image/corpus binaries belong
@@ -24,6 +27,8 @@ in the repository.
 From the repository root, replace the capitalized paths below with local paths:
 
 ```sh
+python3 scripts/fetch_recorded_viewer_assets.py \
+  --study immediate-repeat --directory LOCAL_IMAGE_DIRECTORY
 python3 scripts/build_immediate_repeat_viewer.py \
   --image-directory LOCAL_IMAGE_DIRECTORY --output FRESH_LOCAL_PACKET_DIRECTORY
 python3 scripts/build_immediate_repeat_viewer.py \
@@ -31,6 +36,10 @@ python3 scripts/build_immediate_repeat_viewer.py \
 python3 -m http.server 8765 --bind 127.0.0.1 \
   --directory FRESH_LOCAL_PACKET_DIRECTORY
 ```
+
+The helper requires an internet connection for missing assets. Its retrieval
+receipts stay in the cache; the builder copies only the 13 recorded assets.
+Keep the image cache and fresh packet directory separate.
 
 Open `http://127.0.0.1:8765/index.html` while the local server runs. Opening the
 HTML file directly also displays the packet; browser byte checks require a

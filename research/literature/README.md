@@ -22,6 +22,10 @@ derives the affected-mass factor connecting conditional and whole-corpus
 word-entropy decreases. A fixed toy reverses their candidate ranking; no
 manuscript substitution result or case assignment is inferred.
 
+The [complete native maximizing-partner figure](figures/NATIVE_SUBSTITUTION_RANKINGS.md)
+shows all 35 recovered notation codepoints under both definitions, retaining
+affected masses, changed and unchanged sets, and the no-positive-optimum case.
+
 The [generated known-case entropy controls](KNOWN_CASE_ENTROPY_CONTROLS.md)
 retain an independently specified capitalization rule while an unrelated
 replacement can maximize word-entropy decrease. Both conditional and

@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "observation_id": "newbold-terminal-source-v1",
+  "source_id": "S009",
+  "inspected_on": "2026-10-12",
+  "access_timezone": "America/New_York",
+  "recorded_utc": "2026-10-12T12:09:30.746412+00:00",
+  "source": {
+    "title": "The Cipher of Roger Bacon",
+    "author": "William Romaine Newbold",
+    "editor": "Roland Grubb Kent",
+    "visible_title_and_copyright_year": 1928,
+    "visible_publishers": [
+      "University of Pennsylvania Press",
+      "Humphrey Milford: Oxford University Press"
+    ],
+    "pdf_url": "https://oncle-dom.fr/biblio/1928-Newbold-The%20Cipher%20of%20Roger%20Bacon.pdf",
+    "bytes": 46842963,
+    "sha256": "69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891",
+    "pdf_pages": 297,
+    "host_scope": "Third-party hosted digital representation; no authentication of the original print copy or the complete digitization chain.",
+    "observed_watermark": {
+      "digitizer": "Google",
+      "original_institution": "University of Michigan",
+      "hathi_identifier": "mdp.39015004978535",
+      "handle_url": "https://hdl.handle.net/2027/mdp.39015004978535",
+      "linked_item_contents_inspected": false
+    }
+  },
+  "publisher_metadata": {
+    "url": "https://www.pennpress.org/9781512813340/the-cipher-of-roger-bacon/",
+    "title": "The Cipher of Roger Bacon",
+    "author": "William Romaine Newbold",
+    "editor": "Roland Grubb Kent",
+    "hardcover_isbn": "9781512813340",
+    "reported_original_publication_date": "1928-01-29",
+    "reported_ebook_date": "2017-01-30",
+    "scope": "Live publisher identity metadata; not proof that the hosted scan equals this offered representation."
+  },
+  "inspection": {
+    "method": "Complete-page Poppler rendering and visual inspection; text extraction used only for navigation and the recorded extraction discrepancy.",
+    "visually_inspected_pdf_pages": [
+      4,
+      5,
+      9,
+      30,
+      78,
+      81,
+      117,
+      118,
+      119,
+      120,
+      156,
+      157,
+      158,
+      159
+    ],
+    "printed_page_correspondences": [
+      {
+        "pdf_page": 4,
+        "printed_page": null,
+        "role": "title page"
+      },
+      {
+        "pdf_page": 5,
+        "printed_page": null,
+        "role": "copyright page"
+      },
+      {
+        "pdf_page": 9,
+        "printed_page": "ix",
+        "role": "list of plates"
+      },
+      {
+        "pdf_page": 30,
+        "printed_page": "xxx",
+        "role": "foreword context"
+      },
+      {
+        "pdf_page": 78,
+        "printed_page": 44,
+        "role": "Chapter III physical description"
+      },
+      {
+        "pdf_page": 81,
+        "printed_page": 45,
+        "role": "contents table"
+      },
+      {
+        "pdf_page": 117,
+        "printed_page": 73,
+        "role": "Chapter V initial key reading"
+      },
+      {
+        "pdf_page": 118,
+        "printed_page": 74,
+        "role": "continuation and editorial note"
+      },
+      {
+        "pdf_page": 119,
+        "printed_page": null,
+        "role": "Plate X"
+      },
+      {
+        "pdf_page": 120,
+        "printed_page": null,
+        "role": "plate verso"
+      },
+      {
+        "pdf_page": 156,
+        "printed_page": 107,
+        "role": "preceding rule context"
+      },
+      {
+        "pdf_page": 157,
+        "printed_page": 108,
+        "role": "Chapter IX opening and editorial footnote"
+      },
+      {
+        "pdf_page": 158,
+        "printed_page": 109,
+        "role": "extended proposed transcript and interpretation"
+      },
+      {
+        "pdf_page": 159,
+        "printed_page": null,
+        "role": "Plate XV"
+      }
+    ],
+    "global_page_offset_used": false,
+    "pdftotext_version": "pdftotext version 24.04.0",
+    "extraction_discrepancy": {
+      "pdf_page": 4,
+      "field": "title-page year",
+      "visual_value": 1928,
+      "extracted_value": "1918",
+      "scope": "This extracted occurrence disagrees with the visibly printed year; no OCR-only date or whole-file absence inference."
+    }
+  },
+  "observations": [
+    {
+      "pdf_page": 78,
+      "printed_page": 44,
+      "locator": "Chapter III opening paragraph and note1",
+      "reported_last_folio_number": 116,
+      "reported_terminal_material": "Final page described as a key; historical claim, not accepted decipherment.",
+      "editorial_source_credit": {
+        "year": 1921,
+        "publication": "Transactions (as cited in the editorial note)",
+        "credited_pages": "461-474",
+        "original_lecture_inspected": false,
+        "lecture_body": "College of Physicians"
+      },
+      "scope": "Preserves a historical foliation/key claim and an attributed earlier source; no Yale catalog correction."
+    },
+    {
+      "pdf_page": 81,
+      "printed_page": 45,
+      "locator": "Part V table row",
+      "source_folio_ranges": [
+        "103-108",
+        "111-116"
+      ],
+      "scope": "Raw table folio ranges, kept separate from equivalent-page totals and current canvas labels."
+    },
+    {
+      "pdf_page": 117,
+      "printed_page": 73,
+      "locator": "Chapter V displayed opening and surrounding paragraphs",
+      "reported_action": "Proposes a Latin interpretation after omitting designated cipher elements and assuming a spelling correction.",
+      "historical_reading_accepted": false
+    },
+    {
+      "pdf_page": 118,
+      "printed_page": 74,
+      "locator": "Editor note3",
+      "reported_action": "Points the reader to Chapter IX for a final reading of the closing letters.",
+      "scope": "Editorial revision trail; not a verified manuscript reading."
+    },
+    {
+      "pdf_page": 157,
+      "printed_page": 108,
+      "locator": "Chapter IX opening, note1 and text leading to next page",
+      "reported_action": "Refers to Plate X and introduces a transcript; editor says the chapter is based on papers and charts of varying kinds.",
+      "scope": "Chapter/context locator cited in the later report; extended displayed transcript continues on printed109."
+    },
+    {
+      "pdf_page": 158,
+      "printed_page": 109,
+      "locator": "Displayed three-line proposed transcript and interpretation",
+      "reported_action": "Contains the longer proposed reading and explanatory alphabet assignments.",
+      "historical_reading_accepted": false,
+      "new_manuscript_glyph_transcription": false
+    },
+    {
+      "pdf_page": 119,
+      "printed_page": null,
+      "plate": "X",
+      "reported_content": "Photographic terminal-material reproduction, credited to Wilfrid M. Voynich.",
+      "caption_folio_number": null,
+      "current_yale_image_comparison": false
+    },
+    {
+      "pdf_page": 159,
+      "printed_page": null,
+      "plate": "XV",
+      "reported_content": "Photographic reproduction and separate hand transcript, with printed transcription, credited to Wilfrid M. Voynich.",
+      "caption_folio_number": null,
+      "current_yale_image_comparison": false
+    }
+  ],
+  "related_pending_contribution": {
+    "pr": 164,
+    "url": "https://github.com/tobrien6/voynich-manuscript-research/pull/164",
+    "inspected_head": "60e14474bcd40412a777b7f4f676d81ea89e75d3",
+    "scope": "Its DImperio Figure23 credit at the recorded inspection head supplied the fixed73/108 source locators. This note modifies and adopts no files from that PR; later changes to the pending contribution are reviewed separately, and its acceptance is not required.",
+    "source_id_collision_comment": "https://github.com/tobrien6/voynich-manuscript-research/pull/164#issuecomment-6123937917"
+  },
+  "retrieval_limits": [
+    {
+      "url": "https://www.degruyterbrill.com/document/doi/10.9783/9781512818239-fm/pdf?licenseType=free",
+      "received_bytes": 0,
+      "pdf_contents_inspected": false,
+      "scope": "Empty anonymous response; no publisher front-matter comparison made."
+    },
+    {
+      "url": "https://hdl.handle.net/2027/mdp.39015004978535",
+      "contents_inspected": false,
+      "scope": "Observed watermark handle; web tool could not retrieve it. No identity equivalence inferred."
+    }
+  ],
+  "registry_snapshot": {
+    "path": "research/folio-aliases/decisions.json",
+    "sha256": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8"
+  },
+  "status": "documentary_source_context_only",
+  "mapping_allowed": false,
+  "verified_target": null,
+  "apply_to_statistics": false,
+  "historical_readings_accepted": false,
+  "new_manuscript_glyph_transcription": false,
+  "current_yale_image_comparison": false,
+  "reference_7_identified": false,
+  "next_test": "Inspect the credited original1921 lecture, the actual Kennedy/Churchill reference7 and a custodial correction or explicit source-to-current-surface correspondence. Any historical decipherment test must preserve its changing readings/rules and use the project evaluation protocol."
+}
