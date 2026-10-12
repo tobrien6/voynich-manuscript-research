@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "method": "Dee documentary attribution trail v1",
+  "artifact_fingerprints_recorded_at_utc": "2026-10-12T04:42:42Z",
+  "inspection_timezone": "America/New_York",
+  "role": "contributor; verified tobrien6, upstream owner and admin/maintain/push access; separate maintainer owns merge decisions",
+  "scope": "Source claims, reference spellings and access limits; no owner, writing hand, cipher author or folio alias is verified.",
+  "source_id_namespace": "S001/S002 refer to the existing primary register; DP identifiers are local documentary-trail sources.",
+  "sources": [
+    {
+      "id": "S001",
+      "register": "research/SOURCES.md",
+      "url": "https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript",
+      "locator": "Provenance, John Dee ownership sentence",
+      "role": "institutional overview",
+      "artifact": {
+        "representation": "HTML",
+        "byte_length": 51272,
+        "sha256": "8679b3b5b4378e9346847ad963bc661c3965714b178cd8fc62260e0381ae83ef",
+        "redistributed": false
+      }
+    },
+    {
+      "id": "S002",
+      "register": "research/SOURCES.md",
+      "url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM",
+      "locators": [
+        "Provenance, Watson comparison paragraph",
+        "Supplementary item A, Marci letter reproduction"
+      ],
+      "role": "institutional catalog and reproduced letter",
+      "artifact": {
+        "representation": "HTML",
+        "byte_length": 12040,
+        "sha256": "6b10556ef5a7d94b0fb125d2f4116f2d6f3b4a567a6e876e0fee256e8b8356c4",
+        "redistributed": false
+      }
+    },
+    {
+      "id": "DP001",
+      "authors": [
+        "René Zandbergen",
+        "Rafał T. Prinke"
+      ],
+      "title": "The Voynich MS in Rudolfine Prague",
+      "container": "Alchemy and Rudolf II",
+      "editors": [
+        "Ivo Purš",
+        "Vladimír Karpenko"
+      ],
+      "publisher": "Artefactum, Prague",
+      "publication_year": 2016,
+      "printed_chapter_pages": [
+        297,
+        314
+      ],
+      "bibliographic_metadata_url": "https://voynich.nu/refs.html",
+      "url": "https://voynich.nu/papers/Alchemy_RZ-RP_2016.pdf",
+      "role": "authors’ historical analysis; no independent handwriting replication here",
+      "artifact": {
+        "representation": "PDF",
+        "byte_length": 1681580,
+        "sha256": "5d39ee3735cfab490bc4a9704586796ed29097882c26dfe8d732e5919e6e2a62",
+        "redistributed": false,
+        "rendered_relevant_pages_1_based": [
+          20,
+          21,
+          22
+        ],
+        "printed_relevant_pages": [
+          310,
+          311,
+          312
+        ],
+        "footnotes_in_follow_up": [
+          21,
+          23,
+          24,
+          26,
+          27,
+          29
+        ],
+        "pdf_page_count": 108
+      }
+    },
+    {
+      "id": "DP002",
+      "author": "Rafał T. Prinke",
+      "title": "Did John Dee really sell the Voynich MS to Rudolf II?",
+      "url": "https://www.voynich.nu/hist/rafal/dee.html",
+      "role": "author’s research note; mediated quotation of a printed entry",
+      "publication_date_verified": false,
+      "locators": [
+        "Quotation/reference 15, attributed to Yale catalog",
+        "Quotation/reference 16, attributed to Roberts/Watson p. 172"
+      ],
+      "artifact": {
+        "representation": "HTML",
+        "byte_length": 32453,
+        "sha256": "fa6e3ef3e8782525af0521e3047d4f3291560fd3f330d037d50797d1ff41031a",
+        "redistributed": false
+      }
+    },
+    {
+      "id": "DP003",
+      "authors": [
+        "Julian Roberts",
+        "Andrew G. Watson"
+      ],
+      "title": "John Dee’s Library Catalogue: Additions and corrections",
+      "date_on_heading": "November 2009",
+      "url": "https://bibsoc.org.uk/wp-content/uploads/2013/01/John-Dees-Library-Catalogue-4.pdf",
+      "role": "publisher-hosted supplement; not the original 1990 entry",
+      "artifact": {
+        "representation": "PDF",
+        "byte_length": 240588,
+        "sha256": "93dfd7ea3221d59d61dc59c53a498b235ae54a78cefeb02f46f244f85da0ba79",
+        "redistributed": false,
+        "rendered_heading_pages_1_based": [
+          1
+        ],
+        "pdf_page_count": 25
+      }
+    },
+    {
+      "id": "DP004",
+      "provider": "The Bibliographical Society",
+      "title": "John Dee’s Library Catalogue: Additions and Corrections, New series",
+      "url": "https://bibsoc.org.uk/wp-content/uploads/2013/01/John-Dees-library-catalogue-2019-03-15.pdf",
+      "role": "publisher-hosted new-series supplement",
+      "date_in_filename": "2019-03-15",
+      "dated_edition_statement_on_first_page": false,
+      "artifact": {
+        "representation": "PDF",
+        "byte_length": 225584,
+        "sha256": "aad0a010356f1efaa4cc2a5aa2bd1b4e3221f7f5e0b18fd49d1bb85f6111c276",
+        "redistributed": false,
+        "rendered_heading_pages_1_based": [
+          1
+        ],
+        "pdf_page_count": 4
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "DPC001",
+      "proposition": "Dee ownership or sale",
+      "source_locators": [
+        {
+          "source_id": "S001",
+          "locator": "Provenance"
+        },
+        {
+          "source_id": "S002",
+          "locator": "Provenance"
+        }
+      ],
+      "status": "conflicting_reported_accounts",
+      "dee_transaction_record_verified": false,
+      "current_overview_supporting_study_identified": false
+    },
+    {
+      "id": "DPC002",
+      "proposition": "Dee foliation hand",
+      "source_locators": [
+        {
+          "source_id": "S002",
+          "locator": "Watson comparison paragraph"
+        },
+        {
+          "source_id": "DP001",
+          "printed_page": 310,
+          "pdf_page_1_based": 20,
+          "footnotes": [
+            21,
+            23
+          ]
+        }
+      ],
+      "disagreement_topic": "numeral attribution; DP001 discusses formation of 8",
+      "status": "published_disagreement_not_independently_replicated",
+      "numeral_specimens_inspected": false,
+      "stroke_order_verified": false
+    },
+    {
+      "id": "DPC003",
+      "proposition": "comparison specimen locator",
+      "representations": [
+        {
+          "source_id": "S002",
+          "locator": "Provenance paragraph",
+          "reference_as_represented": [
+            "Ashmole 1790, f. 9v",
+            "Ashmole 487"
+          ],
+          "representation_kind": "catalog text"
+        },
+        {
+          "source_id": "DP002",
+          "locator": "Quotation/reference 16",
+          "reference_as_represented": [
+            "Ashmole 1790 fol.9v",
+            "847 passim"
+          ],
+          "attributed_source": "Roberts/Watson, p. 172",
+          "representation_kind": "mediated quotation"
+        }
+      ],
+      "status": "different_reference_spellings_original_entry_uninspected",
+      "original_1990_entry_verified": false,
+      "preferred_reference": null,
+      "catalog_typo_verified": false,
+      "silent_normalization_allowed": false,
+      "creates_voynich_folio_alias": false
+    },
+    {
+      "id": "DPC004",
+      "proposition": "purchase testimony path",
+      "source_locators": [
+        {
+          "source_id": "S002",
+          "locator": "Supplementary item A, Latin reproduction"
+        }
+      ],
+      "reported_path": [
+        "Raphael",
+        "Marci",
+        "Kircher"
+      ],
+      "buyer_as_reported": "Rudolph",
+      "amount_as_reported": {
+        "value": 600,
+        "unit": "ducats"
+      },
+      "carrier_named_as_dee_in_this_passage": false,
+      "autograph_inspected": false,
+      "status": "reported_testimony_in_a_catalog_reproduction"
+    },
+    {
+      "id": "DPC005",
+      "proposition": "Dee cipher or plaintext authorship",
+      "status": "not_established_by_this_citation_trail",
+      "decoding_mapping_provided": false,
+      "translation_provided": false
+    }
+  ],
+  "supplement_text_searches": [
+    {
+      "source_id": "DP003",
+      "method": "case-insensitive whole-word search over all extracted page text",
+      "page_count": 25,
+      "literal_match_counts": {
+        "Voynich": 0,
+        "Beinecke": 0,
+        "408": 0,
+        "DM93": 0
+      },
+      "scope": "Text-layer search only; not absence of an attribution or correction in other sources."
+    },
+    {
+      "source_id": "DP004",
+      "method": "case-insensitive whole-word search over all extracted page text",
+      "page_count": 4,
+      "literal_match_counts": {
+        "Voynich": 0,
+        "Beinecke": 0,
+        "408": 0,
+        "DM93": 0
+      },
+      "scope": "Text-layer search only; not absence of an attribution or correction in other sources."
+    }
+  ],
+  "uninspected_follow_up": [
+    {
+      "id": "DPF001",
+      "object": "original 1990 printed catalog entry",
+      "title": "John Dee’s Library Catalogue",
+      "editors": [
+        "Julian Roberts",
+        "Andrew G. Watson"
+      ],
+      "page_as_reported_by_DP002": 172,
+      "directly_inspected": false,
+      "purpose": "Verify original entry and specimen references before resolving DPC003."
+    },
+    {
+      "id": "DPF002",
+      "object": "Bodleian comparison specimens",
+      "references_preserved_from_DPC003": true,
+      "directly_inspected": false,
+      "purpose": "Authenticate leaves; define numerals, alternate hands and ambiguous cases before comparative inspection."
+    },
+    {
+      "id": "DPF003",
+      "object": "Browne testimony edition",
+      "edition_as_cited_by_DP001": "Wilkin (ed.), 1852",
+      "printed_pages_as_cited": [
+        530,
+        531
+      ],
+      "citation_footnote": 24,
+      "directly_inspected": false
+    },
+    {
+      "id": "DPF004",
+      "object": "Dee money memorandum edition",
+      "edition_as_cited_by_DP001": "Casaubon (ed.), 1659",
+      "printed_pages_as_cited": [
+        447,
+        448
+      ],
+      "citation_footnotes": [
+        26,
+        27
+      ],
+      "directly_inspected": false
+    },
+    {
+      "id": "DPF005",
+      "object": "supporting research for current Yale ownership sentence",
+      "identified": false,
+      "purpose": "Do not assume DP001 is the unnamed basis for S001."
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://philipneal.net/voynichsources/watson_english/",
+      "status": "no_readable_direct_response_obtained",
+      "observations": [
+        "Web open returned internal error.",
+        "Direct HTTPS retrieval failed certificate verification; verification was not disabled."
+      ],
+      "used_as_evidence": false
+    }
+  ],
+  "limits": [
+    "Documentary quotations are not authenticated manuscript specimens.",
+    "Published disagreement is not independent handwriting ground truth.",
+    "Foliation, ownership and authorship are separate propositions.",
+    "Endpoint fingerprints identify inspected responses, not immutable source editions.",
+    "No raw sources, image pixels or private/contact records are redistributed."
+  ]
+}

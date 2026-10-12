@@ -42,6 +42,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
 - [Self-citation generator audit](research/literature/COPYING_MECHANISM.md): pinned copying-model implementation and configuration, representation differences, and requirements for a prospective mechanism comparison.
@@ -51,6 +52,7 @@ Link to source images and transcriptions until their reuse terms have been check
 - [Encoded paragraph-unit agreement](research/transliteration/PARAGRAPH_MEMBERSHIP.md): marker-pair checks, unassigned loci, and exact common paragraph membership for later unit-level comparisons.
 - [Token and repetition baselines](research/transliteration/BASELINES.md), [locus-position effects](research/transliteration/POSITION_EFFECTS.md), and [prefix stratification](research/transliteration/PREFIX_STRATA.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits. The stratification separates paragraph starts and source Currier labels rather than treating the pooled prefix pattern as uniform.
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md) and [early/late-half controls](research/transliteration/INTERIOR_HALVES.md): neighboring interior lengths depart from the stated controls in 2,165 common loci; finer position gradients and transcription effects remain alternative explanations.
+- [Grouped length prediction](research/baselines/GROUPED_LENGTH_RESULTS.md): a fixed previous-length model has mixed cross-validation gains and fails the declared preference criterion in all four treatments on previously exposed data.
 - [Fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md): compare transcription and uncertainty variants on identical eligible locus keys, preserving per-locus disagreement.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.

@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "method": "finite-sequence-entropy-edge-accounting-v1",
+  "data_kind": "invented_atomic_labels_only",
+  "manuscript_data_used": false,
+  "boundary_rule": "one finite sequence per example; no padding, wraparound or concatenation",
+  "unit_definition": "one supplied label; displayed ASCII examples use one letter per label",
+  "log_base": 2,
+  "estimator": "unsmoothed empirical counts; no bias correction",
+  "interpretation": "matching-marginal conditional entropy is bits per observed successor edge; pair-minus-full uses different count populations",
+  "source_comparison": "read-only algebra audit, not execution of external R/package behavior or publication replication",
+  "input_pins": {
+    "research/representation/ENTROPY_EDGES_PLAN.md": "25901a8d94b98748b85f5c85d3ad323d14b2d16d01ac40b536992c1d7731ac72",
+    "research/literature/entropy-methods.json": "887d84a0d2cde2cb77789701f12fd7857d13f65e790730b68823852c31c9230c",
+    "scripts/entropy_edge_accounting.py": "e16648671730ca8f19e1b741bcf047923e91e42038f974618e2407ed7dda444e",
+    "scripts/representation_entropy_demo.py": "88ef38c27f97f8ede64337a5a0a05500fbadcd936f17700d98d59e8cf8f43860"
+  },
+  "examples": [
+    {
+      "example": "ab",
+      "units": [
+        "a",
+        "b"
+      ],
+      "unit_count": 2,
+      "edge_count": 1,
+      "last_unit_without_successor": "b",
+      "full_unit_counts": [
+        {
+          "unit": "a",
+          "count": 1
+        },
+        {
+          "unit": "b",
+          "count": 1
+        }
+      ],
+      "predecessor_counts_from_edges": [
+        {
+          "unit": "a",
+          "count": 1
+        }
+      ],
+      "directed_pair_counts": [
+        {
+          "predecessor": "a",
+          "successor": "b",
+          "count": 1
+        }
+      ],
+      "successor_mass_using_full_unit_denominator": [
+        {
+          "unit": "a",
+          "outgoing_count": 1,
+          "full_count": 1,
+          "row_mass": 1.0
+        },
+        {
+          "unit": "b",
+          "outgoing_count": 0,
+          "full_count": 1,
+          "row_mass": 0.0
+        }
+      ],
+      "bits": {
+        "full_unit_entropy": 1.0,
+        "pair_entropy": -0.0,
+        "edge_predecessor_entropy": -0.0,
+        "pair_minus_full_unit_entropy": -1.0,
+        "pair_minus_edge_predecessor_entropy": 0.0,
+        "conditional_successor_entropy_on_edges": -0.0,
+        "difference_from_using_full_marginal": -1.0
+      }
+    },
+    {
+      "example": "aab",
+      "units": [
+        "a",
+        "a",
+        "b"
+      ],
+      "unit_count": 3,
+      "edge_count": 2,
+      "last_unit_without_successor": "b",
+      "full_unit_counts": [
+        {
+          "unit": "a",
+          "count": 2
+        },
+        {
+          "unit": "b",
+          "count": 1
+        }
+      ],
+      "predecessor_counts_from_edges": [
+        {
+          "unit": "a",
+          "count": 2
+        }
+      ],
+      "directed_pair_counts": [
+        {
+          "predecessor": "a",
+          "successor": "a",
+          "count": 1
+        },
+        {
+          "predecessor": "a",
+          "successor": "b",
+          "count": 1
+        }
+      ],
+      "successor_mass_using_full_unit_denominator": [
+        {
+          "unit": "a",
+          "outgoing_count": 2,
+          "full_count": 2,
+          "row_mass": 1.0
+        },
+        {
+          "unit": "b",
+          "outgoing_count": 0,
+          "full_count": 1,
+          "row_mass": 0.0
+        }
+      ],
+      "bits": {
+        "full_unit_entropy": 0.918295834054,
+        "pair_entropy": 1.0,
+        "edge_predecessor_entropy": -0.0,
+        "pair_minus_full_unit_entropy": 0.081704165946,
+        "pair_minus_edge_predecessor_entropy": 1.0,
+        "conditional_successor_entropy_on_edges": 1.0,
+        "difference_from_using_full_marginal": -0.918295834054
+      }
+    },
+    {
+      "example": "aba",
+      "units": [
+        "a",
+        "b",
+        "a"
+      ],
+      "unit_count": 3,
+      "edge_count": 2,
+      "last_unit_without_successor": "a",
+      "full_unit_counts": [
+        {
+          "unit": "a",
+          "count": 2
+        },
+        {
+          "unit": "b",
+          "count": 1
+        }
+      ],
+      "predecessor_counts_from_edges": [
+        {
+          "unit": "a",
+          "count": 1
+        },
+        {
+          "unit": "b",
+          "count": 1
+        }
+      ],
+      "directed_pair_counts": [
+        {
+          "predecessor": "a",
+          "successor": "b",
+          "count": 1
+        },
+        {
+          "predecessor": "b",
+          "successor": "a",
+          "count": 1
+        }
+      ],
+      "successor_mass_using_full_unit_denominator": [
+        {
+          "unit": "a",
+          "outgoing_count": 1,
+          "full_count": 2,
+          "row_mass": 0.5
+        },
+        {
+          "unit": "b",
+          "outgoing_count": 1,
+          "full_count": 1,
+          "row_mass": 1.0
+        }
+      ],
+      "bits": {
+        "full_unit_entropy": 0.918295834054,
+        "pair_entropy": 1.0,
+        "edge_predecessor_entropy": 1.0,
+        "pair_minus_full_unit_entropy": 0.081704165946,
+        "pair_minus_edge_predecessor_entropy": 0.0,
+        "conditional_successor_entropy_on_edges": -0.0,
+        "difference_from_using_full_marginal": 0.081704165946
+      }
+    },
+    {
+      "example": "abba",
+      "units": [
+        "a",
+        "b",
+        "b",
+        "a"
+      ],
+      "unit_count": 4,
+      "edge_count": 3,
+      "last_unit_without_successor": "a",
+      "full_unit_counts": [
+        {
+          "unit": "a",
+          "count": 2
+        },
+        {
+          "unit": "b",
+          "count": 2
+        }
+      ],
+      "predecessor_counts_from_edges": [
+        {
+          "unit": "a",
+          "count": 1
+        },
+        {
+          "unit": "b",
+          "count": 2
+        }
+      ],
+      "directed_pair_counts": [
+        {
+          "predecessor": "a",
+          "successor": "b",
+          "count": 1
+        },
+        {
+          "predecessor": "b",
+          "successor": "a",
+          "count": 1
+        },
+        {
+          "predecessor": "b",
+          "successor": "b",
+          "count": 1
+        }
+      ],
+      "successor_mass_using_full_unit_denominator": [
+        {
+          "unit": "a",
+          "outgoing_count": 1,
+          "full_count": 2,
+          "row_mass": 0.5
+        },
+        {
+          "unit": "b",
+          "outgoing_count": 2,
+          "full_count": 2,
+          "row_mass": 1.0
+        }
+      ],
+      "bits": {
+        "full_unit_entropy": 1.0,
+        "pair_entropy": 1.584962500721,
+        "edge_predecessor_entropy": 0.918295834054,
+        "pair_minus_full_unit_entropy": 0.584962500721,
+        "pair_minus_edge_predecessor_entropy": 0.666666666667,
+        "conditional_successor_entropy_on_edges": 0.666666666667,
+        "difference_from_using_full_marginal": -0.081704165946
+      }
+    },
+    {
+      "example": "aaaa",
+      "units": [
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      "unit_count": 4,
+      "edge_count": 3,
+      "last_unit_without_successor": "a",
+      "full_unit_counts": [
+        {
+          "unit": "a",
+          "count": 4
+        }
+      ],
+      "predecessor_counts_from_edges": [
+        {
+          "unit": "a",
+          "count": 3
+        }
+      ],
+      "directed_pair_counts": [
+        {
+          "predecessor": "a",
+          "successor": "a",
+          "count": 3
+        }
+      ],
+      "successor_mass_using_full_unit_denominator": [
+        {
+          "unit": "a",
+          "outgoing_count": 3,
+          "full_count": 4,
+          "row_mass": 0.75
+        }
+      ],
+      "bits": {
+        "full_unit_entropy": -0.0,
+        "pair_entropy": -0.0,
+        "edge_predecessor_entropy": -0.0,
+        "pair_minus_full_unit_entropy": 0.0,
+        "pair_minus_edge_predecessor_entropy": 0.0,
+        "conditional_successor_entropy_on_edges": -0.0,
+        "difference_from_using_full_marginal": 0.0
+      }
+    },
+    {
+      "example": "abcabc",
+      "units": [
+        "a",
+        "b",
+        "c",
+        "a",
+        "b",
+        "c"
+      ],
+      "unit_count": 6,
+      "edge_count": 5,
+      "last_unit_without_successor": "c",
+      "full_unit_counts": [
+        {
+          "unit": "a",
+          "count": 2
+        },
+        {
+          "unit": "b",
+          "count": 2
+        },
+        {
+          "unit": "c",
+          "count": 2
+        }
+      ],
+      "predecessor_counts_from_edges": [
+        {
+          "unit": "a",
+          "count": 2
+        },
+        {
+          "unit": "b",
+          "count": 2
+        },
+        {
+          "unit": "c",
+          "count": 1
+        }
+      ],
+      "directed_pair_counts": [
+        {
+          "predecessor": "a",
+          "successor": "b",
+          "count": 2
+        },
+        {
+          "predecessor": "b",
+          "successor": "c",
+          "count": 2
+        },
+        {
+          "predecessor": "c",
+          "successor": "a",
+          "count": 1
+        }
+      ],
+      "successor_mass_using_full_unit_denominator": [
+        {
+          "unit": "a",
+          "outgoing_count": 2,
+          "full_count": 2,
+          "row_mass": 1.0
+        },
+        {
+          "unit": "b",
+          "outgoing_count": 2,
+          "full_count": 2,
+          "row_mass": 1.0
+        },
+        {
+          "unit": "c",
+          "outgoing_count": 1,
+          "full_count": 2,
+          "row_mass": 0.5
+        }
+      ],
+      "bits": {
+        "full_unit_entropy": 1.584962500721,
+        "pair_entropy": 1.521928094887,
+        "edge_predecessor_entropy": 1.521928094887,
+        "pair_minus_full_unit_entropy": -0.063034405834,
+        "pair_minus_edge_predecessor_entropy": 0.0,
+        "conditional_successor_entropy_on_edges": -0.0,
+        "difference_from_using_full_marginal": -0.063034405834
+      }
+    }
+  ]
+}
