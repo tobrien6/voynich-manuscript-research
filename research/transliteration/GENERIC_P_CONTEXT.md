@@ -54,7 +54,7 @@ For each of the **54 shared P0 end-mark disagreements**, inspect only the next
 present generic P locus on the same page in each source. Preserve null at page
 end. Do not search further to find a preferred explanation.
 
-The registered pattern requires the same next key, Pc in both sources, one end
+The declared pattern requires the same next key, Pc in both sources, one end
 mark in both next loci, and a start mark there only in the source that also
 ends the preceding P0 locus. This describes one source making the centred line
 a separate one-locus paragraph while the other retains it in the preceding

@@ -91,6 +91,11 @@ that unrelated source editions do not change it.
 
 ## Limits and next test
 
+The [three-page image pilot](PARAGRAPH_IMAGE_PILOT.md) follows the first three
+discordant pages selected by numeric folio order. It retains their generic P
+context and leaves all three paragraph divisions unresolved after initial
+image inspection.
+
 Matching locus keys inherit the publisher's alignment conventions; their text
 regions have not been independently checked against all images. Mark absence
 is a source observation, not a verified claim that a boundary is absent.

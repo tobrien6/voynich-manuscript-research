@@ -50,10 +50,36 @@ def selected_records(document, keys):
     return records
 
 
-def section_report(repetitions=199, seed=20261011):
+def summarize_sections(loci, assignments, spacing, alternatives, repetitions, seed):
+    """Share the declared partition and first-slot statistic across sensitivity checks."""
+    rows = prepare_rows(loci, spacing, alternatives)
+    cohorts = []
+    for part in GROUPS:
+        for starts_paragraph in [False, True]:
+            cohort = [(locus, slots) for locus, slots in rows
+                      if assignments[locus.page]['catalog_part'] == part and
+                      paragraph_start(locus) == starts_paragraph]
+            summary = summarize_position(cohort, 'first', repetitions, seed)
+            summary['features'] = [feature for feature in summary['features']
+                                   if feature['feature'] in PREFIX_FEATURES]
+            if len(summary['features']) != 2:
+                raise ValueError('prefix feature interface changed')
+            cohorts.append({
+                'catalog_part': part, 'source_paragraph_start': starts_paragraph,
+                'selected_loci': len(cohort),
+                'source_page_locus_counts': dict(sorted(Counter(
+                    locus.page for locus, _ in cohort).items())),
+                'first_position': summary,
+            })
+    if sum(cohort['selected_loci'] for cohort in cohorts) != len(loci):
+        raise ValueError('catalog/paragraph cohorts do not partition the selection')
+    return cohorts
+
+
+def section_report(repetitions=199, seed=20261011, *, sources=None):
     if repetitions < 1:
         raise ValueError('repetitions must be positive')
-    sources = paired_sources(load_sources())
+    sources = paired_sources(load_sources() if sources is None else sources)
     common_p0, selected_keys = select_locations(sources)
     if not selected_keys:
         raise ValueError('no paired regular P0 locations')
@@ -84,27 +110,7 @@ def section_report(repetitions=199, seed=20261011):
         variants = []
         for spacing in ['split', 'join']:
             for alternatives in ['exclude', 'first']:
-                rows = prepare_rows(loci, spacing, alternatives)
-                cohorts = []
-                for part in GROUPS:
-                    for starts_paragraph in [False, True]:
-                        cohort = [(locus, slots) for locus, slots in rows
-                                  if assignments[locus.page]['catalog_part'] == part and
-                                  paragraph_start(locus) == starts_paragraph]
-                        summary = summarize_position(cohort, 'first', repetitions, seed)
-                        summary['features'] = [feature for feature in summary['features']
-                                               if feature['feature'] in PREFIX_FEATURES]
-                        if len(summary['features']) != 2:
-                            raise ValueError('prefix feature interface changed')
-                        cohorts.append({
-                            'catalog_part': part, 'source_paragraph_start': starts_paragraph,
-                            'selected_loci': len(cohort),
-                            'source_page_locus_counts': dict(sorted(Counter(
-                                locus.page for locus, _ in cohort).items())),
-                            'first_position': summary,
-                        })
-                if sum(cohort['selected_loci'] for cohort in cohorts) != len(loci):
-                    raise ValueError('catalog/paragraph cohorts do not partition the selection')
+                cohorts = summarize_sections(loci, assignments, spacing, alternatives, repetitions, seed)
                 variants.append({'uncertain_spaces': spacing, 'alternatives': alternatives,
                                  'cohorts': cohorts})
         report['sources'].append({'id': source['id'], 'sha256': source['sha256'], 'variants': variants})
