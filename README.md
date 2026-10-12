@@ -17,3 +17,7 @@ The project is at the scoping stage. No new transcription, statistical result, o
 For every contribution, state the question, source and folio references, method, result, limitations, and next test. Distinguish source statements, direct observations, and interpretations. Keep negative results and contradictory evidence. A proposed reading should make predictions that can be tested on material not used to develop it.
 
 Link to source images and transcriptions until their reuse terms have been checked. Record the edition, version, transcription conventions, and any normalization before comparing text statistics.
+
+## Research notes
+
+- [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
