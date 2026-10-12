@@ -73,6 +73,10 @@ class PrefixFormattingTests(unittest.TestCase):
             with self.subTest(args=args), self.assertRaises(ValueError):
                 source_rows(*args)
 
+    def test_committed_realization_replays_with_plan_and_implementation_pins(self):
+        saved = json.loads((module.ROOT / 'research/representation/prefix_formatting_demo.json').read_text())
+        self.assertEqual(report(), saved)
+
     def test_cli_protects_the_plan_source_catalog_and_link_aliases_before_execution(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

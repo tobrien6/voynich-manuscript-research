@@ -93,6 +93,11 @@ candidate-specific prediction under the [evaluation protocol](../DECIPHERMENT_PR
 
 ## Reproduce and validate
 
+The [reversible row-marker demonstration](PREFIX_FORMATTING.md) supplies a
+separate synthetic check of prefix/length contrasts and prefix-removal lookup
+gains. It preserves a complete source matrix while adding known positional
+formatting; its ideal source model and conditional control remain distinct.
+
 Python 3.14.3 was used for the committed realization; standard library only:
 
 ```sh
