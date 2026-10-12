@@ -19,6 +19,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
+- [Whole-corpus transcription image references and shared-scan dependencies](research/folio-alignment/IMAGE_COVERAGE.md)
 - [GC and full/basic reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) and [aggregate records](research/transcriptions/intake-audit.json)
 - [Exploratory token and repetition baselines](research/transliteration/BASELINES.md) and [recorded results](research/transliteration/token_baselines.json)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
