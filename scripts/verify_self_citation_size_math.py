@@ -62,7 +62,7 @@ def verify(runs,report_path):
     if not __debug__:raise ValueError('verification requires assertions; run without optimization')
     report=json.loads(report_path.read_text())
     raw=(ROOT/'research/literature/self-citation-size-pins.json').read_bytes()
-    assert hashlib.sha256(raw).hexdigest()=='65c9d900f34172c98a5ff38b780fc2612a7fed9c5412a91634859f4d3976e275'
+    assert hashlib.sha256(raw).hexdigest()=='7bb5faefbe8b6a7d2b2c3a6f678b973319175def3d4e4fabcc83d8b44b2276c0'
     pins=json.loads(raw);assert pins==report['input_pins']
     for name,expected in pins.items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==expected
     old=json.loads((ROOT/'research/literature/self-citation-interior.json').read_text())

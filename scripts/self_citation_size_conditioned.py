@@ -9,15 +9,17 @@ import platform
 
 try:
     from . import self_citation_interior as parent
+    from . import self_citation_size_transition as transition
 except ImportError:
     import self_citation_interior as parent
+    import self_citation_size_transition as transition
 
 ROOT = Path(__file__).resolve().parents[1]
 METHOD = 'fixed-self-citation-exact-size-standardization-v1'
 PLAN = 'research/literature/SELF_CITATION_SIZE_PLAN.md'
 PINS = 'research/literature/self-citation-size-pins.json'
 PARENT = 'research/literature/self-citation-interior.json'
-PIN_SHA256 = '65c9d900f34172c98a5ff38b780fc2612a7fed9c5412a91634859f4d3976e275'
+PIN_SHA256 = '7bb5faefbe8b6a7d2b2c3a6f678b973319175def3d4e4fabcc83d8b44b2276c0'
 VARIANTS = [(s,p) for s in parent.prefix.SOURCE_IDS for p in parent.prefix.SPACING]
 FIELDS = ['uncentered_mean','unrestricted_expectation','half_expectation','unrestricted','half']
 
@@ -30,7 +32,8 @@ def load_inputs():
     for name,expected in pins.items():
         if parent.sha((ROOT/name).read_bytes())!=expected:
             raise ValueError(f'frozen size-standardization input changed: {name}')
-    parent.load_inputs()  # All22 parent source/helper pins, including its manifest identity.
+    parent.load_inputs()  # All22 original parent source/helper pins remain fixed.
+    transition.verify_inputs(ROOT)
     return parent.load_split_json((ROOT/PARENT).read_text()),pins
 
 
@@ -216,6 +219,7 @@ def main():
             protect_output(args.new_report,args.runs)
             if args.new_report.exists() or args.new_report.is_symlink():raise ValueError('new report destination already exists')
         result=report(args.runs)
+        transition.verify_result(result,ROOT)
         if args.check and not parent.same_json(result,parent.load_split_json(args.check.read_text())):raise ValueError('complete size-conditioned report differs from replay')
         if args.new_report:
             protect_output(args.new_report,args.runs)
