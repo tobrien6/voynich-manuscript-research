@@ -30,6 +30,10 @@ def fixture(root):
 
 
 class CandidateTests(unittest.TestCase):
+    def test_complete_source_parent_and_candidate_report_replay(self):
+        raw=(audit.ROOT/'research/historical/f101-record-candidates.json').read_bytes()
+        self.assertEqual(audit.parent.encoded(audit.parent.load_json(raw)),audit.parent.encoded(audit.build()))
+
     def test_all_four_pairs_keep_literal_page_names_and_no_alias(self):
         old = {p: rows(['ab'], p) for p in audit.HISTORICAL}
         new = {p: rows(['ab'], p, False) for p in audit.MODERN}
