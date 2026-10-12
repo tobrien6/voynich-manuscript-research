@@ -18,7 +18,8 @@ Pin the complete grouped-prediction report to SHA-256
 Use only its **ZL3b split** locus keys, page/group identifiers, source labels,
 folds and transition counts. Each simulated interior has one more class than
 that row's transition count. Retain the 2,165 loci, 86 groups, five original
-folds and their complete membership. Do not use the observed length classes,+fitted manuscript probabilities, losses, or gains to generate sequences.
+folds and their complete membership. Do not use the observed length classes,
+fitted manuscript probabilities, losses, or gains to generate sequences.
 The layout and labels are previously exposed metadata.
 
 Pin `scripts/grouped_length_prediction.py` to
