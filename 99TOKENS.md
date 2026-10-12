@@ -1,24 +1,36 @@
 # Voynich Manuscript Research
 
+## Goal: decode and translate the manuscript
+
+Develop an independently reproducible decipherment of the Voynich manuscript's writing system and use it to produce a source-linked English translation. Publish validated passages as progress toward a manuscript-wide translation, preserving unresolved glyphs, alternative readings, and confidence at each step.
+
+The manuscript is held by Yale's Beinecke Rare Book and Manuscript Library as MS 408. [Yale describes its text as undeciphered](https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript). Decoding and translation are the research objective, not an established result. The project has no preferred language, cipher, or encoding mechanism.
+
 ## Research question
 
-What can the Voynich manuscript's text, illustrations, and documented history establish when evidence is recorded consistently and competing explanations are tested reproducibly?
+What reproducible rules explain the manuscript's glyphs, token structure, and text organization, and can those rules support consistent readings and translations of folios not used to develop them?
 
-The manuscript is held by Yale's Beinecke Rare Book and Manuscript Library as MS 408. Yale describes its script as undeciphered. This project begins with an evidence base and testable questions; it has no preferred translation or decipherment.
+## Milestones toward decipherment and translation
 
-## First milestone: a research baseline
+1. **Build a traceable pilot corpus.** Maintain the source register; inventory a selected set of folios; compare documented transcription systems and editions. Preserve ambiguous glyphs, spaces, line breaks, and missing material. Record image links, dataset versions, access conditions, and preprocessing.
+2. **Establish constraints on decoding.** Measure glyph and token frequencies, token lengths, repetition, and line-position effects. Compare appropriate shuffled, language, and synthetic encoding baselines. Test sensitivity to transcription choices. Use the results to constrain candidate mechanisms, without treating a statistical resemblance as a translation.
+3. **Test explicit decipherment hypotheses.** Register each candidate's glyph mapping, segmentation rules, proposed mechanism and language (if any), predictions, failure conditions, and evaluation method before testing. Freeze the rules and evaluate on reserved folios; record contradictions and failed candidates.
+4. **Translate validated passages.** Show the source image reference, transcription, decoding steps, proposed reading, literal English translation, and explanatory notes together. Mark gaps and competing readings. New exceptions require a new candidate version and another untouched test set.
+5. **Seek independent reproduction and expand coverage.** Have another researcher reproduce the readings from the frozen rules and source material. Extend successful candidates across sections and transcription variants before claiming a manuscript-wide decipherment or translation.
 
-1. **Build the source register.** Start with Yale's overview, manuscript catalog, and digitized folios. Record what each source supports, its limitations, and relevant rights or access conditions.
-2. **Create a folio inventory.** Record folio identifiers, image links, visible text regions, illustration themes, and uncertainties for a small, explicitly selected pilot set.
-3. **Review transcription choices.** Identify documented transcription systems and available editions. Compare treatment of ambiguous glyphs, spaces, line breaks, and missing material before selecting a dataset.
-4. **Establish reproducible baselines.** Once a transcription is selected, measure glyph and token frequencies, token lengths, and line-position effects. Record preprocessing, sample sizes, code, and sensitivity to transcription decisions.
-5. **Register hypotheses before testing them.** Specify the claim, evidence for and against it, a measurable prediction, comparison baselines, and a held-out evaluation set.
+## What counts as success
+
+A credible decipherment must explain how readings are derived through documented rules, make successful predictions on held-out material, survive relevant baseline comparisons and transcription uncertainty, and be independently reproducible. A translation must remain traceable to those readings and disclose its unresolved content. Fluent English, an isolated word match, or a plausible match to an illustration is insufficient evidence.
+
+The full goal is a reproducible account of the writing system and a translation of the surviving text with remaining uncertainty documented. Partial readings are interim results with explicitly limited scope. If tests do not support recoverable linguistic content, report that evidence and its limits rather than invent a translation.
 
 ## First task
 
-Produce a pilot inventory of 10 folios selected across the illustrated sections described in Yale's overview. Document the selection rule before collecting observations. For each folio, record the stable image link, section attribution and source, visible text layout, illustration description, and uncertain observations. Deliver the inventory with a short note explaining coverage and sampling limitations.
+Prepare a decipherment pilot of 10 folios selected across the six sections described in Yale's overview. Document the selection rule before collecting observations. For each folio, record its stable image link, section attribution and source, text layout, illustration description, and uncertainties. Compare available transcription editions and recommend a versioned dataset with documented glyph conventions and reuse terms.
 
-This is the first planned task; the inventory and analyses have not yet been completed.
+Before developing a candidate, commit a provisional split of eight development folios and two held-out folios, recording any prior exposure. This small pilot tests the workflow; it cannot establish manuscript-wide validity. Deliver the inventory, transcription decision, split manifest, and a first registered hypothesis with a measurable prediction and failure condition using the [evaluation protocol](research/DECIPHERMENT_PROTOCOL.md).
+
+This task is planned. The pilot corpus, hypothesis tests, and translations have not yet been completed.
 
 ## Evidence standard
 
@@ -28,6 +40,8 @@ This is the first planned task; the inventory and analyses have not yet been com
 - Compare patterns against appropriate shuffled and language baselines before interpreting them.
 - Test promising explanations on held-out folios and across transcription variants.
 - Treat apparent matches as hypotheses until independently reproducible.
+- Keep transcription, decoding, and translation separate so each step can be checked.
+- Report coverage and uncertainty; never fill unreadable or unsupported passages with invented text.
 
 ## Primary sources
 
@@ -38,4 +52,4 @@ This is the first planned task; the inventory and analyses have not yet been com
 
 ## Contribute
 
-Open an issue for a focused question or propose a pull request with a documented observation, source correction, transcription comparison, or reproducible analysis. Include enough source detail and method description for another researcher to check the result.
+Open an issue for a focused decoding or translation question, or propose a pull request with a documented observation, source correction, transcription comparison, candidate mechanism, reproducible test, or evaluated passage. Explain how it advances the goal, and include enough source detail and method description for another researcher to check the result. Follow the [decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md) for proposed readings.
