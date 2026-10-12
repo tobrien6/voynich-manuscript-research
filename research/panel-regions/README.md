@@ -115,3 +115,12 @@ The [two-direction f102r1 boundary review](102R_BOUNDARY_PAIR.md) freezes one
 ZL-only and one IT-only extra-boundary case before new image inspection.
 Both adjacent loci retain provisional row placement and unresolved word
 division; the shared 101v/102r carrier remains one image dependency.
+
+## f89v bottom-label context
+
+The separate [f89v context packet](F89V_CONTEXT.md) records both coarse Yale
+canvases naming 89v and two dependent bottom-band windows. Historical `f89v2`
+spans two reported physical panels. A layout match supports a provisional
+container association; exact label regions, faint-trace origins and the modern
+nonexistent-locus correspondence remain unresolved. It supplies no verified join
+or physical text-presence decision.
