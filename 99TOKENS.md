@@ -66,6 +66,8 @@ The [early/late-half sensitivity test](research/transliteration/INTERIOR_HALVES.
 
 The [exact half-control invariance audit](research/transliteration/HALF_DEGENERACY.md) identifies 55 invariant loci in the primary treatment, including 14 nonconstant-half cases outside the earlier narrow counter. Every varying locus has a verified swap witness; all 2,165 loci remain in the original denominator, with no changes to effects, controls or tails.
 
+The [grouped length-prediction comparison](research/baselines/GROUPED_LENGTH_RESULTS.md) fits context-only and previous-length models with five folds over 86 recorded image-dependency components. Every treatment fails its fixed preference criterion: pooled gains can conceal losses when groups receive equal weight, and ZL join loses under both weightings. Whole-corpus prior exposure remains explicit; these diagnostic conditional scores neither create untouched evaluation material nor establish a decoding mechanism.
+
 The [catalog-section prefix analysis](research/transliteration/SECTION_STRATA.md) separates first-slot contrasts across Yale's six numeric ranges and source-marked paragraph starts, with [complete results](research/transliteration/section_strata.json). It retains 29 paragraph-start annotation disagreements and source-specific eligibility. Non-start y contrasts are positive in all six ranges, while the final-text paragraph-start contrast is near zero and differs in sign between sources. These exposed-data measurements preserve small cohorts, unresolved foliation, and representation limits; they do not establish a section's meaning or a decipherment.
 
 ## Evidence standard
