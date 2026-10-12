@@ -47,7 +47,7 @@ environment. The analysis itself remains standard-library Python.
 
 ```sh
 python3 -m venv /tmp/voynich-figure-env
-/tmp/voynich-figure-env/bin/python -m pip install -r requirements-figure.txt
+/tmp/voynich-figure-env/bin/python -m pip install -r requirements-figures.txt
 MPLCONFIGDIR=/tmp/voynich-mpl /tmp/voynich-figure-env/bin/python scripts/plot_conservative_prefixes.py --spacing both
 PYTHONPATH=tests python3 -m unittest test_prefix_figure_data -v
 ```
