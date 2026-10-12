@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "LS16e6",
+  "title": "Reeds/Landini interlinear in basic EVA, Stolfi release 1.6e6",
+  "credit": "Jorge Stolfi; Gabriel Landini and Jim Reeds; Takeshi Takahashi; original transcribers credited in the unmodified member",
+  "retrieved_date": "2026-10-11",
+  "retrieval_timezone": "America/New_York",
+  "source_page_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/",
+  "historical_paper_source_url": "http://www.ic.unicamp.br/~stolfi/voynich/98-12-28-interln16e6/",
+  "archive_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/text16e6.zip",
+  "path": "data/historical/text16e6.zip",
+  "archive_bytes": 347914,
+  "archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+  "member": "L16+H-EV/TEXT16E6.EVT",
+  "member_bytes": 1720292,
+  "member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319",
+  "selected_transcriber": "H",
+  "permission": {
+    "statement_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/",
+    "locator": "Permissions section",
+    "terms_summary": "Publisher permits copying, use, modification and republication with due credit and without imposing additional conditions or copyrights on these files or derivatives",
+    "repository_license_applies": false
+  },
+  "historical_identity_status": "Recovered publisher-hosted candidate; equality to the 2013 authors' downloaded or processed bytes is unproven"
+}
