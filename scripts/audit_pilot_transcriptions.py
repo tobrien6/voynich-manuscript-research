@@ -65,9 +65,9 @@ def page_summary(document, page):
     }
 
 
-def build_report(inventory, canvases, sources):
+def build_report(inventory, canvases, sources, expected_targets=PILOT_TARGETS):
     """Compare identifiers only; even exact links leave glyph/region review pending."""
-    validate_targets(inventory)
+    validate_targets(inventory, expected_targets)
     sources = paired_sources(sources)
     index = {}
     for row in canvases:

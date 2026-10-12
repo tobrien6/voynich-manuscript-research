@@ -25,6 +25,11 @@ def fixture(target='1r', sides='1r', combined='False'):
     return inventory, canvases
 
 
+def synthetic_report(inventory, canvases, sources):
+    # Reduced synthetic units exercise joins; production defaults require all ten.
+    return build_report(inventory, canvases, sources, expected_targets=None)
+
+
 class PilotTranscriptionTests(unittest.TestCase):
     def test_empty_or_truncated_inventory_cannot_claim_complete_coverage(self):
         with self.assertRaisesRegex(ValueError, 'nonempty'):
@@ -38,10 +43,16 @@ class PilotTranscriptionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'original ten'):
             validate_targets({'records': records}, PILOT_TARGETS)
 
+    def test_imported_report_defaults_to_original_ten_targets(self):
+        sources = [source('ZL3b', '<f1r>\n<f1r.1,@P0> a\n'),
+                   source('IT2a', '<f1r>\n<f1r.1,@P0> a\n')]
+        with self.assertRaisesRegex(ValueError, 'original ten'):
+            build_report(*fixture(), sources)
+
     def test_exact_link_retains_all_kinds_absent_loci_and_source_disagreements(self):
         sources = [source('ZL3b', '<f1r>\n<f1r.1,@P0> a\n<f1r.2,@L0> b\n<f1r.3,!P0> c\n'),
                    source('IT2a', '<f1r>\n<f1r.1,+P0> a\n')]
-        report = build_report(*fixture(), sources)
+        report = synthetic_report(*fixture(), sources)
         entry = report['entries'][0]
         self.assertEqual(entry['status'], 'exact_page_metadata_link')
         self.assertEqual(report['summary']['shared_present_loci_in_exact_links'], 1)
@@ -54,7 +65,7 @@ class PilotTranscriptionTests(unittest.TestCase):
 
     def test_panel_candidates_are_never_promoted_or_prefix_matched_to_other_sides(self):
         text = '<f67r1>\n<f67r1.1,@P0> a\n<f67r2>\n<f67r2.1,@P0> b\n<f67v1>\n<f67v1.1,@P0> c\n'
-        report = build_report(*fixture('67r', '67r'), [source('ZL3b', text), source('IT2a', text)])
+        report = synthetic_report(*fixture('67r', '67r'), [source('ZL3b', text), source('IT2a', text)])
         entry = report['entries'][0]
         self.assertEqual(entry['status'], 'blocked')
         self.assertEqual(report['summary']['shared_present_loci_in_exact_links'], 0)
@@ -64,7 +75,7 @@ class PilotTranscriptionTests(unittest.TestCase):
 
     def test_combined_canvas_blocks_even_with_exact_page_and_special_header(self):
         text = '<f85v>\n<f85v.1,@P0> a\n<fRos>\n<fRos.1,@L0> b\n'
-        report = build_report(*fixture('85v', '85v;86r', 'True'),
+        report = synthetic_report(*fixture('85v', '85v;86r', 'True'),
                               [source('ZL3b', text), source('IT2a', text)])
         self.assertEqual(report['entries'][0]['status'], 'blocked')
         self.assertEqual(report['entries'][0]['selected_canvas']['explicit_label_sides'], ['85v', '86r'])
@@ -73,7 +84,7 @@ class PilotTranscriptionTests(unittest.TestCase):
                          'fRos')
 
     def test_empty_page_header_is_not_an_available_text_page(self):
-        report = build_report(*fixture(), [source('ZL3b', '<f1r>\n'), source('IT2a', '<f1r>\n')])
+        report = synthetic_report(*fixture(), [source('ZL3b', '<f1r>\n'), source('IT2a', '<f1r>\n')])
         self.assertEqual(report['entries'][0]['status'], 'blocked')
 
     def test_rejects_duplicate_targets_and_inconsistent_canvas_metadata(self):
@@ -81,15 +92,15 @@ class PilotTranscriptionTests(unittest.TestCase):
         inventory, canvases = fixture()
         inventory['records'].append(copy.deepcopy(inventory['records'][0]))
         with self.assertRaisesRegex(ValueError, 'duplicate pilot target'):
-            build_report(inventory, canvases, sources)
+            synthetic_report(inventory, canvases, sources)
         inventory, canvases = fixture()
         canvases[0]['image_oid'] = 'changed'
         with self.assertRaisesRegex(ValueError, 'image ID mismatch'):
-            build_report(inventory, canvases, sources)
+            synthetic_report(inventory, canvases, sources)
         inventory, canvases = fixture()
         canvases[0]['explicit_folio_sides'] = '2r'
         with self.assertRaisesRegex(ValueError, 'target absent'):
-            build_report(inventory, canvases, sources)
+            synthetic_report(inventory, canvases, sources)
 
     def test_cli_distinguishes_incomplete_audit_from_complete_metadata(self):
         for count, expected in [(3, 2), (0, 0)]:
