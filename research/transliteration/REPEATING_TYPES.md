@@ -6,6 +6,11 @@ Its accepted pair-event count remains 272 against 270.7699 expected. These
 statistics weight repetition differently; an above-mean type count alone
 supplies no calibrated excess, uncertainty interval, or decipherment evidence.
 
+The [fixed immediate-repeat image pilot](IMMEDIATE_REPEAT_IMAGES.md) connects
+three selected within-locus events to paired native readings and provisional
+Yale image windows. It retains all eight treatments and distinguishes the
+event sample from the globally deduplicated type statistic.
+
 ## Counting unit and source comparison
 
 [Amancio et al. (2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067310),
@@ -103,7 +108,7 @@ the [pinned sources](DECISION.md), then run:
 PYTHONPATH=tests python3 -m unittest \
   test_repeating_types test_repetition_moments test_token_baselines
 python3 scripts/repeating_types.py --check research/transliteration/repeating_types.json
-python3 scripts/repeating_types.py --output /tmp/repeating-types.json
+python3 scripts/write_repeating_types.py --output /tmp/repeating-types.json
 ```
 
 Eight new tests cover all 511 original retention/gap layouts of sizes 0–8
@@ -129,6 +134,11 @@ than changing the interpreter's integer-string limit. Rounded displays use
 eight decimals. Check mode compares the entire typed canonical report, including
 source/catalog, plan, engine, baseline and preprocessed-slot fingerprints.
 
+Use the [guarded companion](REPEATING_TYPE_WRITER.md) for report writes. It
+preserves this producer and its scientific fingerprints while checking output
+aliases after complete serialization. The frozen legacy writer remains
+unchanged and retains its documented serialization-stage gap.
+
 The producer checks every accepted source/policy pair count, denominator,
 token/slot/vocabulary count, cohort key digest and expectation before emitting
 a report. Those accepted baseline bytes and its 199-shuffle arrays are unchanged.
@@ -139,3 +149,8 @@ disclosed shuffle protocol before applying it in a candidate comparison. A
 paper or generator comparison must explicitly match counting units, input,
 boundaries and null scope. Physical mapping, source/glyph adjudication and a
 real exposure-aware evaluation split remain outside this description.
+
+The [exact type-variance follow-up](REPEATING_TYPE_VARIANCE.md) adds joint
+no-event probabilities and signed type-pair covariance under this same
+fixed-gap locus control, preserving every count and mean in the present report.
+Its SD-scaled descriptions supply no normal-tail or decipherment claim.

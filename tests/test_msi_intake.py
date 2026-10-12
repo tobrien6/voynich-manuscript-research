@@ -103,6 +103,21 @@ class MSIIntakeTests(unittest.TestCase):
         changed=deepcopy(self.record);changed['inputs_sha256'][next(iter(changed['inputs_sha256']))]='0'*64
         with self.assertRaisesRegex(ValueError,'pins'):verify(changed)
 
+    def test_duplicate_offsets_require_integer_json_values_in_actual_cli(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'record.json'
+            for offsets in ([126.0], [True], ['126'], {'offset': 126}, None):
+                with self.subTest(offsets=offsets):
+                    record = deepcopy(self.record)
+                    record['duplicate_check']['byte_different_offsets'] = offsets
+                    raw = encoded(record); path.write_bytes(raw)
+                    with patch('sys.argv', ['msi.py', '--record', str(path)]), \
+                            redirect_stderr(io.StringIO()), redirect_stdout(io.StringIO()), \
+                            self.assertRaises(SystemExit) as failure:
+                        main()
+                    self.assertEqual(failure.exception.code, 1)
+                    self.assertEqual(path.read_bytes(), raw)
+
     def test_full_decode_requires_cache_and_rejects_changed_decoded_pixels(self):
         with self.assertRaisesRegex(ValueError,'local source cache'):verify(self.record,decode=True)
         expected=self.record['selected_images'][0]['decoded']

@@ -223,7 +223,7 @@ def verify(record, cache=None, root=ROOT, decode=False):
     keys(duplicate, ('file_ids', 'byte_different_count', 'byte_different_offsets', 'same_jpeg_without_exif', 'decoded_raw_rgb_sha256', 'decoder'))
     require(duplicate['file_ids'] == [PSC_116V, RGB_116V]
             and type(duplicate['byte_different_count']) is int and duplicate['byte_different_count'] == 1
-            and duplicate['byte_different_offsets'] == [126]
+            and encoded(duplicate['byte_different_offsets']) == encoded([126])
             and type(duplicate['same_jpeg_without_exif']) is bool and duplicate['same_jpeg_without_exif'], 'PSC copy comparison differs')
     fingerprint(duplicate['decoded_raw_rgb_sha256'])
     require(isinstance(duplicate['decoder'], str) and duplicate['decoder'], 'decoder identity missing')

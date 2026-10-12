@@ -149,7 +149,8 @@ function initialize() {
   document.getElementById("credit").textContent=model.credit;
   document.getElementById("citation").textContent=model.manuscript_citation;
   document.getElementById("provenance").textContent=JSON.stringify({parent_pr:model.parent_pr,
-    parent_commit:model.parent_commit,input_sha256:model.input_sha256,
+    parent_commit:model.parent_commit,original_parent_commit:model.original_parent_commit,
+    dependency_status:model.dependency_status,input_sha256:model.input_sha256,
     images:model.images.map(i=>({id:i.id,side:i.side,name:i.name,metadata:i.metadata,decoded:i.decoded}))},null,2);
   document.getElementById("panels").append(makePanel(model,"1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE",1),
     makePanel(model,"17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL",2));

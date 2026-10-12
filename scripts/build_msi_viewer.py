@@ -23,13 +23,17 @@ INPUTS=(*PINS, RECORD, 'scripts/check_msi_intake.py', 'scripts/verify_boundary_r
 
 def load_inputs(root=ROOT):
     settings=strict_json((root/SETTINGS).read_bytes())
-    require(set(settings)=={'schema_version','viewer_id','parent_pr','parent_commit','parent_status_at_creation','input_sha256'}
+    require(set(settings)=={'schema_version','viewer_id','parent_pr','parent_commit','parent_status_at_creation',
+                           'original_parent_commit','current_dependency_status','input_sha256'}
             and type(settings['schema_version']) is int and settings['schema_version']==1
             and settings['viewer_id']=='local-msi-coordinate-comparison-v1'
             and set(settings['input_sha256'])==set(INPUTS), 'wrong viewer settings')
-    require(settings['parent_commit']=='ee961733dffbeb98893407114634ed82816a81bc'
+    require(settings['parent_commit']=='8a29dc4e4dab84711d0d82f765b2453acfbc2b8f'
             and type(settings['parent_pr']) is int and settings['parent_pr']==163,
             'wrong declared source contribution')
+    require(settings['original_parent_commit']=='ee961733dffbeb98893407114634ed82816a81bc'
+            and settings['parent_status_at_creation']=='pending review'
+            and settings['current_dependency_status']=='accepted','source dependency history differs')
     for name in INPUTS:
         raw=(root/name).read_bytes()
         require(sha(raw)==settings['input_sha256'][name], 'pinned viewer input changed: '+name)
@@ -57,6 +61,8 @@ def packet_bytes(cache, root=ROOT):
             'asset':'assets/'+filename,'metadata':item['metadata'], 'decoded':item['decoded']})
     model={'viewer_id':settings['viewer_id'],'parent_pr':settings['parent_pr'],
            'parent_commit':settings['parent_commit'],'input_sha256':settings['input_sha256'],
+           'original_parent_commit':settings['original_parent_commit'],
+           'dependency_status':settings['current_dependency_status'],
            'images':images,'credit':record['release']['credit'],
            'manuscript_citation':record['release']['manuscript_citation'],
            'limits':'Dependent supplementary views of two surfaces. Glyph readings and legacy numbering remain unresolved.'}

@@ -14,10 +14,12 @@ from scripts.check_msi_intake import sha
 
 
 class MSIViewerTests(unittest.TestCase):
-    def test_pinned_parent_and_git_blobs_match_with_literal_pending_status(self):
+    def test_pinned_accepted_parent_and_original_creation_history_match_git_blobs(self):
         settings,record=load_inputs()
         self.assertEqual(set(settings['input_sha256']),set(INPUTS))
         self.assertEqual(settings['parent_status_at_creation'],'pending review')
+        self.assertEqual(settings['current_dependency_status'],'accepted')
+        self.assertEqual(settings['original_parent_commit'],'ee961733dffbeb98893407114634ed82816a81bc')
         self.assertEqual(len(record['selected_images']),6)
         bad=deepcopy(settings);bad['input_sha256'][INPUTS[0]]='0'*64
         with patch('scripts.build_msi_viewer.strict_json',return_value=bad),self.assertRaisesRegex(ValueError,'pinned'):

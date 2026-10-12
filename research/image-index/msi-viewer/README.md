@@ -6,13 +6,14 @@ coordinates. It copies exactly eight original image files: six provider JPEGs
 and two Yale references. All sources concern **two manuscript surfaces**, 1r and
 116v; duplicate/processed views provide no independent manuscript samples.
 
-This contribution is initially a **draft dependent on PR #163**. The
-[settings](inputs.json) pin that parent's exact commit
-`ee961733dffbeb98893407114634ed82816a81bc`, seven input hashes and corresponding
-Git blobs. The pending typed-offset correction belongs to the parent's assigned
-reviewer. Refresh the dependency explicitly after parent acceptance, proving
-that source/image records remain unchanged; do not treat these pins as an
-accepted-source claim or silently update them.
+The [settings](inputs.json) now pin **accepted PR #163**, merged as
+`8a29dc4e4dab84711d0d82f765b2453acfbc2b8f`, with seven input hashes and their
+exact Git blobs. Original draft-parent `ee961733dffbeb98893407114634ed82816a81bc`
+and its pending status at viewer creation remain recorded separately.
+The source record, selection plan, source/index/alias bytes and JPEG helper
+are byte-identical. Only the accepted checker's typed-offset guard changed.
+Dependency migration updates that helper pin and parent identity explicitly;
+all original image assets and rendered-image descriptions remain unchanged.
 
 ## Build and open locally
 
@@ -81,8 +82,8 @@ python3 -m unittest tests.test_msi_viewer tests.test_msi_intake -v
 node tests/test_msi_viewer_geometry.cjs /tmp/voynich-msi-cache
 ```
 
-All **14 focused Python tests** pass on the pinned parent: six packet tests and
-eight intake tests. They cover exact parent blobs/pins, preserved original
+All **15 focused Python tests** pass on the accepted parent: six packet tests and
+nine intake tests. They cover exact parent blobs/pins, preserved original
 bytes, exclusion of unrelated cache files, literal/escaped model text, changed
 inputs, fresh output/cache protection, an alias created during serialization,
 exclusive packet writing and complete read-only packet replay.
