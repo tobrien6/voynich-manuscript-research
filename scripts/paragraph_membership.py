@@ -216,9 +216,16 @@ def validate_output_path(path):
         (ROOT / 'data/transliterations.json').resolve(), Path(__file__).resolve(),
         (ROOT / 'research/transliteration/PARAGRAPH_MEMBERSHIP_PLAN.md').resolve(),
     }
+    catalog = json.loads((ROOT / 'data/transliterations.json').read_text())
+    protected.update((ROOT / source['path']).resolve() for source in catalog['sources'])
     if (resolved in protected or resolved == raw or raw in resolved.parents
             or resolved == scripts or scripts in resolved.parents):
         raise ValueError('output would overwrite a source, source catalog, script, or plan')
+    if path.exists():
+        protected.update(candidate for folder in (raw, scripts)
+                         for candidate in folder.rglob('*') if candidate.is_file())
+        if any(path.samefile(source) for source in protected if source.exists()):
+            raise ValueError('output aliases a source, source catalog, script, or plan')
 
 
 def main():

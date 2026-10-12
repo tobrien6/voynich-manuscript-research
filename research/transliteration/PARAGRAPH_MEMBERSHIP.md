@@ -113,7 +113,9 @@ units, page resets, repeated/orphan/dangling/reversed markers, withholding an
 entire anomalous page, free comments, nonexistent records, leading/trailing
 unmarked loci, grouping splits, coverage differences, and non-P markers.
 Output guards protect raw inputs, the source catalog, source scripts, and the
-pre-execution plan, including resolved aliases. Pinned integration checks
+pre-execution plan, including resolved symlink and existing hardlink aliases.
+All cataloged transcription inputs are protected even outside `data/raw`.
+Pinned integration checks
 reproduce the complete report, retain the explicit ZL/IT pair when catalog
 order changes, and account for every shared key and every source P locus.
 

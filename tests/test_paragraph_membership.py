@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -117,6 +118,20 @@ class ParagraphMembershipTests(unittest.TestCase):
         for source in report['sources']:
             summary = source['summary']
             self.assertEqual(summary['assigned_locus_count'] + summary['unassigned_locus_count'], summary['present_generic_p_loci'])
+
+    def test_hardlink_aliases_preserve_catalog_inputs_scripts_and_plan(self):
+        catalog = json.loads((ROOT / 'data/transliterations.json').read_text())
+        protected = (ROOT / 'data/transliterations.json',
+                     ROOT / catalog['sources'][0]['path'], ROOT / 'scripts/ivtff.py',
+                     ROOT / 'research/transliteration/PARAGRAPH_MEMBERSHIP_PLAN.md')
+        with tempfile.TemporaryDirectory() as directory:
+            for index, source in enumerate(protected):
+                before = source.read_bytes()
+                alias = Path(directory) / f'hardlink-{index}.json'
+                os.link(source, alias)
+                with self.subTest(source=source.name), self.assertRaisesRegex(ValueError, 'aliases'):
+                    validate_output_path(alias)
+                self.assertEqual(source.read_bytes(), before)
 
 
 if __name__ == '__main__':
