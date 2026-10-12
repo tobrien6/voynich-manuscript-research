@@ -123,6 +123,11 @@ missing/extra/duplicate/reordered/nonexistent records, required editions/headers
 native kind/locator and verbatim annotation retention, attempt/coverage loss,
 false verification promotion, image request geometry/identity and PNG headers.
 The accepted nine-record P0 checklist remains unchanged and reproduces.
+All 760 tests pass after accepted-main integration: 751 standard tests,
+including the eight focused cases, plus nine script tests. A separate extraction
+from physical source-file lines also matches all 44 complete native readings,
+kinds, locators and source-file references. Frozen plan/packet bytes remain
+unchanged, and all local image/specification bindings verify.
 
 All three native panel names preserve the same `yale-leaves:68` carrier
 dependency. The source packet and compatible proposals supply review context;
