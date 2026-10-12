@@ -1,0 +1,824 @@
+{
+  "schema_version": 1,
+  "scope": "Static artifact identity and compiler-only class comparison; no generator execution or mechanism experiment",
+  "inspected_on": "2026-10-12",
+  "inspection_timezone": "America/New_York",
+  "release_revision": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "repository": "https://github.com/TorstenTimm/SelfCitationTextgenerator",
+  "jar": {
+    "path": "executable/text-generator.jar",
+    "bytes": 194515,
+    "sha256": "e9cf22d4ce50a5af6d75a17f613919e0de5d409c0232fbb6b0f7acf784dac582",
+    "git_blob_sha1": "3aa04f221bd560fa5fe17a1ee887cc0b1cd2ab81",
+    "archive_members": 68,
+    "class_files": 51,
+    "nested_archives": 0,
+    "service_descriptors": [],
+    "selected_manifest_statements": {
+      "Main-Class": "de.voynich.text.SelfCitationTextGenerator",
+      "Created-By": "Apache Maven 3.5.3",
+      "Build-Jdk": "1.8.0_162",
+      "Class-Path": "lib/log4j-1.2.17.jar"
+    },
+    "class_file_major_version_counts": {
+      "52": 51
+    }
+  },
+  "embedded_configuration": {
+    "entry": "conf.properties",
+    "bytes": 5165,
+    "sha256": "e21b977d15f7543c2d14ab91455f1a8543dba3719b4600779933de6fda62380d",
+    "byte_identical_to_release_source_resource": true,
+    "byte_identical_to_external_executable_config": false,
+    "external_only_property_keys": [
+      "save.length.distribution",
+      "stats.calculate.entropy",
+      "stats.calculate.random_walk"
+    ],
+    "property_interpretation_limit": "Additional keys are presence observations, not verified runtime behavior"
+  },
+  "source_inventory": {
+    "revision": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+    "files": [
+      {
+        "path": "source/src/main/java/de/voynich/text/Constants.java",
+        "bytes": 2215,
+        "git_blob_sha1": "c03aa0328333c4bc092abc973f087aa855a3d1cf",
+        "sha256": "bda4ef3df6e5be3ea40ceeca66de001e30f873632380d940ce6e792bf3807248"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/Glyph.java",
+        "bytes": 26311,
+        "git_blob_sha1": "e3ea5c8c604ce8b796ad530e28afd899c5ce64e2",
+        "sha256": "130222af0e736a79dbfa507b24d0a2d182169ece6899ea64ac9147fc11c5169e"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/GlyphGroup.java",
+        "bytes": 5703,
+        "git_blob_sha1": "781e22998af382785ed9822cdd03443c4c673569",
+        "sha256": "397f764b6b9c792d6bd8f98430363554890474a5c34a204e3e10033b57b1b37b"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+        "bytes": 14824,
+        "git_blob_sha1": "62dab4c22f4b4ca631263083789f994789294273",
+        "sha256": "7afa236373a997d2e2ccef9a8e7ee799c5766b63ddf161bab8b72ce0f3bbf1e9"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/StatisticHelper.java",
+        "bytes": 14988,
+        "git_blob_sha1": "c1ee9b24bacfaff77d405899b861b9ed0c3e131b",
+        "sha256": "e40bffd4518c3555771fb3d502908d1ff7af5e516648d080111c384512cc9918"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/Substitution.java",
+        "bytes": 1288,
+        "git_blob_sha1": "38a51d8cc6f003f3585089d9276aea69a6c1ce12",
+        "sha256": "a5ed5263b28c7289dd6922109b59bb3e26d175e257004e2b82d2397b79e736b5"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java",
+        "bytes": 14827,
+        "git_blob_sha1": "8b84e1770b9f7e9290165becb7f48cf7b90ffed7",
+        "sha256": "62e3051c61c8126ad80ea24c4e17488f0093f247e62bc638493574d55015a0a2"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/DummyCanFollow.java",
+        "bytes": 1653,
+        "git_blob_sha1": "3ffd30858789eab831a4d931af6bfdac9f03c55b",
+        "sha256": "e77f4bfb08c354f9b77901c068d3fdf67f3f073ffee523a3f46f8f6eafaaab88"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/I_CanFollow.java",
+        "bytes": 1163,
+        "git_blob_sha1": "04a8de3b095487fe9ff128963d442708636f82d2",
+        "sha256": "0a559ecf0c9839469034a878b34f0085da85a1491b36171d75d126c1a883ef7c"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/StatisticCanFollow.java",
+        "bytes": 3963,
+        "git_blob_sha1": "da277374d78dc7325a7822ba72702281eee3bb68",
+        "sha256": "51f87de0a79a9d6f79b4c9daafbc474f86a19b25385691c4303cc3746bf35848"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+        "bytes": 3192,
+        "git_blob_sha1": "e7bd73044f4582ae46f35b8f1d0c033ffba99b11",
+        "sha256": "5d9f34e70bf1d71a4274280fec70518fc441a91ff1349fc16288d244e5eaa4d5"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/vms/CalcGephiElements.java",
+        "bytes": 1616,
+        "git_blob_sha1": "40ceb710f7a5b96f164475514fdd7c7f685e8077",
+        "sha256": "28c37a018847ffe4507f6b7d2f851ba3373d98b8808aa0f48066301a2235a60f"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/vms/FollowMatrix.java",
+        "bytes": 3789,
+        "git_blob_sha1": "7cacf8a70d162efd43aaa1240fd51828592f2cae",
+        "sha256": "90050119690b51502d23e11848370af97454f9c2d5a451889bea0cf53e0d6527"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroups.java",
+        "bytes": 92663,
+        "git_blob_sha1": "a06a1a57bd92a6087126109c5f275547b0d47e04",
+        "sha256": "56d11c54a7247f48a789590dc4d3dd376e35cc74006d528091217150a4a91562"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsThree.java",
+        "bytes": 91541,
+        "git_blob_sha1": "86b8bf5c6ce22964ea1e30a851f37a4a97d84741",
+        "sha256": "64171ebcf37bcf6f88f626796ca682c7403ccd11806ada46ec645fb94c3aeac3"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsTwo.java",
+        "bytes": 53415,
+        "git_blob_sha1": "95883bd8472db6b8ef386e81b13e86814ab624df",
+        "sha256": "c2094fce408c48949732f506bbe660252728a21152b04249455728ae81d38f91"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/morph/AbstractBaseGroupMorpher.java",
+        "bytes": 22901,
+        "git_blob_sha1": "3e5506c3129624270f1b9042d1e431ce3134ade0",
+        "sha256": "fd3466fe5879d8e25c7892ef6e08b34f02706c2f3c2c09dddd31cb802e8ba0f1"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/morph/I_GroupMorpher.java",
+        "bytes": 771,
+        "git_blob_sha1": "7f9f6f82f6d183f9ceb1adc4acb7cbbf6e986d64",
+        "sha256": "ecb24cb45de8d3cc9312cd010c310ae1e54b83afcd5db30bd2dad3e8da6a2ad4"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/morph/MorphTester.java",
+        "bytes": 14597,
+        "git_blob_sha1": "bfc48b7d1aa5b74daa6689c4a37ac1f0016d8ad1",
+        "sha256": "a49bf4ad27648391c6214ce958a71c07281dc3e11c10c693d88a0724a75b94f2"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+        "bytes": 32733,
+        "git_blob_sha1": "91fb9bef16d04fbb8807c0b8892b29d78ccc9f62",
+        "sha256": "a35454d7e6adbda8a86471433e58849c2fe5674f625a09cb68facf4e61eec614"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+        "bytes": 2283,
+        "git_blob_sha1": "440f2ee80fea08da889314349ac6304037be95ff",
+        "sha256": "b6c1dd6533d142624cfd3c9ed59fc5eb9df5c20024ad54e9ff73571e1da3c6ba"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/sourcechooser/I_SourceGroupChooser.java",
+        "bytes": 1481,
+        "git_blob_sha1": "a4d25c80cc9bfc2580ab9fe6012e51a86213d2a9",
+        "sha256": "e1c20387877f6ef59c0074cdba0f91aab8b5e0aaed8bb3d762501335d6bb5d99"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+        "bytes": 6243,
+        "git_blob_sha1": "a2284f6343d49ccf25144e7e862575dcef221b10",
+        "sha256": "9b919d7b58a5c2b533131d946d1ac28b4b6f4b356a37d5f2ef0d26346e50c360"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java",
+        "bytes": 14220,
+        "git_blob_sha1": "fa603285f4d1e95fe835099599ec5b90fbb97a54",
+        "sha256": "e2208e05496acbe30abc79998084332c988cb32327d064a55647b97d11085611"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/sourcechooser/RandomSourceGroupChooser.java",
+        "bytes": 1209,
+        "git_blob_sha1": "ba9028e1ba9eedc3466635109b7aaae383af2ebb",
+        "sha256": "43b43041872e454696b6b72875fedf41f75ada04cba8a29cd049e4f13dab2d5d"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/Config.java",
+        "bytes": 23193,
+        "git_blob_sha1": "5c35ce04216bdab5eff972547dc7b61136f62c21",
+        "sha256": "f6cfdbe3dfa14def6f67b9197bdd18c3eb340fb3d7972da04bf315749e23adb7"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/Converter.java",
+        "bytes": 2608,
+        "git_blob_sha1": "a56cb3d579b2fe94f26be59ecc0de7e24a169f8e",
+        "sha256": "28fda083bee68928873b2df349474b45b7511211465646bba5db73f1e5c6f869"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/FileTools.java",
+        "bytes": 2039,
+        "git_blob_sha1": "0cce1975899fec71a4ab464ee84433aa239707f0",
+        "sha256": "57cd83e27b6441e8b33890bf1fa0e48e164435d92d308e7447268c04cbeee2d9"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/GephiNode.java",
+        "bytes": 4279,
+        "git_blob_sha1": "82c4ebfba1687665a23e3099536378ed72abc129",
+        "sha256": "a04e22ce9b3f84bfade9448f718767816e02ebe617e1cd064fc44f21ed04fb8b"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/Levenshtein.java",
+        "bytes": 4285,
+        "git_blob_sha1": "8285880bc19ae8372c001d8dccc5f2c85edcbf95",
+        "sha256": "31de446321bf1fc9283cde3a8f9d03b94f64515f81e78c3583c8d75a63ab0303"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/PropertiesLoader.java",
+        "bytes": 2292,
+        "git_blob_sha1": "05cd9f4d59b829384b0da217427c76db9e649b18",
+        "sha256": "bed2a5f67bb08362909b275bc4a3342d95ae57cc0540dee46262552a2263b6bb"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/StringUtil.java",
+        "bytes": 6041,
+        "git_blob_sha1": "bee095caf78d33962386be77716fc1514e56c460",
+        "sha256": "334a4f3d820b5625841b639eebb9cfb10667884c9594c2bb60dcf8e9cf383a25"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/random/I_RandomNumberGenerator.java",
+        "bytes": 260,
+        "git_blob_sha1": "86b2615a346be3c6c162e9e1ca8c5d1928dfa068",
+        "sha256": "d38a6670a90a850f73abfc63e70c7b96c188209a3b64d5836f88253ecebd0c81"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+        "bytes": 871,
+        "git_blob_sha1": "7c907beff30e8d80a56536631a4e27a0e8bad06e",
+        "sha256": "62c756d5f8490d7ee70d6ac508ca765f6dc023cfb604d40f5632e7eabd8857e9"
+      },
+      {
+        "path": "source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java",
+        "bytes": 509,
+        "git_blob_sha1": "6f8dac75214d99f26386c5a074dbcca20f54ebf8",
+        "sha256": "419c1e639924ed179c980c04c853f6e9f1a7db2e301963c59681c7dd3edc178f"
+      }
+    ]
+  },
+  "build": {
+    "javac_version": "javac 17.0.16",
+    "javap_version": "17.0.16",
+    "compiler_flags": [
+      "--release",
+      "8",
+      "-g",
+      "-proc:none"
+    ],
+    "publisher_build_scripts_executed": false,
+    "annotation_processing_enabled": false,
+    "generator_executed": false,
+    "original_toolchain_recreated": false,
+    "compiler_only_class_count": 47
+  },
+  "comparison": {
+    "original_class_count": 51,
+    "rebuilt_class_count": 47,
+    "shared_class_count": 47,
+    "jar_only_classes": [
+      "de/voynich/text/canfollow/CanFollowHelper.class",
+      "de/voynich/text/canfollow/PercentCanFollow.class",
+      "de/voynich/text/canfollow/vms/CalcNode.class",
+      "de/voynich/text/canfollow/vms/GephiNode.class"
+    ],
+    "rebuilt_only_classes": [],
+    "byte_identical_classes": 0,
+    "normalized_disassembly_equal_classes": 28,
+    "classes": [
+      {
+        "class_path": "de/voynich/text/Constants.class",
+        "original_bytes": 2249,
+        "rebuilt_bytes": 2249,
+        "original_sha256": "20ea6bdb1f77334f4db3f9b6a95e87fdf735e28907a9f88c675b46f390a94fbe",
+        "rebuilt_sha256": "09d9b1bd482de7ffcc663a68db4a0ff0633e17f9e764dcc62a7391124b7af1db",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "8f58edb4ad6511ef2139f92168ca8c525c4f17fc4917c336955dc05bc7150058",
+        "rebuilt_normalized_disassembly_sha256": "8f58edb4ad6511ef2139f92168ca8c525c4f17fc4917c336955dc05bc7150058"
+      },
+      {
+        "class_path": "de/voynich/text/Glyph.class",
+        "original_bytes": 17071,
+        "rebuilt_bytes": 17118,
+        "original_sha256": "9a787e5ca97fc425982c0e8c5b476d19c469a52b22eb58f901fe497f08d97583",
+        "rebuilt_sha256": "4dd066df4ef384c54db98dd852de6dddbb99e7b78452443d3f1cffe32d3f2fc3",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "d7064bf62cf8c6f61031cb4b42c4d5e1d142720d563cacb55a56db704a98f62a",
+        "rebuilt_normalized_disassembly_sha256": "f279119681cf6ccda779dd886a4ff4ecaf5df1aca12d7b0158c9a64752e1cdb5"
+      },
+      {
+        "class_path": "de/voynich/text/GlyphGroup$GENERATE_TYPE.class",
+        "original_bytes": 1383,
+        "rebuilt_bytes": 1442,
+        "original_sha256": "e1832ac1b12cc9ecf506ed6ccd84d16f66a99a93840769b31478b198b624549c",
+        "rebuilt_sha256": "0c7cc30bc35285f4e531d9373c6cacf6001d5d8f672f6342f6c79184f5fc8336",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "e352cef8c4f80a80028046760744b52969175d008f523d0e0ce086e6ba51232b",
+        "rebuilt_normalized_disassembly_sha256": "d9cb1712fe651d5dc828ba7d178b49105f5aeb49daeeb6da8370367a4e98cbc8"
+      },
+      {
+        "class_path": "de/voynich/text/GlyphGroup.class",
+        "original_bytes": 5266,
+        "rebuilt_bytes": 5248,
+        "original_sha256": "1240021fb715a8e4c0f7be68a3653fed375a587bcfdc0fa679f49cf3a2e3fc1e",
+        "rebuilt_sha256": "6d24b1ad1fcfaf59456f5f90e31a8e368430a5e7e9ca82b6bf16b451d1a849ae",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "7d01ec7ce4bff697db67157db862077a97d16cdb9b266e68c516cf946dc5aa89",
+        "rebuilt_normalized_disassembly_sha256": "7d01ec7ce4bff697db67157db862077a97d16cdb9b266e68c516cf946dc5aa89"
+      },
+      {
+        "class_path": "de/voynich/text/SelfCitationTextGenerator$CURRIER.class",
+        "original_bytes": 1203,
+        "rebuilt_bytes": 1262,
+        "original_sha256": "a87b95f54da2c226dd29b513ae031526aea04ad06ae1dde425bd2450da1a4017",
+        "rebuilt_sha256": "15f8b8bad261f010e98e3e94a731b29cf03b31942c17379f511d615e86d9e884",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "7778052d126cf1e31de5dfd6dd0cddb42edfcb6b8eeed019197395deba6438e2",
+        "rebuilt_normalized_disassembly_sha256": "48a5179896584bf3a8290337fac1ac694aa7d25e1bf226d473180c51187b6bab"
+      },
+      {
+        "class_path": "de/voynich/text/SelfCitationTextGenerator.class",
+        "original_bytes": 9443,
+        "rebuilt_bytes": 9428,
+        "original_sha256": "febec48aa67226c8c735b9a40d9fdf21b99a91813e92dc245d33c796dbb73d58",
+        "rebuilt_sha256": "c83c1ff8ec466e7d210d8fbbb1af4b261a3af577ada498bbce69f68c7ac0aaf6",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "c77e47f3923c8da45e2c524b8757cfab5bc63132d90093b1d151a9514d747d13",
+        "rebuilt_normalized_disassembly_sha256": "c77e47f3923c8da45e2c524b8757cfab5bc63132d90093b1d151a9514d747d13"
+      },
+      {
+        "class_path": "de/voynich/text/StatisticHelper$1.class",
+        "original_bytes": 1289,
+        "rebuilt_bytes": 1286,
+        "original_sha256": "ee90f6f53bcf8ebaa55623827cc47a109e9c64b7fdf04c4ec1e505ff115e5a48",
+        "rebuilt_sha256": "84d2f50b889d2ed891dc45cc6c1d392ce2f1947db5fa0fa773b5bcb07575eabb",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "d12c50e3914c80d6caa487cde3159a4e824ebf72a18ffa3f6f6652972099eb15",
+        "rebuilt_normalized_disassembly_sha256": "d12c50e3914c80d6caa487cde3159a4e824ebf72a18ffa3f6f6652972099eb15"
+      },
+      {
+        "class_path": "de/voynich/text/StatisticHelper$SUGGEST_METHOD.class",
+        "original_bytes": 1285,
+        "rebuilt_bytes": 1344,
+        "original_sha256": "e1771dd867d8061c7d92d34745b91e5423c2d936a60592587000a2a7caae13e6",
+        "rebuilt_sha256": "af58afa120487ef1a869f64fa0a457a26d09e133b54ccd3df2b60d32a2babb97",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "1c4cd529e76ffb06c66b7ddd1f2719e1ad53c6bad3ea3d7c2212fae275712e4b",
+        "rebuilt_normalized_disassembly_sha256": "eec529928546178ee5fe9d570301f072f36cfa9ad19e02fa0bbca11c3d1fff06"
+      },
+      {
+        "class_path": "de/voynich/text/StatisticHelper.class",
+        "original_bytes": 11829,
+        "rebuilt_bytes": 11829,
+        "original_sha256": "2150a886b3005b5f676c12062b689382d780678cd8c83b56350f3f8d05b0f3ee",
+        "rebuilt_sha256": "3c47b85fca5c02e41967ac24458e96582a761e5ddb858945ae7dae0b9e01e23f",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "10e2baff1575290107ad7ada8b657809d028c559d2889deb82b04189d6695061",
+        "rebuilt_normalized_disassembly_sha256": "33aef85456c8ab83cfec920341450c2ebd34bd95e644d21a0e115d7eb5925894"
+      },
+      {
+        "class_path": "de/voynich/text/Substitution.class",
+        "original_bytes": 1375,
+        "rebuilt_bytes": 1369,
+        "original_sha256": "85190632c7fd50925b222d2e62e66ad8336b029c012e8be78a3cc708df7ebff1",
+        "rebuilt_sha256": "5b9dfb3143b375f68555d65086fdca42b334ce9ea905887b20320617335541d3",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "23904ffb1c062523ea06c64a0a18e96941d88a36c01a2fc351a313f671c127db",
+        "rebuilt_normalized_disassembly_sha256": "23904ffb1c062523ea06c64a0a18e96941d88a36c01a2fc351a313f671c127db"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/CurveLineCanFollow$1.class",
+        "original_bytes": 1035,
+        "rebuilt_bytes": 1032,
+        "original_sha256": "96509f9d0ab2e447b8233a33b5e3be4a30100323106f71d80c07808a5f97b481",
+        "rebuilt_sha256": "0e0c9d67219e073e31972aff9de4ef3b7eadd1d4659725a7b69a3f471916330e",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "b76f28563cf91f23f1335b18625752c371c731e65d6f2769fb991a7234348dae",
+        "rebuilt_normalized_disassembly_sha256": "b76f28563cf91f23f1335b18625752c371c731e65d6f2769fb991a7234348dae"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/CurveLineCanFollow$Type.class",
+        "original_bytes": 1407,
+        "rebuilt_bytes": 1466,
+        "original_sha256": "43564f9f43e69575f8c600f9860722d9436e21b2e071d6344fa7ee8545659aca",
+        "rebuilt_sha256": "f14383020425bd94d09b35b4738dcff457a064d02109163bed39dd26baa4612e",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "0f420d9e1cf68254bad1525ef592b706cfea7e34c4015f7a4e03548807ce2b41",
+        "rebuilt_normalized_disassembly_sha256": "fdb3d87106d19ed9809e702d1a015be8373dafbf8eabac77ec085b9f27a3a3da"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/CurveLineCanFollow.class",
+        "original_bytes": 9298,
+        "rebuilt_bytes": 9311,
+        "original_sha256": "cfa1a3ae39e49ac542d097f71b99d3e34eece04f3b7e1787caeb5ebf93b7a7cf",
+        "rebuilt_sha256": "f6657dbbafe19351fd6814e2c6b86e563492c12debc821224041b5c170cd9fdc",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "422618cac809fa4a3f60dbceb9205fca7d9412b1a3af3037a2879c2d5907fa0a",
+        "rebuilt_normalized_disassembly_sha256": "b385ed3b524c9633eee82a811c704806c2fee9e78cd70f21f43d517ddce8a076"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/DummyCanFollow.class",
+        "original_bytes": 1400,
+        "rebuilt_bytes": 1400,
+        "original_sha256": "06991a3c9bd234f00db593f1ccc996bc00bde12c4af4e6b30fc65d5c94247e7e",
+        "rebuilt_sha256": "f21de6f1221d728f8922912d0ea1f6f3abfc68d76ab2ae670174184a88dae9e7",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "a6a9e9b0e1d18574b5210d536b565076efe0a87b468899fc02a2f824d464cbae",
+        "rebuilt_normalized_disassembly_sha256": "a6a9e9b0e1d18574b5210d536b565076efe0a87b468899fc02a2f824d464cbae"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/I_CanFollow.class",
+        "original_bytes": 382,
+        "rebuilt_bytes": 382,
+        "original_sha256": "c248b648f241699ea3640b6ebfcda76f65b6b3616f497c2e4045448f7ed78ea6",
+        "rebuilt_sha256": "95fc139b2d9e7dfd1a2082c24e317d5233ff9457399329f0d83cdd3db4611d17",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "a73ad6f69983c834c0a20d166285d1598ac96910e7258c4d2882ebc38708436c",
+        "rebuilt_normalized_disassembly_sha256": "a73ad6f69983c834c0a20d166285d1598ac96910e7258c4d2882ebc38708436c"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/StatisticCanFollow.class",
+        "original_bytes": 3232,
+        "rebuilt_bytes": 3214,
+        "original_sha256": "dc7bf569536e8ed295de5d5e8c8f842cfbc701b256f1959751153042b5e362f6",
+        "rebuilt_sha256": "d28eaa449a139b503e1ed7ae8e2ee19b3e2c031173e09f6b97ab748bc4d15958",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "f1e8aa14c7eea1429f1a283b74e72687b29a6368cae774ab6f79239c1163490b",
+        "rebuilt_normalized_disassembly_sha256": "f1e8aa14c7eea1429f1a283b74e72687b29a6368cae774ab6f79239c1163490b"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/VoynichCanFollow.class",
+        "original_bytes": 2830,
+        "rebuilt_bytes": 2824,
+        "original_sha256": "c5a10e0694974e313af1d06e1bb6e5638c88426559c207c3851d2483f898e756",
+        "rebuilt_sha256": "90d34e47dcca618e95d60f8e0dc788d12a0868f63520408215e3d37cbfbf7075",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "df483babf5c740a55d6669c6534aa21ab34244ea09256035cf7f4ba7578c8cee",
+        "rebuilt_normalized_disassembly_sha256": "df483babf5c740a55d6669c6534aa21ab34244ea09256035cf7f4ba7578c8cee"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/vms/CalcGephiElements.class",
+        "original_bytes": 2522,
+        "rebuilt_bytes": 2519,
+        "original_sha256": "205fd4e36a22d944daa0cf4fd383a3cabcbdb0abbd9a5bfaf4882111cd8c26f3",
+        "rebuilt_sha256": "2bcb5da86d2a68e36e8b28eb9574f6ef68cd8392cec369b748046e6ec1b2de20",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "8cd64b381a20292cbca070e89b5e4923146546203716154a29f22f33d4b3167d",
+        "rebuilt_normalized_disassembly_sha256": "8cd64b381a20292cbca070e89b5e4923146546203716154a29f22f33d4b3167d"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/vms/FollowMatrix.class",
+        "original_bytes": 5160,
+        "rebuilt_bytes": 5139,
+        "original_sha256": "7e19d8bd6bcab0ab34d0b6a16fbe717e280bf173628ab572cd8f4c5124475c25",
+        "rebuilt_sha256": "665498bca54f79d0dae692f7072a6e11ac514c2f236f492beaf8b9cc0b33c0df",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "f7e081ce99cef568f18a94ba5dc14d6e070b067a2257d288b412aeaaee6fc92b",
+        "rebuilt_normalized_disassembly_sha256": "f7e081ce99cef568f18a94ba5dc14d6e070b067a2257d288b412aeaaee6fc92b"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/vms/VoynichGroups.class",
+        "original_bytes": 102960,
+        "rebuilt_bytes": 103199,
+        "original_sha256": "dd8136f1cdff907b5c08decad53335e6451581c676aea01e9c9792ce37133e11",
+        "rebuilt_sha256": "063f409802531c26bb45b07812cf9612045f78ad8210f1d4eb1b8008cc290269",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "4b1eff01388694baf392e6a1fad27d7fb4cf9e29f9170e1488846698bf5dd8d5",
+        "rebuilt_normalized_disassembly_sha256": "3f1c977ed9f33d2daf1b199c779e7de80cbe96a94ea11274febfd02fb29ab13b"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/vms/VoynichGroupsThree.class",
+        "original_bytes": 101439,
+        "rebuilt_bytes": 101615,
+        "original_sha256": "24b586dd6e91a01f776fa96c8e6c19e0e9e20c47644e4ea9ce560a18b8b5d3ea",
+        "rebuilt_sha256": "2a418e66227b40a4623795ec5836cab2cd6d4f0a84b71125b3f0087b3c12231a",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "07e638dee8fb636ae0fd784dfa1b3f73ea94c15d895fe7f33f370bb3a2739769",
+        "rebuilt_normalized_disassembly_sha256": "c28b65ff3b5930bd6c03aaad1fa3c484da9389fea50aca21307b9153e753d3f0"
+      },
+      {
+        "class_path": "de/voynich/text/canfollow/vms/VoynichGroupsTwo.class",
+        "original_bytes": 59320,
+        "rebuilt_bytes": 59476,
+        "original_sha256": "bfbac40b60ff70d63babf03ef5f526f55157db2c3d8b85385a5b78bb9b9a5f74",
+        "rebuilt_sha256": "09f3f7eab32b3dfcbc4045b350fd72b1f44c04afecf53310e9d10858d8065822",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "52bc70505195b09673d7ecdb2a0aaeb4950ced983113b55e91e09abb72b91dfb",
+        "rebuilt_normalized_disassembly_sha256": "6209c0c324c1a5cfb10480cca46e9eff86fc45cf0dd4ca308d1fb8bfae0edeaf"
+      },
+      {
+        "class_path": "de/voynich/text/morph/AbstractBaseGroupMorpher.class",
+        "original_bytes": 14949,
+        "rebuilt_bytes": 14939,
+        "original_sha256": "b38e116f5232dde635842d05df82208aab7489f35910d1b697dd43b79a0e3576",
+        "rebuilt_sha256": "58b18536b2ec738df1b0e12a54fbe9094237af0b5a0a4d021d04c5d5bc6cfa69",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "923e2a903f2b2b2d95c9312f1614cbf407a6a8b194dc3c86442fb79635b25d73",
+        "rebuilt_normalized_disassembly_sha256": "3efa5edd1e174b1006b54f95d0b04aba6ee72cda45da7d3d0acee675c648738d"
+      },
+      {
+        "class_path": "de/voynich/text/morph/I_GroupMorpher$MorphMethod.class",
+        "original_bytes": 1256,
+        "rebuilt_bytes": 1315,
+        "original_sha256": "f17ac49f15d775ff55e9b9b9cd5d917ced58ccd5099df049e0be9d8d477246e2",
+        "rebuilt_sha256": "f10a240ca7cc794f2ad7e7724925979003cb5f92378f8588757646c685919fa8",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "93da56fcc433cf34ed363d7f78c45a4e205e316064ab019104409e7d1467b9bb",
+        "rebuilt_normalized_disassembly_sha256": "30791f7c7eefc7a677a00a3b424e1a79d97cd2b0a794ed9127a3cbdf0ca1a09e"
+      },
+      {
+        "class_path": "de/voynich/text/morph/I_GroupMorpher.class",
+        "original_bytes": 720,
+        "rebuilt_bytes": 720,
+        "original_sha256": "2134d974fe44be0a1de46bb43d8a451b99f8bf1b74bd08155574465605462ea4",
+        "rebuilt_sha256": "d88b993d590c3d7c770bacb40708ee76069e8881699fd81d11d24605825377b9",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "7be9924bbccd720c91bf07180bd246527047730c6d82f8112d7d8817dfc34c0f",
+        "rebuilt_normalized_disassembly_sha256": "7be9924bbccd720c91bf07180bd246527047730c6d82f8112d7d8817dfc34c0f"
+      },
+      {
+        "class_path": "de/voynich/text/morph/MorphTester.class",
+        "original_bytes": 7505,
+        "rebuilt_bytes": 7505,
+        "original_sha256": "a91d6ff39b99be0427e1b112c9f3ccf969482ceb0308d5beb66ec303778a31e9",
+        "rebuilt_sha256": "70894d7906bec73960f2c1902869d73f9a1ff6f8634f832e94b1c45380d4e4ae",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "c6946e108764646009b886a8969b80a711dc1a86688e4c19dc519a280dc4235a",
+        "rebuilt_normalized_disassembly_sha256": "c6946e108764646009b886a8969b80a711dc1a86688e4c19dc519a280dc4235a"
+      },
+      {
+        "class_path": "de/voynich/text/morph/SlimGroupMorpher$1.class",
+        "original_bytes": 928,
+        "rebuilt_bytes": 925,
+        "original_sha256": "1261a8838957bc22af554a279564e47fe3f884330af2c6ba87fe4f83e0a7204d",
+        "rebuilt_sha256": "0e4c0076f5e95ec24fa74ef348585b0b9892affbe9c8e5e203d1c047c35dcf8e",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "535ba6019f7fb60ca00b5c2c7f1c7b26e3e2bc07afa4c949329c8fb43e9299f1",
+        "rebuilt_normalized_disassembly_sha256": "535ba6019f7fb60ca00b5c2c7f1c7b26e3e2bc07afa4c949329c8fb43e9299f1"
+      },
+      {
+        "class_path": "de/voynich/text/morph/SlimGroupMorpher.class",
+        "original_bytes": 16670,
+        "rebuilt_bytes": 16677,
+        "original_sha256": "700e7bbbb983e513e19ac9864df671539cc2e526ff733e0d2242ea426353d20e",
+        "rebuilt_sha256": "7a1af6f2af21f8ead72bc5fe4b0a8e2681b192adf219fe587d9776666dd03f02",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "4b2f06822759a515993f4828c25b1d950ee9567a1ccaf1e2b792339f75f02426",
+        "rebuilt_normalized_disassembly_sha256": "c8eb5a9e85ed583d6c76f049ce93552938eb60bcf70022111244b51820902bec"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/ChooserHelper.class",
+        "original_bytes": 3114,
+        "rebuilt_bytes": 3120,
+        "original_sha256": "718a78c8a6d61342f10e63a7fac91128587302edbe3ceed51b60514bec39150f",
+        "rebuilt_sha256": "2c6897d58d8a67d7c178172b8f54b1287a76d5356c3356263164754e62cc7085",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "cec80c6d61542382b8bbb9f276512a38b8d8bbe7ec9fca2f01c016cbbce47209",
+        "rebuilt_normalized_disassembly_sha256": "3c9a7faaf9476f31b51d18d1ae48afce4a54b51409527f3347362d8d3cff4b43"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/I_SourceGroupChooser$ChooseMode.class",
+        "original_bytes": 1405,
+        "rebuilt_bytes": 1464,
+        "original_sha256": "3b42f2fb7c10364016f9251d228acec8e99ca46a34b90b1c70fab797e8ff823d",
+        "rebuilt_sha256": "93a0dd297ffbb6683e69f2e18ec7069c26b2a875d951666a4ccea6e429266ea0",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "38b0274c5f25717bb4f72ce8b5351d8f2eed6926120d439525460bedec1c89e9",
+        "rebuilt_normalized_disassembly_sha256": "801dea1c51f552ff66a7422669f937760d0285b0aa9d91d03df322ee8e379307"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/I_SourceGroupChooser.class",
+        "original_bytes": 770,
+        "rebuilt_bytes": 770,
+        "original_sha256": "3ba5843efb91c310f3849da7596f06fa0a1fef6ca74f1409ea5df8d8cbb4e3d9",
+        "rebuilt_sha256": "bc2c115d1e6616600a5c20a3e8a391453fe33110e34ed776a77f9b42476a54d0",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "fc6053e61b16f56d53eac4aa49d1f16807b0d09ad76bfc28aad845635bf2f071",
+        "rebuilt_normalized_disassembly_sha256": "fc6053e61b16f56d53eac4aa49d1f16807b0d09ad76bfc28aad845635bf2f071"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/PageSourceGroupChooser$1.class",
+        "original_bytes": 1077,
+        "rebuilt_bytes": 1074,
+        "original_sha256": "d1b2818fc37fe387c1a6a3e00eecf5cc471edf31181396a28a43cc09569890ee",
+        "rebuilt_sha256": "334787bed548cec789a722f31304087a851c24f16a68e8b2e9b8da929b9b415d",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "43ba3e8c9a84e2728c5fde691edfc175aed856109cbf2ad4d19025cf804aa564",
+        "rebuilt_normalized_disassembly_sha256": "43ba3e8c9a84e2728c5fde691edfc175aed856109cbf2ad4d19025cf804aa564"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/PageSourceGroupChooser.class",
+        "original_bytes": 6202,
+        "rebuilt_bytes": 6252,
+        "original_sha256": "55cf8a2704cdf43e65c3b12039bc7a050ef5c9b535055b9dfff9fd80278cace9",
+        "rebuilt_sha256": "c451827f67c29f8aa35a5236e32cd73c371603bcb4c638c4eb69016cce08cf08",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "8efdb2a4c70d240df22a9d67567ae61093a8c40667513d451a3a78e1b7c7ef84",
+        "rebuilt_normalized_disassembly_sha256": "dd38da80014941abcd8c137f1f04db883812189f6dc42ff1769c99f87d411f59"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/PositionSourceGroupChooser$1.class",
+        "original_bytes": 1038,
+        "rebuilt_bytes": 1035,
+        "original_sha256": "2d95322fdb2c7e070d625d33f947e8a91d1164ebd9795509dab223757b661a51",
+        "rebuilt_sha256": "2b3d310f4cb0e96b37cb51c6c64048bcaba5e253a200f14d2e1d4a69f8dbe4b8",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "5107b0f80f73958093f3e6663dc158783db1c9f24ca22aad41eca2ee0dab88c1",
+        "rebuilt_normalized_disassembly_sha256": "5107b0f80f73958093f3e6663dc158783db1c9f24ca22aad41eca2ee0dab88c1"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/PositionSourceGroupChooser.class",
+        "original_bytes": 6046,
+        "rebuilt_bytes": 6158,
+        "original_sha256": "4c21209e4f9b9aeca0a098077cdee3e97f7f6c3425d93eff64a7add0b2e87315",
+        "rebuilt_sha256": "c12b361d18ccfb27e970f861363dd501c6992d2f876f695fc1c276278e67882e",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "7579c48d0879ff3c8184465035c93c988d03e48f724b17ec7bd890664508fb1b",
+        "rebuilt_normalized_disassembly_sha256": "7bf8d63efa8e28cc9724f6f688415631d4a47fde6b05a7da4b14de7f1078e254"
+      },
+      {
+        "class_path": "de/voynich/text/sourcechooser/RandomSourceGroupChooser.class",
+        "original_bytes": 1877,
+        "rebuilt_bytes": 1877,
+        "original_sha256": "a80c48f10650e89f9de01e8d2443023e3199a190868b4acdc153042f58a901bf",
+        "rebuilt_sha256": "7b1cb9e8cc45720392e701c6911ef687a7a8039ce1b5ad06fedbd6765e8703dd",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "2dcf88b0969a77669511ad7c9b88686c5ac6fe7d0ca16f0fe0382c5f605fc38b",
+        "rebuilt_normalized_disassembly_sha256": "2dcf88b0969a77669511ad7c9b88686c5ac6fe7d0ca16f0fe0382c5f605fc38b"
+      },
+      {
+        "class_path": "de/voynich/text/util/Config$1.class",
+        "original_bytes": 930,
+        "rebuilt_bytes": 927,
+        "original_sha256": "3915e624b1ae35d40a6d2e6e4be7e4b530c6c1e1c86c3435278973d871aee737",
+        "rebuilt_sha256": "8d5c977ad1b0b4b40c270365d88148635ff8f0e40c1241e647d098cc42471373",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "e46ea05baf616a1cdb54c03c48031bad4fa84398704b26ac3b5bd8a06ce10086",
+        "rebuilt_normalized_disassembly_sha256": "e46ea05baf616a1cdb54c03c48031bad4fa84398704b26ac3b5bd8a06ce10086"
+      },
+      {
+        "class_path": "de/voynich/text/util/Config.class",
+        "original_bytes": 18087,
+        "rebuilt_bytes": 18177,
+        "original_sha256": "727b98090a97a7e78d435b2a29e33f7fe022f1c328123ffcc5125948f19e6239",
+        "rebuilt_sha256": "ea670588803490970a7fb030c65652342a37f327c7ea26eddfc156b024a2f2c2",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "81883ddfdcc9777153ee22c3b8bf794e12810ba0b6c8b426aa3f11a69957c2de",
+        "rebuilt_normalized_disassembly_sha256": "2e67738a40034326130f7e0ff65439a962a411f00469a9d41e6188334edf701b"
+      },
+      {
+        "class_path": "de/voynich/text/util/Converter.class",
+        "original_bytes": 3266,
+        "rebuilt_bytes": 3254,
+        "original_sha256": "9a0be640957f3ca9b3f645b417be8dde45a63b266f0d1c9fef2b51bb08ab3ff3",
+        "rebuilt_sha256": "060fc8f01cb47188394232588afc2e02ff76ebea66062d9e12b90351bb52a6e3",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "bbd575fa722134301a67ebaee2870700240d38416ff8f900800ba72d226f773f",
+        "rebuilt_normalized_disassembly_sha256": "bbd575fa722134301a67ebaee2870700240d38416ff8f900800ba72d226f773f"
+      },
+      {
+        "class_path": "de/voynich/text/util/FileTools.class",
+        "original_bytes": 2701,
+        "rebuilt_bytes": 2692,
+        "original_sha256": "2147e11026dff37117669ff68202f8b4e845a0a2daa51a91900425faad85b34c",
+        "rebuilt_sha256": "9e14c4eb06edb1ac0cf4e199a6816131f145e92e191657745a46b1b55110efc7",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "2c9ca038213d7777c3a6c1854204efbcc17ae88d85d857c9c91485cf4616e6ab",
+        "rebuilt_normalized_disassembly_sha256": "2c9ca038213d7777c3a6c1854204efbcc17ae88d85d857c9c91485cf4616e6ab"
+      },
+      {
+        "class_path": "de/voynich/text/util/GephiNode.class",
+        "original_bytes": 5614,
+        "rebuilt_bytes": 5596,
+        "original_sha256": "a8a20f11cebea283da478e762bb976200b4e2f6b0ac95521f19b1c9e7d6a1ce9",
+        "rebuilt_sha256": "cd069de8e8a8eb90ee5e2d06eee60294733ff2843726bed96c95c1a24a54bc9d",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "66944be9d34108f6762a317e690212870d0898bfb6195d36988481175a3a3b07",
+        "rebuilt_normalized_disassembly_sha256": "66944be9d34108f6762a317e690212870d0898bfb6195d36988481175a3a3b07"
+      },
+      {
+        "class_path": "de/voynich/text/util/Levenshtein.class",
+        "original_bytes": 3492,
+        "rebuilt_bytes": 3486,
+        "original_sha256": "d56b159ebda3d68ae13112c13fa275df1cffd71a43cf6d17cb8ddb10c7be9071",
+        "rebuilt_sha256": "05ca73f5641bacbd8554ee188d219419e06c55c27166aa5dfb5d4e1d3c846af1",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "10cca95602ab5d8241be6bdfcb8c50351b240ed3696912ce3c53413de57d8f67",
+        "rebuilt_normalized_disassembly_sha256": "10cca95602ab5d8241be6bdfcb8c50351b240ed3696912ce3c53413de57d8f67"
+      },
+      {
+        "class_path": "de/voynich/text/util/PropertiesLoader.class",
+        "original_bytes": 2657,
+        "rebuilt_bytes": 2648,
+        "original_sha256": "36e61e8a76d2ae00c6b9bd117df4d77256e72d426aa3779026128fd58dc9def4",
+        "rebuilt_sha256": "d9adf81d962fa5a5d199e9791efeb509d92557835948b6f204966b38a8b2c5d9",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "ca6238c5afc358baac31b9a6e4c8a75436e0cf4e0cd33d90958f7e654c7d277d",
+        "rebuilt_normalized_disassembly_sha256": "ca6238c5afc358baac31b9a6e4c8a75436e0cf4e0cd33d90958f7e654c7d277d"
+      },
+      {
+        "class_path": "de/voynich/text/util/StringUtil.class",
+        "original_bytes": 4439,
+        "rebuilt_bytes": 4421,
+        "original_sha256": "b0092215998788ad1ef1c0f8bf426c15a8406d71485afcd261936d677a707f20",
+        "rebuilt_sha256": "06645e094c55b10fd82d8c536f61b55f364624a9fb2fb69badc98b21e46c8486",
+        "byte_identical": false,
+        "normalized_disassembly_equal": false,
+        "original_normalized_disassembly_sha256": "590c01ea27022107c99fbcc0c16bd7be3847ad788d1d63ff5b34ee126f3130d8",
+        "rebuilt_normalized_disassembly_sha256": "d6be5c9f73be498a309faab58910f0e84db243c1922f93f81e016507fcb40767"
+      },
+      {
+        "class_path": "de/voynich/text/util/random/I_RandomNumberGenerator.class",
+        "original_bytes": 177,
+        "rebuilt_bytes": 177,
+        "original_sha256": "f750373e38bf75b7a06f1196cf269a3331f9833059f8228ae2ed765ce89bdfb6",
+        "rebuilt_sha256": "af5130e1a3b854c6dff8c264a86efa43a2d60cf92bb0e631b2ec019152593893",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "46aaac0512e0134d94aeb67f4d205fffc552ba56ee6a96dbadea463c7125e646",
+        "rebuilt_normalized_disassembly_sha256": "46aaac0512e0134d94aeb67f4d205fffc552ba56ee6a96dbadea463c7125e646"
+      },
+      {
+        "class_path": "de/voynich/text/util/random/PseudoRandomNumberGenerator.class",
+        "original_bytes": 812,
+        "rebuilt_bytes": 812,
+        "original_sha256": "fad376c3f0efcfbb0a5dbb1e2311952d4bcd00e69495a261da52e822e9c1b276",
+        "rebuilt_sha256": "2fb592a817a27ecaec40f9c39479c3f9d1cfa992c11d9d857c90fe5d3f54b9f1",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "043aa120c3d83242a1202ef570adb810ac4ddad0265b2167028755d5f340b290",
+        "rebuilt_normalized_disassembly_sha256": "043aa120c3d83242a1202ef570adb810ac4ddad0265b2167028755d5f340b290"
+      },
+      {
+        "class_path": "de/voynich/text/util/random/RealRandomNumberGenerator.class",
+        "original_bytes": 683,
+        "rebuilt_bytes": 683,
+        "original_sha256": "fd65cbc03718a87ecfcc84fc63412b92ce2b4fb098c228bbf7126f794c8e1c04",
+        "rebuilt_sha256": "414d30525e6b59410bc57f36db18c6e58b550909163eb1ef642c94af4cdf75e8",
+        "byte_identical": false,
+        "normalized_disassembly_equal": true,
+        "original_normalized_disassembly_sha256": "ff33d8c2d4d55727883413a197e3ac3f4bcd70071aa955cab2c3e46c8f771d74",
+        "rebuilt_normalized_disassembly_sha256": "ff33d8c2d4d55727883413a197e3ac3f4bcd70071aa955cab2c3e46c8f771d74"
+      }
+    ]
+  },
+  "comparison_method": {
+    "javap_options": [
+      "-p",
+      "-c",
+      "-constants"
+    ],
+    "normalization_version": 1,
+    "normalization_scope": "Indexed instruction constant-pool reference number and pre-comment spacing only. Preserve resolved comments/literals, offsets, opcodes, other operands, branch targets, member order and synthetic members.",
+    "exact_normalizer": "def normalize(text):\n    result = []\n    for line in text.splitlines(keepends=True):\n        code, marker, comment = line.partition('//')\n        if marker and re.match(r'^\\s*\\d+:\\s+\\w+\\s+#\\d+(?:,\\s*\\d+)?\\s*$', code):\n            code = re.sub(r'#\\d+', '#REF', code, count=1)\n            result.append(' '.join(code.split()) + ' //' + comment)\n        else:\n            result.append(line)\n    return ''.join(result)\n",
+    "interpretation": "Equality/difference under this textual representation only; not a semantic-equivalence proof or demonstrated behavior change",
+    "uncompared_metadata": "Complete class-file attributes and bootstrap metadata are outside the javap -p -c -constants comparison"
+  },
+  "limits": [
+    "Exact whole-JAR/source-build identity is not established",
+    "JAR-only classes may be unused or retained from another build stage",
+    "Differences can reflect compiler/debug/code-generation choices; causes are not exhaustively classified",
+    "No runtime repeatability, generated-output or paper-sample identity check",
+    "Zenodo ZIP, external manifest dependency and original build environment remain unverified",
+    "No manuscript mechanism, glyph reading, decipherment or translation evaluated"
+  ],
+  "reuse": "Only public artifact identities, selected metadata and original analysis are committed; no JAR, classes, source payloads, configuration payloads or disassemblies"
+}
