@@ -103,8 +103,8 @@ reconstruction against native Git, exercise directory sorting, reject omitted,
 duplicate, changed and truncated entries, reject incomplete chains and strict
 JSON failures, and confirm that source inventory does not execute source code.
 The local report replays completely; a separate native Git reconstruction
-also verifies all twelve captured tree identities and both program blob
-identities. Raw API payloads and author code remain local. Published fields
+also verifies all twelve captured root/directory tree occurrences (ten distinct
+tree objects) and both program blob identities. Raw API payloads and author code remain local. Published fields
 contain original analysis and public identity metadata, with no contact fields.
 
 ## Remaining recovery gap
