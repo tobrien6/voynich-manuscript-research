@@ -1,0 +1,313 @@
+{
+  "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+  "retrieved_at_utc": "2026-10-12T02:00:00Z",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "method": "Parse explicit number+r/v references in canvas labels; count distinct references, never infer physical leaves from images.",
+  "canvas_count": 213,
+  "numbered_canvas_count": 204,
+  "unnumbered_canvas_count": 9,
+  "distinct_folio_number_count": 102,
+  "distinct_folio_side_reference_count": 204,
+  "lowest_folio_number": 1,
+  "highest_folio_number": 116,
+  "numbers_without_label_references_within_observed_range": [
+    12,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    74,
+    91,
+    92,
+    97,
+    98,
+    109,
+    110
+  ],
+  "partial_canvas_count": 15,
+  "combined_canvas_count": 9,
+  "partial_canvases": [
+    {
+      "canvas_index": 126,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006200",
+      "label": "70v (part)",
+      "folio_references": [
+        "70v"
+      ]
+    },
+    {
+      "canvas_index": 127,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006201",
+      "label": "70v (part)",
+      "folio_references": [
+        "70v"
+      ]
+    },
+    {
+      "canvas_index": 130,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006204",
+      "label": "72v (part)",
+      "folio_references": [
+        "72v"
+      ]
+    },
+    {
+      "canvas_index": 131,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006205",
+      "label": "72v (part)",
+      "folio_references": [
+        "72v"
+      ]
+    },
+    {
+      "canvas_index": 154,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228",
+      "label": "85r (part) (part of 85-86 foldout)",
+      "folio_references": [
+        "85r"
+      ]
+    },
+    {
+      "canvas_index": 155,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+      "label": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "folio_references": [
+        "85r",
+        "86v"
+      ]
+    },
+    {
+      "canvas_index": 156,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230",
+      "label": "86v (part) (part of 85-86 foldout)",
+      "folio_references": [
+        "86v"
+      ]
+    },
+    {
+      "canvas_index": 162,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006234",
+      "label": "89v (part)",
+      "folio_references": [
+        "89v"
+      ]
+    },
+    {
+      "canvas_index": 163,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+      "label": "89v (part) and 90r",
+      "folio_references": [
+        "89v",
+        "90r"
+      ]
+    },
+    {
+      "canvas_index": 165,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006237",
+      "label": "90v (part)",
+      "folio_references": [
+        "90v"
+      ]
+    },
+    {
+      "canvas_index": 170,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006242",
+      "label": "95v (part)",
+      "folio_references": [
+        "95v"
+      ]
+    },
+    {
+      "canvas_index": 178,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006250",
+      "label": "101v (part)",
+      "folio_references": [
+        "101v"
+      ]
+    },
+    {
+      "canvas_index": 179,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+      "label": "101v (part) and 102r",
+      "folio_references": [
+        "101v",
+        "102r"
+      ]
+    },
+    {
+      "canvas_index": 180,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006252",
+      "label": "102v (part)",
+      "folio_references": [
+        "102v"
+      ]
+    },
+    {
+      "canvas_index": 181,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006253",
+      "label": "102v (part)",
+      "folio_references": [
+        "102v"
+      ]
+    }
+  ],
+  "combined_canvases": [
+    {
+      "canvas_index": 125,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006199",
+      "label": "69v and 70r",
+      "folio_references": [
+        "69v",
+        "70r"
+      ]
+    },
+    {
+      "canvas_index": 129,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006203",
+      "label": "71v and 72r",
+      "folio_references": [
+        "71v",
+        "72r"
+      ]
+    },
+    {
+      "canvas_index": 155,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+      "label": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "folio_references": [
+        "85r",
+        "86v"
+      ]
+    },
+    {
+      "canvas_index": 157,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+      "label": "85v and 86r (foldout)",
+      "folio_references": [
+        "85v",
+        "86r"
+      ]
+    },
+    {
+      "canvas_index": 161,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006233",
+      "label": "88v and 89r",
+      "folio_references": [
+        "88v",
+        "89r"
+      ]
+    },
+    {
+      "canvas_index": 163,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+      "label": "89v (part) and 90r",
+      "folio_references": [
+        "89v",
+        "90r"
+      ]
+    },
+    {
+      "canvas_index": 169,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006241",
+      "label": "94v and 95r",
+      "folio_references": [
+        "94v",
+        "95r"
+      ]
+    },
+    {
+      "canvas_index": 177,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249",
+      "label": "100v and 101r",
+      "folio_references": [
+        "100v",
+        "101r"
+      ]
+    },
+    {
+      "canvas_index": 179,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+      "label": "101v (part) and 102r",
+      "folio_references": [
+        "101v",
+        "102r"
+      ]
+    }
+  ],
+  "terminal_numbered_canvases": [
+    {
+      "canvas_index": 204,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+      "label": "116r",
+      "folio_references": [
+        "116r"
+      ]
+    },
+    {
+      "canvas_index": 205,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+      "label": "116v",
+      "folio_references": [
+        "116v"
+      ]
+    }
+  ],
+  "unnumbered_canvases": [
+    {
+      "canvas_index": 0,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006074",
+      "label": "[Front cover]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 1,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006075",
+      "label": "[Inside front cover]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 206,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037113",
+      "label": "[Back flyleaf recto]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 207,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006278",
+      "label": "[Back flyleaf verso-inside back cover]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 208,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868207",
+      "label": "[Head]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 209,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868208",
+      "label": "[Tail]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 210,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868209",
+      "label": "[Fore-edge]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 211,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868210",
+      "label": "[Spine]",
+      "folio_references": []
+    },
+    {
+      "canvas_index": 212,
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006279",
+      "label": "[Back cover]",
+      "folio_references": []
+    }
+  ]
+}
