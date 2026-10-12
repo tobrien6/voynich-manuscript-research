@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "source_id_namespace": "DT identifiers apply only to this printed-testimony follow-up; DP/DPF identifiers retain the earlier audit namespace.",
+  "inspected_on": "2026-10-12",
+  "selection_basis": {
+    "path": "dee-evidence.json",
+    "sha256": "0804837f6482954a832d9631aeb15dfce24ea6e3c8a888ae1aa0415c85104061",
+    "follow_up_ids": [
+      "DPF003",
+      "DPF004"
+    ],
+    "rule": "Inspect the exact printed passages cited by the accepted audit, including their full page context and publication title pages.",
+    "prior_exposure": "The mediated quotations and 2016 interpretation were already read; this is a disclosed documentary inspection, not blind evaluation."
+  },
+  "sources": [
+    {
+      "id": "DT001",
+      "kind": "printed_edition_scan",
+      "title": "A True & Faithful Relation of what passed for many yeers between Dr. John Dee and some spirits",
+      "editor": "Meric Casaubon",
+      "edition_year": 1659,
+      "imprint": "London, printed by D. Maxwell for T. Garthwait",
+      "item_url": "https://archive.org/details/truefaithfulrela00deej",
+      "download_url": "https://archive.org/download/truefaithfulrela00deej/truefaithfulrela00deej.pdf",
+      "scan_contributor": "Getty Research Institute",
+      "file_pages": 498,
+      "title_pdf_page_1based": 9,
+      "rendered_pages_inspected_1based": [
+        9,
+        441,
+        442
+      ],
+      "metadata_sha1_verified": "49f8b09fa1a2452620390bd3002939e115d93113",
+      "bytes": 43160634,
+      "sha256": "be86019452c8e9761d694ecb19e6a00359af5405ae17debf8d3b952bac56fb03"
+    },
+    {
+      "id": "DT002",
+      "kind": "printed_edition_scan",
+      "title": "The Works of Sir Thomas Browne, Volume III",
+      "editor": "Simon Wilkin",
+      "edition_year": 1852,
+      "imprint": "London, Henry G. Bohn",
+      "item_url": "https://archive.org/details/worksbro03browuoft",
+      "download_url": "https://archive.org/download/worksbro03browuoft/worksbro03browuoft.pdf",
+      "scan_contributor": "Robarts Library, University of Toronto",
+      "file_pages": 568,
+      "title_pdf_page_1based": 7,
+      "rendered_pages_inspected_1based": [
+        7,
+        542,
+        543
+      ],
+      "metadata_sha1_verified": "72e148bd00b11d8f4e98e6e7fe0feaad9eac527a",
+      "bytes": 43216238,
+      "sha256": "8fe17742a49adb5a8453f2759ffc00fd36097d425390bf70ef6494a72ff05f5d"
+    }
+  ],
+  "records": [
+    {
+      "id": "DTC001",
+      "source_id": "DT001",
+      "printed_pages": [
+        447,
+        448
+      ],
+      "pdf_pages_1based": [
+        441,
+        442
+      ],
+      "locator": "Memorandum at bottom of printed 447, continued at top of 448 before the 1587 action heading",
+      "printed_date": "Anno 1586. Octobris Die 17",
+      "calendar_conversion": null,
+      "native_short_anchor": "630 Ducatos",
+      "observations": [
+        "The Latin memorandum names Pucci and presents 800 florins and 630 ducats in the context of disputed money and avoiding accusations.",
+        "Its continuation recounts a witnessed settlement and a signed acknowledgement, naming 800 florins and also describing 2,000 ducats and more than 400 Doleri on the table.",
+        "The 1587 heading below the continuation starts another entry; it is not substituted for the memorandum’s printed date."
+      ],
+      "interpretation": "A dispute/settlement narrative; the selected passage does not identify a Voynich-book sale or trace the 630 ducats to a 600-ducat payment.",
+      "limits": [
+        "No exchange-rate or denomination conversion",
+        "No source of every coin established",
+        "No full Latin transcription or translation supplied",
+        "Printed edition inspected, not Dee’s autograph"
+      ]
+    },
+    {
+      "id": "DTC002",
+      "source_id": "DT002",
+      "printed_pages": [
+        530,
+        531
+      ],
+      "pdf_pages_1based": [
+        542,
+        543
+      ],
+      "locator": "Sir Thomas Browne to Mr. Elias Ashmole, ending before the following letter to John Aubrey",
+      "native_short_anchor": "containing nothing butt hieroglyphicks",
+      "observations": [
+        "Browne reports what Arthur Dee told him about a book found alongside alchemical powder and his father’s unsuccessful efforts to understand it.",
+        "The edited text closes with (No Signature.).",
+        "The two page running heads show 1674 and 1672-3; these are not treated as a dateline or assigned exact letter date."
+      ],
+      "transmission": [
+        "Arthur Dee’s reported recollections",
+        "Browne’s recollection of those conversations",
+        "Wilkin’s 1852 printed representation",
+        "Retrieved public scan"
+      ],
+      "interpretation": "Reported testimony about an unidentified book, without an image, physical description or unique manuscript identifier sufficient to establish MS 408.",
+      "limits": [
+        "Original letter uninspected",
+        "Date not inferred solely from running heads",
+        "Reported alchemical transmutation not adopted as an observed event",
+        "Historical hieroglyphicks wording not converted to an identified script"
+      ]
+    }
+  ],
+  "evidence_status": {
+    "DPF003": "Cited 1852 printed passage now directly inspected in this follow-up; original letter remains uninspected.",
+    "DPF004": "Cited 1659 printed memorandum now directly inspected in this follow-up; autograph and monetary source tracing remain uninspected."
+  },
+  "method": "Byte lengths and SHA-256 pins, Archive metadata SHA-1 matches, publication title inspection and complete rendered cited pages. OCR/text layers locate candidates but do not establish absence or replace visual checks.",
+  "reproduction": {
+    "tool": "Poppler pdfinfo, pdftotext and pdftoppm",
+    "file_pages_versus_publication_pages": "Mappings refer only to these pinned scans; do not calculate a common offset across editions.",
+    "raw_artifacts_redistributed": false
+  },
+  "unresolved": [
+    "Original Roberts/Watson catalog entry and comparative manuscript leaves",
+    "Dee ownership or sale of MS 408",
+    "Identity of the recalled book",
+    "Full source and reliability of each monetary or recollection claim"
+  ],
+  "limits": "Two selected printed passages; no exhaustive archival search, ownership exclusion proof, glyph mapping, language inference, decipherment or translation."
+}

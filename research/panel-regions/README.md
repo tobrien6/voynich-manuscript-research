@@ -89,6 +89,19 @@ The seven locations are explicitly declared by this provisional layout proposal;
 they are not a randomly sampled test of transcription quality. An absent,
 duplicate, nonexistent, or non-P0 target makes the generator fail.
 
+The [four upper-row image inspection](F67R_UPPER_ROWS.md) fixes every left-panel
+P0 target before the new pass and records shared sequence anchors, complete
+row-context windows and every source uncertainty. All four proposed placements
+receive partial image support; full glyph/segmentation review and a verified
+crosswalk remain pending. The original proposal/checklist and pilot gap are
+unchanged.
+
+The [three lower-row inspection](F67R_LOWER_ROWS.md) retains every right-panel
+P0 target, both literal source readings and full context windows. Partial shape
+and order anchors support the proposed placements while pale details and all
+source differences remain open; both blocks share one exposed scan/leaf and
+still require independent glyph/region review before a verified crosswalk.
+
 ## Rosette small-circle review
 
 The separate [rosette region proposal](FROS_SMALL_CIRCLE.md) fixes four contiguous
@@ -102,6 +115,15 @@ The [two-direction f102r1 boundary review](102R_BOUNDARY_PAIR.md) freezes one
 ZL-only and one IT-only extra-boundary case before new image inspection.
 Both adjacent loci retain provisional row placement and unresolved word
 division; the shared 101v/102r carrier remains one image dependency.
+
+## f89v bottom-label context
+
+The separate [f89v context packet](F89V_CONTEXT.md) records both coarse Yale
+canvases naming 89v and two dependent bottom-band windows. Historical `f89v2`
+spans two reported physical panels. A layout match supports a provisional
+container association; exact label regions, faint-trace origins and the modern
+nonexistent-locus correspondence remain unresolved. It supplies no verified join
+or physical text-presence decision.
 
 The [f68r3 non-paragraph packet](F68R3_NONPARAGRAPH.md) retains all 22 native
 circular/radial/label records despite zero P0 locations. Its fixed first/last

@@ -8,6 +8,12 @@ the full file. This supplies a concrete input candidate for a later
 letter-prediction comparison, closing the register's source-recovery gap while
 leaving the original 2011 preprocessing and Table 2 procedure unresolved.
 
+The [separate literal H/Reddy envelope audit](../historical/REDDY_ENVELOPES.md)
+now accounts for the native release's extra normalized-empty H record. All
+5,213 shared keys retain the same order and fallback-retained token counts;
+listed-code deletion changes eight counts. This nominal correspondence does
+not establish equivalent notation, text or original-author corpus bytes.
+
 ## Source identity, exposure and chronology
 
 The [source manifest](reddy-source-manifest.json) pins commit
@@ -109,6 +115,12 @@ relative links, strict JSON and whitespace pass. Raw author code, corpus payload
 PDF and extracted text remain local; comparator language files were not fetched.
 No license file is present in the pinned tree and GitHub's license field is
 null, so this contribution redistributes original code and metadata only.
+
+The [advertised-history audit](REDDY_HISTORY_INTAKE.md) now extends the bounded
+code search across all six reachable commits and both Python versions, with
+complete tree reconstruction and unchanged native input blob identities.
+Neither source version contains the Table 2 predictor; other archives remain
+outside that search.
 
 Next recover the original predictor/preprocessing if available, or separately
 freeze an explicit operationalization with complete type folds, word-boundary

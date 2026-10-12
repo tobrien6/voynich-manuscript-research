@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "method": "post-result accepted-parent transition with scientific preservation",
+  "original_parent": {
+    "pr": 153,
+    "topic_head": "5aecd61e862e1c54f4ab9294abcd001f606d4581",
+    "pins": {
+      "scripts/substitution_entropy_control.py": "4bc4ed684c8f86ac4775e50d505d8e5f70b9aace6db7f4955d0123c85d677145",
+      "research/literature/substitution-normalization-control.json": "c3bfa5ae655f992da7d34602b6e47a0b98ec600c41cdb9a05fe7a78f219d4cbd"
+    }
+  },
+  "accepted_parent": {
+    "pr": 153,
+    "reviewed_head": "4f4d8a8cb8271ceff411acdfa45e0394a84e5b0d",
+    "merge_commit": "cfff215d377263bb6e807104eb6bf1d21f2ba0f7",
+    "pins": {
+      "scripts/substitution_entropy_control.py": "b4be747f08996e6898cadf151344cac6a2c36be9ced8d8c62afd5ac47bd1443f",
+      "research/literature/substitution-normalization-control.json": "a701c04d7e41363d2b38538f15c6d9540e15198402834f19d457f0401e1db82a"
+    }
+  },
+  "first_native_result": {
+    "commit": "382a648adba30d5518dea6b1217014738f492ce5",
+    "sha256": "9adbf8948fea9cfa9f576d6f70210f7da1f70fbc0914c4877baab28989fcf8c3",
+    "producer_commit": "ba60d4546cdd9f355dff0a0f64c58cb3e7d65534",
+    "producer_sha256": "86a730e9c975ab2b26037d62b1003f58f855e633df4819af0b320544ab517207",
+    "plan_commit": "9a708c9fe5d8c357c43fa931a8d58297fec63474",
+    "plan_sha256": "a12c77d198e9121aef3bc93e7143516148d6efca6681ee47a1269134004e3638"
+  },
+  "effective_native_result": {
+    "path": "research/literature/native-substitution-normalizations.json",
+    "sha256": "07ebfc89fc44aefc95aa7dda2d399010ccbd0a7a707c563c9a2bed1954ac453d",
+    "producer_sha256": "a899568a9bcb478dd4e35790a4dbf8c46fb026ddf23e6518c495f2f2cbdc8d86"
+  },
+  "frozen_first_artifacts": [
+    {
+      "path": "research/literature/frozen/native-substitution-first.json.gz",
+      "gzip_sha256": "ce6de50089037e458d5b03756a5ebd3af063569447f5dadb9b745bfb93112332",
+      "uncompressed_sha256": "9adbf8948fea9cfa9f576d6f70210f7da1f70fbc0914c4877baab28989fcf8c3",
+      "uncompressed_bytes": 1327977
+    },
+    {
+      "path": "research/literature/frozen/native-substitution-first.source.txt.gz",
+      "gzip_sha256": "da548cc21a996e3d0876d1a267008e6390b02a9cf854755becb7e0ef9414d48e",
+      "uncompressed_sha256": "86a730e9c975ab2b26037d62b1003f58f855e633df4819af0b320544ab517207",
+      "uncompressed_bytes": 11468
+    },
+    {
+      "path": "research/literature/frozen/native-substitution-first.tests.txt.gz",
+      "gzip_sha256": "67e2ff3eb9a51e347ecfc1559b95b637c4dd40cf85821b1fc51f0bdcd1746d08",
+      "uncompressed_sha256": "6e582396d4031f66417e8b1cb27e446a9443efc67b600a65f280f58b77e701f7",
+      "uncompressed_bytes": 4337
+    },
+    {
+      "path": "research/literature/frozen/native-substitution-parent-first.json.gz",
+      "gzip_sha256": "c4c374b188310bc579deb42ab75cf3962f1fecd37a44c83cd05c3abf85fe44c8",
+      "uncompressed_sha256": "c3bfa5ae655f992da7d34602b6e47a0b98ec600c41cdb9a05fe7a78f219d4cbd",
+      "uncompressed_bytes": 3012
+    },
+    {
+      "path": "research/literature/frozen/native-substitution-parent-first.source.txt.gz",
+      "gzip_sha256": "44bae183e719215f9e9a6bd85c161e036e009cc882c6a46b38b85b311bdc211b",
+      "uncompressed_sha256": "4bc4ed684c8f86ac4775e50d505d8e5f70b9aace6db7f4955d0123c85d677145",
+      "uncompressed_bytes": 6385
+    }
+  ],
+  "preservation": {
+    "native_changed_top_level_fields": [
+      "producer_sha256",
+      "parent_pins"
+    ],
+    "parent_toy_changed_top_level_fields": [
+      "producer_sha256"
+    ],
+    "all_native_measurement_function_asts_unchanged": true,
+    "parent_entropy_and_measure_function_asts_unchanged": true,
+    "all_595_pairs_70_rankings_35_comparisons_4_focus_records_unchanged": true,
+    "original_plan_unchanged": true
+  },
+  "scope": "post-result dependency/verification metadata transition only; no recalibration, new input, metric, ranking, physical glyph inference or untouched evaluation"
+}

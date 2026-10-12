@@ -1,0 +1,17 @@
+{
+  "research/literature/self-citation-interior.json": "113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829",
+  "scripts/self_citation_interior.py": "fa01c8d9f44527895b9242302ac6158a54958b97f41fc1617b287693247c878f",
+  "scripts/verify_self_citation_interior_math.py": "051663e6a335ff68ed7b5bc50436178f2a5ce30f7a2707888bba6770d7a98713",
+  "research/literature/self-citation-interior-pins.json": "8d1b9e97d61ce0052b6e0d15e764f5e46007652ef81fa05d22f1f347d10a9d6e",
+  "research/literature/SELF_CITATION_SIZE_PLAN.md": "9e6f82957dd293981603d94f2c841544ca988820e7855a7fadbbff7e749a6b30",
+  "research/literature/SELF_CITATION_SIZE_AMENDMENT_1.md": "d2f145c4be01c097af3761a8d6232efe031495109d2594994431944ee04d1c32",
+  "research/literature/self-citation-size-amendment-1.json": "5a99cb9e79d926fe327a0048b74c07a534e1d31af16a367f1c7db4b8dcd1566a",
+  "scripts/self_citation_size_transition.py": "afa21d352905205bc57425cd90dd882c6c0b1f62d34911d2c50eb0091036d863",
+  "research/literature/frozen/self-citation-size-first-pins.json": "65c9d900f34172c98a5ff38b780fc2612a7fed9c5412a91634859f4d3976e275",
+  "research/literature/frozen/self-citation-interior-first.json.gz": "dc6f998b949b3cdf1ccf76f5d169f5b74aed2cc14a7e417367d5971793d2c729",
+  "research/literature/frozen/self-citation-size-first.json.gz": "fdfc46cc89ba85cbf02f36c2325fb33051883db25dc6ba0a5a4887e8a2f9211b",
+  "research/literature/frozen/self-citation-interior-first.source.txt.gz": "e8caa0c88fd09ee6d74f4fb5aec10e1d07cc537f255f33c092c8c8b06c2d70f9",
+  "research/literature/frozen/self-citation-interior-check-first.source.txt.gz": "9a48001184fcca775ced3633c080e3a4246c0b5ed24463c534fa8994c7c0e4ff",
+  "research/literature/frozen/self-citation-size-first.source.txt.gz": "1ce9f11c1c0ad689140f4cdb44d8102406193e93841fd554612ae30466918181",
+  "research/literature/frozen/self-citation-size-check-first.source.txt.gz": "b134d0939cce79a3d407f475307fd7914e7a936697e94e85d674a3d52904a4bc"
+}

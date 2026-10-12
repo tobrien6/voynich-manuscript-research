@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "amendment": "generator-interior-figure-parent-identities-v1",
+  "original_figure_head": "217ed94c2c407eb8cc710c2a1c2f5f2585917cd1",
+  "effective_size_head": "55d7a42c511ca7971de3f46a2ef870c8f9cbf1dd",
+  "renderer_sha256": "528fc4127b7e67157a5329702c7b3d3163800d3890b2150b717235c1f0335a5b",
+  "effective_provenance_sha256": "5cc1d76dcbe461638e21a045e92b130d188d8a88549b5a0c471d3680a1240f7f",
+  "png_sha256": "b7a8bdf68de84617cafe05245867d238223af003ec7d6651e01f8b60e0cad0c7",
+  "svg_sha256": "6c59c34fa449dc1141758a10f4329b96bac00fe50b5a2175baab0ddd74384b1b",
+  "png_svg_bytes_identical_to_first_exports": true,
+  "all_48_actual_artist_positions_and_72_scientific_comparison_records_identical": true,
+  "actual_changed_provenance_fields": [
+    "input_report_sha256",
+    "renderer.script_sha256"
+  ],
+  "all_other_rendering_environment_fields_identical": true,
+  "all_original_rendering_and_data_function_asts_unchanged_except_local_integer_parser_and_main_transition_guard": true,
+  "global_integer_string_guard_unchanged": true,
+  "first_renderer_and_exports_retained_in_hashed_inert_archives": true,
+  "complete_byte_rerender_check": true,
+  "focused_figure_tests": 13,
+  "relevant_tests": 120,
+  "parent_143_must_be_accepted_before_retargeting_figure_to_main": true,
+  "accepted_size_head": "27f8f3cd795231567a7f47e4989babd41a432595",
+  "accepted_size_merge": "88ba71592a6c058c7a2ed0ce6c34397d9bb3c041",
+  "accepted_size_report_sha256": "2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522",
+  "actual_accepted_parent_identity_reconciliation_complete": true
+}

@@ -45,8 +45,10 @@ records [S005/S006 and their limits](../SOURCES.md).
 
 PDF and render bytes remain local. Only links, the fingerprint, selected
 identifier observations, and original analysis are added to the repository.
-D'Imperio's *An Elegant Enigma* PDF was located through its NSA link, but
-retrieval did not complete; no claim in this check relies on its contents.
+At this check, D'Imperio's *An Elegant Enigma* PDF was located through its NSA
+link, but retrieval did not complete; the original observations do not rely on
+its contents. The later [GovInfo follow-up](ENIGMA_CONTEXT.md) retrieves and
+visually inspects a separate pinned representation, retaining the unresolved gate.
 
 ## Result and next test
 
@@ -62,3 +64,9 @@ to the current surface. Check the final recto/verso and the basis for the
 catalog's description. Record that evidence and scholarly review before
 changing the alias gate. Historical counter normalization must be a separately
 versioned decision with its own source-specific support.
+
+The [publisher-preview follow-up](CATALOG_EDITORIAL_FLAG.md) records an editorial
+`[sic]` after the legacy label in a translated catalog passage, with exact
+printed/PDF locators, and in a licensed English snippet whose page preview
+and page-number field are unavailable. It supplies a documentary lead without
+a replacement label or verified alias; the same unresolved gate remains.

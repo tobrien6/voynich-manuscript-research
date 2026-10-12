@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "amendment": "self-citation-size-parent-serialization-v1",
+  "accepted_parent_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/137",
+  "accepted_parent_head": "bb15b5a35ef9404bd2556a8939d24e5bb0e74e93",
+  "accepted_parent_merge": "8a08e771936e05fb3d8f7e283fe9e7a0cb206e89",
+  "accepted_parent_decision": "https://github.com/tobrien6/voynich-manuscript-research/pull/137#issuecomment-6121262927",
+  "original_size_plan_commit": "75c462c4e52866c05fde302934b85b2bfffa8476",
+  "original_size_implementation_commit": "8c9e3d7186d16ce600137ed779a491e2e7f489aa",
+  "first_result_commit": "6f8f317",
+  "first_review_head": "baf80300e21652cb920d6a81ab8862f9baa2eeac",
+  "original_size_plan_sha256": "9e6f82957dd293981603d94f2c841544ca988820e7855a7fadbbff7e749a6b30",
+  "original_pin_manifest_path": "research/literature/frozen/self-citation-size-first-pins.json",
+  "original_pin_manifest_sha256": "65c9d900f34172c98a5ff38b780fc2612a7fed9c5412a91634859f4d3976e275",
+  "original_artifacts": {
+    "research/literature/self-citation-interior.json": {
+      "archive_path": "research/literature/frozen/self-citation-interior-first.json.gz",
+      "archive_sha256": "dc6f998b949b3cdf1ccf76f5d169f5b74aed2cc14a7e417367d5971793d2c729",
+      "uncompressed_sha256": "f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d"
+    },
+    "research/literature/self-citation-size-conditioned.json": {
+      "archive_path": "research/literature/frozen/self-citation-size-first.json.gz",
+      "archive_sha256": "fdfc46cc89ba85cbf02f36c2325fb33051883db25dc6ba0a5a4887e8a2f9211b",
+      "uncompressed_sha256": "df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61"
+    },
+    "scripts/self_citation_interior.py": {
+      "archive_path": "research/literature/frozen/self-citation-interior-first.source.txt.gz",
+      "archive_sha256": "e8caa0c88fd09ee6d74f4fb5aec10e1d07cc537f255f33c092c8c8b06c2d70f9",
+      "uncompressed_sha256": "63628dcbe5aaa1fe16f2ee01b2150eed6717eff19fa0c27eb96d8398d6447ac8"
+    },
+    "scripts/verify_self_citation_interior_math.py": {
+      "archive_path": "research/literature/frozen/self-citation-interior-check-first.source.txt.gz",
+      "archive_sha256": "9a48001184fcca775ced3633c080e3a4246c0b5ed24463c534fa8994c7c0e4ff",
+      "uncompressed_sha256": "f7e8a37efb71267219fefae521c0bfed366ac8b6bd895fda8080d301b44cb64c"
+    },
+    "scripts/self_citation_size_conditioned.py": {
+      "archive_path": "research/literature/frozen/self-citation-size-first.source.txt.gz",
+      "archive_sha256": "1ce9f11c1c0ad689140f4cdb44d8102406193e93841fd554612ae30466918181",
+      "uncompressed_sha256": "91ce99488c38d53afa27302103bb698c2d87020e51a3d805186f2eaa1f12f801"
+    },
+    "scripts/verify_self_citation_size_math.py": {
+      "archive_path": "research/literature/frozen/self-citation-size-check-first.source.txt.gz",
+      "archive_sha256": "b134d0939cce79a3d407f475307fd7914e7a936697e94e85d674a3d52904a4bc",
+      "uncompressed_sha256": "8f5062b9f98948356b832ea220a9041b8deddc6ffd9fbdcf8e4e3031bc484dc6"
+    }
+  },
+  "effective_parent_artifact_sha256": {
+    "research/literature/self-citation-interior.json": "113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829",
+    "scripts/self_citation_interior.py": "fa01c8d9f44527895b9242302ac6158a54958b97f41fc1617b287693247c878f",
+    "scripts/verify_self_citation_interior_math.py": "051663e6a335ff68ed7b5bc50436178f2a5ce30f7a2707888bba6770d7a98713"
+  },
+  "allowed_parent_report_changed_fields": [
+    "implementation_sha256"
+  ],
+  "allowed_size_report_changed_fields": [
+    "input_pins",
+    "pin_manifest_sha256",
+    "implementation_sha256",
+    "parent_report_sha256"
+  ],
+  "parent_formatting_functions_changed": [
+    "packed",
+    "unpack"
+  ],
+  "parent_formatting_functions_added": [
+    "decimal_integer",
+    "parse_decimal_integer"
+  ],
+  "parent_independent_parser_changed": [
+    "unpack"
+  ],
+  "parent_independent_parser_added": [
+    "parse_decimal_integer"
+  ],
+  "scientific_functions_parameters_cohorts_seeds_weights_and_results_changed": false,
+  "original_plans_and_first_outputs_retained": true
+}

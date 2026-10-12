@@ -114,6 +114,12 @@ selection, and representation-unit choices also remain possible explanations.
 The exposed paired sources provide sensitivity evidence, not independent
 manuscript validation or out-of-sample prediction.
 
+The [fixed independent-position counterexample](../baselines/independent-position-length/RESULTS.md)
+supplies a concrete finer-position alternative: independent counts with a linear
+slot mean have positive half-centered ensemble association, including early/late
+components. Flat and half-step controls retain their exact zero expectations.
+These invented laws are not fitted manuscript explanations or glyph/line models.
+
 A further experiment should register a justified finer position model and
 its controls before execution, with enough permissible variation to assess
 its power. An explicit language or cipher mechanism additionally needs
@@ -121,3 +127,17 @@ documented reference and synthetic-encoding comparisons and prospective
 evaluation under the [decipherment protocol](../DECIPHERMENT_PROTOCOL.md).
 Do not promote a sequence of exploratory control rejections into a validated
 reading of the manuscript.
+
+## Exact variance supplement
+
+The [early/crossing/late decomposition](INTERIOR_EDGE_COMPONENTS.md) locates the
+same accepted effect without changing a control or tail. The primary ASCII
+half-centered contributions are +0.02622437, +0.01954377 and +0.02156168, so the
+positive departure extends inside both halves. All components use the original
+whole-locus normalization and denominator; no component probability or direct
+neighbor-dependence conclusion is supplied.
+
+The [exact-moment audit](HALF_MOMENTS.md) supplies ideal occurrence-permutation
+variances on this unchanged cohort, reproduces every accepted invariant
+identifier, and compares the existing finite-control SD with its ideal ensemble
+scale. All controls, effects and recorded tails in this study remain unchanged.

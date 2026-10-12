@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Fixed lookup image pairs · local review</title>
+  <style>
+    :root { color-scheme:light dark; --bg:#f5f3ee; --card:#fffdfa; --ink:#282822; --muted:#66665d; --line:#d6d3c9; --accent:#61422a; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#191b1a; --card:#222522; --ink:#e8e7df; --muted:#b8b9b0; --line:#484c45; --accent:#ddbd97; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,sans-serif; }
+    .page { max-width:1280px; margin:auto; padding:24px; }
+    h1 { font-size:clamp(1.55rem,3vw,2rem); margin:.25rem 0; font-weight:600; }
+    h2 { font-size:1.4rem; } h3 { font-size:1.05rem; } h4 { font-size:.9rem; margin:1rem 0 .3rem; }
+    a { color:var(--accent); text-underline-offset:.18em; }
+    .muted,figcaption { color:var(--muted); }
+    .intro { max-width:85ch; }
+    .status { background:#eee3d3; color:#68401b; padding:4px 9px; border-radius:4px; display:inline-block; }
+    [hidden] { display:none!important; }
+    .toolbar { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:20px 0; }
+    select { font:inherit; max-width:100%; min-height:44px; background:var(--card); color:var(--ink); border:1px solid var(--line); padding:8px 12px; border-radius:4px; }
+    .pair { border-top:1px solid var(--line); padding-top:12px; margin-top:20px; }
+    .roles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .role { min-width:0; padding:16px; background:var(--card); border:1px solid var(--line); border-radius:6px; }
+    figure { margin:8px 0 20px; } details { margin:16px 0; }
+    summary { color:var(--accent); cursor:pointer; padding:8px 0; }
+    .image-window { border:1px solid var(--line); max-height:520px; overflow:auto; }
+    .image-window img { display:block; width:100%; max-width:none; height:auto; }
+    .zoom-controls { display:flex; flex-wrap:wrap; align-items:center; gap:10px; padding-top:8px; font-size:.9rem; }
+    .zoom-controls input { max-width:100%; width:170px; min-height:36px; }
+    figcaption,.image-status,.hash-status { font-size:.85rem; margin:.45rem 0; overflow-wrap:anywhere; }
+    .source-line { font-size:.82rem; margin:.2rem 0; overflow-wrap:anywhere; }
+    pre { white-space:pre-wrap; overflow-wrap:anywhere; font:14px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace; margin:.35rem 0; }
+    .hash { font:12px/1.5 ui-monospace,monospace; overflow-wrap:anywhere; }
+    .observations { max-width:95ch; } .notation-image { max-width:100%; height:auto; }
+    footer { margin-top:28px; border-top:1px solid var(--line); padding-top:16px; }
+    @media(max-width:760px) { .roles { grid-template-columns:1fr; } .page { padding:16px; } .role { padding:12px; } }
+  </style>
+</head>
+<body><div class="page">
+  <header>
+    <h1>Fixed lookup image pairs</h1>
+    <p class="intro">Inspect the accepted target and development occurrences beside both native source editions and their neighboring loci.</p>
+    <p><span class="status">Provisional associations</span> · Image-byte checks do not establish glyph or token accuracy.</p>
+    <p class="muted">Original nonblind AI notes are separately collapsible. This display adds no new selection, reading, correction or untouched material.</p>
+  </header>
+  <nav class="toolbar" hidden aria-label="Pair selection">
+    <label for="pair-select">Choose a recorded pair</label><select id="pair-select">__PAIR_OPTIONS__</select><span id="pair-count" aria-live="polite"></span>
+  </nav>
+  <noscript><p>Both pairs and all twelve page windows are available below. Native disclosures and source links work without JavaScript.</p></noscript>
+  <main>__PAIR_SECTIONS__</main>
+  <footer>
+    <details><summary>Basic Eva notation reference</summary>__NOTATION_REFERENCE__</details>
+    <details><summary>Accepted inputs and packet provenance</summary>__INPUT_PINS__
+      <p>All 17 local image/service files were checked against the accepted inspection record before generation. The packet manifest records every file hash. Browser hash checks are additional, available on a local HTTP server with Web Crypto.</p>
+      <p>Source-file links target the exact accepted commit. Case, dots, commas and tags remain literal; encoded source slots do not establish physical words or glyph regions.</p>
+      <p>Read-only local aid based on the accepted f76r viewer pattern. No annotations, external fetches, saved readings, hosting or image publication are added.</p>
+    </details>
+  </footer>
+</div>
+<script>
+(() => {
+  const pairs = [...document.querySelectorAll('section.pair')];
+  const select = document.getElementById('pair-select');
+  function choose() {
+    pairs.forEach(pair => { pair.hidden = pair.id !== select.value; });
+    document.getElementById('pair-count').textContent = `${pairs.findIndex(p => p.id === select.value) + 1} of ${pairs.length} accepted pairs`;
+  }
+  select.addEventListener('change', choose);
+  document.querySelector('nav.toolbar').hidden = false;
+  choose();
+  document.querySelectorAll('figure').forEach(async figure => {
+    const img = figure.querySelector('img');
+    const zoom = figure.querySelector('input[type=range]');
+    const status = figure.querySelector('.image-status');
+    const hashStatus = figure.querySelector('.hash-status');
+    figure.querySelector('.zoom-controls').hidden = false;
+    zoom.addEventListener('input', () => {
+      img.style.width = `${Number(zoom.value) * 100}%`;
+      figure.querySelector('output').textContent = `${zoom.value}×`;
+    });
+    function loaded() {
+      const expected = `${img.dataset.width} × ${img.dataset.height}`;
+      const actual = `${img.naturalWidth} × ${img.naturalHeight}`;
+      status.textContent = expected === actual ? `Loaded image dimensions: ${actual} pixels.` : `Dimensions differ: ${actual}; recorded ${expected}.`;
+    }
+    img.addEventListener('load', loaded);
+    img.addEventListener('error', () => { status.textContent = 'Local image could not load. The original source link and native text remain available.'; });
+    if (img.complete && img.naturalWidth) loaded();
+    else if (img.complete) status.textContent = 'Local image could not load. The original source link and native text remain available.';
+    const asset = new URL(img.getAttribute('src'), location.href);
+    if (!/^https?:$/.test(location.protocol) || !globalThis.crypto?.subtle || asset.origin !== location.origin) {
+      hashStatus.textContent = 'Build-time SHA-256 verified. Browser byte check requires a local HTTP server with Web Crypto.';
+      return;
+    }
+    try {
+      const response = await fetch(asset.href, {cache:'no-store', credentials:'omit'});
+      if (!response.ok) throw new Error('Image response unavailable');
+      const digest = await crypto.subtle.digest('SHA-256', await response.arrayBuffer());
+      const actual = [...new Uint8Array(digest)].map(n => n.toString(16).padStart(2,'0')).join('');
+      hashStatus.textContent = actual === img.dataset.hash ? 'Browser SHA-256 matches the recorded image.' : 'Browser SHA-256 differs from the recorded image; interpretation should pause.';
+    } catch (_) { hashStatus.textContent = 'Browser byte check unavailable. Build-time fingerprint and original source link remain available.'; }
+  });
+})();
+</script>
+</body></html>
