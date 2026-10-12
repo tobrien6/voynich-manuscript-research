@@ -44,6 +44,9 @@ the opposing within-record/joining A residuals without new sampling or tails.
 The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
 path and global type deduplication, with signed type covariance, all four
 outcomes and descriptive SD scaling without a calibrated tail.
+The [fixed B tail-control block](TYPE_TAILS.md) retains 1,000 additional controls
+per variant, both inclusive tail definitions and distinct frequency/rank scores,
+with the original controls and exposure/randomization limits explicit.
 
 ## Method
 
