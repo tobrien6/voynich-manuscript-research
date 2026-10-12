@@ -168,8 +168,11 @@ def main():
     args = parser.parse_args()
     try:
         historical, modern, pins, protected = load_inputs(ROOT)
-        if args.output and args.output.resolve() in protected:
-            raise ValueError("output must not overwrite an input or reader")
+        if args.output:
+            output = args.output.resolve()
+            if output in protected or (output.exists() and any(
+                    output.samefile(source) for source in protected if source.exists())):
+                raise ValueError("output must not overwrite an input or reader")
         report = build_report(historical, modern, pins)
         if args.check and report != json.loads(args.check.read_text()):
             raise ValueError("page-envelope audit differs from committed report")
