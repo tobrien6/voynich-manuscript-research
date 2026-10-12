@@ -7,6 +7,10 @@ enabled, choose one of the three anchors and zoom from its fitted display size.
 Image zoom scrolls inside its window. Neighbor context, original observations,
 unresolved readings, edition credits and input provenance remain available.
 
+The [companion offline packet](../offline-packet/README.md) copies the five
+recorded cache resources into a fresh local directory and displays the same
+accepted native contexts without live image requests.
+
 Without JavaScript, all three anchor sections are shown and native HTML
 disclosures still expose their contexts. If an image fails to load, source text
 and the official region link remain available. The artifact stores no notes or
