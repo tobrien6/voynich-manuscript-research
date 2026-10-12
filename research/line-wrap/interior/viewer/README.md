@@ -28,7 +28,7 @@ merge `0245b4ed6d77a098837798ad683213aea1835278`, including certificate SHA-256
 `3b2450af7a70fa5fcdddaa093f76a5c952ebedad5ada6f4f00952fcb133f8a00`.
 The [builder](../../../../scripts/build_wrap_interior_viewer.py) reads those
 archived blobs, so later documentary edits do not silently alter the display.
-The cited Git history must be available in the clone. From the repository root:
+The cited Git history must be available in the clone.
 
 Maintainer review restored the pinned proof's requirement that capacity be at
 least the largest supported incoming width. The certificate blobs, all displayed
@@ -39,6 +39,8 @@ the corrected HTML has SHA-256
 `9286e48111f1cfa88ac711dfb7b486b817955eb7beeb2a78a93fefe44feed04e`.
 Only the model-assumption sentence differs. An existing test now checks that
 restriction explicitly; the five focused tests still pass.
+
+From the repository root:
 
 ```sh
 python3 -m unittest tests.test_wrap_interior_viewer -v
