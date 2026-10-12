@@ -210,6 +210,12 @@ archive. [Completed validation](self-citation-size-amendment-1-validation.json)
 records the exact four-field transition. These are post-result maintenance
 identities, not new untouched evaluation or pre-measurement claims.
 
+Final maintainer review strengthens the saved-cache and late-alias CLI tests:
+their synthetic fixtures explicitly pass the separately tested transition gate,
+then assert the intended comparison or alias failure. An added valid-cache
+case verifies successful CLI comparison and unchanged bytes. These 24 focused
+tests pass; no producer, manifest, report, snapshot or scientific result changes.
+
 Supply a matching archive from the
 [parent reproduction procedure](SELF_CITATION_PREFIX_PROFILE.md#reproduction-and-verification).
 Exact receipt replay uses the recorded **Python 3.14.3** runtime and frozen helper
