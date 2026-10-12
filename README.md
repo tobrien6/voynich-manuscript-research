@@ -17,6 +17,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Primary source register](research/SOURCES.md)
 - [Pinned transliteration sources and working selection](research/transliteration/DECISION.md)
 - [Section-beginning visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
+- [Pilot inventory utilities](research/pilot/UTILITIES.md): verify recorded local image hashes and export complete canonical CSV records without changing the frozen sampling protocol.
 - [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
 - [Three provisional f76r image/native-locus anchors](research/pilot/F76R_ANCHORS.md): frozen selections, both native readings, and source-linked review windows awaiting independent row checks.
 - [Local f76r image/native-text comparison](research/pilot/viewer/README.md): a reproducible read-only HTML artifact with literal source context and provisional review windows.

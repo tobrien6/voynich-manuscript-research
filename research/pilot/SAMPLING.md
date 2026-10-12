@@ -31,6 +31,3 @@ This is a purposive sample biased toward section beginnings and rectos. It is no
 ## Clarification after inspection
 
 The standalone labels `67r` and `68r` resolve to scans with multiple drawn panels. An exact recto label therefore does not guarantee a single isolated panel. The original targets remain unchanged; descriptions retain all visible panels as context within one canvas record. Panel-to-transcription mapping is pending. See the [completed inventory](INVENTORY.md).
-
-The [verification and CSV guide](UTILITIES.md) describes metadata checks,
-optional local inspection-image checksums and export of the canonical records.
