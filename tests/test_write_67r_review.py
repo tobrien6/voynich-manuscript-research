@@ -181,6 +181,35 @@ class ChecklistWriterTests(unittest.TestCase):
                         self.refuse(root, '--new-report', output)
                     self.assertFalse((root / folder / 'new.json').exists())
 
+    def test_case_variant_directories_are_protected_before_and_after_serialization(self):
+        for folder in ('data', 'scripts'):
+            for late in (False, True):
+                with self.subTest(folder=folder, late=late), tempfile.TemporaryDirectory() as directory:
+                    root, _ = fixture(directory)
+                    variant = root / folder.upper()
+                    if not variant.exists() or not variant.samefile(root / folder):
+                        self.skipTest('filesystem does not provide case-variant directory aliases')
+                    before = inventory(root)
+                    parent = variant
+                    if late:
+                        empty = root / 'empty'
+                        empty.mkdir()
+                        parent = root / 'parent'
+                        parent.symlink_to(empty, target_is_directory=True)
+                    output = parent / 'new.json'
+                    original_render = writer.rendered
+
+                    def retarget(report):
+                        parent.unlink()
+                        parent.symlink_to(variant, target_is_directory=True)
+                        return original_render(report)
+
+                    module, name = (writer, 'rendered') if late else (writer.producer, 'build')
+                    with patch.object(module, name, side_effect=retarget if late else AssertionError('calculation ran')):
+                        self.refuse(root, '--new-report', output)
+                    self.assertFalse((root / folder / 'new.json').exists())
+                    self.assertEqual(inventory(root), before)
+
     def test_entry_source_remains_protected_after_catalog_removal_and_retargeting(self):
         with tempfile.TemporaryDirectory() as directory:
             root, _ = fixture(directory)

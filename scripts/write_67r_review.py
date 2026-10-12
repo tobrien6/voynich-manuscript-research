@@ -51,7 +51,10 @@ def protected_directories():
 
 def protect_output(output, inputs, directories):
     resolved = output.resolve()
-    if any(resolved.is_relative_to(directory) for directory in directories):
+    if any(resolved.is_relative_to(directory) or (
+            directory.exists() and any(parent.exists() and parent.samefile(directory)
+                                       for parent in resolved.parents))
+           for directory in directories):
         raise ValueError('new report must be outside the data and scripts directories')
     for source in inputs:
         if resolved == source.resolve() or (

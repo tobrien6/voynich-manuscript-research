@@ -35,7 +35,9 @@ proposal, accepted checklist, canonical collector/writer/audit/IVTFF/JSON-reader
 paths and their actual imported module paths. They retain entry paths and
 resolved destinations, then add current paths after calculation and
 serialization. They also exclude the resolved `data` and `scripts` directories,
-including destinations reached through a parent link. A source removed from
+including destinations reached through a parent link. Existing ancestor
+directory identities also detect case variants on case-insensitive filesystems.
+A source removed from
 the catalog during calculation remains protected by the entry snapshot; a new
 declaration is covered by the final check.
 
@@ -82,7 +84,7 @@ The tests run both copied CLIs in synthetic temporary trees, preserve the six
 legacy overwrite reproductions and demonstrate their refusal by the companion.
 They check direct/symbolic/hard aliases at entry, aliases introduced during
 calculation or serialization, catalog removal and addition, resolved directory
-links, actual module paths, source-pin drift, existing/dangling destinations
+links and case variants, actual module paths, source-pin drift, existing/dangling destinations
 and a destination appearing between the final guard and exclusive open.
 Complete cache checks retain reordered-object compatibility while rejecting
 equal-valued type substitutions, missing/extra/changed fields, reordered arrays,
