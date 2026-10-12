@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "analysis_id": "constant-older-context-control-v1",
+  "analysis_status": "constructed post-review analytical example; no manuscript fit",
+  "referenced_predictor_pr": 123,
+  "referenced_predictor_head": "7a4b7ae3ccd1196e1389f16247c77e9505a626fe",
+  "referenced_predictor_sha256": "b02e32a636b4f4b42c2798e5ce6f15128410d3eb97c9e3b14206b6cc4f1a4458",
+  "referenced_predictor_accepted_at_plan": false,
+  "unit_protocol_path": "research/baselines/eva-unit-protocol.json",
+  "unit_protocol_sha256": "a2ded6526829759169d9462708ea00f969ebe47127acf5c90e2f0b1e7e2fc3ec",
+  "group_count": 5,
+  "fold_assignment": "toy-i maps to fold i for i=0..4; explicit synthetic assignment",
+  "tokens_per_group": ["a"],
+  "root_pseudocount": {"numerator": 1, "denominator": 2},
+  "context_prior_strength": 16,
+  "criterion": {"minimum_pooled_gain_bits_per_target": 0.02, "positive_group_gain": true, "positive_folds": 5},
+  "expected_target_probabilities": [
+    {"alphabet_size": 53, "q0": [3, 23], "q1": [7, 23], "q2": [51, 115]},
+    {"alphabet_size": 65, "q0": [1, 9], "q1": [13, 45], "q2": [97, 225]},
+    {"alphabet_size": 77, "q0": [3, 31], "q1": [43, 155], "q2": [327, 775]}
+  ]
+}

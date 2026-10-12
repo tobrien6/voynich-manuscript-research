@@ -94,3 +94,10 @@ Invariance is a property of the control model and source notation lengths;
 it establishes no glyph identity, physical alignment, mechanism or reading.
 The next step is a separately justified finer position model, preserving the
 accepted sensitivity analysis's alternatives and exploratory limits.
+
+## Independent moment check
+
+The [exact half-control moment audit](HALF_MOMENTS.md) independently reproduces
+every invariant identifier through zero exact variance, without calling the
+swap classifier. It retains all loci and changes no accepted classification,
+effect or tail.
