@@ -1,4 +1,13 @@
+import hashlib
+import io
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+import tempfile
 import unittest
+import zipfile
 
 from scripts.audit_historical_interlinear import HistoricalRecord
 from scripts.audit_historical_label_phrases import audit, literal_string, lookup
@@ -54,6 +63,48 @@ class HistoricalLabelLookupTests(unittest.TestCase):
         self.assertNotIn("H", queries["dar alocfhy"]["matches_by_transcriber"])
         self.assertNotIn("H", queries["otarodl shy orory"]["matches_by_transcriber"])
         self.assertEqual(queries["otarodl shy orory"]["matches_by_transcriber"], {"F": 1})
+
+    def test_cli_preserves_all_five_inputs_through_direct_and_hardlink_outputs(self):
+        root = Path(__file__).resolve().parents[1]
+        protected = ("data/historical/interlinear-16e6.json", "data/historical/source.zip",
+                     "research/historical/parser-plan.json", "scripts/audit_historical_label_phrases.py",
+                     "scripts/audit_historical_interlinear.py")
+        for name in protected:
+            for linked in (False, True):
+                with self.subTest(input=name, hardlink=linked), tempfile.TemporaryDirectory() as directory:
+                    fixture = Path(directory).resolve()
+                    (fixture / "scripts").mkdir()
+                    (fixture / "data/historical").mkdir(parents=True)
+                    (fixture / "research/historical").mkdir(parents=True)
+                    for script in ("audit_historical_label_phrases.py", "audit_historical_interlinear.py"):
+                        shutil.copyfile(root / "scripts" / script, fixture / "scripts" / script)
+                    payload = b"<f1r> {}\n## <f1r.X> {}\n<f1r.X.1;H> a.b=\n"
+                    buffer = io.BytesIO()
+                    with zipfile.ZipFile(buffer, "w") as archive:
+                        archive.writestr("fixture.evt", payload)
+                    raw = buffer.getvalue()
+                    (fixture / "data/historical/source.zip").write_bytes(raw)
+                    catalog = {"schema_version": 1, "id": "fixture", "path": "data/historical/source.zip",
+                               "archive_bytes": len(raw), "archive_sha256": hashlib.sha256(raw).hexdigest(),
+                               "member": "fixture.evt", "member_bytes": len(payload),
+                               "member_sha256": hashlib.sha256(payload).hexdigest(), "credit": "Invented fixture",
+                               "archive_url": "https://example.org/synthetic.zip", "permission": {"synthetic": True}}
+                    (fixture / "data/historical/interlinear-16e6.json").write_text(json.dumps(catalog))
+                    plan = {"plan_version": 1, "source_id": "fixture",
+                            "archive_sha256": catalog["archive_sha256"], "member_sha256": catalog["member_sha256"],
+                            "supplement_sha256": "0" * 64, "figure_label_phrases": ["a b"]}
+                    (fixture / "research/historical/parser-plan.json").write_text(json.dumps(plan))
+                    target = fixture / name
+                    output = fixture / "linked-output.json" if linked else target
+                    if linked:
+                        output.hardlink_to(target)
+                    before = target.read_bytes()
+                    result = subprocess.run([sys.executable, str(fixture / "scripts/audit_historical_label_phrases.py"),
+                                             "--output", str(output)], cwd=fixture, capture_output=True, text=True)
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn("must not overwrite", result.stderr)
+                    self.assertEqual(target.read_bytes(), before)
+                    self.assertEqual(output.read_bytes(), before)
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@
   },
   "query_plan_sha256": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
   "supplement_sha256": "e8aa06273f81224de693d90189dee9a4e9bc4713722b4e22866d2abe0ebc29fc",
-  "lookup_sha256": "aa09d81357ce7514717ddb8f44185f89309f1520eae6830d6952aa9ef76cd575",
+  "lookup_sha256": "de7f402f8e83ebe4cf246fa8fafab7ea85f0cca6fef39a5ec67dc0c444ca4ad7",
   "reader_sha256": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
   "rendering": "Remove balanced curly comments and !/% fillers; map comma/period/hyphen/equals to boundaries; collapse whitespace. Preserve case, coded fallback characters and all other residual notation. Match the whole record only.",
   "native_records_searched": 17357,

@@ -54,9 +54,11 @@ The report pins source, query-plan, supplement, script and reader identity and
 retains original source credit/permission metadata. All source-derived strings
 remain subject to the terms in the [data note](../../data/historical/README.md).
 
-Six focused tests cover formatting boundaries, preserved case/fallbacks,
+Seven focused tests cover formatting boundaries, preserved case/fallbacks,
 complete-record equality, repeated matches and transcriber identity, strict
-native-key grouping, invalid/duplicate queries and complete pinned-input search.
+native-key grouping, invalid/duplicate queries, complete pinned-input search, and
+byte preservation when direct or hardlink outputs alias any of the five inputs.
+The CLI protects the catalog, archive, query plan, lookup script and native reader.
 The report replays exactly. Run from the repository root with Python 3.10+:
 
 ```sh

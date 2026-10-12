@@ -96,8 +96,11 @@ def main():
         catalog_path = ROOT / "data/historical/interlinear-16e6.json"
         catalog = json.loads(catalog_path.read_text())
         protected = {catalog_path.resolve(), (ROOT / catalog["path"]).resolve(),
-                     (ROOT / "research/historical/parser-plan.json").resolve(), Path(__file__).resolve()}
-        if args.output and args.output.resolve() in protected:
+                     (ROOT / "research/historical/parser-plan.json").resolve(), Path(__file__).resolve(),
+                     Path(__file__).with_name("audit_historical_interlinear.py").resolve()}
+        if args.output and any(args.output.resolve() == path or
+                (args.output.exists() and path.exists() and args.output.samefile(path))
+                for path in protected):
             raise ValueError("lookup output must not overwrite inputs or script")
         result = audit(ROOT)
         if args.check and result != json.loads(args.check.read_text()):
