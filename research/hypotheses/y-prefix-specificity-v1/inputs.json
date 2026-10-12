@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "control_version": "y-prefix-specificity-v1",
+  "parent_commit": "1c6abb48776a6a59b527f502b50289edf9709191",
+  "prefixes": [
+    "y",
+    "q",
+    "o"
+  ],
+  "frequency_bins": [
+    "0",
+    "1",
+    "2+"
+  ],
+  "length_bins": [
+    "2-4",
+    "5-7",
+    "8+"
+  ],
+  "valid_candidate_holdout": false,
+  "previously_unseen": false,
+  "pins": {
+    "plan": {
+      "path": "research/hypotheses/y-prefix-specificity-v1/PLAN.md",
+      "sha256": "7864a580746595d2cfe42c6153a47b7284ddf30e40134b1a8e14960d00b2e8b1"
+    },
+    "parent_plan": {
+      "path": "research/hypotheses/y-layout-prefix-v1/PLAN.md",
+      "sha256": "fbd1dd9cb23d16a182f0d237eaa3a2412083eb8eed50dd969d4128d7284e4034"
+    },
+    "parent_partition": {
+      "path": "research/hypotheses/y-layout-prefix-v1/partition.json",
+      "sha256": "354aace43b44b5158257c737fe81c64ccc27469026a4d3b69743e117c3e739ae"
+    },
+    "parent_report": {
+      "path": "research/hypotheses/y-layout-prefix-v1/results.json",
+      "sha256": "8944187811166c1ba687d4065b9afe7fa7c853e3ed46acacb56ae3a28ae1a6f1"
+    },
+    "parent_implementation": {
+      "path": "scripts/y_layout_prefix.py",
+      "sha256": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3"
+    },
+    "catalog": {
+      "path": "data/transliterations.json",
+      "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "image_report": {
+      "path": "research/folio-alignment/transcription-image-coverage.json",
+      "sha256": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
+    }
+  }
+}
