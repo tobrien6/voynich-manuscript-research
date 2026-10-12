@@ -7,23 +7,32 @@ windows load locally; the recorded whole-page overview and service JSON are
 available as local links. Native text, zoom, neighbor context, original notes
 and provisional row associations are preserved.
 
-Collect the four JPEGs and service JSON named in the
+The [recorded asset helper](../../assets/README.md) retrieves the four JPEGs and
+service JSON named in the
 [original accepted review](../f76r-anchor-review.json), using its exact URLs and
 `local_filename` values: `f76r-overview.jpg`, `f76r-first.jpg`,
 `f76r-median.jpg`, `f76r-last.jpg` and `f76r-info.json`. Keep this image directory
-outside Git checkouts. The builder downloads nothing. An earlier verified cache
-can be reused; unrelated cache files and retrieval receipts are ignored and
-never copied into the packet.
+outside Git checkouts. The helper verifies hashes before installation and reuses
+existing verified files. It requires internet for missing assets. Alternatively,
+collect the files manually from the recorded URLs. The packet builder downloads
+nothing; unrelated cache files and retrieval receipts are ignored and never
+copied into the packet.
 
 From the repository root, with Python 3.10+, Git and the cited history, replace
-the capitalized paths with a cache and a separate fresh local packet directory:
+the capitalized paths with a cache and a separate fresh local packet directory,
+both outside Git checkouts:
 
 ```sh
+python3 scripts/fetch_recorded_viewer_assets.py \
+  --study f76r --directory LOCAL_IMAGE_DIRECTORY
 python3 scripts/build_f76r_offline_packet.py \
   --image-directory LOCAL_IMAGE_DIRECTORY --output FRESH_LOCAL_PACKET_DIRECTORY
 python3 scripts/build_f76r_offline_packet.py \
   --image-directory LOCAL_IMAGE_DIRECTORY --check FRESH_LOCAL_PACKET_DIRECTORY
 ```
+
+Keep the cache and packet separate. The helper's retrieval receipts stay in the
+cache; the packet contains only the five recorded assets, HTML and manifest.
 
 Open the packet's `index.html` directly in a browser. All text and three image
 windows work offline; opening an official image or source-file link requires

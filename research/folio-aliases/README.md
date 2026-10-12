@@ -37,6 +37,12 @@ Petersen counter and Stolfi's attributed page label separately, with a PDF
 fingerprint and explicit limits. These counter differences do not verify the
 legacy Yale alias or authorize a global folio shift.
 
+The [D'Imperio follow-up](ENIGMA_CONTEXT.md) recovers the report from GovInfo and
+traces its 116v description to a credited reproduction and competing historical
+readings. It preserves that source trail separately from a verified alias and
+records a visibly populated page with empty extracted text, preventing
+label-absence claims from literal search.
+
 The [editorial-marker follow-up](CATALOG_EDITORIAL_FLAG.md) locates a Spanish
 publisher file and an English licensed snippet that retain the catalog label
 with `[sic]`. These bounded observations supply no explicit replacement or
@@ -117,3 +123,21 @@ or against the proposed alias without overwriting the source labels. If a
 decision becomes verified, commit the review and target manifest checksum
 together. If the target snapshot changes, repeat review before reusing it.
 Images and complete historical source texts are linked rather than republished.
+
+The [Newbold original-source follow-up](NEWBOLD_TERMINAL_SOURCE.md) locates the
+credited early reading, the later chapter's editorial provenance and the longer
+transcript on printed p. 109, with separate plate/PDF locators. It retains the
+historical final-number claim and all proposed readings as documentary context;
+the unresolved registry gate and source/statistical inputs remain unchanged.
+
+The [original 1921 lecture follow-up](NEWBOLD_1921_LECTURE.md) subsequently
+inspects the complete credited pp. 461–474 and selected earlier context. It
+retains the printed final number 116, the Part V folio ranges and a concrete
+OCR-added `V` separately from a source designation. S009's original exposure
+ledger is preserved; the legacy alias and historical readings remain unresolved.
+
+The [fixed historical-photograph comparison](NEWBOLD_PHOTO_SURFACE.md) records
+broad layout correspondence between Newbold's Plates X/XV and Yale's image
+labeled 116v, with the adjacent recto as a fixed context. It preserves crop,
+orientation, representation and prior-exposure limits; the association is a
+nonblind AI observation and does not verify the legacy catalog alias.

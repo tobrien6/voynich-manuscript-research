@@ -107,6 +107,7 @@ lines and digests. The parent report and eleven frozen files remain byte-identic
 Every candidate's alias/crosswalk flag stays false; the report's physical image
 mapping and statistical evaluation flags stay false. No source correction,
 accuracy ranking, global suffix-removal rule or source-defined corpus join is
-introduced. The next step is a separate credited convention/image study retaining
-all relevant physical panels and original native bodies. That work must establish
-physical correspondence before these similarities can become a mapped corpus.
+introduced. The [publisher convention and shared scan context](F101_CONTAINER_CONTEXT.md)
+now records the modern file containers and all three inherited Yale references.
+Physical correspondence still needs reviewed original native bodies, related
+panels and precise regions before these similarities can become a mapped corpus.

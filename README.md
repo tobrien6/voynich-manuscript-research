@@ -34,6 +34,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Exploratory y-prefix lookup candidate](research/hypotheses/y-layout-prefix-v1/RESULTS.md): a precommitted removal rule and development-only vocabulary test, with prior exposure and diagnostic limitations explicit.
 - [Prefix and vocabulary-opportunity controls](research/hypotheses/y-prefix-specificity-v1/RESULTS.md): fixed q/o comparisons and matched y frequency/length cells reduce the raw lookup contrast while retaining all treatments and exclusions.
 - [Known-marker opportunity check](research/representation/KNOWN_MARKER_OPPORTUNITY.md): a fixed reversible toy marker retains exact source recovery while its matched lookup selectivity is zero.
+- [Positional letter-prediction control](research/representation/POSITIONAL_PREDICTION.md): a reversible carrier raises bigram accuracy on an independent-letter source, while a position-only baseline matches or exceeds it.
 - [Fixed y-lookup image pairs](research/hypotheses/y-lookup-image-v1/RESULTS.md): two source-stable positive lookup cases traced to provisional target/internal-reference regions, retaining unverified glyph boundaries.
 - [Local lookup-pair reviewer](research/hypotheses/y-lookup-image-v1/viewer/README.md): hash-checked local windows beside literal ZL/IT rows and neighbors for the two accepted provisional pairs.
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
@@ -50,11 +51,14 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Grouped symbol prediction](research/baselines/GROUPED_SYMBOL_RESULTS.md): fixed zero/one/two-predecessor token models on 91 image-dependency groups, with all twelve paired treatments and component losses retained.
 - [Literal-chain and token-boundary concordance](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md): fixed-cohort source/spacing comparisons retain identical encoded strings with different boundaries, without adjudicating manuscript word divisions.
 - [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
+- [Grouped symbol event-role accounting](research/baselines/SYMBOL_EVENT_ACCOUNTING.md): the fixed predictor's gain budget by initial, second, later and termination events, with all target/group denominators and negative terms retained.
 - [Constant-older-context prediction control](research/baselines/INITIAL_CONTEXT_CONTROL.md): an analytically constructed positive Q2/Q1 gain from changed smoothing, with no additional older-context information and exact one-context equivalence.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Conditional interior symmetry of IID wrapping](research/line-wrap/interior/RESULTS.md): a proof and exact bounded certificates distinguish first-width bias from interior permutation order, retaining short and impossible conditions.
+- [Width-conditioned boundary costs under labelled IID wrapping](research/line-wrap/boundary/RESULTS.md): all finite streams retain both signs of incoming-reference contrast, exact zero width-centered means and undefined no-boundary cases under two weighting schemes.
 - [Local conditional-orbit guide](research/line-wrap/interior/viewer/README.md): inspect the accepted exact scores, equal conditional probabilities, incoming events and unclosed tail without running a new analysis.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
@@ -77,7 +81,10 @@ Link to source images and transcriptions until their reuse terms have been check
 - [Early, crossing and late interior components](research/transliteration/INTERIOR_EDGE_COMPONENTS.md): exact decomposition locates the accepted centered departure inside both halves and in their single crossing pair, preserving all loci and introducing no component test.
 - [Independent positional-count counterexample](research/baselines/independent-position-length/RESULTS.md): exact synthetic ensembles show positive half-centered order, including within-half components, under independent counts with varying slot means.
 - [Grouped length prediction](research/baselines/GROUPED_LENGTH_RESULTS.md): a fixed previous-length model has mixed cross-validation gains and fails the declared preference criterion in all four treatments on previously exposed data.
+- [Exact-slot length prediction](research/baselines/EXACT_SLOT_LENGTH_RESULTS.md): finer size/slot features and a matched-weight previous-class model lose on every fold, retaining all support/backoff records and the original coarse result.
+- [Exact-slot known-process controls](research/baselines/EXACT_SLOT_CONTROL_RESULTS.md): fixed synthetic cases retain missed quarter persistence, recovered strong persistence and learned independent position profiles, without interpreting native losses as independence.
 - [Synthetic grouped-predictor controls](research/baselines/GROUPED_CONTROL_RESULTS.md): all 64 uniform-independent simulations fail the criterion and all 64 simulations at each specified persistence level meet it; full fixed-seed results and known-process references are retained.
+- [Independent-token endpoint length layouts](research/baselines/ENDPOINT_LENGTH_LAYOUT.md): complete binary-token draws give a negative endpoint-cost contrast under blocked lengths without neighbor copying; preserving the length pattern makes its population mean zero, with all draws and variance retained.
 - [Fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md): compare transcription and uncertainty variants on identical eligible locus keys, preserving per-locus disagreement.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.
