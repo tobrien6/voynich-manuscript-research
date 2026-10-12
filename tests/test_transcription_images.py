@@ -1,13 +1,18 @@
+import contextlib
 import hashlib
+import io
 import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
+from scripts import audit_transcription_images as image_audit
 from scripts.audit_transcription_images import audit, make_report, page_reference, split_dependency_errors
 from scripts.index_yale_manifest import build, serialize
 from scripts.ivtff import parse_ivtff
 from tests.test_yale_image_index import canvas, encoded
+from tests.test_evaluation_split import example as split_example
 
 
 def sources(text):
@@ -22,6 +27,57 @@ def report(text, canvases):
 
 
 class TranscriptionImageTests(unittest.TestCase):
+    def split_cli_fixture(self):
+        text = "#=IVTFF Eva- 2.0 M\n" + "".join(
+            f"<f{i}r>\n<f{i}r.1,@P0> ab\n" for i in range(1, 4))
+        result = report(text, [canvas(f"{i}r", i) for i in range(1, 4)])
+        split = split_example()
+        for number, unit in enumerate(split["units"], 1):
+            unit["canvas_ids"] = result["indexed_canvas_ids_by_leaf"][str(number)]
+            unit["dependency_groups"] = [f"yale-leaves:{number}"]
+        return split, result
+
+    def test_split_cli_rejects_ambiguous_json_before_dependency_checks(self):
+        split, result = self.split_cli_fixture()
+        raw = json.dumps(split)
+        invalid_records = [
+            raw.replace('"state": "none_reported"',
+                        '"state": "unknown", "state": "none_reported"'),
+            raw[:-1] + ', "extension": NaN}',
+        ]
+        for invalid in invalid_records:
+            with self.subTest(raw=invalid), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                manifest, split_path = root / "manifest.json", root / "split.json"
+                manifest.write_bytes(b"synthetic audit input; audit is mocked below")
+                split_path.write_text(invalid, encoding="utf-8")
+                stdout, stderr = io.StringIO(), io.StringIO()
+                argv = ["audit", "--manifest", str(manifest), "--split", str(split_path)]
+                with patch.object(image_audit, "audit", return_value=result), \
+                        patch.object(image_audit, "split_dependency_errors") as dependencies, \
+                        patch("sys.argv", argv), contextlib.redirect_stdout(stdout), \
+                        contextlib.redirect_stderr(stderr), self.assertRaises(SystemExit) as error:
+                    image_audit.main()
+                self.assertEqual(error.exception.code, 1)
+                dependencies.assert_not_called()
+                self.assertIn("FAIL: Split JSON has", stderr.getvalue())
+                self.assertNotIn("PASS:", stdout.getvalue())
+
+    def test_split_cli_preserves_valid_synthetic_dependency_checks(self):
+        split, result = self.split_cli_fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest, split_path = root / "manifest.json", root / "split.json"
+            manifest.write_bytes(b"synthetic audit input; audit is mocked below")
+            split_path.write_text(json.dumps(split), encoding="utf-8")
+            stdout = io.StringIO()
+            argv = ["audit", "--manifest", str(manifest), "--split", str(split_path)]
+            with patch.object(image_audit, "audit", return_value=result), \
+                    patch("sys.argv", argv), contextlib.redirect_stdout(stdout):
+                image_audit.main()
+        self.assertIn("PASS: declared split respects recomputed image dependencies", stdout.getvalue())
+        self.assertIn("no input checksum, freeze history", stdout.getvalue())
+
     def test_convention_is_explicit_and_does_not_repair_unknown_names(self):
         self.assertEqual(page_reference("f67r1")["folio_sides"], ["67r"])
         self.assertEqual(page_reference("fRos")["folio_sides"], ["85v", "86r"])
