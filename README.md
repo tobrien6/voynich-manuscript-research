@@ -8,9 +8,10 @@ Explore the manuscript's digitized folios, documented history, illustrations, an
 
 - [Project brief and research plan](99TOKENS.md)
 - [Primary source register](research/SOURCES.md)
+- [Ten-folio pilot inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
-The project is at the scoping stage. No new transcription, statistical result, or decipherment claim has been established.
+A first source-linked pilot inventory is available for ten target folio sides, represented by ten Yale image canvases across the six catalog groups. It records qualitative observations and uncertainties and awaits independent review. No new transcription, statistical result, or decipherment claim has been established.
 
 ## Research practice
 

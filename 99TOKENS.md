@@ -18,7 +18,7 @@ The manuscript is held by Yale's Beinecke Rare Book and Manuscript Library as MS
 
 Produce a pilot inventory of 10 folios selected across the illustrated sections described in Yale's overview. Document the selection rule before collecting observations. For each folio, record the stable image link, section attribution and source, visible text layout, illustration description, and uncertain observations. Deliver the inventory with a short note explaining coverage and sampling limitations.
 
-This is the first planned task; the inventory and analyses have not yet been completed.
+The [first pilot inventory](research/pilot/INVENTORY.md) now records ten selected target folio sides with Yale image identifiers, visible text layouts, illustrations, and uncertainties. Its [selection protocol](research/pilot/SAMPLING.md), [machine-readable records](research/pilot/inventory.json), and [source-check script](scripts/verify_pilot.py) make the contribution checkable. A canvas may include several foldout panels; these are retained within one record. Independent observation review and transcription/statistical analyses remain pending.
 
 ## Evidence standard
 
