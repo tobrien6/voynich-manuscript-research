@@ -20,6 +20,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
 - [Three provisional f76r image/native-locus anchors](research/pilot/F76R_ANCHORS.md): frozen selections, both native readings, and source-linked review windows awaiting independent row checks.
 - [Local f76r image/native-text comparison](research/pilot/viewer/README.md): a reproducible read-only HTML artifact with literal source context and provisional review windows.
+- [Offline f76r comparison packet](research/pilot/offline-packet/README.md): verified local copies of the five recorded resources preserve the accepted three-anchor viewer without live image requests.
 - [Native foldout page conventions](research/pilot/NATIVE_PAGE_CONVENTIONS.md): documented carrier and panel ordering, with region/glyph review pending.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
@@ -53,6 +54,7 @@ Link to source images and transcriptions until their reuse terms have been check
 - [Constant-older-context prediction control](research/baselines/INITIAL_CONTEXT_CONTROL.md): an analytically constructed positive Q2/Q1 gain from changed smoothing, with no additional older-context information and exact one-context equivalence.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Conditional interior symmetry of IID wrapping](research/line-wrap/interior/RESULTS.md): a proof and exact bounded certificates distinguish first-width bias from interior permutation order, retaining short and impossible conditions.
+- [Local conditional-orbit guide](research/line-wrap/interior/viewer/README.md): inspect the accepted exact scores, equal conditional probabilities, incoming events and unclosed tail without running a new analysis.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
 - [Self-citation generator audit](research/literature/COPYING_MECHANISM.md): pinned copying-model implementation and configuration, representation differences, and requirements for a prospective mechanism comparison.
