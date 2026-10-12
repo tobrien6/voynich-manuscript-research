@@ -84,6 +84,12 @@ streams on 223 exact shared page IDs, while 39 differing streams retain the same
 symbol frequencies. It preserves omitted-symbol counts and the excluded modern
 envelope separately; those matches do not establish full text or glyph identity.
 
+The [native record-projection audit](RECORD_PROJECTIONS.md) retains record
+boundaries and order under that same lossy projection: 211 shared pages have
+equal nonempty projection bags, including 29 with different order. One-to-one
+and ambiguous projection groups retain native locators without becoming a
+verified locus or image crosswalk.
+
 The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
 historical H envelope and two present IT2a P0/Pt loci with the same joined
 lowercase projection. The default modern adapter excludes Pt by kind; this
