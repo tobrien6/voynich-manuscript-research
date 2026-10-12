@@ -130,4 +130,19 @@ class PairingCountWriterTests(unittest.TestCase):
             self.assertEqual(output.read_bytes(),before)
 
 
+class PairingCountNativeTests(unittest.TestCase):
+    def test_complete_native_report_replays_with_all_parent_candidates_retained(self):
+        result=audit.build()
+        self.assertEqual(encoded(result),(audit.ROOT/audit.REPORT).read_bytes())
+        self.assertEqual(result['summary']['selected_equal_multiset_pages'],211)
+        self.assertEqual(result['summary']['ambiguous_maximum_pairing_pages'],12)
+        self.assertEqual(sum(len(p['candidate_pairs']) for p in result['order_different_pages']),885)
+        self.assertFalse(result['usable_as_verified_locus_crosswalk'])
+        self.assertFalse(result['usable_for_statistical_evaluation'])
+
+    def test_changed_accepted_parent_identity_is_rejected(self):
+        with patch.object(audit,'PARENT_SHA256','0'*64),self.assertRaisesRegex(ValueError,'parent bytes changed'):
+            audit.build()
+
+
 if __name__=='__main__':unittest.main()
