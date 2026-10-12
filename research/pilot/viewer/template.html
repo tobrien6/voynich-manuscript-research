@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Folio 76r · native source comparison</title>
+  __PROVENANCE_META__
+  <style>
+    :root { --bg:#f5f3ee; --surface:#fffdfa; --text:#282822; --muted:#66665d;
+      --line:#d6d3c9; --accent:#61422a; --status-bg:#eee3d3; --status-text:#68401b; }
+    @media(prefers-color-scheme:dark) {
+      :root { --bg:#191b1a; --surface:#222522; --text:#e8e7df; --muted:#b8b9b0;
+        --line:#484c45; --accent:#ddbd97; --status-bg:#403528; --status-text:#efd2aa; }
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 system-ui,sans-serif; }
+    .page { max-width:1180px; margin:auto; padding:20px 24px 40px; }
+    h1 { margin:0; font-size:clamp(1.6rem,3vw,1.9rem); font-weight:600; letter-spacing:-.025em; }
+    h2 { margin:0; font-size:1.35rem; font-weight:600; }
+    h3 { margin:0; font-size:1.1rem; font-weight:600; }
+    p { margin:.55rem 0 1rem; }
+    a { color:var(--accent); text-underline-offset:.18em; }
+    .muted { color:var(--muted); }
+    .kicker { text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; margin:0 0 .5rem; }
+    .status { display:inline-block; background:var(--status-bg); color:var(--status-text);
+      border-radius:4px; padding:3px 9px; font-size:.85rem; }
+    .intro { max-width:80ch; }
+    .toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:16px 0; }
+    .toolbar[hidden], [hidden] { display:none!important; }
+    select { font:inherit; color:var(--text); background:var(--surface); border:1px solid var(--line);
+      border-radius:5px; min-height:44px; padding:8px 32px 8px 12px; max-width:100%; }
+    section.anchor { padding-top:16px; margin-top:16px; border-top:1px solid var(--line); }
+    section.anchor > p { margin:8px 0; }
+    .anchor-head { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; }
+    .anchor-role { color:var(--muted); font-size:1rem; font-weight:400; }
+    figure { margin:12px 0 16px; }
+    .image-window { background:var(--surface); border:1px solid var(--line); overflow-x:auto; }
+    .image-window img { display:block; width:100%; max-width:none; height:auto; }
+    figcaption { color:var(--muted); font-size:.9rem; margin-top:9px; }
+    .image-controls { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:10px; }
+    .image-controls input { width:180px; min-height:32px; max-width:100%; }
+    .image-controls output { min-width:3ch; font-variant-numeric:tabular-nums; }
+    .image-meta { display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:4px; font-size:.9rem; }
+    .sources { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    .source { min-width:0; background:var(--surface); padding:12px; border:1px solid var(--line); border-radius:6px; }
+    .source-head { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; align-items:baseline; }
+    .file-line { font-size:.86rem; color:var(--muted); margin:4px 0; }
+    pre { margin:8px 0; padding:2px 0; font:15px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;
+      white-space:pre-wrap; overflow-wrap:anywhere; word-break:normal; color:var(--text); }
+    .locus-id { color:var(--muted); font-family:ui-monospace,monospace; font-size:.9rem; overflow-wrap:anywhere; }
+    details { margin:18px 0; }
+    summary { cursor:pointer; color:var(--accent); padding:6px 0; }
+    li { margin:.55rem 0; }
+    .neighbor { margin-top:18px; border-top:1px solid var(--line); padding-top:12px; }
+    .neighbor h4 { margin:0; font-size:.95rem; font-weight:500; }
+    .review-note { margin-top:24px; max-width:95ch; }
+    .review-note h3 { margin:15px 0 8px; }
+    .hash { font-family:ui-monospace,monospace; font-size:.82rem; overflow-wrap:anywhere; }
+    footer { margin-top:32px; border-top:1px solid var(--line); padding-top:22px; color:var(--muted); }
+    .pins { display:grid; gap:12px; }
+    .pins a { overflow-wrap:anywhere; }
+    @media(max-width:650px) {
+      .page { padding:22px 16px 36px; }
+      .sources { grid-template-columns:1fr; gap:16px; }
+      .source { padding:16px; }
+    }
+    @media(pointer:coarse) { .image-controls input { min-height:44px; } }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <p class="kicker">Voynich manuscript · Yale MS 408</p>
+    <h1>Folio 76r: image and native text</h1>
+    <p class="intro">Compare three provisional row windows with both native editions and their neighboring loci.</p>
+    <p><span class="status">Provisional row associations</span> · <a href="https://collections.library.yale.edu/catalog/2002046?child_oid=1006210" target="_blank" rel="noopener">Whole page at Yale</a></p>
+  </header>
+  <nav class="toolbar" id="anchor-navigation" aria-label="Anchor selection" hidden>
+    <label for="anchor-select">Choose an anchor</label>
+    <select id="anchor-select">__ANCHOR_OPTIONS__</select>
+    <span id="anchor-count" class="muted" aria-live="polite"></span>
+  </nav>
+  <noscript><p class="muted">All three anchors are shown below. Native text, neighbor context, evidence and source links work without JavaScript.</p></noscript>
+  <main id="anchor-records">__ANCHOR_SECTIONS__</main>
+  <footer>
+    <details>
+      <summary>Native notation and source conventions</summary>
+      <p>The displayed strings are encoded transliterations, not established plaintext. Case, dots, commas,
+        alternatives and tags are shown literally. In IVTFF, a period marks a certain word boundary, a comma
+        an uncertain one, square brackets preserve reading alternatives, and question marks preserve unreadability.
+        <code>&lt;%&gt;</code> and <code>&lt;$&gt;</code> are source paragraph annotations.</p>
+      <p><a href="https://voynich.nu/software/ivtt/IVTFF_format.pdf" target="_blank" rel="noopener">IVTFF format definition</a> ·
+        <a href="https://voynich.nu/transcr.html" target="_blank" rel="noopener">Edition conventions</a></p>
+      <p>A source-file line number and a native locus key do not establish a physical manuscript row.
+        Paired editions are related; agreement does not certify glyph accuracy.</p>
+    </details>
+    <details>
+      <summary>Accepted inputs and recorded provenance</summary>
+      __INPUT_PINS__
+      <p>The displayed observations belong to the original pilot record. A separate
+        <a href="https://github.com/tobrien6/voynich-manuscript-research/pull/99">second AI-assisted row check</a>
+        was non-blind and also retained provisional mappings; its notes are not merged into this record.</p>
+      <p>Inspection hashes describe recorded local files. This page loads official Yale images but does not verify their live byte hashes.</p>
+    </details>
+    <p>Read-only local review aid. The selected page and native sources were already exposed; this display creates no untouched evaluation material.</p>
+  </footer>
+</div>
+<script>
+(() => {
+  const sections = [...document.querySelectorAll('section.anchor')];
+  const navigation = document.getElementById('anchor-navigation');
+  const select = document.getElementById('anchor-select');
+  const count = document.getElementById('anchor-count');
+  function chooseAnchor() {
+    sections.forEach(section => { section.hidden = section.id !== select.value; });
+    const index = sections.findIndex(section => section.id === select.value);
+    count.textContent = `${index + 1} of ${sections.length} recorded anchors`;
+  }
+  select.addEventListener('change', chooseAnchor);
+  navigation.hidden = false;
+  chooseAnchor();
+  sections.forEach(section => {
+    const image = section.querySelector('img');
+    const zoom = section.querySelector('input[type=range]');
+    const output = section.querySelector('output');
+    const controls = section.querySelector('.image-controls');
+    const status = section.querySelector('.image-status');
+    controls.hidden = false;
+    zoom.addEventListener('input', () => {
+      image.style.width = `${Number(zoom.value) * 100}%`;
+      output.textContent = `${zoom.value}×`;
+    });
+    function loaded() {
+      const expected = `${image.dataset.width} × ${image.dataset.height}`;
+      const actual = `${image.naturalWidth} × ${image.naturalHeight}`;
+      status.textContent = actual === expected ? `Loaded image size: ${actual} pixels.` :
+        `Loaded image size differs from the recorded size: ${actual} rather than ${expected}.`;
+    }
+    image.addEventListener('load', loaded);
+    image.addEventListener('error', () => {
+      status.textContent = 'Yale image could not load. Use the official region link; the native text remains available.';
+    });
+    if (image.complete && image.naturalWidth) loaded();
+  });
+})();
+</script>
+</body>
+</html>

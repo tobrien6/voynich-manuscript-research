@@ -19,6 +19,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Section-beginning visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
 - [Three provisional f76r image/native-locus anchors](research/pilot/F76R_ANCHORS.md): frozen selections, both native readings, and source-linked review windows awaiting independent row checks.
+- [Local f76r image/native-text comparison](research/pilot/viewer/README.md): a reproducible read-only HTML artifact with literal source context and provisional review windows.
 - [Native foldout page conventions](research/pilot/NATIVE_PAGE_CONVENTIONS.md): documented carrier and panel ordering, with region/glyph review pending.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
@@ -44,6 +45,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Literal-chain and token-boundary concordance](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md): fixed-cohort source/spacing comparisons retain identical encoded strings with different boundaries, without adjudicating manuscript word divisions.
 - [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
