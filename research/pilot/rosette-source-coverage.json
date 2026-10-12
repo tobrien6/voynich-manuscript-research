@@ -9,11 +9,12 @@
     "research/pilot/inventory.json": "9d34cfdc78a0900e52a8833fd67d752b42aae4667fc57c815e6a205d0a786e79",
     "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
     "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
-    "scripts/audit_rosette_coverage.py": "4ba3fd47444440bf2c9e4db63458fc6e00dbb79233b2078181c9dac3eecdb4e8",
+    "scripts/audit_rosette_coverage.py": "a253c232112337dcd876a5fdb60dda4de39beb6c34488d63cf9935c8b3b4f453",
     "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
     "scripts/audit_pilot_transcriptions.py": "7e6f0aef8650e8835d305f18428bca388b9ef6ff3cc6a675c763ee7d48b3fb8c",
     "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
-    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65"
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/rosette_cohort.py": "9544dba9e49496dfea47805afa44dc76c4edd22962055ef973c276eed445dc68"
   },
   "canvas_context": {
     "inventory_target": "85v",
