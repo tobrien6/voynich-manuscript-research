@@ -35,6 +35,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Paired paragraph-annotation agreement](research/transliteration/ANNOTATION_AGREEMENT.md): exact boundary-mark disagreements between the pinned ZL/IT editions, with identifiers for image review and explicit limits on source-defined strata.
 - [Token and repetition baselines](research/transliteration/BASELINES.md) and [locus-position effects](research/transliteration/POSITION_EFFECTS.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.
