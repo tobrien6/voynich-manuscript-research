@@ -1,0 +1,20 @@
+{
+  "amendment_version": 1,
+  "reason": "Output alias protection only; scientific input, edges, metrics, null and trials unchanged",
+  "original_plan_sha256": "c606cb48e3f5a6e8d6805a88f7a3495276a2a0356472a0abd599b9caa6e9f7a3",
+  "original_global_commit": "ecd5f547ca705ca6daff8e699bd99d5f34dd668a",
+  "repaired_global_commit": "72e6871ad695dc3c32314d36f1ae9b34fef8e232",
+  "first_conditional_result_commit": "e0a023f36fea7104769f5dc9cd7b044cd443f231",
+  "replacement_dependencies": {
+    "scripts/historical_repeated_types.py": {
+      "original_sha256": "90aa860990a9e120833565fa377e7b8c73df8596a66c9e6bec1c412f4e96cc5e",
+      "repaired_sha256": "9a8918d6ecd7fa2ddcf52802ee96ef7646c5c21c089069db18d0c10e77e51268"
+    },
+    "research/historical/repeated-types.json": {
+      "original_sha256": "71c46911b9c38f3b5125d2411707ea5d4a3f364f1d6126fece167aebabe075c6",
+      "repaired_sha256": "683a0906eaf01dbacf5394eb0ded820802df0f09c293302a452351494338dc2a"
+    }
+  },
+  "global_payload_excluding_runner_sha256": "53c8417f80f8738631c7258495acf6308267b60ef07171b537de7a71c9443823",
+  "review_url": "https://github.com/tobrien6/voynich-manuscript-research/pull/126#issuecomment-6119372286"
+}
