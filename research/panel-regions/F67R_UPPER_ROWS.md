@@ -68,8 +68,8 @@ Native coordinates are `x,y,width,height` in the 4972 × 3738 image.
 | [Row 3 context](https://collections.library.yale.edu/iiif/2/1006194/350,525,2000,175/full/0/default.jpg) | `350,525,2000,175` | 2000 × 175 |
 | [Row 4 context](https://collections.library.yale.edu/iiif/2/1006194/350,600,2000,190/full/0/default.jpg) | `350,600,2000,190` | 2000 × 190 |
 
-The JSON pins every retrieved image/font response and service info response,
-including byte lengths and returned dimensions. The source catalog and original
+The JSON pins responses retrieved for every selected image/font URL and the
+service info URL, including byte lengths and returned dimensions. The source catalog and original
 checklist retain edition credits, reuse terms, alphabet labels and file-line
 scope. Direct local retrieval of the reference HTML returned HTTP 406; its
 Table 3 text was inspected through the web reader and has no invented raw-body
