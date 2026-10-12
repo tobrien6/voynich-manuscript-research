@@ -11,10 +11,10 @@ import subprocess
 
 try:
     from .replay_self_citation import (ROOT, REVISION, SUPPLIED_HASH, REMOVED_ENV, configuration,
-                                     digest, run_process, source_inventory)
+                                     digest, process_environment, run_process, source_inventory)
 except ImportError:
     from replay_self_citation import (ROOT, REVISION, SUPPLIED_HASH, REMOVED_ENV, configuration,
-                                    digest, run_process, source_inventory)
+                                    digest, process_environment, run_process, source_inventory)
 
 
 MAIN = 'source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java'
@@ -23,6 +23,31 @@ OBSERVER = (b'            System.err.println("VMS_ROW_TRACE_V1\\t" + i + "\\t" +
             b' + "\\t" + isParagraphFinal + "\\t" + config.statistics.linesInPage'
             b' + "\\t" + config.statistics.linesInParagraph);\n')
 BASE = ROOT / 'research/literature/self-citation-repeatability.json'
+
+
+def control_contract(baseline):
+    expected = {'build_flags': ['--release', '8', '-encoding', 'UTF-8', '-proc:none'],
+                'jvm_flags': ['-Dfile.encoding=UTF-8', '-Duser.timezone=UTC', '-Duser.language=en', '-Duser.country=US'],
+                'subprocess_locale': {'TZ': 'UTC', 'LANG': 'en_US.UTF-8', 'LC_ALL': 'en_US.UTF-8'}}
+    if (not isinstance(baseline, dict) or type(baseline.get('schema_version')) is not int or
+            baseline['schema_version'] != 1 or baseline.get('source_commit') != REVISION or
+            baseline.get('method') != 'pinned self-citation source-build repeatability v1' or
+            any(baseline.get(key) != value for key, value in expected.items())):
+        raise ValueError('unmodified control version/build/runtime contract changed')
+    helper_hash = digest((ROOT / 'scripts/replay_self_citation.py').read_bytes())
+    if baseline.get('runner_sha256') != helper_hash:
+        raise ValueError('shared replay helper differs from the control producer')
+    try:
+        release = [case for case in baseline['cases'] if case['case'] == 'release-19']
+        if (len(release) != 1 or release[0]['seed'] != 19 or
+                release[0]['requested_rows_including_initialization'] != 1200 or
+                len(release[0]['runs']) != 2 or
+                any(run['output']['sha256'] != SUPPLIED_HASH or run['completed_expected_rows'] is not True
+                    for run in release[0]['runs'])):
+            raise ValueError('unmodified release outcome contract changed')
+    except (KeyError, TypeError) as error:
+        raise ValueError('unmodified release outcome contract changed') from error
+    return release[0], helper_hash
 
 
 def instrument(raw):
@@ -89,13 +114,9 @@ def observe(reference, java_home, work):
     paths, inventory, base_config, supplied = source_inventory(reference)
     base_bytes = BASE.read_bytes()
     baseline = json.loads(base_bytes)
-    release = [case for case in baseline['cases'] if case['case'] == 'release-19']
-    if (baseline['schema_version'] != 1 or baseline['source_commit'] != REVISION or len(release) != 1 or
-            any(run['output']['sha256'] != SUPPLIED_HASH or not run['completed_expected_rows']
-                for run in release[0]['runs'])):
-        raise ValueError('unmodified release control contract changed')
+    release, helper_hash = control_contract(baseline)
     settings = configuration(base_config, {'save.path': './output/', 'save.filename': 'generated.txt'})
-    if digest(settings) != release[0]['effective_configuration_sha256']:
+    if digest(settings) != release['effective_configuration_sha256']:
         raise ValueError('instrumented effective configuration differs from the unmodified control')
     work.mkdir(parents=True, exist_ok=False)
     source_root, classes, empty = work / 'sources', work / 'classes', work / 'empty-classpath'
@@ -110,8 +131,7 @@ def observe(reference, java_home, work):
         expected = observed if path == MAIN else (reference / path).read_bytes()
         if copied != expected:
             raise ValueError('observer changed source outside the single declared insertion')
-    environment = {key: value for key, value in os.environ.items() if key not in REMOVED_ENV}
-    environment.update(baseline['subprocess_locale'])
+    environment = process_environment(os.environ)
     java, javac = java_home / 'bin/java', java_home / 'bin/javac'
     for name, executable in [('java', java), ('javac', javac)]:
         result = subprocess.run([str(executable), '-version'], capture_output=True, env=environment,
@@ -165,6 +185,7 @@ def observe(reference, java_home, work):
     return {'schema_version': 1, 'method': 'output-preserving self-citation call trace v1',
             'plan_sha256': digest((ROOT / 'research/literature/SELF_CITATION_TRACE_PLAN.md').read_bytes()),
             'observer_sha256': digest(Path(__file__).read_bytes()), 'source_commit': REVISION,
+            'shared_replay_helper_sha256': helper_hash,
             'base_repeatability_report_sha256': digest(base_bytes), 'effective_configuration_sha256': digest(settings),
             'original_main_source_sha256': digest(original), 'instrumented_main_source_sha256': digest(observed),
             'build': build, 'class_inventory': class_records, 'changed_compiled_classes': changed_classes,

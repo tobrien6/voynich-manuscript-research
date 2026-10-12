@@ -13,6 +13,16 @@ follow-up, not a registered manuscript hypothesis or untouched evaluation.
 The [complete record and ledger](self-citation-row-trace.json) preserve the
 two runs, every output row, source/build identities and acceptance checks.
 
+Review corrected the parent replay's compiler-option filtering. The initial
+[trace record](https://github.com/tobrien6/voynich-manuscript-research/blob/b71d705cfefc8ffc2cc214a1908d7f1ed62ec0bc/research/literature/self-citation-row-trace.json)
+remains available. This observer now uses that corrected shared environment
+helper, pins its bytes to the control producer, and rejects changed build/JVM
+options or locale declarations. Two fresh reruns preserved every ledger entry,
+count, source/class/configuration identity and output byte. The current record
+refreshes observer/helper/control-report and local-log provenance. All four
+traced executions, across this validation update, matched the same supplied file;
+no generation parameter or comparison was changed from an observed outcome.
+
 ## Observer and control
 
 Copy author release commit `9e98c9122a0f490905e8b66f3911fc7ce095fd26` into a
@@ -93,11 +103,13 @@ python3 scripts/trace_self_citation_rows.py \
 PYTHONPATH=tests python3 -m unittest test_self_citation_trace test_self_citation_replay -v
 ```
 
-Ten focused tests passed. Synthetic fixtures verify a single reversible
+Thirteen focused tests passed. Synthetic fixtures verify a single reversible
 insertion, missing/duplicate anchors, event coverage/order, literal booleans,
 nonnegative counters, native byte offsets, unknown initialization flags,
 unsupported spacing and missing rows. Existing configuration/projection and
-failure-retention tests remain in use. The two actual Java runs establish
+failure-retention tests remain in use, with corrected compiler/VM environment
+filtering, exact version tokens and control-producer/executable-option guards.
+The two final actual Java runs establish
 the stated byte-preservation and repeated-event result on this runtime.
 
 This is an observation bridge, with no new prefix/order scores, seed

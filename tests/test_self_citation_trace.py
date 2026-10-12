@@ -1,9 +1,24 @@
 import unittest
+import copy
+import json
 
-from scripts.trace_self_citation_rows import ANCHOR, OBSERVER, instrument, row_ledger, trace_events
+from scripts.trace_self_citation_rows import (ANCHOR, BASE, OBSERVER, control_contract,
+                                            instrument, row_ledger, trace_events)
 
 
 class SelfCitationTraceTests(unittest.TestCase):
+    def test_control_cannot_change_executable_options_or_use_an_unmatched_producer(self):
+        baseline = json.loads(BASE.read_text())
+        release, helper_hash = control_contract(baseline)
+        self.assertEqual(release['case'], 'release-19')
+        self.assertEqual(helper_hash, baseline['runner_sha256'])
+        for key, value in [('jvm_flags', baseline['jvm_flags'] + ['-javaagent:synthetic.jar']),
+                           ('build_flags', ['-proc:full']), ('subprocess_locale', {'TZ': 'other'}),
+                           ('schema_version', True), ('runner_sha256', '0' * 64)]:
+            changed = copy.deepcopy(baseline)
+            changed[key] = value
+            with self.assertRaises(ValueError):
+                control_contract(changed)
     def test_observer_is_one_insertion_and_refuses_missing_or_duplicate_anchors(self):
         synthetic = b'// synthetic surrounding bytes\n' + ANCHOR + b'\n'
         self.assertEqual(instrument(synthetic).replace(OBSERVER, b''), synthetic)

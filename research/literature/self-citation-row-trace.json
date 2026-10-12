@@ -2,9 +2,10 @@
   "schema_version": 1,
   "method": "output-preserving self-citation call trace v1",
   "plan_sha256": "292709b2c67da1f61d785e14dc773b96d41701ff87ef042e16c097e1a4a683a0",
-  "observer_sha256": "1508360aec3ff31849947e0fdcd2ee53d18c8247910160bd445c84e4e7300e5f",
+  "observer_sha256": "a078447279d7557d243fdce925a66749747d5c665cb69c97923a69328cf4b778",
   "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
-  "base_repeatability_report_sha256": "df8e895bee0e3d7adac361df255fd69a9f874063d900de424b75d65411be3bbd",
+  "shared_replay_helper_sha256": "4579f7caaf75ec124a8ffcbfd53b2e173f1ea117bdf7a7ee24761e53d2ee225f",
+  "base_repeatability_report_sha256": "a31bd822bc93546274a49db3a0fa144907c8aebf6864abf4f2230bd02d6c337e",
   "effective_configuration_sha256": "5402e0987b38f8698a79b1a5b005eb7fa94e5dbf28923a25fa911d06c9db13ef",
   "original_main_source_sha256": "7afa236373a997d2e2ccef9a8e7ee799c5766b63ddf161bab8b72ce0f3bbf1e9",
   "instrumented_main_source_sha256": "d37385c0340cf6c4faa94382ff4b1dc3ea2138c553a65769461d1e6fd45977cc",
@@ -13,8 +14,8 @@
     "timed_out": false,
     "stdout_bytes": 0,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "stderr_bytes": 464,
-    "stderr_sha256": "fa80e2eea7504037cae7219512c894e65fa023f577c8dd76222359aabb224603"
+    "stderr_bytes": 473,
+    "stderr_sha256": "e6f3f6ff6de1848ce58cd3b2ab0b9d7b822c2a0e47b4587a1a0fd2d49538be90"
   },
   "class_inventory": [
     {
