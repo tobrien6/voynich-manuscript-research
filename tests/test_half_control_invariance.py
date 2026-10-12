@@ -1,13 +1,16 @@
 from collections import Counter
+import contextlib
 import copy
 import hashlib
 import itertools
+import io
 import json
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from scripts import half_control_invariance as module
 from scripts.half_control_invariance import classify, pinned_json, variation_witness
@@ -118,6 +121,38 @@ class HalfControlInvarianceTests(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("must not overwrite", result.stderr)
             self.assertEqual(path.read_bytes(), before)
+
+    def test_hardlink_aliases_preserve_synthetic_native_catalog_reports_and_plan(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            native = root / "data/native.txt"
+            native.write_text("synthetic native input")
+            catalog = root / "data/transliterations.json"
+            catalog.write_text(json.dumps({"sources": [{"path": "data/native.txt"}]}))
+            parent, half, plan = (root / name for name in ("parent.json", "half.json", "plan.md"))
+            for path in (parent, half, plan):
+                path.write_text("synthetic pinned input")
+            protected = (native, catalog, parent, half, plan)
+            before = {path: path.read_bytes() for path in protected}
+            with patch.multiple(module, ROOT=root, PARENT_PATH=parent, HALF_PATH=half, PLAN_PATH=plan):
+                with patch.object(module, "report", return_value={"synthetic": True}):
+                    for index, path in enumerate(protected):
+                        alias = root / f"hardlink-{index}.json"
+                        alias.hardlink_to(path)
+                        with patch("sys.argv", ["audit", "--output", str(alias)]):
+                            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                                module.main()
+                            self.assertEqual(error.exception.code, 1)
+                        self.assertEqual({path: path.read_bytes() for path in protected}, before)
+                    for exists in (False, True):
+                        output = root / f"ordinary-{exists}.json"
+                        if exists:
+                            output.write_text("replaceable synthetic output")
+                        with patch("sys.argv", ["audit", "--output", str(output)]):
+                            module.main()
+                        self.assertEqual(json.loads(output.read_text()), {"synthetic": True})
+                        self.assertEqual({path: path.read_bytes() for path in protected}, before)
 
 
 if __name__ == "__main__":
