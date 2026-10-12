@@ -1,0 +1,369 @@
+{
+  "audit_version": 1,
+  "scope": "Exact complete-record label phrase lookup across all native codes; no glyph mapping or parser revision",
+  "source": {
+    "id": "LS16e6",
+    "credit": "Jorge Stolfi; Gabriel Landini and Jim Reeds; Takeshi Takahashi; original transcribers credited in the unmodified member",
+    "archive_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/text16e6.zip",
+    "archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319",
+    "permission": {
+      "statement_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/",
+      "locator": "Permissions section",
+      "terms_summary": "Publisher permits copying, use, modification and republication with due credit and without imposing additional conditions or copyrights on these files or derivatives",
+      "repository_license_applies": false
+    }
+  },
+  "query_plan_sha256": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+  "supplement_sha256": "e8aa06273f81224de693d90189dee9a4e9bc4713722b4e22866d2abe0ebc29fc",
+  "lookup_sha256": "aa09d81357ce7514717ddb8f44185f89309f1520eae6830d6952aa9ef76cd575",
+  "reader_sha256": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+  "rendering": "Remove balanced curly comments and !/% fillers; map comma/period/hyphen/equals to boundaries; collapse whitespace. Preserve case, coded fallback characters and all other residual notation. Match the whole record only.",
+  "native_records_searched": 17357,
+  "matches": [
+    {
+      "phrase": "okchdy",
+      "matches_by_transcriber": {
+        "F": 2,
+        "H": 3,
+        "U": 3,
+        "V": 3
+      },
+      "records": [
+        {
+          "locator": "f78r.X.2;H",
+          "transcriber": "H",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f78r.X.2;V",
+          "transcriber": "V",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f78r.X.2;U",
+          "transcriber": "U",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.7;H",
+          "transcriber": "H",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.8;F",
+          "transcriber": "F",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.8;V",
+          "transcriber": "V",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.8;U",
+          "transcriber": "U",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f84v.Y.30;H",
+          "transcriber": "H",
+          "body_sha256": "cadca87b962fc98965584b50aac887c4cfb8dd163f50222cc115eb90163a072d"
+        },
+        {
+          "locator": "f84v.Y.30;F",
+          "transcriber": "F",
+          "body_sha256": "cadca87b962fc98965584b50aac887c4cfb8dd163f50222cc115eb90163a072d"
+        },
+        {
+          "locator": "f84v.Y.30;V",
+          "transcriber": "V",
+          "body_sha256": "cadca87b962fc98965584b50aac887c4cfb8dd163f50222cc115eb90163a072d"
+        },
+        {
+          "locator": "f85v2.B2.6;U",
+          "transcriber": "U",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        }
+      ]
+    },
+    {
+      "phrase": "dar alocfhy",
+      "matches_by_transcriber": {
+        "F": 1,
+        "U": 1
+      },
+      "records": [
+        {
+          "locator": "f78r.X.3;F",
+          "transcriber": "F",
+          "body_sha256": "dcfcb787c12eb855c322ab8c12542a80c17be2a95d2155ace4839330f013abc2"
+        },
+        {
+          "locator": "f78r.X.3;U",
+          "transcriber": "U",
+          "body_sha256": "dcfcb787c12eb855c322ab8c12542a80c17be2a95d2155ace4839330f013abc2"
+        }
+      ]
+    },
+    {
+      "phrase": "dchedaly",
+      "matches_by_transcriber": {
+        "F": 1,
+        "H": 1,
+        "U": 1,
+        "V": 1
+      },
+      "records": [
+        {
+          "locator": "f78r.X.4;H",
+          "transcriber": "H",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        },
+        {
+          "locator": "f78r.X.4;F",
+          "transcriber": "F",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        },
+        {
+          "locator": "f78r.X.4;V",
+          "transcriber": "V",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        },
+        {
+          "locator": "f78r.X.4;U",
+          "transcriber": "U",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        }
+      ]
+    },
+    {
+      "phrase": "otarodl shy orory",
+      "matches_by_transcriber": {
+        "F": 1
+      },
+      "records": [
+        {
+          "locator": "f78r.X.5;F",
+          "transcriber": "F",
+          "body_sha256": "a73949d0efd6f67239e8d4d49883343c64959d1598c9cb0becee9ef192763c4b"
+        }
+      ]
+    }
+  ],
+  "native_key_readings": [
+    {
+      "page": "f78r",
+      "unit": "X",
+      "line": "2",
+      "readings": [
+        {
+          "locator": "f78r.X.2;H",
+          "transcriber": "H",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f78r.X.2;V",
+          "transcriber": "V",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f78r.X.2;U",
+          "transcriber": "U",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        }
+      ]
+    },
+    {
+      "page": "f78r",
+      "unit": "X",
+      "line": "3",
+      "readings": [
+        {
+          "locator": "f78r.X.3;H",
+          "transcriber": "H",
+          "literal_string": "daraloikhy",
+          "body_sha256": "e0e04afeb4e59e0ca52233357840156b72cff62c1ab7027aceb084dcdc815424"
+        },
+        {
+          "locator": "f78r.X.3;F",
+          "transcriber": "F",
+          "literal_string": "dar alocfhy",
+          "body_sha256": "dcfcb787c12eb855c322ab8c12542a80c17be2a95d2155ace4839330f013abc2"
+        },
+        {
+          "locator": "f78r.X.3;V",
+          "transcriber": "V",
+          "literal_string": "dar aloifhy",
+          "body_sha256": "320b2a12270f38cda7d466a925914c042452f184c485bf4ac43e949f56266e71"
+        },
+        {
+          "locator": "f78r.X.3;U",
+          "transcriber": "U",
+          "literal_string": "dar alocfhy",
+          "body_sha256": "dcfcb787c12eb855c322ab8c12542a80c17be2a95d2155ace4839330f013abc2"
+        }
+      ]
+    },
+    {
+      "page": "f78r",
+      "unit": "X",
+      "line": "4",
+      "readings": [
+        {
+          "locator": "f78r.X.4;H",
+          "transcriber": "H",
+          "literal_string": "dchedaly",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        },
+        {
+          "locator": "f78r.X.4;F",
+          "transcriber": "F",
+          "literal_string": "dchedaly",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        },
+        {
+          "locator": "f78r.X.4;V",
+          "transcriber": "V",
+          "literal_string": "dchedaly",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        },
+        {
+          "locator": "f78r.X.4;U",
+          "transcriber": "U",
+          "literal_string": "dchedaly",
+          "body_sha256": "584e10c62470dfe5e1f4484aa8b3b6f6124415f91fa6f2b20609f1fbaca48330"
+        }
+      ]
+    },
+    {
+      "page": "f78r",
+      "unit": "X",
+      "line": "5",
+      "readings": [
+        {
+          "locator": "f78r.X.5;H",
+          "transcriber": "H",
+          "literal_string": "otasodlory orory",
+          "body_sha256": "fb7bf0a759f14c64c9e93d8616f8bbc2f30545eb4f8038e1b83393fee1db3d01"
+        },
+        {
+          "locator": "f78r.X.5;F",
+          "transcriber": "F",
+          "literal_string": "otarodl shy orory",
+          "body_sha256": "a73949d0efd6f67239e8d4d49883343c64959d1598c9cb0becee9ef192763c4b"
+        },
+        {
+          "locator": "f78r.X.5;V",
+          "transcriber": "V",
+          "literal_string": "otaro dlery orary",
+          "body_sha256": "cb01d80b92aaa6d101d229873b36d63d1ab576b9c020ebb69031711bca845a68"
+        },
+        {
+          "locator": "f78r.X.5;U",
+          "transcriber": "U",
+          "literal_string": "otaro dlory orory",
+          "body_sha256": "1e4cfd5ac49374be2ad2dd43ac740673ebf7cb754bfcd8862a0de74b86560f10"
+        }
+      ]
+    },
+    {
+      "page": "f83v",
+      "unit": "Y",
+      "line": "7",
+      "readings": [
+        {
+          "locator": "f83v.Y.7;H",
+          "transcriber": "H",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.7;V",
+          "transcriber": "V",
+          "literal_string": "okaiin",
+          "body_sha256": "ddd412a72a18bd47fcd99afc6ba0e9bb87915b07b487e7f7bd1398cde1ef856d"
+        },
+        {
+          "locator": "f83v.Y.7;U",
+          "transcriber": "U",
+          "literal_string": "okaiin",
+          "body_sha256": "ddd412a72a18bd47fcd99afc6ba0e9bb87915b07b487e7f7bd1398cde1ef856d"
+        }
+      ]
+    },
+    {
+      "page": "f83v",
+      "unit": "Y",
+      "line": "8",
+      "readings": [
+        {
+          "locator": "f83v.Y.8;H",
+          "transcriber": "H",
+          "literal_string": "okaiin",
+          "body_sha256": "ddd412a72a18bd47fcd99afc6ba0e9bb87915b07b487e7f7bd1398cde1ef856d"
+        },
+        {
+          "locator": "f83v.Y.8;F",
+          "transcriber": "F",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.8;V",
+          "transcriber": "V",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        },
+        {
+          "locator": "f83v.Y.8;U",
+          "transcriber": "U",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        }
+      ]
+    },
+    {
+      "page": "f84v",
+      "unit": "Y",
+      "line": "30",
+      "readings": [
+        {
+          "locator": "f84v.Y.30;H",
+          "transcriber": "H",
+          "literal_string": "okchdy",
+          "body_sha256": "cadca87b962fc98965584b50aac887c4cfb8dd163f50222cc115eb90163a072d"
+        },
+        {
+          "locator": "f84v.Y.30;F",
+          "transcriber": "F",
+          "literal_string": "okchdy",
+          "body_sha256": "cadca87b962fc98965584b50aac887c4cfb8dd163f50222cc115eb90163a072d"
+        },
+        {
+          "locator": "f84v.Y.30;V",
+          "transcriber": "V",
+          "literal_string": "okchdy",
+          "body_sha256": "cadca87b962fc98965584b50aac887c4cfb8dd163f50222cc115eb90163a072d"
+        }
+      ]
+    },
+    {
+      "page": "f85v2",
+      "unit": "B2",
+      "line": "6",
+      "readings": [
+        {
+          "locator": "f85v2.B2.6;U",
+          "transcriber": "U",
+          "literal_string": "okchdy",
+          "body_sha256": "d6525366c8cbc7257ef0c32cb21269d8b00d56e99fccda615a780a9df223a4a8"
+        }
+      ]
+    }
+  ],
+  "limits": "Native key agreement is not an image-adjudicated alignment; matches do not identify the authors' processed input or justify mixing transcribers"
+}
