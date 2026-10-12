@@ -47,6 +47,10 @@ outcomes and descriptive SD scaling without a calibrated tail.
 The [fixed B tail-control block](TYPE_TAILS.md) retains 1,000 additional controls
 per variant, both inclusive tail definitions and distinct frequency/rank scores,
 with the original controls and exposure/randomization limits explicit.
+The [literal H/Reddy envelope audit](REDDY_ENVELOPES.md) locates the recovered
+paper file's one-record gap in a normalized-empty H record. Every shared key
+retains the same order and fallback-retained count; all eight listed-code count
+differences remain explicit without claiming text or alphabet equivalence.
 
 ## Method
 

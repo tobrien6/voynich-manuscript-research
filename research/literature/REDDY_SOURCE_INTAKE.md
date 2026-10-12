@@ -8,6 +8,12 @@ the full file. This supplies a concrete input candidate for a later
 letter-prediction comparison, closing the register's source-recovery gap while
 leaving the original 2011 preprocessing and Table 2 procedure unresolved.
 
+The [separate literal H/Reddy envelope audit](../historical/REDDY_ENVELOPES.md)
+now accounts for the native release's extra normalized-empty H record. All
+5,213 shared keys retain the same order and fallback-retained token counts;
+listed-code deletion changes eight counts. This nominal correspondence does
+not establish equivalent notation, text or original-author corpus bytes.
+
 ## Source identity, exposure and chronology
 
 The [source manifest](reddy-source-manifest.json) pins commit
