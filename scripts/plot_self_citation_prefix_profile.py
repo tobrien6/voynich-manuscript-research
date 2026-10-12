@@ -2,6 +2,7 @@
 
 import argparse
 import hashlib
+import io
 import json
 from pathlib import Path
 import platform
@@ -12,6 +13,18 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def digest(raw):
     return hashlib.sha256(raw).hexdigest()
+
+
+def write_figure(fig, path, suffix, kwargs):
+    """Render completely in memory, then create the artifact exclusively once."""
+    buffer = io.BytesIO()
+    fig.savefig(buffer, format=suffix, **kwargs)
+    raw = buffer.getvalue()
+    if suffix == 'svg':
+        # Preserve SVG separators while removing only trailing line whitespace.
+        raw = b'\n'.join(line.rstrip() for line in raw.splitlines()) + b'\n'
+    with path.open('xb') as stream:
+        stream.write(raw)
 
 
 def render(report_path, output):
@@ -77,11 +90,7 @@ def render(report_path, output):
     paths = []
     for suffix, kwargs in [('png', {'dpi': 160}), ('svg', {'metadata': {'Date': None}})]:
         path = output / ('profile.' + suffix)
-        with path.open('xb') as stream:
-            fig.savefig(stream, format=suffix, **kwargs)
-        if suffix == 'svg':
-            # SVG path separators retain their newlines; remove only EOL spaces.
-            path.write_bytes(b'\n'.join(line.rstrip() for line in path.read_bytes().splitlines()) + b'\n')
+        write_figure(fig, path, suffix, kwargs)
         paths.append(path)
     plt.close(fig)
     provenance = {'schema_version': 1, 'input_report_sha256': digest(raw),

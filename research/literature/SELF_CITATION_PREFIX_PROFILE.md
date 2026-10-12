@@ -143,6 +143,14 @@ The optional figure renderer uses Matplotlib 3.10.8 and publishes
 [plotted values and artifact provenance](figures/self-citation-prefix-profile/provenance.json).
 It only renders existing results and requires a new output directory.
 
+A post-result maintainer correction renders each PNG/SVG into memory before
+creating its output exclusively. SVG whitespace normalization does not reopen
+an artifact path. Temporary symlink/hardlink regressions preserve protected
+input bytes, and a failed render leaves no partial artifact. This writer
+maintenance changes the renderer/provenance fingerprint; the frozen experiment
+producer, complete scientific report and displayed PNG/SVG bytes are unchanged.
+It does not claim an atomic transaction for the complete figure directory.
+
 ```sh
 python3 scripts/plot_self_citation_prefix_profile.py \
   --report research/literature/self-citation-prefix-profile.json \

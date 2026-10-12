@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "input_report_sha256": "140731ba67ca1a9bd2bb35460a4f6a19b5cff671627c4020f9f76f9362191ca9",
-  "renderer_sha256": "9d3f8c03c4522ae61c1c9f58866e035a112932a953a77019900a4803cc623535",
+  "renderer_sha256": "bad6d0d031d838df6f91b1688bbd400e1477478203cddf482c691164de6a6944",
   "runtime": {
     "python": "3.12.14",
     "matplotlib": "3.10.8",
