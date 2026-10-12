@@ -38,7 +38,9 @@ def main():
         protect_output(args.output, root=ROOT)
         result = build(args.uncertain_spaces, args.source or DEFAULT_SOURCES,
                        args.kind or DEFAULT_KINDS, root=ROOT)
-        args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+        rendered = json.dumps(result, indent=2, sort_keys=True) + "\n"
+        protect_output(args.output, root=ROOT)
+        args.output.write_text(rendered)
     except (ValueError, OSError) as error:
         parser.exit(1, f"token cache writer failed: {error}\n")
     print(f"Wrote {result['summary']['records']} locus records; "

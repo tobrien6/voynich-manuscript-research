@@ -27,9 +27,13 @@ The uncertain-space policy is required. Defaults select **ZL3b and IT2a**, with 
 
 Write caches to a separate output path. The companion writer rejects the source catalog,
 every cataloged transcription (including unselected editions), and paths within
-`data/raw` before preprocessing. Symlink and existing hardlink aliases to inputs
-are also rejected. This protects the pinned bytes used by subsequent replays;
-the output schema and processing choices remain unchanged. The companion calls
+`data/raw` before preprocessing and immediately before writing the fully
+serialized cache. Symlink and existing hardlink aliases to inputs are also
+rejected, including aliases introduced during construction or serialization.
+Temporary regressions preserve catalog, selected and unselected source bytes;
+ordinary existing cache files can still be regenerated. The checks do not claim
+an atomic filesystem transaction. This protects the pinned bytes used by
+subsequent replays; the output schema and processing choices remain unchanged. The companion calls
 the accepted `build` producer. The historical `eva_token_adapter.py` file is
 retained byte for byte because accepted image-selection records pin its code
 hash. Its legacy direct CLI does not protect output paths; use the companion
