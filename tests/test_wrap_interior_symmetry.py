@@ -109,6 +109,23 @@ class WrappingSymmetryTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'frozen protocol'):
                     subject.load_settings()
 
+    def test_archival_references_do_not_require_unchanged_live_documentation(self):
+        real_root = subject.ROOT
+        original_git = subject.subprocess.check_output
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            for path, raw in self.raws.items():
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(raw)
+            live = root / 'research/transliteration/INTERIOR_HALVES.md'
+            live.parent.mkdir(parents=True)
+            live.write_bytes(b'Later documentary supplement; historical definition unchanged')
+            with patch.object(subject, 'ROOT', root), patch.object(subject.subprocess, 'check_output',
+                    side_effect=lambda args, **kwargs: original_git(args, cwd=real_root)):
+                settings, _ = subject.load_settings()
+            self.assertEqual(settings, self.settings)
+
     def test_exclusive_output_rejects_existing_and_late_hardlink_aliases(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

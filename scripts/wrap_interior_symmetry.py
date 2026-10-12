@@ -48,10 +48,9 @@ def load_settings():
     commit = settings['accepted_input_commit']
     require(type(commit) is str and re.fullmatch('[0-9a-f]{40}', commit), 'require exact accepted commit')
     for path, checksum in settings['input_sha256'].items():
-        raw = (ROOT / path).read_bytes()
-        require(digest(raw) == checksum, 'accepted artifact changed: ' + path)
-        old = subprocess.check_output(['git', 'show', commit + ':' + path], cwd=ROOT)
-        require(raw == old, 'accepted Git blob changed: ' + path)
+        # These are historical references, not live inputs to the calculation.
+        raw = subprocess.check_output(['git', 'show', commit + ':' + path], cwd=ROOT)
+        require(digest(raw) == checksum, 'accepted archival artifact changed: ' + path)
     return settings, raws
 
 

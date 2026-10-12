@@ -59,8 +59,8 @@ after syntax compilation and before the first unit-test/certificate calculation.
 Both remote heads were checked before execution. These are recorded chronology
 and input-identity statements, not independent certification of exposure.
 
-The producer checks actual frozen protocol blobs and eight accepted parent/method
-artifacts at `dbb043382516d19acecc837ba42fbaef2b005ca4`. Its standard-library
+The producer checks actual frozen protocol blobs and reads eight historical
+parent/method references from Git at `dbb043382516d19acecc837ba42fbaef2b005ca4`. Its standard-library
 implementation uses exact rational probabilities and scores. No source text,
 image, fitted token law or empirical control array enters this calculation.
 
@@ -72,15 +72,26 @@ python3 scripts/wrap_interior_symmetry.py --check research/line-wrap/interior/ce
 python3 scripts/wrap_interior_symmetry.py --output /tmp/new-wrapping-certificates.json
 ```
 
-Eight tests independently compare every positive ordered event with the accepted
+Nine tests independently compare every positive ordered event with the accepted
 sequential wrapper and every eligible score with the accepted full/half methods.
 They cover unequal-law weights versus normalized probabilities, repeated and
 constant bags, short and impossible cases, singleton/domain guards, a separate
 zero-separator boundary implementation check, whole-stream carry/tail behavior,
-frozen-input drift, deterministic reporting and existing/late hardlink outputs.
+frozen-input drift, archival references despite later documentation edits,
+deterministic reporting and existing/late hardlink outputs.
 Outputs require a new unlinked file and are guarded before generation and again
-before an exclusive write. All eight tests pass; the entire report replays byte
+before an exclusive write. All nine tests pass; the entire report replays byte
 for byte. Its SHA-256 is
+`b027a7c56d6993657bedb854466c4dcbd9d5319302490517ff7c8f63488e7e79`.
+
+A post-result compatibility correction stopped requiring live copies of these
+historical references to match their old bytes. Current main had appended a
+documentary variance link to the half-method note, which the original guard
+incorrectly treated as a changed calculation input. The producer now verifies
+the pinned Git blobs directly; its calculation is standalone. The protocol,
+settings, proof and all numerical/provenance records remain identical to the
+first report; only the implementation/test fingerprints changed. The initial
+report SHA-256 was
 `749e8228723845ba533c7b68325587ed025038a336a671eb7353b19d1066e030`.
 
 ## Interpretation
