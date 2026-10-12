@@ -1,0 +1,32 @@
+{
+  "amendment_version": 1,
+  "source_pr": 181,
+  "original_source_head": "a03ac3589bb138be98a701666a481d9d4b1174e6",
+  "accepted_source_head": "410d4107e3bc775cf1fe9f6efeabd2ede919d10b",
+  "accepted_source_merge": "c30f7dd9eb1ead3ae8e7c8f1386db494a4f9db25",
+  "original_plan_sha256": "f90bc92cb0e98eeab39820fe34b9665c306b63ee56de1cf9a1bc1cffb9a78ff5",
+  "original_human_plan_sha256": "fabe0adc07952d761f60d7adb81032af699e9399a6cd8ec44abb764c52e6d3b6",
+  "original_source_catalog_sha256": "c56d29cd65bc3012f477f65c17f82f6640abe9bb8a1f8c17c4c3080e2363fedd",
+  "accepted_source_catalog_sha256": "77fe407b1437c44e523519bacfb29f79ce69d204b3127bc4919a62bb50c6a2f9",
+  "allowed_catalog_field": "manual_inspected_printed_pages",
+  "allowed_page_additions": [
+    12,
+    16,
+    17
+  ],
+  "original_producer_sha256": "4ee740b5aa56b6211a7f64e874da610eebc573a8bb79e7df46195abdf09a3314",
+  "original_report_sha256": "9f022fd41b7b227296dca88869b249f15a1904019d5c726926e50b2fc69b403a",
+  "preserved_files": {
+    "research/historical/frozen/currier-definition-producer-first.source.txt.gz": "cf5737f47ebe09e58faa67a62e3302360d92b439dc5ee4f9de6ecd8f2771b336",
+    "research/historical/frozen/currier-definition-report-first.json.gz": "4c2e7e2757a7b51e0f10af546be78cd4ffe0e5eff3c5bc77dea92eb239ed45d9",
+    "research/historical/frozen/currier-definition-source-first.json": "c56d29cd65bc3012f477f65c17f82f6640abe9bb8a1f8c17c4c3080e2363fedd"
+  },
+  "unchanged_model": true,
+  "unchanged_scientific_results": true,
+  "changed_report_metadata_fields": [
+    "producer_sha256",
+    "effective_dependency_hashes",
+    "source_transition_sha256"
+  ],
+  "limits": "Accepted-source metadata/guide transition only; original model, eight original pins, plans, first producer/report and all source-derived observations preserved; no new symbol policy or corpus comparison"
+}

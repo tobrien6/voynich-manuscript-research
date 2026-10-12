@@ -1,0 +1,36 @@
+{
+  "plan_version": 1,
+  "scope": "Complete descriptive application of one primary-table reverse parser to native H fallback-retained tokens; partial notation output with opaque unmatched symbols, no Reddy comparison or glyph/translation claim",
+  "source_pr": 181,
+  "source_published_head": "a03ac3589bb138be98a701666a481d9d4b1174e6",
+  "direction": "Eva right column to Currier left column",
+  "match_policy": "At each source offset choose the longest matching right-column string; emit its left-column code once without rescanning output",
+  "unmatched_policy": "Copy one unmatched original codepoint opaquely and flag its original token-local offset; never discard or replace with asterisk",
+  "input_token_pattern": "[a-z*]+",
+  "h_special_codes": [],
+  "manual_exclusions": false,
+  "preserve_records_and_tokens": true,
+  "include_asterisks": true,
+  "measures": [
+    "Full source records/empty counts and input/output vector hashes",
+    "All original/partial-output notation character frequencies and lengths",
+    "Every rule-use count by physical definition line",
+    "Every unmatched event by H ordinal/local token index/source offset/codepoint",
+    "Complete token-type bijection and decoder check on all tokens",
+    "Within-record and flattened joining A/B counts, with empty H ordinals retained"
+  ],
+  "comparison_performed": false,
+  "null": false,
+  "raw_text_redistributed": false,
+  "prior_exposure": "Full H source, accepted inventory/parsing, all approximate assays, pending H/Reddy envelope and type reports, current primary definition and synthetic string limits exposed; no untouched evaluation",
+  "dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "research/historical/intake.json": "9c85060ba04e7558485f98cdb6f51eb3e18942428a93874d8706542451b2aa1c",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "research/transliteration/currier-conversion-source.json": "c56d29cd65bc3012f477f65c17f82f6640abe9bb8a1f8c17c4c3080e2363fedd"
+  }
+}

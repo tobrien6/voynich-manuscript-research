@@ -50,6 +50,11 @@ with the original controls and exposure/randomization limits explicit.
 
 ## Method
 
+The [primary-table H model audit](CURRIER_DEFINITION.md) retains every native
+token while applying one declared definition-based parser. It preserves all
+637 unmatched characters and source type/repeat equality, while changing
+notation lengths; the partial output is not a complete Currier edition.
+
 `scripts/audit_historical_interlinear.py` checks the entire ZIP hash and length
 before reading it in memory, requires its one cataloged member, and verifies the
 member hash and length. It never extracts archive paths to the filesystem.
