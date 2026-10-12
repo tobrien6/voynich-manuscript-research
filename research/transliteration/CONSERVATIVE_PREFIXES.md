@@ -78,6 +78,10 @@ source/spacing/stratum/boundary result, controls, and shuffle contrasts. These
 96 feature contrasts are dependent, exploratory, unadjusted for multiplicity,
 and have a minimum Monte Carlo tail resolution of 0.005.
 
+The [source-specific figures](figures/CONSERVATIVE_PREFIXES.md) display both
+spacing policies, source partition sizes, observed contrasts, and conditional
+shuffle reference ranges, with machine-readable plotted values and input digests.
+
 ## Reproduce and validate
 
 Python 3.10 or later; standard library only. Recorded run: Python 3.14.3.
