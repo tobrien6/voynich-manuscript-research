@@ -44,7 +44,12 @@ The renderer checks the exact pinned report bytes and recomputes its entire
 native-source producer before plotting. It verifies all category key sets as
 partitions of the identical selected cohort, the different-chain identity
 across policies and the persistent-disagreement intersection. Output guards
-run before the producer/renderer. PNG/SVG/JSON are generated in memory, and
+run before the producer/renderer and immediately before each artifact write.
+A post-render symlink/hardlink regression preserves the input report and rejects
+the alias before any artifact is written. This maintainer correction changes
+only the renderer fingerprint; the accepted report and image bytes remain
+unchanged. It does not claim an atomic filesystem transaction.
+PNG/SVG/JSON are generated in memory, and
 `--check-dir` compares all three complete exports.
 
 The tested rendering environment is Python 3.14.3 and Matplotlib 3.11.2. SVG

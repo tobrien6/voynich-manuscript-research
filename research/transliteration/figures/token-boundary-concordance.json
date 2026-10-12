@@ -12,7 +12,7 @@
   "renderer": {
     "matplotlib": "3.11.2",
     "python": "3.14.3",
-    "script_sha256": "fa577b2969a6c0210edf7962951d6514b2a7617a8f83c745188ceac67bac07f6"
+    "script_sha256": "97a6570cfdcd8c18086de735c40e5129762fe5a60e6d5eb1d2f716a2ecc4bb8c"
   },
   "rows": [
     {

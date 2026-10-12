@@ -2,8 +2,10 @@ from contextlib import redirect_stderr
 from copy import deepcopy
 import hashlib
 import io
+import os
 from pathlib import Path
 import struct
+import tempfile
 import unittest
 from unittest.mock import patch
 import xml.etree.ElementTree as ET
@@ -88,6 +90,37 @@ class BoundaryFigureTests(unittest.TestCase):
             main()
         producer.assert_not_called()
         renderer.assert_not_called()
+
+    def test_late_render_aliases_are_rejected_before_any_artifact_write(self):
+        for alias_kind in ('symlink', 'hardlink'):
+            with self.subTest(alias_kind=alias_kind), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                (root / 'data').mkdir()
+                (root / 'data/transliterations.json').write_text('{"sources":[]}')
+                source = root / 'report.json'
+                original = REPORT.read_bytes()
+                source.write_bytes(original)
+                output = root / 'figure'
+
+                def late_render(data):
+                    output.mkdir()
+                    alias = output / (STEM + '.svg')
+                    if alias_kind == 'symlink':
+                        alias.symlink_to(source)
+                    else:
+                        os.link(source, alias)
+                    return {'png': b'synthetic png', 'svg': b'synthetic svg', 'json': b'{}'}
+
+                with patch('sys.argv', ['plot', '--output-dir', str(output)]), \
+                        patch('scripts.plot_token_boundary_concordance.ROOT', root), \
+                        patch('scripts.plot_token_boundary_concordance.REPORT', source), \
+                        patch('scripts.plot_token_boundary_concordance.build', return_value=self.report), \
+                        patch('scripts.plot_token_boundary_concordance.render', side_effect=late_render), \
+                        redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                    main()
+                self.assertEqual(source.read_bytes(), original)
+                self.assertFalse((output / (STEM + '.png')).exists())
+                self.assertFalse((output / (STEM + '.json')).exists())
 
 
 if __name__ == '__main__':

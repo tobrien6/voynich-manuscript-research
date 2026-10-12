@@ -155,6 +155,7 @@ def main():
         else:
             directory.mkdir(parents=True, exist_ok=True)
             for path in targets:
+                protect_outputs(targets, [REPORT], root=ROOT)
                 path.write_bytes(output[path.suffix[1:]])
     except (ValueError, KeyError, OSError) as error:
         parser.exit(1, f'boundary figure failed: {error}\n')
