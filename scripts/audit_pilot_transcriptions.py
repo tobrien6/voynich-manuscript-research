@@ -8,6 +8,7 @@ import io
 import json
 from pathlib import Path
 import re
+import sys
 
 try:
     from .audit_transliterations import load_sources
@@ -184,7 +185,11 @@ def main():
             print(rendered, end='')
         if args.check:
             print('Pinned sources and pilot metadata readiness verified.')
-        return 2 if args.require_complete and report['summary']['blocked_target_count'] else 0
+        blocked = report['summary']['blocked_target_count']
+        if args.require_complete and blocked:
+            print(f'Incomplete pilot: {blocked} targets retain mapping blockers.', file=sys.stderr)
+            return 2
+        return 0
     except (ValueError, OSError, KeyError, TypeError) as error:
         parser.exit(1, f'pilot readiness failed: {error}\n')
 

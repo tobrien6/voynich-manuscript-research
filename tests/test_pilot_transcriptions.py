@@ -1,8 +1,11 @@
 import copy
+from contextlib import redirect_stderr, redirect_stdout
+import io
 import unittest
+from unittest.mock import patch
 
 from scripts.ivtff import parse_ivtff
-from scripts.audit_pilot_transcriptions import build_report
+from scripts.audit_pilot_transcriptions import build_report, main
 
 
 def source(ident, text):
@@ -75,6 +78,18 @@ class PilotTranscriptionTests(unittest.TestCase):
         canvases[0]['explicit_folio_sides'] = '2r'
         with self.assertRaisesRegex(ValueError, 'target absent'):
             build_report(inventory, canvases, sources)
+
+    def test_cli_distinguishes_incomplete_audit_from_complete_metadata(self):
+        for count, expected in [(3, 2), (0, 0)]:
+            report = {'summary': {'blocked_target_count': count}}
+            stderr = io.StringIO()
+            with patch('scripts.audit_pilot_transcriptions.audit', return_value=report), \
+                    patch('sys.argv', ['audit', '--require-complete']), \
+                    redirect_stdout(io.StringIO()), redirect_stderr(stderr):
+                self.assertEqual(main(), expected)
+            self.assertEqual(bool(stderr.getvalue()), bool(count))
+            if count:
+                self.assertIn('3 targets retain mapping blockers', stderr.getvalue())
 
 
 if __name__ == '__main__':
