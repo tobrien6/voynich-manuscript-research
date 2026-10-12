@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "input_report_sha256": "140731ba67ca1a9bd2bb35460a4f6a19b5cff671627c4020f9f76f9362191ca9",
-  "renderer_sha256": "30ff6f520726823780384dc3e8eae159ece8a36908aa219c5ce864ec723336b6",
+  "renderer_sha256": "9d3f8c03c4522ae61c1c9f58866e035a112932a953a77019900a4803cc623535",
   "runtime": {
     "python": "3.12.14",
     "matplotlib": "3.10.8",
@@ -978,8 +978,8 @@
     },
     {
       "filename": "profile.svg",
-      "bytes": 173781,
-      "sha256": "0e798e56c99ebebfde82554d32fe99d8a9cfc2a956248ed1b2c2d081456f1ce2"
+      "bytes": 172629,
+      "sha256": "3a2eaf1a6d9c16f4e5f5c8329f59b93c95f0f3a37b31375ef7bfd689cd352311"
     }
   ],
   "scope": "Original statistical figure; fixed-seed range, no calibrated interval or mechanism validation"

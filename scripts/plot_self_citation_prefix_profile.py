@@ -79,6 +79,9 @@ def render(report_path, output):
         path = output / ('profile.' + suffix)
         with path.open('xb') as stream:
             fig.savefig(stream, format=suffix, **kwargs)
+        if suffix == 'svg':
+            # SVG path separators retain their newlines; remove only EOL spaces.
+            path.write_bytes(b'\n'.join(line.rstrip() for line in path.read_bytes().splitlines()) + b'\n')
         paths.append(path)
     plt.close(fig)
     provenance = {'schema_version': 1, 'input_report_sha256': digest(raw),
