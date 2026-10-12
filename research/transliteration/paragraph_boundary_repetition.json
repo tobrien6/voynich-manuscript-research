@@ -21,7 +21,7 @@
     "canonical_corpus_sha256": "a6f1837785d0bab5ac6059e556d2a5cd831bcf5b06eccbef92c99f7a82d7e430",
     "coverage_path": "research/transliteration/paragraph_corpus_coverage.json",
     "coverage_sha256": "2b0b7827460874c1019bc0c4d90cbe8c0f8a7cdc99226cb4b2c14fedc27d63ed",
-    "implementation_sha256": "39399f15461a9e43db4eee42bb8e9683ef6479aef74647dbadde9013e150a039",
+    "implementation_sha256": "265f7586228b136f9c082d508d469418e267a4735d872f137c7a5e9a05028ca9",
     "parent_corpus_inputs": {
       "implementation_sha256": {
         "scripts/annotation_agreement.py": "b5d8ed6c295ef1d1cfdc576c948993da78ec57123f4132044b1fff0f8895b772",
