@@ -26,8 +26,10 @@ Both statistics use all N−1 edges of the surviving flat stream, including join
 between different native records. Empty/excluded records supply no tokens.
 
 Report within-record and cross-record joining events separately, with distinct
-type counts and their overlap. Native records are not established physical
-lines. Also report observed events/types whose literal string contains `*`,
+type counts and their overlap. Also count within-record edges crossing a gap in
+the pre-manual normalized token indices and any equal events on those edges.
+These diagnostics do not capture earlier syntactic changes. Native records are
+not established physical lines. Also report observed events/types whose literal string contains `*`,
 without dropping or reinterpreting those strings. No glyph or word meaning is
 inferred from representation equality.
 
