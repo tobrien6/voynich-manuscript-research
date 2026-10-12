@@ -106,6 +106,11 @@ image inspection adds exposure. The three anchors share one image and one
 observer; they are not independent manuscript samples or untouched evaluation.
 No source correction, glyph adjudication, decipherment, or translation follows.
 
+A [second AI-assisted comparison](F76R_SECOND_ROW_CHECK.md) retains compatible
+row-level outcomes for all three windows while preserving the initial/median
+reading disagreements. It is non-blind and does not establish model independence,
+human validation, accepted mappings, or untouched evaluation material.
+
 Next, an independent observer should check each proposed region against both
 complete native loci and their neighbors, record competing placements, and
 evaluate every source disagreement before any accepted mapping. Other f76r
