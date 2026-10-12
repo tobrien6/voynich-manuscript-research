@@ -1,0 +1,486 @@
+{
+  "duplicate_check": {
+    "byte_different_count": 1,
+    "byte_different_offsets": [
+      126
+    ],
+    "decoded_raw_rgb_sha256": "28127f7b86f70cb04930c0760bcc2e0e919659b1310410a7e9b0d6cd3daa95ff",
+    "decoder": "Pillow 12.3.0; Image.load().tobytes(), stored RGB array, no EXIF rotation",
+    "file_ids": [
+      "1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE",
+      "17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL"
+    ],
+    "same_jpeg_without_exif": true
+  },
+  "exposure": {
+    "alias_registry_changed": false,
+    "article_and_ordinary_images_previously_exposed": true,
+    "independent_qualified_review": false,
+    "new_transcription_or_translation": false,
+    "pixel_registration_or_new_enhancement": false,
+    "plan_remotely_published_before_selected_pixels": true,
+    "raw_band_archive_retrieved": false,
+    "single_nonblind_assistant_review": true
+  },
+  "inputs_sha256": {
+    "research/folio-aliases/decisions.json": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8",
+    "research/image-index/MULTISPECTRAL_INTAKE_PLAN.md": "0fe9f143907dbcaeb00d8490cf2a408cd568ee39e4f40b8edd2c5f4806975aa3",
+    "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+  },
+  "listing": {
+    "processed_folio_folders": [
+      {
+        "file_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I",
+        "name": "Voynich_001r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "1oRJlmojeYA8tYKWSufq-V-nJpzEkphdG",
+        "name": "Voynich_008r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "17hp8Jf5PUsibjzeXaGCT1pUgoG_nJCzf",
+        "name": "Voynich_017r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "1KKe1v5JRsykwZtIS86PlFzH_YUYGwvAK",
+        "name": "Voynich_026r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "1-JAt1byfEoW99erLyzKfS-NGTe2dOFMv",
+        "name": "Voynich_047r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "1eBQ_JZ41zvTLMe4azInSahcof4XUzxBA",
+        "name": "Voynich_070v1",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "1UYhss2aJlfVECTu9hrGzXm8if8VIUxFu",
+        "name": "Voynich_071r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "10mtdQYFvz59LRz-fvYME4YzV8lJbXwqw",
+        "name": "Voynich_093r",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "14KiUM1MSSLVU6qrKd_09Cnm1Y04zsxlB",
+        "name": "Voynich_102v1",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      },
+      {
+        "file_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx",
+        "name": "Voynich_116v",
+        "parent_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7"
+      }
+    ],
+    "rgb_files": [
+      {
+        "file_id": "13I4C7wIc49UVgaVySHTuVhrl62RkHTYs",
+        "name": "Voynich_08r_PSC.jpg",
+        "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi"
+      },
+      {
+        "file_id": "1mYb8DqtiGTYxL6JiGu4cTuRZxsCGUJu3",
+        "name": "Voynich_70v1_PSC.jpg",
+        "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi"
+      },
+      {
+        "file_id": "1_L3YY0vhk1LTFVeSh1ZEy_cXgohs_WvD",
+        "name": "Voynich_71r_PSC.jpg",
+        "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi"
+      },
+      {
+        "file_id": "1mqOwD-qwBPZXY5WIhGdDNJz_0SKnRzcG",
+        "name": "Voynich_93r_PSC.jpg",
+        "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi"
+      },
+      {
+        "file_id": "1aIZZFSwdpEwm0P5rMQmVjnV56i6nkRV0",
+        "name": "Voynich_102v1_PSC.jpg",
+        "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi"
+      },
+      {
+        "file_id": "17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL",
+        "name": "Voynich_116v_PSC.jpg",
+        "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi"
+      }
+    ],
+    "root_id": "1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig",
+    "selected_folder_files": [
+      {
+        "file_id": "10DGRgF8yj-mLPntC_7KqLIY53CzfzeDV",
+        "name": "Voynich_01r_bands01-12_RF_cal_R6G4B1.tif",
+        "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I"
+      },
+      {
+        "file_id": "1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp",
+        "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G-3_B+14_scl2_r-90.jpg",
+        "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I"
+      },
+      {
+        "file_id": "1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9",
+        "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G+10_B+14_imga_r-90_hue+100_sat-50.jpg",
+        "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I"
+      },
+      {
+        "file_id": "1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt",
+        "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_22bands_blueRoI_RH_margin_shiftdif_MNF_R+3_G-4_B-5_scga.jpg",
+        "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I"
+      },
+      {
+        "file_id": "1Kfy4Qb-gsCMRflu-MlrtEACjEMuYGNdA",
+        "name": "Voynich_116v_bands01-22_RF+FL_cal_faded_text_RB+UV_FL_8bands_PCA_R-1G-2B3_hue+20.tif",
+        "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx"
+      },
+      {
+        "file_id": "17sE8Ifw9BTG2zBN721R-NKGoXiCi9Ros",
+        "name": "Voynich_116v_bands01-22_RF+FL_cal_faded_text_RB+UV_FL_8bands_PCA_R-1G-2B3_hue+20b_r90_BW_as_L_RGB.jpg",
+        "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx"
+      },
+      {
+        "file_id": "16SuJ5R7RpPKXRnySPv8Pn1tNE0WouTGF",
+        "name": "Voynich_116v_bands01-22_RF+FL_cal_faded_text_RB+UV_FL_8bands_PCA_R-1G-2B3_hue+20b_r90_BW.tif",
+        "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx"
+      },
+      {
+        "file_id": "1UoEGa6G6Ex40tnbmRAmlATqPjwkgvLSP",
+        "name": "Voynich_116v_bands01-22_RF+FL_cal_faded_text_RB+UV_FL_8bands_PCA_R-1G-2B3_hue+20b.tif",
+        "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx"
+      },
+      {
+        "file_id": "1Ed7oVeeOSEawpizLi8eOu47ZFR6WYQsg",
+        "name": "Voynich_116v_bands01-22_RF+FL_cal_faded_text_RB+UV_FL_8bands_PCA_R1G2B3.tif",
+        "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx"
+      },
+      {
+        "file_id": "1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE",
+        "name": "Voynich_116v_PSC.jpg",
+        "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx"
+      }
+    ],
+    "top_folders": [
+      {
+        "file_id": "1r0FWOBJfKEeKVdJdhubprsHzC7Wv3yQb",
+        "name": "Lab_true_color_TIFF",
+        "parent_id": "1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig"
+      },
+      {
+        "file_id": "1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7",
+        "name": "Processed_Images",
+        "parent_id": "1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig"
+      },
+      {
+        "file_id": "1cG27kgxCsxyU4DkCKo7eLRa1Pq8XM79N",
+        "name": "Raw TIFFs (not readable by most image viewers)",
+        "parent_id": "1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig"
+      },
+      {
+        "file_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi",
+        "name": "RGB_true_color_JPEG",
+        "parent_id": "1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig"
+      }
+    ]
+  },
+  "method": "selected-public-voynich-msi-intake-v1",
+  "observations": {
+    "116v": "The processed view emphasizes dense faint reversed-looking writing across the otherwise pale body, in addition to the short upper writing and left-edge figures. The true-color views leave much of that body writing faint. The two PSC copies display oppositely when their EXIF orientations are honored. Upper writing contains a short separate upper row plus three longer rows in these views; no glyphs or words were newly transcribed.",
+    "1r": "All three processed full frames show the same main writing blocks and mounting/chart/ruler context with different false-color palettes. Dark leaf-shaped forms overlap the writing area. Faint lower-margin writing and marks down the right margin are more conspicuous than in the separately framed Yale view, but individual readings and exact column alignment were not adjudicated at these reduced full-frame displays.",
+    "disposition": "supplementary views; glyph readings and legacy alias unresolved"
+  },
+  "recorded_on": "2026-10-12",
+  "release": {
+    "access_and_reuse": "Release author states permission for public viewing and free download; requested credit retained. No Creative Commons license inferred. Source binaries linked and kept outside Git.",
+    "article_date": "2024-09-08",
+    "article_url": "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/",
+    "capture_year": 2014,
+    "credit": "The Lazarus Project and The Chester F. Carlson Center for Imaging Science at Rochester Institute of Technology",
+    "manuscript_citation": "Beinecke Rare Book & Manuscript Library MS 408; cite each folio",
+    "readme": {
+      "byte_count": 58338,
+      "file_id": "1nzKNlV2BqCEz3VvheAFZ_4IULFwLExng",
+      "filename": "READ ME.pdf",
+      "page_count": 1,
+      "sha256": "02183484db3d238325d87b46f8c48676efeac53bce7a03b4af40f141fa2af157"
+    },
+    "readme_date": "2024-09-09",
+    "reported_processing": "Read Me reports exposure calibration using a Spectralon reference and a 3x3 median neighborhood before pseudocolor rendering, attributed to Easton correspondence. Filenames/properties preserve capture and processing information; this intake does not reconstruct or validate the pipeline."
+  },
+  "schema_version": 1,
+  "selected_images": [
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          6132,
+          8176
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "70165d1470490f78d3aec250b8c2ebf6de2d5d420ccc28e2fbdb5feeb8b2054d"
+      },
+      "download_url": "https://drive.google.com/uc?export=download&id=1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp",
+      "file_id": "1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp",
+      "local_filename": "msi-1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp.jpg",
+      "metadata": {
+        "byte_count": 19030289,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": null,
+        "jpeg_without_exif_sha256": "4e216559d2bb30eb0d0c7983743037b22e35df546765fe02085170a0ec822dc6",
+        "sha256": "e9e20479a4354c453e7138525800ea7090b628d2313f1046ca60dfc13a72e3d9"
+      },
+      "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G-3_B+14_scl2_r-90.jpg",
+      "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I",
+      "source_side": "1r",
+      "view_url": "https://drive.google.com/file/d/1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp/view"
+    },
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          6132,
+          8176
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "68c59c6f5dfe09eb7647318bb06cd1c78dd960966bd8f044e836787160480602"
+      },
+      "download_url": "https://drive.google.com/uc?export=download&id=1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9",
+      "file_id": "1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9",
+      "local_filename": "msi-1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9.jpg",
+      "metadata": {
+        "byte_count": 19705623,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": null,
+        "jpeg_without_exif_sha256": "af76f496cfe264e958e92e17f492fbf1ce64cfbd5087db6a7c35523a993d6e5d",
+        "sha256": "79c642c963304a1e2a1729e0b8c710b82603660c9c1e8fffd41a09991394bf07"
+      },
+      "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G+10_B+14_imga_r-90_hue+100_sat-50.jpg",
+      "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I",
+      "source_side": "1r",
+      "view_url": "https://drive.google.com/file/d/1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9/view"
+    },
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          6132,
+          8176
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "05503783076d01b908db8f08dd15f66d6e4b7cf3ad7837946d9aad279b8267db"
+      },
+      "download_url": "https://drive.google.com/uc?export=download&id=1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt",
+      "file_id": "1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt",
+      "local_filename": "msi-1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt.jpg",
+      "metadata": {
+        "byte_count": 18969779,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": null,
+        "jpeg_without_exif_sha256": "9f60749cb6de0fcdf72bf79a34287257971e14347232e13cb3166707a2180fea",
+        "sha256": "a4dc96aebab02871c15a80e2ec8e6f9d5a7f70f9e00c86beb9f5b0ce8b81a5ef"
+      },
+      "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_22bands_blueRoI_RH_margin_shiftdif_MNF_R+3_G-4_B-5_scga.jpg",
+      "parent_id": "1_J_2ukEJwknW7a2p8NnseypSwTyM28_I",
+      "source_side": "1r",
+      "view_url": "https://drive.google.com/file/d/1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt/view"
+    },
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          6132,
+          8176
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "320483876862906fbcde9a41f020800206aadc120ccf3955364eaf3d16d74751"
+      },
+      "download_url": "https://drive.google.com/uc?export=download&id=17sE8Ifw9BTG2zBN721R-NKGoXiCi9Ros",
+      "file_id": "17sE8Ifw9BTG2zBN721R-NKGoXiCi9Ros",
+      "local_filename": "msi-17sE8Ifw9BTG2zBN721R-NKGoXiCi9Ros.jpg",
+      "metadata": {
+        "byte_count": 6499031,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": "3f6d674174f3804eb0dabdac90ae17486e898c5063a66f861c116ea033da8301",
+        "jpeg_without_exif_sha256": "4c4550f9a14473c0532c8972b72841c0723c629a6eb67eeb1ea6e5cdd5b91232",
+        "sha256": "52f92af519c287b0b83009ffd6263c4a582e99a791069aafa93db7c912e62199"
+      },
+      "name": "Voynich_116v_bands01-22_RF+FL_cal_faded_text_RB+UV_FL_8bands_PCA_R-1G-2B3_hue+20b_r90_BW_as_L_RGB.jpg",
+      "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx",
+      "source_side": "116v",
+      "view_url": "https://drive.google.com/file/d/17sE8Ifw9BTG2zBN721R-NKGoXiCi9Ros/view"
+    },
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          6132,
+          8176
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "28127f7b86f70cb04930c0760bcc2e0e919659b1310410a7e9b0d6cd3daa95ff"
+      },
+      "download_url": "https://drive.google.com/uc?export=download&id=1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE",
+      "file_id": "1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE",
+      "local_filename": "msi-1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE.jpg",
+      "metadata": {
+        "byte_count": 2474519,
+        "exif_orientation": 3,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": "3f6d674174f3804eb0dabdac90ae17486e898c5063a66f861c116ea033da8301",
+        "jpeg_without_exif_sha256": "5cc041e33f1f2bf4e998a916412f0c237f9c1d4edafa6a94d0963f90b81bca4e",
+        "sha256": "b88b365e14cdc44f96e1f214b71775db6d1e6e15f77541d2fb1639a12af503bb"
+      },
+      "name": "Voynich_116v_PSC.jpg",
+      "parent_id": "1Q3cUXX9mIs94FLPZPhLne-XbYrt25DNx",
+      "source_side": "116v",
+      "view_url": "https://drive.google.com/file/d/1UBQfNp3pm8KfGjGCcAOCV1QXF_qQdjyE/view"
+    },
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          6132,
+          8176
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "28127f7b86f70cb04930c0760bcc2e0e919659b1310410a7e9b0d6cd3daa95ff"
+      },
+      "download_url": "https://drive.google.com/uc?export=download&id=17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL",
+      "file_id": "17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL",
+      "local_filename": "msi-17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL.jpg",
+      "metadata": {
+        "byte_count": 2474519,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": "3f6d674174f3804eb0dabdac90ae17486e898c5063a66f861c116ea033da8301",
+        "jpeg_without_exif_sha256": "5cc041e33f1f2bf4e998a916412f0c237f9c1d4edafa6a94d0963f90b81bca4e",
+        "sha256": "fff56fe8fbddb22f9630f266a627c12f0af35a2abc5cd1f025f3c640bf09dded"
+      },
+      "name": "Voynich_116v_PSC.jpg",
+      "parent_id": "1to9QOXNrSfIUITnogjkZSTy8zN553OGi",
+      "source_side": "116v",
+      "view_url": "https://drive.google.com/file/d/17hqCyh3kaBU_7Twa0N2VKRZjqfmddFVL/view"
+    }
+  ],
+  "verification_limits": "The checker binds this finite manually extracted listing and selected local file/header identity, not archive completeness, visual truth, release authority, registration or processing reconstruction. Full stored RGB content is verified only with --cache and --decode (Pillow). The PDF page count is an author observation checked separately by PDF rendering. Remote publication chronology and paleographic interpretations require review. Decoder version is retained but another version is accepted only if all decoded facts and pixel bytes match.",
+  "yale_references": [
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          2972,
+          3766
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "57bea493473214e539c771e0352db20102f7e4ad2eeace375c94bf7bebc7f1b0"
+      },
+      "index_row": {
+        "canvas_index_zero_based": "2",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006076",
+        "explicit_folio_sides": "1r",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+        "has_multiple_explicit_sides": "False",
+        "has_partial_marker": "False",
+        "image_height": "3766",
+        "image_oid": "1006076",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006076",
+        "image_width": "2972",
+        "label_class": "exact_single_side_label",
+        "viewer_image_number_one_based": "3",
+        "yale_label": "1r"
+      },
+      "local_filename": "yale-1r.jpg",
+      "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+      "metadata": {
+        "byte_count": 2309265,
+        "exif_orientation": null,
+        "header_dimensions": [
+          2972,
+          3766
+        ],
+        "icc_profile_sha256": "f6bd2776ef85c5a0a9313989eb60f3db7996bc4af48453353f53840643d8e32b",
+        "jpeg_without_exif_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+        "sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf"
+      },
+      "side": "1r"
+    },
+    {
+      "decoded": {
+        "decoder": "Pillow 12.3.0",
+        "dimensions": [
+          2686,
+          3697
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "stored_rgb_sha256": "12baa0075cf7a996813707a412fa67505e6ce75422b74ed3c9353c38aa3185b5"
+      },
+      "index_row": {
+        "canvas_index_zero_based": "205",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006277",
+        "explicit_folio_sides": "116v",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg",
+        "has_multiple_explicit_sides": "False",
+        "has_partial_marker": "False",
+        "image_height": "3697",
+        "image_oid": "1006277",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006277",
+        "image_width": "2686",
+        "label_class": "exact_single_side_label",
+        "viewer_image_number_one_based": "206",
+        "yale_label": "116v"
+      },
+      "local_filename": "yale-116v.jpg",
+      "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+      "metadata": {
+        "byte_count": 1994539,
+        "exif_orientation": null,
+        "header_dimensions": [
+          2686,
+          3697
+        ],
+        "icc_profile_sha256": "f6bd2776ef85c5a0a9313989eb60f3db7996bc4af48453353f53840643d8e32b",
+        "jpeg_without_exif_sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+        "sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17"
+      },
+      "side": "116v"
+    }
+  ]
+}
