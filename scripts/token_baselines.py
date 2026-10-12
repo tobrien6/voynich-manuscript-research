@@ -3,8 +3,10 @@
 import argparse
 from collections import Counter
 from dataclasses import dataclass
+from fractions import Fraction
 import hashlib
 import json
+import math
 from pathlib import Path
 import random
 import re
@@ -13,9 +15,11 @@ import string
 try:
     from .audit_transliterations import load_sources
     from .ivtff import TAG, without_free_comments
+    from .repetition_moments import conditional_moments
 except ImportError:
     from audit_transliterations import load_sources
     from ivtff import TAG, without_free_comments
+    from repetition_moments import conditional_moments
 
 
 @dataclass(frozen=True)
@@ -180,6 +184,7 @@ def summarize(loci, spacing, alternatives, repetitions, seed):
     frequencies, lengths, exclusions = Counter(), Counter(), Counter()
     groups = []
     slots_total, eligible_pairs, observed_repeats, expectation = 0, 0, 0, 0.0
+    variance = Fraction(0)
     for locus in loci:
         try:
             tokens = tokenize(locus.text, spacing)
@@ -202,6 +207,7 @@ def summarize(loci, spacing, alternatives, repetitions, seed):
         eligible_pairs += len(edges)
         observed_repeats += sum(values[a] == values[b] for a, b in edges)
         expectation += expected_repeats(values, edges)
+        variance += conditional_moments(values, edges)['variance']
         if edges:
             groups.append((values, edges))
     rng = random.Random(seed)
@@ -228,6 +234,11 @@ def summarize(loci, spacing, alternatives, repetitions, seed):
             'observed_rate': round(observed_repeats / eligible_pairs, 8) if eligible_pairs else None,
             'exact_conditional_expected_pairs': round(expectation, 8),
             'expected_rate': round(expectation / eligible_pairs, 8) if eligible_pairs else None,
+            'exact_conditional_variance': round(float(variance), 8),
+            'conditional_standard_deviation': round(math.sqrt(float(variance)), 8),
+            'observed_minus_expected_in_sd': round((observed_repeats - expectation) / math.sqrt(float(variance)), 8) if variance else None,
+            'zero_conditional_variance': not bool(variance),
+            'variance_model': 'independent uniform permutations within each locus; eligible representations and excluded positions fixed',
             'shuffle_repetitions': repetitions, 'seed': seed,
             'null_equal_pair_counts': null_counts,
             'exploratory_upper_tail': ((1 + sum(n >= observed_repeats for n in null_counts)) /
@@ -258,7 +269,7 @@ def baselines(repetitions=199, seed=20261011):
         raise ValueError('no common P0 locations')
     selection_hash = hashlib.sha256(('\n'.join(sorted(common)) + '\n').encode()).hexdigest()
     report = {
-        'schema_version': 1, 'method': 'paired exploratory token baselines v1',
+        'schema_version': 1, 'method': 'paired exploratory token baselines v2: exact conditional variance added',
         'selection': {'kind': 'P0', 'rule': 'intersection of present P0 loci in the paired ZL3b and IT2a sources',
                       'count': len(common), 'sorted_locus_keys_sha256': selection_hash},
         'sources': [],
