@@ -1,0 +1,501 @@
+{
+  "schema_version": 1,
+  "method": "f76r-three-native-locus-image-review-v1",
+  "selection_path": "research/pilot/f76r-anchor-selection.json",
+  "selection_sha256": "dcce8de127dca3b12d5e9deae223ff6fad5c39ce413a88de8d92de85415c1d87",
+  "selection_plan_commit": "54007c5479a49652c8233b841234eec4b337841f",
+  "inspection_date_local": "2026-10-12",
+  "inspection_timezone": "America/New_York",
+  "image": {
+    "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+    "yale_label": "76r",
+    "image_oid": "1006210",
+    "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006210",
+    "explicit_label_sides": [
+      "76r"
+    ],
+    "combined_view": false,
+    "service_url": "https://collections.library.yale.edu/iiif/2/1006210",
+    "full_image_url": "https://collections.library.yale.edu/iiif/2/1006210/full/full/0/default.jpg",
+    "native_width": 2793,
+    "native_height": 3769
+  },
+  "manifest": {
+    "url": "https://collections.library.yale.edu/manifests/2002046",
+    "sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309"
+  },
+  "sources": [
+    {
+      "id": "ZL3b",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    },
+    {
+      "id": "IT2a",
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    }
+  ],
+  "coordinate_system": {
+    "units": "native image pixels",
+    "origin": "upper left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "region_format": "[x, y, width, height]"
+  },
+  "inspection_files": [
+    {
+      "id": "overview",
+      "local_filename": "f76r-overview.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006210/full/!1800,1800/0/default.jpg",
+      "native_region": null,
+      "width": 1334,
+      "height": 1800,
+      "sha256": "173637eb7569a6fc67a9ef50124ca5f982f29aa76606cebd0e9a287f9194537d",
+      "bytes": 644165
+    },
+    {
+      "id": "first",
+      "local_filename": "f76r-first.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006210/240,120,2200,330/full/0/default.jpg",
+      "native_region": [
+        240,
+        120,
+        2200,
+        330
+      ],
+      "width": 2200,
+      "height": 330,
+      "sha256": "34cbbc76d38498a0a7f5e8108259dc75b2886bea35f725ed3784a6491da86660",
+      "bytes": 166262
+    },
+    {
+      "id": "median",
+      "local_filename": "f76r-median.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006210/240,1630,2190,210/full/0/default.jpg",
+      "native_region": [
+        240,
+        1630,
+        2190,
+        210
+      ],
+      "width": 2190,
+      "height": 210,
+      "sha256": "ecb266658ff3914b91610357758fb7f7815f0f4c83747d38716ae581d491516c",
+      "bytes": 122932
+    },
+    {
+      "id": "last",
+      "local_filename": "f76r-last.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006210/230,2870,2210,220/full/0/default.jpg",
+      "native_region": [
+        230,
+        2870,
+        2210,
+        220
+      ],
+      "width": 2210,
+      "height": 220,
+      "sha256": "7e49a90fc67a42c12b63557ef6292852937d2da998bac4a01c1e85d83b49342a",
+      "bytes": 111824
+    }
+  ],
+  "service_metadata": {
+    "url": "https://collections.library.yale.edu/iiif/2/1006210/info.json",
+    "local_filename": "f76r-info.json",
+    "sha256": "9066516e8d7ebb6a2c0d3e5a8e004eeab06b90ce49172143be454903ec5eef1b",
+    "service_id": "https://collections.library.yale.edu/iiif/2/1006210",
+    "width": 2793,
+    "height": 3769
+  },
+  "exposure": {
+    "prior_inventory": {
+      "inspection_status": "visually inspected",
+      "inspected_on": "2026-10-11",
+      "source_record": "research/pilot/inventory.json"
+    },
+    "whole_corpus_text_exposure": true,
+    "new_f76r_image_inspection": true,
+    "untouched_evaluation": false
+  },
+  "review_status": "single-observer provisional row alignment",
+  "glyph_adjudication": "unresolved",
+  "source_corrections_applied": false,
+  "records": [
+    {
+      "key": "f76r.1",
+      "selection_role": "first",
+      "native_source_contexts": {
+        "IT2a": {
+          "locus": {
+            "key": "f76r.1",
+            "identifier": "f76r.1,@P0",
+            "source_file_line": 2651,
+            "native_text": "<%>potchokar.chcfhdy.opshdy.qolp.chcphy.chcphdy.opshey.qofshy.opchdy.sain.?sy",
+            "locator": "@",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "preceding": null,
+          "following": {
+            "key": "f76r.2",
+            "identifier": "f76r.2,+P0",
+            "source_file_line": 2652,
+            "native_text": "dshedy.qotddyar.cthar.chep.dain.okain.qokeor.shedy.qol.ain.sheols.qokeey",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          }
+        },
+        "ZL3b": {
+          "locus": {
+            "key": "f76r.1",
+            "identifier": "f76r.1,@P0",
+            "source_file_line": 4138,
+            "native_text": "<%>potchokor.chcfhdy.opshdy.qolp.chcphy.chcphdy.opshey.qofshy.opchdy.sain.as,y",
+            "locator": "@",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "preceding": null,
+          "following": {
+            "key": "f76r.2",
+            "identifier": "f76r.2,+P0",
+            "source_file_line": 4139,
+            "native_text": "dshedy.qotddyar.cthar.chep.dain.okain.qokeor.shedy.qol.ain.sheals,qokeey",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          }
+        }
+      },
+      "inspection_file_id": "first",
+      "direct_observations": [
+        "At the head of the main text block, a large looped form rises far above the row at its left edge.",
+        "Several tall looped or crossed forms are distributed across this row. The rightmost writing groups sit below and left of the folio number 76.",
+        "A second writing row is visible below, with a different short initial form and several tall forms."
+      ],
+      "source_row_association": {
+        "status": "provisional",
+        "candidate_description": "First visible row of the main writing block, including its large left flourish.",
+        "basis": [
+          "Both native loci are the first source record on this page and begin with a p-containing sequence; the enlarged left form and the distributed tall forms supply a distinctive page-order and shape anchor.",
+          "The sequence of tall groups across the row and the low upright-rich group near the right are compatible with both recorded native strings. The neighboring f76r.2 record offers a separate row-order check."
+        ],
+        "unresolved": [
+          "The potchokor (ZL) versus potchokar (IT) difference in the first word is not adjudicated.",
+          "ZL retains final as,y with uncertain spacing, whereas IT has ?sy. The image review does not resolve that reading or segmentation.",
+          "A compatible shape sequence supports row association; it does not independently confirm every encoded glyph."
+        ],
+        "other_candidate_regions": [],
+        "alternative_search_limit": "No exhaustive alternative-row search or glyph adjudication was performed."
+      }
+    },
+    {
+      "key": "f76r.35",
+      "selection_role": "lower_median",
+      "native_source_contexts": {
+        "IT2a": {
+          "locus": {
+            "key": "f76r.35",
+            "identifier": "f76r.35,+P0",
+            "source_file_line": 2685,
+            "native_text": "saiin.shedy.lshey.qokal.chcthy.okeolor.cheol.otar.chedy.qol.chcthy.chckhy",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "preceding": {
+            "key": "f76r.34",
+            "identifier": "f76r.34,+P0",
+            "source_file_line": 2684,
+            "native_text": "cheor.shey.qoolkal.shedy.shedy.shey.shedy.ollchy.shlches.shcthy.sain.oly",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "following": {
+            "key": "f76r.36",
+            "identifier": "f76r.36,+P0",
+            "source_file_line": 2686,
+            "native_text": "qokal.shedy.sheol.cheal.alshy.chol.chdy.talor.olalor.chol.okeyr.ar.oly",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          }
+        },
+        "ZL3b": {
+          "locus": {
+            "key": "f76r.35",
+            "identifier": "f76r.35,+P0",
+            "source_file_line": 4172,
+            "native_text": "sain.shedy.lshey.qokal.chcthy.okeolor.cheol.otar.chedy.qol.chcthy.chckhy",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "preceding": {
+            "key": "f76r.34",
+            "identifier": "f76r.34,+P0",
+            "source_file_line": 4171,
+            "native_text": "cheor.shey.qoolkal,shedy.shedy.shey.shedy.ollchy.shlches.shcthy.sain.oly",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "following": {
+            "key": "f76r.36",
+            "identifier": "f76r.36,+P0",
+            "source_file_line": 4173,
+            "native_text": "qok[a:o]l.shedy.sheol.cheol.alshy.chol,chdy.talor.ol,alor.chol.okeor,ar,o.oly",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          }
+        }
+      },
+      "inspection_file_id": "median",
+      "direct_observations": [
+        "In the lower part of the dense upper block, the proposed row begins with a curled form followed by a low sequence of upright strokes.",
+        "Two complex tall crossed or looped forms occur near its far-right end. The row above and row below contain visibly different starting groups.",
+        "A separate short row with a left-margin mark lies below this neighborhood, before the next enlarged text-block initial."
+      ],
+      "source_row_association": {
+        "status": "provisional",
+        "candidate_description": "The row between the proposed f76r.34 and f76r.36 rows, near the bottom of the upper dense block.",
+        "basis": [
+          "The curled/upright-rich beginning is compatible with the native sain (ZL) or saiin (IT), while the next compact group and the pair of complex final forms provide additional anchors.",
+          "Both sources end the locus with qol.chcthy.chckhy, compatible with the two tall final forms in this row. The neighboring native starts cheor.shey (f76r.34) and qok[a:o]l (ZL f76r.36) supply the ordering context.",
+          "The selected rank 18 is among regular P0 keys, not a count of visible rows; intervening L0 and =P0 records remain in the source ledger."
+        ],
+        "unresolved": [
+          "The sain versus saiin difference at the beginning is not resolved by counting visible strokes.",
+          "The ZL [a:o] alternative and uncertain spaces in the following f76r.36 record remain native source uncertainty, not a corrected neighbor transcription.",
+          "The native substring correspondences are provisional; a second observer must check this row and both neighbors."
+        ],
+        "other_candidate_regions": [],
+        "alternative_search_limit": "No exhaustive alternative-row search or glyph adjudication was performed."
+      }
+    },
+    {
+      "key": "f76r.56",
+      "selection_role": "last",
+      "native_source_contexts": {
+        "IT2a": {
+          "locus": {
+            "key": "f76r.56",
+            "identifier": "f76r.56,+P0",
+            "source_file_line": 2706,
+            "native_text": "qokaiin.ol.shedy.qokeey.or.shdy<$>",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "preceding": {
+            "key": "f76r.55",
+            "identifier": "f76r.55,+P0",
+            "source_file_line": 2705,
+            "native_text": "sain.sheey.or.or.al.solshey.okeedy.ldaiin.checthey.okedalor",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "following": null
+        },
+        "ZL3b": {
+          "locus": {
+            "key": "f76r.56",
+            "identifier": "f76r.56,+P0",
+            "source_file_line": 4196,
+            "native_text": "qokaiin.ol.shedy.qokeey.or.shdy<$>",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "preceding": {
+            "key": "f76r.55",
+            "identifier": "f76r.55,+P0",
+            "source_file_line": 4195,
+            "native_text": "sain.sheey.or.ar.al.solshey.okeedy.ldaiin.checkhey.okedalor",
+            "locator": "+",
+            "kind": "P0",
+            "metadata": {
+              "B": "2",
+              "C": "2",
+              "F": "b",
+              "H": "2",
+              "I": "T",
+              "L": "B",
+              "P": "C",
+              "Q": "M",
+              "X": "S"
+            }
+          },
+          "following": null
+        }
+      },
+      "inspection_file_id": "last",
+      "direct_observations": [
+        "The bottommost main-text row is substantially shorter than the preceding row, leaving broad blank space to its right and below.",
+        "Its first group has a long descending stroke and taller looped forms followed by a run of low upright strokes.",
+        "Several compact writing groups follow, including two short groups between larger clusters."
+      ],
+      "source_row_association": {
+        "status": "provisional",
+        "candidate_description": "Short bottommost row of the main writing block.",
+        "basis": [
+          "Both sources have the identical terminal text qokaiin.ol.shedy.qokeey.or.shdy<$> and no following locus on this page.",
+          "The short terminal position, long-stem/upright-rich first group and alternating short/larger groups are compatible with that shared text. The long preceding f76r.55 row and blank area below supply additional placement cues."
+        ],
+        "unresolved": [
+          "Source agreement is not independent glyph ground truth. The review does not certify all six source word boundaries.",
+          "The <$>-marked source termination is preserved as metadata; this review makes no general judgment about paragraph annotations."
+        ],
+        "other_candidate_regions": [],
+        "alternative_search_limit": "No exhaustive alternative-row search or glyph adjudication was performed."
+      }
+    }
+  ],
+  "limits": [
+    "The regions include neighboring strokes and rows; they are review windows, not verified glyph or token bounding boxes.",
+    "All three anchors use one page, two related editions and one observer; they are not independent manuscript samples.",
+    "Region choices were made after viewing the page; only native locus selection was frozen beforehand.",
+    "The full/full image request returned HTTP 504. The official overview and native-pixel region requests succeeded. No full-resolution whole image was inspected.",
+    "Bitmap dimensions were checked with macOS sips. The offline verifier checks declared geometry and optional local byte hashes; it does not decode images or validate visual judgments.",
+    "No glyph classification, word-boundary correction, decipherment, translation or untouched evaluation is established."
+  ]
+}
