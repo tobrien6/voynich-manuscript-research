@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "analysis_id": "known-marker-opportunity-v1",
+  "scope": "Analytically constructed synthetic measurement check; no manuscript data enters construction or scoring",
+  "analytical_predictions_known_before_implementation": true,
+  "manuscript_mechanism_validation": false,
+  "input_pins": {
+    "plan": {
+      "path": "research/representation/KNOWN_MARKER_OPPORTUNITY_PLAN.md",
+      "sha256": "0072bc244b8a77f202ea4dd5c1a0bc4b8160e742d6816905d929f8e3d84c15dd"
+    },
+    "lookup_controls": {
+      "path": "scripts/y_prefix_specificity.py",
+      "sha256": "1723ad7bac95d00e7e9466c40287239041215b9e4db7e908e604eda459a7026e"
+    },
+    "parent_lookup": {
+      "path": "scripts/y_layout_prefix.py",
+      "sha256": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3"
+    },
+    "token_type": {
+      "path": "scripts/token_baselines.py",
+      "sha256": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+    },
+    "accepted_control_report": {
+      "path": "research/hypotheses/y-prefix-specificity-v1/results.json",
+      "sha256": "f7ec8ddf9ec941864bc3b5490b4be1561f36bda6c8f97556586911009ecdc511"
+    }
+  },
+  "implementation_sha256": "0a4a6320b35e4f9ed17726851c335c382ec59f1ec5dc9b23142a46cfb7145266",
+  "source_vocabulary": [
+    "a",
+    "b",
+    "c",
+    "ya",
+    "yc",
+    "z"
+  ],
+  "source": {
+    "development": [
+      [
+        "z",
+        "a",
+        "b",
+        "c",
+        "ya",
+        "ya",
+        "z"
+      ]
+    ],
+    "diagnostic": [
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "a",
+        "yc",
+        "z"
+      ]
+    ]
+  },
+  "encoded": {
+    "development": [
+      [
+        "yz",
+        "a",
+        "b",
+        "c",
+        "ya",
+        "ya",
+        "z"
+      ]
+    ],
+    "diagnostic": [
+      [
+        "yb",
+        "ya",
+        "z"
+      ],
+      [
+        "yb",
+        "ya",
+        "z"
+      ],
+      [
+        "yb",
+        "ya",
+        "z"
+      ],
+      [
+        "yb",
+        "ya",
+        "z"
+      ],
+      [
+        "ya",
+        "yc",
+        "z"
+      ]
+    ]
+  },
+  "recovered": {
+    "development": [
+      [
+        "z",
+        "a",
+        "b",
+        "c",
+        "ya",
+        "ya",
+        "z"
+      ]
+    ],
+    "diagnostic": [
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "b",
+        "ya",
+        "z"
+      ],
+      [
+        "a",
+        "yc",
+        "z"
+      ]
+    ]
+  },
+  "round_trip_exact": true,
+  "markers_inserted": 6,
+  "total_rows": 6,
+  "total_source_tokens": 22,
+  "total_encoded_tokens": 22,
+  "source_ascii_characters": 29,
+  "encoded_ascii_characters": 35,
+  "diagnostic_prefix_counts": {
+    "source_first_y": 0,
+    "encoded_first_y": 5,
+    "source_other_y": 5,
+    "encoded_other_y": 5
+  },
+  "lookup": {
+    "development_dictionary_counts": {
+      "a": 1,
+      "b": 1,
+      "c": 1,
+      "ya": 2,
+      "z": 1
+    },
+    "dictionary_distinct_strings": 5,
+    "development_internal_tokens": 6,
+    "diagnostic_y_lookup_cells": {
+      "prefix": "y",
+      "first_slot": {
+        "candidate_tokens": 5,
+        "original_matches": 1,
+        "stripped_matches": 5,
+        "both_match": 1,
+        "neither_matches": 0,
+        "original_only": 0,
+        "stripped_only": 4,
+        "mean_match_gain": 0.8
+      },
+      "other_slots": {
+        "candidate_tokens": 5,
+        "original_matches": 4,
+        "stripped_matches": 5,
+        "both_match": 4,
+        "neither_matches": 0,
+        "original_only": 0,
+        "stripped_only": 1,
+        "mean_match_gain": 0.2
+      }
+    },
+    "all_y_opportunity_cells": [
+      {
+        "frequency_bin": "0",
+        "length_bin": "2-4",
+        "first_slot": {
+          "candidate_tokens": 4,
+          "original_matches": 0,
+          "stripped_matches": 4,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 4,
+          "mean_match_gain": 1.0
+        },
+        "other_slots": {
+          "candidate_tokens": 1,
+          "original_matches": 0,
+          "stripped_matches": 1,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 1,
+          "mean_match_gain": 1.0
+        }
+      },
+      {
+        "frequency_bin": "0",
+        "length_bin": "5-7",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      },
+      {
+        "frequency_bin": "0",
+        "length_bin": "8+",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      },
+      {
+        "frequency_bin": "1",
+        "length_bin": "2-4",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      },
+      {
+        "frequency_bin": "1",
+        "length_bin": "5-7",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      },
+      {
+        "frequency_bin": "1",
+        "length_bin": "8+",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      },
+      {
+        "frequency_bin": "2+",
+        "length_bin": "2-4",
+        "first_slot": {
+          "candidate_tokens": 1,
+          "original_matches": 1,
+          "stripped_matches": 1,
+          "both_match": 1,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": 0.0
+        },
+        "other_slots": {
+          "candidate_tokens": 4,
+          "original_matches": 4,
+          "stripped_matches": 4,
+          "both_match": 4,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": 0.0
+        }
+      },
+      {
+        "frequency_bin": "2+",
+        "length_bin": "5-7",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      },
+      {
+        "frequency_bin": "2+",
+        "length_bin": "8+",
+        "first_slot": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        },
+        "other_slots": {
+          "candidate_tokens": 0,
+          "original_matches": 0,
+          "stripped_matches": 0,
+          "both_match": 0,
+          "neither_matches": 0,
+          "original_only": 0,
+          "stripped_only": 0,
+          "mean_match_gain": null
+        }
+      }
+    ],
+    "common_cell_ids": [
+      {
+        "frequency_bin": "0",
+        "length_bin": "2-4"
+      },
+      {
+        "frequency_bin": "2+",
+        "length_bin": "2-4"
+      }
+    ],
+    "unstandardized_same_unit": {
+      "first_gain": {
+        "numerator": 4,
+        "denominator": 5
+      },
+      "other_gain": {
+        "numerator": 1,
+        "denominator": 5
+      },
+      "first_minus_other_gain": {
+        "numerator": 3,
+        "denominator": 5
+      }
+    },
+    "matched_equal_cells_within_same_unit": {
+      "first_gain": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "other_gain": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "first_minus_other_gain": {
+        "numerator": 0,
+        "denominator": 1
+      }
+    },
+    "matched_minus_unstandardized_selectivity": {
+      "numerator": -3,
+      "denominator": 5
+    },
+    "diagnostic_units": 1,
+    "toy_treatments": 1
+  }
+}

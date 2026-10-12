@@ -30,6 +30,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [First-slot prefixes across catalog sections](research/transliteration/SECTION_STRATA.md): source-specific paragraph cohorts, section contrasts, and annotation disagreements.
 - [Exploratory y-prefix lookup candidate](research/hypotheses/y-layout-prefix-v1/RESULTS.md): a precommitted removal rule and development-only vocabulary test, with prior exposure and diagnostic limitations explicit.
 - [Prefix and vocabulary-opportunity controls](research/hypotheses/y-prefix-specificity-v1/RESULTS.md): fixed q/o comparisons and matched y frequency/length cells reduce the raw lookup contrast while retaining all treatments and exclusions.
+- [Known-marker opportunity check](research/representation/KNOWN_MARKER_OPPORTUNITY.md): a fixed reversible toy marker retains exact source recovery while its matched lookup selectivity is zero.
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
