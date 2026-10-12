@@ -16,6 +16,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Primary source register](research/SOURCES.md)
 - [Pinned transliteration sources and working selection](research/transliteration/DECISION.md)
 - [Section-beginning visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
+- [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
