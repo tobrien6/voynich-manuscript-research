@@ -129,3 +129,9 @@ inspects the complete credited pp. 461–474 and selected earlier context. It
 retains the printed final number 116, the Part V folio ranges and a concrete
 OCR-added `V` separately from a source designation. S009's original exposure
 ledger is preserved; the legacy alias and historical readings remain unresolved.
+
+The [fixed historical-photograph comparison](NEWBOLD_PHOTO_SURFACE.md) records
+broad layout correspondence between Newbold's Plates X/XV and Yale's image
+labeled 116v, with the adjacent recto as a fixed context. It preserves crop,
+orientation, representation and prior-exposure limits; the association is a
+nonblind AI observation and does not verify the legacy catalog alias.
