@@ -129,6 +129,11 @@ groups, and exposure-aware split. It should preserve the source-locus boundaries
 where its control requires them. This producer supplies a traceable input and
 honest exclusion denominators, not a tested decipherment or new unseen data.
 
+The [endpoint edit-distance comparison](ENDPOINT_EDIT_DISTANCE.md) retains these
+whole units and their original boundaries while fixing terminal loci and moving
+only interior locus identities. Its native-string costs vary in 99–101 units;
+glyph/semantic interpretation and prospective mechanism evaluation remain open.
+
 The [boundary recurrence follow-up](PARAGRAPH_BOUNDARY_REPETITION.md) measures
 exact token equality between consecutive original loci within these whole
 units. It keeps all 652 encoded boundaries and accounts for shared-locus
