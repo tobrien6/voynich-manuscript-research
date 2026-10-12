@@ -17,12 +17,24 @@ cannot turn a malformed source record into an eligible one.
 Run from the repository root with Python 3.10 or later:
 
 ```sh
-python3 scripts/eva_token_adapter.py --uncertain-spaces split --output /tmp/eva-split.json
-python3 scripts/eva_token_adapter.py --uncertain-spaces join --output /tmp/eva-join.json
+python3 scripts/write_eva_token_cache.py --uncertain-spaces split --output /tmp/eva-split.json
+python3 scripts/write_eva_token_cache.py --uncertain-spaces join --output /tmp/eva-join.json
 python3 -m unittest tests.test_eva_token_adapter -v
+python3 -m unittest tests.test_eva_token_cache_writer -v
 ```
 
 The uncertain-space policy is required. Defaults select **ZL3b and IT2a**, with **P0 and P1** locus types. Repeat `--source` or `--kind` to make a different selection. Record those choices in the analysis plan. The full output includes every locus in each selected source, with explicit exclusions for unselected kinds and nonexistent records. Source bytes are checked before preprocessing.
+
+Write caches to a separate output path. The companion writer rejects the source catalog,
+every cataloged transcription (including unselected editions), and paths within
+`data/raw` before preprocessing. Symlink and existing hardlink aliases to inputs
+are also rejected. This protects the pinned bytes used by subsequent replays;
+the output schema and processing choices remain unchanged. The companion calls
+the accepted `build` producer. The historical `eva_token_adapter.py` file is
+retained byte for byte because accepted image-selection records pin its code
+hash. Its legacy direct CLI does not protect output paths; use the companion
+for cache generation. This preserves historical pins without weakening their
+verification or rebinding image-review records.
 
 | Notation / case | Policy |
 | --- | --- |
