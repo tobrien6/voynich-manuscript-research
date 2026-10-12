@@ -1,0 +1,2194 @@
+{
+  "schema_version": 1,
+  "method": "terminal-folio source intake v1",
+  "scope": "Exact source/image labels only; no row alignment, historical alias, script interpretation, or translation is verified.",
+  "sources": [
+    {
+      "id": "ZL3b",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "alphabet": "Eva-"
+    },
+    {
+      "id": "IT2a",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "alphabet": "EvaT"
+    },
+    {
+      "id": "GC2a",
+      "url": "https://voynich.nu/data/GC2a-n.txt",
+      "path": "data/raw/GC2a-n.txt",
+      "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "alphabet": "v101"
+    },
+    {
+      "id": "RF1b-full",
+      "url": "https://voynich.nu/data/RF1b-e.txt",
+      "path": "data/raw/RF1b-e.txt",
+      "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+      "alphabet": "Eva-"
+    },
+    {
+      "id": "RF1b-basic",
+      "url": "https://voynich.nu/data/RF1b-er.txt",
+      "path": "data/raw/RF1b-er.txt",
+      "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+      "alphabet": "Eva-"
+    }
+  ],
+  "entries": [
+    {
+      "yale_label": "116r",
+      "source_page_id": "f116r",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+        "image_oid": "1006276",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006276",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006276/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006276",
+        "image_width": "2559",
+        "image_height": "3787"
+      },
+      "editions": [
+        {
+          "source_id": "ZL3b",
+          "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "page_id": "f116r",
+          "header_present": true,
+          "present_loci": 50,
+          "present_loci_by_kind": {
+            "P0": 50
+          },
+          "present_locus_identifiers": [
+            "f116r.1,@P0",
+            "f116r.2,+P0",
+            "f116r.3,+P0",
+            "f116r.4,+P0",
+            "f116r.5,+P0",
+            "f116r.6,+P0",
+            "f116r.7,+P0",
+            "f116r.8,+P0",
+            "f116r.9,+P0",
+            "f116r.10,+P0",
+            "f116r.11,+P0",
+            "f116r.12,+P0",
+            "f116r.13,+P0",
+            "f116r.14,+P0",
+            "f116r.15,+P0",
+            "f116r.16,+P0",
+            "f116r.17,+P0",
+            "f116r.18,+P0",
+            "f116r.19,+P0",
+            "f116r.20,+P0",
+            "f116r.21,+P0",
+            "f116r.22,+P0",
+            "f116r.23,+P0",
+            "f116r.24,+P0",
+            "f116r.25,+P0",
+            "f116r.26,+P0",
+            "f116r.27,+P0",
+            "f116r.28,+P0",
+            "f116r.29,+P0",
+            "f116r.30,+P0",
+            "f116r.31,+P0",
+            "f116r.32,+P0",
+            "f116r.33,+P0",
+            "f116r.34,+P0",
+            "f116r.35,+P0",
+            "f116r.36,+P0",
+            "f116r.37,+P0",
+            "f116r.38,+P0",
+            "f116r.39,+P0",
+            "f116r.40,+P0",
+            "f116r.41,+P0",
+            "f116r.42,+P0",
+            "f116r.43,+P0",
+            "f116r.44,+P0",
+            "f116r.45,+P0",
+            "f116r.46,+P0",
+            "f116r.47,+P0",
+            "f116r.48,+P0",
+            "f116r.49,+P0",
+            "f116r.50,+P0"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 50,
+          "present_p0_p1_loci": 50,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116r.1,@P0",
+              "source_line_number": 8431,
+              "kind": "P0",
+              "locator": "@"
+            },
+            {
+              "locus_identifier": "f116r.2,+P0",
+              "source_line_number": 8432,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.3,+P0",
+              "source_line_number": 8433,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.4,+P0",
+              "source_line_number": 8436,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.5,+P0",
+              "source_line_number": 8437,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.6,+P0",
+              "source_line_number": 8438,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.7,+P0",
+              "source_line_number": 8441,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.8,+P0",
+              "source_line_number": 8442,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.9,+P0",
+              "source_line_number": 8443,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.10,+P0",
+              "source_line_number": 8446,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.11,+P0",
+              "source_line_number": 8447,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.12,+P0",
+              "source_line_number": 8448,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.13,+P0",
+              "source_line_number": 8450,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.14,+P0",
+              "source_line_number": 8451,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.15,+P0",
+              "source_line_number": 8454,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.16,+P0",
+              "source_line_number": 8455,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.17,+P0",
+              "source_line_number": 8456,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.18,+P0",
+              "source_line_number": 8459,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.19,+P0",
+              "source_line_number": 8460,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.20,+P0",
+              "source_line_number": 8461,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.21,+P0",
+              "source_line_number": 8463,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.22,+P0",
+              "source_line_number": 8464,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.23,+P0",
+              "source_line_number": 8465,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.24,+P0",
+              "source_line_number": 8467,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.25,+P0",
+              "source_line_number": 8468,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.26,+P0",
+              "source_line_number": 8469,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.27,+P0",
+              "source_line_number": 8471,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.28,+P0",
+              "source_line_number": 8472,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.29,+P0",
+              "source_line_number": 8473,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.30,+P0",
+              "source_line_number": 8474,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.31,+P0",
+              "source_line_number": 8476,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.32,+P0",
+              "source_line_number": 8477,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.33,+P0",
+              "source_line_number": 8478,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.34,+P0",
+              "source_line_number": 8479,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.35,+P0",
+              "source_line_number": 8480,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.36,+P0",
+              "source_line_number": 8481,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.37,+P0",
+              "source_line_number": 8482,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.38,+P0",
+              "source_line_number": 8483,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.39,+P0",
+              "source_line_number": 8484,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.40,+P0",
+              "source_line_number": 8485,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.41,+P0",
+              "source_line_number": 8486,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.42,+P0",
+              "source_line_number": 8487,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.43,+P0",
+              "source_line_number": 8488,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.44,+P0",
+              "source_line_number": 8489,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.45,+P0",
+              "source_line_number": 8490,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.46,+P0",
+              "source_line_number": 8492,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.47,+P0",
+              "source_line_number": 8493,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.48,+P0",
+              "source_line_number": 8494,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.49,+P0",
+              "source_line_number": 8495,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.50,+P0",
+              "source_line_number": 8496,
+              "kind": "P0",
+              "locator": "+"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "page_id": "f116r",
+          "header_present": true,
+          "present_loci": 50,
+          "present_loci_by_kind": {
+            "P0": 50
+          },
+          "present_locus_identifiers": [
+            "f116r.1,@P0",
+            "f116r.2,+P0",
+            "f116r.3,+P0",
+            "f116r.4,+P0",
+            "f116r.5,+P0",
+            "f116r.6,+P0",
+            "f116r.7,+P0",
+            "f116r.8,+P0",
+            "f116r.9,+P0",
+            "f116r.10,+P0",
+            "f116r.11,+P0",
+            "f116r.12,+P0",
+            "f116r.13,+P0",
+            "f116r.14,+P0",
+            "f116r.15,+P0",
+            "f116r.16,+P0",
+            "f116r.17,+P0",
+            "f116r.18,+P0",
+            "f116r.19,+P0",
+            "f116r.20,+P0",
+            "f116r.21,+P0",
+            "f116r.22,+P0",
+            "f116r.23,+P0",
+            "f116r.24,+P0",
+            "f116r.25,+P0",
+            "f116r.26,+P0",
+            "f116r.27,+P0",
+            "f116r.28,+P0",
+            "f116r.29,+P0",
+            "f116r.30,+P0",
+            "f116r.31,+P0",
+            "f116r.32,+P0",
+            "f116r.33,+P0",
+            "f116r.34,+P0",
+            "f116r.35,+P0",
+            "f116r.36,+P0",
+            "f116r.37,+P0",
+            "f116r.38,+P0",
+            "f116r.39,+P0",
+            "f116r.40,+P0",
+            "f116r.41,+P0",
+            "f116r.42,+P0",
+            "f116r.43,+P0",
+            "f116r.44,+P0",
+            "f116r.45,+P0",
+            "f116r.46,+P0",
+            "f116r.47,+P0",
+            "f116r.48,+P0",
+            "f116r.49,+P0",
+            "f116r.50,+P0"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 50,
+          "present_p0_p1_loci": 50,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116r.1,@P0",
+              "source_line_number": 5395,
+              "kind": "P0",
+              "locator": "@"
+            },
+            {
+              "locus_identifier": "f116r.2,+P0",
+              "source_line_number": 5396,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.3,+P0",
+              "source_line_number": 5397,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.4,+P0",
+              "source_line_number": 5398,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.5,+P0",
+              "source_line_number": 5399,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.6,+P0",
+              "source_line_number": 5400,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.7,+P0",
+              "source_line_number": 5401,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.8,+P0",
+              "source_line_number": 5402,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.9,+P0",
+              "source_line_number": 5403,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.10,+P0",
+              "source_line_number": 5404,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.11,+P0",
+              "source_line_number": 5405,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.12,+P0",
+              "source_line_number": 5406,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.13,+P0",
+              "source_line_number": 5407,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.14,+P0",
+              "source_line_number": 5408,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.15,+P0",
+              "source_line_number": 5409,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.16,+P0",
+              "source_line_number": 5410,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.17,+P0",
+              "source_line_number": 5411,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.18,+P0",
+              "source_line_number": 5412,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.19,+P0",
+              "source_line_number": 5413,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.20,+P0",
+              "source_line_number": 5414,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.21,+P0",
+              "source_line_number": 5415,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.22,+P0",
+              "source_line_number": 5416,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.23,+P0",
+              "source_line_number": 5417,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.24,+P0",
+              "source_line_number": 5418,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.25,+P0",
+              "source_line_number": 5419,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.26,+P0",
+              "source_line_number": 5420,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.27,+P0",
+              "source_line_number": 5421,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.28,+P0",
+              "source_line_number": 5422,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.29,+P0",
+              "source_line_number": 5423,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.30,+P0",
+              "source_line_number": 5424,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.31,+P0",
+              "source_line_number": 5425,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.32,+P0",
+              "source_line_number": 5426,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.33,+P0",
+              "source_line_number": 5427,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.34,+P0",
+              "source_line_number": 5428,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.35,+P0",
+              "source_line_number": 5429,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.36,+P0",
+              "source_line_number": 5430,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.37,+P0",
+              "source_line_number": 5431,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.38,+P0",
+              "source_line_number": 5432,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.39,+P0",
+              "source_line_number": 5433,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.40,+P0",
+              "source_line_number": 5434,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.41,+P0",
+              "source_line_number": 5435,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.42,+P0",
+              "source_line_number": 5436,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.43,+P0",
+              "source_line_number": 5437,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.44,+P0",
+              "source_line_number": 5438,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.45,+P0",
+              "source_line_number": 5439,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.46,+P0",
+              "source_line_number": 5440,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.47,+P0",
+              "source_line_number": 5441,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.48,+P0",
+              "source_line_number": 5442,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.49,+P0",
+              "source_line_number": 5443,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.50,+P0",
+              "source_line_number": 5444,
+              "kind": "P0",
+              "locator": "+"
+            }
+          ]
+        },
+        {
+          "source_id": "GC2a",
+          "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+          "page_id": "f116r",
+          "header_present": true,
+          "present_loci": 50,
+          "present_loci_by_kind": {
+            "P0": 50
+          },
+          "present_locus_identifiers": [
+            "f116r.1,@P0",
+            "f116r.2,+P0",
+            "f116r.3,+P0",
+            "f116r.4,+P0",
+            "f116r.5,+P0",
+            "f116r.6,+P0",
+            "f116r.7,+P0",
+            "f116r.8,+P0",
+            "f116r.9,+P0",
+            "f116r.10,+P0",
+            "f116r.11,+P0",
+            "f116r.12,+P0",
+            "f116r.13,+P0",
+            "f116r.14,+P0",
+            "f116r.15,+P0",
+            "f116r.16,+P0",
+            "f116r.17,+P0",
+            "f116r.18,+P0",
+            "f116r.19,+P0",
+            "f116r.20,+P0",
+            "f116r.21,+P0",
+            "f116r.22,+P0",
+            "f116r.23,+P0",
+            "f116r.24,+P0",
+            "f116r.25,+P0",
+            "f116r.26,+P0",
+            "f116r.27,+P0",
+            "f116r.28,+P0",
+            "f116r.29,+P0",
+            "f116r.30,+P0",
+            "f116r.31,+P0",
+            "f116r.32,+P0",
+            "f116r.33,+P0",
+            "f116r.34,+P0",
+            "f116r.35,+P0",
+            "f116r.36,+P0",
+            "f116r.37,+P0",
+            "f116r.38,+P0",
+            "f116r.39,+P0",
+            "f116r.40,+P0",
+            "f116r.41,+P0",
+            "f116r.42,+P0",
+            "f116r.43,+P0",
+            "f116r.44,+P0",
+            "f116r.45,+P0",
+            "f116r.46,+P0",
+            "f116r.47,+P0",
+            "f116r.48,+P0",
+            "f116r.49,+P0",
+            "f116r.50,+P0"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 50,
+          "present_p0_p1_loci": 50,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116r.1,@P0",
+              "source_line_number": 5773,
+              "kind": "P0",
+              "locator": "@"
+            },
+            {
+              "locus_identifier": "f116r.2,+P0",
+              "source_line_number": 5774,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.3,+P0",
+              "source_line_number": 5775,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.4,+P0",
+              "source_line_number": 5776,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.5,+P0",
+              "source_line_number": 5777,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.6,+P0",
+              "source_line_number": 5778,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.7,+P0",
+              "source_line_number": 5779,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.8,+P0",
+              "source_line_number": 5780,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.9,+P0",
+              "source_line_number": 5781,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.10,+P0",
+              "source_line_number": 5782,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.11,+P0",
+              "source_line_number": 5783,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.12,+P0",
+              "source_line_number": 5784,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.13,+P0",
+              "source_line_number": 5785,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.14,+P0",
+              "source_line_number": 5786,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.15,+P0",
+              "source_line_number": 5787,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.16,+P0",
+              "source_line_number": 5788,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.17,+P0",
+              "source_line_number": 5789,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.18,+P0",
+              "source_line_number": 5790,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.19,+P0",
+              "source_line_number": 5791,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.20,+P0",
+              "source_line_number": 5792,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.21,+P0",
+              "source_line_number": 5793,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.22,+P0",
+              "source_line_number": 5794,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.23,+P0",
+              "source_line_number": 5795,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.24,+P0",
+              "source_line_number": 5796,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.25,+P0",
+              "source_line_number": 5797,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.26,+P0",
+              "source_line_number": 5798,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.27,+P0",
+              "source_line_number": 5799,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.28,+P0",
+              "source_line_number": 5800,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.29,+P0",
+              "source_line_number": 5801,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.30,+P0",
+              "source_line_number": 5802,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.31,+P0",
+              "source_line_number": 5803,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.32,+P0",
+              "source_line_number": 5804,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.33,+P0",
+              "source_line_number": 5805,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.34,+P0",
+              "source_line_number": 5806,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.35,+P0",
+              "source_line_number": 5807,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.36,+P0",
+              "source_line_number": 5808,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.37,+P0",
+              "source_line_number": 5809,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.38,+P0",
+              "source_line_number": 5810,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.39,+P0",
+              "source_line_number": 5811,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.40,+P0",
+              "source_line_number": 5812,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.41,+P0",
+              "source_line_number": 5813,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.42,+P0",
+              "source_line_number": 5814,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.43,+P0",
+              "source_line_number": 5815,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.44,+P0",
+              "source_line_number": 5816,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.45,+P0",
+              "source_line_number": 5817,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.46,+P0",
+              "source_line_number": 5818,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.47,+P0",
+              "source_line_number": 5819,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.48,+P0",
+              "source_line_number": 5820,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.49,+P0",
+              "source_line_number": 5821,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.50,+P0",
+              "source_line_number": 5822,
+              "kind": "P0",
+              "locator": "+"
+            }
+          ]
+        },
+        {
+          "source_id": "RF1b-full",
+          "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+          "page_id": "f116r",
+          "header_present": true,
+          "present_loci": 50,
+          "present_loci_by_kind": {
+            "P0": 50
+          },
+          "present_locus_identifiers": [
+            "f116r.1,@P0",
+            "f116r.2,+P0",
+            "f116r.3,+P0",
+            "f116r.4,+P0",
+            "f116r.5,+P0",
+            "f116r.6,+P0",
+            "f116r.7,+P0",
+            "f116r.8,+P0",
+            "f116r.9,+P0",
+            "f116r.10,+P0",
+            "f116r.11,+P0",
+            "f116r.12,+P0",
+            "f116r.13,+P0",
+            "f116r.14,+P0",
+            "f116r.15,+P0",
+            "f116r.16,+P0",
+            "f116r.17,+P0",
+            "f116r.18,+P0",
+            "f116r.19,+P0",
+            "f116r.20,+P0",
+            "f116r.21,+P0",
+            "f116r.22,+P0",
+            "f116r.23,+P0",
+            "f116r.24,+P0",
+            "f116r.25,+P0",
+            "f116r.26,+P0",
+            "f116r.27,+P0",
+            "f116r.28,+P0",
+            "f116r.29,+P0",
+            "f116r.30,+P0",
+            "f116r.31,+P0",
+            "f116r.32,+P0",
+            "f116r.33,+P0",
+            "f116r.34,+P0",
+            "f116r.35,+P0",
+            "f116r.36,+P0",
+            "f116r.37,+P0",
+            "f116r.38,+P0",
+            "f116r.39,+P0",
+            "f116r.40,+P0",
+            "f116r.41,+P0",
+            "f116r.42,+P0",
+            "f116r.43,+P0",
+            "f116r.44,+P0",
+            "f116r.45,+P0",
+            "f116r.46,+P0",
+            "f116r.47,+P0",
+            "f116r.48,+P0",
+            "f116r.49,+P0",
+            "f116r.50,+P0"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 50,
+          "present_p0_p1_loci": 50,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116r.1,@P0",
+              "source_line_number": 5562,
+              "kind": "P0",
+              "locator": "@"
+            },
+            {
+              "locus_identifier": "f116r.2,+P0",
+              "source_line_number": 5563,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.3,+P0",
+              "source_line_number": 5564,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.4,+P0",
+              "source_line_number": 5565,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.5,+P0",
+              "source_line_number": 5566,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.6,+P0",
+              "source_line_number": 5567,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.7,+P0",
+              "source_line_number": 5568,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.8,+P0",
+              "source_line_number": 5569,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.9,+P0",
+              "source_line_number": 5570,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.10,+P0",
+              "source_line_number": 5571,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.11,+P0",
+              "source_line_number": 5572,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.12,+P0",
+              "source_line_number": 5573,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.13,+P0",
+              "source_line_number": 5574,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.14,+P0",
+              "source_line_number": 5575,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.15,+P0",
+              "source_line_number": 5576,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.16,+P0",
+              "source_line_number": 5577,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.17,+P0",
+              "source_line_number": 5578,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.18,+P0",
+              "source_line_number": 5579,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.19,+P0",
+              "source_line_number": 5580,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.20,+P0",
+              "source_line_number": 5581,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.21,+P0",
+              "source_line_number": 5582,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.22,+P0",
+              "source_line_number": 5583,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.23,+P0",
+              "source_line_number": 5584,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.24,+P0",
+              "source_line_number": 5585,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.25,+P0",
+              "source_line_number": 5586,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.26,+P0",
+              "source_line_number": 5587,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.27,+P0",
+              "source_line_number": 5588,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.28,+P0",
+              "source_line_number": 5589,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.29,+P0",
+              "source_line_number": 5590,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.30,+P0",
+              "source_line_number": 5591,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.31,+P0",
+              "source_line_number": 5592,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.32,+P0",
+              "source_line_number": 5593,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.33,+P0",
+              "source_line_number": 5594,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.34,+P0",
+              "source_line_number": 5595,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.35,+P0",
+              "source_line_number": 5596,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.36,+P0",
+              "source_line_number": 5597,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.37,+P0",
+              "source_line_number": 5598,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.38,+P0",
+              "source_line_number": 5599,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.39,+P0",
+              "source_line_number": 5600,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.40,+P0",
+              "source_line_number": 5601,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.41,+P0",
+              "source_line_number": 5602,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.42,+P0",
+              "source_line_number": 5603,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.43,+P0",
+              "source_line_number": 5604,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.44,+P0",
+              "source_line_number": 5605,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.45,+P0",
+              "source_line_number": 5606,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.46,+P0",
+              "source_line_number": 5607,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.47,+P0",
+              "source_line_number": 5608,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.48,+P0",
+              "source_line_number": 5609,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.49,+P0",
+              "source_line_number": 5610,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.50,+P0",
+              "source_line_number": 5611,
+              "kind": "P0",
+              "locator": "+"
+            }
+          ]
+        },
+        {
+          "source_id": "RF1b-basic",
+          "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+          "page_id": "f116r",
+          "header_present": true,
+          "present_loci": 50,
+          "present_loci_by_kind": {
+            "P0": 50
+          },
+          "present_locus_identifiers": [
+            "f116r.1,@P0",
+            "f116r.2,+P0",
+            "f116r.3,+P0",
+            "f116r.4,+P0",
+            "f116r.5,+P0",
+            "f116r.6,+P0",
+            "f116r.7,+P0",
+            "f116r.8,+P0",
+            "f116r.9,+P0",
+            "f116r.10,+P0",
+            "f116r.11,+P0",
+            "f116r.12,+P0",
+            "f116r.13,+P0",
+            "f116r.14,+P0",
+            "f116r.15,+P0",
+            "f116r.16,+P0",
+            "f116r.17,+P0",
+            "f116r.18,+P0",
+            "f116r.19,+P0",
+            "f116r.20,+P0",
+            "f116r.21,+P0",
+            "f116r.22,+P0",
+            "f116r.23,+P0",
+            "f116r.24,+P0",
+            "f116r.25,+P0",
+            "f116r.26,+P0",
+            "f116r.27,+P0",
+            "f116r.28,+P0",
+            "f116r.29,+P0",
+            "f116r.30,+P0",
+            "f116r.31,+P0",
+            "f116r.32,+P0",
+            "f116r.33,+P0",
+            "f116r.34,+P0",
+            "f116r.35,+P0",
+            "f116r.36,+P0",
+            "f116r.37,+P0",
+            "f116r.38,+P0",
+            "f116r.39,+P0",
+            "f116r.40,+P0",
+            "f116r.41,+P0",
+            "f116r.42,+P0",
+            "f116r.43,+P0",
+            "f116r.44,+P0",
+            "f116r.45,+P0",
+            "f116r.46,+P0",
+            "f116r.47,+P0",
+            "f116r.48,+P0",
+            "f116r.49,+P0",
+            "f116r.50,+P0"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 50,
+          "present_p0_p1_loci": 50,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116r.1,@P0",
+              "source_line_number": 5562,
+              "kind": "P0",
+              "locator": "@"
+            },
+            {
+              "locus_identifier": "f116r.2,+P0",
+              "source_line_number": 5563,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.3,+P0",
+              "source_line_number": 5564,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.4,+P0",
+              "source_line_number": 5565,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.5,+P0",
+              "source_line_number": 5566,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.6,+P0",
+              "source_line_number": 5567,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.7,+P0",
+              "source_line_number": 5568,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.8,+P0",
+              "source_line_number": 5569,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.9,+P0",
+              "source_line_number": 5570,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.10,+P0",
+              "source_line_number": 5571,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.11,+P0",
+              "source_line_number": 5572,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.12,+P0",
+              "source_line_number": 5573,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.13,+P0",
+              "source_line_number": 5574,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.14,+P0",
+              "source_line_number": 5575,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.15,+P0",
+              "source_line_number": 5576,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.16,+P0",
+              "source_line_number": 5577,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.17,+P0",
+              "source_line_number": 5578,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.18,+P0",
+              "source_line_number": 5579,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.19,+P0",
+              "source_line_number": 5580,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.20,+P0",
+              "source_line_number": 5581,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.21,+P0",
+              "source_line_number": 5582,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.22,+P0",
+              "source_line_number": 5583,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.23,+P0",
+              "source_line_number": 5584,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.24,+P0",
+              "source_line_number": 5585,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.25,+P0",
+              "source_line_number": 5586,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.26,+P0",
+              "source_line_number": 5587,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.27,+P0",
+              "source_line_number": 5588,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.28,+P0",
+              "source_line_number": 5589,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.29,+P0",
+              "source_line_number": 5590,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.30,+P0",
+              "source_line_number": 5591,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.31,+P0",
+              "source_line_number": 5592,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.32,+P0",
+              "source_line_number": 5593,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.33,+P0",
+              "source_line_number": 5594,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.34,+P0",
+              "source_line_number": 5595,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.35,+P0",
+              "source_line_number": 5596,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.36,+P0",
+              "source_line_number": 5597,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.37,+P0",
+              "source_line_number": 5598,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.38,+P0",
+              "source_line_number": 5599,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.39,+P0",
+              "source_line_number": 5600,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.40,+P0",
+              "source_line_number": 5601,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.41,+P0",
+              "source_line_number": 5602,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.42,+P0",
+              "source_line_number": 5603,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.43,+P0",
+              "source_line_number": 5604,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.44,+P0",
+              "source_line_number": 5605,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.45,+P0",
+              "source_line_number": 5606,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.46,+P0",
+              "source_line_number": 5607,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.47,+P0",
+              "source_line_number": 5608,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.48,+P0",
+              "source_line_number": 5609,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.49,+P0",
+              "source_line_number": 5610,
+              "kind": "P0",
+              "locator": "+"
+            },
+            {
+              "locus_identifier": "f116r.50,+P0",
+              "source_line_number": 5611,
+              "kind": "P0",
+              "locator": "+"
+            }
+          ]
+        }
+      ],
+      "image_text_alignment": "not_verified",
+      "unnumbered_flyleaf_has_no_assigned_native_page": false
+    },
+    {
+      "yale_label": "116v",
+      "source_page_id": "f116v",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+        "image_oid": "1006277",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006277",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006277",
+        "image_width": "2686",
+        "image_height": "3697"
+      },
+      "editions": [
+        {
+          "source_id": "ZL3b",
+          "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "page_id": "f116v",
+          "header_present": true,
+          "present_loci": 1,
+          "present_loci_by_kind": {
+            "Lx": 1
+          },
+          "present_locus_identifiers": [
+            "f116v.1,@Lx"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 0,
+          "present_p0_p1_loci": 0,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116v.1,@Lx",
+              "source_line_number": 8508,
+              "kind": "Lx",
+              "locator": "@"
+            }
+          ],
+          "native_payload_records": [
+            {
+              "locus_identifier": "f116v.1,@Lx",
+              "native_payload_outside_free_comments": "oror.sheey",
+              "free_comments_present": true,
+              "effective_source_variables": {
+                "Q": "T",
+                "P": "X",
+                "F": "z",
+                "B": "1",
+                "I": "T",
+                "H": "3",
+                "X": "V"
+              }
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "page_id": "f116v",
+          "header_present": false,
+          "present_loci": 0,
+          "present_loci_by_kind": {},
+          "present_locus_identifiers": [],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "header_absent",
+          "present_generic_p_loci": 0,
+          "present_p0_p1_loci": 0,
+          "record_metadata": [],
+          "native_payload_records": []
+        },
+        {
+          "source_id": "GC2a",
+          "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+          "page_id": "f116v",
+          "header_present": false,
+          "present_loci": 0,
+          "present_loci_by_kind": {},
+          "present_locus_identifiers": [],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "header_absent",
+          "present_generic_p_loci": 0,
+          "present_p0_p1_loci": 0,
+          "record_metadata": [],
+          "native_payload_records": []
+        },
+        {
+          "source_id": "RF1b-full",
+          "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+          "page_id": "f116v",
+          "header_present": true,
+          "present_loci": 1,
+          "present_loci_by_kind": {
+            "Lx": 1
+          },
+          "present_locus_identifiers": [
+            "f116v.1,@Lx"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 0,
+          "present_p0_p1_loci": 0,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116v.1,@Lx",
+              "source_line_number": 5613,
+              "kind": "Lx",
+              "locator": "@"
+            }
+          ],
+          "native_payload_records": [
+            {
+              "locus_identifier": "f116v.1,@Lx",
+              "native_payload_outside_free_comments": "oror.sheey",
+              "free_comments_present": false,
+              "effective_source_variables": {
+                "Q": "T",
+                "P": "X",
+                "F": "z",
+                "B": "1",
+                "I": "T",
+                "H": "3",
+                "X": "V"
+              }
+            }
+          ]
+        },
+        {
+          "source_id": "RF1b-basic",
+          "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+          "page_id": "f116v",
+          "header_present": true,
+          "present_loci": 1,
+          "present_loci_by_kind": {
+            "Lx": 1
+          },
+          "present_locus_identifiers": [
+            "f116v.1,@Lx"
+          ],
+          "explicitly_nonexistent_locus_identifiers": [],
+          "presence_state": "present_loci",
+          "present_generic_p_loci": 0,
+          "present_p0_p1_loci": 0,
+          "record_metadata": [
+            {
+              "locus_identifier": "f116v.1,@Lx",
+              "source_line_number": 5613,
+              "kind": "Lx",
+              "locator": "@"
+            }
+          ],
+          "native_payload_records": [
+            {
+              "locus_identifier": "f116v.1,@Lx",
+              "native_payload_outside_free_comments": "oror.sheey",
+              "free_comments_present": false,
+              "effective_source_variables": {
+                "Q": "T",
+                "P": "X",
+                "F": "z",
+                "B": "1",
+                "I": "T",
+                "H": "3",
+                "X": "V"
+              }
+            }
+          ]
+        }
+      ],
+      "image_text_alignment": "not_verified",
+      "unnumbered_flyleaf_has_no_assigned_native_page": false
+    },
+    {
+      "yale_label": "[Back flyleaf recto]",
+      "source_page_id": null,
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037113",
+        "image_oid": "1037113",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1037113",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1037113/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1037113",
+        "image_width": "2570",
+        "image_height": "3787"
+      },
+      "editions": [],
+      "image_text_alignment": "not_verified",
+      "unnumbered_flyleaf_has_no_assigned_native_page": true
+    }
+  ],
+  "legacy_117v_lookup": {
+    "source_scheme": "yale_legacy_ms408_catalog",
+    "source_label": "117v",
+    "decision_id": "legacy-final-side-117v",
+    "status": "unresolved",
+    "mapping_allowed": false,
+    "target": null,
+    "candidate_target": {
+      "label": "116v",
+      "canvas_uris": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277"
+      ]
+    },
+    "rationale": "Preserve the legacy label and candidate separately until a documented foliation source or independent review establishes the correspondence. No missing leaf or global numbering offset is inferred."
+  },
+  "f117v_source_controls": [
+    {
+      "source_id": "ZL3b",
+      "page_id": "f117v",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {},
+      "present_locus_identifiers": [],
+      "explicitly_nonexistent_locus_identifiers": [],
+      "presence_state": "header_absent",
+      "present_generic_p_loci": 0,
+      "present_p0_p1_loci": 0,
+      "record_metadata": []
+    },
+    {
+      "source_id": "IT2a",
+      "page_id": "f117v",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {},
+      "present_locus_identifiers": [],
+      "explicitly_nonexistent_locus_identifiers": [],
+      "presence_state": "header_absent",
+      "present_generic_p_loci": 0,
+      "present_p0_p1_loci": 0,
+      "record_metadata": []
+    },
+    {
+      "source_id": "GC2a",
+      "page_id": "f117v",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {},
+      "present_locus_identifiers": [],
+      "explicitly_nonexistent_locus_identifiers": [],
+      "presence_state": "header_absent",
+      "present_generic_p_loci": 0,
+      "present_p0_p1_loci": 0,
+      "record_metadata": []
+    },
+    {
+      "source_id": "RF1b-full",
+      "page_id": "f117v",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {},
+      "present_locus_identifiers": [],
+      "explicitly_nonexistent_locus_identifiers": [],
+      "presence_state": "header_absent",
+      "present_generic_p_loci": 0,
+      "present_p0_p1_loci": 0,
+      "record_metadata": []
+    },
+    {
+      "source_id": "RF1b-basic",
+      "page_id": "f117v",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {},
+      "present_locus_identifiers": [],
+      "explicitly_nonexistent_locus_identifiers": [],
+      "presence_state": "header_absent",
+      "present_generic_p_loci": 0,
+      "present_p0_p1_loci": 0,
+      "record_metadata": []
+    }
+  ],
+  "limits": [
+    "Absent source headers describe edition coverage, not physically missing manuscript pages.",
+    "One stored Lx locus is not a complete transcription of all visible writing rows.",
+    "RF full/basic are related derived exports, not independent manuscript replications.",
+    "The unnumbered flyleaf is not assigned a 117 folio label."
+  ],
+  "inputs": {
+    "source_catalog": {
+      "path": "data/transliterations.json",
+      "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "canvas_index": {
+      "path": "research/image-index/canvases.csv",
+      "sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+    },
+    "index_audit": {
+      "path": "research/image-index/audit.json",
+      "sha256": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc"
+    },
+    "folio_aliases": {
+      "path": "research/folio-aliases/decisions.json",
+      "sha256": "b0637ffd39c38ad2428f3667cb07aa65b23ed0d6537ae2af1583c49337766387"
+    }
+  },
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309"
+}
