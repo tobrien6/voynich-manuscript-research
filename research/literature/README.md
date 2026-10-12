@@ -84,6 +84,12 @@ Statistical compatibility alone supplies neither a glyph mapping nor a
 translation. Future hypothesis tests must follow the project's
 [evaluation protocol](../DECIPHERMENT_PROTOCOL.md) and disclose prior exposure.
 
+The separate [entropy methods and finite-edge note](../representation/ENTROPY_EDGES.md)
+pins Lindemann/Bowern's v2 publication and companion definitions. Its original
+synthetic examples distinguish full-character marginals from predecessor
+counts on scored edges. It executes no external R or manuscript corpus and
+does not reproduce the paper's results.
+
 ## Validation and scope
 
 Inspected 2026-10-11 (America/New_York). Article metadata and relevant methods
