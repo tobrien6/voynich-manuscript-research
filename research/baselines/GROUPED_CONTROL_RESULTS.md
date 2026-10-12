@@ -75,6 +75,26 @@ python3 -m unittest discover -s tests -p 'test_grouped_predictor_controls.py' -v
 python3 scripts/grouped_predictor_controls.py --check research/baselines/grouped-predictor-controls.json
 ```
 
+A later compatibility companion preserves the original report's exact bytes
+and producer pins while checking a current producer after a CLI-only repair:
+
+```sh
+python3 scripts/verify_grouped_predictor_controls.py --check research/baselines/grouped-controls-verification.json
+```
+
+Its [receipt](grouped-controls-verification.json) records the original and
+current producer hashes separately. The verifier retrieves the frozen source
+from the published pre-benchmark Git commit and compares its entire Python
+syntax tree with the current source, excluding only the body of the sole
+top-level `main`. Signatures, decorators, imports, constants and every scientific
+function remain compared. It never calls that CLI. All 192 dataset records
+must replay exactly, including every fitted-count and generated-sequence hash.
+Six additional tests reject changes to scientific statements, missing/duplicate
+entry points, altered frozen records, missing freeze history, and output
+aliases. A new current producer requires a newly recorded receipt; it cannot
+silently satisfy an old current-producer hash. CLI behavior still needs its
+own review and tests. The initial receipt records unchanged producer bytes.
+
 The complete report replays exactly in its recorded Python environment.
 Eight new tests cover exact draw boundaries, always-consumed innovations,
 hand-computed oracle losses and probabilities, stream replay/separation,
