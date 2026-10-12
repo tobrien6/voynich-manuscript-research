@@ -168,3 +168,8 @@ A later glyph review should choose explicit windows from pinned originals,
 declare stored/oriented coordinates and processing dependencies, compare all
 relevant views and retain ambiguous strokes. Qualified adjudication must
 precede use of a new reading in a frozen decipherment candidate.
+
+The [local comparison viewer](msi-viewer/README.md) provides hash-checked zoom,
+independent viewports and explicit stored/EXIF pixel coordinates for these
+selected originals. Its packet remains local and records the accepted source
+version; it adds no glyph adjudication.
