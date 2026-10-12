@@ -200,6 +200,28 @@ class ParagraphOrderTests(unittest.TestCase):
                     producer.assert_not_called()
                     self.assertEqual(target.read_bytes(), before)
 
+    def test_cli_rejects_symlink_and_hardlink_created_during_computation(self):
+        for kind in ('symlink', 'hardlink'):
+            with self.subTest(kind=kind), tempfile.TemporaryDirectory() as directory:
+                root = synthetic_root(Path(directory))
+                target = root / PLAN
+                before = target.read_bytes()
+                output = root / 'late-alias.json'
+
+                def link_while_computing(*args, **kwargs):
+                    if kind == 'symlink':
+                        output.symlink_to(target)
+                    else:
+                        os.link(target, output)
+                    return {'cohort': {'common_eligible_units': 0}}
+
+                with patch('scripts.paragraph_order_control.ROOT', root), \
+                        patch('scripts.paragraph_order_control.build', side_effect=link_while_computing), \
+                        patch('sys.argv', ['order.py', '--output', str(output)]), \
+                        redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()), \
+                        self.assertRaises(SystemExit): main()
+                self.assertEqual(target.read_bytes(), before)
+
     def test_cli_writes_replays_and_rejects_complete_science_type_and_json_tampering(self):
         with tempfile.TemporaryDirectory() as directory:
             root = synthetic_root(Path(directory))

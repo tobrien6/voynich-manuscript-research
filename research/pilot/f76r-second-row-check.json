@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "method": "f76r-second-ai-row-comparison-v1",
+  "plan": {
+    "path": "research/pilot/F76R_SECOND_ROW_PLAN.md",
+    "commit": "f698c950674b57c6a4b69810bae2ddfb5db57337",
+    "sha256": "04a4329d3abc1366b5eb439584f6c61a7e5ccbb06e5bad3127872057de1e2231",
+    "committed_before_this_chat_pixel_inspection": true
+  },
+  "parent_selection": {
+    "path": "research/pilot/f76r-anchor-selection.json",
+    "sha256": "dcce8de127dca3b12d5e9deae223ff6fad5c39ce413a88de8d92de85415c1d87",
+    "original_selection_commit": "54007c5479a49652c8233b841234eec4b337841f"
+  },
+  "parent_review": {
+    "path": "research/pilot/f76r-anchor-review.json",
+    "sha256": "6953f252e3347211be3ca22b2265fefec3c94f77efafd971dd3e0a846b7e959f",
+    "native_contexts_preserved_in_parent": true,
+    "image_identity_and_geometry_preserved_in_parent": true
+  },
+  "reference_convention": "parent_review.FIELD references the verified external JSON document at parent_review.path; records[key=VALUE] selects its record with that key.",
+  "inspection": {
+    "date_local": "2026-10-12",
+    "timezone": "America/New_York",
+    "provider": "Yale University Library",
+    "file_metadata_reference": "parent_review.inspection_files",
+    "inspected_file_ids": ["overview", "first", "median", "last"],
+    "all_four_image_hashes_and_dimensions_match_parent": true,
+    "service_metadata_reference": "parent_review.service_metadata",
+    "service_metadata_hash_and_identity_match_parent": true,
+    "additional_regions": [],
+    "native_full_page_inspected": false,
+    "display_limitation": "Wide regions were rescaled to 2048 display pixels; native geometry remains the official request geometry.",
+    "pixels_kept_local": true
+  },
+  "exposure": {
+    "observer_kind": "second AI-assisted comparison in another Codex chat",
+    "comparison_is_blind": false,
+    "parent_interpretation_read_before_pixels": true,
+    "both_native_contexts_read_before_pixels": true,
+    "prior_project_and_whole_corpus_evidence_exposure": true,
+    "new_f76r_pixel_exposure": true,
+    "model_independence_established": false,
+    "independent_human_validation": false,
+    "untouched_evaluation": false,
+    "dependence_note": "Same previously exposed page, same derivatives, related editions and access to the first observer's interpretation."
+  },
+  "records": [
+    {
+      "key": "f76r.1",
+      "parent_context_reference": "parent_review.records[key=f76r.1].native_source_contexts",
+      "source_ids_compared": ["ZL3b", "IT2a"],
+      "inspection_file_id": "first",
+      "outcome": "compatible",
+      "proposed_placement": "First main-text row, including the elevated left flourish.",
+      "direct_observations": [
+        "The raised left form has a long descending stem and an extended horizontal loop above the writing.",
+        "Several elevated crossed or looped forms occur across the row; low upright-rich and smaller terminal groups follow near its right end.",
+        "The next visible row has a compact initial rather than this enlarged flourish."
+      ],
+      "association_basis": [
+        "The first native regular record and page-head position agree with the first main-text row.",
+        "The enlarged left form and distributed elevated forms retain the parent's broad shape correspondence for both complete native readings."
+      ],
+      "adjacent_placements_compared": [
+        "The next row lacks the enlarged initial and remains a weaker f76r.1 candidate under the page-order cue; its proposed f76r.2 correspondence is not glyph-validated."
+      ],
+      "unresolved": [
+        "ZL potchokor versus IT potchokar is not adjudicated.",
+        "ZL final as,y versus IT ?sy remains a reading/spacing difference.",
+        "No encoded glyph sequence or word boundary is independently confirmed."
+      ],
+      "mapping_status": "provisional",
+      "mapping_allowed": false
+    },
+    {
+      "key": "f76r.35",
+      "parent_context_reference": "parent_review.records[key=f76r.35].native_source_contexts",
+      "source_ids_compared": ["ZL3b", "IT2a"],
+      "inspection_file_id": "median",
+      "outcome": "compatible",
+      "proposed_placement": "Middle complete row in the median window, between the proposed f76r.34 and f76r.36 rows.",
+      "direct_observations": [
+        "The middle complete row starts with a curled form and low upright strokes.",
+        "Two prominent elevated crossed or looped forms occur at its far-right end.",
+        "The upper complete row does not present the same conspicuous terminal pair; the lower complete row starts with a descending stem and a taller looped group."
+      ],
+      "association_basis": [
+        "The joint opening and paired terminal-form cues are compatible with both native f76r.35 readings and their shared qol.chcthy.chckhy ending.",
+        "The preserved preceding/following starts and relative row order remain compatible with the proposed f76r.34/f76r.36 contexts."
+      ],
+      "adjacent_placements_compared": [
+        "Upper complete row: weaker match to the distinctive terminal pair.",
+        "Lower complete row: different initial structure, consistent with the neighboring source context at a broad level."
+      ],
+      "unresolved": [
+        "ZL sain versus IT saiin is not resolved by stroke counting.",
+        "The following ZL qok[a:o]l alternative and source-specific uncertain spaces remain intact.",
+        "The comparison is bounded to this window and does not establish an exhaustive alternative-row or glyph match."
+      ],
+      "mapping_status": "provisional",
+      "mapping_allowed": false
+    },
+    {
+      "key": "f76r.56",
+      "parent_context_reference": "parent_review.records[key=f76r.56].native_source_contexts",
+      "source_ids_compared": ["ZL3b", "IT2a"],
+      "inspection_file_id": "last",
+      "outcome": "compatible",
+      "proposed_placement": "Short bottom row below a substantially longer preceding row.",
+      "direct_observations": [
+        "The lower row ends well before the preceding row, with broad blank space to its right and below.",
+        "Its first cluster includes a long descending stroke, elevated looped forms and low upright strokes.",
+        "Six broad clusters separated by larger gaps are visible in the short row."
+      ],
+      "association_basis": [
+        "Terminal page position and the absence of a following native locus support the parent's bottom-row placement.",
+        "The broad cluster pattern is compatible with both editions' identical qokaiin.ol.shedy.qokeey.or.shdy<$>; this does not certify token boundaries."
+      ],
+      "adjacent_placements_compared": [
+        "The longer preceding row remains a weaker terminal-locus candidate and supplies the proposed f76r.55 context."
+      ],
+      "unresolved": [
+        "Source agreement is not independent glyph evidence.",
+        "Neighboring ZL/IT reading differences and the source termination marker are not adjudicated.",
+        "Visual cluster count is descriptive; all six source word boundaries remain unverified."
+      ],
+      "mapping_status": "provisional",
+      "mapping_allowed": false
+    }
+  ],
+  "glyph_adjudication": "unresolved",
+  "source_corrections_applied": false,
+  "statistical_results_changed": false,
+  "limits": [
+    "Compatibility outcomes are descriptive comparison judgments, not numerical confidence or verified mappings.",
+    "All three attempts share one exposed page and dependent source/context information.",
+    "No independent human validation, glyph or word-boundary adjudication, source correction, decoding or translation is established.",
+    "No additional region or full-resolution whole-page inspection was performed.",
+    "Structural identity checks do not validate the image interpretation."
+  ]
+}

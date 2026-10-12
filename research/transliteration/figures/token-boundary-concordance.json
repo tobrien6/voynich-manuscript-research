@@ -1,0 +1,56 @@
+{
+  "boundary_disagreements_under_both_policies": 359,
+  "candidate_shared_present_p0": 3884,
+  "excluded_candidate_loci": 944,
+  "figure_version": "token-boundary-concordance-figure-v1",
+  "input_report_sha256": "8c93d9cf1bb83e4f9690378d5fdd6100377e019bf17dede7e0f70de7a4df1bb6",
+  "interpretation": "descriptive related transcription treatments; ASCII chains/boundaries, not glyphs or linguistic words; no independent samples or decipherment",
+  "output_sha256": {
+    "png": "b88e08a2c7f960bedfa2ac69338c2c6cb716b5cb4211f7efa005b5e8f805bf37",
+    "svg": "998faf648efb238eb3f070dbc4513bebc8f57ca3bdbf9b8261cf35e829ffb43d"
+  },
+  "renderer": {
+    "matplotlib": "3.11.2",
+    "python": "3.14.3",
+    "script_sha256": "97a6570cfdcd8c18086de735c40e5129762fe5a60e6d5eb1d2f716a2ecc4bb8c"
+  },
+  "rows": [
+    {
+      "category_counts": {
+        "different_chains": 886,
+        "same_chain_different_boundaries": 562,
+        "same_chain_same_boundaries": 1492
+      },
+      "selected_native_loci": 2940,
+      "spacing": "split"
+    },
+    {
+      "category_counts": {
+        "different_chains": 886,
+        "same_chain_different_boundaries": 767,
+        "same_chain_same_boundaries": 1287
+      },
+      "selected_native_loci": 2940,
+      "spacing": "join"
+    }
+  ],
+  "schema_version": 1,
+  "selected_native_keys_sha256": "85ee6b804b6e8d0ddfe2dbf7a3b8bb04e34d426ca03429b81cff2dfd983d67c2",
+  "selected_native_loci": 2940,
+  "sources": [
+    {
+      "alphabet": "Eva-",
+      "id": "ZL3b",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "alphabet": "EvaT",
+      "id": "IT2a",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ]
+}

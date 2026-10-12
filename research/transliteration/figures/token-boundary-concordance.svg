@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="540pt" viewBox="0 0 864 540" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Literal-chain and token-boundary concordance</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Literal-chain and token-boundary concordance</dc:title>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Voynich Manuscript Research / Matplotlib</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 540
+L 864 540
+L 864 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 138.24 345.6
+L 833.76 345.6
+L 833.76 145.8
+L 138.24 145.8
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 138.24 345.6
+L 138.24 145.8
+" clip-path="url(#p96342268db)" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="138.24" y="364.717188" transform="rotate(-0 138.24 364.717188)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 370.08 345.6
+L 370.08 145.8
+" clip-path="url(#p96342268db)" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="370.08" y="364.717188" transform="rotate(-0 370.08 364.717188)">980</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 601.92 345.6
+L 601.92 145.8
+" clip-path="url(#p96342268db)" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="601.92" y="364.717188" transform="rotate(-0 601.92 364.717188)">1,960</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 833.76 345.6
+L 833.76 145.8
+" clip-path="url(#p96342268db)" style="fill: none; stroke: #e4e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="833.76" y="364.717188" transform="rotate(-0 833.76 364.717188)">2,940</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="486" y="386.718125" transform="rotate(-0 486 386.718125)">Paired native locus keys — the same cohort in both rows</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9"/>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(52.731875 179.70201)">Comma split</text>
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(81.483125 194.104354)">ZL vs IT</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10"/>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(56.358125 307.614943)">Comma join</text>
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(81.483125 322.017286)">ZL vs IT</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 138.24 154.881818
+L 491.204571 154.881818
+L 491.204571 208.60525
+L 138.24 208.60525
+z
+" clip-path="url(#p96342268db)" style="fill: #246c94; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 491.204571 154.881818
+L 624.157714 154.881818
+L 624.157714 208.60525
+L 491.204571 208.60525
+z
+" clip-path="url(#p96342268db)" style="fill: #eaa333; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 624.157714 154.881818
+L 833.76 154.881818
+L 833.76 208.60525
+L 624.157714 208.60525
+z
+" clip-path="url(#p96342268db)" style="fill: #6b7280; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 138.24 282.79475
+L 442.707429 282.79475
+L 442.707429 336.518182
+L 138.24 336.518182
+z
+" clip-path="url(#p96342268db)" style="fill: #246c94; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 442.707429 282.79475
+L 624.157714 282.79475
+L 624.157714 336.518182
+L 442.707429 336.518182
+z
+" clip-path="url(#p96342268db)" style="fill: #eaa333; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 624.157714 282.79475
+L 833.76 282.79475
+L 833.76 336.518182
+L 624.157714 336.518182
+z
+" clip-path="url(#p96342268db)" style="fill: #6b7280; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="314.722286" y="185.899784" transform="rotate(-0 314.722286 185.899784)">1,492</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #161616" x="557.681143" y="185.899784" transform="rotate(-0 557.681143 185.899784)">562</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="728.958857" y="185.899784" transform="rotate(-0 728.958857 185.899784)">886</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="290.473714" y="313.812716" transform="rotate(-0 290.473714 313.812716)">1,287</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #161616" x="533.432571" y="313.812716" transform="rotate(-0 533.432571 313.812716)">767</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="728.958857" y="313.812716" transform="rotate(-0 728.958857 313.812716)">886</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start" x="47.52" y="47.596875" transform="rotate(-0 47.52 47.596875)">Identical encoded text can have different token boundaries</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="47.52" y="67.5" transform="rotate(-0 47.52 67.5)">2,940 common eligible P0 loci • pinned ZL3b / IT2a • case preserved</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(47.52 428.396719)">359 loci have boundary disagreements under both policies.</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(47.52 442.8)">Offsets are compared only on identical ASCII chains; different chains are not aligned.</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #444444" transform="translate(47.52 478.196992)">3,884 shared present P0 candidates; 944 jointly excluded.</text>
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #444444" transform="translate(47.52 491.4)">Related source treatments, not independent samples. Word divisions, glyphs and decipherment remain unresolved.</text>
+  </g>
+  <g id="legend_1">
+   <g id="patch_9">
+    <path d="M 54 124.262344
+L 67.2 124.262344
+L 67.2 115.862344
+L 54 115.862344
+z
+" style="fill: #246c94"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(76.8 115.619297)">Same chain</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(76.8 130.022578)">and boundaries</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 197.835 124.262344
+L 211.035 124.262344
+L 211.035 115.862344
+L 197.835 115.862344
+z
+" style="fill: #eaa333"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(220.635 115.619297)">Same chain,</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(220.635 130.022578)">different boundaries</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 370.0575 124.262344
+L 383.2575 124.262344
+L 383.2575 115.862344
+L 370.0575 115.862344
+z
+" style="fill: #6b7280"/>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(392.8575 115.619297)">Different</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(392.8575 130.022578)">encoded chains</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p96342268db">
+   <rect x="138.24" y="145.8" width="695.52" height="199.8"/>
+  </clipPath>
+ </defs>
+</svg>

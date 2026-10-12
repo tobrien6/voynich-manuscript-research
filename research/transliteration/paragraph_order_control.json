@@ -17,12 +17,12 @@
   },
   "inputs": {
     "canonical_corpus_sha256": "a6f1837785d0bab5ac6059e556d2a5cd831bcf5b06eccbef92c99f7a82d7e430",
-    "implementation_sha256": "80c410f67b0715f591723ff2f45efbcfc5be99b2b469ea71256deb39cf6f6b65",
+    "implementation_sha256": "9c621b34ed1840107cc4ba4731710b6983a6c69e8658d95afe2062aa12d48347",
     "parent_inputs": {
       "canonical_corpus_sha256": "a6f1837785d0bab5ac6059e556d2a5cd831bcf5b06eccbef92c99f7a82d7e430",
       "coverage_path": "research/transliteration/paragraph_corpus_coverage.json",
       "coverage_sha256": "2b0b7827460874c1019bc0c4d90cbe8c0f8a7cdc99226cb4b2c14fedc27d63ed",
-      "implementation_sha256": "39399f15461a9e43db4eee42bb8e9683ef6479aef74647dbadde9013e150a039",
+      "implementation_sha256": "265f7586228b136f9c082d508d469418e267a4735d872f137c7a5e9a05028ca9",
       "parent_corpus_inputs": {
         "implementation_sha256": {
           "scripts/annotation_agreement.py": "b5d8ed6c295ef1d1cfdc576c948993da78ec57123f4132044b1fff0f8895b772",
@@ -45,7 +45,7 @@
       "plan_sha256": "9a4be72e27bccab2e42134ccc4601a05bedb64ed91c07ac156914125b56a30b0"
     },
     "parent_report_path": "research/transliteration/paragraph_boundary_repetition.json",
-    "parent_report_sha256": "451c0859306ab591f0c9e287f147131aa3d94b34bf0998851d2b632fb74dcb99",
+    "parent_report_sha256": "265b7dd26dfe56f57b8b163f73e6e26cb01c2007b043752e441afd96092ec8ff",
     "plan_path": "research/transliteration/PARAGRAPH_ORDER_PLAN.md",
     "plan_sha256": "1640c612dbbf16a9ba28da948611ad860a60a9796c612a6dfaffb7c5505ff82e"
   },

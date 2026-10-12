@@ -23,6 +23,13 @@ units and null scopes that a later replication must match.
 The [planned parsing reconstruction](PARSING.md) now implements four explicit
 exclusion interpretations and preserves their length discrepancies and unmatched
 label phrases. It does not reproduce a published statistic.
+The [label phrase provenance audit](LABEL_PHRASES.md) traces the unmatched names
+to other native codes and retains repeated strings elsewhere, without changing
+the H parser or establishing the authors' input.
+The [repeated-type assay](REPEATED_TYPES.md) applies the published B definition
+and a declared global control to all four approximate streams, with exact means
+and complete ten-trial results. It preserves the difference from modern
+conditional-locus controls and does not claim an exact historical replication.
 
 ## Method
 
@@ -67,6 +74,11 @@ The [exact-page envelope comparison](MODERN_PAGE_ENVELOPES.md) now accounts for
 all H and IT2a page groups: four shared identifiers have different selected-record
 counts, and two identifiers occur only in each source's page set. The equal
 global total hides those discrepancies; the diagnostic supplies no row pairing.
+
+The [lossy lowercase comparison](LOWERCASE_PROJECTION.md) then finds 183 matching
+streams on 223 exact shared page IDs, while 39 differing streams retain the same
+symbol frequencies. It preserves omitted-symbol counts and the excluded modern
+envelope separately; those matches do not establish full text or glyph identity.
 
 ## Reproduce and next test
 

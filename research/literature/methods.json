@@ -46,6 +46,14 @@
         "Exact historical input bytes and preprocessing are not recovered here",
         "Do not equate this historical Currier source with current GC2a"
       ],
+      "related_source_intake": {
+        "source_repository": "https://github.com/sravanareddy/deciphervoynich",
+        "source_commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+        "manifest": "reddy-source-manifest.json",
+        "report": "reddy-source-intake.json",
+        "note": "REDDY_SOURCE_INTAKE.md",
+        "status": "Later author-associated input candidate recovered; all reported full/B counts and internal page/B/full vectors match; Table 2 prediction unreplicated"
+      },
       "replication_status": "methods_only"
     },
     {
@@ -95,6 +103,14 @@
       "published": "2013-07-02",
       "venue": "PLOS ONE 8(7), e67310",
       "url": "https://doi.org/10.1371/journal.pone.0067310",
+      "related_preprint": {
+        "id": "1303.0347v1",
+        "url": "https://arxiv.org/abs/1303.0347v1",
+        "submitted_at_utc": "2013-03-02T03:57:15Z",
+        "inspected_on": "2026-10-12",
+        "source_inventory": "amancio-source-inventory.json",
+        "source_role": "Typesetting and figure bundle; processed corpus and analysis implementation not recovered from this artifact"
+      },
       "artifacts": [
         {
           "kind": "article_pdf",

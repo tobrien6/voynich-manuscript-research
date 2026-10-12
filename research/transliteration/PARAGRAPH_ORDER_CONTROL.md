@@ -115,10 +115,31 @@ report by assigning positions directly to the identities involved in each
 event, without using chain contraction or production moment functions. It
 reconstructs all 25 source/policy endpoint-match edges and four edge pairs
 from locally generated native tokens, then verifies every unit mean/variance,
-invariant flag, observation and exact aggregate. All 60 focused tests pass;
+invariant flag, observation and exact aggregate. All 62 focused tests pass;
 the complete report replays exactly. Output aliases of sources, code, plans,
-parent reports and verification inputs are rejected before computation or
-writing, including hardlinks.
+parent reports and verification inputs are checked before computation and
+rechecked immediately before writing, including hardlinks.
+
+After the first result, a fourteenth test reproduced symlink and hardlink
+outputs created during computation in wholly temporary fixtures. The original
+CLI overwrote the protected temporary plan in both cases. A writer-only repair
+prepares the output bytes, then repeats protection immediately before the write;
+both cases now reject the alias and preserve the plan. The report explicitly
+updates its implementation fingerprint from `80c410f67b0715f591723ff2f45efbcfc5be99b2b469ea71256deb39cf6f6b65`
+to `9c621b34ed1840107cc4ba4731710b6983a6c69e8658d95afe2062aa12d48347`.
+Every other report field is identical to the preserved first result. The entire
+implementation syntax tree outside the sole CLI `main` body, including its
+signature and decorators, is also unchanged. This is an explicit post-result
+writer/provenance correction, not a revised scientific control.
+
+Accepted parent repair [PR #112](https://github.com/tobrien6/voynich-manuscript-research/pull/112)
+adds the corresponding final writer check to the boundary producer. An isolated
+local replay verified the accepted source/test/report bytes. Its report changes
+only its implementation fingerprint, and its complete syntax tree outside the
+CLI body remains identical. Refreshing this child's parent pins changes only
+`inputs.parent_report_sha256` and `inputs.parent_inputs.implementation_sha256`;
+every scientific field, source/corpus pin, plan and this producer's fingerprint
+is preserved. The 62 parent/child/source tests pass against those accepted files.
 
 ## Limits and next step
 

@@ -12,10 +12,12 @@ try:
     from .audit_historical_interlinear import parse_historical, read_pinned_archive
     from .audit_pilot_transcriptions import page_summary
     from .audit_transliterations import load_sources
+    from .rosette_cohort import MODERN_IDS, check as check_cohort
 except ImportError:
     from audit_historical_interlinear import parse_historical, read_pinned_archive
     from audit_pilot_transcriptions import page_summary
     from audit_transliterations import load_sources
+    from rosette_cohort import MODERN_IDS, check as check_cohort
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +29,7 @@ INPUTS = (
     "scripts/audit_rosette_coverage.py", "scripts/audit_historical_interlinear.py",
     "scripts/audit_pilot_transcriptions.py", "scripts/audit_transliterations.py",
     "scripts/ivtff.py",
+    "scripts/rosette_cohort.py",
 )
 
 
@@ -110,6 +113,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--check", type=Path)
+    parser.add_argument("--require-same-modern-cohort", nargs=2, choices=MODERN_IDS, metavar=("LEFT", "RIGHT"),
+                        help="require equal nonempty fRos keys, kinds and locators in two modern exports")
     args = parser.parse_args()
     try:
         catalog = json.loads((ROOT / INPUTS[0]).read_text())
@@ -124,6 +129,7 @@ def main():
         result = report()
         if args.check and result != json.loads(args.check.read_text()):
             raise ValueError("rosette coverage differs from committed report")
+        cohort = check_cohort(result, *args.require_same_modern_cohort) if args.require_same_modern_cohort else None
         rendered = json.dumps(result, indent=2, ensure_ascii=False) + "\n"
         if args.output:
             args.output.write_text(rendered, encoding="utf-8")
@@ -133,7 +139,15 @@ def main():
         parser.exit(1, f"rosette source coverage failed: {error}\n")
     if args.check:
         print("Pinned rosette source coverage reproduces; no locus crosswalk is assigned.")
+    if cohort:
+        if cohort["errors"]:
+            for error in cohort["errors"]:
+                print("INCOMPLETE:", error)
+            return 2
+        print("PASS: equal nonempty modern native key/kind/locator cohorts")
+        print("NOTE: glyph/region agreement and independent source evidence remain unverified")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

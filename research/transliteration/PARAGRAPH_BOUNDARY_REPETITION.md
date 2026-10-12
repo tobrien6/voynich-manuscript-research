@@ -115,6 +115,12 @@ complete report replays exactly after integration. Output guards run before
 computation and protect source/catalog/code, both producer plans, parent reports,
 the new plan and verification inputs, including resolved and hardlink aliases.
 
+A post-result writer correction repeats the protection check after serialization
+and immediately before writing. Its temporary regressions create symlink and
+hardlink aliases during calculation and preserve the protected plan and coverage
+bytes. The report's implementation fingerprint changes; all scientific values,
+cohort declarations, source/plan/parent pins and earlier history remain identical.
+
 ## Limits and next test
 
 This is a narrow, heavily uncertainty-filtered corpus: only 233 of 671 matched

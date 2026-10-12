@@ -107,3 +107,39 @@ under explicit representation/segmentation rules, preserve disagreements, and
 review glyphs on the source image. A historical comparison additionally needs
 an explicit locus correspondence. Resolve that work before changing the paired
 pilot or freezing a decipherment candidate's input and evaluation units.
+
+## Optional strict modern cohort check
+
+Diagnostic replay retains missing and partial source cohorts. Before using two
+modern exports as one matched metadata cohort, require both exact `fRos`
+headers, nonempty present-key sets, identical keys, and matching kinds/locators:
+
+```sh
+python3 scripts/audit_rosette_coverage.py \
+  --check research/pilot/rosette-source-coverage.json \
+  --require-same-modern-cohort ZL3b GC2a
+```
+
+This deliberate negative control returns **2**: the sources share 148 keys,
+with twelve L0 keys only in ZL3b (`fRos.1`, `.3`, `.4`, `.5`, `.6`, `.7`, `.8`,
+`.9`, `.10`, `.18`, `.33`, `.135`). ZL/IT also returns 2 because IT has no
+present exact-page cohort. The check does not discard unmatched keys to make
+the request pass, or treat two empty sets as complete.
+
+ZL/RF1b-full passes this **source-relative metadata condition**, while the
+existing RF derivation warning remains. It verifies no complete physical
+surface, alphabet conversion, glyph/region agreement, independent witness,
+historical/modern correspondence, or permissible statistical sample. The
+report still has `apply_to_statistics: false` and a null verified crosswalk.
+All present modern `fRos` kinds are outside the default adapter's P0/P1
+selection, so a Rosettes experiment requires a separately declared cohort.
+
+Malformed count/header declarations, duplicate exports/keys, wrong native
+pages, nonexistent/interlinear identifiers, and repeated source selections are
+errors (exit 1). The diagnostic report is unchanged apart from implementation
+pins; the new helper is included in the protected inputs. Tests exercise these
+cases and the real partial/absent/export-derived comparisons.
+
+```sh
+python3 -m unittest tests.test_rosette_cohort -v
+```
