@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "method": "fixed generated ASCII case entropy controls v1",
+  "producer_sha256": "c06a6522ed928e74b523376a30920f8c8e164f7f6301e4c93e4de125d201c325",
+  "generation_rule": "capitalize only the declared number of a occurrences; b and xb remain unchanged",
+  "source_symbol": "A",
+  "known_case_target": "a",
+  "candidate_set": [
+    "a",
+    "b",
+    "x"
+  ],
+  "cases": [
+    {
+      "case": "balanced_rare_case",
+      "base_synthetic_counts": [
+        {
+          "word": "a",
+          "occurrences": 2
+        },
+        {
+          "word": "b",
+          "occurrences": 99
+        },
+        {
+          "word": "xb",
+          "occurrences": 99
+        }
+      ],
+      "capitalized_a_occurrences": 1,
+      "observed_synthetic_counts": [
+        {
+          "word": "A",
+          "occurrences": 1
+        },
+        {
+          "word": "a",
+          "occurrences": 1
+        },
+        {
+          "word": "b",
+          "occurrences": 99
+        },
+        {
+          "word": "xb",
+          "occurrences": 99
+        }
+      ],
+      "candidate_scores": [
+        {
+          "candidate": "a",
+          "affected_occurrences": 2,
+          "all_occurrences": 200,
+          "mass_fraction": {
+            "numerator": "1",
+            "denominator": "100"
+          },
+          "subset_decrease_bits": 1.0,
+          "whole_decrease_bits": 0.01,
+          "transformed_synthetic_counts": [
+            {
+              "word": "a",
+              "occurrences": 2
+            },
+            {
+              "word": "b",
+              "occurrences": 99
+            },
+            {
+              "word": "xb",
+              "occurrences": 99
+            }
+          ]
+        },
+        {
+          "candidate": "b",
+          "affected_occurrences": 199,
+          "all_occurrences": 200,
+          "mass_fraction": {
+            "numerator": "199",
+            "denominator": "200"
+          },
+          "subset_decrease_bits": 0.040599565777,
+          "whole_decrease_bits": 0.040396567948,
+          "transformed_synthetic_counts": [
+            {
+              "word": "a",
+              "occurrences": 1
+            },
+            {
+              "word": "b",
+              "occurrences": 100
+            },
+            {
+              "word": "xb",
+              "occurrences": 99
+            }
+          ]
+        },
+        {
+          "candidate": "x",
+          "affected_occurrences": 100,
+          "all_occurrences": 200,
+          "mass_fraction": {
+            "numerator": "1",
+            "denominator": "2"
+          },
+          "subset_decrease_bits": 0.0,
+          "whole_decrease_bits": 0.0,
+          "transformed_synthetic_counts": [
+            {
+              "word": "a",
+              "occurrences": 1
+            },
+            {
+              "word": "b",
+              "occurrences": 99
+            },
+            {
+              "word": "x",
+              "occurrences": 1
+            },
+            {
+              "word": "xb",
+              "occurrences": 99
+            }
+          ]
+        }
+      ],
+      "rankings": [
+        {
+          "metric": "subset",
+          "maximizers": [
+            "a"
+          ],
+          "known_case_target_is_maximizer": true
+        },
+        {
+          "metric": "whole",
+          "maximizers": [
+            "b"
+          ],
+          "known_case_target_is_maximizer": false
+        }
+      ]
+    },
+    {
+      "case": "skewed_common_case",
+      "base_synthetic_counts": [
+        {
+          "word": "a",
+          "occurrences": 100
+        },
+        {
+          "word": "b",
+          "occurrences": 99
+        },
+        {
+          "word": "xb",
+          "occurrences": 99
+        }
+      ],
+      "capitalized_a_occurrences": 99,
+      "observed_synthetic_counts": [
+        {
+          "word": "A",
+          "occurrences": 99
+        },
+        {
+          "word": "a",
+          "occurrences": 1
+        },
+        {
+          "word": "b",
+          "occurrences": 99
+        },
+        {
+          "word": "xb",
+          "occurrences": 99
+        }
+      ],
+      "candidate_scores": [
+        {
+          "candidate": "a",
+          "affected_occurrences": 100,
+          "all_occurrences": 298,
+          "mass_fraction": {
+            "numerator": "50",
+            "denominator": "149"
+          },
+          "subset_decrease_bits": 0.080793135896,
+          "whole_decrease_bits": 0.027111790569,
+          "transformed_synthetic_counts": [
+            {
+              "word": "a",
+              "occurrences": 100
+            },
+            {
+              "word": "b",
+              "occurrences": 99
+            },
+            {
+              "word": "xb",
+              "occurrences": 99
+            }
+          ]
+        },
+        {
+          "candidate": "b",
+          "affected_occurrences": 297,
+          "all_occurrences": 298,
+          "mass_fraction": {
+            "numerator": "297",
+            "denominator": "298"
+          },
+          "subset_decrease_bits": 0.666666666667,
+          "whole_decrease_bits": 0.664429530201,
+          "transformed_synthetic_counts": [
+            {
+              "word": "a",
+              "occurrences": 1
+            },
+            {
+              "word": "b",
+              "occurrences": 198
+            },
+            {
+              "word": "xb",
+              "occurrences": 99
+            }
+          ]
+        },
+        {
+          "candidate": "x",
+          "affected_occurrences": 198,
+          "all_occurrences": 298,
+          "mass_fraction": {
+            "numerator": "99",
+            "denominator": "149"
+          },
+          "subset_decrease_bits": 0.0,
+          "whole_decrease_bits": 0.0,
+          "transformed_synthetic_counts": [
+            {
+              "word": "a",
+              "occurrences": 1
+            },
+            {
+              "word": "b",
+              "occurrences": 99
+            },
+            {
+              "word": "x",
+              "occurrences": 99
+            },
+            {
+              "word": "xb",
+              "occurrences": 99
+            }
+          ]
+        }
+      ],
+      "rankings": [
+        {
+          "metric": "subset",
+          "maximizers": [
+            "b"
+          ],
+          "known_case_target_is_maximizer": false
+        },
+        {
+          "metric": "whole",
+          "maximizers": [
+            "b"
+          ],
+          "known_case_target_is_maximizer": false
+        }
+      ]
+    }
+  ],
+  "scope": "constructed known-case controls, not language-corpus performance estimates or manuscript case assignments"
+}

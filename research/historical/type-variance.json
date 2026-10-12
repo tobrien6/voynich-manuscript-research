@@ -1,0 +1,401 @@
+{
+  "assay_version": 1,
+  "scope": "Exact B variance under the unchanged historical all-flat-edge independent native-record bag null; exposed approximate inputs",
+  "statistic": "distinct_self_repeating_types_B",
+  "plan_sha256": "8b0622697fb4184ad7d614ee2b22fbd8a6d70d8ddb0ec04f6c6ebc73c15aaa51",
+  "human_plan_sha256": "a94c52d23eb4100bf30a404a7521f8339088beee5095841a3f92e2c0151c9bb8",
+  "runner_sha256": "51b515d83b7ccacfe717e22963ed328da29d247557f173cb7315dd64f2d13fa1",
+  "metric_helper_sha256": "effc1dae0f2ada33ab6b18eb36c9349b5d44cbbbe267883ae798fe3ff260501b",
+  "frozen_dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/global_repeated_types.py": "cebe7bae733a401d7c76d15ee7c4724d2f9aab1efe2433db74e0d6a8d3c0da08",
+    "scripts/historical_repeated_types.py": "9a8918d6ecd7fa2ddcf52802ee96ef7646c5c21c089069db18d0c10e77e51268",
+    "research/historical/repeated-types-plan.json": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
+    "research/historical/REPEATED_TYPES_PLAN.md": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
+    "research/historical/repeated-types.json": "683a0906eaf01dbacf5394eb0ded820802df0f09c293302a452351494338dc2a",
+    "scripts/record_conditioned_repeated_types.py": "dccbc20120a4d98200d0c5d351fa784ced56c299c15f2be3b20bc9eff1858e3d",
+    "scripts/historical_record_conditioned.py": "a040f5f57624fa8fdb8b4fbe1cf84e674b5f02438b06c59c3a32c4ea0bbcd393",
+    "research/historical/record-conditioned-plan.json": "c606cb48e3f5a6e8d6805a88f7a3495276a2a0356472a0abd599b9caa6e9f7a3",
+    "research/historical/RECORD_CONDITIONED_PLAN.md": "c4d0d84b22dd634c9835a4ba942214551dac4c2866ed8bc1dc694343b5f4d8c4",
+    "research/historical/record-conditioned-amendment-1.json": "62be8201169470a7c35a1db6a16f6cc6f340bb3ee0de9bf381e245faf6aeeedf",
+    "research/historical/RECORD_CONDITIONED_AMENDMENT_1.md": "b2ca02b0a54adec2204a40c670b806caf34429e904ba30c4de871ca743ac1aab",
+    "research/historical/record-conditioned.json": "56fc5f036627cffbf3f597090fbafd22afe102c2430f6f606c4f1d46c5b17b1b"
+  },
+  "parent_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/131",
+  "parent_commit": "ef43de2dfda0923c655031b14626fb32acff9574",
+  "source_credit": "Jorge Stolfi; Gabriel Landini and Jim Reeds; Takeshi Takahashi; original transcribers credited in the unmodified member",
+  "source_permission": {
+    "statement_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/",
+    "locator": "Permissions section",
+    "terms_summary": "Publisher permits copying, use, modification and republication with due credit and without imposing additional conditions or copyrights on these files or derivatives",
+    "repository_license_applies": false
+  },
+  "edge_scope": "All N-1 adjacent edges in each surviving flat stream, including native-record joins",
+  "condition_on": "Independent uniform permutation of every surviving native-record token bag",
+  "new_controls": 0,
+  "variants": [
+    {
+      "ring_policy": "exclude_R2",
+      "f66r_column_unit": "M",
+      "record_corpus_sha256": "63bd8a7f9752c1268038f0f1bcd2a5a3b5e151b7ae4614a292d343ec813faf85",
+      "flat_corpus_sha256": "6011cc2640aa27257c62cec9740dbf706ed22defba3a2142172a9b73b13a8261",
+      "tokens": 37759,
+      "observed": {
+        "equal_pair_events_A": 313,
+        "distinct_repeating_types_B": 114,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37758,
+        "cross_record_joining_edges": 5126,
+        "within_record_pair_events": 304,
+        "cross_record_pair_events": 9,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 6,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 0,
+        "equal_pair_events_on_index_gap_edges": 0
+      },
+      "exact_moments": {
+        "mean_B": {
+          "numerator_hex": "0x8bbbed53600fe0d7e3cdcd583a1834b18a3db445375898a5aa868f963b264ba3b4af73f74fb0e92c19c04d055c8c95fea0160b33b5021e2246f24502223eed5fb30a5071f32b398df09bc01aba7ea8070f6b89cb516c38e9e6795dea1f89823699a84d30785",
+          "denominator_hex": "0x153167cc45dcfd4082b3fc035c333150d01eda6384f465489cf0db744b2f32cdba0937492c85e9822f98330a90124b263df869745f56528451c7514605995b4f9aef8382840600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 105.49457307854077
+        },
+        "marginal_variance_sum": {
+          "numerator_hex": "0x431a4d2969b96eda4d23098927ef095af8c5f58769b803ed138b71c4ea8f9caa89fbdb3ef9aeaf1f21a8437bb17d056698c4877982b77505c9c2608fd90598e3a9b88ab7464bec969d2c754b20796db67f38834e62300a9fbeaa98ac9be33c171ffd02f7640dfcfd1437d30efdcb65ad78d0d16813ba051187ca1a7dcb56820050af7e8b6d30609047b9ee554486a4a59e25b372302863923a420b024a7b500a1b560a7133e279eb4aee7f580abe3c6d286e62703d136d59a4a38ae4b977d1751b74d2a78c45728974e7",
+          "denominator_hex": "0x1c1249069bf035cc731f78531ec490898ac5ce3dd676788683d13b0a945ee322b584bb1e200a0bd39ed823b7c48d8dd04343fbe9555472072e502d81aa2d0c1b06da8f0e82195dbc9d6c21daabbaf88903cdc8ede77bf7188b913844742de02211d28e65fc58a397c8d9464c1072faeca673422cfd70efb73f07dceb89fce958f8909e597cc90dc7e2e30240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 38.24685672463943
+        },
+        "type_pair_covariance_sum": {
+          "numerator_hex": "0xa82d7ee00153222f0b5e20c59dfd4fd0d76e3d2abe6db96421f96cefc521df19c24e442deb9e3dccef106e9d08758257b63f1b5fd22cda7a5bfd6034e3589b040ccb090149b70a7447918d85ba6bb0064e295678a9873725519c004e7cbc7da1fbfbf77c600b123dd26dddd32ec4998940e45125067bb5ca4f67299bace9d10c2369bc7031bbd9c394a066b7b935bd74882522cade43d5761bd6a37889b60bd954f007842cebe5ff7cda3cf472fcd",
+          "denominator_hex": "0x1100aba147e1fce0474e4f81a75c9e47c143dc73b089d4286bd3d05d18e19980e28ef63ecd101e6ba9e1f1c4beb302fbe3128b48d47013a596e28577dcb3df1e6bd97e02450f2d34a3b5993f56ece3c3a1a493225222329c6d8a6a2fb9a61ca5729729ce20885b2bad10789cf8e4841aaf6974fdc7fd038c6d46d7c7c608b68860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.038637824738956425
+        },
+        "twice_covariance_adjustment": {
+          "numerator_hex": "0xa82d7ee00153222f0b5e20c59dfd4fd0d76e3d2abe6db96421f96cefc521df19c24e442deb9e3dccef106e9d08758257b63f1b5fd22cda7a5bfd6034e3589b040ccb090149b70a7447918d85ba6bb0064e295678a9873725519c004e7cbc7da1fbfbf77c600b123dd26dddd32ec4998940e45125067bb5ca4f67299bace9d10c2369bc7031bbd9c394a066b7b935bd74882522cade43d5761bd6a37889b60bd954f007842cebe5ff7cda3cf472fcd",
+          "denominator_hex": "0x88055d0a3f0fe7023a727c0d3ae4f23e0a1ee39d844ea1435e9e82e8c70ccc071477b1f66880f35d4f0f8e25f59817df18945a46a3809d2cb7142bbee59ef8f35ecbf012287969a51dacc9fab7671e1d0d249912911194e36c53517dcd30e52b94b94e710442d95d6883c4e7c72420d57b4ba7ee3fe81c636a36be3e3045b4430000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.07727564947791285
+        },
+        "variance_B": {
+          "numerator_hex": "0xf102205897b5d5eb8c6bbb31c74e6974c2736f7d49e573a94da337c21d6ea15be091a1b5950e34c5c94e7da127f9d57821b4f10fd6e9833b1c549137221b11851efff56ee3f294192f8f6fe49041291fe783c1489acedff38f49b1a1488ccce3a935e0457c8d387d588726eb26c30f6bc775f61f153e49d220c9e603f58dd222689d2fa1565263cd777594cd55061e2c7b478bba093b4bfbef694d14b743fe688ddb4bfa951cab4ab9d07432bae189458de651e1a50231541b57c13c97140d57d43ee43a11d0321f4b93b66fa4ac9",
+          "denominator_hex": "0x649e71b0dc851e63b7c375e75f9c7a7d43a91720f58243649d0edd1488bd01dee5592bd8b0f7ecfb4ba8ddb163dfba3efa31272894112a054186efa5623d8d855eb95976c9e4c953dcb372bdca8e6aa1360b13bfa960a78267bc65cfff03d4ec2cc1c98cccf6c2213e82cc5160bc2d4e95eb62472534de212ce50c8fd58d69a731ab38e4aed4e6da3789143e484edd1c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 38.32413237411734
+        }
+      },
+      "indicator_support_accounting": {
+        "distinct_types": 8137,
+        "nonempty_records": 5127,
+        "zero_repeat_probability_types": 7782,
+        "forced_repeating_types": 1,
+        "variable_indicator_types": 354,
+        "all_variable_indicator_pairs": 62481,
+        "variable_pairs_sharing_records": 18596,
+        "disjoint_record_variable_pairs": 43885,
+        "positive_covariance_pairs": 1267,
+        "negative_covariance_pairs": 225,
+        "zero_covariance_shared_pairs": 17104,
+        "joint_components_evaluated": 2369,
+        "components_with_inactive_side_skipped": 49601
+      },
+      "existing_ten_control_B_values": [
+        98,
+        120,
+        110,
+        96,
+        103,
+        106,
+        114,
+        116,
+        112,
+        96
+      ],
+      "spread_diagnostics": {
+        "zero_conditional_variance": false,
+        "variance_decimal": "38.324132374117342470556440128998169669567918713697",
+        "standard_deviation_decimal": "6.1906487845877141530801977574494069009987089423495",
+        "centered_B_in_conditional_SD_decimal": "1.3739152740556705902463561817132552703716636484474",
+        "variance_approx": 38.32413237411734,
+        "standard_deviation_approx": 6.190648784587714,
+        "centered_B_in_conditional_SD_approx": 1.3739152740556706,
+        "decimal_precision": 50,
+        "interpretation": "Conditional scale only; no normal tail, confidence, significance or mechanism probability"
+      }
+    },
+    {
+      "ring_policy": "exclude_R2",
+      "f66r_column_unit": "L",
+      "record_corpus_sha256": "e53f7bd10aea557abef1fa530649b179adb7704dc7a9207fedee5eeda7fc8370",
+      "flat_corpus_sha256": "2ba83767113efadc3b9371d38c0b5c9382f73e3b76cd4da097885e8df948dc6f",
+      "tokens": 37776,
+      "observed": {
+        "equal_pair_events_A": 314,
+        "distinct_repeating_types_B": 115,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37775,
+        "cross_record_joining_edges": 5143,
+        "within_record_pair_events": 304,
+        "cross_record_pair_events": 10,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 7,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 0,
+        "equal_pair_events_on_index_gap_edges": 0
+      },
+      "exact_moments": {
+        "mean_B": {
+          "numerator_hex": "0x8d0f03d0246db0abebf90d186fdb67c6973fa1eb6fa7defa34559d4d7fd93ed09050076be27947c43cb9d036058dbab103f591cafaf7834a8c0eba1682988314acb948aa1b6b998df09bc01aba7ea8070f6b89cb516c38e9e6795dea1f89823699a84d30785",
+          "denominator_hex": "0x153167cc45dcfd4082b3fc035c333150d01eda6384f465489cf0db744b2f32cdba0937492c85e9822f98330a90124b263df869745f56528451c7514605995b4f9aef8382840600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 106.49457307854077
+        },
+        "marginal_variance_sum": {
+          "numerator_hex": "0x431a4d2969b96eda4d23098927ef095af8c5f58769b803ed138b71c4ea8f9caa89fbdb3ef9aeaf1f21a8437bb17d056698c4877982b77505c9c2608fd90598e3a9b88ab7464bec969d2c754b20796db67f38834e62300a9fbeaa98ac9be33c171ffd02f7640dfcfd1437d30efdcb65ad78d0d16813ba051187ca1a7dcb56820050af7e8b6d30609047b9ee554486a4a59e25b372302863923a420b024a7b500a1b560a7133e279eb4aee7f580abe3c6d286e62703d136d59a4a38ae4b977d1751b74d2a78c45728974e7",
+          "denominator_hex": "0x1c1249069bf035cc731f78531ec490898ac5ce3dd676788683d13b0a945ee322b584bb1e200a0bd39ed823b7c48d8dd04343fbe9555472072e502d81aa2d0c1b06da8f0e82195dbc9d6c21daabbaf88903cdc8ede77bf7188b913844742de02211d28e65fc58a397c8d9464c1072faeca673422cfd70efb73f07dceb89fce958f8909e597cc90dc7e2e30240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 38.24685672463943
+        },
+        "type_pair_covariance_sum": {
+          "numerator_hex": "0xa82d7ee00153222f0b5e20c59dfd4fd0d76e3d2abe6db96421f96cefc521df19c24e442deb9e3dccef106e9d08758257b63f1b5fd22cda7a5bfd6034e3589b040ccb090149b70a7447918d85ba6bb0064e295678a9873725519c004e7cbc7da1fbfbf77c600b123dd26dddd32ec4998940e45125067bb5ca4f67299bace9d10c2369bc7031bbd9c394a066b7b935bd74882522cade43d5761bd6a37889b60bd954f007842cebe5ff7cda3cf472fcd",
+          "denominator_hex": "0x1100aba147e1fce0474e4f81a75c9e47c143dc73b089d4286bd3d05d18e19980e28ef63ecd101e6ba9e1f1c4beb302fbe3128b48d47013a596e28577dcb3df1e6bd97e02450f2d34a3b5993f56ece3c3a1a493225222329c6d8a6a2fb9a61ca5729729ce20885b2bad10789cf8e4841aaf6974fdc7fd038c6d46d7c7c608b68860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.038637824738956425
+        },
+        "twice_covariance_adjustment": {
+          "numerator_hex": "0xa82d7ee00153222f0b5e20c59dfd4fd0d76e3d2abe6db96421f96cefc521df19c24e442deb9e3dccef106e9d08758257b63f1b5fd22cda7a5bfd6034e3589b040ccb090149b70a7447918d85ba6bb0064e295678a9873725519c004e7cbc7da1fbfbf77c600b123dd26dddd32ec4998940e45125067bb5ca4f67299bace9d10c2369bc7031bbd9c394a066b7b935bd74882522cade43d5761bd6a37889b60bd954f007842cebe5ff7cda3cf472fcd",
+          "denominator_hex": "0x88055d0a3f0fe7023a727c0d3ae4f23e0a1ee39d844ea1435e9e82e8c70ccc071477b1f66880f35d4f0f8e25f59817df18945a46a3809d2cb7142bbee59ef8f35ecbf012287969a51dacc9fab7671e1d0d249912911194e36c53517dcd30e52b94b94e710442d95d6883c4e7c72420d57b4ba7ee3fe81c636a36be3e3045b4430000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.07727564947791285
+        },
+        "variance_B": {
+          "numerator_hex": "0xf102205897b5d5eb8c6bbb31c74e6974c2736f7d49e573a94da337c21d6ea15be091a1b5950e34c5c94e7da127f9d57821b4f10fd6e9833b1c549137221b11851efff56ee3f294192f8f6fe49041291fe783c1489acedff38f49b1a1488ccce3a935e0457c8d387d588726eb26c30f6bc775f61f153e49d220c9e603f58dd222689d2fa1565263cd777594cd55061e2c7b478bba093b4bfbef694d14b743fe688ddb4bfa951cab4ab9d07432bae189458de651e1a50231541b57c13c97140d57d43ee43a11d0321f4b93b66fa4ac9",
+          "denominator_hex": "0x649e71b0dc851e63b7c375e75f9c7a7d43a91720f58243649d0edd1488bd01dee5592bd8b0f7ecfb4ba8ddb163dfba3efa31272894112a054186efa5623d8d855eb95976c9e4c953dcb372bdca8e6aa1360b13bfa960a78267bc65cfff03d4ec2cc1c98cccf6c2213e82cc5160bc2d4e95eb62472534de212ce50c8fd58d69a731ab38e4aed4e6da3789143e484edd1c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 38.32413237411734
+        }
+      },
+      "indicator_support_accounting": {
+        "distinct_types": 8129,
+        "nonempty_records": 5144,
+        "zero_repeat_probability_types": 7773,
+        "forced_repeating_types": 2,
+        "variable_indicator_types": 354,
+        "all_variable_indicator_pairs": 62481,
+        "variable_pairs_sharing_records": 18596,
+        "disjoint_record_variable_pairs": 43885,
+        "positive_covariance_pairs": 1267,
+        "negative_covariance_pairs": 225,
+        "zero_covariance_shared_pairs": 17104,
+        "joint_components_evaluated": 2369,
+        "components_with_inactive_side_skipped": 49601
+      },
+      "existing_ten_control_B_values": [
+        106,
+        97,
+        105,
+        102,
+        111,
+        106,
+        105,
+        105,
+        108,
+        112
+      ],
+      "spread_diagnostics": {
+        "zero_conditional_variance": false,
+        "variance_decimal": "38.324132374117342470556440128998169669567918713697",
+        "standard_deviation_decimal": "6.1906487845877141530801977574494069009987089423495",
+        "centered_B_in_conditional_SD_decimal": "1.3739152740556705902463561817132552703716636484474",
+        "variance_approx": 38.32413237411734,
+        "standard_deviation_approx": 6.190648784587714,
+        "centered_B_in_conditional_SD_approx": 1.3739152740556706,
+        "decimal_precision": 50,
+        "interpretation": "Conditional scale only; no normal tail, confidence, significance or mechanism probability"
+      }
+    },
+    {
+      "ring_policy": "exclude_single_character_tokens",
+      "f66r_column_unit": "M",
+      "record_corpus_sha256": "59d077d0b033b3d5a4a2a50c1f5f04144a1a0488fc1a079470c7ed489b8edfb2",
+      "flat_corpus_sha256": "2c7e1a6104a4fa5fb43a32246e3060ed8e76307d34c377abce9e6cbb8efaf712",
+      "tokens": 37713,
+      "observed": {
+        "equal_pair_events_A": 314,
+        "distinct_repeating_types_B": 114,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37712,
+        "cross_record_joining_edges": 5126,
+        "within_record_pair_events": 305,
+        "cross_record_pair_events": 9,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 6,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 13,
+        "equal_pair_events_on_index_gap_edges": 1
+      },
+      "exact_moments": {
+        "mean_B": {
+          "numerator_hex": "0xd8dd09b83325357248672b039ae5bfc638e2ab59fc05557778afdc0e31618935eef0595778ce5c46c900e350001350765488437abbe655363e993a0c9fbaef03e84fc9f5bd2ba92e6ab8ffd0cb10d5d3fa8ecb9dc7aa95f408c639dff54c79b2b95b21162037",
+          "denominator_hex": "0x211f88d986ca9ad28220ce837c75f81c8a2218db8ab91e4ca24ef41f7828009dc8f0d4dcf579e6ffc66a201ae19d796cfbc78fa1cc9e8796c04173540f5f225aa6e6032b1ab3c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 104.75487778515578
+        },
+        "marginal_variance_sum": {
+          "numerator_hex": "0xa272a488ecf6a4bd0cdd0ba6d1111bd1a226fc2ff390fd9a8a9fb83a68c658304fe6b9f503e869e69eec67b4f9135e8d8f3e87e037290c4d92105fce5ae757e2a2a32c6ed01ddf76e5381b75bdcf3ed5c96a1e983c7b2980d88a093b547edb379b936644534efac1a3ba07798be5c263ce99be4b7052e6f47f258e2a28f63598fff281326e03212d39a2ba843e8ec339ff92bd01d982986bb9378452fae2fb92c5bf546c618279d19a98b6a33f8008f48dcb831f490f4af07418a1ccaa5098f52bd5dcb0f2e4ae447e342f",
+          "denominator_hex": "0x449252a8296b908d37ad6c0730a0350905d732266b89c6527f19b6273e57b17caa02430e55a08401be7c4d452830096d8a35ff1a532adca4b1c3c1b7a4f1c6bb97d5c86ea7c5f4428a508646f3eb4e9b8bfa1327978038ca328c4a510e9af021e16978211afdf52520ccfe5c3392f8d489ec88162b3bc7cabd828ed74540512caf5aa149d8221df31ab8136100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 37.90441180993233
+        },
+        "type_pair_covariance_sum": {
+          "numerator_hex": "0x7efef40d7ae3654e4a786aa93a6673b1d496c862535cfdfe8c82336cb687c9d6e61e5fa480c1059aeba6a8f8be3e8c48e3887c8c86c77815ba8136f279a7c817d78f1ade72f8f6c2742623bcd95f590c4a4f2c902621133ff9e93cf83de408c6d4526081132be0f237bbefd55325f0148fbc74d7f42779c8482cf2b92e2ea9a2804b60c126cb70ad59947e05fbcb78e3960d183c85e66b3aa673a8c10ed1c26770b07dda22ed1de6f3ae946829b",
+          "denominator_hex": "0xd8e842cfd0080ba1d2cf480354105107dd90c436964624fba27260c9b627e26dd13f5b765f008c3a5b1b411adfa1615aa66d574ac5839204e6366086ed1d2c2c546ba77edb56b67a6779f0970a619366fe938c638b78b2a6dc77e11e444e32f57aa21e6edaffb3cf71c1c8265f901f668aa321c6a609a182577a52832d416c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.03659280062404578
+        },
+        "twice_covariance_adjustment": {
+          "numerator_hex": "0x7efef40d7ae3654e4a786aa93a6673b1d496c862535cfdfe8c82336cb687c9d6e61e5fa480c1059aeba6a8f8be3e8c48e3887c8c86c77815ba8136f279a7c817d78f1ade72f8f6c2742623bcd95f590c4a4f2c902621133ff9e93cf83de408c6d4526081132be0f237bbefd55325f0148fbc74d7f42779c8482cf2b92e2ea9a2804b60c126cb70ad59947e05fbcb78e3960d183c85e66b3aa673a8c10ed1c26770b07dda22ed1de6f3ae946829b",
+          "denominator_hex": "0x6c742167e80405d0e967a401aa082883eec8621b4b23127dd1393064db13f136e89fadbb2f80461d2d8da08d6fd0b0ad5336aba562c1c902731b3043768e96162a35d3bf6dab5b3d33bcf84b8530c9b37f49c631c5bc59536e3bf08f2227197abd510f376d7fd9e7b8e0e4132fc80fb3455190e35304d0c12bbd294196a0b60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.07318560124809156
+        },
+        "variance_B": {
+          "numerator_hex": "0x31534dd661f508819c75c081b87d544b3ed38b7f38a9b747837b308f8fdc78934bfc61b5e23459250b694fd0c06bf5a0cc5a1c0a0ade379064c55d1e1e0c2cc662d100179ffa6538d38d9dad8d04436917298bd61cd56f1e3b36e79f074c6e0f372e1f86d314f1499dfa5c8bb452ef103be0705418de67a2e61ef6f06f86e78043930817b8706079a86d6e9d7630f376052dabe0e3be2511c619c755f074becdce5d4beede9c1b36b5717a42cfee7d8f753f24394adad37c3d03c05428ee14c8a9770886d3e6f295f89389fe85ecfab",
+          "denominator_hex": "0x14c7e559d71f3901e42baf3295356bc4fb8a740b01727203323f33c3058818535eb1ba165bdaa9d7d9b78f601007f76b7eb7bc2a26d587f77f1de4a9396d1945c1e16fa58c71d994895f2b473b107848c9912c5c2e0585fe8eb4609d1211d5894bbcca31c656350980cfa31fec9a270a3e7d087ef83286ecbbac0fb84c98968b167d65fee61dc4ee2ed02db5894b90a2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 37.97759741118042
+        }
+      },
+      "indicator_support_accounting": {
+        "distinct_types": 8133,
+        "nonempty_records": 5127,
+        "zero_repeat_probability_types": 7781,
+        "forced_repeating_types": 1,
+        "variable_indicator_types": 351,
+        "all_variable_indicator_pairs": 61425,
+        "variable_pairs_sharing_records": 18503,
+        "disjoint_record_variable_pairs": 42922,
+        "positive_covariance_pairs": 1213,
+        "negative_covariance_pairs": 216,
+        "zero_covariance_shared_pairs": 17074,
+        "joint_components_evaluated": 2292,
+        "components_with_inactive_side_skipped": 49509
+      },
+      "existing_ten_control_B_values": [
+        105,
+        95,
+        107,
+        109,
+        103,
+        101,
+        93,
+        112,
+        104,
+        110
+      ],
+      "spread_diagnostics": {
+        "zero_conditional_variance": false,
+        "variance_decimal": "37.977597411180418552882077559760980694504297607810",
+        "standard_deviation_decimal": "6.1625966451797263925789334200024982975823654935145",
+        "centered_B_in_conditional_SD_decimal": "1.5001991444751754318188457112484196471881382322602",
+        "variance_approx": 37.97759741118042,
+        "standard_deviation_approx": 6.162596645179726,
+        "centered_B_in_conditional_SD_approx": 1.5001991444751754,
+        "decimal_precision": 50,
+        "interpretation": "Conditional scale only; no normal tail, confidence, significance or mechanism probability"
+      }
+    },
+    {
+      "ring_policy": "exclude_single_character_tokens",
+      "f66r_column_unit": "L",
+      "record_corpus_sha256": "b3c7f22f1ba9e3d1f88800d4491a63349fd84ff167bc65352cb47fa3a89a5366",
+      "flat_corpus_sha256": "2923af51caa2b506238d11d34ef30b843bf102548124aa5519951ca3d638d51d",
+      "tokens": 37730,
+      "observed": {
+        "equal_pair_events_A": 315,
+        "distinct_repeating_types_B": 115,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37729,
+        "cross_record_joining_edges": 5143,
+        "within_record_pair_events": 305,
+        "cross_record_pair_events": 10,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 7,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 13,
+        "equal_pair_events_on_index_gap_edges": 1
+      },
+      "exact_moments": {
+        "mean_B": {
+          "numerator_hex": "0xdaef0245cb91df1f708937ebd2ad1f480184cce7b4b0e75c42d4cb5028e4093fcb7f66a54825fab6c5678551ae2d280d2444bc74d8b03dafaa9d5141e0b0e12992be2a286ed6e52e6ab8ffd0cb10d5d3fa8ecb9dc7aa95f408c639dff54c79b2b95b21162037",
+          "denominator_hex": "0x211f88d986ca9ad28220ce837c75f81c8a2218db8ab91e4ca24ef41f7828009dc8f0d4dcf579e6ffc66a201ae19d796cfbc78fa1cc9e8796c04173540f5f225aa6e6032b1ab3c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 105.75487778515578
+        },
+        "marginal_variance_sum": {
+          "numerator_hex": "0xa272a488ecf6a4bd0cdd0ba6d1111bd1a226fc2ff390fd9a8a9fb83a68c658304fe6b9f503e869e69eec67b4f9135e8d8f3e87e037290c4d92105fce5ae757e2a2a32c6ed01ddf76e5381b75bdcf3ed5c96a1e983c7b2980d88a093b547edb379b936644534efac1a3ba07798be5c263ce99be4b7052e6f47f258e2a28f63598fff281326e03212d39a2ba843e8ec339ff92bd01d982986bb9378452fae2fb92c5bf546c618279d19a98b6a33f8008f48dcb831f490f4af07418a1ccaa5098f52bd5dcb0f2e4ae447e342f",
+          "denominator_hex": "0x449252a8296b908d37ad6c0730a0350905d732266b89c6527f19b6273e57b17caa02430e55a08401be7c4d452830096d8a35ff1a532adca4b1c3c1b7a4f1c6bb97d5c86ea7c5f4428a508646f3eb4e9b8bfa1327978038ca328c4a510e9af021e16978211afdf52520ccfe5c3392f8d489ec88162b3bc7cabd828ed74540512caf5aa149d8221df31ab8136100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 37.90441180993233
+        },
+        "type_pair_covariance_sum": {
+          "numerator_hex": "0x7efef40d7ae3654e4a786aa93a6673b1d496c862535cfdfe8c82336cb687c9d6e61e5fa480c1059aeba6a8f8be3e8c48e3887c8c86c77815ba8136f279a7c817d78f1ade72f8f6c2742623bcd95f590c4a4f2c902621133ff9e93cf83de408c6d4526081132be0f237bbefd55325f0148fbc74d7f42779c8482cf2b92e2ea9a2804b60c126cb70ad59947e05fbcb78e3960d183c85e66b3aa673a8c10ed1c26770b07dda22ed1de6f3ae946829b",
+          "denominator_hex": "0xd8e842cfd0080ba1d2cf480354105107dd90c436964624fba27260c9b627e26dd13f5b765f008c3a5b1b411adfa1615aa66d574ac5839204e6366086ed1d2c2c546ba77edb56b67a6779f0970a619366fe938c638b78b2a6dc77e11e444e32f57aa21e6edaffb3cf71c1c8265f901f668aa321c6a609a182577a52832d416c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.03659280062404578
+        },
+        "twice_covariance_adjustment": {
+          "numerator_hex": "0x7efef40d7ae3654e4a786aa93a6673b1d496c862535cfdfe8c82336cb687c9d6e61e5fa480c1059aeba6a8f8be3e8c48e3887c8c86c77815ba8136f279a7c817d78f1ade72f8f6c2742623bcd95f590c4a4f2c902621133ff9e93cf83de408c6d4526081132be0f237bbefd55325f0148fbc74d7f42779c8482cf2b92e2ea9a2804b60c126cb70ad59947e05fbcb78e3960d183c85e66b3aa673a8c10ed1c26770b07dda22ed1de6f3ae946829b",
+          "denominator_hex": "0x6c742167e80405d0e967a401aa082883eec8621b4b23127dd1393064db13f136e89fadbb2f80461d2d8da08d6fd0b0ad5336aba562c1c902731b3043768e96162a35d3bf6dab5b3d33bcf84b8530c9b37f49c631c5bc59536e3bf08f2227197abd510f376d7fd9e7b8e0e4132fc80fb3455190e35304d0c12bbd294196a0b60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.07318560124809156
+        },
+        "variance_B": {
+          "numerator_hex": "0x31534dd661f508819c75c081b87d544b3ed38b7f38a9b747837b308f8fdc78934bfc61b5e23459250b694fd0c06bf5a0cc5a1c0a0ade379064c55d1e1e0c2cc662d100179ffa6538d38d9dad8d04436917298bd61cd56f1e3b36e79f074c6e0f372e1f86d314f1499dfa5c8bb452ef103be0705418de67a2e61ef6f06f86e78043930817b8706079a86d6e9d7630f376052dabe0e3be2511c619c755f074becdce5d4beede9c1b36b5717a42cfee7d8f753f24394adad37c3d03c05428ee14c8a9770886d3e6f295f89389fe85ecfab",
+          "denominator_hex": "0x14c7e559d71f3901e42baf3295356bc4fb8a740b01727203323f33c3058818535eb1ba165bdaa9d7d9b78f601007f76b7eb7bc2a26d587f77f1de4a9396d1945c1e16fa58c71d994895f2b473b107848c9912c5c2e0585fe8eb4609d1211d5894bbcca31c656350980cfa31fec9a270a3e7d087ef83286ecbbac0fb84c98968b167d65fee61dc4ee2ed02db5894b90a2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 37.97759741118042
+        }
+      },
+      "indicator_support_accounting": {
+        "distinct_types": 8127,
+        "nonempty_records": 5144,
+        "zero_repeat_probability_types": 7774,
+        "forced_repeating_types": 2,
+        "variable_indicator_types": 351,
+        "all_variable_indicator_pairs": 61425,
+        "variable_pairs_sharing_records": 18503,
+        "disjoint_record_variable_pairs": 42922,
+        "positive_covariance_pairs": 1213,
+        "negative_covariance_pairs": 216,
+        "zero_covariance_shared_pairs": 17074,
+        "joint_components_evaluated": 2292,
+        "components_with_inactive_side_skipped": 49509
+      },
+      "existing_ten_control_B_values": [
+        94,
+        102,
+        119,
+        114,
+        110,
+        94,
+        110,
+        106,
+        103,
+        107
+      ],
+      "spread_diagnostics": {
+        "zero_conditional_variance": false,
+        "variance_decimal": "37.977597411180418552882077559760980694504297607810",
+        "standard_deviation_decimal": "6.1625966451797263925789334200024982975823654935145",
+        "centered_B_in_conditional_SD_decimal": "1.5001991444751754318188457112484196471881382322602",
+        "variance_approx": 37.97759741118042,
+        "standard_deviation_approx": 6.162596645179726,
+        "centered_B_in_conditional_SD_approx": 1.5001991444751754,
+        "decimal_precision": 50,
+        "interpretation": "Conditional scale only; no normal tail, confidence, significance or mechanism probability"
+      }
+    }
+  ],
+  "limits": "Exact moments/conditional SD scale on exposed approximate H representations; no normal/calibrated tail, confidence, mechanism probability, physical-line identity, original-author replication, language or decipherment"
+}

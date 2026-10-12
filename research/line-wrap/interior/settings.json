@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "analysis_id": "iid-greedy-wrap-interior-symmetry-v1",
+  "status": "analytical model control with known calibration fixtures; no manuscript fit",
+  "recorded_on": "2026-10-12",
+  "accepted_input_commit": "dbb043382516d19acecc837ba42fbaef2b005ca4",
+  "input_sha256": {
+    "research/line-wrap/PROTOCOL.md": "894f403e8a786c9ea27017e8eef7db849ad55c0d8ebab53e155de4d03b21c99d",
+    "research/line-wrap/parameters.json": "4e080abdd0478db1a15de688bd8f07f0aa5fe569bb58e008a7e8dc85ed0b1718",
+    "research/line-wrap/results.json": "42ea15c833ff7c12d4fa169041ebf1c6f43a736dda9f626143fc50c9859be598",
+    "scripts/greedy_wrap_control.py": "519f6e138ea93cbc2e22e202ad459a93ef8d8b9ea8e71fe75c0cbd0345e7568f",
+    "scripts/interior_length_order.py": "729e8a774a889b6370196ab09b56d228f7b3fe4c747f169a5217488453d28c3a",
+    "scripts/interior_half_controls.py": "c4f3dfae8540a1aa5bfbf197e62054340bd8ac45c24c1479c66ef9e9882cd583",
+    "research/transliteration/INTERIOR_ORDER.md": "541e626d62f979f05a75e70ec9231f0b0faa30d10220f555b13f81089998002f",
+    "research/transliteration/INTERIOR_HALVES.md": "4d5b2a38e486b4484a74278532bf50c679238ef375b0dfe76caff993f6f55adb"
+  },
+  "theorem_minimum_row_tokens": 2,
+  "scoring_minimum_row_tokens": 5,
+  "separator_width": 1,
+  "half_split": "early ceil(interior_count/2); late remainder; crossing pair included",
+  "row_selection": "fixed generated row or inclusion invariant under the permitted interior permutations",
+  "final_row": "exclude any row not closed by overflow, including an exactly full final row",
+  "laws": [
+    {
+      "id": "uniform-five",
+      "support": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "probabilities": [
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5"
+      ]
+    },
+    {
+      "id": "unequal-fixture",
+      "support": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "probabilities": [
+        "1/2",
+        "1/4",
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "id": "uniform-two",
+      "support": [
+        2,
+        3
+      ],
+      "probabilities": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "repeated-selective-18",
+      "law_id": "uniform-five",
+      "capacity": 18,
+      "first": 2,
+      "last": 2,
+      "interior": [
+        2,
+        2,
+        3
+      ],
+      "expected_status": "completed_eligible"
+    },
+    {
+      "id": "distinct-even-24",
+      "law_id": "uniform-five",
+      "capacity": 24,
+      "first": 2,
+      "last": 2,
+      "interior": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "expected_status": "completed_eligible"
+    },
+    {
+      "id": "distinct-odd-full-30",
+      "law_id": "uniform-five",
+      "capacity": 30,
+      "first": 2,
+      "last": 2,
+      "interior": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "expected_status": "completed_eligible"
+    },
+    {
+      "id": "constant-18",
+      "law_id": "uniform-five",
+      "capacity": 18,
+      "first": 2,
+      "last": 2,
+      "interior": [
+        3,
+        3,
+        3
+      ],
+      "expected_status": "completed_eligible"
+    },
+    {
+      "id": "unequal-law-24",
+      "law_id": "unequal-fixture",
+      "capacity": 24,
+      "first": 2,
+      "last": 2,
+      "interior": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "expected_status": "completed_eligible"
+    },
+    {
+      "id": "short-two-8",
+      "law_id": "uniform-two",
+      "capacity": 8,
+      "first": 2,
+      "last": 3,
+      "interior": [],
+      "expected_status": "completed_short"
+    },
+    {
+      "id": "no-closing-overflow-30",
+      "law_id": "uniform-five",
+      "capacity": 30,
+      "first": 2,
+      "last": 2,
+      "interior": [
+        2,
+        2,
+        2
+      ],
+      "expected_status": "zero_condition_no_overflow"
+    },
+    {
+      "id": "over-capacity-18",
+      "law_id": "uniform-five",
+      "capacity": 18,
+      "first": 3,
+      "last": 6,
+      "interior": [
+        5,
+        5,
+        5
+      ],
+      "expected_status": "zero_condition_exceeds_capacity"
+    }
+  ],
+  "stream_fixture": {
+    "law_id": "uniform-five",
+    "capacity": 18,
+    "lengths": [
+      2,
+      2,
+      2,
+      3,
+      2,
+      4,
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      5
+    ],
+    "expected_completed_rows": 2,
+    "expected_joint_interior_orders": 9,
+    "expected_unclosed_tail": [
+      2,
+      2,
+      2,
+      3,
+      5
+    ]
+  },
+  "event_weight": "p(last) times product p(interior widths) times closing overflow mass; conditional on first width",
+  "normalized_order_probability": "event weight divided by sum over unique orders within the positive completed-row class",
+  "prediction": "exact conditional mean of full and half centered scores is zero; individual realizations need not be zero",
+  "certificate_scope": "all eight fixed classes and the complete nine-order stream orbit; no empirical sweep or fitted law"
+}
