@@ -98,11 +98,11 @@ python3 scripts/reddy_letter_predictions.py folds \
 cmp NEW_FOLDS.json research/literature/reddy-letter-folds.json
 ```
 
-Python 3.14.3 produced the result using only the standard library. Seven
+Python 3.14.3 produced the result using only the standard library. Eight
 synthetic tests cover disjoint balanced folds, within-word training, sentinel
 handling, ties, unseen-context fallback, observed rather than predicted test
-contexts, first-position denominators, exact aggregation and changed manifest
-rejection. A separate implementation, importing no production predictor,
+contexts, first-position denominators, exact aggregation, changed manifest
+rejection and input preservation through existing output aliases. A separate implementation, importing no production predictor,
 reconstructed the folds and all 60 correct/scored/tie/backoff/type records
 from local bytes, and verified all six exact aggregate pairs and differences.
 A second complete run reproduced the report bytes. Plan, producer and manifest

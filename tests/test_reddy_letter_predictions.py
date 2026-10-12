@@ -1,8 +1,13 @@
 import unittest
 from copy import deepcopy
 from fractions import Fraction
+from contextlib import redirect_stderr
+from io import StringIO
+from pathlib import Path
+import tempfile
+from unittest.mock import patch
 
-from scripts.reddy_letter_predictions import evaluate, fold_manifest, score, train, type_folds, winner
+from scripts.reddy_letter_predictions import evaluate, fold_manifest, main, score, train, type_folds, winner
 
 
 class LetterPredictionChoicesTests(unittest.TestCase):
@@ -78,6 +83,25 @@ class LetterPredictionChoicesTests(unittest.TestCase):
         changed['types'][0]['fold'] = (changed['types'][0]['fold'] + 1) % 10
         with self.assertRaisesRegex(ValueError, 'frozen recomputation'):
             evaluate(words, changed)
+
+    def test_cli_rejects_existing_outputs_and_aliases_before_reading_input(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            existing = root / 'original.json'
+            existing.write_bytes(b'preserve original bytes\n')
+            symbolic = root / 'symbolic.json'
+            symbolic.symlink_to(existing)
+            hard = root / 'hard.json'
+            hard.hardlink_to(existing)
+            for target in [existing, symbolic, hard]:
+                with self.subTest(target=target.name), patch('sys.argv', ['predictor', 'folds',
+                        '--input', str(root / 'absent-input'), '--output', str(target)]), \
+                        patch('scripts.reddy_letter_predictions.input_types') as read_input, \
+                        redirect_stderr(StringIO()), self.assertRaises(SystemExit) as failure:
+                    main()
+                self.assertEqual(failure.exception.code, 1)
+                read_input.assert_not_called()
+                self.assertEqual(existing.read_bytes(), b'preserve original bytes\n')
 
 
 if __name__ == '__main__':
