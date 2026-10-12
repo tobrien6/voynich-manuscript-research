@@ -22,7 +22,7 @@ round-trip failures. Inspected 2026-10-12 (America/New_York):
 The directory lists the rule file as last modified `2025-12-05 16:05`, without
 a timezone. The PDF identifies document/software version 1.5 and gives the
 literal issue date `06/12/2025`; it has 28 PDF pages. Relevant text on printed
-pages 3, 5–7, 11, 13 and 21–22 was inspected; page 21's rules-format layout was
+pages 3, 5–7, 11–13, 16–17 and 21–22 was inspected; page 21's rules-format layout was
 also rendered and visually checked. These are current retrieved bytes, not an
 immutable publisher release or evidence of the rules used in 2011.
 
@@ -43,6 +43,10 @@ lines are protected; the full-line definition includes its trailing space.
 The percent sign selects the context separator marker; it is not a command to
 delete percent signs from a transcription.
 
+IVTFF headers have a documented exception: matching alphabet codes can be
+rewritten despite hash-line protection. Strict mode rejects mismatches;
+non-strict mode warns and keeps the header code (section 3.6, pages 12–13).
+
 There are 38 distinct entries in each column. Every Currier entry is one
 codepoint; Eva entries have the following lengths:
 
@@ -58,9 +62,12 @@ their physical rule-line pairs are all retained in the catalog. This makes
 replacement order material to a naive sequence of substitutions.
 
 The [manual](https://www.voynich.nu/software/bitrans/Bitrans_manual.pdf),
-sections 2.2–3.2, 3.5–3.6 and 5, specifies case-sensitive, noncumulative,
-left-to-right processing that prefers the largest matching group. Direction 2
-uses the right column as input. Header alphabet checks, protected comments,
+sections 2.2–3.2, 3.5–3.6 and 5, specifies case-sensitive, noncumulative
+substitution with larger-group priority. Its left-to-right clause concerns
+repeated occurrences of the same rule. Equal-length overlapping rules can
+depend on file order, and rule-block separators alter priority (section 3.8,
+pages 16–17). Direction 2 uses the right column as input. Header alphabet checks,
+protected comments,
 boundary markers and whole-text reversibility are separate concerns. A future
 implementation must declare those semantics and its unmatched-symbol policy;
 replacing entries in arbitrary sequence is insufficient.
@@ -72,6 +79,11 @@ not an asserted list of official basic Eva characters. Presence anywhere in
 a rule string also does not prove that a character has a standalone rule.
 Neither this file nor its row uniqueness justifies discarding symbols or
 replacing unmatched material with uncertainty marks.
+
+Incomplete-substitution reporting is separate from conversion (section 3.9,
+page 17). This diagnostic has zero unmatched characters, so it does not test
+its fallback on arbitrary text. A future candidate must freeze handling and
+completeness checks.
 
 ## Complete synthetic round-trip diagnostic
 
