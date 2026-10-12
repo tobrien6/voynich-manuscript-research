@@ -22,7 +22,7 @@ ESCAPED = dict(zip(SYMBOLS, ("@128;", "@129;", "@130;", "@131;")))
 
 def empirical_entropy(sequence, order=0):
     """Plugin conditional entropy in bits per next unit, with stated context."""
-    if not isinstance(order, int) or order < 0:
+    if type(order) is not int or order < 0:
         raise ValueError("context order must be a nonnegative integer")
     if len(sequence) <= order:
         raise ValueError("sequence has no scored unit at this context order")
@@ -55,8 +55,10 @@ def decode_fixed_width(text, mapping):
 
 
 def make_report(count_per_symbol=1024, seed=20261011):
-    if not isinstance(count_per_symbol, int) or count_per_symbol < 1:
+    if type(count_per_symbol) is not int or count_per_symbol < 1:
         raise ValueError("count per symbol must be a positive integer")
+    if type(seed) is not int:
+        raise ValueError("a recorded integer seed is required for a reproducible realization")
     symbols = [symbol for symbol in SYMBOLS for _ in range(count_per_symbol)]
     random.Random(seed).shuffle(symbols)
     total = len(symbols)

@@ -51,6 +51,11 @@ class RepresentationEntropyTests(unittest.TestCase):
             with self.subTest(sequence=sequence, order=order), self.assertRaises(ValueError):
                 empirical_entropy(sequence, order)
 
+    def test_unrecorded_randomness_and_boolean_counts_are_rejected(self):
+        for arguments in ({"seed": None}, {"seed": True}, {"count_per_symbol": True}):
+            with self.subTest(arguments=arguments), self.assertRaises(ValueError):
+                make_report(**arguments)
+
 
 if __name__ == "__main__":
     unittest.main()
