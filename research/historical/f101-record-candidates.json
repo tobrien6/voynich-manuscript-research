@@ -1,0 +1,2131 @@
+{
+  "accepted_page_aliases": [],
+  "candidate_pairs": [
+    {
+      "accepted_page_alias": false,
+      "ambiguous_shared_projection_groups": 0,
+      "comparable_nonempty": true,
+      "historical_page_id": "f101r1",
+      "joined_lowercase_streams_equal": true,
+      "lowercase_symbol_frequencies_equal": true,
+      "modern_page_id": "f101r",
+      "nonempty_record_projection_bags_equal": true,
+      "nonempty_record_projection_order_equal": true,
+      "one_to_one_lossy_projection_groups": 10,
+      "projection_groups": [
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.6;H",
+              "native_unit": "P",
+              "source_file_line": 32836,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.6,+P0",
+              "source_file_line": 4202,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "projected_lowercase_symbols": 88,
+          "projection_sha256": "2973860977ad85cc45f6e22eac37d0f9982527ec59ebcd1b35b969c9b3d9e82b",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.4;H",
+              "native_unit": "P",
+              "source_file_line": 32830,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.4,+P0",
+              "source_file_line": 4200,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "projected_lowercase_symbols": 114,
+          "projection_sha256": "2b0ad932e98fa1cec9f73710b4921cd49f9160ae5dca05f144baacc574a1a14d",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.9;H",
+              "native_unit": "P",
+              "source_file_line": 32847,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.9,+P0",
+              "source_file_line": 4205,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "projected_lowercase_symbols": 109,
+          "projection_sha256": "3132849e69a38eb7d584e4e3417ad188d1fcf9ec714c3dd38f0418328b93f71a",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.5;H",
+              "native_unit": "P",
+              "source_file_line": 32833,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.5,+P0",
+              "source_file_line": 4201,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "52f4206412740df6a6a124fe29587b29fe55b08f7a20376f8ac4cba89fbda485",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.10;H",
+              "native_unit": "P",
+              "source_file_line": 32851,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.10,+P0",
+              "source_file_line": 4206,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "projected_lowercase_symbols": 47,
+          "projection_sha256": "6d10e0af8c0485d71e79dd4b5530c216900ed78bed993a4ae131ec5f5d5dc60b",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.3;H",
+              "native_unit": "P",
+              "source_file_line": 32827,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.3,+P0",
+              "source_file_line": 4199,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "projected_lowercase_symbols": 110,
+          "projection_sha256": "7abfb0d37ae087986d21055ebf169f35eb7e8ce3f746ce3cbe9ff38d13a2b4d5",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.2;H",
+              "native_unit": "P",
+              "source_file_line": 32824,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.2,+P0",
+              "source_file_line": 4198,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "projected_lowercase_symbols": 96,
+          "projection_sha256": "b94a403df52c18b03843872dfefcb7220e97fe65c793d21806d88ddfb8bcbdf4",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.8;H",
+              "native_unit": "P",
+              "source_file_line": 32843,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.8,+P0",
+              "source_file_line": 4204,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "projected_lowercase_symbols": 104,
+          "projection_sha256": "cae861ad24be6f4cf684325829cec40cf7ef3190b795731de480d9b586c51a39",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.7;H",
+              "native_unit": "P",
+              "source_file_line": 32839,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.7,+P0",
+              "source_file_line": 4203,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "projected_lowercase_symbols": 117,
+          "projection_sha256": "e52c036a524638e2d615cf2a09dac189425cf8f05ba496249cf5175cd621cba6",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.1;H",
+              "native_unit": "P",
+              "source_file_line": 32821,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.1,@P0",
+              "source_file_line": 4197,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "projected_lowercase_symbols": 114,
+          "projection_sha256": "f57983f668594c56ad47096784dfd88f0b46fdc7cf4235f19fc66bc74d76192e",
+          "status": "one_to_one_lossy_projection"
+        }
+      ],
+      "shared_projection_group_records": {
+        "historical_H": 10,
+        "modern_IT2a_present": 10
+      },
+      "shared_projection_groups": 10,
+      "usable_as_verified_locus_crosswalk": false
+    },
+    {
+      "accepted_page_alias": false,
+      "ambiguous_shared_projection_groups": 0,
+      "comparable_nonempty": true,
+      "historical_page_id": "f101r1",
+      "joined_lowercase_streams_equal": false,
+      "lowercase_symbol_frequencies_equal": false,
+      "modern_page_id": "f101v",
+      "nonempty_record_projection_bags_equal": false,
+      "nonempty_record_projection_order_equal": false,
+      "one_to_one_lossy_projection_groups": 0,
+      "projection_groups": [
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.22,+P0",
+              "source_file_line": 4229,
+              "source_order_index_zero_based_on_page": 21
+            }
+          ],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "00c4fc0dffbd7fa654eaadc5df8dbace6bcba2f73f1fb0b7f60a14879f2985ef",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.18,@Lf",
+              "source_file_line": 4225,
+              "source_order_index_zero_based_on_page": 17
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "0a9b82cf43800bf14fb18b08f4cafd5f676da1bde7b91fe505eddf783bee1483",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.9,@Lf",
+              "source_file_line": 4216,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "0ef4ad5f67a8681b677237c5ce90e68af9bbd8d2579c707736d8b50ae6ce409d",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.24,+P0",
+              "source_file_line": 4231,
+              "source_order_index_zero_based_on_page": 23
+            }
+          ],
+          "projected_lowercase_symbols": 88,
+          "projection_sha256": "109084f8ad916f73db71c016eb6d79593ad8aaf88c829a6f55f16af7c74f686a",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.3,@Lf",
+              "source_file_line": 4210,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "143a2289a4ba21be4771b82687af1a3225c77fe181aa8f84b9defa4ed3a67817",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.19,@P0",
+              "source_file_line": 4226,
+              "source_order_index_zero_based_on_page": 18
+            }
+          ],
+          "projected_lowercase_symbols": 93,
+          "projection_sha256": "1cd04625a1e6e1fd89cc3baa2bcbfebf0d901b16e3bb35f36224a4b461840ec8",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.15,@Lf",
+              "source_file_line": 4222,
+              "source_order_index_zero_based_on_page": 14
+            }
+          ],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "1eac7e9e5c82497f92b6304dbc294d8037c73dc0ef7564ffb874f3a1ea4bb2d8",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.6;H",
+              "native_unit": "P",
+              "source_file_line": 32836,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 88,
+          "projection_sha256": "2973860977ad85cc45f6e22eac37d0f9982527ec59ebcd1b35b969c9b3d9e82b",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.10,@Lf",
+              "source_file_line": 4217,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2aed9df78446daa8cb7e394606a545d5922e108d06289151c643074b48eb31dd",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.4;H",
+              "native_unit": "P",
+              "source_file_line": 32830,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 114,
+          "projection_sha256": "2b0ad932e98fa1cec9f73710b4921cd49f9160ae5dca05f144baacc574a1a14d",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.11,@Lf",
+              "source_file_line": 4218,
+              "source_order_index_zero_based_on_page": 10
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2d6eb5bf35550e5e7a644655c4dc6a1c9fc84aba86b69aacc666f8df6ad10efd",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.17,@Lf",
+              "source_file_line": 4224,
+              "source_order_index_zero_based_on_page": 16
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2e180d5acd4e7876ee48a8d67afd8b1fddf9fda1167df52b636ce07fd83ca2fb",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.9;H",
+              "native_unit": "P",
+              "source_file_line": 32847,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 109,
+          "projection_sha256": "3132849e69a38eb7d584e4e3417ad188d1fcf9ec714c3dd38f0418328b93f71a",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.14,@Lf",
+              "source_file_line": 4221,
+              "source_order_index_zero_based_on_page": 13
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "37b58b3c76d303bad5df479e483fcc1e669fb9abd00599d5b41eeb9be41b5747",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.1,@Lf",
+              "source_file_line": 4208,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "projected_lowercase_symbols": 7,
+          "projection_sha256": "3add2c3c1ccf253e046daf11aaf24d779cd58393e8ab658d144f0275ee4f05e5",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.27,+P0",
+              "source_file_line": 4234,
+              "source_order_index_zero_based_on_page": 26
+            }
+          ],
+          "projected_lowercase_symbols": 103,
+          "projection_sha256": "3b237f6390d884d951067f31d7bac11f5c7ca0e6ad36f04ed9991d87993ada83",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.5,@Lf",
+              "source_file_line": 4212,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "4411b3755274f4a2abb4bd4cb1a1b3f1e496167a7f72fa7503ff018495d0f3d3",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.12,@Lf",
+              "source_file_line": 4219,
+              "source_order_index_zero_based_on_page": 11
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "45b5292e21bcf14072cc3d62683aa495697342148f2a6adfffb3fbcbe587c708",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.6,@Lf",
+              "source_file_line": 4213,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "465ce72b01b5cd2dcc7bbee772ced35c5a360eab461dba2ac29df0faee23c7e3",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.5;H",
+              "native_unit": "P",
+              "source_file_line": 32833,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "52f4206412740df6a6a124fe29587b29fe55b08f7a20376f8ac4cba89fbda485",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Pc",
+              "native_locator": "f101v.28,+Pc",
+              "source_file_line": 4235,
+              "source_order_index_zero_based_on_page": 27
+            }
+          ],
+          "projected_lowercase_symbols": 43,
+          "projection_sha256": "5b609f097328379ea5f4698fa36a44e56d864a0497453d7dae5607be27288868",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.10;H",
+              "native_unit": "P",
+              "source_file_line": 32851,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 47,
+          "projection_sha256": "6d10e0af8c0485d71e79dd4b5530c216900ed78bed993a4ae131ec5f5d5dc60b",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.13,@Lf",
+              "source_file_line": 4220,
+              "source_order_index_zero_based_on_page": 12
+            }
+          ],
+          "projected_lowercase_symbols": 2,
+          "projection_sha256": "7175517a370b5cd2e664e3fd29c4ea9db5ce17058eb9772fe090a5485e49dad6",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.3;H",
+              "native_unit": "P",
+              "source_file_line": 32827,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 110,
+          "projection_sha256": "7abfb0d37ae087986d21055ebf169f35eb7e8ce3f746ce3cbe9ff38d13a2b4d5",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.25,+P0",
+              "source_file_line": 4232,
+              "source_order_index_zero_based_on_page": 24
+            }
+          ],
+          "projected_lowercase_symbols": 110,
+          "projection_sha256": "7cd4239b00ef82ad258a64d1fbdc7d450ca7e14b3e1761dac12a6b6bcced5f10",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.26,+P0",
+              "source_file_line": 4233,
+              "source_order_index_zero_based_on_page": 25
+            }
+          ],
+          "projected_lowercase_symbols": 106,
+          "projection_sha256": "87b24d3802ed923b34c4c1e40c4b18aa717c1487a7c88812ea12d0d0d120e41b",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.4,@Lf",
+              "source_file_line": 4211,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "projected_lowercase_symbols": 3,
+          "projection_sha256": "95b685cbb388c2dc58b115632a3ad7dcc78f12777acd40ab4cfc15e0cfe17968",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.7,@Lf",
+              "source_file_line": 4214,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "a30349873177c9d5ec6524d3e3f8648507261425e7253449f3edf136878e35f7",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.16,@Lf",
+              "source_file_line": 4223,
+              "source_order_index_zero_based_on_page": 15
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "b4509e7e94229bd38712e7ce234bb8a401faaa333b4e0f06a8b4db4c49707557",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.2;H",
+              "native_unit": "P",
+              "source_file_line": 32824,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 96,
+          "projection_sha256": "b94a403df52c18b03843872dfefcb7220e97fe65c793d21806d88ddfb8bcbdf4",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.2,@Lf",
+              "source_file_line": 4209,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "c41e80aa5cfd2640672fdb0b668e7c72533abe6a83042c7d4d58063dfd600e66",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.20,+P0",
+              "source_file_line": 4227,
+              "source_order_index_zero_based_on_page": 19
+            }
+          ],
+          "projected_lowercase_symbols": 99,
+          "projection_sha256": "c6a40913d528c0b5719af63c685ecf39aed67206bc39cbc40b0aa86320722a03",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.8;H",
+              "native_unit": "P",
+              "source_file_line": 32843,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 104,
+          "projection_sha256": "cae861ad24be6f4cf684325829cec40cf7ef3190b795731de480d9b586c51a39",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.8,@Lf",
+              "source_file_line": 4215,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "e0f55f24ba293ebc28e76df76e809c402997915901ae379c8091373921e93ee6",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.21,+P0",
+              "source_file_line": 4228,
+              "source_order_index_zero_based_on_page": 20
+            }
+          ],
+          "projected_lowercase_symbols": 68,
+          "projection_sha256": "e2ce5f7abc2e346e83bf5380466d2fb7ea527eecb42a776067b6dc8315664fa3",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.7;H",
+              "native_unit": "P",
+              "source_file_line": 32839,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 117,
+          "projection_sha256": "e52c036a524638e2d615cf2a09dac189425cf8f05ba496249cf5175cd621cba6",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101r1.P.1;H",
+              "native_unit": "P",
+              "source_file_line": 32821,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 114,
+          "projection_sha256": "f57983f668594c56ad47096784dfd88f0b46fdc7cf4235f19fc66bc74d76192e",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.23,+P0",
+              "source_file_line": 4230,
+              "source_order_index_zero_based_on_page": 22
+            }
+          ],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "fd0c9146d4d3bdd29b2e6fbb85a39f4a7626d876cba0a7bf9006afaeb845150b",
+          "status": "modern_only_projection"
+        }
+      ],
+      "shared_projection_group_records": {
+        "historical_H": 0,
+        "modern_IT2a_present": 0
+      },
+      "shared_projection_groups": 0,
+      "usable_as_verified_locus_crosswalk": false
+    },
+    {
+      "accepted_page_alias": false,
+      "ambiguous_shared_projection_groups": 0,
+      "comparable_nonempty": true,
+      "historical_page_id": "f101v2",
+      "joined_lowercase_streams_equal": false,
+      "lowercase_symbol_frequencies_equal": false,
+      "modern_page_id": "f101r",
+      "nonempty_record_projection_bags_equal": false,
+      "nonempty_record_projection_order_equal": false,
+      "one_to_one_lossy_projection_groups": 0,
+      "projection_groups": [
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.3;H",
+              "native_unit": "P",
+              "source_file_line": 33380,
+              "source_order_index_zero_based_on_page": 21
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "00c4fc0dffbd7fa654eaadc5df8dbace6bcba2f73f1fb0b7f60a14879f2985ef",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.9;H",
+              "native_unit": "R2",
+              "source_file_line": 33319,
+              "source_order_index_zero_based_on_page": 17
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "0a9b82cf43800bf14fb18b08f4cafd5f676da1bde7b91fe505eddf783bee1483",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.9;H",
+              "native_unit": "R1",
+              "source_file_line": 33240,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "0ef4ad5f67a8681b677237c5ce90e68af9bbd8d2579c707736d8b50ae6ce409d",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.5;H",
+              "native_unit": "P",
+              "source_file_line": 33388,
+              "source_order_index_zero_based_on_page": 23
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 88,
+          "projection_sha256": "109084f8ad916f73db71c016eb6d79593ad8aaf88c829a6f55f16af7c74f686a",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.3;H",
+              "native_unit": "R1",
+              "source_file_line": 33193,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "143a2289a4ba21be4771b82687af1a3225c77fe181aa8f84b9defa4ed3a67817",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.1;H",
+              "native_unit": "P",
+              "source_file_line": 33368,
+              "source_order_index_zero_based_on_page": 18
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 93,
+          "projection_sha256": "1cd04625a1e6e1fd89cc3baa2bcbfebf0d901b16e3bb35f36224a4b461840ec8",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.6;H",
+              "native_unit": "R2",
+              "source_file_line": 33295,
+              "source_order_index_zero_based_on_page": 14
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "1eac7e9e5c82497f92b6304dbc294d8037c73dc0ef7564ffb874f3a1ea4bb2d8",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.6,+P0",
+              "source_file_line": 4202,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "projected_lowercase_symbols": 88,
+          "projection_sha256": "2973860977ad85cc45f6e22eac37d0f9982527ec59ebcd1b35b969c9b3d9e82b",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.1;H",
+              "native_unit": "R2",
+              "source_file_line": 33258,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2aed9df78446daa8cb7e394606a545d5922e108d06289151c643074b48eb31dd",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.4,+P0",
+              "source_file_line": 4200,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "projected_lowercase_symbols": 114,
+          "projection_sha256": "2b0ad932e98fa1cec9f73710b4921cd49f9160ae5dca05f144baacc574a1a14d",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.2;H",
+              "native_unit": "R2",
+              "source_file_line": 33265,
+              "source_order_index_zero_based_on_page": 10
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2d6eb5bf35550e5e7a644655c4dc6a1c9fc84aba86b69aacc666f8df6ad10efd",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.8;H",
+              "native_unit": "R2",
+              "source_file_line": 33311,
+              "source_order_index_zero_based_on_page": 16
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2e180d5acd4e7876ee48a8d67afd8b1fddf9fda1167df52b636ce07fd83ca2fb",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.9,+P0",
+              "source_file_line": 4205,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "projected_lowercase_symbols": 109,
+          "projection_sha256": "3132849e69a38eb7d584e4e3417ad188d1fcf9ec714c3dd38f0418328b93f71a",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.5;H",
+              "native_unit": "R2",
+              "source_file_line": 33286,
+              "source_order_index_zero_based_on_page": 13
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "37b58b3c76d303bad5df479e483fcc1e669fb9abd00599d5b41eeb9be41b5747",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.1;H",
+              "native_unit": "R1",
+              "source_file_line": 33179,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 7,
+          "projection_sha256": "3add2c3c1ccf253e046daf11aaf24d779cd58393e8ab658d144f0275ee4f05e5",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.8;H",
+              "native_unit": "P",
+              "source_file_line": 33400,
+              "source_order_index_zero_based_on_page": 26
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 103,
+          "projection_sha256": "3b237f6390d884d951067f31d7bac11f5c7ca0e6ad36f04ed9991d87993ada83",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.5;H",
+              "native_unit": "R1",
+              "source_file_line": 33207,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "4411b3755274f4a2abb4bd4cb1a1b3f1e496167a7f72fa7503ff018495d0f3d3",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.3;H",
+              "native_unit": "R2",
+              "source_file_line": 33272,
+              "source_order_index_zero_based_on_page": 11
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "45b5292e21bcf14072cc3d62683aa495697342148f2a6adfffb3fbcbe587c708",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.6;H",
+              "native_unit": "R1",
+              "source_file_line": 33215,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "465ce72b01b5cd2dcc7bbee772ced35c5a360eab461dba2ac29df0faee23c7e3",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.5,+P0",
+              "source_file_line": 4201,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "52f4206412740df6a6a124fe29587b29fe55b08f7a20376f8ac4cba89fbda485",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.T.9;H",
+              "native_unit": "T",
+              "source_file_line": 33411,
+              "source_order_index_zero_based_on_page": 27
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 43,
+          "projection_sha256": "5b609f097328379ea5f4698fa36a44e56d864a0497453d7dae5607be27288868",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.10,+P0",
+              "source_file_line": 4206,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "projected_lowercase_symbols": 47,
+          "projection_sha256": "6d10e0af8c0485d71e79dd4b5530c216900ed78bed993a4ae131ec5f5d5dc60b",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.4;H",
+              "native_unit": "R2",
+              "source_file_line": 33279,
+              "source_order_index_zero_based_on_page": 12
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 2,
+          "projection_sha256": "7175517a370b5cd2e664e3fd29c4ea9db5ce17058eb9772fe090a5485e49dad6",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.3,+P0",
+              "source_file_line": 4199,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "projected_lowercase_symbols": 110,
+          "projection_sha256": "7abfb0d37ae087986d21055ebf169f35eb7e8ce3f746ce3cbe9ff38d13a2b4d5",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.6;H",
+              "native_unit": "P",
+              "source_file_line": 33392,
+              "source_order_index_zero_based_on_page": 24
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 110,
+          "projection_sha256": "7cd4239b00ef82ad258a64d1fbdc7d450ca7e14b3e1761dac12a6b6bcced5f10",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.7;H",
+              "native_unit": "P",
+              "source_file_line": 33396,
+              "source_order_index_zero_based_on_page": 25
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 106,
+          "projection_sha256": "87b24d3802ed923b34c4c1e40c4b18aa717c1487a7c88812ea12d0d0d120e41b",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.4;H",
+              "native_unit": "R1",
+              "source_file_line": 33200,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 3,
+          "projection_sha256": "95b685cbb388c2dc58b115632a3ad7dcc78f12777acd40ab4cfc15e0cfe17968",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.7;H",
+              "native_unit": "R1",
+              "source_file_line": 33223,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "a30349873177c9d5ec6524d3e3f8648507261425e7253449f3edf136878e35f7",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.7;H",
+              "native_unit": "R2",
+              "source_file_line": 33303,
+              "source_order_index_zero_based_on_page": 15
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "b4509e7e94229bd38712e7ce234bb8a401faaa333b4e0f06a8b4db4c49707557",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.2,+P0",
+              "source_file_line": 4198,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "projected_lowercase_symbols": 96,
+          "projection_sha256": "b94a403df52c18b03843872dfefcb7220e97fe65c793d21806d88ddfb8bcbdf4",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.2;H",
+              "native_unit": "R1",
+              "source_file_line": 33186,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "c41e80aa5cfd2640672fdb0b668e7c72533abe6a83042c7d4d58063dfd600e66",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.1a;H",
+              "native_unit": "P",
+              "source_file_line": 33372,
+              "source_order_index_zero_based_on_page": 19
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 99,
+          "projection_sha256": "c6a40913d528c0b5719af63c685ecf39aed67206bc39cbc40b0aa86320722a03",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.8,+P0",
+              "source_file_line": 4204,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "projected_lowercase_symbols": 104,
+          "projection_sha256": "cae861ad24be6f4cf684325829cec40cf7ef3190b795731de480d9b586c51a39",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.8;H",
+              "native_unit": "R1",
+              "source_file_line": 33231,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "e0f55f24ba293ebc28e76df76e809c402997915901ae379c8091373921e93ee6",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.2;H",
+              "native_unit": "P",
+              "source_file_line": 33376,
+              "source_order_index_zero_based_on_page": 20
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 68,
+          "projection_sha256": "e2ce5f7abc2e346e83bf5380466d2fb7ea527eecb42a776067b6dc8315664fa3",
+          "status": "historical_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.7,+P0",
+              "source_file_line": 4203,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "projected_lowercase_symbols": 117,
+          "projection_sha256": "e52c036a524638e2d615cf2a09dac189425cf8f05ba496249cf5175cd621cba6",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101r.1,@P0",
+              "source_file_line": 4197,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "projected_lowercase_symbols": 114,
+          "projection_sha256": "f57983f668594c56ad47096784dfd88f0b46fdc7cf4235f19fc66bc74d76192e",
+          "status": "modern_only_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.4;H",
+              "native_unit": "P",
+              "source_file_line": 33384,
+              "source_order_index_zero_based_on_page": 22
+            }
+          ],
+          "modern_IT2a_present_records": [],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "fd0c9146d4d3bdd29b2e6fbb85a39f4a7626d876cba0a7bf9006afaeb845150b",
+          "status": "historical_only_projection"
+        }
+      ],
+      "shared_projection_group_records": {
+        "historical_H": 0,
+        "modern_IT2a_present": 0
+      },
+      "shared_projection_groups": 0,
+      "usable_as_verified_locus_crosswalk": false
+    },
+    {
+      "accepted_page_alias": false,
+      "ambiguous_shared_projection_groups": 0,
+      "comparable_nonempty": true,
+      "historical_page_id": "f101v2",
+      "joined_lowercase_streams_equal": true,
+      "lowercase_symbol_frequencies_equal": true,
+      "modern_page_id": "f101v",
+      "nonempty_record_projection_bags_equal": true,
+      "nonempty_record_projection_order_equal": true,
+      "one_to_one_lossy_projection_groups": 28,
+      "projection_groups": [
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.3;H",
+              "native_unit": "P",
+              "source_file_line": 33380,
+              "source_order_index_zero_based_on_page": 21
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.22,+P0",
+              "source_file_line": 4229,
+              "source_order_index_zero_based_on_page": 21
+            }
+          ],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "00c4fc0dffbd7fa654eaadc5df8dbace6bcba2f73f1fb0b7f60a14879f2985ef",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.9;H",
+              "native_unit": "R2",
+              "source_file_line": 33319,
+              "source_order_index_zero_based_on_page": 17
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.18,@Lf",
+              "source_file_line": 4225,
+              "source_order_index_zero_based_on_page": 17
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "0a9b82cf43800bf14fb18b08f4cafd5f676da1bde7b91fe505eddf783bee1483",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.9;H",
+              "native_unit": "R1",
+              "source_file_line": 33240,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.9,@Lf",
+              "source_file_line": 4216,
+              "source_order_index_zero_based_on_page": 8
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "0ef4ad5f67a8681b677237c5ce90e68af9bbd8d2579c707736d8b50ae6ce409d",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.5;H",
+              "native_unit": "P",
+              "source_file_line": 33388,
+              "source_order_index_zero_based_on_page": 23
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.24,+P0",
+              "source_file_line": 4231,
+              "source_order_index_zero_based_on_page": 23
+            }
+          ],
+          "projected_lowercase_symbols": 88,
+          "projection_sha256": "109084f8ad916f73db71c016eb6d79593ad8aaf88c829a6f55f16af7c74f686a",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.3;H",
+              "native_unit": "R1",
+              "source_file_line": 33193,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.3,@Lf",
+              "source_file_line": 4210,
+              "source_order_index_zero_based_on_page": 2
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "143a2289a4ba21be4771b82687af1a3225c77fe181aa8f84b9defa4ed3a67817",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.1;H",
+              "native_unit": "P",
+              "source_file_line": 33368,
+              "source_order_index_zero_based_on_page": 18
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.19,@P0",
+              "source_file_line": 4226,
+              "source_order_index_zero_based_on_page": 18
+            }
+          ],
+          "projected_lowercase_symbols": 93,
+          "projection_sha256": "1cd04625a1e6e1fd89cc3baa2bcbfebf0d901b16e3bb35f36224a4b461840ec8",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.6;H",
+              "native_unit": "R2",
+              "source_file_line": 33295,
+              "source_order_index_zero_based_on_page": 14
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.15,@Lf",
+              "source_file_line": 4222,
+              "source_order_index_zero_based_on_page": 14
+            }
+          ],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "1eac7e9e5c82497f92b6304dbc294d8037c73dc0ef7564ffb874f3a1ea4bb2d8",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.1;H",
+              "native_unit": "R2",
+              "source_file_line": 33258,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.10,@Lf",
+              "source_file_line": 4217,
+              "source_order_index_zero_based_on_page": 9
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2aed9df78446daa8cb7e394606a545d5922e108d06289151c643074b48eb31dd",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.2;H",
+              "native_unit": "R2",
+              "source_file_line": 33265,
+              "source_order_index_zero_based_on_page": 10
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.11,@Lf",
+              "source_file_line": 4218,
+              "source_order_index_zero_based_on_page": 10
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2d6eb5bf35550e5e7a644655c4dc6a1c9fc84aba86b69aacc666f8df6ad10efd",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.8;H",
+              "native_unit": "R2",
+              "source_file_line": 33311,
+              "source_order_index_zero_based_on_page": 16
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.17,@Lf",
+              "source_file_line": 4224,
+              "source_order_index_zero_based_on_page": 16
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "2e180d5acd4e7876ee48a8d67afd8b1fddf9fda1167df52b636ce07fd83ca2fb",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.5;H",
+              "native_unit": "R2",
+              "source_file_line": 33286,
+              "source_order_index_zero_based_on_page": 13
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.14,@Lf",
+              "source_file_line": 4221,
+              "source_order_index_zero_based_on_page": 13
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "37b58b3c76d303bad5df479e483fcc1e669fb9abd00599d5b41eeb9be41b5747",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.1;H",
+              "native_unit": "R1",
+              "source_file_line": 33179,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.1,@Lf",
+              "source_file_line": 4208,
+              "source_order_index_zero_based_on_page": 0
+            }
+          ],
+          "projected_lowercase_symbols": 7,
+          "projection_sha256": "3add2c3c1ccf253e046daf11aaf24d779cd58393e8ab658d144f0275ee4f05e5",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.8;H",
+              "native_unit": "P",
+              "source_file_line": 33400,
+              "source_order_index_zero_based_on_page": 26
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.27,+P0",
+              "source_file_line": 4234,
+              "source_order_index_zero_based_on_page": 26
+            }
+          ],
+          "projected_lowercase_symbols": 103,
+          "projection_sha256": "3b237f6390d884d951067f31d7bac11f5c7ca0e6ad36f04ed9991d87993ada83",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.5;H",
+              "native_unit": "R1",
+              "source_file_line": 33207,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.5,@Lf",
+              "source_file_line": 4212,
+              "source_order_index_zero_based_on_page": 4
+            }
+          ],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "4411b3755274f4a2abb4bd4cb1a1b3f1e496167a7f72fa7503ff018495d0f3d3",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.3;H",
+              "native_unit": "R2",
+              "source_file_line": 33272,
+              "source_order_index_zero_based_on_page": 11
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.12,@Lf",
+              "source_file_line": 4219,
+              "source_order_index_zero_based_on_page": 11
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "45b5292e21bcf14072cc3d62683aa495697342148f2a6adfffb3fbcbe587c708",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.6;H",
+              "native_unit": "R1",
+              "source_file_line": 33215,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.6,@Lf",
+              "source_file_line": 4213,
+              "source_order_index_zero_based_on_page": 5
+            }
+          ],
+          "projected_lowercase_symbols": 4,
+          "projection_sha256": "465ce72b01b5cd2dcc7bbee772ced35c5a360eab461dba2ac29df0faee23c7e3",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.T.9;H",
+              "native_unit": "T",
+              "source_file_line": 33411,
+              "source_order_index_zero_based_on_page": 27
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Pc",
+              "native_locator": "f101v.28,+Pc",
+              "source_file_line": 4235,
+              "source_order_index_zero_based_on_page": 27
+            }
+          ],
+          "projected_lowercase_symbols": 43,
+          "projection_sha256": "5b609f097328379ea5f4698fa36a44e56d864a0497453d7dae5607be27288868",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.4;H",
+              "native_unit": "R2",
+              "source_file_line": 33279,
+              "source_order_index_zero_based_on_page": 12
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.13,@Lf",
+              "source_file_line": 4220,
+              "source_order_index_zero_based_on_page": 12
+            }
+          ],
+          "projected_lowercase_symbols": 2,
+          "projection_sha256": "7175517a370b5cd2e664e3fd29c4ea9db5ce17058eb9772fe090a5485e49dad6",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.6;H",
+              "native_unit": "P",
+              "source_file_line": 33392,
+              "source_order_index_zero_based_on_page": 24
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.25,+P0",
+              "source_file_line": 4232,
+              "source_order_index_zero_based_on_page": 24
+            }
+          ],
+          "projected_lowercase_symbols": 110,
+          "projection_sha256": "7cd4239b00ef82ad258a64d1fbdc7d450ca7e14b3e1761dac12a6b6bcced5f10",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.7;H",
+              "native_unit": "P",
+              "source_file_line": 33396,
+              "source_order_index_zero_based_on_page": 25
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.26,+P0",
+              "source_file_line": 4233,
+              "source_order_index_zero_based_on_page": 25
+            }
+          ],
+          "projected_lowercase_symbols": 106,
+          "projection_sha256": "87b24d3802ed923b34c4c1e40c4b18aa717c1487a7c88812ea12d0d0d120e41b",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.4;H",
+              "native_unit": "R1",
+              "source_file_line": 33200,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.4,@Lf",
+              "source_file_line": 4211,
+              "source_order_index_zero_based_on_page": 3
+            }
+          ],
+          "projected_lowercase_symbols": 3,
+          "projection_sha256": "95b685cbb388c2dc58b115632a3ad7dcc78f12777acd40ab4cfc15e0cfe17968",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.7;H",
+              "native_unit": "R1",
+              "source_file_line": 33223,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.7,@Lf",
+              "source_file_line": 4214,
+              "source_order_index_zero_based_on_page": 6
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "a30349873177c9d5ec6524d3e3f8648507261425e7253449f3edf136878e35f7",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R2.7;H",
+              "native_unit": "R2",
+              "source_file_line": 33303,
+              "source_order_index_zero_based_on_page": 15
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.16,@Lf",
+              "source_file_line": 4223,
+              "source_order_index_zero_based_on_page": 15
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "b4509e7e94229bd38712e7ce234bb8a401faaa333b4e0f06a8b4db4c49707557",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.2;H",
+              "native_unit": "R1",
+              "source_file_line": 33186,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.2,@Lf",
+              "source_file_line": 4209,
+              "source_order_index_zero_based_on_page": 1
+            }
+          ],
+          "projected_lowercase_symbols": 6,
+          "projection_sha256": "c41e80aa5cfd2640672fdb0b668e7c72533abe6a83042c7d4d58063dfd600e66",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.1a;H",
+              "native_unit": "P",
+              "source_file_line": 33372,
+              "source_order_index_zero_based_on_page": 19
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.20,+P0",
+              "source_file_line": 4227,
+              "source_order_index_zero_based_on_page": 19
+            }
+          ],
+          "projected_lowercase_symbols": 99,
+          "projection_sha256": "c6a40913d528c0b5719af63c685ecf39aed67206bc39cbc40b0aa86320722a03",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.R1.8;H",
+              "native_unit": "R1",
+              "source_file_line": 33231,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "Lf",
+              "native_locator": "f101v.8,@Lf",
+              "source_file_line": 4215,
+              "source_order_index_zero_based_on_page": 7
+            }
+          ],
+          "projected_lowercase_symbols": 5,
+          "projection_sha256": "e0f55f24ba293ebc28e76df76e809c402997915901ae379c8091373921e93ee6",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.2;H",
+              "native_unit": "P",
+              "source_file_line": 33376,
+              "source_order_index_zero_based_on_page": 20
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.21,+P0",
+              "source_file_line": 4228,
+              "source_order_index_zero_based_on_page": 20
+            }
+          ],
+          "projected_lowercase_symbols": 68,
+          "projection_sha256": "e2ce5f7abc2e346e83bf5380466d2fb7ea527eecb42a776067b6dc8315664fa3",
+          "status": "one_to_one_lossy_projection"
+        },
+        {
+          "historical_H_records": [
+            {
+              "native_locator": "f101v2.P.4;H",
+              "native_unit": "P",
+              "source_file_line": 33384,
+              "source_order_index_zero_based_on_page": 22
+            }
+          ],
+          "modern_IT2a_present_records": [
+            {
+              "locus_kind": "P0",
+              "native_locator": "f101v.23,+P0",
+              "source_file_line": 4230,
+              "source_order_index_zero_based_on_page": 22
+            }
+          ],
+          "projected_lowercase_symbols": 113,
+          "projection_sha256": "fd0c9146d4d3bdd29b2e6fbb85a39f4a7626d876cba0a7bf9006afaeb845150b",
+          "status": "one_to_one_lossy_projection"
+        }
+      ],
+      "shared_projection_group_records": {
+        "historical_H": 28,
+        "modern_IT2a_present": 28
+      },
+      "shared_projection_groups": 28,
+      "usable_as_verified_locus_crosswalk": false
+    }
+  ],
+  "inputs": {
+    "frozen_sha256": {
+      "research/historical/RECORD_PROJECTION_PLAN.md": "3d45b9b9f1c39f9093e2bf3a9490cdb6526792f6c5fa3039fc9ab860687b831b",
+      "research/historical/lowercase-projection.json": "62831f53cfdd6f8773d05abb1037b1682789c912985a4edd1c6bd1415db1af37",
+      "research/historical/record-projections.json": "161734c02648c5dfa0bf09dc91ed26bf8c3113a378317ef870f13d66c9dcb6e9",
+      "scripts/audit_eva_token_coverage.py": "dcd97f39c14ac78137cf5c3f1d622d72aa0229a5e8d6b64651d236bae69baf1e",
+      "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+      "scripts/audit_historical_lowercase_projection.py": "40e7632d92089c7293fb6601a0944817ef79c8266a726ca25a1db4a80142d9a7",
+      "scripts/audit_historical_modern_pages.py": "c3b2b4ebff02a8ed2fd2473d6af1cc3a85764564fa849286d66046fc2b8f4deb",
+      "scripts/audit_historical_record_projections.py": "de2c322e73fcdc54087f8ed437a60289aec04f25c53c8332ff010ade597ecc4b",
+      "scripts/inspect_ivtff.py": "1e78683efd9cc288917784db5b8398204e541d91f1e978430c2d1abc9bd08f13",
+      "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+      "scripts/paragraph_token_corpus.py": "8aa29f952bdff32499919b3f3a24413ddb45d057a544bed51afd9cd2eb2bd2c6"
+    },
+    "human_plan": {
+      "path": "research/historical/F101_CANDIDATE_PLAN.md",
+      "sha256": "0fb623378fb090a78463efa127db09d16c9a6bb54a14e58c8daf06ae2c6eba63"
+    },
+    "machine_plan": {
+      "path": "research/historical/f101-candidate-plan.json",
+      "sha256": "59e359ab991e34e2a9e3072cbf35a0c72c32a6e0851392ac9a6d0da0d70c07a1"
+    },
+    "parent_report": {
+      "path": "research/historical/record-projections.json",
+      "sha256": "161734c02648c5dfa0bf09dc91ed26bf8c3113a378317ef870f13d66c9dcb6e9"
+    },
+    "producer_sha256": "70c07515aee56bacff93e4ece4f89da03265623de689a7d4d5ed7031a75df3c5",
+    "sources": {
+      "catalog_sha256": {
+        "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+        "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+      },
+      "historical": {
+        "archive_bytes": 347914,
+        "archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+        "id": "LS16e6",
+        "member": "L16+H-EV/TEXT16E6.EVT",
+        "member_bytes": 1720292,
+        "member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319"
+      },
+      "modern": {
+        "alphabet": "EvaT",
+        "bytes": 342104,
+        "id": "IT2a",
+        "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+        "url": "https://voynich.nu/data/IT2a-n.txt"
+      }
+    }
+  },
+  "method": "fixed-f101-unmatched-record-candidates-v1",
+  "page_profiles": [
+    {
+      "empty_projection_records": [],
+      "joined_stream_sha256": "783b65caf2b4917d03ba8a260962d72ec63675960874097c4ca240ede7b3a178",
+      "nonempty_projected_records": 10,
+      "ordered_nonempty_projection_digests_sha256": "47f340e0da909dc584735bd654d04e3e2a1c103760db0ae5e015b02be1df8f03",
+      "page_id": "f101r1",
+      "projected_lowercase_symbols": 1012,
+      "projected_symbol_frequencies": {
+        "a": 47,
+        "c": 72,
+        "d": 36,
+        "e": 132,
+        "f": 2,
+        "h": 105,
+        "i": 65,
+        "k": 56,
+        "l": 78,
+        "m": 3,
+        "n": 31,
+        "o": 185,
+        "p": 9,
+        "q": 13,
+        "r": 42,
+        "s": 45,
+        "t": 27,
+        "y": 64
+      },
+      "selected_native_records": 10,
+      "source_id": "historical_H"
+    },
+    {
+      "empty_projection_records": [],
+      "joined_stream_sha256": "01c55caaeb65cf26886fc53da451ae36f690ef5a850e9f05d61551603430dba8",
+      "nonempty_projected_records": 28,
+      "ordered_nonempty_projection_digests_sha256": "28f44b147c35dec188e333106334cd721993485fe7fad5222eaacf7e1a6d0ba5",
+      "page_id": "f101v2",
+      "projected_lowercase_symbols": 1025,
+      "projected_symbol_frequencies": {
+        "a": 64,
+        "c": 71,
+        "d": 55,
+        "e": 121,
+        "f": 1,
+        "h": 85,
+        "i": 65,
+        "k": 50,
+        "l": 68,
+        "m": 5,
+        "n": 32,
+        "o": 189,
+        "p": 4,
+        "q": 23,
+        "r": 67,
+        "s": 29,
+        "t": 27,
+        "y": 69
+      },
+      "selected_native_records": 28,
+      "source_id": "historical_H"
+    },
+    {
+      "empty_projection_records": [],
+      "joined_stream_sha256": "783b65caf2b4917d03ba8a260962d72ec63675960874097c4ca240ede7b3a178",
+      "nonempty_projected_records": 10,
+      "ordered_nonempty_projection_digests_sha256": "47f340e0da909dc584735bd654d04e3e2a1c103760db0ae5e015b02be1df8f03",
+      "page_id": "f101r",
+      "projected_lowercase_symbols": 1012,
+      "projected_symbol_frequencies": {
+        "a": 47,
+        "c": 72,
+        "d": 36,
+        "e": 132,
+        "f": 2,
+        "h": 105,
+        "i": 65,
+        "k": 56,
+        "l": 78,
+        "m": 3,
+        "n": 31,
+        "o": 185,
+        "p": 9,
+        "q": 13,
+        "r": 42,
+        "s": 45,
+        "t": 27,
+        "y": 64
+      },
+      "selected_native_records": 10,
+      "source_id": "modern_IT2a_present"
+    },
+    {
+      "empty_projection_records": [],
+      "joined_stream_sha256": "01c55caaeb65cf26886fc53da451ae36f690ef5a850e9f05d61551603430dba8",
+      "nonempty_projected_records": 28,
+      "ordered_nonempty_projection_digests_sha256": "28f44b147c35dec188e333106334cd721993485fe7fad5222eaacf7e1a6d0ba5",
+      "page_id": "f101v",
+      "projected_lowercase_symbols": 1025,
+      "projected_symbol_frequencies": {
+        "a": 64,
+        "c": 71,
+        "d": 55,
+        "e": 121,
+        "f": 1,
+        "h": 85,
+        "i": 65,
+        "k": 50,
+        "l": 68,
+        "m": 5,
+        "n": 32,
+        "o": 189,
+        "p": 4,
+        "q": 23,
+        "r": 67,
+        "s": 29,
+        "t": 27,
+        "y": 69
+      },
+      "selected_native_records": 28,
+      "source_id": "modern_IT2a_present"
+    }
+  ],
+  "rules": {
+    "empty_projections": "retain native denominators/descriptors; never positive evidence",
+    "groups": "exact strings before hashes; complete multiplicities; no positional pairing",
+    "parent": "original 223 exact-page cohort remains unchanged",
+    "projection": "accepted source-specific ASCII a-z body projection, with known losses",
+    "selection": "all four fixed H/IT2a unmatched page-ID comparisons; no page renaming"
+  },
+  "schema_version": 1,
+  "untouched_evaluation": false,
+  "usable_as_physical_image_mapping": false,
+  "usable_as_verified_locus_crosswalk": false,
+  "usable_for_statistical_evaluation": false
+}

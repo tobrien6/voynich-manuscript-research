@@ -34,9 +34,19 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [equal-join provenance census](JOIN_PROVENANCE.md) locates every repeated
+joining edge in the original H record order. None bridges an excluded/empty H
+record; all source descriptors, overlap counts and singleton cases are retained
+without asserting physical-line or glyph alignment.
 The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
 global/record-conditioned ratio with A/B units kept separate, and preserves
 the opposing within-record/joining A residuals without new sampling or tails.
+The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
+path and global type deduplication, with signed type covariance, all four
+outcomes and descriptive SD scaling without a calibrated tail.
+The [fixed B tail-control block](TYPE_TAILS.md) retains 1,000 additional controls
+per variant, both inclusive tail definitions and distinct frequency/rank scores,
+with the original controls and exposure/randomization limits explicit.
 
 ## Method
 
@@ -93,6 +103,16 @@ equal nonempty projection bags, including 29 with different order. One-to-one
 and ambiguous projection groups retain native locators without becoming a
 verified locus or image crosswalk.
 
+The [complete projected-record order diagnostic](RECORD_ORDER.md) measures every
+equal-multiset page under both native orders. On all 29 differing-order pages,
+maximum pairings retain 836 of 1,006 nonempty records per edition; every possible
+optimal index pair and ambiguity is retained without selecting a row crosswalk.
+
+The [complete maximum-pairing count audit](PAIRING_COUNTS.md) retains the same
+211-page cohort and counts every maximum index sequence. Twelve pages have
+two to 18 choices; exact candidate shares use explicitly uniform index-pairing
+weighting, without a probability of physical row identity.
+
 The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
 historical H envelope and two present IT2a P0/Pt loci with the same joined
 lowercase projection. The default modern adapter excludes Pt by kind; this
@@ -123,3 +143,8 @@ This is an exploratory full-source intake. Native source headers, records,
 comments and snippets were inspected; record that exposure in any later split.
 No glyph adjudication, statistical mechanism test, decipherment, or translation
 was performed.
+
+The [fixed f101 candidate comparisons](F101_RECORD_CANDIDATES.md) retain all four
+unmatched H/IT2a page names. Two ordered lossy record lists agree (10 and 28
+records), while opposite-side comparisons share no projection group. This source
+diagnostic leaves the exact-page audit unchanged and accepts no page alias.

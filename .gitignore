@@ -1,2 +1,4 @@
 __pycache__/
 *.py[cod]
+# Local lossless expansion of the published complete component report.
+/research/transliteration/interior_edge_components.json

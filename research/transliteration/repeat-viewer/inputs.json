@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "viewer_id": "immediate-repeat-review-v1",
+  "accepted_input_commit": "9ff8325887ebf9d0ee9f3e2744e6d30c0ad760d4",
+  "input_sha256": {
+    "research/transliteration/immediate_repeat_image_selection.json": "05ba4393132ee988252c58b6b90600f64facb87fa9203b7d73c34f6048428691",
+    "research/transliteration/immediate_repeat_image_review.json": "de7f16d9585f2cd064cc5dd5db03d7721b6d669f58d663ffb8e30992a09befb0",
+    "research/transliteration/IMMEDIATE_REPEAT_IMAGE_PLAN.md": "e0e10eab1f0921a607b4012232e45b6fb724b171c9736f5b04db47b887e3e6c7",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+  },
+  "scope": "Local read-only packet preserving accepted three provisional cases, native context, original event slots and image receipts; no source correction or hosting."
+}
