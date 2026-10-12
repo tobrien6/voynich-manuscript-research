@@ -53,9 +53,14 @@ of converting a reported purchase into a directly documented Dee sale.
 
 The 2016 study's printed pp. 310-312 also discuss the recalled book and money
 arguments. Their source trail includes Wilkin (1852), pp. 530-531, and Casaubon
-(1659), pp. 447-448. Those editions were **not** directly inspected in this
-contribution. The ledger retains the follow-up references without adopting
+(1659), pp. 447-448. Those editions were **not** directly inspected in the
+initial audit. The ledger retains the follow-up references without adopting
 their historical interpretations or supplying new translations.
+
+The [printed-testimony follow-up](DEE_PRINTED_TESTIMONY.md) now inspects those
+two editions directly, separating the Pucci settlement context and reported
+book recollection from an authenticated Voynich sale or object identification.
+Original letter and memorandum manuscripts remain uninspected.
 
 ## Access and reproduction limits
 

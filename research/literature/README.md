@@ -12,6 +12,11 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The separate [Reddy/Knight source intake](REDDY_SOURCE_INTAKE.md) recovers a
+paper-associated 2015 repository snapshot. Its full/B input counts and all
+native annotated/page streams agree, while exact 2011 preprocessing and the
+Table 2 predictor remain unresolved.
+
 The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
 Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
 attachments yielded no separate processed corpus or analysis implementation;
@@ -73,12 +78,28 @@ requires a declared row unit; a locus is not automatically a complete physical
 line. Neither result can be relabeled as a published whole-text statistic by
 changing its display label.
 
+The [distinct repeating-representation follow-up](../transliteration/REPEATING_TYPES.md)
+implements a type count on the accepted modern P0 cohort, with an exact mean
+under its existing fixed-gap within-locus control. It does not reproduce L003's
+historical input, whole-text shuffle scope, or normalized numerical result.
+
 ## Minimum plan for a later replication
 
 The [additional Java 17 source replay and row ledger](SELF_CITATION_JAVA17.md)
 add a second observed runtime result and explicit initialization denominators to
 the copying-mechanism work. The release bytes match the Java 22 receipt in PR #88;
 this remains software evidence, with no manuscript mechanism or translation test.
+
+The [fixed generator prefix diagnostic](SELF_CITATION_PREFIX_PROFILE.md)
+compares a source-informed model profile with an explicitly exposed B cohort.
+All 31 control/observer pairs preserve bytes; 24 of 32 related target points
+fall outside the finite seed ranges. Unit/context equivalence remains unverified.
+
+The [paragraph-context call-site ablation](SELF_CITATION_CONTEXT_ABLATION.md)
+separately suppresses the generator's chooser/morpher arguments across 248
+fixed executions. Mutation-argument suppression increases initial first-y in
+every seed under both chooser settings. All other profiles and interactions
+remain reported; this is finite program dependence without a new manuscript fit.
 
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the

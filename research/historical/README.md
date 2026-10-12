@@ -26,6 +26,17 @@ label phrases. It does not reproduce a published statistic.
 The [label phrase provenance audit](LABEL_PHRASES.md) traces the unmatched names
 to other native codes and retains repeated strings elsewhere, without changing
 the H parser or establishing the authors' input.
+The [repeated-type assay](REPEATED_TYPES.md) applies the published B definition
+and a declared global control to all four approximate streams, with exact means
+and complete ten-trial results. It preserves the difference from modern
+conditional-locus controls and does not claim an exact historical replication.
+The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
+streams and all measured joining edges fixed while changing the null's bags.
+It retains the resulting reduction of B's contrast and reversal of A's mean
+contrast, without a causal explanation or significance claim.
+The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
+global/record-conditioned ratio with A/B units kept separate, and preserves
+the opposing within-record/joining A residuals without new sampling or tails.
 
 ## Method
 
@@ -75,6 +86,17 @@ The [lossy lowercase comparison](LOWERCASE_PROJECTION.md) then finds 183 matchin
 streams on 223 exact shared page IDs, while 39 differing streams retain the same
 symbol frequencies. It preserves omitted-symbol counts and the excluded modern
 envelope separately; those matches do not establish full text or glyph identity.
+
+The [native record-projection audit](RECORD_PROJECTIONS.md) retains record
+boundaries and order under that same lossy projection: 211 shared pages have
+equal nonempty projection bags, including 29 with different order. One-to-one
+and ambiguous projection groups retain native locators without becoming a
+verified locus or image crosswalk.
+
+The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
+historical H envelope and two present IT2a P0/Pt loci with the same joined
+lowercase projection. The default modern adapter excludes Pt by kind; this
+source-unit difference creates no verified record or image crosswalk.
 
 ## Reproduce and next test
 
