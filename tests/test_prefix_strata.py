@@ -20,6 +20,24 @@ class PrefixStrataTests(unittest.TestCase):
         doc = parse_ivtff(HEADER + '<f1r>\n<f1r.1,@P0> q<! <%>.a\n')
         self.assertFalse(paragraph_start(doc.loci[0]))
 
+    def test_source_disagreements_do_not_transfer_group_or_paragraph_labels(self):
+        left = parse_ivtff(HEADER + '<f1r> <! $L=A>\n<f1r.1,@P0> <%>q.a\n')
+        right = parse_ivtff(HEADER + '<f1r> <! $L=B>\n<f1r.1,@P0> q.a\n')
+        sources = [({'id': 'ZL3b', 'sha256': 'synthetic'}, left),
+                   ({'id': 'IT2a', 'sha256': 'synthetic'}, right)]
+        with patch('scripts.prefix_strata.load_sources', return_value=sources):
+            report = stratified_report(repetitions=1, seed=1)
+        observed = []
+        for source in report['sources']:
+            populated = [cohort for cohort in source['variants'][0]['cohorts']
+                         if cohort['selected_loci']]
+            self.assertEqual(len(populated), 1)
+            cohort = populated[0]
+            observed.append((source['id'], cohort['source_currier_label'],
+                             cohort['source_paragraph_start']))
+            self.assertEqual(cohort['positions'][0]['eligible_loci'], 1)
+        self.assertEqual(observed, [('ZL3b', 'A', True), ('IT2a', 'B', False)])
+
     def test_partition_keeps_unset_labels_empty_cohorts_and_boundary_gaps(self):
         doc = parse_ivtff(HEADER + '<f1r> <! $L=A>\n'
                           '<f1r.1,@P0> <%>q.a\n<f1r.2,+P0> y.a\n'
