@@ -18,6 +18,12 @@ an explicit comparison contract for a published copying mechanism. It separates
 the paper's abstract claims from inspected release code, configuration, and a
 supplied output artifact; no generator execution or mechanism test is reported.
 
+A separate [source-build repeatability experiment](SELF_CITATION_REPLAY.md)
+now records six executions on one Java runtime. Every within-case repeat is
+byte-identical, and both 1,200-line runs exactly reproduce the supplied release
+output. This tests software reproducibility; manuscript mechanism comparisons,
+packaged-binary provenance, and paper-result replication remain separate.
+
 ## Three comparisons that need care
 
 | Source | Relevant reported measurement | Comparison limit |
