@@ -32,7 +32,8 @@ fingerprints, parsed definition/import inventories and capture receipts.
 | `643b881` | 21:53:10 | 12 | `basic_stats.py`, 2,466 bytes |
 
 Only `basic_stats.py` has a program suffix under the explicitly enumerated
-suffix rule. The other literal filenames are `.gitignore`, `README.md` and
+suffix rule (`.py`, `.ipynb`, `.r`, `.m`, `.java`, `.c`, `.cpp`, `.sh`, `.pl`,
+`.rb`, `.jl`, case-insensitive). The other literal filenames are `.gitignore`, `README.md` and
 `.wds` data files. The report retains every filename, rather than treating the
 suffix rule as a proof about all possible file contents.
 
