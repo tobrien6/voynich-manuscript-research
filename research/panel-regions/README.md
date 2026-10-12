@@ -115,3 +115,8 @@ The [two-direction f102r1 boundary review](102R_BOUNDARY_PAIR.md) freezes one
 ZL-only and one IT-only extra-boundary case before new image inspection.
 Both adjacent loci retain provisional row placement and unresolved word
 division; the shared 101v/102r carrier remains one image dependency.
+
+The [two drawing-notation boundary cases](DRAWING_BOUNDARY_PAIR.md) retain
+every drawing-involved source-only cut in the complete native ledger, with
+frozen source context and provisional 13v/75r viewing windows. Exact rows,
+stroke ownership, glyph boundaries and source preference remain unresolved.

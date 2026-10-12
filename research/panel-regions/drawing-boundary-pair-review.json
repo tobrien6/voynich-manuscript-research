@@ -1,0 +1,225 @@
+{
+  "additional_source_exposure_after_first_carriers": "ZL full f75r P0 prefixes/order were consulted after whole-carrier viewing and before block viewing to understand the 26/5/15 paragraph structure. No target replacement, additional leaf, additional image request or glyph correction followed.",
+  "cases": [
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006099",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006099",
+      "corrected_native_text": null,
+      "dependency_group": "yale-leaves:13",
+      "disputed_ascii_offset": 30,
+      "glyph_region": null,
+      "image_oid": "1006099",
+      "images": [
+        {
+          "additional_view_tool_resize_requested": false,
+          "bytes": 630571,
+          "rectangle_is_verified_glyph_mask": false,
+          "returned_dimensions": [
+            1343,
+            1800
+          ],
+          "role": "whole",
+          "rotation_degrees": 0,
+          "sha256": "370d3ae3f4f8fda788fcc513855523335aa1e6fc7df677621ec8613159f2925c",
+          "url": "https://collections.library.yale.edu/iiif/2/1006099/full/!1800,1800/0/default.jpg",
+          "view_tool_detail": "original",
+          "viewing_rectangle_native_pixels": null
+        },
+        {
+          "additional_view_tool_resize_requested": false,
+          "bytes": 199870,
+          "rectangle_is_verified_glyph_mask": false,
+          "returned_dimensions": [
+            1500,
+            473
+          ],
+          "role": "block",
+          "rotation_degrees": 0,
+          "sha256": "f30fd75b115037f6d84db878ff87a955cbf0405a5d68afe40ab5e19874e5528a",
+          "url": "https://collections.library.yale.edu/iiif/2/1006099/650,2210,1900,600/1500,/0/default.jpg",
+          "view_tool_detail": "original",
+          "viewing_rectangle_native_pixels": [
+            650,
+            2210,
+            1900,
+            600
+          ]
+        },
+        {
+          "additional_view_tool_resize_requested": false,
+          "bytes": 57613,
+          "rectangle_is_verified_glyph_mask": false,
+          "returned_dimensions": [
+            620,
+            330
+          ],
+          "role": "detail",
+          "rotation_degrees": 0,
+          "sha256": "d97bfda322dc7f11355c38e8471e2b7c93afe41992d38712f4da3a48fa08f9e2",
+          "url": "https://collections.library.yale.edu/iiif/2/1006099/1860,2400,620,330/full/0/default.jpg",
+          "view_tool_detail": "original",
+          "viewing_rectangle_native_pixels": [
+            1860,
+            2400,
+            620,
+            330
+          ]
+        }
+      ],
+      "live_service_metadata": {
+        "bytes": 885,
+        "native_dimensions_match_frozen_index": true,
+        "sha256": "a9f3d4987ddfa391c11dc208c8c6d006d91217b7c765c70fc0b5f9d68c27a104",
+        "url": "https://collections.library.yale.edu/iiif/2/1006099/info.json"
+      },
+      "native_dimensions": [
+        2812,
+        3770
+      ],
+      "native_locus_key": "f13v.8",
+      "preferred_source": null,
+      "provisional_row_candidate": "Candidate third row of the lower five-row text block; the native target is P0 rank 8 of 10 in both sources.",
+      "retained_source_alternatives": "The full native readings place ZL <-> before their common encoded d (offset 29) and an uncertain comma after it (offset 30); IT places a period before d and <-> after it. Both policies cut at 29 in both sources, so differing separator kinds at that shared cut were outside the exclusive-cut selection. Expert review must distinguish the two neighboring stem/ink relationships before assigning either encoded cut to an image region.",
+      "row_mapping_status": "source-informed provisional proposal; independent confirmation pending",
+      "statistical_inclusion": false,
+      "verified_corpus_join": false,
+      "visible_geometry_observation": "A slanted plant stem separates the middle and right ink clusters in the candidate row. The right cluster begins with a looped ink form, followed by a narrow blank interval and a taller stroke group. This describes visible shapes without certifying their encoded-letter identities.",
+      "yale_label": "13v"
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006208",
+      "corrected_native_text": null,
+      "dependency_group": "yale-leaves:75",
+      "disputed_ascii_offset": 48,
+      "glyph_region": null,
+      "image_oid": "1006208",
+      "images": [
+        {
+          "additional_view_tool_resize_requested": false,
+          "bytes": 651525,
+          "rectangle_is_verified_glyph_mask": false,
+          "returned_dimensions": [
+            1366,
+            1800
+          ],
+          "role": "whole",
+          "rotation_degrees": 0,
+          "sha256": "3c695db7b2d80a4e0ac246b8258691ac4bbb5d160e669744ef666f81a5f5f146",
+          "url": "https://collections.library.yale.edu/iiif/2/1006208/full/!1800,1800/0/default.jpg",
+          "view_tool_detail": "original",
+          "viewing_rectangle_native_pixels": null
+        },
+        {
+          "additional_view_tool_resize_requested": false,
+          "bytes": 158131,
+          "rectangle_is_verified_glyph_mask": false,
+          "returned_dimensions": [
+            1600,
+            391
+          ],
+          "role": "block",
+          "rotation_degrees": 0,
+          "sha256": "d14292cd460336925e2218fa7842df7aeef6c3ddb7b6f784fe0d880936191f29",
+          "url": "https://collections.library.yale.edu/iiif/2/1006208/330,2800,2250,550/1600,/0/default.jpg",
+          "view_tool_detail": "original",
+          "viewing_rectangle_native_pixels": [
+            330,
+            2800,
+            2250,
+            550
+          ]
+        },
+        {
+          "additional_view_tool_resize_requested": false,
+          "bytes": 61947,
+          "rectangle_is_verified_glyph_mask": false,
+          "returned_dimensions": [
+            760,
+            350
+          ],
+          "role": "detail",
+          "rotation_degrees": 0,
+          "sha256": "0a48984398409d457b4d1491acbf286fbbbe06a9d7450af39159905654adb110",
+          "url": "https://collections.library.yale.edu/iiif/2/1006208/1820,2960,760,350/full/0/default.jpg",
+          "view_tool_detail": "original",
+          "viewing_rectangle_native_pixels": [
+            1820,
+            2960,
+            760,
+            350
+          ]
+        }
+      ],
+      "live_service_metadata": {
+        "bytes": 885,
+        "native_dimensions_match_frozen_index": true,
+        "sha256": "5b650ae0faa65394b2a23de848e8817a6a6da905fdcab83f8758422800192570",
+        "url": "https://collections.library.yale.edu/iiif/2/1006208/info.json"
+      },
+      "native_dimensions": [
+        2852,
+        3759
+      ],
+      "native_locus_key": "f75r.44",
+      "preferred_source": null,
+      "provisional_row_candidate": "Candidate row 13 of the lower 15-row text block, third from the bottom; the native target is P0 rank 44 of 46 in both sources.",
+      "retained_source_alternatives": "ZL retains ch<->dar.dy while IT retains chdar.dy. The viewing window includes nearby text and the descending outline; it does not determine a physical word division or whether a particular drawn stroke should intervene between the source parts.",
+      "row_mapping_status": "source-informed provisional proposal; independent confirmation pending",
+      "statistical_inclusion": false,
+      "verified_corpus_join": false,
+      "visible_geometry_observation": "The ankle/foot outline of a right-hand figure reaches the same broad horizontal band as short ink groups near the candidate locus end. The outline approaches the writing and continues below it. Exact stroke ownership and the point separating the source ch/dar alternatives remain unresolved.",
+      "yale_label": "75r"
+    }
+  ],
+  "chronology": "Plan/context commit was pushed before this contribution requested or viewed pixels. Author clock read 12:47:31 UTC immediately before first views and 12:53:25 UTC after the six planned views; this is author-reported chronology, not an independently observed freeze.",
+  "exposure": "All source bytes, native boundary inventories, exact-case source strings and neighboring readings exposed before pixels. Other project image inventories may have exposed these leaves; no untouched or independent image evaluation claim.",
+  "image_request_count": 6,
+  "image_request_failures": 0,
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/panel-regions/drawing-boundary-pair-source-context.json": "d60d0f03583cce1a2d45f973cd9dd0d80896e9e1b7bda787d1689dababd360fc",
+    "research/transliteration/BOUNDARY_SEPARATOR_PLAN.json": "97743e5c1d8a56de1ce89b826a70e8fdd60b74e29f9f2c647ffc975298bda17c",
+    "research/transliteration/boundary_separator_provenance.json": "fa6dd39126e2ab7886d6832a8878a2861c2e4db66b641ef43810df8da81b0540"
+  },
+  "inspection_date_local": "2026-10-12",
+  "metadata_request_count": 2,
+  "metadata_request_failures": 0,
+  "method": "source-informed nonblind provisional image context for both drawing-involved source-cut disagreements",
+  "next_test": "An independently assigned reviewer should confirm each full row and neighboring alternatives, identify stroke ownership near the stem/foot, and adjudicate both source marker placements with exact glyph boundaries before any corpus join or source correction.",
+  "parent_head": "8b9771bc7af7517caf1af4a79204a99062e056a2",
+  "parent_pr": 196,
+  "plan_sha256": "ad2fd675e896ec6b0d49e09d1439433059c35c8e9b002bf1a978d6d6a6091d72",
+  "pre_pixel_plan_commit": "2d38762344509d19d37db08d199706192af6e06b",
+  "pre_pixel_plan_path": "research/panel-regions/drawing-boundary-pair-plan.json",
+  "retained_case_count": 2,
+  "review_id": "drawing-boundary-pair-v1",
+  "rights": "Only identifiers, original observations, source context and linked viewing URLs are published. Yale image bytes and full IIIF service metadata remain local; no open image reuse license is inferred.",
+  "schema_version": 1,
+  "selection": [
+    [
+      "f13v.8",
+      30
+    ],
+    [
+      "f75r.44",
+      48
+    ]
+  ],
+  "source_claims_are_verified_image_regions": false,
+  "source_context_path": "research/panel-regions/drawing-boundary-pair-source-context.json",
+  "source_context_sha256": "d60d0f03583cce1a2d45f973cd9dd0d80896e9e1b7bda787d1689dababd360fc",
+  "source_corrections_applied": false,
+  "timezone": "America/New_York",
+  "verified_corpus_join": false,
+  "view_order": [
+    "13v whole",
+    "75r whole",
+    "13v block",
+    "75r block",
+    "13v detail",
+    "75r detail"
+  ]
+}
