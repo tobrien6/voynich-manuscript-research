@@ -80,7 +80,7 @@ glyph count. A second observer should check for a small or combined sign that
 might motivate IT's separate token and independently verify the row match.
 No correction is applied.
 
-## f78r.21: initial l/q classification remains unresolved
+## f78r.21: same-page comparison supports a provisional l preference
 
 [Yale canvas 1006214, label 78r](https://collections.library.yale.edu/catalog/2002046?child_oid=1006214).
 The full image is 2,793 × 3,761 pixels. Consult the
@@ -101,10 +101,44 @@ relatively short oblique descending stroke. The next token's initial sign has
 a more extended, near-vertical descending stroke. This shape contrast is visible
 within the same row.
 
-**Interpretation and remaining uncertainty.** The contrast alone does not
-define the boundary between handwritten `l` and `q` variants in this notation.
-No preferred representation is recorded. Check the alignment independently and
-compare agreed `l`/`q` shapes in the same writing hand before making a decision.
+**Initial interpretation.** The first review left the `l`/`q` classification
+unresolved: the visible contrast with the next token alone does not define a
+glyph-family boundary. A targeted reference comparison adds evidence below;
+it does not make the row match or classification verified.
+
+### Planned same-page references
+
+The [comparison plan](INITIAL_PREFIX_COMPARISON_PLAN.md), committed at
+`4a40321` before inspecting the additional regions, fixes the earliest
+source-agreed, readable initial `l` and `q` tokens on this page. The full page
+and disputed crop had already been seen, so this is not a blind test.
+
+Both editions and both spacing policies give `lchedy` at `f78r.43`
+(ZL line 4425; IT line 2889) and `qokeedy` at `f78r.4`
+(ZL line 4385; IT line 2850). These are the first qualifying references in
+numeric locus order: there is one `l` candidate and eleven `q` candidates.
+The review records all candidate keys and preserves both native source loci.
+ZL's `f78r.43` includes a later `[a:o]` alternative; it fails whole-locus adapter
+eligibility. Its readable first token qualifies under the explicitly separate
+reference rule, which does not enlarge the original disputed-case cohort.
+
+| Reference | Row context | Beginning | Provisional row evidence |
+| --- | --- | --- | --- |
+| `f78r.4`, agreed `qokeedy` | [Upper block](https://collections.library.yale.edu/iiif/2/1006214/310,430,1280,250/full/0/default.jpg) | [Initial region](https://collections.library.yale.edu/iiif/2/1006214/340,530,620,120/full/0/default.jpg) | Between the opening `f78r.3` and `f78r.5`; the source-agreed neighboring sequence remains in view. |
+| `f78r.43`, agreed `lchedy` | [Lower block](https://collections.library.yale.edu/iiif/2/1006214/300,2920,1250,390/full/0/default.jpg) | [Initial region](https://collections.library.yale.edu/iiif/2/1006214/350,3090,750,180/full/0/default.jpg) | Final left-block line after `f78r.41` and `f78r.42`; the second token is represented as `pchedy` in both editions. |
+
+**Comparison observation.** The disputed initial and the selected `l` reference
+both have a compact loop/crossed top and an oblique descending stroke. The
+selected `q` reference has a more extended, near-vertical stem. Along these
+stated features, the disputed beginning is closer to the `l` reference.
+
+**Updated interpretation.** This comparison provisionally favors ZL's `l`
+representation over IT's `q`. Both reference row matches remain one observer's
+judgments. Agreement between related source editions is not independently
+established glyph ground truth; one reference pair cannot define the entire
+range of handwriting variants. An independent observer should check all three
+alignments and further variations before any versioned correction. This is a
+same-page comparison, not a verified assignment of a writing hand.
 
 ## Reproduce and limitations
 
@@ -113,7 +147,8 @@ are committed; the selector performs no network access.
 
 ```sh
 python3 scripts/select_initial_prefix_images.py --check research/transliteration/initial_prefix_selection.json
-PYTHONPATH=tests python3 -m unittest test_initial_prefix_images
+python3 scripts/verify_initial_prefix_review.py
+PYTHONPATH=tests python3 -m unittest test_initial_prefix_images test_initial_prefix_review
 ```
 
 Tests exercise numeric ordering and side distinctions, one selection per side,
@@ -121,9 +156,14 @@ policy-dependent disagreements, complete-locus exclusions, partial/combined
 and duplicate canvases, overlapping exclusions, missing identities, empty
 selections, and accounting for all shared pinned P0 locations. Reopen the
 linked derivatives to assess the manual observations; automated selection
-checks cannot do that.
+checks cannot do that. The review verifier recomputes reference choice, preserves
+source uncertainty, checks native region URLs/dimensions/bounds and the
+selection-byte binding, and rejects omitted cases, changed reference metadata,
+or unsupported verified/correction flags. Optional repeated
+`--image-file 'RECORDED_URL=/path/to/local/image.jpg'` bindings check byte hashes
+and GIF/JPEG header dimensions without decoding pixels or judging shapes.
 
-One provisional preference and one unresolved case cannot rank the sources or
+Two provisional preferences with unresolved independent review cannot rank the sources or
 estimate corpus-wide error. Both editions and both policies remain dependent
 representations of the same manuscript. Derivative hashes identify inspected
 bytes, not future server output or correct readings. No glyph inventory,

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "selection_report": "research/transliteration/initial_prefix_selection.json",
   "selection_report_sha256": "e21bf5b6edec8a10c1116eb47701d7bea08f9df859bf132cc5894e0320a8893b",
   "selection_plan_commit": "57e35db",
@@ -199,16 +199,152 @@
       "row_alignment_status": "single_observer_provisional",
       "row_alignment_evidence": "The proposed line follows the row represented as f78r.20 and precedes the y-starting f78r.22. It lies left of the upper circular illustration; the next token shares the qokain representation in both editions. Two label loci precede the paragraph block, so locus 21 is not simply visible text row 21.",
       "direct_observation": "The first shape has a compact loop/crossed top and a relatively short oblique descending stroke. The next token begins with a more extended, near-vertical descending stroke. The contrast is visible in the initial-region derivative.",
-      "interpretation_status": "unresolved",
-      "preferred_first_slot_representation": null,
-      "interpretation": "A shape contrast is visible, but this observation alone does not define the boundary between handwritten l and q variants in the publisher's scheme. Neither source representation is adopted.",
-      "unresolved": "Independently check the row alignment and compare agreed l/q shapes in this writing hand before assigning a representation."
+      "interpretation_status": "single_observer_provisional_preference",
+      "preferred_first_slot_representation": "ZL3b literal l prefix (q-prefix absent)",
+      "interpretation": "The planned same-page comparison provisionally favors ZL's l representation over IT's q. Source agreement does not establish the reference signs as ground truth, and one observer on one l/q pair cannot certify the glyph-family boundary. No source representation is applied as a correction.",
+      "unresolved": "An independent reviewer must check all three row alignments, the shape comparison, and additional variations before any versioned correction. The l reference is admitted by its readable first token despite an alternative later in the ZL locus.",
+      "initial_review_status": "unresolved before the planned same-page reference comparison",
+      "comparison_observation": "The disputed initial shares a compact loop/crossed top and an oblique descending stroke with the source-agreed lchedy reference at f78r.43. The source-agreed qokeedy reference at f78r.4 has a more extended near-vertical stem. The target is visually closer to the selected l reference along these stated features."
     }
   ],
   "limits": [
     "The selection excludes many uncertain or unsupported loci; two cases do not estimate corpus-wide source accuracy.",
     "The complete source files and previous aggregate patterns were already exposed; this is not untouched evaluation material.",
     "Image hashes identify inspected derivatives, not stable future server responses or correct readings.",
-    "No source files, decoding inputs, glyph inventory, or translation are changed."
-  ]
+    "No source files, decoding inputs, glyph inventory, or translation are changed.",
+    "The reference comparison uses readable first tokens and retains later ambiguity; it is not an expansion of the original whole-locus case-selection rule."
+  ],
+  "same_page_comparison": {
+    "plan": "research/transliteration/INITIAL_PREFIX_COMPARISON_PLAN.md",
+    "plan_commit": "4a40321",
+    "candidate_locus_keys_by_literal_prefix": {
+      "l": [
+        "f78r.43"
+      ],
+      "q": [
+        "f78r.4",
+        "f78r.5",
+        "f78r.7",
+        "f78r.11",
+        "f78r.13",
+        "f78r.16",
+        "f78r.24",
+        "f78r.30",
+        "f78r.32",
+        "f78r.36",
+        "f78r.39"
+      ]
+    },
+    "references": [
+      {
+        "reference_prefix": "l",
+        "locus_key": "f78r.43",
+        "row_alignment_status": "single_observer_provisional",
+        "sources": [
+          {
+            "id": "ZL3b",
+            "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+            "locus_identifier": "f78r.43,+P0",
+            "source_line_number": 4425,
+            "first_token": "lchedy",
+            "original_locus_text": "lchedy.pchedy.qokaiin.d[a:o]r<$>",
+            "whole_locus_adapter_eligible": false,
+            "whole_locus_exclusion_reasons": [
+              "alternative_reading"
+            ]
+          },
+          {
+            "id": "IT2a",
+            "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+            "locus_identifier": "f78r.43,+P0",
+            "source_line_number": 2889,
+            "first_token": "lchedy",
+            "original_locus_text": "lchedy.pchedy.qokaiin.dar<$>",
+            "whole_locus_adapter_eligible": true,
+            "whole_locus_exclusion_reasons": []
+          }
+        ],
+        "inspected_images": [
+          {
+            "url": "https://collections.library.yale.edu/iiif/2/1006214/300,2920,1250,390/full/0/default.jpg",
+            "pixel_width": 1250,
+            "pixel_height": 390,
+            "region_xywh_full_image_pixels": [
+              300,
+              2920,
+              1250,
+              390
+            ],
+            "sha256": "8847a09ecba2da9b75cfdf8f6c44972d68eb8641d1941b38a4f659595955bf9a"
+          },
+          {
+            "url": "https://collections.library.yale.edu/iiif/2/1006214/350,3090,750,180/full/0/default.jpg",
+            "pixel_width": 750,
+            "pixel_height": 180,
+            "region_xywh_full_image_pixels": [
+              350,
+              3090,
+              750,
+              180
+            ],
+            "sha256": "69c70fab25d1368f934385b198ef55f16e2d78d61fecf40bf8cc22b45b43d270"
+          }
+        ]
+      },
+      {
+        "reference_prefix": "q",
+        "locus_key": "f78r.4",
+        "row_alignment_status": "single_observer_provisional",
+        "sources": [
+          {
+            "id": "ZL3b",
+            "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+            "locus_identifier": "f78r.4,+P0",
+            "source_line_number": 4385,
+            "first_token": "qokeedy",
+            "original_locus_text": "qokeedy.qokedy.shedy.tchedy.otar.olkedy.dam",
+            "whole_locus_adapter_eligible": true,
+            "whole_locus_exclusion_reasons": []
+          },
+          {
+            "id": "IT2a",
+            "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+            "locus_identifier": "f78r.4,+P0",
+            "source_line_number": 2850,
+            "first_token": "qokeedy",
+            "original_locus_text": "qokeedy.qokedy.shedy.tchedy.otar.olkedy.dam",
+            "whole_locus_adapter_eligible": true,
+            "whole_locus_exclusion_reasons": []
+          }
+        ],
+        "inspected_images": [
+          {
+            "url": "https://collections.library.yale.edu/iiif/2/1006214/310,430,1280,250/full/0/default.jpg",
+            "pixel_width": 1280,
+            "pixel_height": 250,
+            "region_xywh_full_image_pixels": [
+              310,
+              430,
+              1280,
+              250
+            ],
+            "sha256": "a800e7ec0876e72a8f56bde055b4fbca681311406bbfd4e422625082a1938d32"
+          },
+          {
+            "url": "https://collections.library.yale.edu/iiif/2/1006214/340,530,620,120/full/0/default.jpg",
+            "pixel_width": 620,
+            "pixel_height": 120,
+            "region_xywh_full_image_pixels": [
+              340,
+              530,
+              620,
+              120
+            ],
+            "sha256": "9617a1bf42db57b80f47ae0c7446714594a942452383f454ecb9ec35f640debe"
+          }
+        ]
+      }
+    ],
+    "claim_limit": "Source agreement and visual resemblance are not independently verified glyph-family membership."
+  }
 }
