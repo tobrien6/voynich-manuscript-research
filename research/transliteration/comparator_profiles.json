@@ -1,0 +1,293 @@
+{
+  "audit_version": 1,
+  "profiles": {
+    "GC2a": {
+      "all_locus_record_count": 5367,
+      "alphabet": "v101",
+      "annotation_occurrences_in_present_records": {
+        "alternative_group": 0,
+        "apparent_space_period": 32875,
+        "drawing_interruption": 0,
+        "free_inline_comment": 0,
+        "high_ascii_escape": 341,
+        "ligature_group": 0,
+        "paragraph_end": 775,
+        "paragraph_start": 775,
+        "text_tag": 2,
+        "uncertain_space_comma": 2459
+      },
+      "byte_count": 314916,
+      "complete_locus_counts_in_present_records": {
+        "Ca": 1,
+        "Cc": 83,
+        "L0": 282,
+        "La": 6,
+        "Lc": 40,
+        "Lf": 194,
+        "Ln": 63,
+        "Lp": 2,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 1,
+        "Lz": 299,
+        "P0": 3885,
+        "P1": 72,
+        "Pb": 134,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "explicitly_nonexistent_loci": [
+        "f89v2.26,!Lf"
+      ],
+      "generic_locus_counts_in_present_records": {
+        "C": 84,
+        "L": 1010,
+        "P": 4130,
+        "R": 142
+      },
+      "header": "#=IVTFF v101 2.0 M 6",
+      "id": "GC2a",
+      "page_header_count": 226,
+      "present_locus_record_count": 5366,
+      "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "unreadable_run_occurrences_by_length": {
+        "1": 71,
+        "2": 9,
+        "3": 2
+      }
+    },
+    "IT2a": {
+      "all_locus_record_count": 5215,
+      "alphabet": "EvaT",
+      "annotation_occurrences_in_present_records": {
+        "alternative_group": 0,
+        "apparent_space_period": 31829,
+        "drawing_interruption": 875,
+        "free_inline_comment": 0,
+        "high_ascii_escape": 0,
+        "ligature_group": 0,
+        "paragraph_end": 772,
+        "paragraph_start": 772,
+        "text_tag": 2,
+        "uncertain_space_comma": 0
+      },
+      "byte_count": 342104,
+      "complete_locus_counts_in_present_records": {
+        "Cc": 72,
+        "L0": 158,
+        "La": 5,
+        "Lc": 37,
+        "Lf": 194,
+        "Ln": 63,
+        "Lp": 2,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 1,
+        "Lz": 299,
+        "P0": 3884,
+        "P1": 72,
+        "Pb": 123,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "explicitly_nonexistent_loci": [
+        "f89v2.26,!Lf"
+      ],
+      "generic_locus_counts_in_present_records": {
+        "C": 72,
+        "L": 882,
+        "P": 4118,
+        "R": 142
+      },
+      "header": "#=IVTFF EvaT 2.0 M 3",
+      "id": "IT2a",
+      "page_header_count": 225,
+      "present_locus_record_count": 5214,
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "unreadable_run_occurrences_by_length": {
+        "1": 117,
+        "2": 22,
+        "3": 14,
+        "4": 1,
+        "5": 1,
+        "6": 7
+      }
+    },
+    "RF1b-basic": {
+      "all_locus_record_count": 5385,
+      "alphabet": "Eva-",
+      "annotation_occurrences_in_present_records": {
+        "alternative_group": 0,
+        "apparent_space_period": 31702,
+        "drawing_interruption": 761,
+        "free_inline_comment": 0,
+        "high_ascii_escape": 0,
+        "ligature_group": 0,
+        "paragraph_end": 0,
+        "paragraph_start": 0,
+        "text_tag": 2,
+        "uncertain_space_comma": 677
+      },
+      "byte_count": 343891,
+      "complete_locus_counts_in_present_records": {
+        "Ca": 1,
+        "Cc": 83,
+        "L0": 297,
+        "La": 7,
+        "Lc": 40,
+        "Lf": 194,
+        "Ln": 63,
+        "Lp": 3,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 3,
+        "Lz": 299,
+        "P0": 3885,
+        "P1": 72,
+        "Pb": 134,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "explicitly_nonexistent_loci": [],
+      "generic_locus_counts_in_present_records": {
+        "C": 84,
+        "L": 1029,
+        "P": 4130,
+        "R": 142
+      },
+      "header": "#=IVTFF Eva- 2.0 D 9",
+      "id": "RF1b-basic",
+      "page_header_count": 227,
+      "present_locus_record_count": 5385,
+      "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+      "unreadable_run_occurrences_by_length": {
+        "1": 58,
+        "2": 8,
+        "3": 22,
+        "4": 1
+      }
+    },
+    "RF1b-full": {
+      "all_locus_record_count": 5385,
+      "alphabet": "Eva-",
+      "annotation_occurrences_in_present_records": {
+        "alternative_group": 0,
+        "apparent_space_period": 31702,
+        "drawing_interruption": 761,
+        "free_inline_comment": 0,
+        "high_ascii_escape": 4125,
+        "ligature_group": 759,
+        "paragraph_end": 0,
+        "paragraph_start": 0,
+        "text_tag": 2,
+        "uncertain_space_comma": 677
+      },
+      "byte_count": 362373,
+      "complete_locus_counts_in_present_records": {
+        "Ca": 1,
+        "Cc": 83,
+        "L0": 297,
+        "La": 7,
+        "Lc": 40,
+        "Lf": 194,
+        "Ln": 63,
+        "Lp": 3,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 3,
+        "Lz": 299,
+        "P0": 3885,
+        "P1": 72,
+        "Pb": 134,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "explicitly_nonexistent_loci": [],
+      "generic_locus_counts_in_present_records": {
+        "C": 84,
+        "L": 1029,
+        "P": 4130,
+        "R": 142
+      },
+      "header": "#=IVTFF Eva- 2.0 D 9",
+      "id": "RF1b-full",
+      "page_header_count": 227,
+      "present_locus_record_count": 5385,
+      "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+      "unreadable_run_occurrences_by_length": {
+        "1": 32,
+        "2": 8,
+        "3": 22
+      }
+    },
+    "ZL3b": {
+      "all_locus_record_count": 5385,
+      "alphabet": "Eva-",
+      "annotation_occurrences_in_present_records": {
+        "alternative_group": 817,
+        "apparent_space_period": 30129,
+        "drawing_interruption": 764,
+        "free_inline_comment": 863,
+        "high_ascii_escape": 178,
+        "ligature_group": 446,
+        "paragraph_end": 740,
+        "paragraph_start": 740,
+        "text_tag": 2,
+        "uncertain_space_comma": 2748
+      },
+      "byte_count": 411671,
+      "complete_locus_counts_in_present_records": {
+        "Ca": 1,
+        "Cc": 83,
+        "L0": 297,
+        "La": 7,
+        "Lc": 40,
+        "Lf": 194,
+        "Ln": 63,
+        "Lp": 3,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 3,
+        "Lz": 299,
+        "P0": 3885,
+        "P1": 72,
+        "Pb": 134,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "explicitly_nonexistent_loci": [],
+      "generic_locus_counts_in_present_records": {
+        "C": 84,
+        "L": 1029,
+        "P": 4130,
+        "R": 142
+      },
+      "header": "#=IVTFF Eva- 2.0 M 5",
+      "id": "ZL3b",
+      "page_header_count": 227,
+      "present_locus_record_count": 5385,
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "unreadable_run_occurrences_by_length": {
+        "1": 216,
+        "2": 7,
+        "3": 26
+      }
+    }
+  },
+  "scope": "Present-record structural and annotation audit; no normalization or decoding"
+}
