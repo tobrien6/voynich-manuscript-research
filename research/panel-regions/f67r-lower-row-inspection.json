@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "inspection_id": "67r-lower-row-source-informed-inspection-v1",
+  "inspection_date": "2026-10-12",
+  "timezone": "America/New_York",
+  "published_plan_commit": "e3726cf0da68530cb18f380bde77b205a1fe4376",
+  "chronology": "Remote plan head verified before this new native-detail pass; the complete scan was already exposed. Declared tool sequence, not independently certified timing.",
+  "first_view_exact_timestamp_recorded": false,
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "scripts/build_67r_review.py": "07e071abd5ceb469c23aa3a16175ae5967b8c9c6d63fb5e47d64d01c3725085f",
+    "research/panel-regions/f67r-proposal.json": "f958a98977c56fcbdbb65f3f31c5ebd5733b0f00a5ca699023e3cb164eea45e7",
+    "research/panel-regions/f67r-p0-review.json": "13063b8994b342b97721e2fe6c01c6d976736fff23a8959e33c26a4f55b57a0e",
+    "research/panel-regions/f67r-upper-row-inspection.json": "1017ca8fdfba325b2070c7cc083ddba4b2fda5337cb3ec24cade9c1c6e393a18",
+    "research/panel-regions/F67R_LOWER_ROWS_PLAN.md": "1ddb6e4466015e6087c1c8e01bb1f4e12a65ddf71cdc65bb9e1541ef5f757e55"
+  },
+  "sources": [
+    {
+      "source_id": "ZL3b",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "source_id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ],
+  "source_credits_and_reuse_reference": "data/transliterations.json; research/transcriptions/SOURCES.md",
+  "normalization": "None; retain complete native source-reader bodies, flags, annotations, locators and file lines.",
+  "image_oid": "1006194",
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+  "pinned_yale_label": "67r",
+  "native_dimensions": [
+    4972,
+    3738
+  ],
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "dependency_group": "yale-leaves:67",
+  "target_count": 3,
+  "source_reading_count": 6,
+  "response_fingerprints": [
+    {
+      "id": "info",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/info.json",
+      "bytes": 887,
+      "sha256": "3e056555756e2f4aff9904b48752dd2a13161805f8608e34d38a1a5cec117f16",
+      "selection": "current service metadata",
+      "declared_native_dimensions": [
+        4972,
+        3738
+      ]
+    },
+    {
+      "id": "complete_scan",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/full/!1800,1800/0/default.jpg",
+      "bytes": 519434,
+      "sha256": "ed3657b74b4705da1b2605b12e0a9cda501df9384b8e0f8f5ce392498ee41e84",
+      "selection": "existing complete view verified again; already exposed",
+      "returned_dimensions": [
+        1800,
+        1353
+      ]
+    },
+    {
+      "id": "initial_band",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/2486,2550,2486,800/full/0/default.jpg",
+      "bytes": 379270,
+      "sha256": "5436d0c34929a93656728f550ea786c57cb70dff27a37296df87af93901657d5",
+      "selection": "fixed in published plan",
+      "returned_dimensions": [
+        2486,
+        800
+      ],
+      "native_context_xywh": [
+        2486,
+        2550,
+        2486,
+        800
+      ]
+    },
+    {
+      "id": "opening_tile",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/2670,2600,950,500/full/0/default.jpg",
+      "bytes": 96729,
+      "sha256": "a4d95ccae171363c970c412119985cf3d00a536d365a789c2199d0ff20877f2e",
+      "selection": "selected after complete scan and initial band",
+      "returned_dimensions": [
+        950,
+        500
+      ],
+      "native_context_xywh": [
+        2670,
+        2600,
+        950,
+        500
+      ]
+    },
+    {
+      "id": "middle_tile",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/3420,2600,950,500/full/0/default.jpg",
+      "bytes": 94685,
+      "sha256": "30357555a1493740999154b493305841bf64feb4517c13a405d5f41e41eaffc4",
+      "selection": "selected after complete scan and initial band",
+      "returned_dimensions": [
+        950,
+        500
+      ],
+      "native_context_xywh": [
+        3420,
+        2600,
+        950,
+        500
+      ]
+    },
+    {
+      "id": "ending_tile",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/4170,2600,760,500/full/0/default.jpg",
+      "bytes": 77301,
+      "sha256": "32cabca81cf19351cdc450a5a9f268e72fff14f09fdb8f189c998c14d0b40a07",
+      "selection": "selected after complete scan and initial band",
+      "returned_dimensions": [
+        760,
+        500
+      ],
+      "native_context_xywh": [
+        4170,
+        2600,
+        760,
+        500
+      ]
+    },
+    {
+      "id": "row_72_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/2630,2655,2300,180/full/0/default.jpg",
+      "bytes": 87557,
+      "sha256": "b35908ec881a418bb8d3dfcd1bc6ca25c112bbd6d5c0d5e23dfa3288b65de753",
+      "selection": "selected after overlapping tiles",
+      "returned_dimensions": [
+        2300,
+        180
+      ],
+      "native_context_xywh": [
+        2630,
+        2655,
+        2300,
+        180
+      ]
+    },
+    {
+      "id": "row_73_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/2630,2760,2300,205/full/0/default.jpg",
+      "bytes": 99508,
+      "sha256": "6604c1b39cb1f1e6735755dfeace5a38a8ab07154a1a7c76a515c00ed277e3bb",
+      "selection": "selected after overlapping tiles",
+      "returned_dimensions": [
+        2300,
+        205
+      ],
+      "native_context_xywh": [
+        2630,
+        2760,
+        2300,
+        205
+      ]
+    },
+    {
+      "id": "row_74_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/2630,2870,2300,200/full/0/default.jpg",
+      "bytes": 87624,
+      "sha256": "064d1aae1517e7364c9d4083648c9c12ece153385804221ecbc3b58f422a16f7",
+      "selection": "selected after overlapping tiles",
+      "returned_dimensions": [
+        2300,
+        200
+      ],
+      "native_context_xywh": [
+        2630,
+        2870,
+        2300,
+        200
+      ]
+    }
+  ],
+  "cached_shape_reference": {
+    "url": "https://voynich.nu/img/extra/eva01.gif",
+    "bytes": 51004,
+    "sha256": "c470d909c07c586f327a4a84f35efa879f765745744a0439690ed706f7b3e09f",
+    "returned_dimensions": [
+      640,
+      1032
+    ],
+    "transport": "Previously retrieved during upper-row review; cached bytes verified and viewed again, not a fresh request in this pass.",
+    "use": "Basic Eva shape context only; legacy punctuation is not used for parsing."
+  },
+  "reference_page": {
+    "url": "https://voynich.nu/transcr.html",
+    "locator": "Table 3 and adjacent notation explanation",
+    "transport": "Previously read through web reader during upper-row review; no new raw-body retrieval or hash is claimed.",
+    "raw_body_sha256": null
+  },
+  "source_annotation_context": {
+    "source_id": "ZL3b",
+    "source_file_line": 2943,
+    "comment": "# The following single line is in red ink",
+    "relative_position": "immediately before f67r2.73,+P0",
+    "known_before_detail_pass": true,
+    "interpretation_limit": "Publisher annotation agrees with visible red middle writing; it is not independent glyph evidence."
+  },
+  "service_metadata_receipt_comparison": {
+    "prior_record": "research/panel-regions/f67r-upper-row-inspection.json",
+    "prior_sha256": "c391e9f8bf144bd8d33744a3a5e28515bad5387fb75f42264c1f6954c123b29e",
+    "current_sha256": "3e056555756e2f4aff9904b48752dd2a13161805f8608e34d38a1a5cec117f16",
+    "only_changed_parsed_field": "profile[1].formats",
+    "prior_format_order": [
+      "jpg",
+      "tif",
+      "gif",
+      "png"
+    ],
+    "current_format_order": [
+      "tif",
+      "jpg",
+      "gif",
+      "png"
+    ],
+    "all_other_parsed_metadata_equal": true,
+    "exact_raw_difference_is_only_format_order_substring": true,
+    "native_dimensions_unchanged": true,
+    "complete_scan_bytes_unchanged": true,
+    "limits": "Each fingerprint identifies an actual response, not a permanent service edition; no prior receipt or scientific source is rewritten."
+  },
+  "selection_sequence": [
+    "All three targets and the initial 2486,2550,2486,800 band were fixed in the published plan.",
+    "The complete scan was freshly retrieved, verified against its accepted pin and viewed again; service metadata was retrieved.",
+    "The initial native band was retrieved and viewed, then three overlapping tiles were selected, retrieved and viewed.",
+    "The cached Basic Eva reference was viewed again after the tiles.",
+    "All three complete row contexts were selected after the tiles, retrieved and viewed; neighboring strokes were retained."
+  ],
+  "context_extensions": [],
+  "outcomes": {
+    "supported_by_visible_anchors": 3,
+    "contradicted": 0,
+    "insufficient_at_inspected_scale": 0
+  },
+  "records": [
+    {
+      "locus_key": "f67r2.72",
+      "proposed_physical_row_top_to_bottom": 1,
+      "context_window_id": "row_72_context",
+      "association_status": "supported_by_visible_anchors",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "dar.aldaiin.ydaiin.qkoy",
+          "image_observation": "The top lower-block row starts with a small loop and short low strokes, then a longer short-stroke group; a descending opening and a tall looped/benched cluster follow."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "ydaiin.qofair.ypair.ykoaiin",
+          "image_observation": "A short-stroke group precedes successive prominent tall crossing/looped structures and low curved endings in the expected order across the tiles."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "ydoly.ytalchos.oly.okey",
+          "image_observation": "A descending/looped group precedes a tall looped structure and several shorter rounded/curved clusters approaching the fore-edge. The writing here is pale."
+        }
+      ],
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at this scale; comparison is partial and source-informed.",
+      "unresolved_features": [
+        "Identical native source bodies are dependent representation agreement, not independent glyph certification.",
+        "Pale strokes, exact minim counts, all glyph values and word divisions remain unverified."
+      ],
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r2.72,@P0",
+          "source_file_line": 2942,
+          "native_text": "<%>dar.aldaiin.ydaiin.qkoy.ydaiin.qofair.ypair.ykoaiin.ydoly.ytalchos.oly.okey"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r2.72,@P0",
+          "source_file_line": 1859,
+          "native_text": "<%>dar.aldaiin.ydaiin.qkoy.ydaiin.qofair.ypair.ykoaiin.ydoly.ytalchos.oly.okey"
+        }
+      ],
+      "native_record_text_identical": true,
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    },
+    {
+      "locus_key": "f67r2.73",
+      "proposed_physical_row_top_to_bottom": 2,
+      "context_window_id": "row_73_context",
+      "association_status": "supported_by_visible_anchors",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "sshey and ZL sy,shees / IT syshees, then qeykeey",
+          "image_observation": "The red middle row starts with low hooked/roofed clusters and descending curved strokes, followed by a long downward crossing stem and an upright looped structure."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "ykchey.ykchey.qokeochy",
+          "image_observation": "Two adjacent red clusters have similar descending openings, prominent roofed/tall structures and curved endings; a longer cluster beginning with a crossing downward stem follows."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "oaiin, then ZL okol.ar.olar / IT okalar.ol",
+          "image_observation": "A compact rounded/short-stroke group is followed by a taller looped form and low curled terminal groups near the right edge. Their exact letters and divisions are not adjudicated."
+        }
+      ],
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at this scale; comparison is partial and source-informed.",
+      "unresolved_features": [
+        "Preserve ZL sy,shees versus IT syshees without choosing a boundary.",
+        "Preserve the complete ZL okol.ar.olar versus IT okalar.ol terminal reading difference, including differing letters and grouping.",
+        "Similar-looking adjacent middle clusters do not certify repeated identical glyph strings or a glyph function."
+      ],
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r2.73,+P0",
+          "source_file_line": 2944,
+          "native_text": "sshey.sy,shees.qeykeey.ykchey.ykchey.qokeochy.oaiin.okol.ar.olar"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r2.73,+P0",
+          "source_file_line": 1860,
+          "native_text": "sshey.syshees.qeykeey.ykchey.ykchey.qokeochy.oaiin.okalar.ol"
+        }
+      ],
+      "native_record_text_identical": false,
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    },
+    {
+      "locus_key": "f67r2.74",
+      "proposed_physical_row_top_to_bottom": 3,
+      "context_window_id": "row_74_context",
+      "association_status": "supported_by_visible_anchors",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "yshey.qokeeody.cheos.oeeos",
+          "image_observation": "The lowest row begins with faint low curved writing; a much clearer long downward stem linked to a tall structure follows, then two lower rounded clusters."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "qockhy.chos.aiin.okeeody.qokoaiin",
+          "image_observation": "A long downward/tall group is followed by short low curved and compact short-stroke clusters, then an oval/tall form and another prominent crossing/tall structure."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "ZL odain.ar.air.ay / IT odaiin.ar.oirsg",
+          "image_observation": "A loop-initial cluster with short strokes precedes small low curled groups at the right. This pale endpoint supplies broad context without resolving its stroke count or complete terminal sequence."
+        }
+      ],
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at this scale; comparison is partial and source-informed.",
+      "unresolved_features": [
+        "Preserve ZL odain versus IT odaiin without adjudicating a minim count.",
+        "Preserve ZL ar.air.ay versus IT ar.oirsg and the complete pale terminal uncertainty.",
+        "The faint opening and endpoint limit detailed glyph comparisons; placement support comes from partial common structures and order."
+      ],
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r2.74,+P0",
+          "source_file_line": 2945,
+          "native_text": "yshey.qokeeody.cheos.oeeos.qockhy.chos.aiin.okeeody.qokoaiin.odain.ar.air.ay<$>"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r2.74,+P0",
+          "source_file_line": 1861,
+          "native_text": "yshey.qokeeody.cheos.oeeos.qockhy.chos.aiin.okeeody.qokoaiin.odaiin.ar.oirsg<$>"
+        }
+      ],
+      "native_record_text_identical": false,
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    }
+  ],
+  "exposure": {
+    "six_source_readings_and_prior_layout_known": true,
+    "entire_complete_scan_already_viewed_in_upper_row_review": true,
+    "upper_four_rows_and_all_right_panel_content_already_exposed": true,
+    "source_red_ink_annotation_known_before_pass": true,
+    "source_informed_nonblind_ai_inspection": true,
+    "independent_manuscript_witness": false,
+    "untouched_evaluation_claim": false
+  },
+  "bounds_scope": "Overlapping inspection contexts include neighboring writing/drawing/margins; not exact glyph, word or locus masks.",
+  "usable_as_verified_corpus_join": false,
+  "usable_for_statistical_evaluation": false,
+  "original_proposal_checklist_upper_record_or_sources_modified": false,
+  "limits": [
+    "Partial shape/order anchors support all three proposed placements without certifying full source strings.",
+    "Pale openings/endpoints and all source-specific boundary/minim/terminal alternatives remain unresolved.",
+    "All seven proposed horizontal rows now have inspection context across two passes, on the same scan/leaf and without an accepted crosswalk.",
+    "Independent region/glyph review and an explicit corpus/image crosswalk remain necessary; the pilot 67r mapping gap stays open.",
+    "No source preference, glyph meaning, language, mechanism, decipherment or translation."
+  ],
+  "publication": "Only links, response fingerprints, credited native-source context and original observations; image/font binaries stay local.",
+  "physical_row_number_scope": "Ordinal within the right-panel lower horizontal block, top to bottom; not a whole-sheet row number."
+}
