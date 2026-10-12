@@ -39,18 +39,34 @@ An IVTFF locus is not automatically a complete physical line. State whether rows
 From the repository root with Python 3:
 
 ```sh
-python3 scripts/shuffle_token_lines.py research/token-controls/synthetic-corpus.json \
+python3 scripts/write_token_control.py research/token-controls/synthetic-corpus.json \
   --scope line --seed 1729 --trial 0 --output /tmp/line-control.json
-python3 scripts/shuffle_token_lines.py research/token-controls/synthetic-corpus.json \
+python3 scripts/write_token_control.py research/token-controls/synthetic-corpus.json \
   --scope folio-side --seed 1729 --trial 0 --output /tmp/side-control.json
 cmp /tmp/line-control.json research/token-controls/example-line-control.json
 cmp /tmp/side-control.json research/token-controls/example-folio-side-control.json
 python3 -m unittest discover -s tests -p 'test_token_shuffles.py' -v
+python3 -m unittest discover -s tests -p 'test_token_control_writer.py' -v
 ```
 
 `--seed` and `--trial` are required nonnegative integers. Keep a fixed preregistered seed and use consecutive trial numbers to generate a declared set of controls. Do not choose or exclude trials after inspecting a statistic. Different parameters may still produce the same permutation, especially for short or repeated-token lines.
 
-Add `--expected-sha256 DIGEST` to require the exact token-corpus input bytes. A mismatch fails before writing output. The output path must differ from the source path. Every result retains corpus provenance and includes algorithm version, scope, seed, trial, input hash, and unit/line/eligible-token/slot/exclusion counts. It records no wall-clock value, so the same inputs produce identical bytes. A line with no eligible tokens is retained as a degenerate control; a downstream statistic must handle its denominator explicitly.
+Add `--expected-sha256 DIGEST` to require the exact token-corpus input bytes. A mismatch fails before writing output. The guarded companion rejects direct, resolved-path, symlink, and existing hardlink aliases of its supplied corpus and writer/generator code, before calculation and again before writing. An ordinary new or existing unrelated output is permitted. Every result retains corpus provenance and includes algorithm version, scope, seed, trial, input hash, and unit/line/eligible-token/slot/exclusion counts. It records no wall-clock value, so the same inputs produce identical bytes. A line with no eligible tokens is retained as a degenerate control; a downstream statistic must handle its denominator explicitly.
+
+The historical `shuffle_token_lines.py` remains byte-identical because accepted
+locus-position and greedy-wrapping reports pin its producer hash. Its original
+direct CLI checks resolved input/output paths but does not reject hardlinks.
+On a disposable synthetic corpus, an output hardlinked to the input returned
+success and replaced the input bytes with the control output. Use
+`write_token_control.py` for generated writes. Its protection does not change
+the historical direct writer or the `make_control` algorithm. No manuscript
+source, frozen report, or committed fixture was modified by the reproducer.
+
+Five companion tests exercise actual CLI aliases of copied input and code files,
+both direct and package entry points, both committed scope outputs, unrelated
+existing output, byte-preserving refusal on invalid/hash-mismatched input, and
+a hardlink created during calculation. Temporary fixtures contain no manuscript
+text. Both committed outputs reproduce byte-for-byte with the guarded writer.
 
 The Python interface is `make_control(raw_corpus_bytes, scope, seed, trial)`. It returns the control corpus; it does not compute a test statistic, fit a candidate, select a split, or calculate a p-value.
 

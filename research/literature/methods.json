@@ -95,6 +95,14 @@
       "published": "2013-07-02",
       "venue": "PLOS ONE 8(7), e67310",
       "url": "https://doi.org/10.1371/journal.pone.0067310",
+      "related_preprint": {
+        "id": "1303.0347v1",
+        "url": "https://arxiv.org/abs/1303.0347v1",
+        "submitted_at_utc": "2013-03-02T03:57:15Z",
+        "inspected_on": "2026-10-12",
+        "source_inventory": "amancio-source-inventory.json",
+        "source_role": "Typesetting and figure bundle; processed corpus and analysis implementation not recovered from this artifact"
+      },
       "artifacts": [
         {
           "kind": "article_pdf",
