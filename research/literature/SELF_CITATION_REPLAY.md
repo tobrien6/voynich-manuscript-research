@@ -113,6 +113,11 @@ are the integration check; ordinary unit tests do not download or invoke Java.
 
 ## Interpretation and next test
 
+A separate [row-call trace](SELF_CITATION_ROW_TRACE.md) now exposes the model's
+paragraph flags without changing the complete saved output. Its ledger keeps
+the initialization row unannotated and retains native row identities for future
+unit-compatible comparisons; it does not perform a mechanism comparison.
+
 The result closes the specific source-build/supplied-output repeatability gap
 on this runtime, while the packaged binary/archive provenance audit remains
 separate. Equality to the release artifact does not establish that it is the
