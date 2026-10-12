@@ -1,5 +1,7 @@
 import copy
 from fractions import Fraction
+import hashlib
+import importlib
 from itertools import permutations
 import os
 from pathlib import Path
@@ -7,10 +9,16 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from scripts import greedy_wrap_control as accepted_wrap
-from scripts import interior_half_controls as accepted_half
-from scripts import interior_length_order as accepted_full
 from scripts import wrap_interior_symmetry as subject
+
+
+def accepted_helpers(settings):
+    modules = ('greedy_wrap_control', 'interior_half_controls', 'interior_length_order')
+    for name in modules:
+        path = 'scripts/' + name + '.py'
+        if hashlib.sha256((subject.ROOT / path).read_bytes()).hexdigest() != settings['input_sha256'][path]:
+            raise ValueError('executed reference helper differs from its accepted revision: ' + path)
+    return tuple(importlib.import_module('scripts.' + name) for name in modules)
 
 
 class WrappingSymmetryTests(unittest.TestCase):
@@ -18,6 +26,8 @@ class WrappingSymmetryTests(unittest.TestCase):
     def setUpClass(cls):
         cls.settings, cls.raws = subject.load_settings()
         cls.laws = {item['id']: subject.law(item) for item in cls.settings['laws']}
+        global accepted_wrap, accepted_half, accepted_full
+        accepted_wrap, accepted_half, accepted_full = accepted_helpers(cls.settings)
 
     def test_all_fixed_classes_match_sequential_accepted_wrapper_and_exact_scores(self):
         for case in self.settings['cases']:
@@ -125,6 +135,17 @@ class WrappingSymmetryTests(unittest.TestCase):
                     side_effect=lambda args, **kwargs: original_git(args, cwd=real_root)):
                 settings, _ = subject.load_settings()
             self.assertEqual(settings, self.settings)
+
+    def test_executed_reference_drift_is_rejected_before_import(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            changed = root / 'scripts/greedy_wrap_control.py'
+            changed.parent.mkdir()
+            changed.write_bytes(b'changed synthetic helper fixture')
+            with patch.object(subject, 'ROOT', root), patch.object(importlib, 'import_module') as imported:
+                with self.assertRaisesRegex(ValueError, 'executed reference helper'):
+                    accepted_helpers(self.settings)
+                imported.assert_not_called()
 
     def test_exclusive_output_rejects_existing_and_late_hardlink_aliases(self):
         with tempfile.TemporaryDirectory() as folder:

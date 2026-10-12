@@ -7255,7 +7255,7 @@
   ],
   "implementation_sha256": {
     "scripts/wrap_interior_symmetry.py": "4fed1b117ccc822e038bb900e24d089fc848f54ae3264222abb09c6f9a81d485",
-    "tests/test_wrap_interior_symmetry.py": "9ce6be65e963286c314293325ae744cd2c6edd36820bee2eeac6005b887daa9e"
+    "tests/test_wrap_interior_symmetry.py": "7abd421ea821bc93029b5045263ffd5f543f1e0d75ac4ca3779d372ac4decba6"
   },
   "input_sha256": {
     "research/line-wrap/PROTOCOL.md": "894f403e8a786c9ea27017e8eef7db849ad55c0d8ebab53e155de4d03b21c99d",

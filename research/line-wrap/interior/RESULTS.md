@@ -72,23 +72,26 @@ python3 scripts/wrap_interior_symmetry.py --check research/line-wrap/interior/ce
 python3 scripts/wrap_interior_symmetry.py --output /tmp/new-wrapping-certificates.json
 ```
 
-Nine tests independently compare every positive ordered event with the accepted
+Ten tests independently compare every positive ordered event with the accepted
 sequential wrapper and every eligible score with the accepted full/half methods.
 They cover unequal-law weights versus normalized probabilities, repeated and
 constant bags, short and impossible cases, singleton/domain guards, a separate
 zero-separator boundary implementation check, whole-stream carry/tail behavior,
 frozen-input drift, archival references despite later documentation edits,
+executed-reference drift before import,
 deterministic reporting and existing/late hardlink outputs.
 Outputs require a new unlinked file and are guarded before generation and again
-before an exclusive write. All nine tests pass; the entire report replays byte
+before an exclusive write. All ten tests pass; the entire report replays byte
 for byte. Its SHA-256 is
-`b027a7c56d6993657bedb854466c4dcbd9d5319302490517ff7c8f63488e7e79`.
+`3b2450af7a70fa5fcdddaa093f76a5c952ebedad5ada6f4f00952fcb133f8a00`.
 
 A post-result compatibility correction stopped requiring live copies of these
 historical references to match their old bytes. Current main had appended a
 documentary variance link to the half-method note, which the original guard
 incorrectly treated as a changed calculation input. The producer now verifies
-the pinned Git blobs directly; its calculation is standalone. The protocol,
+the pinned Git blobs directly; its calculation is standalone. The independent
+reference tests separately verify the three executed parent definition files
+against the declared hashes before importing them, rejecting runtime drift. The protocol,
 settings, proof and all numerical/provenance records remain identical to the
 first report; only the implementation/test fingerprints changed. The initial
 report SHA-256 was

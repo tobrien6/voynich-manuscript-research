@@ -139,3 +139,8 @@ disclosed shuffle protocol before applying it in a candidate comparison. A
 paper or generator comparison must explicitly match counting units, input,
 boundaries and null scope. Physical mapping, source/glyph adjudication and a
 real exposure-aware evaluation split remain outside this description.
+
+The [exact type-variance follow-up](REPEATING_TYPE_VARIANCE.md) adds joint
+no-event probabilities and signed type-pair covariance under this same
+fixed-gap locus control, preserving every count and mean in the present report.
+Its SD-scaled descriptions supply no normal-tail or decipherment claim.

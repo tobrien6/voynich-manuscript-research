@@ -33,6 +33,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Prefix and vocabulary-opportunity controls](research/hypotheses/y-prefix-specificity-v1/RESULTS.md): fixed q/o comparisons and matched y frequency/length cells reduce the raw lookup contrast while retaining all treatments and exclusions.
 - [Known-marker opportunity check](research/representation/KNOWN_MARKER_OPPORTUNITY.md): a fixed reversible toy marker retains exact source recovery while its matched lookup selectivity is zero.
 - [Fixed y-lookup image pairs](research/hypotheses/y-lookup-image-v1/RESULTS.md): two source-stable positive lookup cases traced to provisional target/internal-reference regions, retaining unverified glyph boundaries.
+- [Local lookup-pair reviewer](research/hypotheses/y-lookup-image-v1/viewer/README.md): hash-checked local windows beside literal ZL/IT rows and neighbors for the two accepted provisional pairs.
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
