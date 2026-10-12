@@ -28,6 +28,39 @@
       "header_version_statement": "Version 2a of 02/02/2023 modified 25/06/2025",
       "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
       "bytes": 342104
+    },
+    {
+      "id": "GC2a",
+      "title": "Glen Claston v101 transliteration, IVTFF version 2a",
+      "credit": "Glen Claston; IVTFF conversion hosted by Rene Zandbergen",
+      "url": "https://voynich.nu/data/GC2a-n.txt",
+      "path": "data/raw/GC2a-n.txt",
+      "alphabet": "v101",
+      "header_version_statement": "IVTFF version 2a of 05/02/2023 modified 25/06/2025",
+      "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "bytes": 314916
+    },
+    {
+      "id": "RF1b-full",
+      "title": "Reference transliteration 1b, full extended Eva export",
+      "credit": "Rene Zandbergen; automated combination of ZL and GC inputs",
+      "url": "https://voynich.nu/data/RF1b-e.txt",
+      "path": "data/raw/RF1b-e.txt",
+      "alphabet": "Eva-",
+      "header_version_statement": "Edition 1b per the publisher edition table; no version comment in file",
+      "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+      "bytes": 362373
+    },
+    {
+      "id": "RF1b-basic",
+      "title": "Reference transliteration 1b, basic Eva export",
+      "credit": "Rene Zandbergen; reduced export of combined ZL and GC inputs",
+      "url": "https://voynich.nu/data/RF1b-er.txt",
+      "path": "data/raw/RF1b-er.txt",
+      "alphabet": "Eva-",
+      "header_version_statement": "Edition 1b per the publisher edition table; no version comment in file",
+      "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+      "bytes": 343891
     }
   ]
 }
