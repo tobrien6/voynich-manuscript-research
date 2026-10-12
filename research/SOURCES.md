@@ -43,3 +43,9 @@
 Assign each source a stable identifier. Record its author or institution, title, URL or persistent identifier, version and access date when inspected, relevant folios or pages, the specific claim it supports, limitations, and reuse terms when data or images are involved.
 
 The [reference variant register](transcriptions/SOURCES.md) uses `TR` identifiers for edition publishers, format documentation, reuse terms, and the GC/RF extension to the accepted ZL/IT corpus. Its records distinguish source claims from the local aggregate audit.
+
+The [published-methods register](literature/README.md) uses `L` identifiers for a
+selective set of primary research papers. Its [records](literature/methods.json)
+pin inspected publication artifacts and distinguish reported measurements and
+nulls from unresolved historical corpus identity. It does not report replicated
+results or a decipherment.
