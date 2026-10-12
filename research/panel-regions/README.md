@@ -1,0 +1,71 @@
+# Provisional 67r panel layout
+
+Question: can layout and the documented naming convention narrow the image
+placement of native `f67r1` and `f67r2` before a glyph-level alignment?
+
+The [proposal record](f67r-proposal.json) is provisional. It is **not usable as
+a verified corpus join** and does not make the pilot's unresolved 67r target
+complete. It complements the
+[whole-corpus side-reference audit proposed in PR #37](https://github.com/tobrien6/voynich-manuscript-research/pull/37).
+
+## Sources and observation method
+
+Inspected Yale image [1006194, labeled 67r](https://collections.library.yale.edu/catalog/2002046?child_oid=1006194)
+on 11 October 2026 (America/New_York), using a
+[1,800-pixel-bounded derivative](https://collections.library.yale.edu/iiif/2/1006194/full/!1800,1800/0/default.jpg).
+The record includes that derivative's exact hash, size, and dimensions, plus
+the original image dimensions and pinned manifest identity. No image is
+redistributed.
+
+The [IVTFF specification](https://voynich.nu/software/ivtt/IVTFF_format.pdf),
+issue 2.0.2, section 4.2 and Figure 1 (printed pages 11–12), orders recto panel
+names away from the binding. Its illustrated example is 72; it does not itself
+verify 67r text placement. The source page IDs and locus-type counts were
+checked in the [pinned ZL3b/IT2a editions](../../data/transliterations.json).
+Source counts and opening loci were viewed **before** image inspection, so
+the layout concordance is not a blinded test or independent reproduction.
+
+## Observations and proposed correspondence
+
+| Proposed page | Direct image observation | Source annotations, in each edition | Interpretation to review |
+| --- | --- | --- | --- |
+| `f67r1` | Left field near the visible binding: four upper horizontal rows above a large colored radial drawing; circular bands and radial writing. | 19 present loci: 4 P0, 3 Cc, 12 Ri. | Native locations 1–4 may be the four upper rows, in order. |
+| `f67r2` | Right field beyond the principal crease: compartmented circular drawing and three lower horizontal rows, with a red middle row. | 74 present loci: 27 L0, 32 Pb, 12 Ls, 3 P0. | Native locations 72–74 may be the three lower rows, in order. |
+
+The visible binding and principal vertical crease support these **panel layout
+proposals** under the naming convention. The row-count correspondence supports
+a targeted review; it does not establish matching glyph strings. The two
+editions share location identifiers and type counts but differ in readings.
+Do not count those editions as two independent manuscript observations.
+
+No pixel masks, exact bounding boxes, circular/radial locus placement, or
+decoded content are assigned. Both panels reference one leaf and one canvas;
+keep them in the same sampling unit and disclose this image/source exposure.
+
+## Reproduce the structural checks
+
+From the repository root, Python 3.10 or later, standard library only:
+
+```sh
+python3 - <<'PY'
+from collections import Counter
+from scripts.audit_transliterations import load_sources
+for source, document in load_sources():
+    if source['id'] not in {'ZL3b', 'IT2a'}:
+        continue
+    for page in ('f67r1', 'f67r2'):
+        loci = [l for l in document.loci if l.page == page and l.present]
+        print(source['id'], page, len(loci), dict(Counter(l.kind for l in loci)))
+PY
+```
+
+To compare the inspection response, download the linked derivative locally
+and check its SHA-256 against the JSON record. A changed image derivative
+requires review; a hash match identifies the inspected bytes without proving
+that the observation is correct.
+
+Next test: an independent reviewer should compare every proposed horizontal
+location with the original-resolution glyph sequence, including ambiguous
+spaces and alternative readings in each edition. Reject or revise a placement
+when source order or glyphs disagree. Only after recording that review and
+precise regions should a separate verified image/text crosswalk be proposed.
