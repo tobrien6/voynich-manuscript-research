@@ -31,6 +31,12 @@ from an absent label, or infer a global folio offset. The proposed resolution
 and remaining checks are tracked in [issue #13](https://github.com/tobrien6/voynich-manuscript-research/issues/13).
 No glyph reading, cipher key, dating conclusion, or translation is established.
 
+The [source-numbering follow-up](SOURCE_CHECK.md) inspects the hosted Currier
+Table A, whose folio 116 row has page fields 235 and 236. It retains Reeds's
+Petersen counter and Stolfi's attributed page label separately, with a PDF
+fingerprint and explicit limits. These counter differences do not verify the
+legacy Yale alias or authorize a global folio shift.
+
 ## Registry and verification gate
 
 [decisions.json](decisions.json) is the versioned registry. Each source key is
