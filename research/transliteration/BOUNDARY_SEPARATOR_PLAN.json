@@ -1,0 +1,38 @@
+{
+  "analysis_id": "modern-boundary-separator-provenance-v1",
+  "base_commit": "af12c0ab25bc1520aff486fc2b2348b5c515a9d3",
+  "exposure": "Full accepted source files, catalog, concordance, all own prior source/image analyses and spans/viewer already exposed. This is descriptive source-provenance work without statistical tests, blind selection or untouched evaluation.",
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/transliteration/token_boundary_concordance.json": "8c93d9cf1bb83e4f9690378d5fdd6100377e019bf17dede7e0f70de7a4df1bb6",
+    "scripts/audit_eva_token_coverage.py": "dcd97f39c14ac78137cf5c3f1d622d72aa0229a5e8d6b64651d236bae69baf1e",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/paragraph_token_corpus.py": "8aa29f952bdff32499919b3f3a24413ddb45d057a544bed51afd9cd2eb2bd2c6",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "scripts/token_boundary_concordance.py": "426efab3c53865d7dab1de1da687e8f630ceeaab49cea2c2f4952949235692db"
+  },
+  "limits": "No manuscript pixels inspected for this contribution, no physical word/glyph validation, source preference/correction, alignment on different chains, modification of pending178/191 fields, historical notation work, language or translation.",
+  "markers": {
+    ",": "source uncertain apparent-space notation",
+    ".": "source apparent-space notation",
+    "<->": "source drawing-interruption notation",
+    "<~>": "source drawing-interruption notation with vertical misalignment"
+  },
+  "output": "Complete every-selected-key validation summary; every union-disagreement key/offset with both native markers, native raw ranges or null absence, policy cut flags, original source identifiers/file lines/raw-locus hashes; full policy/source/marker count partitions. Retain different-chain keys explicitly as unaligned.",
+  "parent_pr": 113,
+  "parent_report": "research/transliteration/token_boundary_concordance.json",
+  "processing": "ASCII letters preserve case and order; formatting whitespace and accepted free/text/paragraph annotations contribute no letters/cuts. All native markers split under split policy; commas create no cut under join. Reject unsupported notation and leading/trailing/consecutive separators. Reconstruct all 11760 accepted source/policy token arrays and whole-locus annotation counts before cross-source reporting.",
+  "raw_coordinates": "Half-open character offsets in the exact parsed logical locus text, after IVTFF file continuation assembly and outer strip; not physical-file bytes, image coordinates or manuscript spaces.",
+  "schema_version": 1,
+  "scope": "All 2940 accepted common eligible native P0 keys are traced source-internally under split/join. Cross-source positions are compared only on the 2054 exactly identical case-preserved ASCII chains. Retain every offset with a source-only cut in either policy; no readability or folio filtering.",
+  "source_file_sha256": {
+    "IT2a": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+    "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+  },
+  "sources": [
+    "ZL3b",
+    "IT2a"
+  ]
+}

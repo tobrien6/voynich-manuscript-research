@@ -135,3 +135,7 @@ test any frozen segmentation rule on exposure-valid reserved material under the
 The [exact token-count accounting](BOUNDARY_COUNT_ACCOUNTING.md) separates
 same-chain boundary contributions from the unaligned different-chain remainder
 and retains equal-token-count cases with different encoded boundaries.
+
+The [native separator provenance ledger](BOUNDARY_SEPARATOR_PROVENANCE.md)
+traces periods, uncertain commas and drawing notation at every source-only cut,
+keeping encoded source coordinates separate from manuscript word decisions.
