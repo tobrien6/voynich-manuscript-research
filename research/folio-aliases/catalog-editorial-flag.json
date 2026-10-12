@@ -85,6 +85,55 @@
       "range_as_printed": "103r-117v",
       "terminal_label": "117v",
       "sic_immediately_after_terminal_label": false
+    },
+    "english_licensed_snippet": {
+      "url": "https://books.google.com/books?id=OF0oDwAAQBAJ&printsec=frontcover#v=onepage&q=117v&f=false",
+      "bibliographic_metadata_url": "https://books.google.com/books/about/The_Voynich_Manuscript.html?id=OF0oDwAAQBAJ",
+      "google_volume_id": "OF0oDwAAQBAJ",
+      "title": "The Voynich Manuscript: The Mysterious Code That Has Defied Interpretation for Centuries",
+      "authors": [
+        "Gerry Kennedy",
+        "Rob Churchill"
+      ],
+      "metadata_reported_year": 2006,
+      "metadata_reported_edition": "3, revised",
+      "metadata_reported_isbn": "9781594778544",
+      "interface_display_permission_credit": "Simon and Schuster",
+      "query": "117v",
+      "displayed_search_result_count": 2,
+      "short_verbatim": "117v [sic]",
+      "printed_page": null,
+      "page_number_field_displayed": false,
+      "page_preview_available": false,
+      "full_english_page_inspected": false,
+      "reference_7_checked": false,
+      "inspection_method": [
+        "Browser display",
+        "Accessible text"
+      ],
+      "local_cropped_capture": {
+        "filename": "english-117v-snippet.png",
+        "bytes": 41171,
+        "sha256": "f86e4db2016b430874cb55dd00c817291c20552de3def03db82688f33a931c9d",
+        "scope": "Public results only; excludes account and library details; not committed"
+      },
+      "scope": "Licensed search snippet in a later English digital edition; not an inspected first-edition page, marker attribution, replacement label, custodial correction or physical collation.",
+      "separate_number_search": {
+        "url": "https://books.google.com/books?id=OF0oDwAAQBAJ&printsec=frontcover#v=snippet&q=116&f=false",
+        "query": "116",
+        "displayed_search_result_count": 2,
+        "first_result_reported_number": "116",
+        "first_result_printed_page": null,
+        "first_result_page_preview_available": false,
+        "reference_7_identified": false,
+        "local_cropped_capture": {
+          "filename": "english-116-snippet.png",
+          "bytes": 42082,
+          "sha256": "2792df36fab403d01a47a0e3428220314cd7ee7423b645ff8fee3017b877aa72",
+          "scope": "Public results only; excludes account and library details; not committed"
+        },
+        "scope": "One truncated physical-description snippet and one other search hit; no full passage or endnote inspection."
+      }
     }
   },
   "registry_snapshot": {
@@ -95,5 +144,5 @@
   "mapping_allowed": false,
   "verified_target": null,
   "apply_to_statistics": false,
-  "next_test": "Inspect original English edition and reference 7, then seek explicit custodial correction or scholarly catalog-to-surface comparison."
+  "next_test": "Inspect an available English page and reference 7, then seek explicit custodial correction or scholarly catalog-to-surface comparison."
 }

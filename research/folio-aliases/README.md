@@ -37,10 +37,10 @@ Petersen counter and Stolfi's attributed page label separately, with a PDF
 fingerprint and explicit limits. These counter differences do not verify the
 legacy Yale alias or authorize a global folio shift.
 
-The [editorial-marker follow-up](CATALOG_EDITORIAL_FLAG.md) locates a publisher
-representation that retains the catalog label with `[sic]`. Its bounded excerpt
-supplies no explicit replacement or catalog-to-canvas correspondence. The
-registry and blocked lookup remain unchanged.
+The [editorial-marker follow-up](CATALOG_EDITORIAL_FLAG.md) locates a Spanish
+publisher file and an English licensed snippet that retain the catalog label
+with `[sic]`. These bounded observations supply no explicit replacement or
+catalog-to-canvas correspondence. The registry and blocked lookup remain unchanged.
 
 ## Registry and verification gate
 
