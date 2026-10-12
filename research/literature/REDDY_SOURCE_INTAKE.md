@@ -110,6 +110,12 @@ PDF and extracted text remain local; comparator language files were not fetched.
 No license file is present in the pinned tree and GitHub's license field is
 null, so this contribution redistributes original code and metadata only.
 
+The [advertised-history audit](REDDY_HISTORY_INTAKE.md) now extends the bounded
+code search across all six reachable commits and both Python versions, with
+complete tree reconstruction and unchanged native input blob identities.
+Neither source version contains the Table 2 predictor; other archives remain
+outside that search.
+
 Next recover the original predictor/preprocessing if available, or separately
 freeze an explicit operationalization with complete type folds, word-boundary
 handling, tie/fallback rules and aggregation. Keep such a run distinct from
