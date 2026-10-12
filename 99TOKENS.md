@@ -46,6 +46,12 @@ The [token-order control generator](research/token-controls/README.md) supplies 
 
 The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records literal EVA q/y-prefix and notation-length contrasts at original first and last token slots under the same uncertainty policies, with [complete results](research/transliteration/locus_positions.json). It uses conditional within-locus controls and explicit eligibility counts. These measurements constrain simple exchangeability within the chosen units; they do not identify a language, cipher, glyph reading, or translation.
 
+The [fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md)
+tests transcription sensitivity on identical eligible locus samples. The
+observed effect directions persist, while notation-length measurements and
+individual-locus contrasts remain sensitive to source and uncertainty choices.
+This is exploratory evidence for candidate constraints, not a decipherment.
+
 The [prefix stratification](research/transliteration/PREFIX_STRATA.md) separates source-marked paragraph starts and source Currier labels on 3,848 shared regular P0 locations, excluding 36 same-line fragments. In the primary treatment, first-slot y enrichment occurs in non-paragraph-start loci, while the q contrast within those non-paragraph-start cohorts has opposite signs in source groups A and B. All uncertainty treatments, denominators, and controls are retained in the [complete report](research/transliteration/prefix_strata.json). These exploratory patterns constrain candidate mechanisms on already exposed text; the labels do not identify natural languages and the results do not validate a decipherment.
 
 ## Evidence standard
