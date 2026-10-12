@@ -50,6 +50,13 @@ bits per target. These smoothed fit-excluded scores include initial units and
 termination; their target population differs from the parent's empirical
 adjacent-edge conditional entropy. EOS is an accounting event, not a glyph.
 
+At initial `(BOS,BOS)` contexts, Q1's `BOS` counts and Q2's two-label counts
+carry the same initial-symbol information. Q2 still changes probabilities by
+applying another shrinkage step. The aggregate gain therefore compares the
+frozen predictors, including initial and termination events and smoothing
+differences; it does not by itself isolate additional information from another
+preceding manuscript symbol.
+
 ## Complete paired sensitivity outcomes
 
 Gains are loss of the lower order minus loss of the higher order, divided by
