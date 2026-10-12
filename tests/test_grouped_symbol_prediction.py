@@ -1,4 +1,5 @@
 from collections import defaultdict
+import ast
 from contextlib import redirect_stderr, redirect_stdout
 from copy import deepcopy
 from fractions import Fraction
@@ -58,6 +59,24 @@ def image_fixture():
 
 
 class GroupedSymbolTests(unittest.TestCase):
+    def test_every_repository_import_is_pinned_before_manuscript_fitting(self):
+        pending, found = ['grouped_symbol_prediction'], set()
+        while pending:
+            name = pending.pop()
+            if name in found:
+                continue
+            found.add(name)
+            for node in ast.walk(ast.parse((g.ROOT / 'scripts' / (name + '.py')).read_text())):
+                if isinstance(node, ast.ImportFrom):
+                    names = [node.module.split('.')[0]] if node.module else [a.name for a in node.names]
+                elif isinstance(node, ast.Import):
+                    names = [a.name.split('.')[0] for a in node.names]
+                else:
+                    continue
+                pending.extend(n for n in names if (g.ROOT / 'scripts' / (n + '.py')).exists())
+        self.assertEqual({'scripts/' + n + '.py' for n in found if n != 'grouped_symbol_prediction'},
+                         {p for p in g.PIN_PATHS if p.startswith('scripts/')})
+
     def test_hand_computed_probabilities_and_complete_token_losses(self):
         model = g.fit([row(0)], ABC)
         q0, q1, q2 = g.probabilities(model, g.BOS, 'a', 'b')

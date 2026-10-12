@@ -35,7 +35,8 @@ PIN_PATHS = {
     *('scripts/' + name + '.py' for name in (
         'audit_transliterations', 'ivtff', 'eva_token_adapter', 'token_baselines',
         'eva_unit_sensitivity', 'paired_symbol_entropy', 'audit_transcription_images',
-        'index_yale_manifest', 'validate_evaluation_split')),
+        'index_yale_manifest', 'validate_evaluation_split', 'locus_position_baseline',
+        'run_locus_position_baseline', 'shuffle_token_lines', 'repetition_moments')),
 }
 
 

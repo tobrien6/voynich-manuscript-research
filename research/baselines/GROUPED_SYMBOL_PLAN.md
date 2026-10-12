@@ -118,3 +118,12 @@ particular fixed predictors, not all possible mechanisms.
 Later mechanism comparisons need stronger comparable controls and an honest
 prospective split under the [decipherment protocol](../DECIPHERMENT_PROTOCOL.md).
 This contribution freezes a modest predictive baseline on already exposed data.
+
+Before the first manuscript fit, import inspection added pins for four
+transitively imported helpers (`locus_position_baseline`,
+`run_locus_position_baseline`, `shuffle_token_lines`, `repetition_moments`). Their
+analysis functions are unused here; their module bytes are nevertheless part
+of the reproducible import environment. This completes the input scope after
+the initial plan commit and synthetic implementation, without changing any
+model, fold, cohort, score or decision choice. The final pre-fit commit records
+all twenty artifact/helper pins and an import-closure regression.
