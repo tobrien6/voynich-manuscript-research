@@ -93,9 +93,11 @@ python3 scripts/entropy_edge_accounting.py --check research/representation/entro
 python3 -m unittest tests.test_entropy_edge_accounting -v
 ```
 
-Seven tests check hand-worked values, endpoint mass, deterministic successors,
+Nine tests check hand-worked values, endpoint mass, deterministic successors,
 unchanged atomic labels/inputs, rejected undefined samples and protected input
-files. An independent successor-distribution calculation exhaustively checks
+files, including existing hardlink aliases. A copied synthetic workspace also
+checks that invocation through a directory symlink preserves resolved pin names
+and identical output. An independent successor-distribution calculation exhaustively checks
 all 252 binary sequences of lengths two through seven. The full synthetic
 report replays with its plan/source/implementation fingerprints.
 

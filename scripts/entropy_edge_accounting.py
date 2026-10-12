@@ -72,7 +72,7 @@ def edge_summary(sequence):
 
 
 def make_report():
-    pins = [PLAN, SOURCES, Path(__file__), ROOT / "scripts/representation_entropy_demo.py"]
+    pins = [PLAN, SOURCES, Path(__file__).resolve(), ROOT / "scripts/representation_entropy_demo.py"]
     return {
         "schema_version": 1, "method": "finite-sequence-entropy-edge-accounting-v1",
         "data_kind": "invented_atomic_labels_only", "manuscript_data_used": False,
@@ -95,7 +95,8 @@ def main():
     try:
         protected = {PLAN.resolve(), SOURCES.resolve(), Path(__file__).resolve(),
                      (ROOT / "scripts/representation_entropy_demo.py").resolve()}
-        if args.output and args.output.resolve() in protected:
+        if args.output and (args.output.resolve() in protected or
+                            args.output.exists() and any(args.output.samefile(path) for path in protected)):
             raise ValueError("output must not overwrite the plan, method sources or implementation")
         report = make_report()
         if args.check and report != json.loads(args.check.read_text(encoding="utf-8")):

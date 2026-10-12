@@ -12,7 +12,7 @@
   "input_pins": {
     "research/representation/ENTROPY_EDGES_PLAN.md": "25901a8d94b98748b85f5c85d3ad323d14b2d16d01ac40b536992c1d7731ac72",
     "research/literature/entropy-methods.json": "887d84a0d2cde2cb77789701f12fd7857d13f65e790730b68823852c31c9230c",
-    "scripts/entropy_edge_accounting.py": "2eabe193d4f2975c80da594ef640c5a0d317c376afd71307bbd940b93d0cf44b",
+    "scripts/entropy_edge_accounting.py": "e16648671730ca8f19e1b741bcf047923e91e42038f974618e2407ed7dda444e",
     "scripts/representation_entropy_demo.py": "88ef38c27f97f8ede64337a5a0a05500fbadcd936f17700d98d59e8cf8f43860"
   },
   "examples": [

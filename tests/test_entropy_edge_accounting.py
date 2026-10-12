@@ -2,8 +2,11 @@ from collections import Counter
 import itertools
 import math
 from pathlib import Path
+import os
+import shutil
 import subprocess
 import sys
+import tempfile
 import unittest
 
 from scripts.entropy_edge_accounting import count_entropy, edge_summary
@@ -85,6 +88,49 @@ class EntropyEdgeAccountingTests(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("must not overwrite", result.stderr)
             self.assertEqual(path.read_bytes(), before)
+
+    def copied_fixture(self, directory):
+        root = Path(directory) / "fixture"
+        scripts = root / "scripts"
+        scripts.mkdir(parents=True)
+        original = Path(__file__).resolve().parents[1]
+        for name in ("entropy_edge_accounting.py", "representation_entropy_demo.py"):
+            shutil.copyfile(original / "scripts" / name, scripts / name)
+        plan = root / "research/representation/ENTROPY_EDGES_PLAN.md"
+        plan.parent.mkdir(parents=True)
+        plan.write_text("Invented temporary plan; no actual source or manuscript data")
+        sources = root / "research/literature/entropy-methods.json"
+        sources.parent.mkdir(parents=True)
+        sources.write_text('{"synthetic": true}')
+        return root, (plan, sources, scripts / "entropy_edge_accounting.py",
+                      scripts / "representation_entropy_demo.py")
+
+    def test_hardlink_outputs_are_rejected_and_both_paths_preserve_their_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root, protected = self.copied_fixture(directory)
+            for index, source in enumerate(protected):
+                alias = Path(directory) / f"output-alias-{index}.json"
+                os.link(source, alias)
+                before = source.read_bytes()
+                result = subprocess.run([sys.executable, str(root / "scripts/entropy_edge_accounting.py"),
+                                         "--output", str(alias)], cwd=root, capture_output=True, text=True)
+                with self.subTest(source=source.name):
+                    self.assertEqual(result.returncode, 1, result.stderr)
+                    self.assertIn("must not overwrite", result.stderr)
+                    self.assertEqual(source.read_bytes(), before)
+                    self.assertEqual(alias.read_bytes(), before)
+
+    def test_symlink_workspace_invocation_preserves_resolved_pin_names(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root, _ = self.copied_fixture(directory)
+            alias = Path(directory) / "workspace-alias"
+            alias.symlink_to(root, target_is_directory=True)
+            direct, linked = root / "direct.json", root / "linked.json"
+            for entry, output in ((root, direct), (alias, linked)):
+                result = subprocess.run([sys.executable, str(entry / "scripts/entropy_edge_accounting.py"),
+                                         "--output", str(output)], cwd=root, capture_output=True, text=True)
+                self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(direct.read_bytes(), linked.read_bytes())
 
 
 if __name__ == "__main__":
