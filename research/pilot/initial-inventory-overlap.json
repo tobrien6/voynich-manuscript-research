@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "method": "initial-three-pilot-image-overlap-v1",
+  "inputs": [
+    {
+      "inventory_id": "section_beginnings",
+      "metadata_path": "research/pilot/inventory.json",
+      "metadata_sha256": "9d34cfdc78a0900e52a8833fd67d752b42aae4667fc57c815e6a205d0a786e79",
+      "observations_path": "research/pilot/INVENTORY.md",
+      "observations_sha256": "5576b6aea4c74161cff24af1e6dbc109de25ff4ea6361ea6efd8406d4e8142b2"
+    },
+    {
+      "inventory_id": "boundary_survey",
+      "metadata_path": "research/boundary-pilot/selection.json",
+      "metadata_sha256": "7ddc3fecf0d626b9733aec9349126b18bbd28d7dac39ce939c743719f791189d",
+      "observations_path": "research/boundary-pilot/INVENTORY.md",
+      "observations_sha256": "d7a2056af6b9e0b8d75bb4882b16b2d2abf0de14e29d4f3bf82185e61dbe1aac"
+    },
+    {
+      "inventory_id": "standalone_rectos",
+      "metadata_path": "research/data/pilot-folios.csv",
+      "metadata_sha256": "32619b810520e36938053e3e782e76b7383d0fcd020a5f14186b81da7a060767",
+      "observations_path": "research/PILOT_INVENTORY.md",
+      "observations_sha256": "ed855db4f2bfafc1072213463e5b2e15f5bb5dc687b359fd3cbf05bc5c730d96"
+    }
+  ],
+  "image_index": {
+    "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+    "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "access_date": "2026-10-11",
+    "access_timezone": "America/New_York",
+    "canvases_csv_sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+  },
+  "scope": "three initial inventories only; no complete exposure history is certified",
+  "record_count": 30,
+  "distinct_canvas_count": 15,
+  "distinct_dependency_component_count": 14,
+  "explicit_label_leaf_ids": [
+    "1",
+    "2",
+    "66",
+    "67",
+    "68",
+    "73",
+    "75",
+    "76",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "100",
+    "101",
+    "102",
+    "103"
+  ],
+  "explicit_label_leaf_count": 17,
+  "inventories": [
+    {
+      "inventory_id": "section_beginnings",
+      "records": 10,
+      "distinct_canvases": 10,
+      "distinct_dependency_components": 10
+    },
+    {
+      "inventory_id": "boundary_survey",
+      "records": 10,
+      "distinct_canvases": 10,
+      "distinct_dependency_components": 10
+    },
+    {
+      "inventory_id": "standalone_rectos",
+      "records": 10,
+      "distinct_canvases": 10,
+      "distinct_dependency_components": 10
+    }
+  ],
+  "pairwise_overlaps": [
+    {
+      "left": "section_beginnings",
+      "right": "boundary_survey",
+      "shared_canvases": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254"
+      ],
+      "shared_dependency_groups": [
+        "yale-leaves:1",
+        "yale-leaves:103",
+        "yale-leaves:67",
+        "yale-leaves:75",
+        "yale-leaves:85+86",
+        "yale-leaves:87"
+      ]
+    },
+    {
+      "left": "section_beginnings",
+      "right": "standalone_rectos",
+      "shared_canvases": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254"
+      ],
+      "shared_dependency_groups": [
+        "yale-leaves:1",
+        "yale-leaves:103",
+        "yale-leaves:67",
+        "yale-leaves:75",
+        "yale-leaves:85+86",
+        "yale-leaves:87"
+      ]
+    },
+    {
+      "left": "boundary_survey",
+      "right": "standalone_rectos",
+      "shared_canvases": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006192",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006206",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254"
+      ],
+      "shared_dependency_groups": [
+        "yale-leaves:1",
+        "yale-leaves:100+101+102",
+        "yale-leaves:103",
+        "yale-leaves:66",
+        "yale-leaves:67",
+        "yale-leaves:73",
+        "yale-leaves:75",
+        "yale-leaves:84",
+        "yale-leaves:85+86",
+        "yale-leaves:87"
+      ]
+    }
+  ],
+  "canvases": [
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+      "image_oid": "1006076",
+      "yale_label": "1r",
+      "explicit_label_folio_sides": [
+        "1r"
+      ],
+      "dependency_group": "yale-leaves:1",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006076",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "1r"
+        },
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "1r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006078",
+      "image_oid": "1006078",
+      "yale_label": "2r",
+      "explicit_label_folio_sides": [
+        "2r"
+      ],
+      "dependency_group": "yale-leaves:2",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006078",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "2r"
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006192",
+      "image_oid": "1006192",
+      "yale_label": "66r",
+      "explicit_label_folio_sides": [
+        "66r"
+      ],
+      "dependency_group": "yale-leaves:66",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006192",
+      "inventory_references": [
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "66r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+      "image_oid": "1006194",
+      "yale_label": "67r",
+      "explicit_label_folio_sides": [
+        "67r"
+      ],
+      "dependency_group": "yale-leaves:67",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006194",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "67r"
+        },
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "67r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+      "image_oid": "1006196",
+      "yale_label": "68r",
+      "explicit_label_folio_sides": [
+        "68r"
+      ],
+      "dependency_group": "yale-leaves:68",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006196",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "68r"
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006206",
+      "image_oid": "1006206",
+      "yale_label": "73r",
+      "explicit_label_folio_sides": [
+        "73r"
+      ],
+      "dependency_group": "yale-leaves:73",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006206",
+      "inventory_references": [
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "73r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+      "image_oid": "1006208",
+      "yale_label": "75r",
+      "explicit_label_folio_sides": [
+        "75r"
+      ],
+      "dependency_group": "yale-leaves:75",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006208",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "75r"
+        },
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "75r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+      "image_oid": "1006210",
+      "yale_label": "76r",
+      "explicit_label_folio_sides": [
+        "76r"
+      ],
+      "dependency_group": "yale-leaves:76",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006210",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "76r"
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+      "image_oid": "1006226",
+      "yale_label": "84r",
+      "explicit_label_folio_sides": [
+        "84r"
+      ],
+      "dependency_group": "yale-leaves:84",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006226",
+      "inventory_references": [
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "84r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+      "image_oid": "1006231",
+      "yale_label": "85v and 86r (foldout)",
+      "explicit_label_folio_sides": [
+        "85v",
+        "86r"
+      ],
+      "dependency_group": "yale-leaves:85+86",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006231",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "85v"
+        },
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "86r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+      "image_oid": "1006232",
+      "yale_label": "87r",
+      "explicit_label_folio_sides": [
+        "87r"
+      ],
+      "dependency_group": "yale-leaves:87",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006232",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "87r"
+        },
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "87r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006248",
+      "image_oid": "1006248",
+      "yale_label": "100r",
+      "explicit_label_folio_sides": [
+        "100r"
+      ],
+      "dependency_group": "yale-leaves:100+101+102",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006248",
+      "inventory_references": [
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+      "image_oid": "1006251",
+      "yale_label": "101v (part) and 102r",
+      "explicit_label_folio_sides": [
+        "101v",
+        "102r"
+      ],
+      "dependency_group": "yale-leaves:100+101+102",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006251",
+      "inventory_references": [
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "102r"
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254",
+      "image_oid": "1006254",
+      "yale_label": "103r",
+      "explicit_label_folio_sides": [
+        "103r"
+      ],
+      "dependency_group": "yale-leaves:103",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006254",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "103r"
+        },
+        {
+          "inventory_id": "boundary_survey",
+          "source_target": "103r"
+        },
+        {
+          "inventory_id": "standalone_rectos",
+          "source_target": null
+        }
+      ]
+    },
+    {
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037112",
+      "image_oid": "1037112",
+      "yale_label": "88r",
+      "explicit_label_folio_sides": [
+        "88r"
+      ],
+      "dependency_group": "yale-leaves:88+89+90",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1037112",
+      "inventory_references": [
+        {
+          "inventory_id": "section_beginnings",
+          "source_target": "88r"
+        }
+      ]
+    }
+  ],
+  "components_with_multiple_selected_canvases": [
+    {
+      "dependency_group": "yale-leaves:100+101+102",
+      "canvas_uris": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006248",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251"
+      ]
+    }
+  ],
+  "limits": [
+    "Repeated observations may be useful reviews, but do not create additional manuscript samples.",
+    "Different canvases in one component are conservatively related, not proven independent.",
+    "Canvas labels and inventory records do not establish complete visible text, glyph alignment, or actual exposure by a particular researcher.",
+    "No evaluation units, partition, freeze timestamp, or unseen-material claim is assigned."
+  ]
+}
