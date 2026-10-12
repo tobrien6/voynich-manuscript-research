@@ -34,6 +34,8 @@ The [visual inventory](research/pilot/INVENTORY.md) now records ten selected tar
 
 The [section boundary survey](research/boundary-pilot/INVENTORY.md) and [standalone-recto boundary inventory](research/PILOT_INVENTORY.md), with its [selection protocol](research/PILOT_SELECTION.md) and [CSV](research/data/pilot-folios.csv), add complementary boundary records. The survey includes 102r within a shared scan; the standalone-recto rule selects 100r instead. These inventories share most of their images, so their observations do not create independent manuscript samples. Prior exposure must be recorded across all inventories when defining a later split.
 
+The [working transliteration decision](research/transliteration/DECISION.md) now recommends the pinned ZL3b source for preserving uncertainty, with IT2a for paired sensitivity checks. Source bytes, credits, reuse terms, and structural coverage are recorded in the [data catalog](data/transliterations.json) and [coverage audit](research/transliteration/coverage_audit.json). This supplies the initial source choice; glyph adjudication, image alignment, the evaluation split, and a registered hypothesis remain pending.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.

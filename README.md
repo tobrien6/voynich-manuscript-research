@@ -14,6 +14,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Project brief and research plan](99TOKENS.md)
 - [Decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md)
 - [Primary source register](research/SOURCES.md)
+- [Pinned transliteration sources and working selection](research/transliteration/DECISION.md)
 - [Section-beginning visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
