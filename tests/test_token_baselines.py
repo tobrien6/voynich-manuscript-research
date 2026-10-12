@@ -1,11 +1,26 @@
 from itertools import permutations
 import unittest
+from unittest.mock import patch
 
 from scripts.ivtff import parse_ivtff
-from scripts.token_baselines import Token, adjacency, expected_repeats, retain, summarize, tokenize
+from scripts.token_baselines import Token, adjacency, baselines, expected_repeats, paired_sources, retain, summarize, tokenize
 
 
 class TokenPolicyTests(unittest.TestCase):
+    def test_comparator_catalog_growth_does_not_change_the_declared_pair(self):
+        eva = parse_ivtff('#=IVTFF Eva- 2.0 M\n<f1r>\n<f1r.1,@P0> a.a.b\n')
+        v101 = parse_ivtff('#=IVTFF v101 2.0 M\n<f1r>\n<f1r.1,@P0> a!b\n')
+        sources = [({'id': 'GC2a', 'sha256': 'synthetic'}, v101),
+                   ({'id': 'IT2a', 'sha256': 'synthetic'}, eva),
+                   ({'id': 'ZL3b', 'sha256': 'synthetic'}, eva)]
+        with patch('scripts.token_baselines.load_sources', return_value=sources):
+            report = baselines(repetitions=1, seed=1)
+        self.assertEqual([source['id'] for source in report['sources']], ['ZL3b', 'IT2a'])
+        self.assertEqual(report['selection']['count'], 1)
+        for invalid in (sources[:2], sources + [sources[2]]):
+            with self.assertRaisesRegex(ValueError, 'exactly one pinned'):
+                paired_sources(invalid)
+
     def test_spaces_intrusions_comments_and_tags_have_distinct_meanings(self):
         text = '<%><@H=2>a b,c<! , [x:y]><->d<~>e<$>'
         self.assertEqual([t.value for t in tokenize(text, 'split')], ['ab', 'c', 'd', 'e'])

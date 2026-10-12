@@ -10,11 +10,15 @@ decipherment test. There is no fitted decoding rule or translation in this resul
 
 ## Data, selection, and method
 
-Use the two [pinned sources](../../data/transliterations.json) selected in
+Explicitly select ZL3b and IT2a from the [pinned source catalog](../../data/transliterations.json) as specified in
 [DECISION.md](DECISION.md). Select the intersection of their present loci whose
 source-assigned kind is `P0`: **3,884 locations**. The sorted location-list digest,
 source digests, all eight variants, and every shuffle result are recorded in
 [token_baselines.json](token_baselines.json).
+
+Other pinned comparator exports do not enter this paired analysis. Adding a
+different alphabet or export to the catalog must not silently change its sample
+or tokenization assumptions.
 
 Each source is processed under four combinations:
 

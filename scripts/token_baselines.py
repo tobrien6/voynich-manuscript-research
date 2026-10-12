@@ -230,10 +230,22 @@ def summarize(loci, spacing, alternatives, repetitions, seed):
     }
 
 
+def paired_sources(sources):
+    """Keep the declared ZL/IT analysis stable as the source catalog grows."""
+    paired = []
+    for identifier in ('ZL3b', 'IT2a'):
+        matches = [(source, document) for source, document in sources
+                   if source['id'] == identifier]
+        if len(matches) != 1:
+            raise ValueError(f'Expected exactly one pinned {identifier} source')
+        paired.append(matches[0])
+    return paired
+
+
 def baselines(repetitions=199, seed=20261011):
     if repetitions < 1:
         raise ValueError('repetitions must be positive')
-    sources = load_sources()
+    sources = paired_sources(load_sources())
     sets = [{locus.key for locus in doc.loci if locus.present and locus.kind == 'P0'} for _, doc in sources]
     common = set.intersection(*sets)
     if not common:
@@ -241,7 +253,7 @@ def baselines(repetitions=199, seed=20261011):
     selection_hash = hashlib.sha256(('\n'.join(sorted(common)) + '\n').encode()).hexdigest()
     report = {
         'schema_version': 1, 'method': 'paired exploratory token baselines v1',
-        'selection': {'kind': 'P0', 'rule': 'intersection of present P0 loci in every pinned source',
+        'selection': {'kind': 'P0', 'rule': 'intersection of present P0 loci in the paired ZL3b and IT2a sources',
                       'count': len(common), 'sorted_locus_keys_sha256': selection_hash},
         'sources': [],
     }

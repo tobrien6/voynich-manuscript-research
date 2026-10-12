@@ -3,7 +3,7 @@
   "method": "paired exploratory token baselines v1",
   "selection": {
     "kind": "P0",
-    "rule": "intersection of present P0 loci in every pinned source",
+    "rule": "intersection of present P0 loci in the paired ZL3b and IT2a sources",
     "count": 3884,
     "sorted_locus_keys_sha256": "5fe25bb4c22fb59e9d6ba68aa2e51e49b5ca20e93d74c7c2c6da47acffb1979d"
   },
