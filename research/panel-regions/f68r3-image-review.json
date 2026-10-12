@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "method": "fixed f68r3 first-last radial inspection v1",
+  "plan_commit": "2bce08873c0cf8bb24661190c1b1ec18634b1ede",
+  "plan_sha256": "5bf49c51daed11f88c28737caab72142c36456bfda1c27b85ff63d024c6e0bfb",
+  "source_packet_path": "research/panel-regions/f68r3-native-review.json",
+  "source_packet_sha256": "d1f5ddcebbc3223d9cb5758b26e56fc3215af727e85f8c7c18b888bc9ecd5594",
+  "source_packet_commit": "2bce08873c0cf8bb24661190c1b1ec18634b1ede",
+  "inspected_on": "2026-10-12",
+  "timezone": "America/New_York",
+  "observer": "Codex working for tobrien6",
+  "status": "provisional_image_associations",
+  "usable_as_verified_corpus_join": false,
+  "apply_to_statistics": false,
+  "glyph_alignment_status": "pending",
+  "independent_review_status": "pending",
+  "blind": false,
+  "prior_exposure": "Complete native source texts/comments, existing page convention/layout and full-project prior image exposure preceded this inspection. These related editions and repeated pixels are not independent manuscript evidence.",
+  "image_oid": "1006196",
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+  "dependency_group": "yale-leaves:68",
+  "native_image_dimensions": [
+    7993,
+    3828
+  ],
+  "assets": [
+    {
+      "role": "specification",
+      "local_filename": "ivtff-format.pdf",
+      "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "http_status": 200,
+      "bytes": 1171234,
+      "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49"
+    },
+    {
+      "role": "service_metadata",
+      "local_filename": "info.json",
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/info.json",
+      "http_status": 200,
+      "bytes": 887,
+      "sha256": "7d1c63e1e9e84976149bcba6bdec74093979c7060920d0fc7fdd1e18cb22e5a1"
+    },
+    {
+      "role": "overview",
+      "local_filename": "overview.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/full/!2400,2400/0/default.jpg",
+      "http_status": 200,
+      "bytes": 716624,
+      "sha256": "1d7e9d121435618043e5cbe687810a40dce66f223d78395d25b52c2c9282c71f",
+      "pixel_dimensions": [
+        2400,
+        1149
+      ],
+      "native_region": null,
+      "rotation_degrees": 0,
+      "tool_display_dimensions": [
+        2048,
+        980
+      ]
+    },
+    {
+      "role": "right_drawing",
+      "local_filename": "right-drawing.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/4490,380,2890,2820/full/0/default.jpg",
+      "http_status": 200,
+      "bytes": 2100252,
+      "sha256": "8ebc403bb20fd4abc38afd42977f4ca6553b134f50bf3604df7137a948d22e25",
+      "pixel_dimensions": [
+        2890,
+        2820
+      ],
+      "native_region": [
+        4490,
+        380,
+        2890,
+        2820
+      ],
+      "rotation_degrees": 0,
+      "tool_display_dimensions": [
+        1600,
+        1560
+      ]
+    },
+    {
+      "role": "first_anchor",
+      "local_filename": "first-radial.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/5040,770,780,900/full/0/default.jpg",
+      "http_status": 200,
+      "bytes": 189478,
+      "sha256": "5045c033488989abef1fcff4deaa5329a431f96fab0528fb7439fb0c9e137915",
+      "pixel_dimensions": [
+        780,
+        900
+      ],
+      "native_region": [
+        5040,
+        770,
+        780,
+        900
+      ],
+      "rotation_degrees": 0,
+      "tool_display_dimensions": [
+        780,
+        900
+      ]
+    },
+    {
+      "role": "last_anchor",
+      "local_filename": "last-radial.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/4730,1660,1000,350/full/0/default.jpg",
+      "http_status": 200,
+      "bytes": 96023,
+      "sha256": "06b62d5305eff122a7515250bb2edc2b8a77af939fb1f97178229571d466c8f4",
+      "pixel_dimensions": [
+        1000,
+        350
+      ],
+      "native_region": [
+        4730,
+        1660,
+        1000,
+        350
+      ],
+      "rotation_degrees": 0,
+      "tool_display_dimensions": [
+        1000,
+        350
+      ]
+    }
+  ],
+  "failed_requests": [],
+  "request_scope": "one whole-carrier overview, one whole right-drawing window and one detail per fixed anchor; no rotations or replacement loci",
+  "window_scope": "Native-coordinate inspection rectangles, not accepted panel boundaries, physical line masks, glyph boxes or semantic word extents. Large displays were resized by the viewing tool.",
+  "specification": {
+    "document_issue": "2.0.2, 08/07/2025",
+    "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "inspected_printed_pages": [
+      21,
+      22
+    ],
+    "tables": [
+      8,
+      9
+    ],
+    "source_categories": {
+      "Cc": "clockwise circular text",
+      "Ri": "radial text directed inward",
+      "Ls": "star label",
+      "La": "other astronomical or cosmological drawing-element label"
+    },
+    "locator_scope": "Relative to preceding native locus number; does not independently define a word, object or label grouping.",
+    "local_page_renders": [
+      {
+        "local_filename": "ivtff-21.png",
+        "printed_page": 21,
+        "pixel_dimensions": [
+          1237,
+          1600
+        ],
+        "bytes": 212840,
+        "sha256": "ccc7ae3140c3fab616e31d355d56e1fe4520835b2539463e562c50c13a45be20"
+      },
+      {
+        "local_filename": "ivtff-22.png",
+        "printed_page": 22,
+        "pixel_dimensions": [
+          1237,
+          1600
+        ],
+        "bytes": 208888,
+        "sha256": "e47a7cd0b0507b28463c435cc03b926b5993ba4058345f025f7abf30d665405d"
+      }
+    ],
+    "renderer": "Poppler pdftoppm 24.04.0; pages 21-22, scale-to 1600, PNG; local only"
+  },
+  "source_claims": [
+    {
+      "source_id": "ZL3b",
+      "source_file_lines": [
+        3163,
+        3167,
+        3177,
+        3191
+      ],
+      "claim": "A larger circular band, radial sequence beginning at 10:30 with ThP ordering, labels ordered by ThP and a smaller circular band around the central face.",
+      "verification": "Comments preserved as source claims; the ThP diagram was not inspected and remaining radial angles are not inferred from numbers."
+    },
+    {
+      "source_id": "ZL3b",
+      "locus_keys": [
+        "f68r3.1",
+        "f68r3.22"
+      ],
+      "claim": "Both circular texts begin with 09:30 free comments.",
+      "verification": "Annotation only; their first glyph positions/reading direction are not adjudicated here."
+    }
+  ],
+  "direct_layout_observations": [
+    "The right drawing has a round face-bearing center, a narrow surrounding writing band and a much larger outer writing band.",
+    "Oriented rows of writing extend between the two bands; pointed yellow/brown forms occupy intervening sectors.",
+    "A vertical crease crosses the circular drawing rather than separating the whole right drawing from its neighboring field."
+  ],
+  "attempts": [
+    {
+      "locus_key": "f68r3.2",
+      "native_kind": "Ri",
+      "selection": "first native Ri record",
+      "asset_role": "first_anchor",
+      "candidate_position": "Upper-left inward diagonal row, approximately the source-described 10:30 area.",
+      "association_status": "provisional_compatible",
+      "glyph_alignment_status": "pending",
+      "word_boundary_status": "unresolved",
+      "source_native_text_identical": false,
+      "direct_observations": [
+        "A diagonal stretch of writing descends rightward toward the central circular band.",
+        "The outer end begins with an elevated looped form followed by low curved strokes; several larger gaps separate later stretches.",
+        "Other nearby short writing and pointed forms remain visible as context."
+      ],
+      "association_basis": "The native beginning-at-10:30 comment, radial arrangement, source sequence and broad start/end shape cues support this candidate. Source texts were read first; no complete glyph-by-glyph match was made.",
+      "unresolved": [
+        "ZL ykeo,she versus IT ykeoshe is retained; apparent gaps do not decide that division.",
+        "The rectangle is an inspection window, not a verified row/glyph extent.",
+        "Other radial placements are not exhaustively adjudicated and ThP ordering is not independently checked."
+      ]
+    },
+    {
+      "locus_key": "f68r3.9",
+      "native_kind": "Ri",
+      "selection": "last native Ri record",
+      "asset_role": "last_anchor",
+      "candidate_position": "Horizontal writing west of the central band, above a group of pointed forms.",
+      "association_status": "provisional_compatible",
+      "glyph_alignment_status": "pending",
+      "word_boundary_status": "unresolved",
+      "source_native_text_identical": true,
+      "direct_observations": [
+        "Five broad writing clusters occur along a nearly horizontal stretch between the outer and central bands.",
+        "The second cluster has a conspicuous descending stroke and elevated looped form; the last cluster also has an elevated looped form.",
+        "Pointed yellow/brown forms lie below the writing and the central band is visible at the right edge."
+      ],
+      "association_basis": "The five-cluster arrangement and ordered tall/descending forms are compatible with the retained source sequence dchey.qokeey.dcheey.daiir.otchal. This is a broad shape comparison, not glyph certification or a word-count assertion.",
+      "unresolved": [
+        "Identical native source text is not independent confirmation or a verified reading.",
+        "Exact glyph/token boxes and the relationship to unreviewed neighboring records remain unresolved.",
+        "This placement is not derived by assigning successive clock angles to locus numbers."
+      ]
+    }
+  ],
+  "unreviewed_locus_keys": [
+    "f68r3.1",
+    "f68r3.3",
+    "f68r3.4",
+    "f68r3.5",
+    "f68r3.6",
+    "f68r3.7",
+    "f68r3.8",
+    "f68r3.10",
+    "f68r3.11",
+    "f68r3.12",
+    "f68r3.13",
+    "f68r3.14",
+    "f68r3.15",
+    "f68r3.16",
+    "f68r3.17",
+    "f68r3.18",
+    "f68r3.19",
+    "f68r3.20",
+    "f68r3.21",
+    "f68r3.22"
+  ],
+  "source_packet_coverage": {
+    "locations": 22,
+    "anchor_attempts": 2,
+    "other_locations_glyph_unreviewed": 20,
+    "present_p0_locations": 0
+  },
+  "no_source_correction_or_translation": true,
+  "limits": "AI-assisted, non-blind compatible proposals; no verified corpus join, independent model/human reproduction, word/glyph adjudication, semantic interpretation, statistical rerun, untouched evaluation or translation. All native records/alternatives remain and 68r stays one carrier dependency."
+}

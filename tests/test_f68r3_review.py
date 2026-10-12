@@ -1,9 +1,12 @@
 from dataclasses import replace
+import copy
+import json
 from types import SimpleNamespace
 import unittest
 
 from scripts import build_f68r3_review as packet
 from scripts.ivtff import Locus
+from scripts import verify_f68r3_review as review
 
 
 def fixture():
@@ -53,6 +56,47 @@ class F68r3PacketTests(unittest.TestCase):
         self.assertEqual(result['records'][0]['readings'][0]['native_text'], raw)
         self.assertFalse(result['records'][0]['native_record_text_identical'])
         self.assertEqual(result['different_native_record_text'], 1)
+
+    def review_fixture(self):
+        return (json.loads(review.REVIEW.read_bytes()), json.loads(review.PACKET.read_bytes()),
+                json.loads(review.PARENT.read_bytes()))
+
+    def test_real_metadata_keeps_both_attempts_and_all_other_records_pending(self):
+        record, native, parent = self.review_fixture()
+        review.validate_metadata(record, native, parent)
+        self.assertFalse(record['usable_as_verified_corpus_join'])
+        self.assertEqual(len(record['unreviewed_locus_keys']), 20)
+
+    def test_dropped_attempts_records_source_identity_and_promotion_fail(self):
+        original, native, parent = self.review_fixture()
+        changes = []
+        changed = copy.deepcopy(original); changed['attempts'].pop(); changes.append(changed)
+        changed = copy.deepcopy(original); changed['unreviewed_locus_keys'].pop(); changes.append(changed)
+        changed = copy.deepcopy(original); changed['usable_as_verified_corpus_join'] = True; changes.append(changed)
+        changed = copy.deepcopy(original); changed['attempts'][1]['source_native_text_identical'] = False; changes.append(changed)
+        changed = copy.deepcopy(original); changed['attempts'][0]['glyph_alignment_status'] = 'verified'; changes.append(changed)
+        for changed in changes:
+            with self.assertRaises(ValueError):
+                review.validate_metadata(changed, native, parent)
+
+    def test_changed_request_geometry_dimensions_urls_and_asset_coverage_fail(self):
+        original, native, parent = self.review_fixture()
+        changes = []
+        changed = copy.deepcopy(original); changed['assets'].pop(); changes.append(changed)
+        changed = copy.deepcopy(original); changed['assets'][3]['native_region'][0] = 7993; changes.append(changed)
+        changed = copy.deepcopy(original); changed['assets'][4]['pixel_dimensions'][0] += 1; changes.append(changed)
+        changed = copy.deepcopy(original); changed['assets'][5]['url'] = 'https://example.org/substituted'; changes.append(changed)
+        for changed in changes:
+            with self.assertRaises(ValueError):
+                review.validate_metadata(changed, native, parent)
+
+    def test_png_header_dimensions_and_malformed_render_headers(self):
+        header = b'\x89PNG\r\n\x1a\n' + (13).to_bytes(4, 'big') + b'IHDR'
+        good = header + (1237).to_bytes(4, 'big') + (1600).to_bytes(4, 'big') + b'\x00' * 9
+        self.assertEqual(review.recorded_dimensions(good), (1237, 1600))
+        for bad in (header, good[:16] + b'\x00' * 4 + good[20:]):
+            with self.assertRaises(ValueError):
+                review.recorded_dimensions(bad)
 
 
 if __name__ == '__main__':
