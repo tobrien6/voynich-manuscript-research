@@ -331,14 +331,17 @@ def protect_output(path, prepared, partition_path, *, preparing=False):
     catalog = json.loads(catalog_path.read_bytes())
     protected.update((ROOT / source['path']).resolve() for source in catalog['sources'])
     protected.add((ROOT / BASE / 'PLAN.md').resolve())
+    protected.add(Path(__file__).resolve())
     # Initial preparation may create a partition. Once present, both the
     # selected and standard registered paths must be preserved, including when
     # --partition names a separate copy of the historical record.
     for partition in (partition_path, ROOT / BASE / 'partition.json'):
         if not preparing or partition.exists():
             protected.add(partition.resolve())
-    if path.resolve() in protected:
-        raise ValueError('output must not replace a pinned input, raw source, plan or existing partition')
+    resolved = path.resolve()
+    if resolved in protected or (path.exists() and any(
+            candidate.exists() and path.samefile(candidate) for candidate in protected)):
+        raise ValueError('output must not replace a pinned input, raw source, producer, plan or existing partition')
 
 
 def main():
@@ -376,6 +379,9 @@ def main():
         if expected is not None and report != expected:
             raise ValueError('committed y-layout report differs from complete replay')
         if args.output:
+            # Recheck after fitting as well: an existing output can acquire an
+            # input alias while the analysis runs. The next operation writes.
+            protect_output(args.output, prepared, args.partition)
             args.output.write_text(json.dumps(report, indent=2) + '\n')
             print('Recorded exploratory diagnostic:', report['decision'])
         else:

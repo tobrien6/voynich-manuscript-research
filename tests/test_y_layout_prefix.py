@@ -3,6 +3,7 @@ from fractions import Fraction
 from contextlib import redirect_stderr, redirect_stdout
 import io
 import json
+import os
 from pathlib import Path
 import tempfile
 from unittest.mock import patch
@@ -207,6 +208,8 @@ class YOutputProtectionTests(unittest.TestCase):
         self.plan.write_bytes(b'registered plan')
         self.index = self.root / 'index.csv'
         self.index.write_bytes(b'pinned image index')
+        self.producer = self.root / 'producer.py'
+        self.producer.write_bytes(b'pinned producer source')
         self.prepared = {'input_pins': {
             'source_catalog': {'path': 'data/transliterations.json'},
             'plan': {'path': BASE + '/PLAN.md'}, 'index': {'path': 'index.csv'}}}
@@ -220,6 +223,7 @@ class YOutputProtectionTests(unittest.TestCase):
         errors = io.StringIO()
         argv = ['diagnostic', mode, str(destination), '--partition', str(self.copy)]
         with patch.object(diagnostic, 'ROOT', self.root), \
+                patch.object(diagnostic, '__file__', str(self.producer)), \
                 patch.object(diagnostic, 'prepare_partition', return_value=self.prepared), \
                 patch.object(diagnostic, 'analyze') as fit, \
                 patch.object(diagnostic, 'verify_registration') as registration, \
@@ -233,7 +237,7 @@ class YOutputProtectionTests(unittest.TestCase):
 
     def test_both_write_modes_preserve_all_declared_and_implicit_inputs(self):
         for mode in ('--prepare', '--output'):
-            for destination in (self.catalog, self.raw, self.plan, self.index, self.partition, self.copy):
+            for destination in (self.catalog, self.raw, self.plan, self.index, self.partition, self.copy, self.producer):
                 with self.subTest(mode=mode, destination=destination.name):
                     self.assert_refused(mode, destination)
 
@@ -244,6 +248,37 @@ class YOutputProtectionTests(unittest.TestCase):
             with self.subTest(mode=mode):
                 self.assert_refused(mode, alias)
                 self.assertTrue(alias.is_symlink())
+
+    def test_hardlink_output_alias_cannot_replace_raw_source(self):
+        alias = self.root / 'hardlink-output.json'
+        os.link(self.raw, alias)
+        for mode in ('--prepare', '--output'):
+            with self.subTest(mode=mode):
+                self.assert_refused(mode, alias)
+                self.assertTrue(alias.samefile(self.raw))
+
+    def test_alias_created_during_fit_is_refused_immediately_before_write(self):
+        destination = self.root / 'late-alias.json'
+        original = self.raw.read_bytes()
+
+        def fit(*args):
+            os.link(self.raw, destination)
+            return {'decision': 'fixture'}
+
+        errors = io.StringIO()
+        with patch.object(diagnostic, 'ROOT', self.root), \
+                patch.object(diagnostic, 'prepare_partition', return_value=self.prepared), \
+                patch.object(diagnostic, 'verify_registration', return_value='2026-01-01T00:00:00+00:00'), \
+                patch.object(diagnostic, 'load_pins', return_value=([], {}, {})), \
+                patch.object(diagnostic, 'analyze', side_effect=fit), \
+                patch('sys.argv', ['diagnostic', '--output', str(destination), '--partition', str(self.partition),
+                                   '--pre-run-commit', 'a' * 40]), redirect_stderr(errors), \
+                self.assertRaises(SystemExit) as failed:
+            main()
+        self.assertEqual(failed.exception.code, 1)
+        self.assertIn('output must not replace', errors.getvalue())
+        self.assertEqual(self.raw.read_bytes(), original)
+        self.assertTrue(destination.samefile(self.raw))
 
     def test_initial_preparation_can_create_a_new_standard_partition(self):
         self.partition.unlink()
