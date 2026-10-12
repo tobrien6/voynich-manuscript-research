@@ -1,0 +1,175 @@
+{
+  "adapter_snapshot_sha256": {
+    "join": "a2dbe519a0fd06469c73bdd1872d39e0705cc9ffab819ba002db219d383eaa2d",
+    "split": "b2b35bc204d4818e55946175c5c316cbe51133117df78a80cdc76125f5bf8d93"
+  },
+  "adapter_version": "plain-eva-v1",
+  "analysis_unit": "transcription_locus",
+  "cohorts": {
+    "at_least_two_tokens_in_every_source_and_policy": {
+      "native_locus_count": 2993,
+      "native_page_count": 203,
+      "sorted_native_keys_sha256": "eafdacb008f4fbc25e791acd364dfe4eccaa2728a8fba61edce781659987cb98"
+    },
+    "cross_source_metadata_differences_in_shared_eligible_cohort": {
+      "locator": 0,
+      "locus_type": 0
+    },
+    "eligible_in_every_source_and_policy": {
+      "native_locus_count": 2997,
+      "native_page_count": 203,
+      "sorted_native_keys_sha256": "b60b674b8bf41343332746772f6a5f11d96941f1d6ab8b15254f8fbd8765d8ee"
+    }
+  },
+  "count_semantics": "Source editions are counted separately; matching native locus keys are not independent manuscript samples or verified physical lines. Exclusion reasons may overlap.",
+  "method": "native-eva adapter coverage audit v1",
+  "policy_coverage": {
+    "join": {
+      "IT2a": {
+        "eligible_locus_records": 3894,
+        "eligible_records_by_kind": {
+          "P0": 3824,
+          "P1": 70
+        },
+        "eligible_token_count": 33141,
+        "excluded_after_selected_present_filter": 62,
+        "excluded_locus_records": 1321,
+        "exclusion_reason_record_counts_may_overlap": {
+          "nonexistent_locus": 1,
+          "unreadable": 62,
+          "unselected_locus_kind": 1259
+        }
+      },
+      "ZL3b": {
+        "eligible_locus_records": 3012,
+        "eligible_records_by_kind": {
+          "P0": 2955,
+          "P1": 57
+        },
+        "eligible_token_count": 23847,
+        "excluded_after_selected_present_filter": 945,
+        "excluded_locus_records": 2373,
+        "exclusion_reason_record_counts_may_overlap": {
+          "alternative_reading": 578,
+          "high_ascii_escape": 102,
+          "ligature_braces": 351,
+          "non_plain_eva_character": 21,
+          "unreadable": 148,
+          "unselected_locus_kind": 1428
+        }
+      }
+    },
+    "split": {
+      "IT2a": {
+        "eligible_locus_records": 3894,
+        "eligible_records_by_kind": {
+          "P0": 3824,
+          "P1": 70
+        },
+        "eligible_token_count": 33141,
+        "excluded_after_selected_present_filter": 62,
+        "excluded_locus_records": 1321,
+        "exclusion_reason_record_counts_may_overlap": {
+          "nonexistent_locus": 1,
+          "unreadable": 62,
+          "unselected_locus_kind": 1259
+        }
+      },
+      "ZL3b": {
+        "eligible_locus_records": 3012,
+        "eligible_records_by_kind": {
+          "P0": 2955,
+          "P1": 57
+        },
+        "eligible_token_count": 25681,
+        "excluded_after_selected_present_filter": 945,
+        "excluded_locus_records": 2373,
+        "exclusion_reason_record_counts_may_overlap": {
+          "alternative_reading": 578,
+          "high_ascii_escape": 102,
+          "ligature_braces": 351,
+          "non_plain_eva_character": 21,
+          "unreadable": 148,
+          "unselected_locus_kind": 1428
+        }
+      }
+    }
+  },
+  "schema_version": 1,
+  "selected_locus_types": [
+    "P0",
+    "P1"
+  ],
+  "source_coverage": {
+    "IT2a": {
+      "declared_locus_records": 5215,
+      "declared_records_by_kind": {
+        "Cc": 72,
+        "L0": 158,
+        "La": 5,
+        "Lc": 37,
+        "Lf": 195,
+        "Ln": 63,
+        "Lp": 2,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 1,
+        "Lz": 299,
+        "P0": 3884,
+        "P1": 72,
+        "Pb": 123,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "present_locus_records": 5214,
+      "selected_present_locus_records": 3956
+    },
+    "ZL3b": {
+      "declared_locus_records": 5385,
+      "declared_records_by_kind": {
+        "Ca": 1,
+        "Cc": 83,
+        "L0": 297,
+        "La": 7,
+        "Lc": 40,
+        "Lf": 194,
+        "Ln": 63,
+        "Lp": 3,
+        "Ls": 76,
+        "Lt": 47,
+        "Lx": 3,
+        "Lz": 299,
+        "P0": 3885,
+        "P1": 72,
+        "Pb": 134,
+        "Pc": 17,
+        "Pr": 12,
+        "Pt": 10,
+        "Ri": 75,
+        "Ro": 67
+      },
+      "present_locus_records": 5385,
+      "selected_present_locus_records": 3957
+    }
+  },
+  "sources": [
+    {
+      "alphabet": "Eva-",
+      "id": "ZL3b",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "alphabet": "EvaT",
+      "id": "IT2a",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ],
+  "token_text_published": false
+}

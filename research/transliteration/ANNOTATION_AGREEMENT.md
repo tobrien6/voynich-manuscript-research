@@ -107,3 +107,8 @@ folio mapping and preserving unresolved foldouts. Record adjudications
 separately with evidence. A later positional sensitivity test can compare
 source-specific strata with a declared common annotation cohort. Neither step
 should relabel the already explored corpus as previously unseen material.
+
+The [generic-P context extension](GENERIC_P_CONTEXT.md) includes neighbouring
+paragraph subtypes and records all source-marker disagreements outside P0.
+Its exact centred-line pattern covers 16 of the 54 P0 end disagreements;
+the 38 remaining contexts are retained separately.

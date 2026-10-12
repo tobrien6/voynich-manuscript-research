@@ -1,0 +1,1444 @@
+{
+  "schema_version": 1,
+  "method": "three-page residual paragraph-end image pilot v1",
+  "generic_p_audit_sha256": "2252395ee8cf5b80111ea4d363fe55881c099a900847d7876d3700efa9a603a1",
+  "image_index_sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+  "selection_plan_commit": "ea34a5e34a57a732156e88ff852f3042a366a887",
+  "selection_rule": "first three residual pages by numeric folio then literal page; include every residual context on each selected page",
+  "inspection_date_local": "2026-10-11",
+  "inspection_timezone": "America/New_York",
+  "sources": [
+    {
+      "id": "ZL3b",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "alphabet": "Eva-"
+    },
+    {
+      "id": "IT2a",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "alphabet": "EvaT"
+    }
+  ],
+  "records": [
+    {
+      "page": "f19v",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006111",
+        "image_oid": "1006111",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006111",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006111/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006111",
+        "yale_label": "19v"
+      },
+      "inspection": {
+        "url": "https://collections.library.yale.edu/iiif/2/1006111/full/!2200,2200/0/default.jpg",
+        "sha256": "6de15ce91bbfd89607109fd1a42b72faea246b078e64134721d6869119c6501d",
+        "pixel_width": 1663,
+        "pixel_height": 2200,
+        "local_filename": "f19v.jpg"
+      },
+      "observed_horizontal_row_count": 14,
+      "direct_observations": "Fourteen ordered writing rows appear near the upper left, in an upper seven-row group and a lower seven-row group beside the plant. The last row is short and shifted to the right. Its gap from the preceding row does not clearly isolate it as a separate block.",
+      "source_page_annotations": [
+        {
+          "source_id": "ZL3b",
+          "present_generic_p_locus_count": 14,
+          "loci": [
+            {
+              "locus_id": "f19v.1,@P0",
+              "file_line_number": 815,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "@",
+              "key": "f19v.1",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.2,+P0",
+              "file_line_number": 816,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.3,+P0",
+              "file_line_number": 817,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.4,+P0",
+              "file_line_number": 818,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.4",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.5,+P0",
+              "file_line_number": 819,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.5",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.6,+P0",
+              "file_line_number": 820,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.6",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.7,+P0",
+              "file_line_number": 821,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.7",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.8,+P0",
+              "file_line_number": 823,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.9,+P0",
+              "file_line_number": 824,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.9",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.10,+P0",
+              "file_line_number": 825,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.10",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.11,+P0",
+              "file_line_number": 826,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.11",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.12,+P0",
+              "file_line_number": 827,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.12",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.13,+P0",
+              "file_line_number": 828,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.13",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.14,+Pr",
+              "file_line_number": 829,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.14",
+              "kind": "Pr"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "present_generic_p_locus_count": 14,
+          "loci": [
+            {
+              "locus_id": "f19v.1,@P0",
+              "file_line_number": 487,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "@",
+              "key": "f19v.1",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.2,+P0",
+              "file_line_number": 488,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.3,+P0",
+              "file_line_number": 489,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.4,+P0",
+              "file_line_number": 490,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.4",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.5,+P0",
+              "file_line_number": 491,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.5",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.6,+P0",
+              "file_line_number": 492,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.6",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.7,+P0",
+              "file_line_number": 493,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.7",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.8,+P0",
+              "file_line_number": 494,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.9,+P0",
+              "file_line_number": 495,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.9",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.10,+P0",
+              "file_line_number": 496,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.10",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.11,+P0",
+              "file_line_number": 497,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.11",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.12,+P0",
+              "file_line_number": 498,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.12",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.13,+P0",
+              "file_line_number": 499,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.13",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f19v.14,+Pr",
+              "file_line_number": 500,
+              "paragraph_start": true,
+              "paragraph_end": true,
+              "start_marker_count": 1,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f19v.14",
+              "kind": "Pr"
+            }
+          ]
+        }
+      ],
+      "contexts": [
+        {
+          "source_context": {
+            "current": {
+              "key": "f19v.13",
+              "page": "f19v",
+              "left": {
+                "locus_id": "f19v.13,+P0",
+                "file_line_number": 828,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f19v.13",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f19v.13,+P0",
+                "file_line_number": 499,
+                "paragraph_start": false,
+                "paragraph_end": true,
+                "start_marker_count": 0,
+                "end_marker_count": 1,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f19v.13",
+                "kind": "P0"
+              },
+              "discordant_fields": [
+                "paragraph_end",
+                "end_marker_count"
+              ]
+            },
+            "next_present_generic_p_on_same_page": {
+              "left": {
+                "locus_id": "f19v.14,+Pr",
+                "file_line_number": 829,
+                "paragraph_start": false,
+                "paragraph_end": true,
+                "start_marker_count": 0,
+                "end_marker_count": 1,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f19v.14",
+                "kind": "Pr"
+              },
+              "right": {
+                "locus_id": "f19v.14,+Pr",
+                "file_line_number": 500,
+                "paragraph_start": true,
+                "paragraph_end": true,
+                "start_marker_count": 1,
+                "end_marker_count": 1,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f19v.14",
+                "kind": "Pr"
+              }
+            },
+            "following_centered_locus_is_separate_paragraph_in": null
+          },
+          "direct_observation": "The candidate is provisionally associated with the penultimate row of the lower text group, above the short right-shifted final row.",
+          "source_row_association": {
+            "status": "provisional",
+            "basis": "Source order and visible row counts support a provisional association with row 13. Individual glyph strings have not been independently matched to image regions."
+          },
+          "paragraph_disposition": "unresolved",
+          "reason": "The source-row association awaits independent glyph-level checking, and the visible layout supplies no clear block separation at this position. Retain both source conventions."
+        }
+      ],
+      "review_status": "AI-assisted initial observation; independent human review pending",
+      "exposure": {
+        "inspected_in_this_chat": true,
+        "previous_project_exposure": "not independently established; do not claim previously unseen material"
+      }
+    },
+    {
+      "page": "f24v",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006121",
+        "image_oid": "1006121",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006121",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006121/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006121",
+        "yale_label": "24v"
+      },
+      "inspection": {
+        "url": "https://collections.library.yale.edu/iiif/2/1006121/full/!2200,2200/0/default.jpg",
+        "sha256": "e0667e540d40a5da35c34ee60999fc3fe2cf9912877154c712257cc38ba67468",
+        "pixel_width": 1671,
+        "pixel_height": 2200,
+        "local_filename": "f24v.jpg"
+      },
+      "observed_horizontal_row_count": 16,
+      "direct_observations": "Sixteen ordered writing rows follow the left side of the plant. The first five rows occupy the upper area, with a larger gap before the sixth row. Rows around the disputed eleventh-to-twelfth transition continue down the page without a clear additional blank band.",
+      "source_page_annotations": [
+        {
+          "source_id": "ZL3b",
+          "present_generic_p_locus_count": 16,
+          "loci": [
+            {
+              "locus_id": "f24v.1,@P0",
+              "file_line_number": 1032,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "@",
+              "key": "f24v.1",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.2,+P0",
+              "file_line_number": 1033,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.3,+P0",
+              "file_line_number": 1034,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.4,+P0",
+              "file_line_number": 1035,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.4",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.5,+P0",
+              "file_line_number": 1036,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.5",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.6,+P0",
+              "file_line_number": 1038,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.6",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.7,+P0",
+              "file_line_number": 1039,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.7",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.8,+P0",
+              "file_line_number": 1040,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.9,+P0",
+              "file_line_number": 1041,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.9",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.10,+P0",
+              "file_line_number": 1042,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.10",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.11,+P0",
+              "file_line_number": 1043,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.11",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.12,+P0",
+              "file_line_number": 1044,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.12",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.13,+P0",
+              "file_line_number": 1045,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.13",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.14,+P0",
+              "file_line_number": 1046,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.14",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.15,+P0",
+              "file_line_number": 1047,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.15",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.16,+P0",
+              "file_line_number": 1048,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.16",
+              "kind": "P0"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "present_generic_p_locus_count": 16,
+          "loci": [
+            {
+              "locus_id": "f24v.1,@P0",
+              "file_line_number": 627,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "@",
+              "key": "f24v.1",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.2,+P0",
+              "file_line_number": 628,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.3,+P0",
+              "file_line_number": 629,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.4,+P0",
+              "file_line_number": 630,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.4",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.5,+P0",
+              "file_line_number": 631,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.5",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.6,+P0",
+              "file_line_number": 632,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.6",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.7,+P0",
+              "file_line_number": 633,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.7",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.8,+P0",
+              "file_line_number": 634,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.9,+P0",
+              "file_line_number": 635,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.9",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.10,+P0",
+              "file_line_number": 636,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.10",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.11,+P0",
+              "file_line_number": 637,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.11",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.12,+P0",
+              "file_line_number": 638,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.12",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.13,+P0",
+              "file_line_number": 639,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.13",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.14,+P0",
+              "file_line_number": 640,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.14",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.15,+P0",
+              "file_line_number": 641,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.15",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f24v.16,+P0",
+              "file_line_number": 642,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f24v.16",
+              "kind": "P0"
+            }
+          ]
+        }
+      ],
+      "contexts": [
+        {
+          "source_context": {
+            "current": {
+              "key": "f24v.11",
+              "page": "f24v",
+              "left": {
+                "locus_id": "f24v.11,+P0",
+                "file_line_number": 1043,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f24v.11",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f24v.11,+P0",
+                "file_line_number": 637,
+                "paragraph_start": false,
+                "paragraph_end": true,
+                "start_marker_count": 0,
+                "end_marker_count": 1,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f24v.11",
+                "kind": "P0"
+              },
+              "discordant_fields": [
+                "paragraph_end",
+                "end_marker_count"
+              ]
+            },
+            "next_present_generic_p_on_same_page": {
+              "left": {
+                "locus_id": "f24v.12,+P0",
+                "file_line_number": 1044,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f24v.12",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f24v.12,+P0",
+                "file_line_number": 638,
+                "paragraph_start": true,
+                "paragraph_end": false,
+                "start_marker_count": 1,
+                "end_marker_count": 0,
+                "currier_label": "A",
+                "locator": "+",
+                "key": "f24v.12",
+                "kind": "P0"
+              }
+            },
+            "following_centered_locus_is_separate_paragraph_in": null
+          },
+          "direct_observation": "The candidate is provisionally associated with row eleven; the following row continues the left writing area around the plant without a clear blank separator.",
+          "source_row_association": {
+            "status": "provisional",
+            "basis": "Source order and visible row counts support a provisional association with row 11. Individual glyph strings have not been independently matched to image regions."
+          },
+          "paragraph_disposition": "unresolved",
+          "reason": "The source-row association awaits independent glyph-level checking, and the visible layout supplies no clear block separation at this position. Retain both source conventions."
+        }
+      ],
+      "review_status": "AI-assisted initial observation; independent human review pending",
+      "exposure": {
+        "inspected_in_this_chat": true,
+        "previous_project_exposure": "not independently established; do not claim previously unseen material"
+      }
+    },
+    {
+      "page": "f26v",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006125",
+        "image_oid": "1006125",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006125",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006125/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006125",
+        "yale_label": "26v"
+      },
+      "inspection": {
+        "url": "https://collections.library.yale.edu/iiif/2/1006125/full/!2200,2200/0/default.jpg",
+        "sha256": "8b4037a279d5850250c6f183e807fc09175d33c8ebbb84481b70ab5486d576b0",
+        "pixel_width": 1663,
+        "pixel_height": 2200,
+        "local_filename": "f26v.jpg"
+      },
+      "observed_horizontal_row_count": 9,
+      "direct_observations": "Nine ordered writing rows form a wide block above the plant. At the transitions after rows two, four, and six, the writing remains in a continuous vertical sequence with no clear intervening blank band. Several rows start with tall strokes, but no glyph identity or meaning is assigned here.",
+      "source_page_annotations": [
+        {
+          "source_id": "ZL3b",
+          "present_generic_p_locus_count": 9,
+          "loci": [
+            {
+              "locus_id": "f26v.1,@P0",
+              "file_line_number": 1107,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "@",
+              "key": "f26v.1",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.2,+P0",
+              "file_line_number": 1108,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.3,+P0",
+              "file_line_number": 1109,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.4,+P0",
+              "file_line_number": 1110,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.4",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.5,+P0",
+              "file_line_number": 1111,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.5",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.6,+P0",
+              "file_line_number": 1112,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.6",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.7,+P0",
+              "file_line_number": 1113,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.7",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.8,+P0",
+              "file_line_number": 1114,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.9,+P0",
+              "file_line_number": 1115,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.9",
+              "kind": "P0"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "present_generic_p_locus_count": 9,
+          "loci": [
+            {
+              "locus_id": "f26v.1,@P0",
+              "file_line_number": 671,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "@",
+              "key": "f26v.1",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.2,+P0",
+              "file_line_number": 672,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.3,+P0",
+              "file_line_number": 673,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.4,+P0",
+              "file_line_number": 674,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.4",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.5,+P0",
+              "file_line_number": 675,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.5",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.6,+P0",
+              "file_line_number": 676,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.6",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.7,+P0",
+              "file_line_number": 677,
+              "paragraph_start": true,
+              "paragraph_end": false,
+              "start_marker_count": 1,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.7",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.8,+P0",
+              "file_line_number": 678,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f26v.9,+P0",
+              "file_line_number": 679,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "B",
+              "locator": "+",
+              "key": "f26v.9",
+              "kind": "P0"
+            }
+          ]
+        }
+      ],
+      "contexts": [
+        {
+          "source_context": {
+            "current": {
+              "key": "f26v.2",
+              "page": "f26v",
+              "left": {
+                "locus_id": "f26v.2,+P0",
+                "file_line_number": 1108,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.2",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f26v.2,+P0",
+                "file_line_number": 672,
+                "paragraph_start": false,
+                "paragraph_end": true,
+                "start_marker_count": 0,
+                "end_marker_count": 1,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.2",
+                "kind": "P0"
+              },
+              "discordant_fields": [
+                "paragraph_end",
+                "end_marker_count"
+              ]
+            },
+            "next_present_generic_p_on_same_page": {
+              "left": {
+                "locus_id": "f26v.3,+P0",
+                "file_line_number": 1109,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.3",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f26v.3,+P0",
+                "file_line_number": 673,
+                "paragraph_start": true,
+                "paragraph_end": false,
+                "start_marker_count": 1,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.3",
+                "kind": "P0"
+              }
+            },
+            "following_centered_locus_is_separate_paragraph_in": null
+          },
+          "direct_observation": "The candidate is provisionally associated with row 2; the next row remains in the same continuous upper text block.",
+          "source_row_association": {
+            "status": "provisional",
+            "basis": "Source order and visible row counts support a provisional association with row 2. Individual glyph strings have not been independently matched to image regions."
+          },
+          "paragraph_disposition": "unresolved",
+          "reason": "The source-row association awaits independent glyph-level checking, and the visible layout supplies no clear block separation at this position. Retain both source conventions."
+        },
+        {
+          "source_context": {
+            "current": {
+              "key": "f26v.4",
+              "page": "f26v",
+              "left": {
+                "locus_id": "f26v.4,+P0",
+                "file_line_number": 1110,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.4",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f26v.4,+P0",
+                "file_line_number": 674,
+                "paragraph_start": false,
+                "paragraph_end": true,
+                "start_marker_count": 0,
+                "end_marker_count": 1,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.4",
+                "kind": "P0"
+              },
+              "discordant_fields": [
+                "paragraph_end",
+                "end_marker_count"
+              ]
+            },
+            "next_present_generic_p_on_same_page": {
+              "left": {
+                "locus_id": "f26v.5,+P0",
+                "file_line_number": 1111,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.5",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f26v.5,+P0",
+                "file_line_number": 675,
+                "paragraph_start": true,
+                "paragraph_end": false,
+                "start_marker_count": 1,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.5",
+                "kind": "P0"
+              }
+            },
+            "following_centered_locus_is_separate_paragraph_in": null
+          },
+          "direct_observation": "The candidate is provisionally associated with row 4; the next row remains in the same continuous upper text block.",
+          "source_row_association": {
+            "status": "provisional",
+            "basis": "Source order and visible row counts support a provisional association with row 4. Individual glyph strings have not been independently matched to image regions."
+          },
+          "paragraph_disposition": "unresolved",
+          "reason": "The source-row association awaits independent glyph-level checking, and the visible layout supplies no clear block separation at this position. Retain both source conventions."
+        },
+        {
+          "source_context": {
+            "current": {
+              "key": "f26v.6",
+              "page": "f26v",
+              "left": {
+                "locus_id": "f26v.6,+P0",
+                "file_line_number": 1112,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.6",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f26v.6,+P0",
+                "file_line_number": 676,
+                "paragraph_start": false,
+                "paragraph_end": true,
+                "start_marker_count": 0,
+                "end_marker_count": 1,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.6",
+                "kind": "P0"
+              },
+              "discordant_fields": [
+                "paragraph_end",
+                "end_marker_count"
+              ]
+            },
+            "next_present_generic_p_on_same_page": {
+              "left": {
+                "locus_id": "f26v.7,+P0",
+                "file_line_number": 1113,
+                "paragraph_start": false,
+                "paragraph_end": false,
+                "start_marker_count": 0,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.7",
+                "kind": "P0"
+              },
+              "right": {
+                "locus_id": "f26v.7,+P0",
+                "file_line_number": 677,
+                "paragraph_start": true,
+                "paragraph_end": false,
+                "start_marker_count": 1,
+                "end_marker_count": 0,
+                "currier_label": "B",
+                "locator": "+",
+                "key": "f26v.7",
+                "kind": "P0"
+              }
+            },
+            "following_centered_locus_is_separate_paragraph_in": null
+          },
+          "direct_observation": "The candidate is provisionally associated with row 6; the next row remains in the same continuous upper text block.",
+          "source_row_association": {
+            "status": "provisional",
+            "basis": "Source order and visible row counts support a provisional association with row 6. Individual glyph strings have not been independently matched to image regions."
+          },
+          "paragraph_disposition": "unresolved",
+          "reason": "The source-row association awaits independent glyph-level checking, and the visible layout supplies no clear block separation at this position. Retain both source conventions."
+        }
+      ],
+      "review_status": "AI-assisted initial observation; independent human review pending",
+      "exposure": {
+        "inspected_in_this_chat": true,
+        "previous_project_exposure": "not independently established; do not claim previously unseen material"
+      }
+    }
+  ],
+  "limits": [
+    "Five disagreements on three selected pages; overlapping observations are not five independent manuscript samples.",
+    "All row associations are provisional and all five paragraph divisions remain unresolved.",
+    "Other source/locus contexts and images remain outside this purposive pilot.",
+    "No glyph transcription, reading, translation, or source-file correction.",
+    "Images remain local and are referenced without redistribution."
+  ]
+}
