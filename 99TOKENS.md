@@ -54,6 +54,8 @@ This is exploratory evidence for candidate constraints, not a decipherment.
 
 The [prefix stratification](research/transliteration/PREFIX_STRATA.md) separates source-marked paragraph starts and source Currier labels on 3,848 shared regular P0 locations, excluding 36 same-line fragments. In the primary treatment, first-slot y enrichment occurs in non-paragraph-start loci, while the q contrast within those non-paragraph-start cohorts has opposite signs in source groups A and B. All uncertainty treatments, denominators, and controls are retained in the [complete report](research/transliteration/prefix_strata.json). These exploratory patterns constrain candidate mechanisms on already exposed text; the labels do not identify natural languages and the results do not validate a decipherment.
 
+The [catalog-section prefix analysis](research/transliteration/SECTION_STRATA.md) separates first-slot contrasts across Yale's six numeric ranges and source-marked paragraph starts, with [complete results](research/transliteration/section_strata.json). It retains 29 paragraph-start annotation disagreements and source-specific eligibility. Non-start y contrasts are positive in all six ranges, while the final-text paragraph-start contrast is near zero and differs in sign between sources. These exposed-data measurements preserve small cohorts, unresolved foliation, and representation limits; they do not establish a section's meaning or a decipherment.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
