@@ -67,8 +67,8 @@ substitution with larger-group priority. Its left-to-right clause concerns
 repeated occurrences of the same rule. Equal-length overlapping rules can
 depend on file order, and rule-block separators alter priority (section 3.8,
 pages 16–17). Direction 2 uses the right column as input. Header alphabet checks,
-protected comments, boundary markers and whole-text reversibility are separate concerns. A future
-implementation must declare those semantics and its unmatched-symbol policy;
+protected comments, boundary markers and whole-text reversibility are separate
+concerns. A future implementation must declare those semantics and its unmatched-symbol policy;
 replacing entries in arbitrary sequence is insufficient.
 
 As a simple membership probe, five characters in the historical normalizer's
