@@ -33,3 +33,4 @@ Link to source images and transcriptions until their reuse terms have been check
 
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.
+- [Reproducible token-order controls](research/token-controls/README.md): synthetic-tested line and folio-side shuffles with explicit sampling constraints and pinned input provenance.
