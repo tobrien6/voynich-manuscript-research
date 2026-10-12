@@ -17,6 +17,11 @@ transcriber; each export remains a separately pinned input. The coverage report
 now includes all five exports while the initial ZL/IT comparison below remains
 unchanged.
 
+The [primary Currier/Eva definition intake](CURRIER_CONVERSION_SOURCE.md) now
+pins an author-supplied rule file and its manual for a future frozen notation
+comparison. Its synthetic string round-trip limits remain explicit; it does
+not convert the selected editions or establish glyph/alphabet equivalence.
+
 ## Source records
 
 - **TR-CATALOG:** René Zandbergen, [Transliteration of the Text](https://voynich.nu/transcr.html).
