@@ -88,3 +88,12 @@ No alternatives, spaces, paragraph markers, or source comments are resolved.
 The seven locations are explicitly declared by this provisional layout proposal;
 they are not a randomly sampled test of transcription quality. An absent,
 duplicate, nonexistent, or non-P0 target makes the generator fail.
+
+## Rosette small-circle review
+
+The separate [rosette region proposal](FROS_SMALL_CIRCLE.md) fixes four contiguous
+ZL3b/GC2a targets before image retrieval and records a broad source-image inspection
+window. Both complete native readings and all uncertain annotations remain in a
+reproducible checklist. Layout supports a candidate association; glyph alignment,
+arc boundaries/directions and independent review remain unresolved. The shared
+85v/86r carrier stays one dependency, and the proposal cannot fill IT2a's absent text.

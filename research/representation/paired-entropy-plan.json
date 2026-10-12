@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "analysis_id": "paired-symbol-entropy-sensitivity-v1",
+  "analysis_status": "descriptive exploratory; previously exposed modern sources",
+  "source_ids": [
+    "ZL3b",
+    "IT2a"
+  ],
+  "spacing_policies": [
+    "split",
+    "join"
+  ],
+  "selected_locus_kinds": [
+    "P0"
+  ],
+  "regular_locators": [
+    "@",
+    "+",
+    "*"
+  ],
+  "minimum_tokens": 1,
+  "exclude_drawing_interruptions": true,
+  "common_cohort_across_all_four_variants": true,
+  "unit_policy_file": "research/baselines/eva-unit-protocol.json",
+  "unit_policy_ids": [
+    "ascii_letters",
+    "bench_sequences",
+    "bench_and_minim_sequences"
+  ],
+  "boundary_policies": [
+    "within_token",
+    "within_locus_with_space"
+  ],
+  "word_boundary_unit": "<SPACE>",
+  "weighting": "one pooled vote per scored successor edge; full-unit histogram counts all segment units",
+  "estimator": "base-2 unsmoothed empirical frequency estimates, no bias correction",
+  "empty_edge_population": "conditional/pair/predecessor entropies null, not zero",
+  "null_or_language_comparison": null,
+  "may_apply_as_source_correction": false,
+  "input_pins": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/baselines/eva-unit-protocol.json": "a2ded6526829759169d9462708ea00f969ebe47127acf5c90e2f0b1e7e2fc3ec",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "scripts/eva_unit_sensitivity.py": "4a780a8c2d26380951c34bd219d27bd9995ab8c451617dbc68c3bb8feddff4f8"
+  },
+  "base_revision": "222d6af66473dcbab1bacda669972890d27a23c1"
+}

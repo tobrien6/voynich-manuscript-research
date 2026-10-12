@@ -27,6 +27,12 @@ supplied text. All 21 overlapping earlier audit pins match. The build yielded
 47 class files, each fingerprinted, with no external dependency JAR. Neither
 Maven packaging nor the packaged generator JAR was executed.
 
+Review clarified the tree fingerprint: the lookup used the commit revision,
+retained as `source_tree_query_revision`; `source_tree_sha1` now records the
+canonical tree `2ed9b59ba46843c1b68320bee9a07126acd9296d`, verified from the
+commit's tree member. All 39 inventoried Git blobs still match. This metadata
+correction changes no build, process, output or row observation.
+
 Each JVM ran in its own new directory with the unchanged complete executable
 configuration, seed 19 and 1,200 requested rows. The record retains its hash,
 runtime/platform, heap limit, UTF-8 encoding, locale/timezone, minimal environment

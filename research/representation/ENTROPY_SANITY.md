@@ -4,6 +4,11 @@ This synthetic check supports the project's requirement to define transcription
 units before measuring glyph or character entropy. It uses invented symbols and
 known reversible encodings. It establishes no manuscript statistic or glyph map.
 
+The separate [finite-edge accounting check](ENTROPY_EDGES.md) holds atomic
+units fixed and compares marginal counting populations. Together the two
+examples distinguish representation effects from finite-boundary estimator
+differences; neither is a manuscript entropy result.
+
 ## Method fixed by the example
 
 Create 1,024 instances of each atomic label A, B, C, and D. Shuffle that balanced
@@ -92,6 +97,11 @@ rules. Preserve uncertainty and distinguish a representation effect from a
 candidate-specific prediction under the [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
 
 ## Reproduce and validate
+
+The [reversible row-marker demonstration](PREFIX_FORMATTING.md) supplies a
+separate synthetic check of prefix/length contrasts and prefix-removal lookup
+gains. It preserves a complete source matrix while adding known positional
+formatting; its ideal source model and conditional control remain distinct.
 
 Python 3.14.3 was used for the committed realization; standard library only:
 

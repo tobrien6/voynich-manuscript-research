@@ -10,7 +10,7 @@
     "rename_preserves_exact_plan_bytes": true
   },
   "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
-  "source_tree_sha1": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "source_tree_sha1": "2ed9b59ba46843c1b68320bee9a07126acd9296d",
   "source_inventory": [
     {
       "path": "executable/conf.properties",
@@ -694,5 +694,7 @@
     "Excluding the initial written row does not remove the generator\u2019s manuscript-derived input dependency.",
     "Group strings, Java notation characters, native IVTFF loci and manuscript glyphs remain distinct units.",
     "Raw third-party sources, class files, logs, configuration text and generated text are not redistributed."
-  ]
+  ],
+  "source_tree_query_revision": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "review_provenance_note": "Canonical Git tree identity verified from the commit tree member. The earlier tree query used the commit revision, retained separately. Source blobs, build/run receipts and row observations are unchanged."
 }

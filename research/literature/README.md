@@ -12,11 +12,22 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
+Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
+attachments yielded no separate processed corpus or analysis implementation;
+that observation is limited to the inspected artifact.
+
 The separate [self-citation implementation audit](COPYING_MECHANISM.md), with
 [source fingerprints and observations](copying-mechanism.json), adds L004 and
 an explicit comparison contract for a published copying mechanism. It separates
 the paper's abstract claims from inspected release code, configuration, and a
 supplied output artifact; no generator execution or mechanism test is reported.
+
+A separate [source-build repeatability experiment](SELF_CITATION_REPLAY.md)
+now records six executions on one Java runtime. Every within-case repeat is
+byte-identical, and both 1,200-line runs exactly reproduce the supplied release
+output. This tests software reproducibility; manuscript mechanism comparisons,
+packaged-binary provenance, and paper-result replication remain separate.
 
 ## Three comparisons that need care
 
@@ -94,6 +105,12 @@ This register does not adjudicate the papers' linguistic interpretations.
 Statistical compatibility alone supplies neither a glyph mapping nor a
 translation. Future hypothesis tests must follow the project's
 [evaluation protocol](../DECIPHERMENT_PROTOCOL.md) and disclose prior exposure.
+
+The separate [entropy methods and finite-edge note](../representation/ENTROPY_EDGES.md)
+pins Lindemann/Bowern's v2 publication and companion definitions. Its original
+synthetic examples distinguish full-character marginals from predecessor
+counts on scored edges. It executes no external R or manuscript corpus and
+does not reproduce the paper's results.
 
 ## Validation and scope
 

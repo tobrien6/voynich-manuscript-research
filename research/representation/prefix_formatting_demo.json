@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "method": "synthetic reversible first-slot marker v1",
+  "scope": "Known-codec measurement demonstration; no manuscript data or candidate fit",
+  "plan_sha256": "8d2472d5ceaaefe3688e6eda8673d90eb656af33e17572062c40a4bd5d1e67c7",
+  "implementation_sha256": {
+    "scripts/prefix_formatting_demo.py": "de1bd307d93c4619011c2bb9afc8328b611bbacb488433bce3e3980c6ec9fecd",
+    "scripts/locus_positions.py": "4efa53f41aa51860e4ada5b01882a697490d2b85497f36584a50fc855dea0f7f",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f"
+  },
+  "generator": {
+    "algorithm": "sha256-counter-fisher-yates-v1",
+    "key_recipe": "SHA-256 of ASCII prefix-formatting-demo-v1:SEED",
+    "seed": 20261012,
+    "draw_bound": 64,
+    "rows": 256,
+    "slots_per_row": 8,
+    "realization_status": "deterministic once the recorded key is fixed"
+  },
+  "codec": {
+    "source_alphabet": "abcd",
+    "source_token_width": 3,
+    "marker": "y",
+    "marker_position": "first token only; supplied row boundaries retained"
+  },
+  "source_matrix_sha256": "0e5b3ca690f91adce24fad4740d8cc3abc52574375bba9ab649a48fbc03fa151",
+  "encoded_matrix_sha256": "32ea17247bac297d8ff48b1a072c2469871c4105008ed93ec9fdacbefa9ee8b1",
+  "decoded_matrix_sha256": "0e5b3ca690f91adce24fad4740d8cc3abc52574375bba9ab649a48fbc03fa151",
+  "round_trip_verified": true,
+  "token_count_in_each_matrix": 2048,
+  "source_ascii_characters": 6144,
+  "encoded_ascii_characters": 6400,
+  "measurements": {
+    "source": [
+      {
+        "boundary": "first",
+        "feature": "literal_y_prefix",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      },
+      {
+        "boundary": "first",
+        "feature": "ascii_token_length",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      },
+      {
+        "boundary": "last",
+        "feature": "literal_y_prefix",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      },
+      {
+        "boundary": "last",
+        "feature": "ascii_token_length",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      }
+    ],
+    "encoded": [
+      {
+        "boundary": "first",
+        "feature": "literal_y_prefix",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "1",
+          "denominator": "1792"
+        }
+      },
+      {
+        "boundary": "first",
+        "feature": "ascii_token_length",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "1",
+          "denominator": "1792"
+        }
+      },
+      {
+        "boundary": "last",
+        "feature": "literal_y_prefix",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "-1",
+          "denominator": "7"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "1",
+          "denominator": "1792"
+        }
+      },
+      {
+        "boundary": "last",
+        "feature": "ascii_token_length",
+        "rows": 256,
+        "equal_row_mean_contrast": {
+          "numerator": "-1",
+          "denominator": "7"
+        },
+        "conditional_variance_of_equal_row_mean": {
+          "numerator": "1",
+          "denominator": "1792"
+        }
+      }
+    ]
+  },
+  "conditional_control": {
+    "scope": "independent uniform token assignment within each encoded row",
+    "observed_first_slot_mean": {
+      "numerator": "1",
+      "denominator": "1"
+    },
+    "exact_two_sided_tail_for_either_first_slot_feature": {
+      "numerator": "1",
+      "denominator": "1552518092300708935148979488462502555256886017116696611139052038026050952686376886330878408828646477950487730697131073206171580044114814391444287275041181139204454976020849905550265285631598444825262999193716468750892846853816057856"
+    },
+    "tail_scope": "one fixed boundary contrast; no manuscript inference"
+  },
+  "lookup": {
+    "dictionary_scope": "encoded non-first slots; reused for every lookup",
+    "dictionary_types": 64,
+    "sorted_dictionary_sha256": "4893bf3625edf63776e519ab72fd4d2d64f8a81a3bfdaca2b11c72663c9633b8",
+    "source": [
+      {
+        "position": "first",
+        "slots": 256,
+        "raw_matches": 256,
+        "matches_after_one_leading_y_removed": 256,
+        "match_gain": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      },
+      {
+        "position": "other",
+        "slots": 1792,
+        "raw_matches": 1792,
+        "matches_after_one_leading_y_removed": 1792,
+        "match_gain": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      }
+    ],
+    "encoded": [
+      {
+        "position": "first",
+        "slots": 256,
+        "raw_matches": 0,
+        "matches_after_one_leading_y_removed": 256,
+        "match_gain": {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      },
+      {
+        "position": "other",
+        "slots": 1792,
+        "raw_matches": 1792,
+        "matches_after_one_leading_y_removed": 1792,
+        "match_gain": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      }
+    ]
+  },
+  "ideal_uniform_source_ensemble": {
+    "source_model": "independent uniform choices from all 64 vocabulary entries",
+    "message_support": "64**2048; identical complete-message support under the codec",
+    "joint_bits_in_either_representation": 12288,
+    "bits_per_source_token": {
+      "numerator": "6",
+      "denominator": "1"
+    },
+    "joint_bits_per_source_ascii_character": {
+      "numerator": "2",
+      "denominator": "1"
+    },
+    "joint_bits_per_encoded_ascii_character": {
+      "numerator": "48",
+      "denominator": "25"
+    },
+    "qualification": "ensemble quantities; not entropy in the known seed or a plug-in entropy estimate"
+  }
+}

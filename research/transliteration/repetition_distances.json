@@ -1,0 +1,1073 @@
+{
+  "schema_version": 1,
+  "method": "exploratory original-slot recurrence distances v1",
+  "plan_sha256": "10e6157abcfef8b4f6d21c253444ed8c01e261a2d323d974fb26b0bd6ff83fe9",
+  "engine_sha256": {
+    "scripts/repetition_distances.py": "eb148ce681f71ab3021b1114dcf315203905445e42f7a693dd49f37e020774b8",
+    "scripts/repetition_moments.py": "e758237cc966a4723e3613b8d7cce96e96f685ba682cdc1668558cf153749370",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65"
+  },
+  "selection": {
+    "kind": "P0",
+    "rule": "intersection of present P0 loci in pinned ZL3b and IT2a",
+    "count": 3884,
+    "sorted_locus_keys_sha256": "5fe25bb4c22fb59e9d6ba68aa2e51e49b5ca20e93d74c7c2c6da47acffb1979d"
+  },
+  "control": "independent uniform permutations within loci; retained representations and excluded slots fixed",
+  "limits": [
+    "Exposed exploratory corpus; no untouched evaluation or registered decoding candidate.",
+    "Distances and source treatments share material and are not independent tests.",
+    "Conditional SD is descriptive; no normal tail or generative-mechanism probability.",
+    "Endpoint-eligible pairs can span excluded interior slots; loci are not verified physical lines."
+  ],
+  "sources": [
+    {
+      "id": "ZL3b",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "variants": [
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "exclude",
+          "selected_loci": 3884,
+          "apparent_token_slots": 33965,
+          "retained_tokens": 33299,
+          "preprocessed_loci_sha256": "ac6cb5031a2555f1e999d4bbdc5c5a6c5da1f27cf688b60be2f01cec35cb925f",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 29013,
+              "contributing_loci": 3877,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 272,
+              "observed_rate": 0.00937511,
+              "conditional_expected_pairs_fraction": "19075842377/70450380",
+              "conditional_expected_pairs": 270.76990042,
+              "conditional_expected_rate": 0.00933271,
+              "conditional_variance": 201.86279533,
+              "conditional_standard_deviation": 14.20784274,
+              "observed_minus_expected_in_sd": 0.08657891,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 25275,
+              "contributing_loci": 3842,
+              "pairs_spanning_excluded_interior_slots": 388,
+              "observed_equal_pairs": 297,
+              "observed_rate": 0.01175074,
+              "conditional_expected_pairs_fraction": "14108838857/59491432",
+              "conditional_expected_pairs": 237.15749281,
+              "conditional_expected_rate": 0.00938309,
+              "conditional_variance": 185.08871429,
+              "conditional_standard_deviation": 13.60473132,
+              "observed_minus_expected_in_sd": 4.3986541,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 21539,
+              "contributing_loci": 3732,
+              "pairs_spanning_excluded_interior_slots": 634,
+              "observed_equal_pairs": 230,
+              "observed_rate": 0.0106783,
+              "conditional_expected_pairs_fraction": "6183335579/30421755",
+              "conditional_expected_pairs": 203.25374322,
+              "conditional_expected_rate": 0.00943655,
+              "conditional_variance": 164.33896612,
+              "conditional_standard_deviation": 12.81947605,
+              "observed_minus_expected_in_sd": 2.08637675,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 17910,
+              "contributing_loci": 3527,
+              "pairs_spanning_excluded_interior_slots": 782,
+              "observed_equal_pairs": 188,
+              "observed_rate": 0.01049693,
+              "conditional_expected_pairs_fraction": "21728215361/127481640",
+              "conditional_expected_pairs": 170.44191902,
+              "conditional_expected_rate": 0.00951658,
+              "conditional_variance": 141.69651064,
+              "conditional_standard_deviation": 11.90363435,
+              "observed_minus_expected_in_sd": 1.47501851,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              201.86279533,
+              -47.68734614,
+              -39.74707093,
+              -32.41861445
+            ],
+            [
+              -47.68734614,
+              185.08871429,
+              -34.17489691,
+              -28.34618093
+            ],
+            [
+              -39.74707093,
+              -34.17489691,
+              164.33896612,
+              -24.08950059
+            ],
+            [
+              -32.41861445,
+              -28.34618093,
+              -24.08950059,
+              141.69651064
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "18084236131409145851603/89586771560706420000",
+              "-4272155385004746510833/89586771560706420000",
+              "-3560811763541430863869/89586771560706420000",
+              "-193618600488637362677/5972451437380428000"
+            ],
+            [
+              "-4272155385004746510833/89586771560706420000",
+              "947514306625239898651/5119244089183224000",
+              "-139164485581850385031/4072125980032110000",
+              "-220821116168414999131/7790154048757080000"
+            ],
+            [
+              "-3560811763541430863869/89586771560706420000",
+              "-139164485581850385031/4072125980032110000",
+              "17219412182623850191/104779849778604000",
+              "-1079050293390777530629/44793385780353210000"
+            ],
+            [
+              "-193618600488637362677/5972451437380428000",
+              "-220821116168414999131/7790154048757080000",
+              "-1079050293390777530629/44793385780353210000",
+              "25388265859788132090781/179173543121412840000"
+            ]
+          ]
+        },
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "first",
+          "selected_loci": 3884,
+          "apparent_token_slots": 33965,
+          "retained_tokens": 33874,
+          "preprocessed_loci_sha256": "94db97cdff554a845bd1df9c4a1cbf263522db8a77db8c24aa96ba076489cc08",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 29930,
+              "contributing_loci": 3881,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 274,
+              "observed_rate": 0.00915469,
+              "conditional_expected_pairs_fraction": "1224201408179/4461857400",
+              "conditional_expected_pairs": 274.3703571,
+              "conditional_expected_rate": 0.00916707,
+              "conditional_variance": 204.35246521,
+              "conditional_standard_deviation": 14.29519028,
+              "observed_minus_expected_in_sd": -0.02590781,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 26073,
+              "contributing_loci": 3848,
+              "pairs_spanning_excluded_interior_slots": 58,
+              "observed_equal_pairs": 300,
+              "observed_rate": 0.01150616,
+              "conditional_expected_pairs_fraction": "189100234877/787386600",
+              "conditional_expected_pairs": 240.16186569,
+              "conditional_expected_rate": 0.00921113,
+              "conditional_variance": 187.15905832,
+              "conditional_standard_deviation": 13.68060884,
+              "observed_minus_expected_in_sd": 4.37393796,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 22235,
+              "contributing_loci": 3746,
+              "pairs_spanning_excluded_interior_slots": 91,
+              "observed_equal_pairs": 232,
+              "observed_rate": 0.010434,
+              "conditional_expected_pairs_fraction": "2756046742271/13385572200",
+              "conditional_expected_pairs": 205.89681943,
+              "conditional_expected_rate": 0.00926003,
+              "conditional_variance": 166.39095248,
+              "conditional_standard_deviation": 12.8992617,
+              "observed_minus_expected_in_sd": 2.02361819,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 18498,
+              "contributing_loci": 3543,
+              "pairs_spanning_excluded_interior_slots": 116,
+              "observed_equal_pairs": 192,
+              "observed_rate": 0.0103795,
+              "conditional_expected_pairs_fraction": "2310319220393/13385572200",
+              "conditional_expected_pairs": 172.59771834,
+              "conditional_expected_rate": 0.00933062,
+              "conditional_variance": 143.45482932,
+              "conditional_standard_deviation": 11.97726301,
+              "observed_minus_expected_in_sd": 1.61992616,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              204.35246521,
+              -48.21046805,
+              -40.16601264,
+              -32.78415291
+            ],
+            [
+              -48.21046805,
+              187.15905832,
+              -34.51773268,
+              -28.57414644
+            ],
+            [
+              -40.16601264,
+              -34.51773268,
+              166.39095248,
+              -24.30627848
+            ],
+            [
+              -32.78415291,
+              -28.57414644,
+              -24.30627848,
+              143.45482932
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "2816504249081958961093/13782580240108680000",
+              "-1439673396134715493897/29862257186902140000",
+              "-126257663118678982489/3143395493358120000",
+              "-734256604478856745133/22396692890176605000"
+            ],
+            [
+              "-1439673396134715493897/29862257186902140000",
+              "11177983868646370871003/59724514373804280000",
+              "-1546166116252517321/44793385780353210",
+              "-568859006549241681101/19908171457934760000"
+            ],
+            [
+              "-126257663118678982489/3143395493358120000",
+              "-1546166116252517321/44793385780353210",
+              "29812856498340442338473/179173543121412840000",
+              "-103691477038572710387/4266036740986020000"
+            ],
+            [
+              "-734256604478856745133/22396692890176605000",
+              "-568859006549241681101/19908171457934760000",
+              "-103691477038572710387/4266036740986020000",
+              "3671901435277418431043/25596220445916120000"
+            ]
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "exclude",
+          "selected_loci": 3884,
+          "apparent_token_slots": 31574,
+          "retained_tokens": 30908,
+          "preprocessed_loci_sha256": "12fd4fcff86496ee20e9e996687077732b7526cac67f199e35dfa7c266ffb54d",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 26641,
+              "contributing_loci": 3875,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 241,
+              "observed_rate": 0.00904621,
+              "conditional_expected_pairs_fraction": "10480647701/47805615",
+              "conditional_expected_pairs": 219.23465896,
+              "conditional_expected_rate": 0.00822922,
+              "conditional_variance": 160.55580304,
+              "conditional_standard_deviation": 12.67106164,
+              "observed_minus_expected_in_sd": 1.7177204,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 22903,
+              "contributing_loci": 3827,
+              "pairs_spanning_excluded_interior_slots": 370,
+              "observed_equal_pairs": 234,
+              "observed_rate": 0.010217,
+              "conditional_expected_pairs_fraction": "56413162471/297457160",
+              "conditional_expected_pairs": 189.65138533,
+              "conditional_expected_rate": 0.00828064,
+              "conditional_variance": 146.30466755,
+              "conditional_standard_deviation": 12.09564664,
+              "observed_minus_expected_in_sd": 3.6664939,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 19186,
+              "contributing_loci": 3681,
+              "pairs_spanning_excluded_interior_slots": 601,
+              "observed_equal_pairs": 176,
+              "observed_rate": 0.00917336,
+              "conditional_expected_pairs_fraction": "693950159/4345965",
+              "conditional_expected_pairs": 159.67688626,
+              "conditional_expected_rate": 0.00832257,
+              "conditional_variance": 128.34892864,
+              "conditional_standard_deviation": 11.32911862,
+              "observed_minus_expected_in_sd": 1.44081056,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 15621,
+              "contributing_loci": 3445,
+              "pairs_spanning_excluded_interior_slots": 730,
+              "observed_equal_pairs": 147,
+              "observed_rate": 0.00941041,
+              "conditional_expected_pairs_fraction": "69868015897/535422888",
+              "conditional_expected_pairs": 130.49127608,
+              "conditional_expected_rate": 0.00835358,
+              "conditional_variance": 108.40566362,
+              "conditional_standard_deviation": 10.41180405,
+              "observed_minus_expected_in_sd": 1.58557766,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              160.55580304,
+              -41.3555012,
+              -33.81423479,
+              -26.91182263
+            ],
+            [
+              -41.3555012,
+              146.30466755,
+              -28.94380531,
+              -23.35710145
+            ],
+            [
+              -33.81423479,
+              -28.94380531,
+              128.34892864,
+              -19.74762547
+            ],
+            [
+              -26.91182263,
+              -23.35710145,
+              -19.74762547,
+              108.40566362
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "575347041974377532437/3583470862428256800",
+              "-519986784421194667/12573581973432480",
+              "-24234465023562713177/716694172485651360",
+              "-96437732236559400919/3583470862428256800"
+            ],
+            [
+              "-519986784421194667/12573581973432480",
+              "1048557026397019024903/7166941724856513600",
+              "-17286547163856051097/597245143738042800",
+              "-1690898837876345737/72393350756126400"
+            ],
+            [
+              "-24234465023562713177/716694172485651360",
+              "-17286547163856051097/597245143738042800",
+              "459934646005525287593/3583470862428256800",
+              "-2948543353481561191/149311285934510700"
+            ],
+            [
+              "-96437732236559400919/3583470862428256800",
+              "-1690898837876345737/72393350756126400",
+              "-2948543353481561191/149311285934510700",
+              "110991010544052763889/1023848817836644800"
+            ]
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "first",
+          "selected_loci": 3884,
+          "apparent_token_slots": 31574,
+          "retained_tokens": 31483,
+          "preprocessed_loci_sha256": "ec31ceceb9755884ac3ee8b76fbab1588a79f1ed980efa22c05d883b7857c92e",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 27543,
+              "contributing_loci": 3880,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 242,
+              "observed_rate": 0.00878626,
+              "conditional_expected_pairs_fraction": "16521941957/74364290",
+              "conditional_expected_pairs": 222.17575071,
+              "conditional_expected_rate": 0.00806651,
+              "conditional_variance": 162.24644532,
+              "conditional_standard_deviation": 12.73759967,
+              "observed_minus_expected_in_sd": 1.55635676,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 23687,
+              "contributing_loci": 3836,
+              "pairs_spanning_excluded_interior_slots": 55,
+              "observed_equal_pairs": 238,
+              "observed_rate": 0.01004771,
+              "conditional_expected_pairs_fraction": "513593434301/2677114440",
+              "conditional_expected_pairs": 191.84590193,
+              "conditional_expected_rate": 0.00809921,
+              "conditional_variance": 147.77056382,
+              "conditional_standard_deviation": 12.15609163,
+              "observed_minus_expected_in_sd": 3.79678761,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 19859,
+              "contributing_loci": 3697,
+              "pairs_spanning_excluded_interior_slots": 84,
+              "observed_equal_pairs": 178,
+              "observed_rate": 0.00896319,
+              "conditional_expected_pairs_fraction": "144059002291/892371480",
+              "conditional_expected_pairs": 161.43389331,
+              "conditional_expected_rate": 0.008129,
+              "conditional_variance": 129.65554012,
+              "conditional_standard_deviation": 11.38663867,
+              "observed_minus_expected_in_sd": 1.45487243,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 16172,
+              "contributing_loci": 3469,
+              "pairs_spanning_excluded_interior_slots": 108,
+              "observed_equal_pairs": 150,
+              "observed_rate": 0.00927529,
+              "conditional_expected_pairs_fraction": "70677687923/535422888",
+              "conditional_expected_pairs": 132.00348642,
+              "conditional_expected_rate": 0.00816247,
+              "conditional_variance": 109.60741615,
+              "conditional_standard_deviation": 10.46935605,
+              "observed_minus_expected_in_sd": 1.71897044,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              162.24644532,
+              -41.76309619,
+              -34.1307158,
+              -27.16072198
+            ],
+            [
+              -41.76309619,
+              147.77056382,
+              -29.0788445,
+              -23.56776007
+            ],
+            [
+              -34.1307158,
+              -29.0788445,
+              129.65554012,
+              -19.8154954
+            ],
+            [
+              -27.16072198,
+              -23.56776007,
+              -19.8154954,
+              109.60741615
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "581405409319383949301/3583470862428256800",
+              "-74828419166856842323/1791735431214128400",
+              "-2264933806865627797/66360571526449200",
+              "-24332413951178115179/895867715607064200"
+            ],
+            [
+              "-74828419166856842323/1791735431214128400",
+              "1059063019561542145603/7166941724856513600",
+              "-868359933191211137/29862257186902140",
+              "-168908763006039661043/7166941724856513600"
+            ],
+            [
+              "-2264933806865627797/66360571526449200",
+              "-868359933191211137/29862257186902140",
+              "2294404198371705809/17696152407053120",
+              "-7889805597242211653/398163429158695200"
+            ],
+            [
+              "-24332413951178115179/895867715607064200",
+              "-168908763006039661043/7166941724856513600",
+              "-7889805597242211653/398163429158695200",
+              "785549964173967680923/7166941724856513600"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT2a",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "variants": [
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "exclude",
+          "selected_loci": 3884,
+          "apparent_token_slots": 33455,
+          "retained_tokens": 33383,
+          "preprocessed_loci_sha256": "e95b07c6c965078e5a5ce364f3e08651b1d6a47e9316252c290e92a3ff7e5900",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 29454,
+              "contributing_loci": 3881,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 282,
+              "observed_rate": 0.00957425,
+              "conditional_expected_pairs_fraction": "42185386621/159352050",
+              "conditional_expected_pairs": 264.73074316,
+              "conditional_expected_rate": 0.00898794,
+              "conditional_variance": 195.9083393,
+              "conditional_standard_deviation": 13.99672602,
+              "observed_minus_expected_in_sd": 1.23380688,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 25579,
+              "contributing_loci": 3850,
+              "pairs_spanning_excluded_interior_slots": 35,
+              "observed_equal_pairs": 277,
+              "observed_rate": 0.0108292,
+              "conditional_expected_pairs_fraction": "3087650659553/13385572200",
+              "conditional_expected_pairs": 230.6700538,
+              "conditional_expected_rate": 0.00901795,
+              "conditional_variance": 179.01282862,
+              "conditional_standard_deviation": 13.37956758,
+              "observed_minus_expected_in_sd": 3.46273868,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 21737,
+              "contributing_loci": 3741,
+              "pairs_spanning_excluded_interior_slots": 65,
+              "observed_equal_pairs": 227,
+              "observed_rate": 0.01044302,
+              "conditional_expected_pairs_fraction": "2632493681107/13385572200",
+              "conditional_expected_pairs": 196.66650344,
+              "conditional_expected_rate": 0.00904755,
+              "conditional_variance": 158.56722437,
+              "conditional_standard_deviation": 12.59234785,
+              "observed_minus_expected_in_sd": 2.40888331,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 18002,
+              "contributing_loci": 3530,
+              "pairs_spanning_excluded_interior_slots": 87,
+              "observed_equal_pairs": 187,
+              "observed_rate": 0.01038773,
+              "conditional_expected_pairs_fraction": "730321882967/4461857400",
+              "conditional_expected_pairs": 163.68113489,
+              "conditional_expected_rate": 0.00909239,
+              "conditional_variance": 135.79499901,
+              "conditional_standard_deviation": 11.65311113,
+              "observed_minus_expected_in_sd": 2.00108493,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              195.9083393,
+              -47.38405999,
+              -39.23594965,
+              -31.72976827
+            ],
+            [
+              -47.38405999,
+              179.01282862,
+              -33.56582985,
+              -27.54666305
+            ],
+            [
+              -39.23594965,
+              -33.56582985,
+              158.56722437,
+              -23.42691057
+            ],
+            [
+              -31.72976827,
+              -27.54666305,
+              -23.42691057,
+              135.79499901
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "3510159127864708725877/17917354312141284000",
+              "-1697993983073095451477/35834708624282568000",
+              "-1406008823289029019923/35834708624282568000",
+              "-1137027000627752601449/35834708624282568000"
+            ],
+            [
+              "-1697993983073095451477/35834708624282568000",
+              "194390077382434963307/1085900261341896000",
+              "-7810530729468544349/232692913144692000",
+              "-75932818763861208691/2756516048021736000"
+            ],
+            [
+              "-1406008823289029019923/35834708624282568000",
+              "-7810530729468544349/232692913144692000",
+              "1894070094181579613477/11944902874760856000",
+              "-104937064300908551939/4479338578035321000"
+            ],
+            [
+              "-1137027000627752601449/35834708624282568000",
+              "-75932818763861208691/2756516048021736000",
+              "-104937064300908551939/4479338578035321000",
+              "4866174222066534092399/35834708624282568000"
+            ]
+          ]
+        },
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "first",
+          "selected_loci": 3884,
+          "apparent_token_slots": 33455,
+          "retained_tokens": 33383,
+          "preprocessed_loci_sha256": "e95b07c6c965078e5a5ce364f3e08651b1d6a47e9316252c290e92a3ff7e5900",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 29454,
+              "contributing_loci": 3881,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 282,
+              "observed_rate": 0.00957425,
+              "conditional_expected_pairs_fraction": "42185386621/159352050",
+              "conditional_expected_pairs": 264.73074316,
+              "conditional_expected_rate": 0.00898794,
+              "conditional_variance": 195.9083393,
+              "conditional_standard_deviation": 13.99672602,
+              "observed_minus_expected_in_sd": 1.23380688,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 25579,
+              "contributing_loci": 3850,
+              "pairs_spanning_excluded_interior_slots": 35,
+              "observed_equal_pairs": 277,
+              "observed_rate": 0.0108292,
+              "conditional_expected_pairs_fraction": "3087650659553/13385572200",
+              "conditional_expected_pairs": 230.6700538,
+              "conditional_expected_rate": 0.00901795,
+              "conditional_variance": 179.01282862,
+              "conditional_standard_deviation": 13.37956758,
+              "observed_minus_expected_in_sd": 3.46273868,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 21737,
+              "contributing_loci": 3741,
+              "pairs_spanning_excluded_interior_slots": 65,
+              "observed_equal_pairs": 227,
+              "observed_rate": 0.01044302,
+              "conditional_expected_pairs_fraction": "2632493681107/13385572200",
+              "conditional_expected_pairs": 196.66650344,
+              "conditional_expected_rate": 0.00904755,
+              "conditional_variance": 158.56722437,
+              "conditional_standard_deviation": 12.59234785,
+              "observed_minus_expected_in_sd": 2.40888331,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 18002,
+              "contributing_loci": 3530,
+              "pairs_spanning_excluded_interior_slots": 87,
+              "observed_equal_pairs": 187,
+              "observed_rate": 0.01038773,
+              "conditional_expected_pairs_fraction": "730321882967/4461857400",
+              "conditional_expected_pairs": 163.68113489,
+              "conditional_expected_rate": 0.00909239,
+              "conditional_variance": 135.79499901,
+              "conditional_standard_deviation": 11.65311113,
+              "observed_minus_expected_in_sd": 2.00108493,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              195.9083393,
+              -47.38405999,
+              -39.23594965,
+              -31.72976827
+            ],
+            [
+              -47.38405999,
+              179.01282862,
+              -33.56582985,
+              -27.54666305
+            ],
+            [
+              -39.23594965,
+              -33.56582985,
+              158.56722437,
+              -23.42691057
+            ],
+            [
+              -31.72976827,
+              -27.54666305,
+              -23.42691057,
+              135.79499901
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "3510159127864708725877/17917354312141284000",
+              "-1697993983073095451477/35834708624282568000",
+              "-1406008823289029019923/35834708624282568000",
+              "-1137027000627752601449/35834708624282568000"
+            ],
+            [
+              "-1697993983073095451477/35834708624282568000",
+              "194390077382434963307/1085900261341896000",
+              "-7810530729468544349/232692913144692000",
+              "-75932818763861208691/2756516048021736000"
+            ],
+            [
+              "-1406008823289029019923/35834708624282568000",
+              "-7810530729468544349/232692913144692000",
+              "1894070094181579613477/11944902874760856000",
+              "-104937064300908551939/4479338578035321000"
+            ],
+            [
+              "-1137027000627752601449/35834708624282568000",
+              "-75932818763861208691/2756516048021736000",
+              "-104937064300908551939/4479338578035321000",
+              "4866174222066534092399/35834708624282568000"
+            ]
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "exclude",
+          "selected_loci": 3884,
+          "apparent_token_slots": 33455,
+          "retained_tokens": 33383,
+          "preprocessed_loci_sha256": "e95b07c6c965078e5a5ce364f3e08651b1d6a47e9316252c290e92a3ff7e5900",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 29454,
+              "contributing_loci": 3881,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 282,
+              "observed_rate": 0.00957425,
+              "conditional_expected_pairs_fraction": "42185386621/159352050",
+              "conditional_expected_pairs": 264.73074316,
+              "conditional_expected_rate": 0.00898794,
+              "conditional_variance": 195.9083393,
+              "conditional_standard_deviation": 13.99672602,
+              "observed_minus_expected_in_sd": 1.23380688,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 25579,
+              "contributing_loci": 3850,
+              "pairs_spanning_excluded_interior_slots": 35,
+              "observed_equal_pairs": 277,
+              "observed_rate": 0.0108292,
+              "conditional_expected_pairs_fraction": "3087650659553/13385572200",
+              "conditional_expected_pairs": 230.6700538,
+              "conditional_expected_rate": 0.00901795,
+              "conditional_variance": 179.01282862,
+              "conditional_standard_deviation": 13.37956758,
+              "observed_minus_expected_in_sd": 3.46273868,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 21737,
+              "contributing_loci": 3741,
+              "pairs_spanning_excluded_interior_slots": 65,
+              "observed_equal_pairs": 227,
+              "observed_rate": 0.01044302,
+              "conditional_expected_pairs_fraction": "2632493681107/13385572200",
+              "conditional_expected_pairs": 196.66650344,
+              "conditional_expected_rate": 0.00904755,
+              "conditional_variance": 158.56722437,
+              "conditional_standard_deviation": 12.59234785,
+              "observed_minus_expected_in_sd": 2.40888331,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 18002,
+              "contributing_loci": 3530,
+              "pairs_spanning_excluded_interior_slots": 87,
+              "observed_equal_pairs": 187,
+              "observed_rate": 0.01038773,
+              "conditional_expected_pairs_fraction": "730321882967/4461857400",
+              "conditional_expected_pairs": 163.68113489,
+              "conditional_expected_rate": 0.00909239,
+              "conditional_variance": 135.79499901,
+              "conditional_standard_deviation": 11.65311113,
+              "observed_minus_expected_in_sd": 2.00108493,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              195.9083393,
+              -47.38405999,
+              -39.23594965,
+              -31.72976827
+            ],
+            [
+              -47.38405999,
+              179.01282862,
+              -33.56582985,
+              -27.54666305
+            ],
+            [
+              -39.23594965,
+              -33.56582985,
+              158.56722437,
+              -23.42691057
+            ],
+            [
+              -31.72976827,
+              -27.54666305,
+              -23.42691057,
+              135.79499901
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "3510159127864708725877/17917354312141284000",
+              "-1697993983073095451477/35834708624282568000",
+              "-1406008823289029019923/35834708624282568000",
+              "-1137027000627752601449/35834708624282568000"
+            ],
+            [
+              "-1697993983073095451477/35834708624282568000",
+              "194390077382434963307/1085900261341896000",
+              "-7810530729468544349/232692913144692000",
+              "-75932818763861208691/2756516048021736000"
+            ],
+            [
+              "-1406008823289029019923/35834708624282568000",
+              "-7810530729468544349/232692913144692000",
+              "1894070094181579613477/11944902874760856000",
+              "-104937064300908551939/4479338578035321000"
+            ],
+            [
+              "-1137027000627752601449/35834708624282568000",
+              "-75932818763861208691/2756516048021736000",
+              "-104937064300908551939/4479338578035321000",
+              "4866174222066534092399/35834708624282568000"
+            ]
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "first",
+          "selected_loci": 3884,
+          "apparent_token_slots": 33455,
+          "retained_tokens": 33383,
+          "preprocessed_loci_sha256": "e95b07c6c965078e5a5ce364f3e08651b1d6a47e9316252c290e92a3ff7e5900",
+          "preprocessed_digest_encoding": "ASCII compact JSON of sorted [locus_key, original_slots] rows; null exclusions",
+          "distances": [
+            {
+              "slot_distance": 1,
+              "eligible_pairs": 29454,
+              "contributing_loci": 3881,
+              "pairs_spanning_excluded_interior_slots": 0,
+              "observed_equal_pairs": 282,
+              "observed_rate": 0.00957425,
+              "conditional_expected_pairs_fraction": "42185386621/159352050",
+              "conditional_expected_pairs": 264.73074316,
+              "conditional_expected_rate": 0.00898794,
+              "conditional_variance": 195.9083393,
+              "conditional_standard_deviation": 13.99672602,
+              "observed_minus_expected_in_sd": 1.23380688,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 2,
+              "eligible_pairs": 25579,
+              "contributing_loci": 3850,
+              "pairs_spanning_excluded_interior_slots": 35,
+              "observed_equal_pairs": 277,
+              "observed_rate": 0.0108292,
+              "conditional_expected_pairs_fraction": "3087650659553/13385572200",
+              "conditional_expected_pairs": 230.6700538,
+              "conditional_expected_rate": 0.00901795,
+              "conditional_variance": 179.01282862,
+              "conditional_standard_deviation": 13.37956758,
+              "observed_minus_expected_in_sd": 3.46273868,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 3,
+              "eligible_pairs": 21737,
+              "contributing_loci": 3741,
+              "pairs_spanning_excluded_interior_slots": 65,
+              "observed_equal_pairs": 227,
+              "observed_rate": 0.01044302,
+              "conditional_expected_pairs_fraction": "2632493681107/13385572200",
+              "conditional_expected_pairs": 196.66650344,
+              "conditional_expected_rate": 0.00904755,
+              "conditional_variance": 158.56722437,
+              "conditional_standard_deviation": 12.59234785,
+              "observed_minus_expected_in_sd": 2.40888331,
+              "zero_conditional_variance": false
+            },
+            {
+              "slot_distance": 4,
+              "eligible_pairs": 18002,
+              "contributing_loci": 3530,
+              "pairs_spanning_excluded_interior_slots": 87,
+              "observed_equal_pairs": 187,
+              "observed_rate": 0.01038773,
+              "conditional_expected_pairs_fraction": "730321882967/4461857400",
+              "conditional_expected_pairs": 163.68113489,
+              "conditional_expected_rate": 0.00909239,
+              "conditional_variance": 135.79499901,
+              "conditional_standard_deviation": 11.65311113,
+              "observed_minus_expected_in_sd": 2.00108493,
+              "zero_conditional_variance": false
+            }
+          ],
+          "covariance_distance_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "conditional_covariance_matrix": [
+            [
+              195.9083393,
+              -47.38405999,
+              -39.23594965,
+              -31.72976827
+            ],
+            [
+              -47.38405999,
+              179.01282862,
+              -33.56582985,
+              -27.54666305
+            ],
+            [
+              -39.23594965,
+              -33.56582985,
+              158.56722437,
+              -23.42691057
+            ],
+            [
+              -31.72976827,
+              -27.54666305,
+              -23.42691057,
+              135.79499901
+            ]
+          ],
+          "conditional_covariance_fractions": [
+            [
+              "3510159127864708725877/17917354312141284000",
+              "-1697993983073095451477/35834708624282568000",
+              "-1406008823289029019923/35834708624282568000",
+              "-1137027000627752601449/35834708624282568000"
+            ],
+            [
+              "-1697993983073095451477/35834708624282568000",
+              "194390077382434963307/1085900261341896000",
+              "-7810530729468544349/232692913144692000",
+              "-75932818763861208691/2756516048021736000"
+            ],
+            [
+              "-1406008823289029019923/35834708624282568000",
+              "-7810530729468544349/232692913144692000",
+              "1894070094181579613477/11944902874760856000",
+              "-104937064300908551939/4479338578035321000"
+            ],
+            [
+              "-1137027000627752601449/35834708624282568000",
+              "-75932818763861208691/2756516048021736000",
+              "-104937064300908551939/4479338578035321000",
+              "4866174222066534092399/35834708624282568000"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
