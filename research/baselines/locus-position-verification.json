@@ -1,0 +1,42 @@
+{
+  "analysis_id": "locus-position-ascii-length-v1",
+  "baseline_results_sha256": "4444267e98743c7c720d94a767ba0efc0ae07757ac82575e40497f7b4d933777",
+  "canonical_adapter_snapshot_sha256": {
+    "join": "a2dbe519a0fd06469c73bdd1872d39e0705cc9ffab819ba002db219d383eaa2d",
+    "split": "b2b35bc204d4818e55946175c5c316cbe51133117df78a80cdc76125f5bf8d93"
+  },
+  "cohort_locus_count": 2964,
+  "cohort_sorted_keys_sha256": "b54e90732d33e3d656499a7cc7769a9904cbdbaf57d2760b1196a1d4dbbfe40b",
+  "historical_engine_sha256": {
+    "locus_position_baseline.py": "305104fadc07be62fe81f881acd3a87b36d4f7a06efd620acc5f01a58b096d33",
+    "run_locus_position_baseline.py": "bbcc15941b9ccad60b9227388f11e16a710be1096476155eebd8b7679b1b04d1",
+    "shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f"
+  },
+  "input_bytes_match_recorded_baseline": {
+    "join": true,
+    "protocol": true,
+    "split": true
+  },
+  "input_sha256": {
+    "join": "a2dbe519a0fd06469c73bdd1872d39e0705cc9ffab819ba002db219d383eaa2d",
+    "protocol": "419834f0b656dcd60383e3fdf3048c7c63a018a8bbff7430e284f11138957282",
+    "split": "b2b35bc204d4818e55946175c5c316cbe51133117df78a80cdc76125f5bf8d93"
+  },
+  "limits": "Verifies pinned transcription/preprocessing consistency and the complete recorded analysis, not glyph accuracy, physical-line alignment, unseen evaluation, decipherment or translation.",
+  "recorded_baseline_input_sha256": {
+    "join": "a2dbe519a0fd06469c73bdd1872d39e0705cc9ffab819ba002db219d383eaa2d",
+    "protocol": "419834f0b656dcd60383e3fdf3048c7c63a018a8bbff7430e284f11138957282",
+    "split": "b2b35bc204d4818e55946175c5c316cbe51133117df78a80cdc76125f5bf8d93"
+  },
+  "schema_version": 1,
+  "verification_implementation_sha256": {
+    "audit_eva_token_coverage.py": "dcd97f39c14ac78137cf5c3f1d622d72aa0229a5e8d6b64651d236bae69baf1e",
+    "audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "verify_locus_position_baseline.py": "cdf5103a2eabd2dd1cd5d38f37402e89638b2c536d1abdae3f70ac6c76c6b1b5"
+  },
+  "verification_method": "pinned-producer-position-baseline-replay-v1",
+  "verified_scientific_report_sha256": "ab0a9ea92aab7330071173769696468a8ba7a9afa91f67e872a99f8d3e251cc2"
+}
