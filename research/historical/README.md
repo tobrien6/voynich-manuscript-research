@@ -34,6 +34,9 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
+global/record-conditioned ratio with A/B units kept separate, and preserves
+the opposing within-record/joining A residuals without new sampling or tails.
 
 ## Method
 
@@ -89,6 +92,11 @@ boundaries and order under that same lossy projection: 211 shared pages have
 equal nonempty projection bags, including 29 with different order. One-to-one
 and ambiguous projection groups retain native locators without becoming a
 verified locus or image crosswalk.
+
+The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
+historical H envelope and two present IT2a P0/Pt loci with the same joined
+lowercase projection. The default modern adapter excludes Pt by kind; this
+source-unit difference creates no verified record or image crosswalk.
 
 ## Reproduce and next test
 

@@ -6,6 +6,11 @@ Its accepted pair-event count remains 272 against 270.7699 expected. These
 statistics weight repetition differently; an above-mean type count alone
 supplies no calibrated excess, uncertainty interval, or decipherment evidence.
 
+The [fixed immediate-repeat image pilot](IMMEDIATE_REPEAT_IMAGES.md) connects
+three selected within-locus events to paired native readings and provisional
+Yale image windows. It retains all eight treatments and distinguishes the
+event sample from the globally deduplicated type statistic.
+
 ## Counting unit and source comparison
 
 [Amancio et al. (2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067310),
@@ -139,3 +144,8 @@ disclosed shuffle protocol before applying it in a candidate comparison. A
 paper or generator comparison must explicitly match counting units, input,
 boundaries and null scope. Physical mapping, source/glyph adjudication and a
 real exposure-aware evaluation split remain outside this description.
+
+The [exact type-variance follow-up](REPEATING_TYPE_VARIANCE.md) adds joint
+no-event probabilities and signed type-pair covariance under this same
+fixed-gap locus control, preserving every count and mean in the present report.
+Its SD-scaled descriptions supply no normal-tail or decipherment claim.
