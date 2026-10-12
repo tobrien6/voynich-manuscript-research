@@ -8,6 +8,9 @@ disagreements under both policies, including the
 [f67r1.1 case](https://github.com/tobrien6/voynich-manuscript-research/pull/106).
 Literal string agreement therefore does not establish tokenization agreement.
 
+The [source-pinned count figure](figures/TOKEN_BOUNDARIES.md) displays both
+complete category partitions and the common denominator.
+
 This exposed-data description measures the pinned transcriptions. It does not
 adjudicate manuscript spaces, choose an edition, or establish glyph equivalence,
 a language, a decipherment, or a translation. It supplies a traceable set of
