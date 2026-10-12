@@ -140,3 +140,8 @@ population. Preserving the exact endpoint tokens would make this particular
 statistic invariant, so a revised statistic must state what information remains
 testable. Any prospective evaluation also needs explicit dependency groups,
 prior-exposure records and an honest frozen split. No translation is proposed.
+
+The [anchored whole-locus order control](PARAGRAPH_ORDER_CONTROL.md) keeps every
+locus's endpoint tokens intact while permuting interior locus identities within
+the same paragraphs. Its expected repeat count is 0.83–1.03, with only four or
+five variable units; all invariant units remain in the original denominator.
