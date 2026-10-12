@@ -85,6 +85,11 @@ def make_report(sources, canvas_rows, image_identity):
     selected.sort(key=lambda item: SOURCE_IDS.index(item[0]["id"]))
     groups = dependency_components(canvas_rows)
     leaf_groups = {leaf: group for group in groups for leaf in group["folio_ids"]}
+    indexed_leaf_canvases = defaultdict(set)
+    for row in canvas_rows:
+        for side in row["explicit_folio_sides"].split(";"):
+            if side:
+                indexed_leaf_canvases[side[:-1]].add(row["canvas_uri"])
     by_page = defaultdict(list)
     for source, document in selected:
         all_counts = Counter(locus.page for locus in document.loci)
@@ -156,6 +161,8 @@ def make_report(sources, canvas_rows, image_identity):
         "distinct_page_ids": len(records),
         "dependency_rule": "same declared leaf, or leaves connected transitively by explicit shared canvas labels",
         "dependency_components": groups, "pages": records,
+        "indexed_canvas_ids_by_leaf": {leaf: sorted(canvases) for leaf, canvases in
+            sorted(indexed_leaf_canvases.items(), key=lambda item: int(item[0]))},
         "limits": [
             "No image regions, glyph readings, historical aliases, or visual completeness are verified.",
             "Dependencies are conservative label-based hints, not a complete codicological model.",
@@ -188,12 +195,13 @@ def split_dependency_errors(split, report):
     """
     leaf_groups = {leaf: group["group_id"] for group in report["dependency_components"]
                    for leaf in group["folio_ids"]}
-    leaf_canvases = defaultdict(set)
+    # Canvas completeness comes from the entire index, not edition coverage.
+    # Missing transcription sides must not hide indexed scans from this gate.
+    leaf_canvases = report["indexed_canvas_ids_by_leaf"]
+    supported_leaves = set()
     for page in report["pages"]:
         if page["side_reference_status"] == "side_references_matched":
-            for side in page["reference"]["folio_sides"]:
-                leaf_canvases[side[:-1]].update(match["canvas_uri"] for match in page["canvas_matches"]
-                    if side in match["requested_folio_sides"])
+            supported_leaves.update(side[:-1] for side in page["reference"]["folio_sides"])
     memberships = defaultdict(set)
     errors = []
     for unit in split["units"]:
@@ -201,7 +209,7 @@ def split_dependency_errors(split, report):
         expected_canvases = set()
         for leaf in unit["folio_ids"]:
             group_id = leaf_groups.get(leaf)
-            if group_id is None or not leaf_canvases[leaf]:
+            if group_id is None or leaf not in supported_leaves:
                 errors.append(f"{uid}: leaf {leaf} has no supported transcription/image references")
                 continue
             memberships[group_id].add(uid)

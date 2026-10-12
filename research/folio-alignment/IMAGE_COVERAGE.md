@@ -98,7 +98,9 @@ sampling unit, retain the derived group ID, and declare all indexed canvas
 references for those selected leaves. The optional `--split` gate checks these
 requirements against freshly recomputed coverage. It rejects omitted groups,
 missing canvas references, unsupported leaves, and components divided among
-multiple units. This last requirement is deliberately stricter than the base
+multiple units. Required canvases come from the complete rebuilt index through
+`indexed_canvas_ids_by_leaf`, including sides absent from both source editions;
+transcription-page support is checked separately. This last requirement is deliberately stricter than the base
 split validator's allowance for several same-partition units sharing an
 arbitrary dependency group: the image audit prevents inflating units connected
 by the recorded scans. Review conservative exclusions before choosing a sample.

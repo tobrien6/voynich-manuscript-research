@@ -11083,6 +11083,425 @@
       ]
     }
   ],
+  "indexed_canvas_ids_by_leaf": {
+    "1": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006077"
+    ],
+    "2": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006078",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006079"
+    ],
+    "3": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006080",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006081"
+    ],
+    "4": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006082",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006083"
+    ],
+    "5": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006084",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006085"
+    ],
+    "6": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006086",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006087"
+    ],
+    "7": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006088",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006089"
+    ],
+    "8": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006090",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006091"
+    ],
+    "9": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006092",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006093"
+    ],
+    "10": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006094",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006095"
+    ],
+    "11": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006096",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006097"
+    ],
+    "13": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006098",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006099"
+    ],
+    "14": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006100",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006101"
+    ],
+    "15": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006102",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006103"
+    ],
+    "16": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006104",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006105"
+    ],
+    "17": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006106",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006107"
+    ],
+    "18": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006108",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006109"
+    ],
+    "19": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006110",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006111"
+    ],
+    "20": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006112",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006113"
+    ],
+    "21": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006114",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006115"
+    ],
+    "22": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006116",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006117"
+    ],
+    "23": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006118",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006119"
+    ],
+    "24": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006120",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006121"
+    ],
+    "25": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006122",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006123"
+    ],
+    "26": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006124",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006125"
+    ],
+    "27": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006126",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006127"
+    ],
+    "28": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006128",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006129"
+    ],
+    "29": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006130",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006131"
+    ],
+    "30": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006132",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006133"
+    ],
+    "31": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006134",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006135"
+    ],
+    "32": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006136",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006137"
+    ],
+    "33": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006138",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006139"
+    ],
+    "34": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006140",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006141"
+    ],
+    "35": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006142",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006143"
+    ],
+    "36": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006144",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006145"
+    ],
+    "37": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006146",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006147"
+    ],
+    "38": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006148",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006149"
+    ],
+    "39": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006150",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006151"
+    ],
+    "40": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006152",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006153"
+    ],
+    "41": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006154",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006155"
+    ],
+    "42": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006156",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006157"
+    ],
+    "43": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006158",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006159"
+    ],
+    "44": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006160",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006161"
+    ],
+    "45": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006162",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006163"
+    ],
+    "46": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006164",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006165"
+    ],
+    "47": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006166",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006167"
+    ],
+    "48": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006168",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006169"
+    ],
+    "49": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006170",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006171"
+    ],
+    "50": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006172",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006173"
+    ],
+    "51": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006174",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006175"
+    ],
+    "52": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006176",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006177"
+    ],
+    "53": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006178",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006179"
+    ],
+    "54": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006180",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006181"
+    ],
+    "55": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006182",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006183"
+    ],
+    "56": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006184",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006185"
+    ],
+    "57": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006186",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006187"
+    ],
+    "58": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006188",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006189"
+    ],
+    "65": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006190",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006191"
+    ],
+    "66": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006192",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006193"
+    ],
+    "67": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006195"
+    ],
+    "68": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006197"
+    ],
+    "69": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006198",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006199"
+    ],
+    "70": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006199",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006200",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006201"
+    ],
+    "71": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006202",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006203"
+    ],
+    "72": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006203",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006204",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006205"
+    ],
+    "73": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006206",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006207"
+    ],
+    "75": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006209"
+    ],
+    "76": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006211"
+    ],
+    "77": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006212",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006213"
+    ],
+    "78": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006214",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006215"
+    ],
+    "79": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006216",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006217"
+    ],
+    "80": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006218",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006219"
+    ],
+    "81": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006220",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006221"
+    ],
+    "82": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006222",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006223"
+    ],
+    "83": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006224",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006225"
+    ],
+    "84": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006227"
+    ],
+    "85": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231"
+    ],
+    "86": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231"
+    ],
+    "87": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1043429"
+    ],
+    "88": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006233",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037112"
+    ],
+    "89": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006233",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006234",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235"
+    ],
+    "90": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006236",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006237"
+    ],
+    "93": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006238",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006239"
+    ],
+    "94": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006240",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006241"
+    ],
+    "95": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006241",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006242",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006243"
+    ],
+    "96": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006244",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006245"
+    ],
+    "99": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006246",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006247"
+    ],
+    "100": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006248",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249"
+    ],
+    "101": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006250",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251"
+    ],
+    "102": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006252",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006253"
+    ],
+    "103": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006255"
+    ],
+    "104": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006256",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006257"
+    ],
+    "105": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006258",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006259"
+    ],
+    "106": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006260",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006261"
+    ],
+    "107": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006262",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006263"
+    ],
+    "108": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006264",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006265"
+    ],
+    "111": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006266",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006267"
+    ],
+    "112": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006268",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006269"
+    ],
+    "113": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006270",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006271"
+    ],
+    "114": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006272",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006273"
+    ],
+    "115": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006274",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006275"
+    ],
+    "116": [
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+      "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277"
+    ]
+  },
   "limits": [
     "No image regions, glyph readings, historical aliases, or visual completeness are verified.",
     "Dependencies are conservative label-based hints, not a complete codicological model.",

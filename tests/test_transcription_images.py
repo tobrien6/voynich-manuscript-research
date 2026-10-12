@@ -131,6 +131,21 @@ class TranscriptionImageTests(unittest.TestCase):
         split["units"][0]["folio_ids"] = ["117"]
         self.assertTrue(any("no supported" in error for error in split_dependency_errors(split, result)))
 
+    def test_missing_transcription_sides_cannot_hide_full_index_canvas_requirements(self):
+        text = ("#=IVTFF Eva- 2.0 M\n<f88r>\n<f88r.1,@P0> ab\n"
+                "<f90v1>\n<f90v1.1,@P0> cd\n")
+        result = report(text, [canvas("88r", 1), canvas("88v and 89r", 2),
+                               canvas("89v (part) and 90r", 3), canvas("90v (part)", 4)])
+        selected_canvases = [page["canvas_matches"][0]["canvas_uri"] for page in result["pages"]]
+        split = {"units": [{"unit_id": "combined", "folio_ids": ["88", "90"],
+            "dependency_groups": ["yale-leaves:88+89+90"], "canvas_ids": selected_canvases}]}
+        errors = split_dependency_errors(split, result)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("missing indexed canvas", errors[0])
+        split["units"][0]["canvas_ids"] = sorted(set(result["indexed_canvas_ids_by_leaf"]["88"] +
+                                                       result["indexed_canvas_ids_by_leaf"]["90"]))
+        self.assertEqual(split_dependency_errors(split, result), [])
+
 
 if __name__ == "__main__":
     unittest.main()
