@@ -17,6 +17,17 @@ paper-associated 2015 repository snapshot. Its full/B input counts and all
 native annotated/page streams agree, while exact 2011 preprocessing and the
 Table 2 predictor remain unresolved.
 
+The [synthetic substitution-normalization control](SUBSTITUTION_NORMALIZATION.md)
+derives the affected-mass factor connecting conditional and whole-corpus
+word-entropy decreases. A fixed toy reverses their candidate ranking; no
+manuscript substitution result or case assignment is inferred.
+
+The [generated known-case entropy controls](KNOWN_CASE_ENTROPY_CONTROLS.md)
+retain an independently specified capitalization rule while an unrelated
+replacement can maximize word-entropy decrease. Both conditional and
+whole-corpus definitions have a constructed failure; no manuscript case
+function or natural-language error rate is inferred.
+
 The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
 Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
 attachments yielded no separate processed corpus or analysis implementation;
@@ -100,6 +111,13 @@ reuses those same 31 archived cases and retains 1,590 common manuscript keys.
 All 24 source/spacing/count-policy/centering points exceed their corresponding
 finite ranges. This adds an exposed-data constraint on the fixed setup, with
 all eligibility, group-count mixtures and approximate encoded-row limits retained.
+
+The [exact-size-conditioned follow-up](SELF_CITATION_SIZE_CONDITIONED.md)
+standardizes those outputs to source token-count frequencies. Missing sizes make
+all full-cohort ranges undefined. On the predeclared 1,426-key common supported
+subset, two of 24 points are inside their standardized ranges and 22 are above.
+Every missing cell and excluded key remains recorded; the smaller cohort does
+not repair full-cohort coverage or establish physical unit correspondence.
 
 The [paragraph-context call-site ablation](SELF_CITATION_CONTEXT_ABLATION.md)
 separately suppresses the generator's chooser/morpher arguments across 248

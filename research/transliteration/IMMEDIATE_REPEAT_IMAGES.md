@@ -1,5 +1,9 @@
 # Three fixed immediate-repeat image cases
 
+The [local comparison viewer](repeat-viewer/README.md) displays the accepted
+native contexts, all policy/event slots and recorded image windows together,
+with original notes separately attributed and every mapping still provisional.
+
 The same uncertainty treatments can agree on a repeat while the two editions
 still disagree about its literal representation. Fixed cases at `f4r.2` and
 `f2r.10` demonstrate that source fact; the image windows make the differing

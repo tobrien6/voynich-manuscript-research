@@ -34,9 +34,19 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [equal-join provenance census](JOIN_PROVENANCE.md) locates every repeated
+joining edge in the original H record order. None bridges an excluded/empty H
+record; all source descriptors, overlap counts and singleton cases are retained
+without asserting physical-line or glyph alignment.
 The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
 global/record-conditioned ratio with A/B units kept separate, and preserves
 the opposing within-record/joining A residuals without new sampling or tails.
+The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
+path and global type deduplication, with signed type covariance, all four
+outcomes and descriptive SD scaling without a calibrated tail.
+The [fixed B tail-control block](TYPE_TAILS.md) retains 1,000 additional controls
+per variant, both inclusive tail definitions and distinct frequency/rank scores,
+with the original controls and exposure/randomization limits explicit.
 
 ## Method
 
@@ -92,6 +102,11 @@ boundaries and order under that same lossy projection: 211 shared pages have
 equal nonempty projection bags, including 29 with different order. One-to-one
 and ambiguous projection groups retain native locators without becoming a
 verified locus or image crosswalk.
+
+The [complete projected-record order diagnostic](RECORD_ORDER.md) measures every
+equal-multiset page under both native orders. On all 29 differing-order pages,
+maximum pairings retain 836 of 1,006 nonempty records per edition; every possible
+optimal index pair and ambiguity is retained without selecting a row crosswalk.
 
 The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
 historical H envelope and two present IT2a P0/Pt loci with the same joined

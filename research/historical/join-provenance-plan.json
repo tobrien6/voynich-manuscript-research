@@ -1,0 +1,27 @@
+{
+  "plan_version": 1,
+  "scope": "Complete descriptive equal-native-join provenance on all four exposed approximate H streams; no new null or image crosswalk",
+  "global_study_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/126",
+  "global_repaired_head": "72e6871ad695dc3c32314d36f1ae9b34fef8e232",
+  "edge_scope": "Consecutive nonempty retained native H records in the all-N-1 flat-stream edge population",
+  "include_all_parser_variants": true,
+  "retain_asterisks": true,
+  "selection": "Every equal-token native-record joining event, in source order",
+  "h_ordinal_base": 0,
+  "physical_file_line_base": 1,
+  "dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/global_repeated_types.py": "cebe7bae733a401d7c76d15ee7c4724d2f9aab1efe2433db74e0d6a8d3c0da08",
+    "scripts/historical_repeated_types.py": "9a8918d6ecd7fa2ddcf52802ee96ef7646c5c21c089069db18d0c10e77e51268",
+    "research/historical/repeated-types-plan.json": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
+    "research/historical/REPEATED_TYPES_PLAN.md": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
+    "research/historical/repeated-types.json": "683a0906eaf01dbacf5394eb0ded820802df0f09c293302a452351494338dc2a"
+  },
+  "prior_exposure": "Global join counts/type overlap, all source/parser data, conditional mean comparison and native-record projection PR135 scope already inspected"
+}
