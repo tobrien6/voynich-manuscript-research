@@ -123,3 +123,8 @@ split. A later candidate comparison must specify compatible measurements and
 units, initialization exclusions, settings/seeds, exposure, controls and failure
 criteria separately, following the [comparison requirements](COPYING_MECHANISM.md)
 and [decipherment protocol](../DECIPHERMENT_PROTOCOL.md).
+
+The separate [boundary-state audit](SELF_CITATION_BOUNDARY_STATE.md) checks every
+recorded counter transition and reconstructs source-defined segments/page-reset
+blocks. It preserves the initialized row's unknown flags and distinguishes a
+terminal reset from a complete page-length block.
