@@ -1,0 +1,630 @@
+{
+  "schema_version": 1,
+  "analysis_id": "f76r-three-native-locus-anchors-v1",
+  "page": "f76r",
+  "selection": {
+    "eligible_count": 38,
+    "eligible_keys_in_numeric_order": [
+      "f76r.1",
+      "f76r.2",
+      "f76r.3",
+      "f76r.6",
+      "f76r.9",
+      "f76r.12",
+      "f76r.13",
+      "f76r.16",
+      "f76r.17",
+      "f76r.20",
+      "f76r.21",
+      "f76r.24",
+      "f76r.25",
+      "f76r.26",
+      "f76r.29",
+      "f76r.30",
+      "f76r.33",
+      "f76r.34",
+      "f76r.35",
+      "f76r.36",
+      "f76r.39",
+      "f76r.40",
+      "f76r.41",
+      "f76r.42",
+      "f76r.43",
+      "f76r.44",
+      "f76r.45",
+      "f76r.46",
+      "f76r.47",
+      "f76r.48",
+      "f76r.49",
+      "f76r.50",
+      "f76r.51",
+      "f76r.52",
+      "f76r.53",
+      "f76r.54",
+      "f76r.55",
+      "f76r.56"
+    ],
+    "excluded_page_keys": [
+      {
+        "key": "f76r.4",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.4,*L0",
+          "ZL3b": "f76r.4,*L0"
+        }
+      },
+      {
+        "key": "f76r.5",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.5,=P0",
+          "ZL3b": "f76r.5,=P0"
+        }
+      },
+      {
+        "key": "f76r.7",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.7,*L0",
+          "ZL3b": "f76r.7,*L0"
+        }
+      },
+      {
+        "key": "f76r.8",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.8,=P0",
+          "ZL3b": "f76r.8,=P0"
+        }
+      },
+      {
+        "key": "f76r.10",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.10,*L0",
+          "ZL3b": "f76r.10,*L0"
+        }
+      },
+      {
+        "key": "f76r.11",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.11,=P0",
+          "ZL3b": "f76r.11,=P0"
+        }
+      },
+      {
+        "key": "f76r.14",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.14,*L0",
+          "ZL3b": "f76r.14,*L0"
+        }
+      },
+      {
+        "key": "f76r.15",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.15,=P0",
+          "ZL3b": "f76r.15,=P0"
+        }
+      },
+      {
+        "key": "f76r.18",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.18,*L0",
+          "ZL3b": "f76r.18,*L0"
+        }
+      },
+      {
+        "key": "f76r.19",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.19,=P0",
+          "ZL3b": "f76r.19,=P0"
+        }
+      },
+      {
+        "key": "f76r.22",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.22,*L0",
+          "ZL3b": "f76r.22,*L0"
+        }
+      },
+      {
+        "key": "f76r.23",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.23,=P0",
+          "ZL3b": "f76r.23,=P0"
+        }
+      },
+      {
+        "key": "f76r.27",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.27,*L0",
+          "ZL3b": "f76r.27,*L0"
+        }
+      },
+      {
+        "key": "f76r.28",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.28,=P0",
+          "ZL3b": "f76r.28,=P0"
+        }
+      },
+      {
+        "key": "f76r.31",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.31,*L0",
+          "ZL3b": "f76r.31,*L0"
+        }
+      },
+      {
+        "key": "f76r.32",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.32,=P0",
+          "ZL3b": "f76r.32,=P0"
+        }
+      },
+      {
+        "key": "f76r.37",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.37,*L0",
+          "ZL3b": "f76r.37,*L0"
+        }
+      },
+      {
+        "key": "f76r.38",
+        "reasons": [
+          "ZL3b:not_regular_P0",
+          "IT2a:not_regular_P0"
+        ],
+        "source_identifiers": {
+          "IT2a": "f76r.38,=P0",
+          "ZL3b": "f76r.38,=P0"
+        }
+      }
+    ],
+    "anchors": [
+      {
+        "role": "first",
+        "eligible_rank_zero_based": 0,
+        "key": "f76r.1",
+        "sources": {
+          "IT2a": {
+            "locus": {
+              "key": "f76r.1",
+              "identifier": "f76r.1,@P0",
+              "source_file_line": 2651,
+              "native_text": "<%>potchokar.chcfhdy.opshdy.qolp.chcphy.chcphdy.opshey.qofshy.opchdy.sain.?sy",
+              "locator": "@",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "preceding": null,
+            "following": {
+              "key": "f76r.2",
+              "identifier": "f76r.2,+P0",
+              "source_file_line": 2652,
+              "native_text": "dshedy.qotddyar.cthar.chep.dain.okain.qokeor.shedy.qol.ain.sheols.qokeey",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            }
+          },
+          "ZL3b": {
+            "locus": {
+              "key": "f76r.1",
+              "identifier": "f76r.1,@P0",
+              "source_file_line": 4138,
+              "native_text": "<%>potchokor.chcfhdy.opshdy.qolp.chcphy.chcphdy.opshey.qofshy.opchdy.sain.as,y",
+              "locator": "@",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "preceding": null,
+            "following": {
+              "key": "f76r.2",
+              "identifier": "f76r.2,+P0",
+              "source_file_line": 4139,
+              "native_text": "dshedy.qotddyar.cthar.chep.dain.okain.qokeor.shedy.qol.ain.sheals,qokeey",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "role": "lower_median",
+        "eligible_rank_zero_based": 18,
+        "key": "f76r.35",
+        "sources": {
+          "IT2a": {
+            "locus": {
+              "key": "f76r.35",
+              "identifier": "f76r.35,+P0",
+              "source_file_line": 2685,
+              "native_text": "saiin.shedy.lshey.qokal.chcthy.okeolor.cheol.otar.chedy.qol.chcthy.chckhy",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "preceding": {
+              "key": "f76r.34",
+              "identifier": "f76r.34,+P0",
+              "source_file_line": 2684,
+              "native_text": "cheor.shey.qoolkal.shedy.shedy.shey.shedy.ollchy.shlches.shcthy.sain.oly",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "following": {
+              "key": "f76r.36",
+              "identifier": "f76r.36,+P0",
+              "source_file_line": 2686,
+              "native_text": "qokal.shedy.sheol.cheal.alshy.chol.chdy.talor.olalor.chol.okeyr.ar.oly",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            }
+          },
+          "ZL3b": {
+            "locus": {
+              "key": "f76r.35",
+              "identifier": "f76r.35,+P0",
+              "source_file_line": 4172,
+              "native_text": "sain.shedy.lshey.qokal.chcthy.okeolor.cheol.otar.chedy.qol.chcthy.chckhy",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "preceding": {
+              "key": "f76r.34",
+              "identifier": "f76r.34,+P0",
+              "source_file_line": 4171,
+              "native_text": "cheor.shey.qoolkal,shedy.shedy.shey.shedy.ollchy.shlches.shcthy.sain.oly",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "following": {
+              "key": "f76r.36",
+              "identifier": "f76r.36,+P0",
+              "source_file_line": 4173,
+              "native_text": "qok[a:o]l.shedy.sheol.cheol.alshy.chol,chdy.talor.ol,alor.chol.okeor,ar,o.oly",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "role": "last",
+        "eligible_rank_zero_based": 37,
+        "key": "f76r.56",
+        "sources": {
+          "IT2a": {
+            "locus": {
+              "key": "f76r.56",
+              "identifier": "f76r.56,+P0",
+              "source_file_line": 2706,
+              "native_text": "qokaiin.ol.shedy.qokeey.or.shdy<$>",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "preceding": {
+              "key": "f76r.55",
+              "identifier": "f76r.55,+P0",
+              "source_file_line": 2705,
+              "native_text": "sain.sheey.or.or.al.solshey.okeedy.ldaiin.checthey.okedalor",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "following": null
+          },
+          "ZL3b": {
+            "locus": {
+              "key": "f76r.56",
+              "identifier": "f76r.56,+P0",
+              "source_file_line": 4196,
+              "native_text": "qokaiin.ol.shedy.qokeey.or.shdy<$>",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "preceding": {
+              "key": "f76r.55",
+              "identifier": "f76r.55,+P0",
+              "source_file_line": 4195,
+              "native_text": "sain.sheey.or.ar.al.solshey.okeedy.ldaiin.checkhey.okedalor",
+              "locator": "+",
+              "kind": "P0",
+              "metadata": {
+                "B": "2",
+                "C": "2",
+                "F": "b",
+                "H": "2",
+                "I": "T",
+                "L": "B",
+                "P": "C",
+                "Q": "M",
+                "X": "S"
+              }
+            },
+            "following": null
+          }
+        }
+      }
+    ]
+  },
+  "image": {
+    "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+    "yale_label": "76r",
+    "image_oid": "1006210",
+    "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006210",
+    "explicit_label_sides": [
+      "76r"
+    ],
+    "combined_view": false,
+    "service_url": "https://collections.library.yale.edu/iiif/2/1006210",
+    "full_image_url": "https://collections.library.yale.edu/iiif/2/1006210/full/full/0/default.jpg",
+    "native_width": 2793,
+    "native_height": 3769
+  },
+  "manifest": {
+    "url": "https://collections.library.yale.edu/manifests/2002046",
+    "sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309"
+  },
+  "sources": [
+    {
+      "id": "ZL3b",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    },
+    {
+      "id": "IT2a",
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    }
+  ],
+  "exposure": {
+    "prior_inventory": {
+      "inspection_status": "visually inspected",
+      "inspected_on": "2026-10-11",
+      "source_record": "research/pilot/inventory.json"
+    },
+    "whole_corpus_text_exposure": true,
+    "untouched_evaluation": false
+  },
+  "inputs": {
+    "inventory": {
+      "path": "research/pilot/inventory.json",
+      "sha256": "9d34cfdc78a0900e52a8833fd67d752b42aae4667fc57c815e6a205d0a786e79"
+    },
+    "canvas_index": {
+      "path": "research/image-index/canvases.csv",
+      "sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+    },
+    "index_audit": {
+      "path": "research/image-index/audit.json",
+      "sha256": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc"
+    },
+    "source_catalog": {
+      "path": "data/transliterations.json",
+      "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "selection_protocol": {
+      "path": "research/pilot/SAMPLING.md",
+      "sha256": "add52bf4745323b63537413baff3ff5277da663d42c96dc4a61bde5c40418ff9"
+    },
+    "anchor_plan": {
+      "path": "research/pilot/F76R_ANCHOR_PLAN.md",
+      "sha256": "c4157af5d35c75314803ccd3617a60dce05a8cedd47939538c9ebcf16d7bcfe1"
+    }
+  },
+  "implementation_sha256": {
+    "ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "audit_pilot_transcriptions.py": "7e6f0aef8650e8835d305f18428bca388b9ef6ff3cc6a675c763ee7d48b3fb8c",
+    "select_f76r_anchors.py": "b0bee313f7c523429b34bcebaf8eb69138fd46a974f6ba6f34faa0a0cf1cc55c"
+  },
+  "limit": "Selection only; no image-region or glyph validation."
+}

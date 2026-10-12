@@ -3,7 +3,11 @@
 from copy import deepcopy
 import hashlib
 import importlib.util
+import json
 from pathlib import Path
+import subprocess
+import sys
+import tempfile
 import unittest
 
 
@@ -49,6 +53,61 @@ class EvaluationSplitTests(unittest.TestCase):
 
     def test_valid_frozen_split(self):
         self.assertEqual(MODULE.validate(example(), CORPUS, True)["errors"], [])
+
+    def test_json_loader_preserves_valid_declarations(self):
+        split = example()
+        self.assertEqual(MODULE.load_split_json(json.dumps(split)), split)
+
+    def test_duplicate_exposure_members_cannot_hide_an_unresolved_freeze(self):
+        raw = json.dumps(example()).replace(
+            '"state": "none_reported"',
+            '"state": "unknown", "state": "none_reported"')
+        # Ordinary decoding discards the first declaration and would pass.
+        self.assertEqual(MODULE.validate(json.loads(raw), CORPUS, True)["errors"], [])
+        with self.assertRaisesRegex(ValueError, "duplicate object member: 'state'"):
+            MODULE.load_split_json(raw)
+
+    def test_duplicate_members_fail_at_all_depths_and_after_escape_decoding(self):
+        for raw in ('{"status":"draft","status":"frozen"}',
+                    '{"input":{"sha256":"a","sha256":"a"}}',
+                    '{"units":[{"partition":"development","partition":"evaluation"}]}',
+                    r'{"state":"unknown","st\u0061te":"none_reported"}'):
+            with self.subTest(raw=raw), self.assertRaisesRegex(ValueError, "duplicate object member"):
+                MODULE.load_split_json(raw)
+
+    def test_non_json_numeric_constants_are_rejected(self):
+        for constant in ("NaN", "Infinity", "-Infinity"):
+            with self.subTest(constant=constant), self.assertRaisesRegex(ValueError, "non-JSON numeric constant"):
+                MODULE.load_split_json('{"extension":' + constant + '}')
+
+    def test_cli_rejects_ambiguous_json_without_a_pass_or_traceback(self):
+        raw = json.dumps(example()).replace(
+            '"state": "none_reported"',
+            '"state": "unknown", "state": "none_reported"')
+        with tempfile.TemporaryDirectory() as directory:
+            split_path = Path(directory) / "split.json"
+            input_path = Path(directory) / "input.txt"
+            split_path.write_text(raw, encoding="utf-8")
+            input_path.write_bytes(CORPUS)
+            result = subprocess.run([sys.executable, str(SCRIPT), str(split_path),
+                                     "--input", str(input_path), "--require-frozen"],
+                                    capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("FAIL: Split JSON has a duplicate object member", result.stderr)
+        self.assertNotIn("PASS:", result.stdout)
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_cli_still_accepts_a_valid_frozen_synthetic_split(self):
+        with tempfile.TemporaryDirectory() as directory:
+            split_path = Path(directory) / "split.json"
+            input_path = Path(directory) / "input.txt"
+            split_path.write_text(json.dumps(example()), encoding="utf-8")
+            input_path.write_bytes(CORPUS)
+            result = subprocess.run([sys.executable, str(SCRIPT), str(split_path),
+                                     "--input", str(input_path), "--require-frozen"],
+                                    capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("PASS: declared frozen split", result.stdout)
 
     def test_same_leaf_on_both_sides_of_split(self):
         split = example()

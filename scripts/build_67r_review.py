@@ -14,16 +14,22 @@ except ImportError:
 
 
 KEYS = [f"f67r1.{n}" for n in range(1, 5)] + [f"f67r2.{n}" for n in range(72, 75)]
+REGIONS = {"f67r1": "left panel, upper horizontal block",
+           "f67r2": "right panel, lower horizontal block"}
 
 
-def build(root=ROOT):
-    selected = [(source, document) for source, document in load_sources(root)
+def build(root=ROOT, *, sources=None, keys=KEYS, regions=REGIONS,
+          proposal="research/panel-regions/f67r-proposal.json", method="67r-provisional-p0-review-v1"):
+    """Default output preserves the accepted 67r report; explicit scopes can reuse the collector."""
+    if sources is None:
+        sources = load_sources(root)
+    selected = [(source, document) for source, document in sources
                 if source["id"] in {"ZL3b", "IT2a"}]
     if sorted(source["id"] for source, _ in selected) != ["IT2a", "ZL3b"]:
         raise ValueError("require exactly one pinned ZL3b and IT2a source")
     selected.sort(key=lambda item: {"ZL3b": 0, "IT2a": 1}[item[0]["id"]])
     records = []
-    for key in KEYS:
+    for key in keys:
         readings = []
         for source, document in selected:
             matches = [locus for locus in document.loci if locus.key == key]
@@ -32,14 +38,12 @@ def build(root=ROOT):
             locus = matches[0]
             readings.append({"source_id": source["id"], "locus_identifier": locus.identifier,
                              "source_file_line": locus.line_number, "native_text": locus.text})
-        records.append({"locus_key": key, "proposed_region":
-            "left panel, upper horizontal block" if key.startswith("f67r1.") else
-            "right panel, lower horizontal block",
+        records.append({"locus_key": key, "proposed_region": regions[key.split(".")[0]],
             "image_glyph_verification": "pending", "readings": readings,
             "native_record_text_identical": readings[0]["native_text"] == readings[1]["native_text"]})
     equal = sum(record["native_record_text_identical"] for record in records)
-    return {"schema_version": 1, "method": "67r-provisional-p0-review-v1",
-            "proposal": "research/panel-regions/f67r-proposal.json",
+    return {"schema_version": 1, "method": method,
+            "proposal": proposal,
             "usable_as_verified_corpus_join": False, "normalization": "none; preserve native reader text and annotations",
             "sources": [{"source_id": source["id"], "sha256": source["sha256"],
                          "alphabet": source["alphabet"], "url": source["url"]} for source, _ in selected],
