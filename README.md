@@ -20,9 +20,12 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
 - [GC and full/basic reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) and [aggregate records](research/transcriptions/intake-audit.json)
+- [Exploratory token and repetition baselines](research/transliteration/BASELINES.md) and [recorded results](research/transliteration/token_baselines.json)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
-Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending. Decoding and translation are the research objective; no new transcription, statistical result, or validated decipherment has been established.
+Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
+
+Exploratory token and repetition baselines now compare uncertainty policies on the paired ZL3b and IT2a inputs. A reproducible shuffle generator supplies synthetic-tested controls for later registered experiments, and an evaluation-split validator checks declared dependencies and prior exposure. No real evaluation split or registered decoding hypothesis has been established. Decoding and translation remain the research objective; glyph adjudication, a validated decipherment, and source-linked translations remain pending.
 
 ## Research practice
 
