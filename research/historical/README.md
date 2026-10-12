@@ -113,6 +113,11 @@ equal-multiset page under both native orders. On all 29 differing-order pages,
 maximum pairings retain 836 of 1,006 nonempty records per edition; every possible
 optimal index pair and ambiguity is retained without selecting a row crosswalk.
 
+The [complete maximum-pairing count audit](PAIRING_COUNTS.md) retains the same
+211-page cohort and counts every maximum index sequence. Twelve pages have
+two to 18 choices; exact candidate shares use explicitly uniform index-pairing
+weighting, without a probability of physical row identity.
+
 The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
 historical H envelope and two present IT2a P0/Pt loci with the same joined
 lowercase projection. The default modern adapter excludes Pt by kind; this
