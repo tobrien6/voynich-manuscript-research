@@ -32,6 +32,8 @@ Before developing a candidate, commit a provisional split of eight development f
 
 The [visual inventory](research/pilot/INVENTORY.md) now records ten selected target folio sides with Yale image identifiers, visible text layouts, illustrations, and uncertainties. Its [selection protocol](research/pilot/SAMPLING.md), [machine-readable records](research/pilot/inventory.json), and [source-check script](scripts/verify_pilot.py) make the contribution checkable. Several canvases contain multiple foldout panels retained within one record. The pilot-specific development/evaluation split, frozen candidate, independent observation review, and translations remain pending. The visual inspection of all ten images must be disclosed when defining prior exposure for a later split.
 
+The [local f76r comparison guide](research/pilot/viewer/README.md) explains how to open the accepted HTML viewer from a local clone. Choose and zoom among [three provisional image/native-text anchors](research/pilot/F76R_ANCHORS.md), with literal ZL3b/IT2a rows, neighbors, unresolved readings and source-file links beside the recorded review windows. Yale images require an internet connection. Row associations remain provisional, glyph adjudication remains pending, and opening this previously exposed material creates no untouched evaluation evidence.
+
 The [section boundary survey](research/boundary-pilot/INVENTORY.md) and [standalone-recto boundary inventory](research/PILOT_INVENTORY.md), with its [selection protocol](research/PILOT_SELECTION.md) and [CSV](research/data/pilot-folios.csv), add complementary boundary records. The survey includes 102r within a shared scan; the standalone-recto rule selects 100r instead. These inventories share most of their images, so their observations do not create independent manuscript samples. Prior exposure must be recorded across all inventories when defining a later split.
 
 The [working transliteration decision](research/transliteration/DECISION.md) now recommends the pinned ZL3b source for preserving uncertainty, with IT2a for paired sensitivity checks. Source bytes, credits, reuse terms, and structural coverage are recorded in the [data catalog](data/transliterations.json) and [coverage audit](research/transliteration/coverage_audit.json). This supplies the initial source choice; glyph adjudication, image alignment, the evaluation split, and a registered hypothesis remain pending.
@@ -39,6 +41,25 @@ The [working transliteration decision](research/transliteration/DECISION.md) now
 The [pilot transcription/image-link audit](research/pilot/TRANSCRIPTION_READINESS.md) now identifies seven selected sides with exact page identifiers in both editions, containing 251 shared present locations. Three targets remain blocked: 67r and 68r use unmapped panel identifiers, while 85v belongs to a shared 85v/86r scan and has no exact transcription page. The [reproducible report](research/pilot/transcription-readiness.json) preserves those gaps and source disagreements; its completeness check fails until the mappings are documented. Exact metadata links still need image/glyph review and do not create untouched evaluation material.
 
 The [reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) extends the accepted ZL/IT source decision with GC and both RF variants, using the same IVTFF reader. Identical RF alphabet headers conceal different native text, so later analyses must retain exact variant URLs and source hashes. This is a corpus identity check, not a decipherment result.
+
+The [literal-chain boundary audit](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md)
+compares 2,940 native P0 loci eligible in both editions under both comma policies,
+from 3,884 shared present candidates with 944 joint exclusions. The editions have
+identical concatenated, case-preserved ASCII strings at 2,054 loci, but their token
+boundaries disagree at 562 loci under split spacing and 767 under join spacing;
+359 disagree under both policies. Different strings are not aligned. These are
+dependent encoded source representations, including one-token loci and same-line
+fragments, rather than independently verified manuscript words or physical lines.
+
+![Both treatments use the same 2,940 native loci. Split: 1,492 same chain and boundaries, 562 same chain with different boundaries, 886 different chains. Join: 1,287, 767 and 886 respectively.](https://raw.githubusercontent.com/tobrien6/voynich-manuscript-research/main/research/transliteration/figures/token-boundary-concordance.png)
+
+The [figure, exact plotted values and provenance](research/transliteration/figures/TOKEN_BOUNDARIES.md)
+retain the complete category partitions and denominators. Source-informed image
+cases at [f67r1.1](research/panel-regions/67R_BOUNDARY_CASE.md) and
+[f102r1.14–15](research/panel-regions/102R_BOUNDARY_PAIR.md) provide provisional row
+context while leaving glyph regions and word divisions unresolved. No source
+correction, accuracy ranking, independent or untouched evaluation, decipherment,
+or translation follows from literal-string or visible-gap agreement.
 
 The [exploratory token and repetition baselines](research/transliteration/BASELINES.md) compare uncertainty policies on 3,884 shared present P0 loci in ZL3b and IT2a, with [complete recorded results](research/transliteration/token_baselines.json). The primary split/exclude treatment has 272 equal adjacent pairs against a conditional expectation of 270.77; other treatments expose sensitivity to preprocessing. This full-corpus exploration does not provide an untouched evaluation set or validate a decoding rule.
 
