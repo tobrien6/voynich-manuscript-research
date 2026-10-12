@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import unicodedata
 
 try:
     from . import audit_reddy_sources as parent
@@ -236,12 +237,23 @@ def run_audit(reference, root=ROOT):
             "limits": "Current URL/mirror identity and fixed PDF text-layer correspondence only; not 2011 full-corpus bytes, native-line/glyph/image alignment, original preprocessing, Table2 replication, language or translation. Raw corpus/PDF/author payloads remain local."}
 
 
-def protect_output(path, reference):
+def protected_paths(reference):
     paths = [ROOT / name for name in (*FROZEN, PLAN, HUMAN_PLAN)] + [Path(__file__)]
     paths += [reference / name for name in REFERENCES]
     paths += [reference / "reddy" / name for name in parent.SELECTED]
-    if any(path.resolve() == p.resolve() or path.exists() and p.exists() and path.samefile(p) for p in paths):
-        raise ValueError("cited-source output aliases a frozen source/reference/plan/producer")
+    return tuple(p for original in paths for p in (original, original.resolve()))
+
+
+def protect_output(path, reference, entry_paths=()):
+    resolved = path.resolve()
+    for p in (*entry_paths, *protected_paths(reference)):
+        same_named_entry = (
+            unicodedata.normalize("NFC", resolved.name).casefold()
+            == unicodedata.normalize("NFC", p.name).casefold()
+            and resolved.parent.exists() and p.parent.exists()
+            and resolved.parent.samefile(p.parent))
+        if resolved == p.resolve() or same_named_entry or path.exists() and p.exists() and path.samefile(p):
+            raise ValueError("cited-source output aliases a frozen source/reference/plan/producer")
 
 
 def main():
@@ -251,12 +263,13 @@ def main():
     parser.add_argument("--check", type=Path)
     args = parser.parse_args()
     try:
-        if args.output: protect_output(args.output, args.reference)
+        entry_paths = protected_paths(args.reference) if args.output else ()
+        if args.output: protect_output(args.output, args.reference, entry_paths)
         result = run_audit(args.reference)
         if args.check: check_report(result, args.check)
         if args.output:
             payload = json.dumps(result, indent=2, allow_nan=False) + "\n"
-            protect_output(args.output, args.reference)
+            protect_output(args.output, args.reference, entry_paths)
             args.output.write_text(payload, encoding="utf-8")
         elif not args.check: print(json.dumps(result, indent=2, allow_nan=False))
     except (ValueError, KeyError, TypeError, OSError, subprocess.SubprocessError) as error:

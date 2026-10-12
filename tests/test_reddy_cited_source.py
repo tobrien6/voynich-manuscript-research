@@ -175,5 +175,60 @@ class ReddyCitedSourceTests(unittest.TestCase):
                 check.write_text(invalid)
                 with self.assertRaises(ValueError): module.read_json(check)
 
+    def test_removed_protected_name_variants_are_refused_before_final_write(self):
+        for phase in ("calculation", "serialization"):
+            with self.subTest(phase=phase), tempfile.TemporaryDirectory() as temp:
+                base = Path(temp); root, reference, empty = base / "root", base / "reference", base / "empty"
+                root.mkdir(); reference.mkdir(); empty.mkdir()
+                target = reference / "cited-voynich.now"
+                target.write_bytes(b"synthetic protected input")
+                output_parent = base / "output-parent"
+                output_parent.symlink_to(empty, target_is_directory=True)
+                output = output_parent / "CITED-VOYNICH.NOW"
+                variant = base / "REFERENCE"
+                if not variant.exists() or not variant.samefile(reference): variant = reference
+                original_dumps = json.dumps
+
+                def changed(*args, **kwargs):
+                    target.unlink()
+                    output_parent.unlink()
+                    output_parent.symlink_to(variant, target_is_directory=True)
+                    return {"fixture": 1} if phase == "calculation" else original_dumps(*args, **kwargs)
+
+                with patch.object(module, "ROOT", root), \
+                        patch.object(module, "run_audit", side_effect=changed if phase == "calculation" else None,
+                                     return_value={"fixture": 1}), \
+                        patch.object(module.json, "dumps", side_effect=changed if phase == "serialization" else original_dumps), \
+                        patch("sys.argv", ["audit", "--reference", str(reference), "--output", str(output)]), \
+                        contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                    module.main()
+                self.assertEqual(error.exception.code, 1)
+                self.assertFalse(target.exists())
+                self.assertFalse(output.exists())
+
+    def test_entry_resolved_targets_survive_source_symlink_retargeting(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp); root, reference, empty = base / "root", base / "reference", base / "empty"
+            root.mkdir(); reference.mkdir(); empty.mkdir()
+            original_target = base / "OriginalReference.txt"
+            original_target.write_bytes(b"synthetic")
+            source = reference / "cited-voynich.now"
+            source.symlink_to(original_target)
+            output_parent = reference / "output-parent"
+            output_parent.symlink_to(empty, target_is_directory=True)
+            output = output_parent / "originalreference.TXT"
+
+            def changed(*args, **kwargs):
+                original_target.unlink()
+                source.unlink(); source.symlink_to(base / "different.txt")
+                output_parent.unlink(); output_parent.symlink_to(base, target_is_directory=True)
+                return {"fixture": 1}
+
+            with patch.object(module, "ROOT", root), patch.object(module, "run_audit", side_effect=changed), \
+                    patch("sys.argv", ["audit", "--reference", str(reference), "--output", str(output)]), \
+                    contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit): module.main()
+            self.assertFalse(original_target.exists())
+            self.assertFalse(output.exists())
+
 
 if __name__ == "__main__": unittest.main()

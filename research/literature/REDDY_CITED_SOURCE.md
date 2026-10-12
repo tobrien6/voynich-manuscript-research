@@ -144,21 +144,31 @@ cmp /tmp/reddy-cited-source.json research/literature/reddy-cited-source.json
 ```
 
 The four reference filenames and fingerprints are specified in the machine
-plan. Eleven focused tests cover multiline/nested comment masks, all raw
+plan. Thirteen focused tests cover multiline/nested comment masks, all raw
 candidate/duplicate/context/lexical-error cases, exact line accounting,
 unrepaired locators, literal figure tokens/anchors, missing pages, symbol and
 length-tail disagreements, native provenance, extraction/version failures,
 every reference/dependency/parent pin, strict JSON and existing-output
 preservation. Ninety temporary early/late direct/symlink/hardlink cases protect
-all eighteen source/reference/plan/producer paths.
+all eighteen source/reference/plan/producer paths. Additional regressions refuse
+removed source-name case variants during calculation/serialization and retain
+entry resolved targets after source-symlink retargeting. Within the same physical
+parent directory, NFC-normalized case variants are conservatively protected
+even when the original file is absent. Entry and current resolved paths are
+retained; the post-check filesystem race limitation is unchanged.
 
 The report replays byte for byte. An independent whole-file byte-position mask
 agrees with all 4,047 line classifications, 3,105 raw candidates, every active
 descriptor/hash, notation count, duplicate/context case and both errors. A
 separate PDF bbox-word extraction, rather than cropped-layout text, and direct
 raw annotation scans agree with every figure token and all 28 reference
-descriptors in each case. Report SHA-256:
+descriptors in each case. Original first-report SHA-256, preserved in result commit `636b6a0`:
 `7e729a0bf285488dc115dd28071efe1b8f63dd34ce660144e7864a355be4538f`.
+
+A later output-guard repair refreshes only the truthful producer fingerprint.
+Every census, figure comparison, source identity, frozen plan choice and other
+report field is unchanged. The current report remains 2,466,829 bytes; SHA-256:
+`759a83d4ca589d0dae810696ecdba6c701207534bb5c31e8e3c84ea7b54bb73f`.
 
 The raw current sources, PDF, extracted transcription and unlicensed Reddy
 data/code remain local; this contribution publishes original audit code and

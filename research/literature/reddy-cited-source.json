@@ -3,7 +3,7 @@
   "scope": "Descriptive current cited-source native-envelope census and fixed published Figure1 literal-token comparison with recovered Reddy full/B files; no historical byte authentication or glyph/translation claim",
   "plan_sha256": "d5056f568c718444c2584f4e55e41eb4ade0d45e734b65474d0c22afb263d2c8",
   "human_plan_sha256": "f38c4b7986cb3ab96997bfa140017b6ae2f6233e8ddcf0f3818163493396b34d",
-  "producer_sha256": "d4838fd27da87a08886eb9219c259cd9a8d11c883cdd226c592c4b3764570d9b",
+  "producer_sha256": "e4b95fd7b2f7424aa1b39befffd8d9df0f5d7d9befdd027b251b1cf42dcad347",
   "frozen_dependency_hashes": {
     "research/literature/methods.json": "7391036ed67a786d18341de145c8a40059031f7efce895bb1ebee52d4e66082e",
     "research/literature/reddy-source-manifest.json": "432bf44fe6f37bc82d8884bb692b7b9582adbdb8d79dbf138b7fb2b2af1f37e3",
