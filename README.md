@@ -19,6 +19,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
+- [GC and full/basic reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) and [aggregate records](research/transcriptions/intake-audit.json)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending. Decoding and translation are the research objective; no new transcription, statistical result, or validated decipherment has been established.
