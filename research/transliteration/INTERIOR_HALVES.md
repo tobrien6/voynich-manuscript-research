@@ -114,6 +114,12 @@ selection, and representation-unit choices also remain possible explanations.
 The exposed paired sources provide sensitivity evidence, not independent
 manuscript validation or out-of-sample prediction.
 
+The [fixed independent-position counterexample](../baselines/independent-position-length/RESULTS.md)
+supplies a concrete finer-position alternative: independent counts with a linear
+slot mean have positive half-centered ensemble association, including early/late
+components. Flat and half-step controls retain their exact zero expectations.
+These invented laws are not fitted manuscript explanations or glyph/line models.
+
 A further experiment should register a justified finer position model and
 its controls before execution, with enough permissible variation to assess
 its power. An explicit language or cipher mechanism additionally needs
