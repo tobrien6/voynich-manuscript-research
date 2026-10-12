@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "documentation": [
+    {
+      "id": "TR-CATALOG",
+      "url": "https://www.voynich.nu/transcr.html",
+      "retrieved_on": "2026-10-11",
+      "sha256": "57f8aaf6b1cdd6a292361b3a94e723f8fb14f0960b2cb349acee142fbadb19a5",
+      "observation": "Retrieved footer reports update 31/05/2025."
+    },
+    {
+      "id": "TR-FORMAT",
+      "url": "https://www.voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "retrieved_on": "2026-10-11",
+      "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+      "observation": "Document issue 2.0.2 (08/07/2025) describes format 2.0.1."
+    },
+    {
+      "id": "TR-LICENSE",
+      "url": "https://voynich.nu/roadmap.html",
+      "retrieved_on": "2026-10-11",
+      "sha256": "5fac4b6df745b83b9ac9e636d575163da64b0af0a4e5406049208c11ecb31ac4",
+      "observation": "Publisher states CC0 for the linked collected transliterations."
+    }
+  ]
+}

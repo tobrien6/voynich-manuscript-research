@@ -10,7 +10,8 @@ from scripts.ivtff import parse_ivtff
 class SourceAuditTests(unittest.TestCase):
     def test_pinned_sources_and_inspected_nonexistent_record(self):
         result = audit()
-        zl, it = result['sources']
+        sources = {source['id']: source for source in result['sources']}
+        zl, it = sources['ZL3b'], sources['IT2a']
         self.assertEqual((zl['records'], zl['present_records']), (5385, 5385))
         self.assertEqual((it['records'], it['present_records']), (5215, 5214))
         self.assertEqual(it['explicitly_nonexistent_loci'], ['f89v2.26,!Lf'])
