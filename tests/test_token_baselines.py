@@ -56,10 +56,23 @@ class TokenPolicyTests(unittest.TestCase):
         self.assertEqual(result['eligible_pairs'], 2)
         self.assertEqual(result['observed_equal_pairs'], 1)
         self.assertAlmostEqual(result['exact_conditional_expected_pairs'], 2 / 3)
+        self.assertAlmostEqual(result['exact_conditional_variance'], 2 / 9)
+        self.assertFalse(result['zero_conditional_variance'])
         gap = parse_ivtff('#=IVTFF Eva- 2.0 M\n<f1r>\n<f1r.1,@P0> a.?.a\n')
         result = summarize(gap.loci, 'split', 'exclude', 9, 1)['adjacent_repetition']
         self.assertEqual(result['eligible_pairs'], 0)
         self.assertIsNone(result['exploratory_upper_tail'])
+        self.assertEqual(result['exact_conditional_variance'], 0)
+        self.assertTrue(result['zero_conditional_variance'])
+        self.assertIsNone(result['observed_minus_expected_in_sd'])
+
+    def test_independent_locus_variances_add_without_a_normal_tail_claim(self):
+        doc = parse_ivtff('#=IVTFF Eva- 2.0 M\n<f1r>\n<f1r.1,@P0> a.a.b\n<f1r.2,+P0> a.a.b\n')
+        result = summarize(doc.loci, 'split', 'exclude', 9, 1)['adjacent_repetition']
+        self.assertAlmostEqual(result['exact_conditional_variance'], 4 / 9)
+        self.assertAlmostEqual(result['conditional_standard_deviation'], 2 / 3)
+        self.assertAlmostEqual(result['observed_minus_expected_in_sd'], 1)
+        self.assertNotIn('normal_tail', result)
 
     def test_unsupported_or_malformed_text_is_rejected(self):
         for text in ['a..b', '.a', 'a,', 'a<-><~>b', 'a[bc]', 'a[x:y', '@127;',
