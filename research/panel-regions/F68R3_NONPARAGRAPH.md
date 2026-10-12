@@ -106,6 +106,13 @@ plan/packet Git bytes, preserves both attempts and all twenty unreviewed keys,
 enforces provisional scope, and validates service identities, URLs and native
 window bounds. With the local directory it additionally checks every downloaded
 file and rendered specification page by size, SHA-256 and bitmap dimensions.
+The maintainer's 12 October recheck also retained a second 887-byte service
+response, SHA-256 `9b1050cc0be3e33ca6c441d352a12f9c448bd5d78e681593dcaa60334ab1ff38`.
+Only the profile format-list order differs (`jpg,tif,gif,png` versus
+`tif,jpg,gif,png`); all other parsed metadata agrees and all four image
+derivatives match exactly. The JSON preserves the original inspected response
+pin and the dated alternate receipt. This variation does not strengthen the
+image association or indicate changed pixels.
 The PNG header check supplements the existing JPEG/GIF helper; all actual
 local bindings pass. These checks establish metadata/provenance consistency,
 not the correctness of a visual judgment or independent exposure history.

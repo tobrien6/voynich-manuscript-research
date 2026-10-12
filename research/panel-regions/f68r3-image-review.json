@@ -275,5 +275,34 @@
     "present_p0_locations": 0
   },
   "no_source_correction_or_translation": true,
-  "limits": "AI-assisted, non-blind compatible proposals; no verified corpus join, independent model/human reproduction, word/glyph adjudication, semantic interpretation, statistical rerun, untouched evaluation or translation. All native records/alternatives remain and 68r stays one carrier dependency."
+  "limits": "AI-assisted, non-blind compatible proposals; no verified corpus join, independent model/human reproduction, word/glyph adjudication, semantic interpretation, statistical rerun, untouched evaluation or translation. All native records/alternatives remain and 68r stays one carrier dependency.",
+  "metadata_rechecks": [
+    {
+      "checked_at_utc": "2026-10-12T08:46:05.543025+00:00",
+      "role": "service_metadata",
+      "resource_url": "https://collections.library.yale.edu/iiif/2/1006196/info.json",
+      "original_recorded_sha256": "7d1c63e1e9e84976149bcba6bdec74093979c7060920d0fc7fdd1e18cb22e5a1",
+      "alternate_observed_sha256": "9b1050cc0be3e33ca6c441d352a12f9c448bd5d78e681593dcaa60334ab1ff38",
+      "both_response_bytes": 887,
+      "original_profile_formats": [
+        "jpg",
+        "tif",
+        "gif",
+        "png"
+      ],
+      "alternate_profile_formats": [
+        "tif",
+        "jpg",
+        "gif",
+        "png"
+      ],
+      "all_other_parsed_json_identical": true,
+      "native_dimensions_unchanged": [
+        7993,
+        3828
+      ],
+      "all_four_image_derivatives_match_original_hashes": true,
+      "interpretation": "Format-list order differs between two observed raw service responses. The original inspected receipt stays intact; this does not establish changed pixels, reading direction or stronger glyph/locus mapping."
+    }
+  ]
 }
