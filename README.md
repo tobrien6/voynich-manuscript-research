@@ -10,6 +10,7 @@ Research on the digitized folios, illustrations, and documented history should a
 
 ## Start here
 
+- [Contribution and PR review guide](CONTRIBUTING.md)
 - [Project brief and research plan](99TOKENS.md)
 - [Decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md)
 - [Primary source register](research/SOURCES.md)
