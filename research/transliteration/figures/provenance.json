@@ -1,0 +1,44 @@
+{
+  "report_sha256": "41bce66dc26889f7af56b92b7bee37b2293535b7e4ba5eb368d6023988097c59",
+  "plot_script_sha256": "fe7a45355f1663aab2e28738472be47bc933e94172b44b011bd549b65299891d",
+  "python_version": "3.14.3",
+  "matplotlib_version": "3.11.2",
+  "selection_count": 3884,
+  "method": "paired exploratory token baselines v2: exact conditional variance added",
+  "plotted_variants": [
+    {
+      "source": "ZL3b",
+      "spaces": "split",
+      "alternatives": "exclude",
+      "label": "split spaces / exclude alternatives"
+    },
+    {
+      "source": "ZL3b",
+      "spaces": "split",
+      "alternatives": "first",
+      "label": "split spaces / first alternatives"
+    },
+    {
+      "source": "ZL3b",
+      "spaces": "join",
+      "alternatives": "exclude",
+      "label": "join spaces / exclude alternatives"
+    },
+    {
+      "source": "ZL3b",
+      "spaces": "join",
+      "alternatives": "first",
+      "label": "join spaces / first alternatives"
+    },
+    {
+      "source": "IT2a",
+      "spaces": "split",
+      "alternatives": "exclude",
+      "label": "all four policies identical"
+    }
+  ],
+  "output_sha256": {
+    "repetition-variance.png": "2f480d02beb4834a6cade98ba6e3f3e62da2980fa708da9cffec64cc34de4f23",
+    "repetition-variance.svg": "8a56290f5c48fd64a2b75be573f55896459899daa772e828f9bd583a1fe0bcd7"
+  }
+}
