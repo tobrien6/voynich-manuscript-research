@@ -17,6 +17,12 @@ paper-associated 2015 repository snapshot. Its full/B input counts and all
 native annotated/page streams agree, while exact 2011 preprocessing and the
 Table 2 predictor remain unresolved.
 
+The [native word-type letter prediction comparison](REDDY_LETTER_PREDICTIONS.md)
+freezes complete type folds and three first-position treatments on that
+recovered B input. All six results remain visible, including bigram scores
+below the published value; this explicit implementation does not establish
+the unrecovered historical procedure or a decoding rule.
+
 The [synthetic substitution-normalization control](SUBSTITUTION_NORMALIZATION.md)
 derives the affected-mass factor connecting conditional and whole-corpus
 word-entropy decreases. A fixed toy reverses their candidate ranking; no
