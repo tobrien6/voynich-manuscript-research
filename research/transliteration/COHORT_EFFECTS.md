@@ -108,7 +108,8 @@ another. This descriptive comparison is not a causal attribution of source
 differences or independent evidence of a language, cipher or translation.
 
 Next, inspect the loci where paired contrasts disagree most and verify their
-boundaries against source images. Combine that audit with the proposed
-paragraph-start and same-line-fragment stratification. A candidate mechanism
+boundaries against source images. Extend the accepted
+[paragraph-start and same-line-fragment stratification](PREFIX_STRATA.md)
+with fixed eligibility within jointly defined source strata. A candidate mechanism
 should predict robust structure under declared uncertainty choices, with its
 own evaluation split and prior-exposure record.
