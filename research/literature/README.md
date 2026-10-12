@@ -64,6 +64,11 @@ changing its display label.
 
 ## Minimum plan for a later replication
 
+The [additional Java 17 source replay and row ledger](SELF_CITATION_JAVA17.md)
+add a second observed runtime result and explicit initialization denominators to
+the copying-mechanism work. The release bytes match the Java 22 receipt in PR #88;
+this remains software evidence, with no manuscript mechanism or translation test.
+
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
    project's modern inputs.

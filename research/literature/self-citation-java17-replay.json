@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "method": "Java 17 self-citation source replay and literal row accounting v1",
+  "scope": "Two local replay processes and comparison to the Java 22 public receipt; no manuscript mechanism evaluation, paper-statistic replication or translation.",
+  "plan": {
+    "commit": "af4ae40c5261ecfb6f14b7eeb1c511299604a804",
+    "path_at_commit": "research/literature/SELF_CITATION_REPLAY_PLAN.md",
+    "current_path": "research/literature/SELF_CITATION_JAVA17_PLAN.md",
+    "sha256": "0b5de418e2de9e3ac76a5647e32ab87e39256f253d4b965ad5b73b282dfa9c8a",
+    "rename_preserves_exact_plan_bytes": true
+  },
+  "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "source_tree_sha1": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "source_inventory": [
+    {
+      "path": "executable/conf.properties",
+      "bytes": 5496,
+      "git_blob_sha1": "a479c954e80d9e91db7062a76de25da5390bd59f",
+      "sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/executable/conf.properties"
+    },
+    {
+      "path": "executable/generate/vms_generated.txt",
+      "bytes": 62795,
+      "git_blob_sha1": "8caf9f97ac82dd583138e7bb9c9a771d3a04dfb6",
+      "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/executable/generate/vms_generated.txt"
+    },
+    {
+      "path": "source/pom.xml",
+      "bytes": 4092,
+      "git_blob_sha1": "92d498e15cfc0db82b79354e9a77c8b2391b029e",
+      "sha256": "7bd371e133fa88cd6e3638d7e53afbff9bfea55f373537a84d4eba783e295516",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/pom.xml"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Constants.java",
+      "bytes": 2215,
+      "git_blob_sha1": "c03aa0328333c4bc092abc973f087aa855a3d1cf",
+      "sha256": "bda4ef3df6e5be3ea40ceeca66de001e30f873632380d940ce6e792bf3807248",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/Constants.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Glyph.java",
+      "bytes": 26311,
+      "git_blob_sha1": "e3ea5c8c604ce8b796ad530e28afd899c5ce64e2",
+      "sha256": "130222af0e736a79dbfa507b24d0a2d182169ece6899ea64ac9147fc11c5169e",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/Glyph.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/GlyphGroup.java",
+      "bytes": 5703,
+      "git_blob_sha1": "781e22998af382785ed9822cdd03443c4c673569",
+      "sha256": "397f764b6b9c792d6bd8f98430363554890474a5c34a204e3e10033b57b1b37b",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/GlyphGroup.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "bytes": 14824,
+      "git_blob_sha1": "62dab4c22f4b4ca631263083789f994789294273",
+      "sha256": "7afa236373a997d2e2ccef9a8e7ee799c5766b63ddf161bab8b72ce0f3bbf1e9",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/StatisticHelper.java",
+      "bytes": 14988,
+      "git_blob_sha1": "c1ee9b24bacfaff77d405899b861b9ed0c3e131b",
+      "sha256": "e40bffd4518c3555771fb3d502908d1ff7af5e516648d080111c384512cc9918",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/StatisticHelper.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Substitution.java",
+      "bytes": 1288,
+      "git_blob_sha1": "38a51d8cc6f003f3585089d9276aea69a6c1ce12",
+      "sha256": "a5ed5263b28c7289dd6922109b59bb3e26d175e257004e2b82d2397b79e736b5",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/Substitution.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java",
+      "bytes": 14827,
+      "git_blob_sha1": "8b84e1770b9f7e9290165becb7f48cf7b90ffed7",
+      "sha256": "62e3051c61c8126ad80ea24c4e17488f0093f247e62bc638493574d55015a0a2",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/DummyCanFollow.java",
+      "bytes": 1653,
+      "git_blob_sha1": "3ffd30858789eab831a4d931af6bfdac9f03c55b",
+      "sha256": "e77f4bfb08c354f9b77901c068d3fdf67f3f073ffee523a3f46f8f6eafaaab88",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/DummyCanFollow.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/I_CanFollow.java",
+      "bytes": 1163,
+      "git_blob_sha1": "04a8de3b095487fe9ff128963d442708636f82d2",
+      "sha256": "0a559ecf0c9839469034a878b34f0085da85a1491b36171d75d126c1a883ef7c",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/I_CanFollow.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/StatisticCanFollow.java",
+      "bytes": 3963,
+      "git_blob_sha1": "da277374d78dc7325a7822ba72702281eee3bb68",
+      "sha256": "51f87de0a79a9d6f79b4c9daafbc474f86a19b25385691c4303cc3746bf35848",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/StatisticCanFollow.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+      "bytes": 3192,
+      "git_blob_sha1": "e7bd73044f4582ae46f35b8f1d0c033ffba99b11",
+      "sha256": "5d9f34e70bf1d71a4274280fec70518fc441a91ff1349fc16288d244e5eaa4d5",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/CalcGephiElements.java",
+      "bytes": 1616,
+      "git_blob_sha1": "40ceb710f7a5b96f164475514fdd7c7f685e8077",
+      "sha256": "28c37a018847ffe4507f6b7d2f851ba3373d98b8808aa0f48066301a2235a60f",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/vms/CalcGephiElements.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/FollowMatrix.java",
+      "bytes": 3789,
+      "git_blob_sha1": "7cacf8a70d162efd43aaa1240fd51828592f2cae",
+      "sha256": "90050119690b51502d23e11848370af97454f9c2d5a451889bea0cf53e0d6527",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/vms/FollowMatrix.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroups.java",
+      "bytes": 92663,
+      "git_blob_sha1": "a06a1a57bd92a6087126109c5f275547b0d47e04",
+      "sha256": "56d11c54a7247f48a789590dc4d3dd376e35cc74006d528091217150a4a91562",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroups.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsThree.java",
+      "bytes": 91541,
+      "git_blob_sha1": "86b8bf5c6ce22964ea1e30a851f37a4a97d84741",
+      "sha256": "64171ebcf37bcf6f88f626796ca682c7403ccd11806ada46ec645fb94c3aeac3",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsThree.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsTwo.java",
+      "bytes": 53415,
+      "git_blob_sha1": "95883bd8472db6b8ef386e81b13e86814ab624df",
+      "sha256": "c2094fce408c48949732f506bbe660252728a21152b04249455728ae81d38f91",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsTwo.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/AbstractBaseGroupMorpher.java",
+      "bytes": 22901,
+      "git_blob_sha1": "3e5506c3129624270f1b9042d1e431ce3134ade0",
+      "sha256": "fd3466fe5879d8e25c7892ef6e08b34f02706c2f3c2c09dddd31cb802e8ba0f1",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/morph/AbstractBaseGroupMorpher.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/I_GroupMorpher.java",
+      "bytes": 771,
+      "git_blob_sha1": "7f9f6f82f6d183f9ceb1adc4acb7cbbf6e986d64",
+      "sha256": "ecb24cb45de8d3cc9312cd010c310ae1e54b83afcd5db30bd2dad3e8da6a2ad4",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/morph/I_GroupMorpher.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/MorphTester.java",
+      "bytes": 14597,
+      "git_blob_sha1": "bfc48b7d1aa5b74daa6689c4a37ac1f0016d8ad1",
+      "sha256": "a49bf4ad27648391c6214ce958a71c07281dc3e11c10c693d88a0724a75b94f2",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/morph/MorphTester.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+      "bytes": 32733,
+      "git_blob_sha1": "91fb9bef16d04fbb8807c0b8892b29d78ccc9f62",
+      "sha256": "a35454d7e6adbda8a86471433e58849c2fe5674f625a09cb68facf4e61eec614",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "bytes": 2283,
+      "git_blob_sha1": "440f2ee80fea08da889314349ac6304037be95ff",
+      "sha256": "b6c1dd6533d142624cfd3c9ed59fc5eb9df5c20024ad54e9ff73571e1da3c6ba",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/I_SourceGroupChooser.java",
+      "bytes": 1481,
+      "git_blob_sha1": "a4d25c80cc9bfc2580ab9fe6012e51a86213d2a9",
+      "sha256": "e1c20387877f6ef59c0074cdba0f91aab8b5e0aaed8bb3d762501335d6bb5d99",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/I_SourceGroupChooser.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+      "bytes": 6243,
+      "git_blob_sha1": "a2284f6343d49ccf25144e7e862575dcef221b10",
+      "sha256": "9b919d7b58a5c2b533131d946d1ac28b4b6f4b356a37d5f2ef0d26346e50c360",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java",
+      "bytes": 14220,
+      "git_blob_sha1": "fa603285f4d1e95fe835099599ec5b90fbb97a54",
+      "sha256": "e2208e05496acbe30abc79998084332c988cb32327d064a55647b97d11085611",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/RandomSourceGroupChooser.java",
+      "bytes": 1209,
+      "git_blob_sha1": "ba9028e1ba9eedc3466635109b7aaae383af2ebb",
+      "sha256": "43b43041872e454696b6b72875fedf41f75ada04cba8a29cd049e4f13dab2d5d",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/RandomSourceGroupChooser.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Config.java",
+      "bytes": 23193,
+      "git_blob_sha1": "5c35ce04216bdab5eff972547dc7b61136f62c21",
+      "sha256": "f6cfdbe3dfa14def6f67b9197bdd18c3eb340fb3d7972da04bf315749e23adb7",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Config.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Converter.java",
+      "bytes": 2608,
+      "git_blob_sha1": "a56cb3d579b2fe94f26be59ecc0de7e24a169f8e",
+      "sha256": "28fda083bee68928873b2df349474b45b7511211465646bba5db73f1e5c6f869",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Converter.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/FileTools.java",
+      "bytes": 2039,
+      "git_blob_sha1": "0cce1975899fec71a4ab464ee84433aa239707f0",
+      "sha256": "57cd83e27b6441e8b33890bf1fa0e48e164435d92d308e7447268c04cbeee2d9",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/FileTools.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/GephiNode.java",
+      "bytes": 4279,
+      "git_blob_sha1": "82c4ebfba1687665a23e3099536378ed72abc129",
+      "sha256": "a04e22ce9b3f84bfade9448f718767816e02ebe617e1cd064fc44f21ed04fb8b",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/GephiNode.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Levenshtein.java",
+      "bytes": 4285,
+      "git_blob_sha1": "8285880bc19ae8372c001d8dccc5f2c85edcbf95",
+      "sha256": "31de446321bf1fc9283cde3a8f9d03b94f64515f81e78c3583c8d75a63ab0303",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Levenshtein.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/PropertiesLoader.java",
+      "bytes": 2292,
+      "git_blob_sha1": "05cd9f4d59b829384b0da217427c76db9e649b18",
+      "sha256": "bed2a5f67bb08362909b275bc4a3342d95ae57cc0540dee46262552a2263b6bb",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/PropertiesLoader.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/StringUtil.java",
+      "bytes": 6041,
+      "git_blob_sha1": "bee095caf78d33962386be77716fc1514e56c460",
+      "sha256": "334a4f3d820b5625841b639eebb9cfb10667884c9594c2bb60dcf8e9cf383a25",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/StringUtil.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/I_RandomNumberGenerator.java",
+      "bytes": 260,
+      "git_blob_sha1": "86b2615a346be3c6c162e9e1ca8c5d1928dfa068",
+      "sha256": "d38a6670a90a850f73abfc63e70c7b96c188209a3b64d5836f88253ecebd0c81",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/random/I_RandomNumberGenerator.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+      "bytes": 871,
+      "git_blob_sha1": "7c907beff30e8d80a56536631a4e27a0e8bad06e",
+      "sha256": "62c756d5f8490d7ee70d6ac508ca765f6dc023cfb604d40f5632e7eabd8857e9",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java",
+      "bytes": 509,
+      "git_blob_sha1": "6f8dac75214d99f26386c5a074dbcca20f54ebf8",
+      "sha256": "419c1e639924ed179c980c04c853f6e9f1a7db2e301963c59681c7dd3edc178f",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java"
+    },
+    {
+      "path": "source/src/main/resources/conf.properties",
+      "bytes": 5165,
+      "git_blob_sha1": "4205e2b7e1a5e4a44d220fdb6530cc0d744b843d",
+      "sha256": "e21b977d15f7543c2d14ab91455f1a8543dba3719b4600779933de6fda62380d",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/resources/conf.properties"
+    }
+  ],
+  "runtime": {
+    "java_version_output": "openjdk version \"17.0.16\" 2025-07-15 LTS\nOpenJDK Runtime Environment Zulu17.60+17-CA (build 17.0.16+8-LTS)\nOpenJDK 64-Bit Server VM Zulu17.60+17-CA (build 17.0.16+8-LTS, mixed mode, sharing)",
+    "javac_version_output": "javac 17.0.16",
+    "platform": {
+      "system": "Darwin",
+      "machine": "arm64",
+      "macos_version": "26.2"
+    },
+    "jvm_flags": [
+      "-Xmx256m",
+      "-Dfile.encoding=UTF-8",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-Duser.timezone=UTC"
+    ],
+    "minimal_environment": {
+      "PATH": "/usr/bin:/bin",
+      "LANG": "C",
+      "LC_ALL": "C",
+      "TZ": "UTC"
+    },
+    "optional_JVM_injection_variables_inherited": false
+  },
+  "build": {
+    "returncode": 0,
+    "java_sources": 35,
+    "class_files": 47,
+    "source_encoding": "UTF-8",
+    "target_release": 8,
+    "external_dependency_jars": [],
+    "class_manifest": [
+      {
+        "path": "de/voynich/text/Constants.class",
+        "bytes": 2173,
+        "sha256": "3d91b3544bb123392b2a3c7bb7f1df19e704c7349e39f5ed3ac12aab7e349dc2"
+      },
+      {
+        "path": "de/voynich/text/Glyph.class",
+        "bytes": 16034,
+        "sha256": "9540de0940b939ae3b5916dd0a5a2f3361a3d1a87c85ff233bb964fad00d8f17"
+      },
+      {
+        "path": "de/voynich/text/GlyphGroup$GENERATE_TYPE.class",
+        "bytes": 1350,
+        "sha256": "da26613d35a25e32e8df28a175b8a5b1c736005664d971e5d7dcdd9abdd2b58d"
+      },
+      {
+        "path": "de/voynich/text/GlyphGroup.class",
+        "bytes": 4292,
+        "sha256": "d63c7d0b9e7d846832922e39119d18a574599ae568fe2cc3a92b3653320dccae"
+      },
+      {
+        "path": "de/voynich/text/SelfCitationTextGenerator$CURRIER.class",
+        "bytes": 1170,
+        "sha256": "113e632cfd261853b2ada6c9e33a1678fca14d4f10c8629e979d38ba8d130cf8"
+      },
+      {
+        "path": "de/voynich/text/SelfCitationTextGenerator.class",
+        "bytes": 7941,
+        "sha256": "66194ced00fd35db482893ed1642bb8093ddcd2957acb1761eadde061fd08d11"
+      },
+      {
+        "path": "de/voynich/text/StatisticHelper$1.class",
+        "bytes": 1257,
+        "sha256": "22ad0275a4520b63b776c3781860d9a824f000552191589cb6d82c6c7ee15776"
+      },
+      {
+        "path": "de/voynich/text/StatisticHelper$SUGGEST_METHOD.class",
+        "bytes": 1252,
+        "sha256": "55c2e95a6bd380aec8fe31bd1a6c085d67f2fc533e164319a188702012851d9c"
+      },
+      {
+        "path": "de/voynich/text/StatisticHelper.class",
+        "bytes": 10107,
+        "sha256": "686f77c873bddc6354d6e7ed748310fc872538a20db8ab27451b28e5013ff0c7"
+      },
+      {
+        "path": "de/voynich/text/Substitution.class",
+        "bytes": 1082,
+        "sha256": "fb65446b006c3b0849e8dcf651bf3c0eca594746bd4f4e0bd96a2dabeb12aa6a"
+      },
+      {
+        "path": "de/voynich/text/canfollow/CurveLineCanFollow$1.class",
+        "bytes": 1003,
+        "sha256": "8093ca4d6215bd4fc8fb53abd324a0bd25451345c2d9d2164b1d794c5c24acae"
+      },
+      {
+        "path": "de/voynich/text/canfollow/CurveLineCanFollow$Type.class",
+        "bytes": 1374,
+        "sha256": "4992d1eddd6f374b94d794ab69131905a3b6dd323cf79d6d6278480580623139"
+      },
+      {
+        "path": "de/voynich/text/canfollow/CurveLineCanFollow.class",
+        "bytes": 8149,
+        "sha256": "e39a052f43ff7eefecdafc77b001c724b49e2beddb7a782e5e873c650a5b9907"
+      },
+      {
+        "path": "de/voynich/text/canfollow/DummyCanFollow.class",
+        "bytes": 991,
+        "sha256": "cb171a13cfa681dc1d3bf4c7b0d75c3ebd4cab2b1dd5b8f5bb1cab52407985c8"
+      },
+      {
+        "path": "de/voynich/text/canfollow/I_CanFollow.class",
+        "bytes": 382,
+        "sha256": "95fc139b2d9e7dfd1a2082c24e317d5233ff9457399329f0d83cdd3db4611d17"
+      },
+      {
+        "path": "de/voynich/text/canfollow/StatisticCanFollow.class",
+        "bytes": 2463,
+        "sha256": "efce7fd9c2224a9a2a1a6679c3ae1cdbde285923986439a89919552c8439ff7a"
+      },
+      {
+        "path": "de/voynich/text/canfollow/VoynichCanFollow.class",
+        "bytes": 2056,
+        "sha256": "6dc67443dd297d54e865320d2950a079f608b7fdf614b7b9029468cce045fac4"
+      },
+      {
+        "path": "de/voynich/text/canfollow/vms/CalcGephiElements.class",
+        "bytes": 1949,
+        "sha256": "f8f9f1a3304e1d86ca622d80079afec124041f99df892782f945957710771ed7"
+      },
+      {
+        "path": "de/voynich/text/canfollow/vms/FollowMatrix.class",
+        "bytes": 3960,
+        "sha256": "ceaa7a4d2993ddc875f24db3742b0bbe3ba2f8c7bd58635e947e1832a78e8697"
+      },
+      {
+        "path": "de/voynich/text/canfollow/vms/VoynichGroups.class",
+        "bytes": 102850,
+        "sha256": "2fbe96058e91b47f47bc211c4ae4b3e733da4acfffbce2632d5c8e54b54f424b"
+      },
+      {
+        "path": "de/voynich/text/canfollow/vms/VoynichGroupsThree.class",
+        "bytes": 101516,
+        "sha256": "36b15fdc724c6a13515a020b286f6f9c18f6fd34a0490e027208d8f1aa59c3cb"
+      },
+      {
+        "path": "de/voynich/text/canfollow/vms/VoynichGroupsTwo.class",
+        "bytes": 59379,
+        "sha256": "e6cb9054297b40e4fc7d87be95d61c480fc2202c7d41f6b1f90ac7ab6f5bb274"
+      },
+      {
+        "path": "de/voynich/text/morph/AbstractBaseGroupMorpher.class",
+        "bytes": 11860,
+        "sha256": "a84c844c66328ec8253015f6c9b5c49743658c2d8dd2afd597cd26ae5137b843"
+      },
+      {
+        "path": "de/voynich/text/morph/I_GroupMorpher$MorphMethod.class",
+        "bytes": 1223,
+        "sha256": "1610107a2479254c2f3424fd1207516da8be33f23e0b588634c862280643ab00"
+      },
+      {
+        "path": "de/voynich/text/morph/I_GroupMorpher.class",
+        "bytes": 720,
+        "sha256": "d88b993d590c3d7c770bacb40708ee76069e8881699fd81d11d24605825377b9"
+      },
+      {
+        "path": "de/voynich/text/morph/MorphTester.class",
+        "bytes": 6220,
+        "sha256": "a4d6c894c043de321fb385746d51e62e027a4064ede472ca14f01378945aec9b"
+      },
+      {
+        "path": "de/voynich/text/morph/SlimGroupMorpher$1.class",
+        "bytes": 896,
+        "sha256": "c9c7123224d034a5f985938e459fe80616c6232926c9fea290f87b92df694905"
+      },
+      {
+        "path": "de/voynich/text/morph/SlimGroupMorpher.class",
+        "bytes": 13285,
+        "sha256": "ecd626281623ccec168370cff60d6dcd0833c4bd20cef5931f63c22b17153667"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/ChooserHelper.class",
+        "bytes": 2222,
+        "sha256": "efc8a4b8b973652a5d55913f9908f760d8b0f02dfd6ea8922ae26ecde7b6e084"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/I_SourceGroupChooser$ChooseMode.class",
+        "bytes": 1372,
+        "sha256": "1c3b17d64db106064583ea48786d316646443e6135d0695a40865a2a8d081471"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/I_SourceGroupChooser.class",
+        "bytes": 770,
+        "sha256": "bc2c115d1e6616600a5c20a3e8a391453fe33110e34ed776a77f9b42476a54d0"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/PageSourceGroupChooser$1.class",
+        "bytes": 1045,
+        "sha256": "3c32559c3a3de21f29524e13ff44d58dab883036293d9668d1d3028abd4f199e"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/PageSourceGroupChooser.class",
+        "bytes": 4877,
+        "sha256": "b13bc26af764406ce55326eabe67c98458e88ab46c62bb1f70ad6b33ce391954"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/PositionSourceGroupChooser$1.class",
+        "bytes": 1006,
+        "sha256": "dfb039e2c30e17a55b8e10219a124725c870d4efb7f70922b024f96421dd606b"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/PositionSourceGroupChooser.class",
+        "bytes": 5015,
+        "sha256": "f9b8e62c0ef65fac70d02927f114394d229df359767ddf8386907e5e40fe337d"
+      },
+      {
+        "path": "de/voynich/text/sourcechooser/RandomSourceGroupChooser.class",
+        "bytes": 1265,
+        "sha256": "4eed8fa7e73ba7647bd07b7403ccd6e11754417813f0f2de62a1e1fc84356d21"
+      },
+      {
+        "path": "de/voynich/text/util/Config$1.class",
+        "bytes": 898,
+        "sha256": "a41e1dd4a69836e688d4452b5d7072ac6b9b10e26f740aaaec35decbbcecdcf1"
+      },
+      {
+        "path": "de/voynich/text/util/Config.class",
+        "bytes": 15969,
+        "sha256": "291a0c98dd80f5173ee5b66fe363eb74273058ca1dedc307616b4e1b94d82cff"
+      },
+      {
+        "path": "de/voynich/text/util/Converter.class",
+        "bytes": 2237,
+        "sha256": "b847d01c018e643a7b9810631efdac029e225afe833f2519a7f01ab7c2ebc7f8"
+      },
+      {
+        "path": "de/voynich/text/util/FileTools.class",
+        "bytes": 2248,
+        "sha256": "c94a18239d676b0519c23c13b1dedac9a6d77462be90d36ec1828d1ed6401bd7"
+      },
+      {
+        "path": "de/voynich/text/util/GephiNode.class",
+        "bytes": 4313,
+        "sha256": "0927b7a637f45f97f00472501a8b3c11d6e3b6da1383e97b1e7bf0b740480296"
+      },
+      {
+        "path": "de/voynich/text/util/Levenshtein.class",
+        "bytes": 2617,
+        "sha256": "1b25162c61b74ba590d6372aaf540225b2c4dc1d6c72b38cc19ab6d9b927b4cf"
+      },
+      {
+        "path": "de/voynich/text/util/PropertiesLoader.class",
+        "bytes": 2327,
+        "sha256": "56be1884e7cde214246bc4ea53554716e450963647e177805fb74ac3b85face7"
+      },
+      {
+        "path": "de/voynich/text/util/StringUtil.class",
+        "bytes": 3380,
+        "sha256": "02d919393a4d341085bb1bdcec7cb94141c411c14518d89638cf5421d18c6752"
+      },
+      {
+        "path": "de/voynich/text/util/random/I_RandomNumberGenerator.class",
+        "bytes": 177,
+        "sha256": "af5130e1a3b854c6dff8c264a86efa43a2d60cf92bb0e631b2ec019152593893"
+      },
+      {
+        "path": "de/voynich/text/util/random/PseudoRandomNumberGenerator.class",
+        "bytes": 618,
+        "sha256": "a439d584df75d4c03eff02b7609fcdf1a9cb7289bd3f7caae357372a4ce08a5c"
+      },
+      {
+        "path": "de/voynich/text/util/random/RealRandomNumberGenerator.class",
+        "bytes": 541,
+        "sha256": "3b84fff797bcf08ea5ada7c9ceddfc7792556c689f435ad4820caa7e00a8957b"
+      }
+    ],
+    "compiler_flags": [
+      "-J-Xmx256m",
+      "--release",
+      "8",
+      "-encoding",
+      "UTF-8"
+    ],
+    "Maven_or_packaged_JAR_executed": false
+  },
+  "runs": [
+    {
+      "trial": 1,
+      "returncode": 0,
+      "timed_out": false,
+      "config_sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800",
+      "stdout_bytes": 158,
+      "stdout_sha256": "86cb0753eb24f996d3c508fc4a5a506c1cf14f47a02392d6bb2900c0c6a2fb5c",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_filename": "vms_generated_202610120455.txt",
+      "output_bytes": 62795,
+      "output_sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+      "matches_supplied_full_bytes": true
+    },
+    {
+      "trial": 2,
+      "returncode": 0,
+      "timed_out": false,
+      "config_sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800",
+      "stdout_bytes": 158,
+      "stdout_sha256": "86cb0753eb24f996d3c508fc4a5a506c1cf14f47a02392d6bb2900c0c6a2fb5c",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_filename": "vms_generated_202610120455.txt",
+      "output_bytes": 62795,
+      "output_sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+      "matches_supplied_full_bytes": true
+    }
+  ],
+  "fresh_working_directories_distinct": true,
+  "per_process_timeout_seconds": 60,
+  "two_Java17_outputs_full_bytes_equal": true,
+  "row_accounting": {
+    "bytes": 62795,
+    "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+    "physical_file_lines": 1235,
+    "line_ending": "LF",
+    "final_line_terminator": true,
+    "comment_file_lines_1_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "blank_file_lines_1_based": [],
+    "data_rows_including_initialization": 1200,
+    "group_occurrences_including_initialization": 10832,
+    "newly_generated_rows": 1199,
+    "newly_generated_group_occurrences": 10823,
+    "initial_input": {
+      "sha256": "39b5e912961ae744c56df73084b83ab97e1d6471b60ace8a4fb4fb559b99c24d",
+      "notation_characters": 67,
+      "group_occurrences": 11
+    },
+    "stored_initial_row": {
+      "data_row_1_based": 1,
+      "physical_file_line_1_based": 36,
+      "origin": "initialization",
+      "notation_characters": 59,
+      "group_occurrences": 9,
+      "row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+    },
+    "stored_initial_row_equals_initial_input": false,
+    "generated_row_notation_character_range": [
+      13,
+      56
+    ],
+    "unit": "space-delimited ASCII group strings, not internal generator segments or verified glyphs",
+    "ledger_path": "research/literature/self-citation-java17-rows.csv",
+    "ledger_bytes": 106612,
+    "ledger_sha256": "3e6e3b984747059602ce987ff8d3ac29d55db1fdfddabdf5d7d32008d4642a9e"
+  },
+  "row_audit_producer": {
+    "path": "scripts/audit_self_citation_rows.py",
+    "sha256": "af3c7f15996f40187b541b0368f79b98656c78f7207f76bb9829454e4f4fd943",
+    "created_after_replay_execution": true
+  },
+  "Java22_comparison": {
+    "pull_request": "https://github.com/tobrien6/voynich-manuscript-research/pull/88",
+    "inspected_head": "7e92ba26f3df19ef2d336510fcb2564fa26a7250",
+    "record_path": "research/literature/self-citation-repeatability.json",
+    "record_sha256": "df8e895bee0e3d7adac361df255fd69a9f874063d900de424b75d65411be3bbd",
+    "runtime_version_output": "openjdk version \"22.0.2\" 2024-07-16\nOpenJDK Runtime Environment Homebrew (build 22.0.2)\nOpenJDK 64-Bit Server VM Homebrew (build 22.0.2, mixed mode, sharing)",
+    "reported_compiled_class_count": 46,
+    "both_release_case_output_digests_match_Java17": true,
+    "shared_source_inventory_pins_match": true,
+    "evidence_kind": "comparison to pinned public execution receipt; Java 22 processes were not rerun in this contribution"
+  },
+  "initialization_source_observation": {
+    "url": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java#L55",
+    "scope": "Initial groups are presented to statistics before trimInitialLine stores an output row.",
+    "independent_manuscript_prediction": false
+  },
+  "limits": [
+    "Identical output is established on the two observed runtime/build receipts, not every Java platform.",
+    "The Java 17 and Java 22 builds produce different class inventories; matching text does not prove binary equivalence.",
+    "Initialization depends on the full configured line, including groups absent from its trimmed written row.",
+    "Excluding the initial written row does not remove the generator\u2019s manuscript-derived input dependency.",
+    "Group strings, Java notation characters, native IVTFF loci and manuscript glyphs remain distinct units.",
+    "Raw third-party sources, class files, logs, configuration text and generated text are not redistributed."
+  ]
+}
