@@ -17,6 +17,23 @@ import re
 PARTITIONS = {"development", "evaluation"}
 
 
+def load_split_json(text):
+    """Reject ambiguous object members before any split declarations are lost."""
+    def unique_members(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError(f"Split JSON has a duplicate object member: {key!r}")
+            result[key] = value
+        return result
+
+    def reject_constant(value):
+        raise ValueError(f"Split JSON has a non-JSON numeric constant: {value}")
+
+    return json.loads(text, object_pairs_hook=unique_members,
+                      parse_constant=reject_constant)
+
+
 def validate(split, input_bytes=None, require_frozen=False):
     errors, warnings = [], []
 
@@ -174,9 +191,9 @@ def main():
     parser.add_argument("--require-frozen", action="store_true")
     args = parser.parse_args()
     try:
-        split = json.loads(args.split.read_text(encoding="utf-8"))
+        split = load_split_json(args.split.read_text(encoding="utf-8"))
         result = validate(split, args.input.read_bytes() if args.input else None, args.require_frozen)
-    except (OSError, json.JSONDecodeError) as error:
+    except (OSError, ValueError) as error:
         parser.exit(1, f"FAIL: {error}\n")
     for error in result["errors"]:
         print("FAIL:", error)
