@@ -18,6 +18,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Pinned transliteration sources and working selection](research/transliteration/DECISION.md)
 - [Section-beginning visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
+- [Three provisional f76r image/native-locus anchors](research/pilot/F76R_ANCHORS.md): frozen selections, both native readings, and source-linked review windows awaiting independent row checks.
 - [Native foldout page conventions](research/pilot/NATIVE_PAGE_CONVENTIONS.md): documented carrier and panel ordering, with region/glyph review pending.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
@@ -43,8 +44,11 @@ Link to source images and transcriptions until their reuse terms have been check
 
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
+- [Self-citation generator audit](research/literature/COPYING_MECHANISM.md): pinned copying-model implementation and configuration, representation differences, and requirements for a prospective mechanism comparison.
 - [Historical interlinear intake](research/historical/README.md): pin the recovered 1.6e6 archive and audit native H records before attempting published-method replication.
+- [Historical H/modern IT2a page envelopes](research/historical/MODERN_PAGE_ENVELOPES.md): equal global totals retain four page-count discrepancies and unmatched identifiers.
 - [Paired paragraph-annotation agreement](research/transliteration/ANNOTATION_AGREEMENT.md): exact boundary-mark disagreements between the pinned ZL/IT editions, with identifiers for image review and explicit limits on source-defined strata.
+- [Encoded paragraph-unit agreement](research/transliteration/PARAGRAPH_MEMBERSHIP.md): marker-pair checks, unassigned loci, and exact common paragraph membership for later unit-level comparisons.
 - [Token and repetition baselines](research/transliteration/BASELINES.md), [locus-position effects](research/transliteration/POSITION_EFFECTS.md), and [prefix stratification](research/transliteration/PREFIX_STRATA.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits. The stratification separates paragraph starts and source Currier labels rather than treating the pooled prefix pattern as uniform.
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md) and [early/late-half controls](research/transliteration/INTERIOR_HALVES.md): neighboring interior lengths depart from the stated controls in 2,165 common loci; finer position gradients and transcription effects remain alternative explanations.
 - [Fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md): compare transcription and uncertainty variants on identical eligible locus keys, preserving per-locus disagreement.

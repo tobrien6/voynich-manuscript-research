@@ -118,7 +118,12 @@ python3 scripts/audit_transcription_images.py \
 python3 -m unittest tests.test_transcription_images -v
 ```
 
-Use `--output PATH` to write a report. For an actual split declaration:
+Use `--output PATH` to write a separate report. The writer rejects the manifest,
+split, source catalog, cataloged input files, raw-data directory, and image-index
+directory as destinations, including symlink and hardlink aliases of input
+files. It checks the destination before computing the audit. This preserves
+inputs for replay; it does not change source pins or the coverage method.
+For an actual split declaration:
 
 ```sh
 python3 scripts/audit_transcription_images.py \
@@ -132,6 +137,12 @@ does not verify that input checksum or certify freeze history. Both gates must
 pass for their respective claims, and neither certifies unseen material,
 independent review, or correct image/text alignment. Existing full-corpus
 analysis and inventory exposure still belong in the split declaration.
+
+The image gate reads split files with the [same strict JSON loader](../evaluation/SPLIT_FORMAT.md)
+as the base validator. Duplicate decoded object names and literal non-JSON
+numeric constants fail before structural or image-dependency checks, preserving
+one unambiguous declaration at both entry points. The coverage report and its
+source/image pins are unaffected by this serialized-split check.
 
 Tests exercise partial-view preservation, explicit convention rejection,
 Rosettes deduplication, absent historical aliases, transitive grouping,

@@ -132,6 +132,10 @@ Yale index. It recomputes transitive dependencies across explicit shared scans,
 requires the derived group IDs and all indexed canvas references for selected
 leaves, and requires selected leaves in one image component to share one unit.
 Run its `--split` check in addition to this validator's input/freeze check.
+Both CLIs use the same strict split decoder: repeated object members and
+non-JSON numeric constants fail before interpreting declarations, even if
+ordinary JSON decoding would leave a structurally valid final value. Invalid
+split input cannot produce a dependency PASS or replace an output report.
 Its coarse side references do not resolve image regions or substitute for a
 reviewed physical mapping. Preserve prior exposure and any unresolved panel
 localization in the candidate record.
