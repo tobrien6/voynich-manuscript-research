@@ -44,6 +44,11 @@ states until an incoming token overflows. That determines the next row's first
 length and the current row's contrast. Keep exact rational transition
 probabilities and expected rewards, solve the finite stationary distribution,
 and verify row sums, nonnegativity, normalization and stationarity exactly.
+Compute the positive-transition graph and all closed communicating classes
+before solving. Require a unique closed class and a positive self-transition
+inside it for this bounded experiment; report its support and aperiodicity
+certificate. Reject unsupported multiple-class cases rather than choosing a
+stationary law without a declared initial-state mixture.
 Publish every kernel, first-length conditional reward and stationary probability,
 not only the final contrast. Use an independent recursive path enumeration of
 the two-length finite case as an implementation check.
