@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "proposal_id": "67r-layout-2026-10-11-v1",
+  "status": "provisional_layout_correspondence",
+  "usable_as_verified_corpus_join": false,
+  "glyph_alignment_status": "not_reviewed",
+  "independent_review_status": "pending",
+  "inspected_on": "2026-10-11",
+  "timezone": "America/New_York",
+  "observer": "Codex working for tobrien6",
+  "method": "Compare published IVTFF side/panel convention, source locus-type counts, and a bounded Yale image derivative. Source counts and opening source loci were inspected before the image; this is not a blinded or independent concordance test.",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+  "yale_label": "67r",
+  "image_oid": "1006194",
+  "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006194",
+  "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006194/full/!1800,1800/0/default.jpg",
+  "inspection_image_sha256": "ed3657b74b4705da1b2605b12e0a9cda501df9384b8e0f8f5ce392498ee41e84",
+  "inspection_image_bytes": 519434,
+  "inspection_width": 1800,
+  "inspection_height": 1353,
+  "original_image_width": 4972,
+  "original_image_height": 3738,
+  "naming_reference": {
+    "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "document_issue": "2.0.2, 08/07/2025",
+    "locator": "section 4.2 and Figure 1, printed pages 11-12",
+    "scope": "Recto panel names progress away from the binding; the diagram illustrates 72, not a source-specific image/text alignment for 67r."
+  },
+  "transcription_sources": [
+    {
+      "source_id": "ZL3b",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    },
+    {
+      "source_id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    }
+  ],
+  "dependency_group": "yale-leaves:67",
+  "panels": [
+    {
+      "transcription_page": "f67r1",
+      "proposed_panel_locator": "Left field of the displayed scan, nearest the visible binding, left of the principal vertical crease.",
+      "direct_observations": [
+        "Four horizontal text rows appear above the large circular drawing.",
+        "The drawing has colored radial shapes around a central face-like form, writing in circular bands, and writing extending along radial divisions."
+      ],
+      "source_counts_by_edition": {
+        "ZL3b": {"present_loci": 19, "present_loci_by_kind": {"P0": 4, "Cc": 3, "Ri": 12}},
+        "IT2a": {"present_loci": 19, "present_loci_by_kind": {"P0": 4, "Cc": 3, "Ri": 12}}
+      },
+      "candidate_p0_locations": ["f67r1.1", "f67r1.2", "f67r1.3", "f67r1.4"],
+      "placement_hypothesis": "The four P0 locations correspond to the four upper horizontal rows, in source order.",
+      "placement_status": "not_glyph_verified"
+    },
+    {
+      "transcription_page": "f67r2",
+      "proposed_panel_locator": "Right field of the displayed scan, farther from the binding, right of the principal vertical crease.",
+      "direct_observations": [
+        "The circular drawing contains a small central star-like form, surrounding crescent-like marks, and writing distributed across compartments and rings.",
+        "Three horizontal text rows appear below the drawing; the middle row is red."
+      ],
+      "source_counts_by_edition": {
+        "ZL3b": {"present_loci": 74, "present_loci_by_kind": {"L0": 27, "Pb": 32, "Ls": 12, "P0": 3}},
+        "IT2a": {"present_loci": 74, "present_loci_by_kind": {"L0": 27, "Pb": 32, "Ls": 12, "P0": 3}}
+      },
+      "candidate_p0_locations": ["f67r2.72", "f67r2.73", "f67r2.74"],
+      "placement_hypothesis": "The three P0 locations correspond to the three lower horizontal rows, in source order.",
+      "placement_status": "not_glyph_verified"
+    }
+  ],
+  "review_test": [
+    "At original resolution, check the source locations against the proposed horizontal rows, preserving spacing and reading alternatives.",
+    "Reject or revise a placement if source order, row count, or glyph sequences disagree; do not choose a preferred edition to repair the mismatch.",
+    "Record reviewed region boundaries and any crossing text before creating a verified image/text join."
+  ],
+  "limits": [
+    "No exact panel mask, pixel bounding box, or crop is assigned.",
+    "Agreement of locus-type counts is not agreement of glyph readings or independent replication between editions.",
+    "Circular and radial source locations have not been assigned to individual image regions.",
+    "No linguistic content, celestial identification, decoding, or translation is inferred.",
+    "Both panels remain one leaf and one image dependency; this observation supplies no untouched evaluation material."
+  ]
+}
