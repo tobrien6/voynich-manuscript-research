@@ -178,5 +178,45 @@ class ProtectionTests(unittest.TestCase):
             self.assertEqual(source.read_bytes(), b'keep')
 
 
+    def test_serialization_alias_swap_and_failure_preserve_input_and_output(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, output = root / 'source', root / 'output'
+            source.write_bytes(b'keep source')
+            output.write_bytes(b'keep output')
+            original_dumps = json.dumps
+            def swapped(*args, **kwargs):
+                output.unlink()
+                output.symlink_to(source)
+                return original_dumps(*args, **kwargs)
+            with patch.object(study, 'protected_files', return_value=[source]), patch.object(study, 'run_study', return_value={'result': 1}), patch.object(study.json, 'dumps', side_effect=swapped), contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(study.main(['--reference', str(root), '--output', str(output)]), 1)
+            self.assertEqual(source.read_bytes(), b'keep source')
+            output.unlink()
+            output.write_bytes(b'keep output')
+            with patch.object(study, 'protected_files', return_value=[source]), patch.object(study, 'run_study', return_value={'value': float('nan')}), contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(study.main(['--reference', str(root), '--output', str(output)]), 1)
+            self.assertEqual(output.read_bytes(), b'keep output')
+
+    def test_removed_name_and_entry_target_are_retained_until_write(self):
+        for retarget in (False, True):
+            with self.subTest(retarget=retarget), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                empty = root / 'empty'; empty.mkdir()
+                original = root / 'Protected.txt'; original.write_bytes(b'synthetic')
+                source = root / 'source'; source.symlink_to(original)
+                output_parent = root / 'output-parent'; output_parent.symlink_to(empty, target_is_directory=True)
+                output = output_parent / 'PROTECTED.TXT'
+                def changed(*args):
+                    original.unlink()
+                    if retarget:
+                        source.unlink(); source.symlink_to(root / 'elsewhere.txt')
+                    output_parent.unlink(); output_parent.symlink_to(root, target_is_directory=True)
+                    return {'result': 1}
+                with patch.object(study, 'protected_files', return_value=[source]), patch.object(study, 'run_study', side_effect=changed), contextlib.redirect_stderr(io.StringIO()):
+                    self.assertEqual(study.main(['--reference', str(root), '--output', str(output)]), 1)
+                self.assertFalse(output.exists())
+
+
 if __name__ == '__main__':
     unittest.main()

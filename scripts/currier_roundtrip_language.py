@@ -8,6 +8,7 @@ import itertools
 import json
 from pathlib import Path
 import sys
+import unicodedata
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -242,9 +243,18 @@ def protected_files(reference, root=ROOT):
 
 
 def guard_output(output, protected):
-    if output is not None and any(output.resolve() == p.resolve() or
-                                 output.exists() and p.exists() and output.samefile(p) for p in protected):
-        raise ValueError('output aliases a protected plan, dependency, producer or primary artifact')
+    if output is None:
+        return
+    resolved = output.resolve()
+    for source in protected:
+        same_named_entry = (
+            unicodedata.normalize('NFC', resolved.name).casefold()
+            == unicodedata.normalize('NFC', source.name).casefold()
+            and resolved.parent.exists() and source.parent.exists()
+            and resolved.parent.samefile(source.parent))
+        if (resolved == source.resolve() or same_named_entry
+                or output.exists() and source.exists() and output.samefile(source)):
+            raise ValueError('output aliases a protected plan, dependency, producer or primary artifact')
 
 
 def run_study(reference, root=ROOT):
@@ -299,14 +309,18 @@ def main(argv=None):
     mode.add_argument('--check', type=Path)
     args = parser.parse_args(argv)
     try:
-        protected = protected_files(args.reference)
+        protected = tuple(p for source in protected_files(args.reference)
+                          for p in (source, source.resolve()))
         guard_output(args.output, protected)
         result = run_study(args.reference)
         if args.check and canonical(result) != canonical(read_json(args.check)):
             raise ValueError('complete report differs')
         if args.output:
-            guard_output(args.output, protected)
-            args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')
+            payload = json.dumps(result, indent=2, allow_nan=False) + '\n'
+            current = tuple(p for source in protected_files(args.reference)
+                            for p in (source, source.resolve()))
+            guard_output(args.output, (*protected, *current))
+            args.output.write_text(payload, encoding='utf-8')
         print('Complete round-trip language report verified')
     except (ValueError, OSError, KeyError, TypeError) as error:
         print(str(error), file=sys.stderr)
