@@ -46,6 +46,13 @@ directions, notation lengths and asterisk presence. Retain all one-to-many and
 many-to-one classes; neither ambiguity nor asterisks trigger exclusions.
 Account for the full population, every edge and every position exactly once.
 
+Also count every unordered pair of distinct paired positions: equality in both
+notations is `sum choose(edge_count, 2)`; equality in each domain separately is
+`sum choose(type_frequency, 2)`. Retain H-only/Reddy-only equality and neither
+equality counts with the full `choose(paired_positions, 2)` denominator. These
+exact contingency identities provide a second partition check, without a
+misleading agreement score dominated by unequal pairs.
+
 Report whether each direction is functional (every source type has one target)
 and whether the complete position equality partitions are identical (all
 degrees are one in both domains). Functional/nonfunctional describes this
@@ -62,6 +69,11 @@ within-record/joining breakdown, and every edge whose equality differs between
 notations, with source record/local-index descriptors for both endpoints.
 Record joining boundaries even when no event differs. Preserve all types,
 including singleton/asterisk notation, and use no random control or tail.
+Report B separately for within-record and joining edges, plus their repeated
+type overlap. Identify every intervening selected-H ordinal at a flattened
+join. No manual exclusions or removed token positions occur in this stream;
+empty record boundaries remain in the parent ledger. A flattened join is a
+declared file-stream edge, not verified physical adjacency.
 
 Identical equality partitions imply identical immediate-repeat edge flags and
 A/B counts on these paired positions. Equal A/B totals alone do not imply

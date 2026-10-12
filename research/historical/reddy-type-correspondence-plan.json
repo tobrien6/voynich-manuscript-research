@@ -31,5 +31,6 @@
     "research/historical/reddy-envelopes-plan.json": "1a3c9387ce1803415cec02d5260b1efdd600c09454c125af4f55d5d180769b50",
     "research/historical/reddy-envelopes.json": "f40fbd503206498249370baa3e232992813079d11a565113cd460b1468e4ec75",
     "scripts/audit_historical_reddy_envelopes.py": "b9905ed00c9e0e5407c6c96e22f41d9248bdd009df99f559fa8f2f2131e240de"
-  }
+  },
+  "partition_pair_counts": "All unordered distinct paired positions: both-equal=sum choose(n_ab,2); source-equal=sum choose(n_a,2); retain both one-sided equality counts and neither with choose(N,2) denominator"
 }
