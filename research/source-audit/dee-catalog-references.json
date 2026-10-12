@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "source_id_namespace": "DC identifiers are local to this catalog-reference follow-up; S/DP identifiers remain in dee-evidence.json.",
+  "method": "Exact references selected from accepted evidence; locate with text search and independently inspect complete rendered catalog/guide pages. No manuscript-handwriting comparison.",
+  "selection": [
+    "Ashmole 487",
+    "Ashmole 847",
+    "Ashmole 1790"
+  ],
+  "selection_basis": {
+    "path": "dee-evidence.json",
+    "sha256": "0804837f6482954a832d9631aeb15dfce24ea6e3c8a888ae1aa0415c85104061",
+    "prior_exposure": "Existing Yale and mediated Roberts/Watson references were already read; this is a disclosed documentary follow-up."
+  },
+  "sources": [
+    {
+      "id": "DC001",
+      "kind": "primary_printed_catalog_scan",
+      "author": "William Henry Black",
+      "title": "A descriptive, analytical, and critical catalogue of the manuscripts bequeathed unto the University of Oxford by Elias Ashmole",
+      "publisher": "Oxford, University Press",
+      "edition_year": 1845,
+      "catalog_context_url": "https://libguides.bodleian.ox.ac.uk/modern-sc/quarto",
+      "item_url": "https://archive.org/details/descriptiveanaly00bodl",
+      "download_url": "https://archive.org/download/descriptiveanaly00bodl/descriptiveanaly00bodl.pdf",
+      "scan_contributor": "Boston Public Library",
+      "inspected_on": "2026-10-12",
+      "file_pages": 964,
+      "bytes": 102551908,
+      "sha256": "980cd5173df41c93c5142ec26c0484b53292ceebdfa9d407751ae6d4901cf999",
+      "title_pdf_page_1based": 5,
+      "rendered_pages_inspected_1based": [
+        5,
+        181,
+        310,
+        754,
+        755
+      ],
+      "scope": "Selected entries in the 1845 catalog portion of this archival scan; total file pages are not publication pagination. Catalog descriptions are not manuscript photographs."
+    },
+    {
+      "id": "DC002",
+      "kind": "publisher_microfilm_guide",
+      "title": "Renaissance Man: Series One, Part 1, John Dee’s Manuscripts from the Bodleian Library, Oxford",
+      "url": "https://webdoc.sub.gwdg.de/zdmdm/mifoguide/matthew/RENAISSANCE_MAN_p1.pdf",
+      "inspected_on": "2026-10-12",
+      "edition_year": null,
+      "file_pages": 95,
+      "bytes": 1405327,
+      "sha256": "92f6ed0072b20996ac792a2a6751f05577215efeee839f38048143496d6d2598",
+      "rendered_pages_inspected_1based": [
+        25,
+        26,
+        48
+      ],
+      "scope": "Guide descriptions and its quoted or summarized Roberts/Watson material; not the filmed manuscripts or original 1990 entry."
+    }
+  ],
+  "records": [
+    {
+      "shelfmark": "Bodleian Library, Ashmole 487",
+      "catalog_locator": {
+        "source_id": "DC001",
+        "entry_heading_verbatim": "No. 487, 488.",
+        "printed_columns": [
+          350
+        ],
+        "pdf_pages_1based": [
+          181
+        ]
+      },
+      "guide_locator": {
+        "source_id": "DC002",
+        "reel": 3,
+        "printed_pages": [
+          54,
+          55
+        ],
+        "pdf_pages_1based": [
+          25
+        ]
+      },
+      "reported_description": "The first of two quarto ephemeris volumes, Stadius 1554–1600, printed 1570, with marginal diary notes attributed to Dee from January 1577 to December 1600.",
+      "status": "Catalog-reference identity distinguished; comparative manuscript images uninspected."
+    },
+    {
+      "shelfmark": "Bodleian Library, Ashmole 847",
+      "catalog_locator": {
+        "source_id": "DC001",
+        "entry_heading_verbatim": "No. 847.",
+        "printed_columns": [
+          608
+        ],
+        "pdf_pages_1based": [
+          310
+        ]
+      },
+      "guide_locator": {
+        "source_id": "DC002",
+        "reel": 5,
+        "printed_pages": [
+          56,
+          57
+        ],
+        "pdf_pages_1based": [
+          26
+        ]
+      },
+      "reported_description": "A 134-leaf paper manuscript attributed to Robert Glover, containing Welsh vocabulary and historical material; its reported gift note names Dee.",
+      "status": "Distinct from 487; body-scribe attribution does not identify the folio-numeral hand."
+    },
+    {
+      "shelfmark": "Bodleian Library, Ashmole 1790",
+      "catalog_locator": {
+        "source_id": "DC001",
+        "entry_heading_verbatim": "No. 1790.",
+        "printed_columns": [
+          1496,
+          1497
+        ],
+        "pdf_pages_1based": [
+          754,
+          755
+        ]
+      },
+      "guide_locator": {
+        "source_id": "DC002",
+        "printed_pages": [
+          100,
+          101
+        ],
+        "pdf_pages_1based": [
+          48
+        ]
+      },
+      "reported_description": "A composite paper collection. Part I describes a Latin preface and narrative as written and corrected by its author Dee; Part III describes Ashmole’s observations and collections.",
+      "status": "Composite context distinguished; exact leaf 9v and its numerals remain uninspected."
+    }
+  ],
+  "direct_observation": "The catalog visibly supplies different descriptions and headings for 487/488, 847, and 1790.",
+  "inference": "487 and 847 must remain distinct reference targets; neither can be silently substituted for the other.",
+  "unresolved": [
+    "Exact wording of Roberts and Watson (1990), reported p. 172",
+    "Which reference the original comparison intended and why Yale differs",
+    "Identity and comparative numerals of the actual manuscript leaves",
+    "Voynich foliation-hand attribution, ownership or sale"
+  ],
+  "reproduction": {
+    "pdf_tool": "Poppler pdftoppm and pdftotext",
+    "OCR_role": "Search aid only; an exact No. 487. search missed the grouped No. 487, 488. heading, which was identified visually.",
+    "black_scan_archive_metadata_sha1_verified": "121e3469e0851816e74b459673fa6361828b2251",
+    "local_artifacts_not_redistributed": [
+      "source PDFs",
+      "OCR and extracted text",
+      "page renders"
+    ]
+  },
+  "access_limits": [
+    "Oxford archive record returned HTTP 403; older linked databank hostname did not resolve. The inspected catalog is the separately accessible Archive/Boston Public Library scan, not Oxford’s unavailable PDF.",
+    "Primary Archive download redirect timed out; its publicly advertised secondary mirror supplied bytes matching the item metadata checksum."
+  ],
+  "limits": "These are reported catalog descriptions and documentary identities, not independent authentication of a scribe or proof of a typo, owner, cipher or translation."
+}

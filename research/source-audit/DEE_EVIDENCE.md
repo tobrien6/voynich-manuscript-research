@@ -33,6 +33,10 @@ in these two representations. This does **not** verify the original book's
 wording, show which reference is correct, or establish a catalog typo. Keep
 both spellings and their documentary paths; do not silently substitute one.
 
+The separate [catalog-reference follow-up](DEE_CATALOG_REFERENCES.md) identifies
+487 and 847 as distinct catalog targets and records 1790’s composite context.
+It leaves the original wording and manuscript comparison unresolved.
+
 Before a numeral comparison, inspect the original entry and authenticate the
 specified Bodleian leaves. A shelfmark, a leaf number, a printed page, a Voynich
 folio label and an inferred writing hand are separate identifiers. Neither
