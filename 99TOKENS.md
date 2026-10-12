@@ -44,6 +44,8 @@ The [token-order control generator](research/token-controls/README.md) supplies 
 
 The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records literal EVA q/y-prefix and notation-length contrasts at original first and last token slots under the same uncertainty policies, with [complete results](research/transliteration/locus_positions.json). It uses conditional within-locus controls and explicit eligibility counts. These measurements constrain simple exchangeability within the chosen units; they do not identify a language, cipher, glyph reading, or translation.
 
+The [interior notation-length order analysis](research/transliteration/INTERIOR_ORDER.md) keeps endpoints fixed and tests neighboring interior lengths on 2,165 loci eligible in both sources and spacing policies. All four treatments depart above their conditional permutation expectations, with all 999 controls retained in the [report](research/transliteration/interior_length_order.json). This exploratory result adds an order constraint; interior position gradients and transcription effects remain possible explanations, and no decipherment or untouched evaluation is claimed.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.

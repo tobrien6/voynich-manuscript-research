@@ -21,6 +21,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
 - [GC and full/basic reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) and [aggregate records](research/transcriptions/intake-audit.json)
 - [Exploratory token and repetition baselines](research/transliteration/BASELINES.md) and [recorded results](research/transliteration/token_baselines.json)
+- [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md): common-cohort exploration with endpoints fixed in its permutation controls
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
@@ -36,6 +37,7 @@ Link to source images and transcriptions until their reuse terms have been check
 ## Research notes
 
 - [Token and repetition baselines](research/transliteration/BASELINES.md) and [locus-position effects](research/transliteration/POSITION_EFFECTS.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits.
+- [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md): neighboring interior lengths depart from endpoint-fixed exchangeability in 2,165 common loci; position gradients and transcription effects remain alternative explanations.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.
 - [Reproducible token-order controls](research/token-controls/README.md): synthetic-tested line and folio-side shuffles with explicit sampling constraints and pinned input provenance.
