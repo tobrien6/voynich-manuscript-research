@@ -45,8 +45,10 @@ records [S005/S006 and their limits](../SOURCES.md).
 
 PDF and render bytes remain local. Only links, the fingerprint, selected
 identifier observations, and original analysis are added to the repository.
-D'Imperio's *An Elegant Enigma* PDF was located through its NSA link, but
-retrieval did not complete; no claim in this check relies on its contents.
+At this check, D'Imperio's *An Elegant Enigma* PDF was located through its NSA
+link, but retrieval did not complete; the original observations do not rely on
+its contents. The later [GovInfo follow-up](ENIGMA_CONTEXT.md) retrieves and
+visually inspects a separate pinned representation, retaining the unresolved gate.
 
 ## Result and next test
 

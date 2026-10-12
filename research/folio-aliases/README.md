@@ -37,6 +37,12 @@ Petersen counter and Stolfi's attributed page label separately, with a PDF
 fingerprint and explicit limits. These counter differences do not verify the
 legacy Yale alias or authorize a global folio shift.
 
+The [D'Imperio follow-up](ENIGMA_CONTEXT.md) recovers the report from GovInfo and
+traces its 116v description to a credited reproduction and competing historical
+readings. It preserves that source trail separately from a verified alias and
+records a visibly populated page with empty extracted text, preventing
+label-absence claims from literal search.
+
 ## Registry and verification gate
 
 [decisions.json](decisions.json) is the versioned registry. Each source key is
