@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "split_id": "synthetic-v1",
+  "candidate_version": "synthetic-rule-v1",
+  "status": "frozen",
+  "evaluation_claim": "unseen_material",
+  "created_at": "2000-01-01T00:00:00Z",
+  "frozen_at": "2000-01-02T00:00:00Z",
+  "fit_started_at": null,
+  "input": {
+    "edition": "synthetic-v1",
+    "source": "test fixture",
+    "sha256": "b0acdc334473a86a692864a46a37dad86320cfe896ca4552f8ff34c852ac2bbc"
+  },
+  "expected_counts": {
+    "development": 2,
+    "evaluation": 1
+  },
+  "units": [
+    {
+      "unit_id": "synthetic-1",
+      "partition": "development",
+      "folio_ids": [
+        "1"
+      ],
+      "canvas_ids": [
+        "urn:synthetic:canvas:1"
+      ],
+      "dependency_groups": [
+        "synthetic-group-1"
+      ],
+      "source_refs": [
+        "Synthetic fixture; no actual manuscript material"
+      ],
+      "prior_exposure": {
+        "state": "known",
+        "note": "Synthetic declaration only; no real exposure history",
+        "declared_by": "test fixture",
+        "recorded_at": "2000-01-01T00:00:00Z",
+        "used_for_development": true
+      }
+    },
+    {
+      "unit_id": "synthetic-2",
+      "partition": "development",
+      "folio_ids": [
+        "2"
+      ],
+      "canvas_ids": [
+        "urn:synthetic:canvas:2"
+      ],
+      "dependency_groups": [
+        "synthetic-group-2"
+      ],
+      "source_refs": [
+        "Synthetic fixture; no actual manuscript material"
+      ],
+      "prior_exposure": {
+        "state": "known",
+        "note": "Synthetic declaration only; no real exposure history",
+        "declared_by": "test fixture",
+        "recorded_at": "2000-01-01T00:00:00Z",
+        "used_for_development": true
+      }
+    },
+    {
+      "unit_id": "synthetic-3",
+      "partition": "evaluation",
+      "folio_ids": [
+        "3"
+      ],
+      "canvas_ids": [
+        "urn:synthetic:canvas:3"
+      ],
+      "dependency_groups": [
+        "synthetic-group-3"
+      ],
+      "source_refs": [
+        "Synthetic fixture; no actual manuscript material"
+      ],
+      "prior_exposure": {
+        "state": "none_reported",
+        "note": "Synthetic declaration only; no real exposure history",
+        "declared_by": "test fixture",
+        "recorded_at": "2000-01-01T00:00:00Z",
+        "used_for_development": false
+      }
+    }
+  ]
+}
