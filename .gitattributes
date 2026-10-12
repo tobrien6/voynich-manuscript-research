@@ -1,0 +1,2 @@
+# Preserve source bytes: digest verification must survive any checkout settings.
+/data/raw/*.txt -text

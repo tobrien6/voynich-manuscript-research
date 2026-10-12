@@ -8,7 +8,17 @@ Read [the project brief](99TOKENS.md), [the source register](research/SOURCES.md
 
 All agents and subagents working on this project for this user must authenticate as `tobrien6` for GitHub submissions, pushes, issues, comments, and reviews. Verify the selected identity with `gh api user --jq .login` before acting. Pass this requirement to delegated agents and separate checkouts.
 
-Preserve and resubmit earlier `tim-repligen` contributions as `tobrien6` before removing the originals wherever GitHub supports deletion. Close superseded PRs and report records that remain. A merged contribution is already part of the repository; a follow-up PR can update its guidance, but it cannot change the original PR author. Submitted reviews cannot be deleted. If cleanup requires a former account's credentials, obtain explicit authorization for that account and the specific item before using them. Keep `tobrien6` selected for normal work.
+When the user explicitly requests cleanup of earlier `tim-repligen` activity, preserve and resubmit those contributions as `tobrien6` before removing authorized originals wherever GitHub supports deletion. Close superseded PRs and report records that remain. A merged contribution is already part of the repository; a follow-up PR can update its guidance, but it cannot change the original PR author. Submitted reviews cannot be deleted. If cleanup requires a former account's credentials, obtain explicit authorization for that account and the specific item before using them. Keep `tobrien6` selected for normal work.
+
+## Establish your role
+
+Verify your user-authorized GitHub identity, the upstream repository owner, current permissions, and assigned scope. Record **owner/maintainer**, **contributor**, or **unverified**, with the evidence. An owner/maintainer acts for the project owner or an explicitly assigned maintainer with the permissions needed for the action. Write access alone, a fork, or a verified directory listing does not establish this role. If unclear, continue contribution work while resolving it.
+
+An owned project assigned to an agent includes routine PR management within the user's scope: merge validated work, adopt selected changes, request changes, or reject and close with reasons. These decisions need no repeated permission when already covered by the assignment. Contributors propose changes and leave merge and closure decisions to the assigned owner/maintainer. All actions must satisfy repository protections and required approvals.
+
+For partial adoption, use a dedicated branch and linked follow-up PR, preserve attribution and dependencies, and identify included and omitted changes. Validate the combined result and verify the replacement before closing the original as partially adopted or superseded.
+
+Document every decision in the PR discussion or existing repository decision log: PR link, reviewed commit, role and authority, disposition, included and omitted changes, rationale and evidence, validation and limitations, and resulting PR or merge commit. Inspect the current diff, discussion, reviews, and checks; confirm the head before acting. Preserve the role, scope, pending PRs, and records in handoffs, then recheck identity and permissions.
 
 ## Submit research through a pull request
 
@@ -38,5 +48,5 @@ Submit actionable comments or request changes when you find substantive problems
 
 GitHub does not allow an account to approve its own PR. Two agents authenticated as the same GitHub user are the same author/reviewer identity. A PR authored by `tobrien6` needs a different independently authorized account for approval; an outside contributor's PR can be reviewed by an authorized agent using `tobrien6`. Reviews that count toward required approvals must satisfy GitHub's repository rules and reviewer permissions.
 
-Review authorization does not authorize merging. Merge only with explicit user authorization and after the repository's requirements are met.
+Review permission alone does not assign owner/maintainer authority. Owners and assigned maintainers follow the documented decision workflow above and satisfy the repository's requirements, including any required independent approval.
 
