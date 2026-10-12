@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/sravanareddy/deciphervoynich",
+  "source_commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+  "source_tree": "4e529b53db765deb6c243a38731c947e7ab25e92",
+  "inspected_on": "2026-10-12",
+  "repository_role": "Paper-associated public repository; README states files/scripts used in Reddy and Knight (2011); later Git snapshot, not a 2011 execution receipt",
+  "visible_history": {
+    "commit_count": 6,
+    "author_dates_all": "2015-07-30",
+    "repository_created_at": "2015-07-30T18:41:30Z",
+    "scope": "Public Git/API metadata, not authenticated historical release dates"
+  },
+  "complete_tree_entries": [
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "sha": "2f836aacf266b3e7fc17ec2d8a99aa68c904c1b9",
+      "size": 9
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "sha": "87c00b13275b8a942343da1dbffa999a99075857",
+      "size": 708
+    },
+    {
+      "path": "basic_stats.py",
+      "type": "blob",
+      "sha": "d78b72f164ca76258fef7eb29001ffad2ec071dd",
+      "size": 2466
+    },
+    {
+      "path": "data",
+      "type": "tree",
+      "sha": "20e31be50b3cc7538cec18c5683330d1910a5c74"
+    },
+    {
+      "path": "data/arabic.versed.nov.wds",
+      "type": "blob",
+      "sha": "87dc7a737de1bafb7e0f5045af885fe37a7b9360",
+      "size": 102008
+    },
+    {
+      "path": "data/pinyin.wds",
+      "type": "blob",
+      "sha": "e194e09cc401716c1be29f54a3448df94d8ab413",
+      "size": 123476
+    },
+    {
+      "path": "data/sinica.wds",
+      "type": "blob",
+      "sha": "83f0c9691193eb08a76a17779db4e3d46da13414",
+      "size": 99466
+    },
+    {
+      "path": "data/voy.ann.wds",
+      "type": "blob",
+      "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+      "size": 297568
+    },
+    {
+      "path": "data/voy.b.ann.wds",
+      "type": "blob",
+      "sha": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+      "size": 133404
+    },
+    {
+      "path": "data/voy.b.paged.wds",
+      "type": "blob",
+      "sha": "9be41bea2b7268195be0d8096551bf67bd52510a",
+      "size": 95465
+    },
+    {
+      "path": "data/voy.paged.wds",
+      "type": "blob",
+      "sha": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+      "size": 198521
+    },
+    {
+      "path": "data/wsj.paged.nov.wds",
+      "type": "blob",
+      "sha": "316038e780368b8cc195ea83741a42ad2e14b2f8",
+      "size": 123864
+    },
+    {
+      "path": "data/wsj.paged.wds",
+      "type": "blob",
+      "sha": "6fb76100c9c82b07fcffa39074e896c3dccdb486",
+      "size": 178011
+    }
+  ],
+  "selected_local_files": [
+    {
+      "path": "README.md",
+      "bytes": 708,
+      "git_blob_sha1": "87c00b13275b8a942343da1dbffa999a99075857",
+      "sha256": "46bf6c6e1c1c576c57dbbb93e86d99a9a7bfcb6c21a67fbab06794363afba6a0",
+      "source_url": "https://github.com/sravanareddy/deciphervoynich/blob/643b881b2937bae8193814d8ff5d6e99a48bf7c5/README.md"
+    },
+    {
+      "path": "basic_stats.py",
+      "bytes": 2466,
+      "git_blob_sha1": "d78b72f164ca76258fef7eb29001ffad2ec071dd",
+      "sha256": "12102b9c290838ebe0c60580f62cb449759cb71d13949dbcf5c23c82d1aa4ccc",
+      "source_url": "https://github.com/sravanareddy/deciphervoynich/blob/643b881b2937bae8193814d8ff5d6e99a48bf7c5/basic_stats.py"
+    },
+    {
+      "path": "data/voy.ann.wds",
+      "bytes": 297568,
+      "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+      "sha256": "a3a1fb64a8f227e0fb0b81e7fe6aecec719888a4efeb5c1f7df5e2539c91d1d4",
+      "source_url": "https://github.com/sravanareddy/deciphervoynich/blob/643b881b2937bae8193814d8ff5d6e99a48bf7c5/data/voy.ann.wds"
+    },
+    {
+      "path": "data/voy.b.ann.wds",
+      "bytes": 133404,
+      "git_blob_sha1": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+      "sha256": "7f6ee35b7ae7a0663f4b67d7b60effe9d539d8c2adb3d24de1153c3fbb4ae24b",
+      "source_url": "https://github.com/sravanareddy/deciphervoynich/blob/643b881b2937bae8193814d8ff5d6e99a48bf7c5/data/voy.b.ann.wds"
+    },
+    {
+      "path": "data/voy.b.paged.wds",
+      "bytes": 95465,
+      "git_blob_sha1": "9be41bea2b7268195be0d8096551bf67bd52510a",
+      "sha256": "723cb2746da37c8272005f71298917abfed60412b23597b2b8aecb95dc7a0ee4",
+      "source_url": "https://github.com/sravanareddy/deciphervoynich/blob/643b881b2937bae8193814d8ff5d6e99a48bf7c5/data/voy.b.paged.wds"
+    },
+    {
+      "path": "data/voy.paged.wds",
+      "bytes": 198521,
+      "git_blob_sha1": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+      "sha256": "92cd656360e2c0b728ce7338c59149e1f3d17263881fc9c4dc9514131f764a04",
+      "source_url": "https://github.com/sravanareddy/deciphervoynich/blob/643b881b2937bae8193814d8ff5d6e99a48bf7c5/data/voy.paged.wds"
+    }
+  ],
+  "reuse": {
+    "github_license_field": null,
+    "license_file_in_this_tree": false,
+    "third_party_artifacts_redistributed": false,
+    "comparator_language_files_downloaded": false
+  },
+  "paper": {
+    "id": "L001",
+    "title": "What We Know About The Voynich Manuscript",
+    "url": "https://aclanthology.org/W11-1511/",
+    "pdf_url": "https://aclanthology.org/W11-1511.pdf",
+    "pdf_bytes": 966546,
+    "pdf_sha256": "842e285c544bffefc1eefa58704cbde6a5e93f0706542dc6a67d374f2c7da599",
+    "rendered_pages_inspected_1based": [
+      2,
+      3,
+      4
+    ],
+    "printed_pages": [
+      79,
+      80,
+      81
+    ],
+    "input_source_as_reported": "http://www.voynich.net/reeds/gillogly/voynich.now",
+    "alphabet_as_reported": "Currier"
+  },
+  "paper_reported_counts": {
+    "full": {
+      "pages": 225,
+      "tokens": 37919,
+      "types": 8114
+    },
+    "b": {
+      "pages": 43,
+      "tokens": 17597,
+      "types": 3920,
+      "characters": 35
+    }
+  },
+  "limits": [
+    "Repository association and matching counts do not authenticate exact 2011 bytes or preprocessing.",
+    "Source-native header tags are not silently reinterpreted as modern IVTFF edition identities.",
+    "No author code or Table 2 predictor is executed; no comparator or manuscript image is downloaded.",
+    "Only original code and metadata will be published; raw corpus, author source and PDF remain local."
+  ]
+}
