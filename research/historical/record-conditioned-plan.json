@@ -1,0 +1,33 @@
+{
+  "plan_version": 1,
+  "scope": "Exploratory matched-input/all-flat-edge native-record-conditioned H A/B assay; exposed approximate inputs",
+  "seed": 20261012,
+  "trials": 10,
+  "algorithm": "sha256-counter-fisher-yates-v1",
+  "shuffle_frame": "historical-native-record-v1",
+  "edge_scope": "All N-1 adjacent edges in each surviving flat stream, including native-record joins",
+  "metrics": [
+    "equal_pair_events_A",
+    "distinct_self_repeating_types_B"
+  ],
+  "retain_asterisks": true,
+  "include_all_parser_variants": true,
+  "condition_on": "Independent uniform permutation of every surviving native-record token bag",
+  "dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/global_repeated_types.py": "cebe7bae733a401d7c76d15ee7c4724d2f9aab1efe2433db74e0d6a8d3c0da08",
+    "scripts/historical_repeated_types.py": "90aa860990a9e120833565fa377e7b8c73df8596a66c9e6bec1c412f4e96cc5e",
+    "research/historical/repeated-types-plan.json": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
+    "research/historical/REPEATED_TYPES_PLAN.md": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
+    "research/historical/repeated-types.json": "71c46911b9c38f3b5125d2411707ea5d4a3f364f1d6126fece167aebabe075c6"
+  },
+  "global_study_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/126",
+  "global_study_commit": "ecd5f547ca705ca6daff8e699bd99d5f34dd668a",
+  "prior_exposure": "All four global A/B measurements and controls, source/parser/caption data and published methods already inspected; no untouched evaluation"
+}

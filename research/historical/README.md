@@ -30,6 +30,10 @@ The [repeated-type assay](REPEATED_TYPES.md) applies the published B definition
 and a declared global control to all four approximate streams, with exact means
 and complete ten-trial results. It preserves the difference from modern
 conditional-locus controls and does not claim an exact historical replication.
+The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
+streams and all measured joining edges fixed while changing the null's bags.
+It retains the resulting reduction of B's contrast and reversal of A's mean
+contrast, without a causal explanation or significance claim.
 
 ## Method
 

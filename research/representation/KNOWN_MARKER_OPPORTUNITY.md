@@ -134,3 +134,9 @@ aliases. Complete report replay verifies source/encoded/recovered matrices,
 all counts, cells, exact fractions and provenance. Output guards preserve
 plans, code/helpers, catalog/raw inputs and fixed records, and recheck before
 writing. No actual source text or image is redistributed by this example.
+
+The separate [matched-prefix support check](MATCHED_PREFIX_SUPPORT.md) applies
+the within-role non-y pool definition from PR #128 to these same fixed rows.
+Every first slot has the inserted prefix, leaving no first-slot non-y controls;
+that comparison is undefined here. Its support requirement differs from the
+y-only opportunity standardization above, whose defined contrast remains zero.
