@@ -44,6 +44,8 @@ The [token-order control generator](research/token-controls/README.md) supplies 
 
 The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records literal EVA q/y-prefix and notation-length contrasts at original first and last token slots under the same uncertainty policies, with [complete results](research/transliteration/locus_positions.json). It uses conditional within-locus controls and explicit eligibility counts. These measurements constrain simple exchangeability within the chosen units; they do not identify a language, cipher, glyph reading, or translation.
 
+The [catalog-section prefix analysis](research/transliteration/SECTION_STRATA.md) separates first-slot contrasts across Yale's six numeric ranges and source-marked paragraph starts, with [complete results](research/transliteration/section_strata.json). It retains 29 paragraph-start annotation disagreements and source-specific eligibility. Non-start y contrasts are positive in all six ranges, while the final-text paragraph-start contrast is near zero and differs in sign between sources. These exposed-data measurements preserve small cohorts, unresolved foliation, and representation limits; they do not establish a section's meaning or a decipherment.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
