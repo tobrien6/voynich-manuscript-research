@@ -124,3 +124,8 @@ spans two reported physical panels. A layout match supports a provisional
 container association; exact label regions, faint-trace origins and the modern
 nonexistent-locus correspondence remain unresolved. It supplies no verified join
 or physical text-presence decision.
+
+The [f68r3 non-paragraph packet](F68R3_NONPARAGRAPH.md) retains all 22 native
+circular/radial/label records despite zero P0 locations. Its fixed first/last
+radial image attempts remain provisional, with all glyph alternatives and
+twenty other unreviewed locations preserved on the shared 68r carrier.
