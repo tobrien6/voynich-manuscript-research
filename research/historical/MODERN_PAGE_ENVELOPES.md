@@ -109,15 +109,20 @@ python3 scripts/audit_historical_modern_pages.py --check research/historical/mod
 python3 -m unittest tests.test_historical_modern_pages -v
 ```
 
-Ten synthetic tests verify cancelling discrepancies under equal global totals,
+Eleven synthetic tests verify cancelling discrepancies under equal global totals,
 present/nonexistent accounting, panel-suffix isolation, empty headers, native
 identifier/order retention, modern interlinear rejection, both source pins,
 duplicate selection and repository path containment, padding-only detection
 without dropping unknown glyphs or changing counts, and CLI input protection
+against canonical paths and hardlink aliases
 and output preservation on failed checks. The report also replays against the
 real pinned inputs. Invalid inputs or a changed committed report return 1.
 A successful check confirms reproduction of this diagnostic, not a corpus
 alignment.
+
+Existing output paths are checked with filesystem identity as well as resolved
+path equality before writing. A hardlink alias of a source, catalog, or protected
+reader is rejected; unrelated new or existing report outputs remain allowed.
 
 ## Limits and next test
 
