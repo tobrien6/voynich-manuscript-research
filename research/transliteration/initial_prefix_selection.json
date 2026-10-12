@@ -23,7 +23,7 @@
     "scripts/select_initial_prefix_images.py": "59798024498bfc95165ee4e777dd01d14ca818da878a3f25975c146545dd2452",
     "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
     "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
-    "scripts/token_baselines.py": "a95b4d923b2de39942e6ee44a37c5243ae2046e1536310b9269bf55a67bca188",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
     "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b"
   },
   "selection": {

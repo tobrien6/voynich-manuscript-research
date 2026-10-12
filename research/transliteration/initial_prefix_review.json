@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "selection_report": "research/transliteration/initial_prefix_selection.json",
-  "selection_report_sha256": "e21bf5b6edec8a10c1116eb47701d7bea08f9df859bf132cc5894e0320a8893b",
+  "selection_report_sha256": "8f1a40954998d19ee487e28359099e8e694b08e65aab794f7c5caaf69ec0704b",
   "selection_plan_commit": "57e35db",
   "inspected_on": "2026-10-11",
   "inspection_timezone": "America/New_York",
@@ -346,5 +346,19 @@
       }
     ],
     "claim_limit": "Source agreement and visual resemblance are not independently verified glyph-family membership."
-  }
+  },
+  "implementation_provenance_refreshes": [
+    {
+      "reason": "Integrated accepted exact-repetition-variance helper; every selection output except implementation byte hashes remains identical.",
+      "previous_selection_report_sha256": "e21bf5b6edec8a10c1116eb47701d7bea08f9df859bf132cc5894e0320a8893b",
+      "changed_implementation_files": [
+        {
+          "path": "scripts/token_baselines.py",
+          "before_sha256": "a95b4d923b2de39942e6ee44a37c5243ae2046e1536310b9269bf55a67bca188",
+          "after_sha256": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+        }
+      ],
+      "candidate_exclusion_and_source_outputs_unchanged": true
+    }
+  ]
 }
