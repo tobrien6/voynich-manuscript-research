@@ -8,11 +8,11 @@ from pathlib import Path
 import zipfile
 
 try:
-    from .audit_historical_interlinear import parse_historical, read_pinned_archive
+    from .audit_historical_interlinear import parse_historical, read_pinned_archive, remove_comments
     from .inspect_ivtff import repository_path
     from .ivtff import parse_ivtff
 except ImportError:
-    from audit_historical_interlinear import parse_historical, read_pinned_archive
+    from audit_historical_interlinear import parse_historical, read_pinned_archive, remove_comments
     from inspect_ivtff import repository_path
     from ivtff import parse_ivtff
 
@@ -20,6 +20,17 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 HISTORICAL_CATALOG = "data/historical/interlinear-16e6.json"
 MODERN_CATALOG = "data/transliterations.json"
+
+
+def padding_only_profile(record):
+    """Identify native fillers/structural markers without treating * as padding."""
+    payload, _ = remove_comments(record.body)
+    if not any(c in payload for c in "!%") or set(payload) - set("!%.,-= \t"):
+        return None
+    return {"locator": record.locator, "percent_fillers": payload.count("%"),
+            "exclamation_fillers": payload.count("!"),
+            "structural_markers": {name: payload.count(char) for char, name in
+                                   ((".", "period"), (",", "comma"), ("-", "hyphen"), ("=", "equals"))}}
 
 
 def ordered_digest(identifiers):
@@ -45,6 +56,8 @@ def compare_pages(historical, modern):
     new_pages = {locus.page for locus in present}
     shared = old_pages & new_pages
     profiles, differing = [], []
+    padding = [profile for record in historical if (profile := padding_only_profile(record)) is not None]
+    padding_locators = {profile["locator"] for profile in padding}
     for page in sorted(old_pages | set(modern.pages)):
         old_records, new_records = old[page], new[page]
         new_present = [locus for locus in new_records if locus.present]
@@ -59,12 +72,13 @@ def compare_pages(historical, modern):
             "historical_H_records": len(old_records),
             "historical_native_units": dict(sorted(Counter(r.unit for r in old_records).items())),
             "historical_ordered_locator_sha256": ordered_digest([r.locator for r in old_records]),
+            "historical_padding_only_locators": [r.locator for r in old_records if r.locator in padding_locators],
             "modern_declared_loci": len(new_records),
             "modern_present_loci": len(new_present),
             "modern_present_kinds": dict(sorted(Counter(r.kind for r in new_present).items())),
             "modern_ordered_declared_identifier_sha256": ordered_digest([r.identifier for r in new_records]),
             "modern_nonexistent_loci": [r.identifier for r in new_records if not r.present],
-            "modern_minus_historical_present_count": difference,
+            "modern_present_minus_historical_native_count": difference,
         }
         profiles.append(profile)
         if is_shared and difference:
@@ -82,13 +96,14 @@ def compare_pages(historical, modern):
             "modern_page_headers": len(modern.pages),
             "modern_present_pages": len(new_pages),
             "modern_pages_without_present_loci": sorted(set(modern.pages) - new_pages),
-            "global_present_counts_equal": len(historical) == len(present),
+            "global_counts_equal": len(historical) == len(present),
             "shared_exact_page_ids": len(shared),
-            "shared_pages_with_equal_present_counts": len(shared) - len(differing),
-            "shared_pages_with_different_present_counts": len(differing),
-            "historical_only_present_page_ids": sorted(old_pages - new_pages),
+            "shared_pages_with_equal_counts": len(shared) - len(differing),
+            "shared_pages_with_different_counts": len(differing),
+            "historical_only_record_page_ids": sorted(old_pages - new_pages),
             "modern_only_present_page_ids": sorted(new_pages - old_pages),
             "modern_nonexistent_loci": [r.identifier for r in modern.loci if not r.present],
+            "historical_padding_only_records": padding,
             "historical_ordered_locator_sha256": ordered_digest([r.locator for r in historical]),
             "modern_ordered_declared_identifier_sha256": ordered_digest([r.identifier for r in modern.loci]),
         },
@@ -136,7 +151,7 @@ def load_inputs(root):
 def build_report(historical, modern, pins):
     return {
         "schema_version": 1, "method": "historical-H-modern-IT-exact-page-envelope-v1",
-        "scope": "Source envelope counts and identifier order; no text comparison, normalization or locus crosswalk",
+        "scope": "Source envelopes, identifier order and native padding-only diagnostics; no text comparison or locus crosswalk",
         "inputs": pins, **compare_pages(historical, modern),
     }
 

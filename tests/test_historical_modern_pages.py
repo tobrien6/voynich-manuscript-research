@@ -48,7 +48,7 @@ class HistoricalModernPagesTests(unittest.TestCase):
 
     def test_equal_totals_preserve_cancelling_page_count_differences(self):
         report = self.comparison()
-        self.assertTrue(report["summary"]["global_present_counts_equal"])
+        self.assertTrue(report["summary"]["global_counts_equal"])
         self.assertEqual(report["summary"]["historical_H_records"], 3)
         self.assertEqual(report["summary"]["modern_declared_loci"], 4)
         self.assertEqual([(p["page_id"], p["difference"]) for p in report["different_count_pages"]],
@@ -67,9 +67,9 @@ class HistoricalModernPagesTests(unittest.TestCase):
     def test_panel_suffixes_are_not_truncated_into_aliases(self):
         report = self.comparison(HISTORICAL.replace(b"f1r", b"f1r1"))
         self.assertEqual(report["summary"]["shared_exact_page_ids"], 1)
-        self.assertEqual(report["summary"]["historical_only_present_page_ids"], ["f1r1"])
+        self.assertEqual(report["summary"]["historical_only_record_page_ids"], ["f1r1"])
         self.assertEqual(report["summary"]["modern_only_present_page_ids"], ["f1r"])
-        self.assertIsNone(report["page_profiles"][0]["modern_minus_historical_present_count"])
+        self.assertIsNone(report["page_profiles"][0]["modern_present_minus_historical_native_count"])
 
     def test_empty_headers_and_nonexistent_only_pages_are_retained(self):
         report = self.comparison(new=MODERN + "<f3r>\n<f3r.1,!Lf> ?\n<f4r>\n")
@@ -89,6 +89,17 @@ class HistoricalModernPagesTests(unittest.TestCase):
     def test_interlinear_modern_input_is_rejected(self):
         with self.assertRaisesRegex(ValueError, "single-source"):
             self.comparison(new=MODERN.replace("f1r.1,@P0>", "f1r.1,@P0;H>"))
+
+    def test_padding_only_diagnostic_preserves_unknown_glyphs_and_native_counts(self):
+        old = HISTORICAL.replace(b"a-", b"%%%!-{comment with a glyph *}").replace(b"b=", b"*!=")
+        report = self.comparison(old=old)
+        padding = report["summary"]["historical_padding_only_records"]
+        self.assertEqual(len(padding), 1)
+        self.assertEqual(padding[0]["locator"], "f1r.P.1;H")
+        self.assertEqual(padding[0]["percent_fillers"], 3)
+        self.assertEqual(padding[0]["exclamation_fillers"], 1)
+        self.assertEqual(report["summary"]["historical_H_records"], 3)
+        self.assertEqual(report["page_profiles"][0]["historical_padding_only_locators"], ["f1r.P.1;H"])
 
     def test_both_source_pins_fail_before_changed_payloads_are_parsed(self):
         with tempfile.TemporaryDirectory() as directory:

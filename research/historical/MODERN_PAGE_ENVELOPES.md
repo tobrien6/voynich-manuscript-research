@@ -3,9 +3,10 @@
 Question: do the recovered 1.6e6 H selection and accepted IT2a export have the
 same page identifiers and record counts, given their equal corpus-wide total?
 
-**Both contain 5,214 present records, but that total does not establish an
-alignment.** Exact page strings overlap on 223 pages. Of those, 219 have equal
-present-record counts and four differ. The differences cancel in aggregate.
+**H contains 5,214 native records and IT2a contains 5,214 present loci, but
+that total does not establish an alignment.** Exact page strings overlap on
+223 pages. Of those, 219 have equal comparison counts and four differ.
+The differences cancel in aggregate.
 Two record-bearing identifiers occur only in H and two only in IT2a.
 
 These are native source-envelope observations. Neither source record counts
@@ -36,7 +37,12 @@ globally and per page using ASCII JSON with separators `(',', ':')`. The
 four differing exact-page groups also retain all native and modern identifiers
 in source order, without pairing individual records.
 
-No text payload is compared, tokenized, normalized, or written to the report.
+No text payload is compared, converted to modern notation, tokenized, or
+written to the report. A separate historical diagnostic removes only native
+curly comments and flags bodies containing at least one `!` or `%` and otherwise
+only fillers, whitespace, periods, commas, hyphens, or equals signs. It retains
+their native counts and records filler/structural-marker counts separately.
+The historical unknown/rare-glyph marker `*` is never treated as padding.
 The comparison cannot establish whether any strings or glyphs are equal.
 
 The [modern publisher's description](https://voynich.nu/transcr.html), sections
@@ -54,7 +60,7 @@ need separate support.
 
 ## Exact-page observations
 
-| Full page identifier | Historical H records | IT2a present loci | IT2a declared loci | Present-count difference, IT minus H |
+| Full page identifier | Historical H records | IT2a present loci | IT2a declared loci | Count difference, IT present minus H native |
 | --- | ---: | ---: | ---: | ---: |
 | `f46v` | 12 | 13 | 13 | +1 |
 | `f75v` | 69 | 70 | 70 | +1 |
@@ -63,19 +69,25 @@ need separate support.
 
 IT2a's sole explicitly nonexistent record is `f89v2.26,!Lf`. It remains in
 the declared count and identifier ledger, without entering the present count.
-Historical H records are selected as recorded by the accepted intake. Equal
+Historical H records are selected as recorded by the accepted intake, including
+padding-only envelopes; no modern presence rule is assigned to them. Equal
 declared counts on `f89v2` do not identify that modern placeholder with a
 particular historical label or adjudicate manuscript visibility.
 
 On `f106r`, modern identifiers jump from `f106r.28` to `f106r.30`; the native H
-ledger includes `f106r.P.29;H`. These are separate numbering observations,
-not a verified correspondence or evidence of a physically missing row. On
+ledger includes `f106r.P.29;H`. That native body contains 67 percent fillers
+and a terminal hyphen, with no other payload. It is the only H record selected
+by the padding-only diagnostic. The pinned member's format comments, physical
+lines 248–272, distinguish `%` as lacking transcription information from the
+alignment uses of `!`; this does not assert that manuscript writing is absent.
+The historical record stays in the native denominator. These remain separate
+numbering observations, not a verified row correspondence. On
 `f46v` and `f75v`, the report preserves source-specific unit and kind partitions
 without diagnosing a split, merge, omission, or transcription error.
 
 The source-only identifier observations are:
 
-| Identifier appearing only in one present-record page set | Source | Present records |
+| Identifier appearing only in the H-record or IT-present page set | Source | Selected count |
 | --- | --- | ---: |
 | `f101r1` | Historical H | 10 |
 | `f101v2` | Historical H | 28 |
@@ -97,10 +109,11 @@ python3 scripts/audit_historical_modern_pages.py --check research/historical/mod
 python3 -m unittest tests.test_historical_modern_pages -v
 ```
 
-Nine synthetic tests verify cancelling discrepancies under equal global totals,
+Ten synthetic tests verify cancelling discrepancies under equal global totals,
 present/nonexistent accounting, panel-suffix isolation, empty headers, native
 identifier/order retention, modern interlinear rejection, both source pins,
-duplicate selection and repository path containment, and CLI input protection
+duplicate selection and repository path containment, padding-only detection
+without dropping unknown glyphs or changing counts, and CLI input protection
 and output preservation on failed checks. The report also replays against the
 real pinned inputs. Invalid inputs or a changed committed report return 1.
 A successful check confirms reproduction of this diagnostic, not a corpus
