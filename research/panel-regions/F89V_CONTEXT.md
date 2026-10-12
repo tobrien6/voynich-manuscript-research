@@ -72,6 +72,17 @@ this contribution publishes source links, metadata and original observations.
 Hashes identify the retrieved bytes, not an independent reading, permanent
 image edition or reuse license.
 
+A [2026-10-12 recheck](https://github.com/tobrien6/voynich-manuscript-research/pull/129#pullrequestreview-5487471227)
+observed a second 887-byte response for `1006235/info.json`, with SHA-256
+`7086ed9f93a1b124c724481d5d2fcecd22c15c97d32da0dad20696c40184b83a`.
+Comparing the saved responses shows only a change in the profile's format-list
+order, from `tif,jpg,gif,png` to `jpg,tif,gif,png`; all other parsed JSON matches.
+The original response and its recorded pin remain preserved, and the maintainer
+also retrieved bytes matching that original pin. All four image derivatives
+still match their recorded hashes and dimensions. The JSON retains both
+metadata identities; this variation establishes no changed pixels or stronger
+panel/locus mapping.
+
 ## Exposure, dependencies and review
 
 Before image inspection, this observer had seen the modern source statuses,

@@ -174,5 +174,35 @@
   ],
   "publication": "Only source links, image metadata and original observations are added; JPEGs and source PDF remain local",
   "usable_for_statistical_evaluation": false,
-  "verified_panel_mapping": false
+  "verified_panel_mapping": false,
+  "metadata_rechecks": [
+    {
+      "checked_on": "2026-10-12",
+      "resource_url": "https://collections.library.yale.edu/iiif/2/1006235/info.json",
+      "original_recorded_sha256": "5aa3bfb69160006607fbc0930811f7f66da1389928120ace56caf2c62699ef66",
+      "alternate_observed_sha256": "7086ed9f93a1b124c724481d5d2fcecd22c15c97d32da0dad20696c40184b83a",
+      "both_response_bytes": 887,
+      "original_profile_formats": [
+        "tif",
+        "jpg",
+        "gif",
+        "png"
+      ],
+      "alternate_profile_formats": [
+        "jpg",
+        "tif",
+        "gif",
+        "png"
+      ],
+      "all_other_parsed_json_identical": true,
+      "native_dimensions_unchanged": [
+        7796,
+        3761
+      ],
+      "maintainer_retrieval_also_matched_original_pin": true,
+      "all_four_image_derivative_hashes_unchanged": true,
+      "supporting_review_url": "https://github.com/tobrien6/voynich-manuscript-research/pull/129#pullrequestreview-5487471227",
+      "interpretation": "Two raw metadata serializations were observed; the only parsed difference is format-list order. This does not establish changed pixels or a different panel/locus association."
+    }
+  ]
 }
