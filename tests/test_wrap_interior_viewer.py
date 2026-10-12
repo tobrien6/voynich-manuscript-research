@@ -134,6 +134,7 @@ class WrappingViewerTests(unittest.TestCase):
         self.assertIn('<noscript>', html)
         self.assertNotIn('<section class="case" hidden', html)
         self.assertIn('scoring requires at least five', html)
+        self.assertIn('Capacity is fixed and at least the largest supported width', html)
         self.assertNotIn('fetch(', html)
         self.assertNotIn('localStorage', html)
         self.assertNotIn('src="http', html)
