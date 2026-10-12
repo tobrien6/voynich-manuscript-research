@@ -130,6 +130,26 @@ empty/indeterminate cases, the exact rational threshold, sensitivity failure,
 and refusal to fit after partition/rule drift or a post-fit registration.
 Inherited source-pin tests reject changed source bytes before processing.
 
+Both `--prepare` and `--output` now reject paths that resolve to the source
+catalog, any cataloged raw transcription, pinned metadata, the producer, plan,
+or an existing selected/standard partition, including symlink and hardlink
+aliases. Raw-data and script-directory destinations and existing helper-script
+aliases are also protected. Result output is checked again immediately before writing, so an
+input alias created during fitting is refused as well. Initial
+preparation may create the standard partition when it is absent; use a separate
+path to replay preparation after registration. Separate partition copies and
+result outputs remain supported. Seven added tests preserve original input bytes
+on rejected writes and check these allowed outputs. The partition-drift test
+also checks its actual failure reason before fitting.
+
+This output-handling correction updates only `implementation_sha256` in the
+recorded report. The previously recorded producer SHA-256 was
+`e576ffeb63b82d93343d9bd355a6511f2d0d207ae157b81132e8bc05538e24cc`,
+preserved in [the reviewed parent source](https://github.com/tobrien6/voynich-manuscript-research/blob/56a178be7dea99282decd4000e1890e5b807f4db/scripts/y_layout_prefix.py).
+The new hash identifies the corrected replay producer. The registered plan,
+partition, fitting-time declaration, source/input/vocabulary pins, lookup cells,
+effects and decision remain unchanged; the complete report replays.
+
 Next, preregister matched controls for deleting other prefixes and conditioning
 on original form frequency/length. Review the relevant first-slot glyph regions
 independently against images. Any stronger candidate test needs new exposure-valid

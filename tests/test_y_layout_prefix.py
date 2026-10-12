@@ -1,13 +1,15 @@
 import unittest
 from fractions import Fraction
-from contextlib import redirect_stderr
+from contextlib import redirect_stderr, redirect_stdout
 import io
 import json
+import os
 from pathlib import Path
 import tempfile
 from unittest.mock import patch
 
 from scripts.ivtff import parse_ivtff
+from scripts import y_layout_prefix as diagnostic
 from scripts.y_layout_prefix import (analyze, build_partition, case_summary, fit_vocabulary,
                                     fixed_decision, main, match_gain, repetition_body, verify_registration, BASE)
 from scripts.locus_positions import prepare_rows
@@ -156,17 +158,19 @@ class YLookupTests(unittest.TestCase):
 
 class YProvenanceTests(unittest.TestCase):
     def test_changed_partition_is_rejected_before_any_vocabulary_fit(self):
-        original = {'units': [{'partition': 'dictionary_development'}]}
+        original = {'units': [{'partition': 'dictionary_development'}], 'input_pins': {}}
         with tempfile.TemporaryDirectory() as folder:
             partition = Path(folder) / 'partition.json'
-            partition.write_text(json.dumps({'units': [{'partition': 'diagnostic_evaluation'}]}))
+            partition.write_text(json.dumps({'units': [{'partition': 'diagnostic_evaluation'}], 'input_pins': {}}))
             output = Path(folder) / 'results.json'
+            errors = io.StringIO()
             with patch('scripts.y_layout_prefix.prepare_partition', return_value=original), \
                     patch('scripts.y_layout_prefix.analyze') as fit, \
                     patch('sys.argv', ['diagnostic', '--partition', str(partition), '--output', str(output)]), \
-                    redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as failed:
+                    redirect_stderr(errors), self.assertRaises(SystemExit) as failed:
                 main()
             self.assertEqual(failed.exception.code, 1)
+            self.assertIn('partition differs', errors.getvalue())
             fit.assert_not_called()
             self.assertFalse(output.exists())
 
@@ -187,6 +191,140 @@ class YProvenanceTests(unittest.TestCase):
                     patch('scripts.y_layout_prefix.subprocess.check_output', side_effect=receipt), \
                     self.assertRaisesRegex(ValueError, 'must start after'):
                 verify_registration('a' * 40, partition, '2026-01-02T00:00:00+00:00')
+
+
+class YOutputProtectionTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name)
+        self.raw = self.root / 'data/raw/source.txt'
+        self.raw.parent.mkdir(parents=True)
+        self.raw.write_bytes(b'pinned raw source')
+        self.catalog = self.root / 'data/transliterations.json'
+        self.catalog.write_text(json.dumps({'sources': [{'path': 'data/raw/source.txt'}]}))
+        self.plan = self.root / BASE / 'PLAN.md'
+        self.plan.parent.mkdir(parents=True)
+        self.plan.write_bytes(b'registered plan')
+        self.index = self.root / 'index.csv'
+        self.index.write_bytes(b'pinned image index')
+        self.producer = self.root / 'producer.py'
+        self.producer.write_bytes(b'pinned producer source')
+        self.helper = self.root / 'scripts/helper.py'
+        self.helper.parent.mkdir(parents=True)
+        self.helper.write_bytes(b'pinned synthetic helper')
+        self.prepared = {'input_pins': {
+            'source_catalog': {'path': 'data/transliterations.json'},
+            'plan': {'path': BASE + '/PLAN.md'}, 'index': {'path': 'index.csv'}}}
+        self.partition = self.root / BASE / 'partition.json'
+        self.copy = self.root / 'partition-copy.json'
+        for path in (self.partition, self.copy):
+            path.write_text(json.dumps(self.prepared))
+
+    def assert_refused(self, mode, destination):
+        original = destination.read_bytes() if destination.exists() else None
+        errors = io.StringIO()
+        argv = ['diagnostic', mode, str(destination), '--partition', str(self.copy)]
+        with patch.object(diagnostic, 'ROOT', self.root), \
+                patch.object(diagnostic, '__file__', str(self.producer)), \
+                patch.object(diagnostic, 'prepare_partition', return_value=self.prepared), \
+                patch.object(diagnostic, 'analyze') as fit, \
+                patch.object(diagnostic, 'verify_registration') as registration, \
+                patch('sys.argv', argv), redirect_stderr(errors), self.assertRaises(SystemExit) as failed:
+            main()
+        self.assertEqual(failed.exception.code, 1)
+        self.assertIn('output must not replace', errors.getvalue())
+        fit.assert_not_called()
+        registration.assert_not_called()
+        if original is None:
+            self.assertFalse(destination.exists())
+        else:
+            self.assertEqual(destination.read_bytes(), original)
+
+    def test_both_write_modes_preserve_all_declared_and_implicit_inputs(self):
+        for mode in ('--prepare', '--output'):
+            for destination in (self.catalog, self.raw, self.plan, self.index, self.partition, self.copy, self.producer):
+                with self.subTest(mode=mode, destination=destination.name):
+                    self.assert_refused(mode, destination)
+
+    def test_symlink_output_alias_cannot_replace_raw_source(self):
+        alias = self.root / 'separate-looking-output.json'
+        alias.symlink_to(self.raw)
+        for mode in ('--prepare', '--output'):
+            with self.subTest(mode=mode):
+                self.assert_refused(mode, alias)
+                self.assertTrue(alias.is_symlink())
+
+    def test_hardlink_output_alias_cannot_replace_raw_source(self):
+        for index, source in enumerate((self.catalog, self.raw, self.plan, self.index,
+                                        self.partition, self.copy, self.producer, self.helper)):
+            alias = self.root / f'hardlink-output-{index}.json'
+            os.link(source, alias)
+            for mode in ('--prepare', '--output'):
+                with self.subTest(source=source.name, mode=mode):
+                    self.assert_refused(mode, alias)
+                    self.assertTrue(alias.samefile(source))
+
+    def test_helper_scripts_and_new_raw_outputs_are_rejected(self):
+        for destination in (self.helper, self.root / 'data/raw/new-cache.json'):
+            for mode in ('--prepare', '--output'):
+                with self.subTest(destination=destination.name, mode=mode):
+                    self.assert_refused(mode, destination)
+
+    def test_alias_created_during_fit_is_refused_immediately_before_write(self):
+        destination = self.root / 'late-alias.json'
+        original = self.raw.read_bytes()
+
+        def fit(*args):
+            os.link(self.raw, destination)
+            return {'decision': 'fixture'}
+
+        errors = io.StringIO()
+        with patch.object(diagnostic, 'ROOT', self.root), \
+                patch.object(diagnostic, 'prepare_partition', return_value=self.prepared), \
+                patch.object(diagnostic, 'verify_registration', return_value='2026-01-01T00:00:00+00:00'), \
+                patch.object(diagnostic, 'load_pins', return_value=([], {}, {})), \
+                patch.object(diagnostic, 'analyze', side_effect=fit), \
+                patch('sys.argv', ['diagnostic', '--output', str(destination), '--partition', str(self.partition),
+                                   '--pre-run-commit', 'a' * 40]), redirect_stderr(errors), \
+                self.assertRaises(SystemExit) as failed:
+            main()
+        self.assertEqual(failed.exception.code, 1)
+        self.assertIn('output must not replace', errors.getvalue())
+        self.assertEqual(self.raw.read_bytes(), original)
+        self.assertTrue(destination.samefile(self.raw))
+
+    def test_initial_preparation_can_create_a_new_standard_partition(self):
+        self.partition.unlink()
+        with patch.object(diagnostic, 'ROOT', self.root), \
+                patch.object(diagnostic, 'prepare_partition', return_value=self.prepared), \
+                patch.object(diagnostic, 'analyze') as fit, \
+                patch('sys.argv', ['diagnostic', '--prepare', str(self.partition),
+                                   '--partition', str(self.partition)]), redirect_stdout(io.StringIO()):
+            main()
+        self.assertEqual(json.loads(self.partition.read_bytes()), self.prepared)
+        fit.assert_not_called()
+        self.assertEqual(self.raw.read_bytes(), b'pinned raw source')
+
+    def test_separate_partition_copy_and_result_outputs_remain_supported(self):
+        for mode in ('--prepare', '--output'):
+            destination = self.root / (mode.removeprefix('--') + '-new.json')
+            before = self.partition.read_bytes()
+            with patch.object(diagnostic, 'ROOT', self.root), \
+                    patch.object(diagnostic, 'prepare_partition', return_value=self.prepared), \
+                    patch.object(diagnostic, 'verify_registration', return_value='2026-01-01T00:00:00+00:00'), \
+                    patch.object(diagnostic, 'load_pins', return_value=([], {}, {})), \
+                    patch.object(diagnostic, 'analyze', return_value={'decision': 'fixture'}), \
+                    patch('sys.argv', ['diagnostic', mode, str(destination), '--partition', str(self.partition),
+                                       '--pre-run-commit', 'a' * 40]), redirect_stdout(io.StringIO()):
+                main()
+            output = json.loads(destination.read_bytes())
+            if mode == '--prepare':
+                self.assertEqual(output, self.prepared)
+            else:
+                self.assertEqual(output['decision'], 'fixture')
+            self.assertEqual(self.partition.read_bytes(), before)
+            self.assertEqual(self.raw.read_bytes(), b'pinned raw source')
 
 
 if __name__ == '__main__':
