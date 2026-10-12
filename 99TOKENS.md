@@ -38,6 +38,10 @@ The [working transliteration decision](research/transliteration/DECISION.md) now
 
 The [reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) extends the accepted ZL/IT source decision with GC and both RF variants, using the same IVTFF reader. Identical RF alphabet headers conceal different native text, so later analyses must retain exact variant URLs and source hashes. This is a corpus identity check, not a decipherment result.
 
+The [exploratory token and repetition baselines](research/transliteration/BASELINES.md) compare uncertainty policies on 3,884 shared present P0 loci in ZL3b and IT2a, with [complete recorded results](research/transliteration/token_baselines.json). The primary split/exclude treatment has 272 equal adjacent pairs against a conditional expectation of 270.77; other treatments expose sensitivity to preprocessing. This full-corpus exploration does not provide an untouched evaluation set or validate a decoding rule.
+
+The [token-order control generator](research/token-controls/README.md) supplies reproducible within-row and within-folio-side shuffles that preserve excluded slots and stated sampling constraints. Its committed examples are synthetic. The [split record format and validator](research/evaluation/SPLIT_FORMAT.md) check declared dependencies, input identity, exposure, and freeze chronology; they do not choose real held-out material or prove exposure history. A reviewed image/transcription mapping, a real frozen split, and a first registered hypothesis remain the next steps toward a decipherment test.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
