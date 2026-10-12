@@ -85,6 +85,12 @@ compares a source-informed model profile with an explicitly exposed B cohort.
 All 31 control/observer pairs preserve bytes; 24 of 32 related target points
 fall outside the finite seed ranges. Unit/context equivalence remains unverified.
 
+The [paragraph-context call-site ablation](SELF_CITATION_CONTEXT_ABLATION.md)
+separately suppresses the generator's chooser/morpher arguments across 248
+fixed executions. Mutation-argument suppression increases initial first-y in
+every seed under both chooser settings. All other profiles and interactions
+remain reported; this is finite program dependence without a new manuscript fit.
+
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
    project's modern inputs.
