@@ -114,6 +114,12 @@ setting, scientific result or original exposure record changes in this repair.
 
 ## Scope and next experiment
 
+A [specified paragraph augmentation intervention](SELF_CITATION_GALLOWS_ZERO.md)
+now tests the two predicted mean responses using the same fixed seed grid and
+shared measurement definition, retaining opposite seed outcomes and all other
+cells. Its conditional populations and random-call trajectories can differ from
+this default census; it does not perform a manuscript comparison.
+
 This study has no manuscript target or language label. It makes no source
 paragraph/Currier transfer, glyph-unit equivalence, cross-runtime guarantee,
 paper-statistic replication, calibrated predictive claim or translation.

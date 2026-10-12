@@ -121,3 +121,10 @@ documented reference and synthetic-encoding comparisons and prospective
 evaluation under the [decipherment protocol](../DECIPHERMENT_PROTOCOL.md).
 Do not promote a sequence of exploratory control rejections into a validated
 reading of the manuscript.
+
+## Exact variance supplement
+
+The [exact-moment audit](HALF_MOMENTS.md) supplies ideal occurrence-permutation
+variances on this unchanged cohort, reproduces every accepted invariant
+identifier, and compares the existing finite-control SD with its ideal ensemble
+scale. All controls, effects and recorded tails in this study remain unchanged.
