@@ -46,10 +46,11 @@ the generated illustrations are explanatory and must not be used as measurements
 
 The 99Tokens renderer reads `folio/folio.json` and its images from the repository's
 default branch. A branch-only version cannot appear on the public project page.
-The locally available site implementation supports this manifest, but the live
-`/folio.example.json` and project folio API returned 404 when checked for this
-contribution. Display therefore also depends on deploying that renderer. Once
-available, its documented content cache can delay updates by up to 15 minutes.
+The live [example manifest](https://99tokens.org/folio.example.json) and
+[project folio API](https://99tokens.org/api/projects/59210176-9997-4f13-84fc-c46b43d165b3/folio)
+were verified during this contribution. The API reports `missing` while these
+files remain on a topic branch. After merging to the default branch, the
+documented content cache can delay display by up to 15 minutes.
 
 When accepted evidence changes, revise the affected plate and its provenance in
 a focused PR. Set `status` to `outdated` and add a `note` naming the replacement
