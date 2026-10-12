@@ -133,3 +133,8 @@ needs a declared token/glyph representation, appropriate controls, input pins,
 and exposure history. Image and glyph-level review must separately adjudicate
 any proposed source correction. This audit supplies reproducible grouping
 denominators and makes no language, decoding, or translation claim.
+
+The [common paragraph token corpus](PARAGRAPH_CORPUS.md) processes these exact
+matches under the accepted conservative native-Eva adapter. It retains 233
+whole units eligible in both editions and both spacing policies, preserves
+every source locus, and exposes all 438 candidate exclusions.
