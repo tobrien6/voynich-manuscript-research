@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "scope": "Curated accepted pixel-review records plus automatically imported inventories; not an exhaustive catalog of every study. Add omitted evidence through review.",
+  "entries": [
+    {
+      "id": "f76r-anchors-visual_observation",
+      "folio_sides": [
+        "76r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Three provisional anchors and a second nonblind AI comparison; model independence and glyph adjudication are not established.",
+      "references": [
+        "research/pilot/f76r-anchor-review.json",
+        "research/pilot/f76r-second-row-check.json"
+      ]
+    },
+    {
+      "id": "f76r-anchors-image_text_alignment",
+      "folio_sides": [
+        "76r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Three provisional anchors and a second nonblind AI comparison; model independence and glyph adjudication are not established.",
+      "references": [
+        "research/pilot/f76r-anchor-review.json",
+        "research/pilot/f76r-second-row-check.json"
+      ]
+    },
+    {
+      "id": "f67r-horizontal-visual_observation",
+      "folio_sides": [
+        "67r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Seven proposed horizontal rows have visible-anchor context; full strings, region joins and independent glyph review remain unresolved.",
+      "references": [
+        "research/panel-regions/f67r-upper-row-inspection.json",
+        "research/panel-regions/f67r-lower-row-inspection.json"
+      ]
+    },
+    {
+      "id": "f67r-horizontal-image_text_alignment",
+      "folio_sides": [
+        "67r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Seven proposed horizontal rows have visible-anchor context; full strings, region joins and independent glyph review remain unresolved.",
+      "references": [
+        "research/panel-regions/f67r-upper-row-inspection.json",
+        "research/panel-regions/f67r-lower-row-inspection.json"
+      ]
+    },
+    {
+      "id": "f68r-radial-visual_observation",
+      "folio_sides": [
+        "68r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two fixed radial anchors on f68r3; provisional associations do not cover or verify every panel or glyph.",
+      "references": [
+        "research/panel-regions/f68r3-image-review.json"
+      ]
+    },
+    {
+      "id": "f68r-radial-image_text_alignment",
+      "folio_sides": [
+        "68r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two fixed radial anchors on f68r3; provisional associations do not cover or verify every panel or glyph.",
+      "references": [
+        "research/panel-regions/f68r3-image-review.json"
+      ]
+    },
+    {
+      "id": "rosette-small-circle-visual_observation",
+      "folio_sides": [
+        "85v",
+        "86r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Shared fRos carrier with four proposed records around a small circle; no verified folio-side/panel/glyph crosswalk. Both sides reference the same evidence, not independent reviews.",
+      "references": [
+        "research/panel-regions/fRos-small-circle-proposal.json",
+        "research/panel-regions/fRos-small-circle-review.json"
+      ]
+    },
+    {
+      "id": "rosette-small-circle-image_text_alignment",
+      "folio_sides": [
+        "85v",
+        "86r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Shared fRos carrier with four proposed records around a small circle; no verified folio-side/panel/glyph crosswalk. Both sides reference the same evidence, not independent reviews.",
+      "references": [
+        "research/panel-regions/fRos-small-circle-proposal.json",
+        "research/panel-regions/fRos-small-circle-review.json"
+      ]
+    },
+    {
+      "id": "f102r-boundaries-visual_observation",
+      "folio_sides": [
+        "102r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two selected f102r1 boundary cases in a shared carrier; source-informed row associations are provisional.",
+      "references": [
+        "research/panel-regions/102r-boundary-pair-review.json"
+      ]
+    },
+    {
+      "id": "f102r-boundaries-image_text_alignment",
+      "folio_sides": [
+        "102r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two selected f102r1 boundary cases in a shared carrier; source-informed row associations are provisional.",
+      "references": [
+        "research/panel-regions/102r-boundary-pair-review.json"
+      ]
+    },
+    {
+      "id": "y-lookup-pairs-visual_observation",
+      "folio_sides": [
+        "17r",
+        "18r",
+        "19v",
+        "35v"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two purposive target/reference pairs; a single source-informed observer, unresolved glyph boundaries and no valid holdout.",
+      "references": [
+        "research/hypotheses/y-lookup-image-v1/image-review.json"
+      ]
+    },
+    {
+      "id": "y-lookup-pairs-image_text_alignment",
+      "folio_sides": [
+        "17r",
+        "18r",
+        "19v",
+        "35v"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two purposive target/reference pairs; a single source-informed observer, unresolved glyph boundaries and no valid holdout.",
+      "references": [
+        "research/hypotheses/y-lookup-image-v1/image-review.json"
+      ]
+    },
+    {
+      "id": "immediate-repeats-visual_observation",
+      "folio_sides": [
+        "1r",
+        "2r",
+        "4r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Three purposive repeat cases; image alignment and glyph readings remain unverified.",
+      "references": [
+        "research/transliteration/immediate_repeat_image_review.json"
+      ]
+    },
+    {
+      "id": "immediate-repeats-image_text_alignment",
+      "folio_sides": [
+        "1r",
+        "2r",
+        "4r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Three purposive repeat cases; image alignment and glyph readings remain unverified.",
+      "references": [
+        "research/transliteration/immediate_repeat_image_review.json"
+      ]
+    },
+    {
+      "id": "paragraph-end-pilot-visual_observation",
+      "folio_sides": [
+        "19v",
+        "24v",
+        "26v"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Five paragraph-end disagreements across three pages; provisional row associations, no adjudicated paragraph divisions.",
+      "references": [
+        "research/transliteration/residual_paragraph_image_pilot.json"
+      ]
+    },
+    {
+      "id": "paragraph-end-pilot-image_text_alignment",
+      "folio_sides": [
+        "19v",
+        "24v",
+        "26v"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Five paragraph-end disagreements across three pages; provisional row associations, no adjudicated paragraph divisions.",
+      "references": [
+        "research/transliteration/residual_paragraph_image_pilot.json"
+      ]
+    },
+    {
+      "id": "f89v-context-visual_observation",
+      "folio_sides": [
+        "89v"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Provisional single-observer layout context; exact locus mapping and glyph presence remain unresolved.",
+      "references": [
+        "research/panel-regions/f89v-context.json"
+      ]
+    },
+    {
+      "id": "f89v-context-image_text_alignment",
+      "folio_sides": [
+        "89v"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Provisional single-observer layout context; exact locus mapping and glyph presence remain unresolved.",
+      "references": [
+        "research/panel-regions/f89v-context.json"
+      ]
+    },
+    {
+      "id": "terminal-surface-context-visual_observation",
+      "folio_sides": [
+        "116r",
+        "116v"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Terminal surface observations; no historical 117v-to-116v alias or glyph reading is established.",
+      "references": [
+        "research/source-audit/terminal-folio-observations.json"
+      ]
+    },
+    {
+      "id": "drawing-boundary-pair-visual_observation",
+      "folio_sides": [
+        "13v",
+        "75r"
+      ],
+      "stage": "visual_observation",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two drawing-involved source-cut disagreements; row proposals remain source-informed and await independent confirmation. No glyph masks or source corrections.",
+      "references": [
+        "research/panel-regions/drawing-boundary-pair-review.json"
+      ]
+    },
+    {
+      "id": "drawing-boundary-pair-image_text_alignment",
+      "folio_sides": [
+        "13v",
+        "75r"
+      ],
+      "stage": "image_text_alignment",
+      "status": "partial",
+      "scope": "selected_regions",
+      "summary": "Two drawing-involved source-cut disagreements; row proposals remain source-informed and await independent confirmation. No glyph masks or source corrections.",
+      "references": [
+        "research/panel-regions/drawing-boundary-pair-review.json"
+      ]
+    }
+  ]
+}

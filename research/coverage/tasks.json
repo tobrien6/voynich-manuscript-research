@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "scope": "Unassigned planning suggestions drawn from documented gaps; no stopped agent has been restarted or assigned.",
+  "tasks": [
+    {
+      "id": "67r-region-review",
+      "folio_sides": [
+        "67r"
+      ],
+      "stage": "image_text_alignment",
+      "owner": null,
+      "status": "planned",
+      "next_action": "Review proposed panels and all relevant loci against pixels; publish explicit crosswalk decisions and unresolved glyphs.",
+      "blockers": [
+        "Existing row associations are provisional; no accepted glyph/region crosswalk."
+      ],
+      "references": [
+        "research/panel-regions/f67r-lower-row-inspection.json"
+      ]
+    },
+    {
+      "id": "68r-region-review",
+      "folio_sides": [
+        "68r"
+      ],
+      "stage": "image_text_alignment",
+      "owner": null,
+      "status": "planned",
+      "next_action": "Resolve all numbered panel regions, retaining non-paragraph radial writing and source uncertainty.",
+      "blockers": [
+        "Coarse side links and selected anchors do not verify panel or glyph placement."
+      ],
+      "references": [
+        "research/panel-regions/f68r3-image-review.json"
+      ]
+    },
+    {
+      "id": "rosette-crosswalk",
+      "folio_sides": [
+        "85v",
+        "86r"
+      ],
+      "stage": "image_text_alignment",
+      "owner": null,
+      "status": "planned",
+      "next_action": "Define a reviewed region/locus crosswalk for the shared fRos carrier before sampling or decoding.",
+      "blockers": [
+        "Shared canvas cannot be counted as two independent samples; current mappings are provisional."
+      ],
+      "references": [
+        "research/panel-regions/fRos-small-circle-review.json"
+      ]
+    },
+    {
+      "id": "terminal-alias",
+      "folio_sides": [
+        "116v"
+      ],
+      "stage": "image_text_alignment",
+      "owner": null,
+      "status": "blocked",
+      "next_action": "Resolve the historical 117v-versus-digital-116v label evidence before adopting an alias.",
+      "blockers": [
+        "Legacy foliation alias is unresolved (GitHub issue #13)."
+      ],
+      "references": [
+        "research/folio-aliases/README.md"
+      ]
+    }
+  ]
+}
