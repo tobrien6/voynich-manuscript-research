@@ -115,3 +115,9 @@ paragraph starts and excluding same-line fragments. Use source Currier labels
 as documented strata, without equating them to identified natural languages.
 Candidate mechanisms should then make additional preregistered predictions
 with the separate evaluation-split workflow and recorded prior exposure.
+
+The [fixed-cohort sensitivity comparison](COHORT_EFFECTS.md) now evaluates all
+eight source/policy variants on identical eligible locus keys. All six effect
+directions persist, while notation-length sensitivity and per-locus differences
+remain. This addresses changing eligibility; the annotation stratification and
+physical-line verification above remain pending.

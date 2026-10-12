@@ -44,6 +44,12 @@ The [token-order control generator](research/token-controls/README.md) supplies 
 
 The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records literal EVA q/y-prefix and notation-length contrasts at original first and last token slots under the same uncertainty policies, with [complete results](research/transliteration/locus_positions.json). It uses conditional within-locus controls and explicit eligibility counts. These measurements constrain simple exchangeability within the chosen units; they do not identify a language, cipher, glyph reading, or translation.
 
+The [fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md)
+tests transcription sensitivity on identical eligible locus samples. The
+observed effect directions persist, while notation-length measurements and
+individual-locus contrasts remain sensitive to source and uncertainty choices.
+This is exploratory evidence for candidate constraints, not a decipherment.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
