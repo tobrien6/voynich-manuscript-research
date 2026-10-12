@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "scope": "Exact round-trip language of concatenated source expansion and per-position greedy reversal; no manuscript input",
+  "dependency_hashes": {
+    "research/transliteration/currier-conversion-source.json": "77fe407b1437c44e523519bacfb29f79ce69d204b3127bc4919a62bb50c6a2f9",
+    "research/transliteration/CURRIER_CONVERSION_SOURCE.md": "3c669c46250328bd95b802178d694eb00b4af1b904db0200d66a129ae9d6dec7"
+  },
+  "human_plan": "research/transliteration/CURRIER_ROUNDTRIP_PLAN.md",
+  "human_plan_sha256": "6267339541466e63486db11afecbc186540d12e849e53404d51809013e6a1e7e",
+  "reference_artifacts": [
+    {
+      "reference_name": "Curr-Eva_def.bit",
+      "url": "https://www.voynich.nu/software/bitrans/Curr-Eva_def.bit",
+      "bytes": 308,
+      "sha256": "31105cb66e966bc7532c58178a867bf5b090c0473f047a3fdd30ee84bd339d32",
+      "raw_redistributed": false
+    },
+    {
+      "reference_name": "Bitrans_manual.pdf",
+      "url": "https://www.voynich.nu/software/bitrans/Bitrans_manual.pdf",
+      "bytes": 1162524,
+      "sha256": "6873c33d6a093241ceb7cc2796ea8728068a2e390d5de01d22d3a4e2ea186564",
+      "raw_redistributed": false
+    },
+    {
+      "reference_name": "000_README.txt",
+      "url": "https://www.voynich.nu/software/000_README.txt",
+      "bytes": 6926,
+      "sha256": "9a13f09914ecb927b430af8967df4472317e1c491c887569892aaa38a335d176",
+      "raw_redistributed": false
+    }
+  ],
+  "source_rule_lines": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "count_lengths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "primary_exhaustive_max_source_length": 3,
+  "synthetic_binary_max_word_length": 2,
+  "synthetic_dictionary_sizes": [
+    2,
+    3
+  ],
+  "synthetic_max_source_length": 5,
+  "maximum_pending_codes": 3,
+  "decoder": "per-position longest matching right-column prefix; delay proper prefixes until more input or EOF; reject unmatched/mismatched identities",
+  "raw_primary_payload_redistributed": false,
+  "prior_exposure": "Complete accepted table metadata and two-code outcomes, source bytes/manual, and pending H model results; no longer-string graph or counts measured"
+}
