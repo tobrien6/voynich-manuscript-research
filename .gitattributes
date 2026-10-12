@@ -1,2 +1,5 @@
 # Preserve source bytes: digest verification must survive any checkout settings.
 /data/raw/*.txt -text
+
+# Generated vector figures are reviewed through their renderer and image preview.
+/research/transliteration/figures/*.svg linguist-generated=true

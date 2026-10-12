@@ -99,6 +99,11 @@ differs; do not silently replace the committed results.
 ## Limits and next test
 
 The control asks whether ordering adds repetition beyond each locus's token bag.
+The [exact conditional variance follow-up](REPETITION_VARIANCE.md) adds analytic
+spread and an observed-versus-shuffled figure while preserving the original
+counts and 199 simulation results. Report method v2 identifies those added fields;
+the SD-scaled contrast is descriptive and assumes no normal tail.
+
 It does not test a particular language, cipher, grammatical structure, or text
 generation mechanism. A candidate could be compatible with this result without
 being supported by it. `P0` loci are analysis units; we have not reconstructed

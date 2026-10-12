@@ -133,9 +133,9 @@ public inputs and loci recur across earlier analyses; this contribution adds
 a grouping check, not independent manuscript observations. No reserved
 evaluation set, candidate decoding rule, plaintext, or translation is produced.
 
-A next sensitivity check should freeze an agreement-only paragraph cohort and
-report how excluding the 29 annotation disagreements changes the contrasts,
-while retaining both sources and their uncertainty treatments. Image review is
+The [paragraph-agreement sensitivity check](SECTION_AGREEMENT.md) now reports
+how excluding the 29 annotation disagreements changes the contrasts, while
+retaining both sources and their uncertainty treatments. Image review is
 needed to adjudicate paragraph boundaries and glyph-unit definitions. Any
 candidate mechanism then needs additional frozen predictions and an evaluation
 split with explicit prior exposure, rather than fitting a story to these tables.
