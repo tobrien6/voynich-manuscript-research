@@ -35,6 +35,20 @@ def direct_moments(rows):
     return mean, sum((Fraction(v) - mean) ** 2 for v in values) / len(values)
 
 
+def direct_edge_probability(size, edges):
+    """Independent event count by assigning positions to involved identities."""
+    if any(a == b or a == size - 1 or b == 0 for a, b in edges):
+        return Fraction()
+    interior = sorted({i for edge in edges for i in edge if i not in (0, size - 1)})
+    assignments = permutations(range(1, size - 1), len(interior))
+    valid = total = 0
+    for locations in assignments:
+        positions = {0: 0, size - 1: size - 1, **dict(zip(interior, locations))}
+        total += 1
+        valid += all(positions[b] == positions[a] + 1 for a, b in edges)
+    return Fraction(valid, total)
+
+
 def synthetic_root(root):
     boundary_root(root)
     (root / PLAN).write_text('Fixed synthetic anchored-order plan.\n')
@@ -205,6 +219,50 @@ class ParagraphOrderTests(unittest.TestCase):
                 with patch('scripts.paragraph_order_control.ROOT', root), \
                         patch('sys.argv', ['order.py', '--check', str(output)]), \
                         redirect_stderr(io.StringIO()), self.assertRaises(SystemExit): main()
+
+    def test_real_report_edges_joints_and_aggregate_moments_by_independent_position_assignments(self):
+        root = Path(__file__).resolve().parents[1]
+        report = json.loads((root / 'research/transliteration/paragraph_order_control.json').read_text())
+        corpus = build_corpus(root)
+        units = {p['common_unit_id']: p for p in corpus['paragraphs'] if p['common_eligible']}
+        self.assertEqual({p['common_unit_id'] for p in report['paragraphs']}, set(units))
+        totals = [{'observed': 0, 'mean': Fraction(), 'variance': Fraction(), 'invariant': 0} for _ in range(4)]
+        for paragraph in report['paragraphs']:
+            native = units[paragraph['common_unit_id']]
+            for vi, (variant, source) in enumerate(zip(paragraph['variants'], native['variants'])):
+                rows = [locus['tokens'] for locus in source['loci']]
+                size = len(rows)
+                edges = [(a, b) for a, b in product(range(size), repeat=2)
+                         if a != b and rows[a][-1] == rows[b][0]]
+                self.assertEqual([(e['left_locus_index'], e['right_locus_index'])
+                                  for e in variant['endpoint_match_edges']], edges)
+                probabilities = [direct_edge_probability(size, [e]) for e in edges]
+                self.assertEqual([fraction(e['probability']) for e in variant['endpoint_match_edges']], probabilities)
+                variance = sum((p * (1 - p) for p in probabilities), Fraction())
+                pairs = list(combinations(range(len(edges)), 2))
+                self.assertEqual([(p['left_edge_index'], p['right_edge_index'])
+                                  for p in variant['edge_pair_covariances']], pairs)
+                for (a, b), joint_row in zip(pairs, variant['edge_pair_covariances']):
+                    joint = direct_edge_probability(size, [edges[a], edges[b]])
+                    covariance = joint - probabilities[a] * probabilities[b]
+                    self.assertEqual(fraction(joint_row['joint_probability']), joint)
+                    self.assertEqual(fraction(joint_row['covariance']), covariance)
+                    variance += 2 * covariance
+                mean = sum(probabilities, Fraction())
+                observed = sum(rows[i][-1] == rows[i + 1][0] for i in range(size - 1))
+                self.assertEqual(fraction(variant['conditional_mean']), mean)
+                self.assertEqual(fraction(variant['conditional_variance']), variance)
+                self.assertEqual(variant['observed_repeats'], observed)
+                self.assertEqual(variant['invariant_repeat_count'], variance == 0)
+                totals[vi]['observed'] += observed
+                totals[vi]['mean'] += mean
+                totals[vi]['variance'] += variance
+                totals[vi]['invariant'] += variance == 0
+        for variant, total in zip(report['variants'], totals):
+            self.assertEqual(variant['observed_repeats'], total['observed'])
+            self.assertEqual(fraction(variant['conditional_mean']), total['mean'])
+            self.assertEqual(fraction(variant['conditional_variance']), total['variance'])
+            self.assertEqual(variant['invariant_paragraphs'], total['invariant'])
 
 
 if __name__ == '__main__':
