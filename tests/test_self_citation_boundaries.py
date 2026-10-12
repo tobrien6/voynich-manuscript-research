@@ -1,9 +1,13 @@
 import copy
+import bisect
+from collections import Counter
+import json
 from pathlib import Path
 import tempfile
 import unittest
 
 from scripts.audit_self_citation_boundaries import digest, read_pins, reconstruct, write_new
+from scripts.audit_self_citation_boundaries import ROOT, TRACE, REPORT
 
 
 def row(index, initial, final, page, paragraph):
@@ -119,6 +123,74 @@ class BoundaryStateTests(unittest.TestCase):
                 self.assertEqual(source.read_bytes(), b'synthetic source')
             output = root / 'new'; write_new(output, b'report\n')
             self.assertEqual(output.read_bytes(), b'report\n')
+
+    def test_actual_report_has_independent_closure_distance_and_modulo_identities(self):
+        """Added after derivation; does not use the production state walk."""
+        rows = json.loads((ROOT / TRACE).read_bytes())['ledger']
+        report = json.loads((ROOT / REPORT).read_bytes())
+        n = len(rows)
+        finals = [r['generated_row_index'] for r in rows if r['model_paragraph_final'] is True]
+        forced = set(range(28, n, 29))
+        causes = Counter({key: 0 for key in ['page_length', 'terminal', 'page_length_and_terminal', 'threshold_branch']})
+        eligible = saturated = 0
+        for i in range(1, n):
+            k = bisect.bisect_left(finals, i)
+            previous = finals[k - 1] if k else -1
+            distance = i - previous
+            position = i % 29 + 1
+            mandatory = i in forced or i == n - 1
+            allowed = not mandatory and position < 27 and distance > 3 and i < n - 2
+            eligible += allowed
+            saturated += allowed and distance >= 10
+            self.assertEqual(rows[i]['model_paragraph_initial'], distance == 1)
+            self.assertEqual(rows[i]['source_lines_in_page_pre_call'], 0 if mandatory else position)
+            self.assertEqual(rows[i]['source_lines_in_paragraph_pre_call'], 0 if i in finals else distance)
+            if mandatory or (allowed and distance >= 10):
+                self.assertIn(i, finals)
+            if i in finals:
+                self.assertTrue(mandatory or allowed)
+                cause = ('page_length_and_terminal' if i in forced and i == n - 1 else
+                         'page_length' if i in forced else 'terminal' if i == n - 1 else 'threshold_branch')
+                causes[cause] += 1
+        self.assertEqual(dict(causes), report['counts']['closure_conditions'])
+        self.assertEqual(eligible, report['counts']['eligible_threshold_branch_calls'])
+        self.assertEqual(eligible - causes['threshold_branch'], report['counts']['eligible_threshold_branch_nonclosures'])
+        self.assertEqual(saturated, report['counts']['saturated_threshold_closures'])
+        starts = [0] + [i + 1 for i in finals[:-1]]
+        self.assertEqual(len(report['segments']), len(finals))
+        for ordinal, (start, end) in enumerate(zip(starts, finals)):
+            segment = report['segments'][ordinal]
+            self.assertEqual((segment['segment_index'], segment['start_row_index'], segment['end_row_index_inclusive']),
+                             (ordinal, start, end))
+            self.assertEqual(segment['row_count'], end - start + 1)
+            self.assertEqual(segment['source_page_block_index'], start // 29)
+            self.assertEqual(start // 29, end // 29)
+            self.assertEqual(segment['initialized_row_count'], int(start == 0))
+            self.assertIs(segment['first_row_initial_call_flag'], None if start == 0 else True)
+            self.assertEqual(segment['closure_condition'],
+                             'page_length_and_terminal' if end in forced and end == n - 1 else
+                             'page_length' if end in forced else 'terminal' if end == n - 1 else 'threshold_branch')
+        self.assertEqual(len(report['page_blocks']), (n + 28) // 29)
+        for ordinal, start in enumerate(range(0, n, 29)):
+            end = min(n - 1, start + 28)
+            self.assertEqual(report['page_blocks'][ordinal], {
+                'source_page_block_index': ordinal, 'start_row_index': start,
+                'end_row_index_inclusive': end, 'row_count': end - start + 1,
+                'page_length_reached': end - start + 1 == 29, 'terminal_output_row': end == n - 1,
+                'segment_indices': [s['segment_index'] for s in report['segments'] if s['source_page_block_index'] == ordinal],
+            })
+        for records, key in [(report['segments'], 'segment_row_count_distribution'),
+                             (report['page_blocks'], 'page_block_row_count_distribution')]:
+            self.assertEqual(sum(r['row_count'] for r in records), n)
+            self.assertEqual(report[key], [{'row_count': length, 'count': count}
+                                          for length, count in sorted(Counter(r['row_count'] for r in records).items())])
+        self.assertEqual(report['counts']['output_rows'], n)
+        self.assertEqual(report['counts']['initialized_rows'], 1)
+        self.assertEqual(report['counts']['verified_generated_transitions'], n - 1)
+        self.assertEqual(report['counts']['initial_call_flags'], len(finals) - 1)
+        self.assertEqual(report['counts']['final_call_flags'], len(finals))
+        self.assertEqual(report['counts']['algorithmic_segments'], len(finals))
+        self.assertEqual(report['counts']['source_page_blocks'], len(report['page_blocks']))
 
 
 if __name__ == '__main__':
