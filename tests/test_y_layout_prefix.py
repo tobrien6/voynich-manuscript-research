@@ -210,6 +210,9 @@ class YOutputProtectionTests(unittest.TestCase):
         self.index.write_bytes(b'pinned image index')
         self.producer = self.root / 'producer.py'
         self.producer.write_bytes(b'pinned producer source')
+        self.helper = self.root / 'scripts/helper.py'
+        self.helper.parent.mkdir(parents=True)
+        self.helper.write_bytes(b'pinned synthetic helper')
         self.prepared = {'input_pins': {
             'source_catalog': {'path': 'data/transliterations.json'},
             'plan': {'path': BASE + '/PLAN.md'}, 'index': {'path': 'index.csv'}}}
@@ -219,7 +222,7 @@ class YOutputProtectionTests(unittest.TestCase):
             path.write_text(json.dumps(self.prepared))
 
     def assert_refused(self, mode, destination):
-        original = destination.read_bytes()
+        original = destination.read_bytes() if destination.exists() else None
         errors = io.StringIO()
         argv = ['diagnostic', mode, str(destination), '--partition', str(self.copy)]
         with patch.object(diagnostic, 'ROOT', self.root), \
@@ -233,7 +236,10 @@ class YOutputProtectionTests(unittest.TestCase):
         self.assertIn('output must not replace', errors.getvalue())
         fit.assert_not_called()
         registration.assert_not_called()
-        self.assertEqual(destination.read_bytes(), original)
+        if original is None:
+            self.assertFalse(destination.exists())
+        else:
+            self.assertEqual(destination.read_bytes(), original)
 
     def test_both_write_modes_preserve_all_declared_and_implicit_inputs(self):
         for mode in ('--prepare', '--output'):
@@ -250,12 +256,20 @@ class YOutputProtectionTests(unittest.TestCase):
                 self.assertTrue(alias.is_symlink())
 
     def test_hardlink_output_alias_cannot_replace_raw_source(self):
-        alias = self.root / 'hardlink-output.json'
-        os.link(self.raw, alias)
-        for mode in ('--prepare', '--output'):
-            with self.subTest(mode=mode):
-                self.assert_refused(mode, alias)
-                self.assertTrue(alias.samefile(self.raw))
+        for index, source in enumerate((self.catalog, self.raw, self.plan, self.index,
+                                        self.partition, self.copy, self.producer, self.helper)):
+            alias = self.root / f'hardlink-output-{index}.json'
+            os.link(source, alias)
+            for mode in ('--prepare', '--output'):
+                with self.subTest(source=source.name, mode=mode):
+                    self.assert_refused(mode, alias)
+                    self.assertTrue(alias.samefile(source))
+
+    def test_helper_scripts_and_new_raw_outputs_are_rejected(self):
+        for destination in (self.helper, self.root / 'data/raw/new-cache.json'):
+            for mode in ('--prepare', '--output'):
+                with self.subTest(destination=destination.name, mode=mode):
+                    self.assert_refused(mode, destination)
 
     def test_alias_created_during_fit_is_refused_immediately_before_write(self):
         destination = self.root / 'late-alias.json'

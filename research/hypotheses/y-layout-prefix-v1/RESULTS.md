@@ -133,11 +133,12 @@ Inherited source-pin tests reject changed source bytes before processing.
 Both `--prepare` and `--output` now reject paths that resolve to the source
 catalog, any cataloged raw transcription, pinned metadata, the producer, plan,
 or an existing selected/standard partition, including symlink and hardlink
-aliases. Result output is checked again immediately before writing, so an
+aliases. Raw-data and script-directory destinations and existing helper-script
+aliases are also protected. Result output is checked again immediately before writing, so an
 input alias created during fitting is refused as well. Initial
 preparation may create the standard partition when it is absent; use a separate
 path to replay preparation after registration. Separate partition copies and
-result outputs remain supported. Six added tests preserve original input bytes
+result outputs remain supported. Seven added tests preserve original input bytes
 on rejected writes and check these allowed outputs. The partition-drift test
 also checks its actual failure reason before fitting.
 

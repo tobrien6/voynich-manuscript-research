@@ -339,8 +339,12 @@ def protect_output(path, prepared, partition_path, *, preparing=False):
         if not preparing or partition.exists():
             protected.add(partition.resolve())
     resolved = path.resolve()
-    if resolved in protected or (path.exists() and any(
-            candidate.exists() and path.samefile(candidate) for candidate in protected)):
+    folders = (ROOT / 'data/raw', ROOT / 'scripts')
+    if path.exists():
+        protected.update(candidate for folder in folders
+                         for candidate in folder.rglob('*') if candidate.is_file())
+    if (resolved in protected or any(resolved.is_relative_to(folder.resolve()) for folder in folders)
+            or (path.exists() and any(candidate.exists() and path.samefile(candidate) for candidate in protected))):
         raise ValueError('output must not replace a pinned input, raw source, producer, plan or existing partition')
 
 
