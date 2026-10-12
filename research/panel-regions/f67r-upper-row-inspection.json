@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "inspection_id": "67r-upper-row-source-informed-inspection-v1",
+  "inspection_date": "2026-10-12",
+  "timezone": "America/New_York",
+  "published_plan_commit": "912bf8724db1c7f632ec61bc8fd1bf7f53b8c139",
+  "chronology": "The remote plan head was verified before the first complete-image view in this pass; this is a declared tool sequence, not independently certified chronology.",
+  "first_view_exact_timestamp_recorded": false,
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "scripts/build_67r_review.py": "07e071abd5ceb469c23aa3a16175ae5967b8c9c6d63fb5e47d64d01c3725085f",
+    "research/panel-regions/f67r-proposal.json": "f958a98977c56fcbdbb65f3f31c5ebd5733b0f00a5ca699023e3cb164eea45e7",
+    "research/panel-regions/f67r-p0-review.json": "13063b8994b342b97721e2fe6c01c6d976736fff23a8959e33c26a4f55b57a0e",
+    "research/panel-regions/f67r1-1-boundary-case.json": "9a28e0eb9a0f34bb445280891702846c1a798f535ba6ae2666adc5e27c2e3bbe",
+    "research/panel-regions/F67R_UPPER_ROWS_PLAN.md": "9dad050979425a436369b8a3f082f98fef3f747be281c83e9945930f35e3ec3b"
+  },
+  "sources": [
+    {
+      "source_id": "ZL3b",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "source_id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ],
+  "source_credits_and_reuse_reference": "data/transliterations.json; research/transcriptions/SOURCES.md",
+  "normalization": "None: complete source reader text, annotations, identifiers and file-line positions are retained.",
+  "image_oid": "1006194",
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+  "pinned_yale_label": "67r",
+  "native_dimensions": [
+    4972,
+    3738
+  ],
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "dependency_group": "yale-leaves:67",
+  "target_count": 4,
+  "source_reading_count": 8,
+  "response_fingerprints": [
+    {
+      "id": "info",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/info.json",
+      "bytes": 887,
+      "sha256": "c391e9f8bf144bd8d33744a3a5e28515bad5387fb75f42264c1f6954c123b29e",
+      "selection": "current service metadata",
+      "declared_native_dimensions": [
+        4972,
+        3738
+      ]
+    },
+    {
+      "id": "complete_scan",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/full/!1800,1800/0/default.jpg",
+      "bytes": 519434,
+      "sha256": "ed3657b74b4705da1b2605b12e0a9cda501df9384b8e0f8f5ce392498ee41e84",
+      "selection": "existing complete scan",
+      "returned_dimensions": [
+        1800,
+        1353
+      ]
+    },
+    {
+      "id": "initial_band",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/0,200,2486,900/full/0/default.jpg",
+      "bytes": 490384,
+      "sha256": "c519aecd4a6cdcc9d0952442ca37bea3cae3096d663b4104cbb467afbfd3e6dd",
+      "selection": "fixed before the pass",
+      "native_context_xywh": [
+        0,
+        200,
+        2486,
+        900
+      ],
+      "returned_dimensions": [
+        2486,
+        900
+      ]
+    },
+    {
+      "id": "opening_tile",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/350,300,1000,500/full/0/default.jpg",
+      "bytes": 103979,
+      "sha256": "2c4662b20d5fa840897f785334a9385fc34c6931fbecd0c9d0b00cd44fc607f1",
+      "selection": "selected after complete scan and initial band",
+      "native_context_xywh": [
+        350,
+        300,
+        1000,
+        500
+      ],
+      "returned_dimensions": [
+        1000,
+        500
+      ]
+    },
+    {
+      "id": "middle_tile",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/1050,300,1000,500/full/0/default.jpg",
+      "bytes": 103334,
+      "sha256": "71f9b337e036e4eaa31895de471814ed93a6c26198911af93e4780c72881d4d6",
+      "selection": "selected after complete scan and initial band",
+      "native_context_xywh": [
+        1050,
+        300,
+        1000,
+        500
+      ],
+      "returned_dimensions": [
+        1000,
+        500
+      ]
+    },
+    {
+      "id": "ending_tile",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/1650,300,800,500/full/0/default.jpg",
+      "bytes": 78100,
+      "sha256": "37166dc15a5ec404da2b9b2c0a225e625e8db35bd40d14144dea3457cf38d220",
+      "selection": "selected after complete scan and initial band",
+      "native_context_xywh": [
+        1650,
+        300,
+        800,
+        500
+      ],
+      "returned_dimensions": [
+        800,
+        500
+      ]
+    },
+    {
+      "id": "row_1_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/350,350,2000,190/full/0/default.jpg",
+      "bytes": 78845,
+      "sha256": "2370b206069e68aff05bb0b2a148b78b930feadef8a6a6ebaee253adeb9bba80",
+      "selection": "selected after overlapping tiles",
+      "native_context_xywh": [
+        350,
+        350,
+        2000,
+        190
+      ],
+      "returned_dimensions": [
+        2000,
+        190
+      ]
+    },
+    {
+      "id": "row_2_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/350,430,2000,190/full/0/default.jpg",
+      "bytes": 81967,
+      "sha256": "ce5681209d7475875a50962fcb4e2599d8f81285b26bcb52bbdfb16a384976cf",
+      "selection": "selected after overlapping tiles",
+      "native_context_xywh": [
+        350,
+        430,
+        2000,
+        190
+      ],
+      "returned_dimensions": [
+        2000,
+        190
+      ]
+    },
+    {
+      "id": "row_3_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/350,525,2000,175/full/0/default.jpg",
+      "bytes": 75339,
+      "sha256": "ad38fd786e8122c5867d313fdd4a7caf0038f606e91faf6c4fcd3073187279d4",
+      "selection": "selected after overlapping tiles",
+      "native_context_xywh": [
+        350,
+        525,
+        2000,
+        175
+      ],
+      "returned_dimensions": [
+        2000,
+        175
+      ]
+    },
+    {
+      "id": "row_4_context",
+      "url": "https://collections.library.yale.edu/iiif/2/1006194/350,600,2000,190/full/0/default.jpg",
+      "bytes": 81603,
+      "sha256": "74e2f1fd26f718f8fcce2593344b4c1911c0c4bed428c2df6a74a121a0709eff",
+      "selection": "selected after overlapping tiles",
+      "native_context_xywh": [
+        350,
+        600,
+        2000,
+        190
+      ],
+      "returned_dimensions": [
+        2000,
+        190
+      ]
+    },
+    {
+      "id": "basic_eva_reference",
+      "url": "https://voynich.nu/img/extra/eva01.gif",
+      "bytes": 51004,
+      "sha256": "c470d909c07c586f327a4a84f35efa879f765745744a0439690ed706f7b3e09f",
+      "selection": "shape reference; legacy punctuation is not used for parsing",
+      "returned_dimensions": [
+        640,
+        1032
+      ]
+    }
+  ],
+  "reference_page": {
+    "url": "https://voynich.nu/transcr.html",
+    "locator": "Table 3 and adjacent notation discussion",
+    "inspection_transport": "Web reader; direct local HTML retrieval returned HTTP 406, so no local raw-body fingerprint is assigned.",
+    "raw_body_sha256": null
+  },
+  "selection_sequence": [
+    "Four keys and initial band fixed in the published plan before the pass.",
+    "Complete scan, then initial band, then Basic Eva form reference inspected.",
+    "Three overlapping native-pixel tiles selected from the band and inspected across all four rows.",
+    "Four complete row-context windows selected after the tiles and inspected; neighboring-row strokes remain visible."
+  ],
+  "outcomes": {
+    "supported_by_visible_anchors": 4,
+    "contradicted": 0,
+    "insufficient_at_inspected_scale": 0
+  },
+  "records": [
+    {
+      "locus_key": "f67r1.1",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "teeodaiin.shey",
+          "image_observation": "The uppermost row starts with a tall paired-stem form followed by low curved forms, a loop-like form and a minim-like ending; a separated low roofed/hooked cluster follows."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "epairody.osaiin.yteeoey",
+          "image_observation": "A second tall crossing form, low rounded clusters and a later descender-plus-tall-form cluster appear in the corresponding order across the overlapping tiles."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "shey.epaiin followed by ZL o.aiin / IT oaiin",
+          "image_observation": "A small roofed/hooked cluster precedes a tall crossing form with a minim-like ending; a closed oval and short stroke cluster close the row, with a visible gap between them."
+        }
+      ],
+      "unresolved_features": [
+        "The final visible gap does not adjudicate ZL o.aiin versus IT oaiin or linguistic word division.",
+        "No complete glyph-by-glyph certification or source-token count is inferred from the image."
+      ],
+      "proposed_physical_row_top_to_bottom": 1,
+      "context_window_id": "row_1_context",
+      "association_status": "supported_by_visible_anchors",
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at the inspected scale; not an exhaustive glyph-string comparison.",
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.1,@P0",
+          "source_file_line": 2823,
+          "native_text": "<%>teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.o.aiin"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.1,@P0",
+          "source_file_line": 1768,
+          "native_text": "<%>teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.oaiin"
+        }
+      ],
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    },
+    {
+      "locus_key": "f67r1.2",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "daiir.okeody",
+          "image_observation": "The second row starts with a loop-like form and several short strokes ending in a curl; an oval-plus-tall-form cluster follows. It is distinct from the first row opening."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "sar.oeteody.oteey",
+          "image_observation": "A short curled cluster is followed by two separated oval/tall-form clusters, in the order supplied by both readings."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "keey.keo.keeoda followed by ZL [l:?] / IT l",
+          "image_observation": "Two shorter tall-form clusters precede a longer tall-form/oval/loop sequence with a slanting terminal stroke cluster at the right edge."
+        }
+      ],
+      "unresolved_features": [
+        "The third source form remains ZL qoekeey versus IT qoekshg; these placement anchors do not adjudicate it.",
+        "The final ZL alternative [l:?] and IT l are preserved without selecting a preferred terminal reading."
+      ],
+      "proposed_physical_row_top_to_bottom": 2,
+      "context_window_id": "row_2_context",
+      "association_status": "supported_by_visible_anchors",
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at the inspected scale; not an exhaustive glyph-string comparison.",
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.2,+P0",
+          "source_file_line": 2824,
+          "native_text": "daiir.okeody.qoekeey.sar.oeteody.oteey.keey.keo.keeoda[l:?]"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.2,+P0",
+          "source_file_line": 1769,
+          "native_text": "daiir.okeody.qoekshg.sar.oeteody.oteey.keey.keo.keeodal"
+        }
+      ],
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    },
+    {
+      "locus_key": "f67r1.3",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "ycheo.s then the source-specific o/short-stroke group",
+          "image_observation": "The third row begins with a long descender beside low connected curves and an oval; a small curled form and another oval/short-stroke group follow."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "aiin.okesoe then ZL ar.am / IT aram",
+          "image_observation": "A compact minim-like group precedes an oval/tall-form cluster; short low clusters follow in the corresponding order."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "shees.dalaiin.dam",
+          "image_observation": "A low roofed/curved cluster is followed by two loop-initial clusters; the first contains a longer short-stroke group and the final one has a downward terminal stroke."
+        }
+      ],
+      "unresolved_features": [
+        "Preserve ZL o,iim.[che:eee]os versus IT o.g.cheos, including alternative notation and uncertain spacing.",
+        "The ZL ar.am versus IT aram grouping is not adjudicated by this row association."
+      ],
+      "proposed_physical_row_top_to_bottom": 3,
+      "context_window_id": "row_3_context",
+      "association_status": "supported_by_visible_anchors",
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at the inspected scale; not an exhaustive glyph-string comparison.",
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.3,+P0",
+          "source_file_line": 2825,
+          "native_text": "ycheo.s.o,iim.[che:eee]os.aiin.okesoe.ar.am.shees.dalaiin.dam"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.3,+P0",
+          "source_file_line": 1770,
+          "native_text": "ycheo.s.o.g.cheos.aiin.okesoe.aram.shees.dalaiin.dam"
+        }
+      ],
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    },
+    {
+      "locus_key": "f67r1.4",
+      "anchors": [
+        {
+          "part": "opening",
+          "source_comparison_context": "cheodaiin then ZL [ch:a]ekeey / IT chekeey",
+          "image_observation": "The lowest row opens with a low roofed/connected group, an oval/loop and minim-like ending; the following cluster contains a prominent tall form."
+        },
+        {
+          "part": "middle",
+          "source_comparison_context": "ZL s.ar.air.s,o,ar / IT sar.air.soar",
+          "image_observation": "Several compact curled/oval/short-stroke groups occupy the middle of the row. Their order supports the common sequence context while their spacing remains ambiguous."
+        },
+        {
+          "part": "ending",
+          "source_comparison_context": "cheey.dair.cthey",
+          "image_observation": "A low roofed/curved cluster and a loop/short-stroke cluster precede the distinctive final tall benched structure with a curved ending. This row ends earlier than the three rows above."
+        }
+      ],
+      "unresolved_features": [
+        "Retain the ZL [ch:a] alternative and the differing explicit/uncertain source boundaries.",
+        "The final benched structure supports placement context, not a general glyph or ligature adjudication."
+      ],
+      "proposed_physical_row_top_to_bottom": 4,
+      "context_window_id": "row_4_context",
+      "association_status": "supported_by_visible_anchors",
+      "contradictory_row_placement_evidence": "No contradictory row-order anchor identified at the inspected scale; not an exhaustive glyph-string comparison.",
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.4,+P0",
+          "source_file_line": 2826,
+          "native_text": "cheodaiin.[ch:a]ekeey.s.ar.air.s,o,ar.cheey.dair.cthey<$>"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.4,+P0",
+          "source_file_line": 1771,
+          "native_text": "cheodaiin.chekeey.sar.air.soar.cheey.dair.cthey<$>"
+        }
+      ],
+      "source_reading_preference": null,
+      "every_glyph_verified": false,
+      "word_divisions_adjudicated": false,
+      "usable_as_verified_corpus_join": false
+    }
+  ],
+  "exposure": {
+    "source_readings_and_prior_layout_known": true,
+    "prior_first_row_gap_observation_known": true,
+    "source_informed_nonblind_ai_inspection": true,
+    "independent_manuscript_witness": false,
+    "original_image_view_has_right_panel_content": true,
+    "untouched_evaluation_claim": false
+  },
+  "bounds_scope": "Inspection context rectangles, not exact glyph/word masks; rectangles overlap neighboring rows.",
+  "usable_as_verified_corpus_join": false,
+  "usable_for_statistical_evaluation": false,
+  "original_proposal_or_sources_modified": false,
+  "limits": [
+    "Partial shape/order anchors support proposed row association without certifying all source glyphs.",
+    "Both editions are related representations; four rows and all derivatives share one image/leaf dependency.",
+    "No source preference, linguistic word division, glyph meaning, mechanism, language, decipherment or translation is established.",
+    "A separate independent region/glyph review and explicit crosswalk decision remain required."
+  ],
+  "publication": "Only source links, fingerprints, native-source text and original observations; no image or font binary is included."
+}

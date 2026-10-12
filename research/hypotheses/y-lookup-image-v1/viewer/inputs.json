@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "viewer_id": "y-lookup-pair-review-v1",
+  "accepted_input_commit": "e3f129934cdf6ca0432001936db390996dff4290",
+  "input_sha256": {
+    "research/hypotheses/y-lookup-image-v1/selection.json": "cfa6a7a8ad4e500ac415619235eac27759eb59b803c0e15971832ad9557be117",
+    "research/hypotheses/y-lookup-image-v1/image-review.json": "4086e03b9c5098d0daabe3f06d64c779cc1dabb0e1f5b53e864803210b7b45a1",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/hypotheses/y-lookup-image-v1/PLAN.md": "9f18613430e50d05c7aac6b6a39fdd0a4ac2502a0cea869eff50ac5e64a7d8ac"
+  },
+  "scope": "Read-only local packet of the two accepted lookup image pairs; no new selection, readings, annotations, corrections or hosting"
+}
