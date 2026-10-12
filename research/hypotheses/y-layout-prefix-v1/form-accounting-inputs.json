@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "method": "y-prefix-literal-form-accounting-v1",
+  "parent_pr": 75,
+  "parent_merge": "a69fbc54c7a657ec6d2f64094e06705b4b1cee47",
+  "parent_files": {
+    "producer": {
+      "path": "scripts/y_layout_prefix.py",
+      "sha256": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3"
+    },
+    "report": {
+      "path": "research/hypotheses/y-layout-prefix-v1/results.json",
+      "sha256": "8944187811166c1ba687d4065b9afe7fa7c853e3ed46acacb56ae3a28ae1a6f1"
+    },
+    "partition": {
+      "path": "research/hypotheses/y-layout-prefix-v1/partition.json",
+      "sha256": "354aace43b44b5158257c737fe81c64ccc27469026a4d3b69743e117c3e739ae"
+    },
+    "parent_plan": {
+      "path": "research/hypotheses/y-layout-prefix-v1/PLAN.md",
+      "sha256": "fbd1dd9cb23d16a182f0d237eaa3a2412083eb8eed50dd969d4128d7284e4034"
+    },
+    "accounting_plan": {
+      "path": "research/hypotheses/y-layout-prefix-v1/FORM_ACCOUNTING_PLAN.md",
+      "sha256": "4157a3f6dd83e798d48f22ddf7ceea576071d43bebf0abc9a848f49b875fa504"
+    }
+  },
+  "helper_files": [
+    {
+      "path": "scripts/audit_transliterations.py",
+      "sha256": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b"
+    },
+    {
+      "path": "scripts/audit_transcription_images.py",
+      "sha256": "a3d9c789fa04e41a715d2247e40d16b43827de88c32afaaeb9e302d4ed7d9e5e"
+    },
+    {
+      "path": "scripts/ivtff.py",
+      "sha256": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65"
+    },
+    {
+      "path": "scripts/locus_positions.py",
+      "sha256": "4efa53f41aa51860e4ada5b01882a697490d2b85497f36584a50fc855dea0f7f"
+    },
+    {
+      "path": "scripts/prefix_strata.py",
+      "sha256": "8fba6f3ad3867f0b5086865a1c9c0c045db333ec8b56314082053ca2c96b8afc"
+    },
+    {
+      "path": "scripts/section_strata.py",
+      "sha256": "8e4a3d308b8132b59543f41818c8c451d83b625b5296ab6b4e5908c67135b5da"
+    },
+    {
+      "path": "scripts/token_baselines.py",
+      "sha256": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+    },
+    {
+      "path": "scripts/index_yale_manifest.py",
+      "sha256": "cf5cea25e41495b710ba4a9c8eedffe809eec392d1a43126e6706a10a12ba3a5"
+    },
+    {
+      "path": "scripts/repetition_moments.py",
+      "sha256": "e758237cc966a4723e3613b8d7cce96e96f685ba682cdc1668558cf153749370"
+    },
+    {
+      "path": "scripts/validate_evaluation_split.py",
+      "sha256": "f967f3ead88326870905fec2e64582b711246bc1bb3e057aba786dfaff5e172d"
+    }
+  ]
+}
