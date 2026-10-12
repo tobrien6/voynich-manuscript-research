@@ -16,7 +16,7 @@ measurement. The implementation and eleven passing synthetic tests were
 published and verified at `19e4e38` before the first manuscript run. No
 cohort, statistic, control, or decision criterion changed after the result.
 
-The [common paragraph producer](PARAGRAPH_CORPUS.md), proposed in
+The [common paragraph producer](PARAGRAPH_CORPUS.md), accepted in
 [PR #95](https://github.com/tobrien6/voynich-manuscript-research/pull/95), replays
 the accepted [membership audit](PARAGRAPH_MEMBERSHIP.md) from pinned CC0 ZL3b
 and IT2a native-Eva sources. This analysis rebuilds that entire corpus and
