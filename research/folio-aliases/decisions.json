@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "target_scheme": "yale_2002046_canvas_label",
+  "decisions": [
+    {
+      "decision_id": "legacy-final-side-117v",
+      "source_scheme": "yale_legacy_ms408_catalog",
+      "source_label": "117v",
+      "status": "unresolved",
+      "candidate_target": {
+        "label": "116v",
+        "canvas_uris": [
+          "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277"
+        ]
+      },
+      "verified_target": null,
+      "review": null,
+      "evidence": [
+        {
+          "url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM",
+          "locator": "Part VI, final-side description",
+          "statement": "The catalog attributes a short presumed key to 117v; this is a reported catalog claim."
+        },
+        {
+          "url": "https://collections.library.yale.edu/manifests/2002046",
+          "locator": "Canvas 1006277, label 116v; manifest retrieved 2026-10-11",
+          "statement": "The manifest labels the last numbered verso 116v and contains no exact 117v label."
+        },
+        {
+          "url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006277",
+          "locator": "Short writing at the head and small figures in the left margin",
+          "statement": "Direct image inspection suggests a possible correspondence; resemblance alone does not verify an alias."
+        },
+        {
+          "url": "https://www.ic.unicamp.br/~stolfi/voynich/mirror/gillogly/checklist",
+          "locator": "Jim Reeds, A Provisional Checklist of Voynich MS pages, 11 Sep 1995; final 116v entry and format explanation",
+          "statement": "Reeds lists the final side as 116v with Petersen page number 235 and key-like/extraneous-writing markers. This corroborates a 116v convention, not an explicit alias from the legacy Yale label."
+        },
+        {
+          "url": "https://ic.unicamp.br/~stolfi/voynich/Notes/040/html/f116v.htm",
+          "locator": "Identification and Description; inspected 2026-10-11",
+          "statement": "Stolfi identifies the last page as f116v and p234 in his own scheme, describing short writing near the head. His page number differs from Reeds's Petersen column and must not be used without its source scheme."
+        }
+      ],
+      "rationale": "Preserve the legacy label and candidate separately until a documented foliation source or independent review establishes the correspondence. No missing leaf or global numbering offset is inferred.",
+      "recorded_on": "2026-10-11",
+      "issue_url": "https://github.com/tobrien6/voynich-manuscript-research/issues/3"
+    }
+  ]
+}
