@@ -14,10 +14,11 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Project brief and research plan](99TOKENS.md)
 - [Decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md)
 - [Primary source register](research/SOURCES.md)
+- [Ten-folio visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
-The project is at the scoping stage. Decoding and translation are its objective; no new transcription, statistical result, or validated decipherment has been established.
+A first source-linked visual inventory records ten target folio sides, represented by ten Yale canvases across the six catalog groups, and awaits independent review. Decoding and translation are the research objective; no new transcription, statistical result, or validated decipherment has been established.
 
 ## Research practice
 
