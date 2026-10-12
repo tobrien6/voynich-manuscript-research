@@ -100,6 +100,11 @@ equal nonempty projection bags, including 29 with different order. One-to-one
 and ambiguous projection groups retain native locators without becoming a
 verified locus or image crosswalk.
 
+The [complete projected-record order diagnostic](RECORD_ORDER.md) measures every
+equal-multiset page under both native orders. On all 29 differing-order pages,
+maximum pairings retain 836 of 1,006 nonempty records per edition; every possible
+optimal index pair and ambiguity is retained without selecting a row crosswalk.
+
 The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
 historical H envelope and two present IT2a P0/Pt loci with the same joined
 lowercase projection. The default modern adapter excludes Pt by kind; this
