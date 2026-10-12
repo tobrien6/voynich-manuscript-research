@@ -1,0 +1,162 @@
+{
+  "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "access_date": "2026-10-11",
+  "access_timezone": "America/New_York",
+  "method": "Explicit folio sides in Yale labels; no visual or transcription inference",
+  "canvas_count": 213,
+  "label_class_counts": {
+    "compound_or_partial_label": 21,
+    "exact_single_side_label": 183,
+    "non_numbered_view": 9
+  },
+  "explicit_folio_side_count": 204,
+  "explicit_folio_number_count": 102,
+  "explicit_folio_number_min": 1,
+  "explicit_folio_number_max": 116,
+  "unrepresented_leaf_numbers_within_observed_span": [
+    12,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    74,
+    91,
+    92,
+    97,
+    98,
+    109,
+    110
+  ],
+  "numbers_with_only_one_side_in_labels": [],
+  "sides_with_multiple_canvases": [
+    {
+      "folio_side": "70v",
+      "image_oids": [
+        "1006200",
+        "1006201"
+      ]
+    },
+    {
+      "folio_side": "72v",
+      "image_oids": [
+        "1006204",
+        "1006205"
+      ]
+    },
+    {
+      "folio_side": "85r",
+      "image_oids": [
+        "1006228",
+        "1006229"
+      ]
+    },
+    {
+      "folio_side": "86v",
+      "image_oids": [
+        "1006229",
+        "1006230"
+      ]
+    },
+    {
+      "folio_side": "89v",
+      "image_oids": [
+        "1006234",
+        "1006235"
+      ]
+    },
+    {
+      "folio_side": "90r",
+      "image_oids": [
+        "1006235",
+        "1006236"
+      ]
+    },
+    {
+      "folio_side": "95v",
+      "image_oids": [
+        "1006242",
+        "1006243"
+      ]
+    },
+    {
+      "folio_side": "101v",
+      "image_oids": [
+        "1006250",
+        "1006251"
+      ]
+    },
+    {
+      "folio_side": "102v",
+      "image_oids": [
+        "1006252",
+        "1006253"
+      ]
+    }
+  ],
+  "non_numbered_views": [
+    {
+      "yale_label": "[Front cover]",
+      "image_oid": "1006074"
+    },
+    {
+      "yale_label": "[Inside front cover]",
+      "image_oid": "1006075"
+    },
+    {
+      "yale_label": "[Back flyleaf recto]",
+      "image_oid": "1037113"
+    },
+    {
+      "yale_label": "[Back flyleaf verso-inside back cover]",
+      "image_oid": "1006278"
+    },
+    {
+      "yale_label": "[Head]",
+      "image_oid": "11868207"
+    },
+    {
+      "yale_label": "[Tail]",
+      "image_oid": "11868208"
+    },
+    {
+      "yale_label": "[Fore-edge]",
+      "image_oid": "11868209"
+    },
+    {
+      "yale_label": "[Spine]",
+      "image_oid": "11868210"
+    },
+    {
+      "yale_label": "[Back cover]",
+      "image_oid": "1006279"
+    }
+  ],
+  "catalog_comparison": {
+    "source_url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM",
+    "source_access_date": "2026-10-11",
+    "manually_recorded_missing_leaf_numbers": [
+      12,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      74,
+      91,
+      92,
+      97,
+      98,
+      109,
+      110
+    ],
+    "matches_unrepresented_numbers_in_observed_span": true,
+    "catalog_final_section_end": "117v",
+    "117r_has_explicit_manifest_label": false,
+    "117v_has_explicit_manifest_label": false,
+    "limitation": "Absence of a label is not proof of a missing physical leaf; final-range discrepancy unresolved"
+  }
+}

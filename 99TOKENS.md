@@ -30,7 +30,7 @@ Prepare a decipherment pilot of 10 folios selected across the six sections descr
 
 Before developing a candidate, commit a provisional split of eight development folios and two held-out folios, recording any prior exposure. This small pilot tests the workflow; it cannot establish manuscript-wide validity. Deliver the inventory, transcription decision, split manifest, and a first registered hypothesis with a measurable prediction and failure condition using the [evaluation protocol](research/DECIPHERMENT_PROTOCOL.md).
 
-This task is planned. The pilot corpus, hypothesis tests, and translations have not yet been completed.
+The [visual inventory](research/pilot/INVENTORY.md) now records ten selected target folio sides with Yale image identifiers, visible text layouts, illustrations, and uncertainties. Its [selection protocol](research/pilot/SAMPLING.md), [machine-readable records](research/pilot/inventory.json), and [source-check script](scripts/verify_pilot.py) make the contribution checkable. Several canvases contain multiple foldout panels retained within one record. The transcription decision, development/evaluation split, first registered hypothesis, independent observation review, and translations remain pending. The visual inspection of all ten images must be disclosed when defining prior exposure for a later split.
 
 ## Evidence standard
 
