@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "observation_id": "newbold-photo-current-surface-v1",
+  "recorded_on": "2026-10-12",
+  "access_timezone": "America/New_York",
+  "recorded_utc": "2026-10-12T13:31:42.860908+00:00",
+  "status": "provisional_historical_photo_to_current_image_association",
+  "role_context": {
+    "role": "owner/maintainer",
+    "account": "tobrien6",
+    "upstream_owner": "tobrien6",
+    "verified_permissions": [
+      "admin",
+      "maintain",
+      "push",
+      "pull",
+      "triage"
+    ],
+    "assigned_scope": "Continuous focused contributions through topic branches and PRs."
+  },
+  "plan": {
+    "path": "research/folio-aliases/NEWBOLD_PHOTO_PLAN.md",
+    "published_commit": "0e14986de5fa09e0f5c725789109a66ecafcbcc2",
+    "sha256": "20576af1cc7ae7d405551194707f2e140df67ca48b56159bb5a3713022f800bf",
+    "accepted_base_commit": "7c66607262721717fa6049dec61c8fdf31dfad24",
+    "published_before_new_detailed_comparison_views": true,
+    "prior_exposure_disclosed": true
+  },
+  "repository_input_sha256": {
+    "research/folio-aliases/newbold-terminal-source.json": "0e25099797f7055204eb945abdc4dfaf36bf1cb2c4a6aa3d314d43aface9ba4d",
+    "research/folio-aliases/decisions.json": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
+    "research/image-index/multispectral-intake.json": "d3414bca64c2b71378cda05402b6a8271c99c2e993d3ccdacecd083e05c917e0"
+  },
+  "source_ids": [
+    "S009",
+    "S003",
+    "S004"
+  ],
+  "historical_source": {
+    "url": "https://oncle-dom.fr/biblio/1928-Newbold-The%20Cipher%20of%20Roger%20Bacon.pdf",
+    "bytes": 46842963,
+    "pdf_pages": 297,
+    "sha256": "69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891",
+    "selected_complete_pdf_pages": [
+      119,
+      159
+    ],
+    "plate_labels": [
+      "X",
+      "XV"
+    ],
+    "caption_numeric_folio_designation": null,
+    "caption_key_claim_accepted": false,
+    "photograph_capture_history_authenticated": false,
+    "relationship_between_two_reproductions": "Unresolved; potentially dependent on common photograph/source surface, not independent manuscript samples.",
+    "render_receipts": [
+      {
+        "pdf_page": 119,
+        "renderer": "Poppler pdftoppm 24.04.0",
+        "scale_to_pixels": 2450,
+        "complete_page": true,
+        "local_filename": "book-page-119.png",
+        "bytes": 1207988,
+        "dimensions": [
+          1894,
+          2450
+        ],
+        "sha256": "630e518dd7abb2f70b713b7b51607d691d036bb259e4cf791d39d65cf3f23332",
+        "role": "Local rendering receipt, not an independent source or authenticated original photograph."
+      },
+      {
+        "pdf_page": 159,
+        "renderer": "Poppler pdftoppm 24.04.0",
+        "scale_to_pixels": 2450,
+        "complete_page": true,
+        "local_filename": "book-page-159.png",
+        "bytes": 338014,
+        "dimensions": [
+          1894,
+          2450
+        ],
+        "sha256": "88b85d58b7b343a2c998d4fad72b2d3b1dd24c935f4c82c1dd4fecb0d8fb4917",
+        "role": "Local rendering receipt, not an independent source or authenticated original photograph."
+      }
+    ]
+  },
+  "yale_manifest": {
+    "url": "https://collections.library.yale.edu/manifests/2002046",
+    "sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "exact_labels_and_canvas_ids_checked": true
+  },
+  "yale_images": [
+    {
+      "role": "fixed_target",
+      "label": "116v",
+      "image_oid": "1006277",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+      "url": "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg",
+      "bytes": 1994539,
+      "sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+      "dimensions": [
+        2686,
+        3697
+      ],
+      "exif_orientation": null,
+      "stored_rgb_sha256": "12baa0075cf7a996813707a412fa67505e6ce75422b74ed3c9353c38aa3185b5",
+      "accepted_intake_pin_matched": true
+    },
+    {
+      "role": "fixed_adjacent_context",
+      "label": "116r",
+      "image_oid": "1006276",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+      "url": "https://collections.library.yale.edu/iiif/2/1006276/full/full/0/default.jpg",
+      "bytes": 2132637,
+      "sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+      "dimensions": [
+        2559,
+        3787
+      ],
+      "format": "JPEG",
+      "mode": "RGB",
+      "exif_orientation": null,
+      "decoded_stored_rgb_sha256": "e97ecff25f33225d2134dadc67b12553cbc0b6fc65fb6f12cb95ea6552b7e6d9",
+      "visible_upper_right_number": "116",
+      "identifier_scope": "Visible bare number and provider recto label retained separately; no verso suffix inferred from visible inscription."
+    }
+  ],
+  "exposure": {
+    "observer": "Nonblind AI assistant",
+    "historical_plates_previously_viewed": true,
+    "target_116v_previously_viewed": true,
+    "116r_prior_pixel_exposure": "Not established; no previously-unseen claim.",
+    "independent_human_review": false,
+    "qualified_reader_review": false,
+    "previously_unseen_claim": false,
+    "untouched_evaluation": false
+  },
+  "method": {
+    "whole_selected_pages_and_images_viewed": true,
+    "orientation_note": "Historical plate photograph/caption are sideways in complete-page renders; clockwise quarter-turn would restore ordinary reading orientation. Images were inspected without producing rotated pixel assets.",
+    "historical_photograph_separated_from_hand_and_printed_transcripts": true,
+    "comparison_mode": "Fixed feature-class visual inspection; no automated or geometric matching.",
+    "feature_classes": [
+      "text_row_arrangement",
+      "relative_extents_and_cluster_spacing",
+      "cross_shaped_marks",
+      "marginal_drawings",
+      "blank_edges_damage"
+    ],
+    "planned_comparison_records": 20,
+    "complete_record_count": 20,
+    "new_manuscript_transcription": false,
+    "ocr_reading_used": false,
+    "enhancement_or_filtering_applied": false,
+    "geometric_fitting_performed": false,
+    "physical_registration_verified": false,
+    "quantitative_similarity_score": null,
+    "calibrated_confidence": null,
+    "all_folio_uniqueness_search": false
+  },
+  "comparisons": [
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116v",
+      "feature_class": "text_row_arrangement",
+      "outcomes": [
+        "broad_correspondence",
+        "unresolved_detail"
+      ],
+      "observation": "Faint short upper band above three longer bands near the head; broad sparse arrangement corresponds. Exact row boundaries and glyph membership remain unresolved."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116v",
+      "feature_class": "relative_extents_and_cluster_spacing",
+      "outcomes": [
+        "broad_correspondence",
+        "unresolved_detail"
+      ],
+      "observation": "Lower bands start beside the margin drawings; the first reaches farther right than those below. Broad cluster/gap order corresponds without exact glyph, token-boundary or spacing equivalence."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116v",
+      "feature_class": "cross_shaped_marks",
+      "outcomes": [
+        "broad_correspondence",
+        "unresolved_detail"
+      ],
+      "observation": "Cross-shaped marks between broad clusters in the long lower band and next band occupy corresponding broad left/middle/right positions. Exact count and divider function are not assigned."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116v",
+      "feature_class": "marginal_drawings",
+      "outcomes": [
+        "broad_correspondence",
+        "unresolved_detail"
+      ],
+      "observation": "A small four-legged profile above a lower human-like contour and upper marks in the left strip correspond in relative placement. Fine outlines and meanings remain unresolved."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116v",
+      "feature_class": "blank_edges_damage",
+      "outcomes": [
+        "partial_correspondence",
+        "outside_frame",
+        "difference",
+        "unresolved_detail"
+      ],
+      "observation": "Some upper margin/edge features and dark spots are visible. Most modern blank lower area and lower/right edge damage are outside the photograph. Dark bands across old text differ in tonal appearance; their cause is unresolved."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116r",
+      "feature_class": "text_row_arrangement",
+      "outcomes": [
+        "difference"
+      ],
+      "observation": "Dense text and margin-marked groups cover much of 116r; no corresponding sparse terminal-band group observed in this fixed context."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116r",
+      "feature_class": "relative_extents_and_cluster_spacing",
+      "outcomes": [
+        "difference",
+        "unresolved_detail"
+      ],
+      "observation": "Numerous long rows and dense clusters differ from the photographed sparse group. No quantitative or exact glyph comparison performed."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116r",
+      "feature_class": "cross_shaped_marks",
+      "outcomes": [
+        "difference",
+        "unresolved_detail"
+      ],
+      "observation": "No corresponding sparse cross-segmented terminal group observed. Crossing strokes within recto glyphs are not classified as equivalent inter-cluster marks."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116r",
+      "feature_class": "marginal_drawings",
+      "outcomes": [
+        "difference"
+      ],
+      "observation": "A vertical series of star-like margin marks differs from the target figure arrangement and both historical photographic portions."
+    },
+    {
+      "historical_plate": "X",
+      "current_yale_label": "116r",
+      "feature_class": "blank_edges_damage",
+      "outcomes": [
+        "outside_frame",
+        "unresolved_detail"
+      ],
+      "observation": "Whole recto edges/damage and its different text-covered field are not corresponding landmarks for these cropped photographs; no aging/restoration inference."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116v",
+      "feature_class": "text_row_arrangement",
+      "outcomes": [
+        "broad_correspondence",
+        "unresolved_detail"
+      ],
+      "observation": "Broad upper-band and three-lower-band arrangement persists with broken dark marks; separate hand/printed transcripts cannot supply photographic gaps."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116v",
+      "feature_class": "relative_extents_and_cluster_spacing",
+      "outcomes": [
+        "broad_correspondence",
+        "difference",
+        "unresolved_detail"
+      ],
+      "observation": "Broad relative starts/ends persist with poorer tonal/detail continuity. Interpretation in the separate hand/printed proposal is excluded."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116v",
+      "feature_class": "cross_shaped_marks",
+      "outcomes": [
+        "broad_correspondence",
+        "unresolved_detail"
+      ],
+      "observation": "Several cross-shaped marks in corresponding broad portions remain in the photograph. Clear crosses in the separate hand transcript are not additional photographic evidence."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116v",
+      "feature_class": "marginal_drawings",
+      "outcomes": [
+        "partial_correspondence",
+        "outside_frame",
+        "unresolved_detail"
+      ],
+      "observation": "Only upper margin arrangement is within the tighter photograph. The lower human-like target figure extends outside the frame; it is not classified as historically absent."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116v",
+      "feature_class": "blank_edges_damage",
+      "outcomes": [
+        "difference",
+        "outside_frame",
+        "unresolved_detail"
+      ],
+      "observation": "Largely white field and broken dark marks with narrower vertical extent; whole-leaf blankness, lower edge damage and fine surface tones cannot be compared."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116r",
+      "feature_class": "text_row_arrangement",
+      "outcomes": [
+        "difference"
+      ],
+      "observation": "Dense text and margin-marked groups cover much of 116r; no corresponding sparse terminal-band group observed in this fixed context."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116r",
+      "feature_class": "relative_extents_and_cluster_spacing",
+      "outcomes": [
+        "difference",
+        "unresolved_detail"
+      ],
+      "observation": "Numerous long rows and dense clusters differ from the photographed sparse group. No quantitative or exact glyph comparison performed."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116r",
+      "feature_class": "cross_shaped_marks",
+      "outcomes": [
+        "difference",
+        "unresolved_detail"
+      ],
+      "observation": "No corresponding sparse cross-segmented terminal group observed. Crossing strokes within recto glyphs are not classified as equivalent inter-cluster marks."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116r",
+      "feature_class": "marginal_drawings",
+      "outcomes": [
+        "difference"
+      ],
+      "observation": "A vertical series of star-like margin marks differs from the target figure arrangement and both historical photographic portions."
+    },
+    {
+      "historical_plate": "XV",
+      "current_yale_label": "116r",
+      "feature_class": "blank_edges_damage",
+      "outcomes": [
+        "outside_frame",
+        "unresolved_detail"
+      ],
+      "observation": "Whole recto edges/damage and its different text-covered field are not corresponding landmarks for these cropped photographs; no aging/restoration inference."
+    }
+  ],
+  "representation_observation": {
+    "photographic_visible_upper_bands": "Fainter short upper band plus three longer lower bands; boundaries/membership unadjudicated.",
+    "plate_xv_hand_and_printed_proposal": "Separate three-line representation, not used to complete photographic glyphs.",
+    "intentional_omission_inferred": false,
+    "script_or_language_assigned": false
+  },
+  "candidate_current_image": {
+    "yale_label": "116v",
+    "image_oid": "1006277",
+    "scope": "Selected visible-overlap association only; provisional nonblind AI observation."
+  },
+  "verified_photo_surface_association": false,
+  "legacy_catalog_alias_verified": false,
+  "mapping_allowed": false,
+  "verified_target": null,
+  "apply_to_statistics": false,
+  "glyph_adjudication_performed": false,
+  "historical_readings_accepted": false,
+  "dating_or_restoration_inferred": false,
+  "reference_7_identified": false,
+  "limits": [
+    "Both historical photographs crop large portions of the modern leaf; outside-frame features are not historical absences.",
+    "Different tonal reproduction does not establish physical fading or restoration.",
+    "Two printed reproductions do not establish independent capture or observations.",
+    "One adjacent recto does not test uniqueness across the manuscript.",
+    "Captions have no numeric folio designation and the legacy catalog has no link to these photo/canvas identifiers.",
+    "Metadata/hash/registry checks do not certify visual truth."
+  ],
+  "reuse_scope": "Source PDF, full JPEGs and complete-page renders remain local; only original notes, selected facts, links and fingerprints are published.",
+  "next_test": "Qualified review of visible overlap/crop limits, plus explicit custodial correction or source-linked account of the legacy label before changing issue #13 or mapping/statistical gates."
+}

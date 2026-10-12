@@ -96,6 +96,11 @@ comparison needs a sourced unit definition and controls encoded with comparable
 rules. Preserve uncertainty and distinguish a representation effect from a
 candidate-specific prediction under the [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
 
+The [positional prediction control](POSITIONAL_PREDICTION.md) uses a separate
+exhaustive independent-letter source to compare unigram, bigram and position-only
+accuracy under a reversible carrier. It retains all boundary treatments and
+does not turn predictive accuracy into an entropy estimate.
+
 ## Reproduce and validate
 
 The [reversible row-marker demonstration](PREFIX_FORMATTING.md) supplies a

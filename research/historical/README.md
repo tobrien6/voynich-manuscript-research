@@ -47,8 +47,17 @@ outcomes and descriptive SD scaling without a calibrated tail.
 The [fixed B tail-control block](TYPE_TAILS.md) retains 1,000 additional controls
 per variant, both inclusive tail definitions and distinct frequency/rank scores,
 with the original controls and exposure/randomization limits explicit.
+The [literal H/Reddy envelope audit](REDDY_ENVELOPES.md) locates the recovered
+paper file's one-record gap in a normalized-empty H record. Every shared key
+retains the same order and fallback-retained count; all eight listed-code count
+differences remain explicit without claiming text or alphabet equivalence.
 
 ## Method
+
+The [primary-table H model audit](CURRIER_DEFINITION.md) retains every native
+token while applying one declared definition-based parser. It preserves all
+637 unmatched characters and source type/repeat equality, while changing
+notation lengths; the partial output is not a complete Currier edition.
 
 `scripts/audit_historical_interlinear.py` checks the entire ZIP hash and length
 before reading it in memory, requires its one cataloged member, and verifies the
@@ -108,6 +117,11 @@ equal-multiset page under both native orders. On all 29 differing-order pages,
 maximum pairings retain 836 of 1,006 nonempty records per edition; every possible
 optimal index pair and ambiguity is retained without selecting a row crosswalk.
 
+The [complete maximum-pairing count audit](PAIRING_COUNTS.md) retains the same
+211-page cohort and counts every maximum index sequence. Twelve pages have
+two to 18 choices; exact candidate shares use explicitly uniform index-pairing
+weighting, without a probability of physical row identity.
+
 The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
 historical H envelope and two present IT2a P0/Pt loci with the same joined
 lowercase projection. The default modern adapter excludes Pt by kind; this
@@ -138,3 +152,8 @@ This is an exploratory full-source intake. Native source headers, records,
 comments and snippets were inspected; record that exposure in any later split.
 No glyph adjudication, statistical mechanism test, decipherment, or translation
 was performed.
+
+The [fixed f101 candidate comparisons](F101_RECORD_CANDIDATES.md) retain all four
+unmatched H/IT2a page names. Two ordered lossy record lists agree (10 and 28
+records), while opposite-side comparisons share no projection group. This source
+diagnostic leaves the exact-page audit unchanged and accepts no page alias.

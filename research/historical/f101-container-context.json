@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "record_id": "f101-file-conventions-and-pinned-scan-context-v1",
+  "scope": "Publisher format recommendations and existing metadata references beside the accepted lossy comparison; physical panel/locus identity remains unresolved.",
+  "inspected_on": "2026-10-12",
+  "aliases_applied": [],
+  "apply_to_statistics": false,
+  "physical_regions_verified": false,
+  "new_manuscript_image_observation": false,
+  "untouched_evaluation": false,
+  "publisher_document": {
+    "author": "René Zandbergen",
+    "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "document_issue": "2.0.2",
+    "issue_date": "2025-07-08",
+    "file_format_version": "2.0.1",
+    "inspected_copy_sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "rendered_printed_pages": [
+      32,
+      38
+    ],
+    "file_use_column": "Use in file?",
+    "file_use_interpretation": "The Y/NO recommendation concerns an IVTFF page name; physical writing presence is undetermined by this field.",
+    "petersen_column": "Th. Petersen page nr",
+    "petersen_interpretation": "Separate source page-number column; no Yale canvas index or folio-number substitution."
+  },
+  "format_entries": [
+    {
+      "page_id": "f101r",
+      "use_in_file": "Y",
+      "text_included_in": null,
+      "petersen_page_number": 205,
+      "quire": 19,
+      "quire_variable_Q": "S",
+      "page_variable_P": "E"
+    },
+    {
+      "page_id": "f101r1",
+      "use_in_file": "NO",
+      "text_included_in": "f101r",
+      "petersen_page_number": 205,
+      "quire": 19,
+      "quire_variable_Q": "S",
+      "page_variable_P": "F"
+    },
+    {
+      "page_id": "f101r2",
+      "use_in_file": "NO",
+      "text_included_in": "f101r",
+      "petersen_page_number": 205,
+      "quire": 19,
+      "quire_variable_Q": "S",
+      "page_variable_P": "G"
+    },
+    {
+      "page_id": "f101v",
+      "use_in_file": "Y",
+      "text_included_in": null,
+      "petersen_page_number": null,
+      "quire": 19,
+      "quire_variable_Q": "S",
+      "page_variable_P": "H"
+    },
+    {
+      "page_id": "f101v2",
+      "use_in_file": "NO",
+      "text_included_in": "f101v",
+      "petersen_page_number": 206,
+      "quire": 19,
+      "quire_variable_Q": "S",
+      "page_variable_P": "I"
+    },
+    {
+      "page_id": "f101v1",
+      "use_in_file": "NO",
+      "text_included_in": "f101v",
+      "petersen_page_number": 207,
+      "quire": 19,
+      "quire_variable_Q": "S",
+      "page_variable_P": "J"
+    }
+  ],
+  "input_sha256": {
+    "research/historical/f101-record-candidates.json": "3cf022a96f4cee3047ba2275ee415f1b2345bdd7b7d20d0c0c7d9b259c312be0",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46",
+    "research/source-audit/manifest-labels.json": "481fceb7229edc4bb1250acf0df3d0b40e95244febc3a19de1491db8eaae9910",
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+  },
+  "metadata_snapshot": "Existing pinned Yale label index and whole-corpus side-reference audit; no fresh manifest/image acquisition in this contribution.",
+  "modern_side_references": [
+    {
+      "page_id": "f101r",
+      "source_counts": [
+        {
+          "source_id": "ZL3b",
+          "loci": 10,
+          "present_loci": 10,
+          "present_p0_loci": 10
+        },
+        {
+          "source_id": "IT2a",
+          "loci": 10,
+          "present_loci": 10,
+          "present_p0_loci": 10
+        }
+      ],
+      "reference": {
+        "kind": "simple_side_reference",
+        "folio_sides": [
+          "101r"
+        ]
+      },
+      "strict_folio_lookup_status": "matched",
+      "side_reference_status": "side_references_matched",
+      "unmatched_folio_sides": [],
+      "panel_region_status": "not_assessed",
+      "dependency_group": "yale-leaves:100+101+102",
+      "canvas_matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249",
+          "image_oid": "1006249",
+          "yale_label": "100v and 101r",
+          "label_folio_sides": [
+            "100v",
+            "101r"
+          ],
+          "requested_folio_sides": [
+            "101r"
+          ],
+          "has_partial_marker": false,
+          "has_multiple_explicit_sides": true,
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006249"
+        }
+      ]
+    },
+    {
+      "page_id": "f101v",
+      "source_counts": [
+        {
+          "source_id": "ZL3b",
+          "loci": 28,
+          "present_loci": 28,
+          "present_p0_loci": 9
+        },
+        {
+          "source_id": "IT2a",
+          "loci": 28,
+          "present_loci": 28,
+          "present_p0_loci": 9
+        }
+      ],
+      "reference": {
+        "kind": "simple_side_reference",
+        "folio_sides": [
+          "101v"
+        ]
+      },
+      "strict_folio_lookup_status": "matched",
+      "side_reference_status": "side_references_matched",
+      "unmatched_folio_sides": [],
+      "panel_region_status": "not_assessed",
+      "dependency_group": "yale-leaves:100+101+102",
+      "canvas_matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006250",
+          "image_oid": "1006250",
+          "yale_label": "101v (part)",
+          "label_folio_sides": [
+            "101v"
+          ],
+          "requested_folio_sides": [
+            "101v"
+          ],
+          "has_partial_marker": true,
+          "has_multiple_explicit_sides": false,
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006250"
+        },
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+          "image_oid": "1006251",
+          "yale_label": "101v (part) and 102r",
+          "label_folio_sides": [
+            "101v",
+            "102r"
+          ],
+          "requested_folio_sides": [
+            "101v"
+          ],
+          "has_partial_marker": true,
+          "has_multiple_explicit_sides": true,
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006251"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Modern IVTFF conventions do not retroactively rename the historical 1.6e6 H records.",
+    "Lossy projection equality remains distinct from full native-body or physical-row identity.",
+    "Preserve every partial/composite canvas and the inherited shared leaf dependency.",
+    "H native unit names R1/R2 are distinct from the page-name suffix; no panel placement follows.",
+    "No preferred scan, equal-width crop, pixel mask, source correction or corpus inclusion is assigned."
+  ]
+}

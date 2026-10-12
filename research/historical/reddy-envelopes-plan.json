@@ -1,0 +1,37 @@
+{
+  "plan_version": 1,
+  "scope": "Complete descriptive literal-envelope/order/count comparison between native H 1.6e6 and recovered paper-associated Reddy full annotation; no text/alphabet equivalence",
+  "key_fields": [
+    "page",
+    "native_unit_or_placement",
+    "native_line",
+    "transcriber_tag"
+  ],
+  "exact_literal_join": true,
+  "include_all_union_records": true,
+  "h_count_stages": [
+    "comment/filler/separator normalization retaining coded fallbacks",
+    "accepted listed-code deletion before manual exclusions"
+  ],
+  "reddy_file": "data/voy.ann.wds",
+  "execute_author_code": false,
+  "redistribute_raw_text": false,
+  "manual_exclusions": false,
+  "ordinal_base": 0,
+  "physical_file_line_base": 1,
+  "dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "research/historical/intake.json": "9c85060ba04e7558485f98cdb6f51eb3e18942428a93874d8706542451b2aa1c",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/audit_reddy_sources.py": "00a6157b33aeabae60110c7e70ef0b858ea86d11e447e401dd064117fde45c52",
+    "research/literature/reddy-source-manifest.json": "432bf44fe6f37bc82d8884bb692b7b9582adbdb8d79dbf138b7fb2b2af1f37e3",
+    "research/literature/REDDY_SOURCE_PLAN.md": "04d18954d426349f2672e947c05636f696f17d16dc1b9a078971fba0a15f9431",
+    "research/literature/reddy-source-intake.json": "feff6059e8ad9a5341d71e1d6d5d33866a70094487e447f3ae177ce3b4e8b4b6"
+  },
+  "prior_exposure": "Both full inventories/parsing counts, source material and first two header formats inspected; no untouched evaluation",
+  "reference_snapshot": "643b881b2937bae8193814d8ff5d6e99a48bf7c5"
+}

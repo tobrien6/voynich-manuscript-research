@@ -6,9 +6,11 @@ the Python standard library and does not modify the inventory.
 """
 
 import argparse
+import csv
 import hashlib
 import json
 import re
+import sys
 from pathlib import Path
 
 
@@ -41,11 +43,39 @@ def select(canvases):
     return selected
 
 
+def verify_image_bytes(records, directory):
+    """Retain the superseded pilot validator's optional local JPEG check."""
+    for record in records:
+        image_id = record["image_id"]
+        if not re.fullmatch(r"[0-9]+", image_id):
+            raise ValueError("Invalid image ID for local checksum verification")
+        digest = hashlib.sha256((directory / f"{image_id}.jpg").read_bytes()).hexdigest()
+        if digest != record["inspection_sha256"]:
+            raise ValueError(f"{record['target']}: inspected JPEG checksum differs")
+
+
+def write_inventory_csv(records, output):
+    """Export the canonical records, retaining structured fields as JSON cells."""
+    fields = list(records[0])
+    if any(set(record) != set(fields) for record in records):
+        raise ValueError("Inventory records have inconsistent fields")
+    writer = csv.DictWriter(output, fieldnames=fields, lineterminator="\n")
+    writer.writeheader()
+    for record in records:
+        writer.writerow({key: json.dumps(value, ensure_ascii=False)
+                         if isinstance(value, (dict, list)) else value
+                         for key, value in record.items()})
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", required=True, type=Path)
     parser.add_argument("--inventory", type=Path,
                         default=Path(__file__).resolve().parents[1] / "research/pilot/inventory.json")
+    parser.add_argument("--images", type=Path,
+                        help="Optionally verify local IMAGE_ID.jpg inspection bytes")
+    parser.add_argument("--csv", action="store_true",
+                        help="Write canonical inventory CSV to stdout; status goes to stderr")
     args = parser.parse_args()
     manifest_bytes = args.manifest.read_bytes()
     manifest = json.loads(manifest_bytes)
@@ -81,12 +111,21 @@ def main():
         for key in ("observed_text_layout", "observed_illustration", "uncertainties"):
             if not record[key]:
                 raise ValueError(f"{record['target']}: empty {key}")
+    if args.images:
+        verify_image_bytes(records, args.images)
+    if args.csv:
+        write_inventory_csv(records, sys.stdout)
+    status = sys.stderr if args.csv else sys.stdout
     digest = hashlib.sha256(manifest_bytes).hexdigest()
-    print("PASS: 10 selected canvases; labels, identifiers, URLs, dimensions, and required observation fields agree.")
-    print(f"Manifest SHA-256: {digest}")
+    print("PASS: 10 selected canvases; labels, identifiers, URLs, dimensions, and required observation fields agree.", file=status)
+    print(f"Manifest SHA-256: {digest}", file=status)
     if digest != inventory["manifest_sha256"]:
-        print("NOTE: Manifest bytes differ from the inspected version; selected metadata still agrees.")
-    print("Visual descriptions and image-file checksums require separate inspection.")
+        print("NOTE: Manifest bytes differ from the inspected version; selected metadata still agrees.", file=status)
+    if args.images:
+        print("PASS: all ten local JPEG checksums match the recorded inspection bytes.", file=status)
+    else:
+        print("Image-file checksums were not checked; use --images for local verification.", file=status)
+    print("Visual descriptions still require separate inspection.", file=status)
 
 
 if __name__ == "__main__":

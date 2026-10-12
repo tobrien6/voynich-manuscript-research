@@ -1,0 +1,1324 @@
+{
+  "schema_version": 1,
+  "analysis_id": "grouped-symbol-event-role-accounting-v1",
+  "full_report": {
+    "path": "research/baselines/symbol_event_accounting.json.gz",
+    "compressed_sha256": "e2d5bb1f4f09b73dc13b3b4cfb83eb3550b5db986d9f640a6552a6cd02d7e83a",
+    "uncompressed_sha256": "88a24aa4653fbb9228948cf383e8db3953e2d3ccbf76fbeac935bfc2770c9054",
+    "compressed_bytes": 9330943,
+    "uncompressed_bytes": 66850918
+  },
+  "reference_report_sha256": "9afa08f7073188be5930191110517bb3bd88a2ef61c681931489782aeff4dc3c",
+  "implementation_sha256": "1a6724affa0dac6426cc69de04551dfb8f53eeb628f8e2f59221a931888c8125",
+  "reference_accepted_at_plan": false,
+  "primary_treatment": [
+    "ZL3b",
+    "split",
+    "ascii_letters"
+  ],
+  "fixed_model_specification": {
+    "boundary": "reset each token; score all units plus one EOS target; two BOS context labels",
+    "alphabet": "52 ASCII letters plus declared patterns plus EOS; no BOS target",
+    "root_pseudocount": 0.5,
+    "context_prior_strength": 16,
+    "second_order_criterion": {
+      "minimum_pooled_gain_bits_per_target": 0.02,
+      "group_macro_gain_positive": true,
+      "positive_folds_required": 5
+    }
+  },
+  "role_order": [
+    "initial_unit",
+    "second_unit",
+    "later_unit",
+    "termination"
+  ],
+  "maximum_original_locus_loss_difference_bits": 5.684341886080802e-14,
+  "parent_comparison_absolute_tolerance_bits": 1e-10,
+  "treatments": [
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "unit_policy": "ascii_letters",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21343,
+        "units": 107808,
+        "targets": 129151,
+        "loss_bits_order0_order1_order2": [
+          500001.94056684984,
+          265916.1982526487,
+          238780.52861292174
+        ],
+        "pooled_gain01_bits_per_target": 1.812496552982177,
+        "locus_macro_gain01_bits_per_target": 1.7867330282048364,
+        "pooled_gain12_bits_per_target": 0.21010808774014103,
+        "locus_macro_gain12_bits_per_target": 0.2116746894614498,
+        "unseen_order1_context_targets": 1,
+        "unseen_order2_context_targets": 46,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21343,
+            "loss_bits_order0_order1_order2": [
+              92523.27892976424,
+              68400.07044899128,
+              68394.20847104704
+            ],
+            "gain12_bits": 5.861977944238915,
+            "mean_gain12_bits_per_target": 0.0002746557627437059,
+            "pooled_contribution12_bits_per_target": 4.5388560245285866e-05,
+            "equal_group_contribution12_bits_per_target": 1.16697314454414e-05,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20741,
+            "loss_bits_order0_order1_order2": [
+              83891.74296093467,
+              39830.36135742698,
+              32620.08766061226
+            ],
+            "gain12_bits": 7210.273696814717,
+            "mean_gain12_bits_per_target": 0.34763385067329045,
+            "pooled_contribution12_bits_per_target": 0.055828245207661706,
+            "equal_group_contribution12_bits_per_target": 0.0641000574510234,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 65724,
+            "loss_bits_order0_order1_order2": [
+              268179.52027262625,
+              144716.11021908218,
+              127224.64083752451
+            ],
+            "gain12_bits": 17491.469381557687,
+            "mean_gain12_bits_per_target": 0.2661351923430967,
+            "pooled_contribution12_bits_per_target": 0.13543425433452072,
+            "equal_group_contribution12_bits_per_target": 0.1378898263515769,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21343,
+            "loss_bits_order0_order1_order2": [
+              55407.398403524676,
+              12969.656227148234,
+              10541.59164373795
+            ],
+            "gain12_bits": 2428.0645834102847,
+            "mean_gain12_bits_per_target": 0.11376397804480555,
+            "pooled_contribution12_bits_per_target": 0.0188001996377131,
+            "equal_group_contribution12_bits_per_target": 0.018857442113619984,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6942405145107469,
+        "group_macro_gain12_bits_per_target": 0.22085899564766573,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21343,
+        "units": 107808,
+        "targets": 129151,
+        "loss_bits_order0_order1_order2": [
+          500001.94056684984,
+          265916.1982526487,
+          238780.52861292174
+        ],
+        "pooled_gain01_bits_per_target": 1.812496552982177,
+        "locus_macro_gain01_bits_per_target": 1.7867330282048364,
+        "pooled_gain12_bits_per_target": 0.21010808774014103,
+        "locus_macro_gain12_bits_per_target": 0.2116746894614498,
+        "unseen_order1_context_targets": 1,
+        "unseen_order2_context_targets": 46,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6942405145107469,
+        "group_macro_gain12_bits_per_target": 0.22085899564766573,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "unit_policy": "bench_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21343,
+        "units": 96797,
+        "targets": 118140,
+        "loss_bits_order0_order1_order2": [
+          453823.14362390875,
+          256899.5281694899,
+          237400.2597312728
+        ],
+        "pooled_gain01_bits_per_target": 1.6668665604741735,
+        "locus_macro_gain01_bits_per_target": 1.6300574007143693,
+        "pooled_gain12_bits_per_target": 0.1650522129525742,
+        "locus_macro_gain12_bits_per_target": 0.16642686370468315,
+        "unseen_order1_context_targets": 3,
+        "unseen_order2_context_targets": 72,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21343,
+            "loss_bits_order0_order1_order2": [
+              94683.02455983513,
+              72878.93296641723,
+              72874.92487209519
+            ],
+            "gain12_bits": 4.0080943220464995,
+            "mean_gain12_bits_per_target": 0.000187794327041489,
+            "pooled_contribution12_bits_per_target": 3.3926649077759436e-05,
+            "equal_group_contribution12_bits_per_target": -8.064605948523552e-06,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20729,
+            "loss_bits_order0_order1_order2": [
+              82589.72186449722,
+              48037.78872117834,
+              41013.142736675145
+            ],
+            "gain12_bits": 7024.645984503188,
+            "mean_gain12_bits_per_target": 0.33888011889156194,
+            "pooled_contribution12_bits_per_target": 0.05946035199342465,
+            "equal_group_contribution12_bits_per_target": 0.07096430146009042,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 54725,
+            "loss_bits_order0_order1_order2": [
+              223888.8807490327,
+              124044.88614110996,
+              113537.00041536002
+            ],
+            "gain12_bits": 10507.885725749946,
+            "mean_gain12_bits_per_target": 0.19201253039287247,
+            "pooled_contribution12_bits_per_target": 0.0889443518346872,
+            "equal_group_contribution12_bits_per_target": 0.08446477574682139,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21343,
+            "loss_bits_order0_order1_order2": [
+              52661.51645054369,
+              11937.920340784363,
+              9975.191707142449
+            ],
+            "gain12_bits": 1962.7286336419147,
+            "mean_gain12_bits_per_target": 0.09196123476746075,
+            "pooled_contribution12_bits_per_target": 0.016613582475384414,
+            "equal_group_contribution12_bits_per_target": 0.017262234389364462,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.5159128460326334,
+        "group_macro_gain12_bits_per_target": 0.17268324699032775,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21343,
+        "units": 96797,
+        "targets": 118140,
+        "loss_bits_order0_order1_order2": [
+          453823.14362390875,
+          256899.5281694899,
+          237400.2597312728
+        ],
+        "pooled_gain01_bits_per_target": 1.6668665604741735,
+        "locus_macro_gain01_bits_per_target": 1.6300574007143693,
+        "pooled_gain12_bits_per_target": 0.1650522129525742,
+        "locus_macro_gain12_bits_per_target": 0.16642686370468313,
+        "unseen_order1_context_targets": 3,
+        "unseen_order2_context_targets": 72,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.5159128460326334,
+        "group_macro_gain12_bits_per_target": 0.17268324699032772,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "unit_policy": "bench_and_minim_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21343,
+        "units": 90028,
+        "targets": 111371,
+        "loss_bits_order0_order1_order2": [
+          424058.6579517907,
+          254573.22123813513,
+          237437.0099952599
+        ],
+        "pooled_gain01_bits_per_target": 1.5218094181937452,
+        "locus_macro_gain01_bits_per_target": 1.4833889302217385,
+        "pooled_gain12_bits_per_target": 0.1538660085917809,
+        "locus_macro_gain12_bits_per_target": 0.15344755773963126,
+        "unseen_order1_context_targets": 4,
+        "unseen_order2_context_targets": 110,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21343,
+            "loss_bits_order0_order1_order2": [
+              92970.67155261606,
+              72894.45964140605,
+              72908.35994062398
+            ],
+            "gain12_bits": -13.900299217929236,
+            "mean_gain12_bits_per_target": -0.000651281413949737,
+            "pooled_contribution12_bits_per_target": -0.00012481076059233764,
+            "equal_group_contribution12_bits_per_target": -0.00029061449513037655,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20726,
+            "loss_bits_order0_order1_order2": [
+              82477.15608573309,
+              49161.92693333286,
+              42108.35406387154
+            ],
+            "gain12_bits": 7053.572869461322,
+            "mean_gain12_bits_per_target": 0.3403248513683934,
+            "pooled_contribution12_bits_per_target": 0.06333401755808354,
+            "equal_group_contribution12_bits_per_target": 0.07571241039486575,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 47959,
+            "loss_bits_order0_order1_order2": [
+              197756.6982377246,
+              120484.10981427217,
+              112451.03985780952
+            ],
+            "gain12_bits": 8033.069956462665,
+            "mean_gain12_bits_per_target": 0.16749869589571645,
+            "pooled_contribution12_bits_per_target": 0.07212892006413398,
+            "equal_group_contribution12_bits_per_target": 0.05719020271862586,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21343,
+            "loss_bits_order0_order1_order2": [
+              50854.13207571697,
+              12032.72484912404,
+              9969.256132954848
+            ],
+            "gain12_bits": 2063.4687161691927,
+            "mean_gain12_bits_per_target": 0.09668128736209496,
+            "pooled_contribution12_bits_per_target": 0.0185278817301559,
+            "equal_group_contribution12_bits_per_target": 0.01929005033952679,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3570559368463686,
+        "group_macro_gain12_bits_per_target": 0.151902048957888,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21343,
+        "units": 90028,
+        "targets": 111371,
+        "loss_bits_order0_order1_order2": [
+          424058.6579517907,
+          254573.22123813513,
+          237437.0099952599
+        ],
+        "pooled_gain01_bits_per_target": 1.5218094181937452,
+        "locus_macro_gain01_bits_per_target": 1.4833889302217385,
+        "pooled_gain12_bits_per_target": 0.1538660085917809,
+        "locus_macro_gain12_bits_per_target": 0.15344755773963126,
+        "unseen_order1_context_targets": 4,
+        "unseen_order2_context_targets": 110,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3570559368463686,
+        "group_macro_gain12_bits_per_target": 0.15190204895788803,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "unit_policy": "ascii_letters",
+      "summary": {
+        "loci": 2485,
+        "tokens": 19799,
+        "units": 107808,
+        "targets": 127607,
+        "loss_bits_order0_order1_order2": [
+          495922.79726591846,
+          264739.40884450375,
+          237194.14278710732
+        ],
+        "pooled_gain01_bits_per_target": 1.8116826539407298,
+        "locus_macro_gain01_bits_per_target": 1.785485379145926,
+        "pooled_gain12_bits_per_target": 0.21586014918771246,
+        "locus_macro_gain12_bits_per_target": 0.21797954003503928,
+        "unseen_order1_context_targets": 1,
+        "unseen_order2_context_targets": 47,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 19799,
+            "loss_bits_order0_order1_order2": [
+              85532.80433908798,
+              62309.02305495291,
+              62342.957194575
+            ],
+            "gain12_bits": -33.93413962208603,
+            "mean_gain12_bits_per_target": -0.0017139319976809955,
+            "pooled_contribution12_bits_per_target": -0.0002659269446196998,
+            "equal_group_contribution12_bits_per_target": -0.0009825721705860049,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 19594,
+            "loss_bits_order0_order1_order2": [
+              78893.52229278049,
+              37459.02392112542,
+              30334.933237000318
+            ],
+            "gain12_bits": 7124.090684125106,
+            "mean_gain12_bits_per_target": 0.36358531612356365,
+            "pooled_contribution12_bits_per_target": 0.055828369008950184,
+            "equal_group_contribution12_bits_per_target": 0.06497805026273439,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 68415,
+            "loss_bits_order0_order1_order2": [
+              278298.16505859804,
+              152323.0712489412,
+              134741.32986092096
+            ],
+            "gain12_bits": 17581.741388020255,
+            "mean_gain12_bits_per_target": 0.2569866460282139,
+            "pooled_contribution12_bits_per_target": 0.13778038342740018,
+            "equal_group_contribution12_bits_per_target": 0.14078539683061056,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 19799,
+            "loss_bits_order0_order1_order2": [
+              53198.305575451945,
+              12648.290619484194,
+              9774.922494611064
+            ],
+            "gain12_bits": 2873.3681248731314,
+            "mean_gain12_bits_per_target": 0.1451269319093455,
+            "pooled_contribution12_bits_per_target": 0.022517323695981657,
+            "equal_group_contribution12_bits_per_target": 0.02245176152779069,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6914360215874136,
+        "group_macro_gain12_bits_per_target": 0.2272326364505496,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 19799,
+        "units": 107808,
+        "targets": 127607,
+        "loss_bits_order0_order1_order2": [
+          495922.79726591846,
+          264739.40884450375,
+          237194.14278710732
+        ],
+        "pooled_gain01_bits_per_target": 1.8116826539407298,
+        "locus_macro_gain01_bits_per_target": 1.785485379145926,
+        "pooled_gain12_bits_per_target": 0.21586014918771246,
+        "locus_macro_gain12_bits_per_target": 0.21797954003503922,
+        "unseen_order1_context_targets": 1,
+        "unseen_order2_context_targets": 47,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6914360215874136,
+        "group_macro_gain12_bits_per_target": 0.2272326364505496,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "unit_policy": "bench_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 19799,
+        "units": 96797,
+        "targets": 116596,
+        "loss_bits_order0_order1_order2": [
+          449943.7757085254,
+          255680.7136810002,
+          235729.99273641052
+        ],
+        "pooled_gain01_bits_per_target": 1.6661211536204088,
+        "locus_macro_gain01_bits_per_target": 1.628574690524754,
+        "pooled_gain12_bits_per_target": 0.1711098231893862,
+        "locus_macro_gain12_bits_per_target": 0.17345483355921767,
+        "unseen_order1_context_targets": 3,
+        "unseen_order2_context_targets": 72,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 19799,
+            "loss_bits_order0_order1_order2": [
+              87595.25745040947,
+              66585.80943655974,
+              66621.58410560829
+            ],
+            "gain12_bits": -35.77466904854582,
+            "mean_gain12_bits_per_target": -0.001806892724306572,
+            "pooled_contribution12_bits_per_target": -0.0003068258692283253,
+            "equal_group_contribution12_bits_per_target": -0.0010998610561642214,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 19588,
+            "loss_bits_order0_order1_order2": [
+              77766.77196458825,
+              45277.716969267596,
+              38228.58803818188
+            ],
+            "gain12_bits": 7049.128931085713,
+            "mean_gain12_bits_per_target": 0.3598697636862218,
+            "pooled_contribution12_bits_per_target": 0.0604577252314463,
+            "equal_group_contribution12_bits_per_target": 0.07345810235392095,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 57410,
+            "loss_bits_order0_order1_order2": [
+              233962.90513254335,
+              132028.94561809822,
+              121537.20751706499
+            ],
+            "gain12_bits": 10491.738101033217,
+            "mean_gain12_bits_per_target": 0.1827510555832297,
+            "pooled_contribution12_bits_per_target": 0.08998368812852257,
+            "equal_group_contribution12_bits_per_target": 0.08705367738704604,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 19799,
+            "loss_bits_order0_order1_order2": [
+              50618.84116098433,
+              11788.241657074648,
+              9342.61307555537
+            ],
+            "gain12_bits": 2445.62858151928,
+            "mean_gain12_bits_per_target": 0.1235228335531734,
+            "pooled_contribution12_bits_per_target": 0.02097523569864558,
+            "equal_group_contribution12_bits_per_target": 0.021412569691971507,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.5127655856004916,
+        "group_macro_gain12_bits_per_target": 0.18082448837677423,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 19799,
+        "units": 96797,
+        "targets": 116596,
+        "loss_bits_order0_order1_order2": [
+          449943.7757085254,
+          255680.7136810002,
+          235729.99273641052
+        ],
+        "pooled_gain01_bits_per_target": 1.6661211536204088,
+        "locus_macro_gain01_bits_per_target": 1.628574690524754,
+        "pooled_gain12_bits_per_target": 0.1711098231893862,
+        "locus_macro_gain12_bits_per_target": 0.17345483355921767,
+        "unseen_order1_context_targets": 3,
+        "unseen_order2_context_targets": 72,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.5127655856004916,
+        "group_macro_gain12_bits_per_target": 0.18082448837677426,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "unit_policy": "bench_and_minim_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 19799,
+        "units": 90028,
+        "targets": 109827,
+        "loss_bits_order0_order1_order2": [
+          420311.55341623805,
+          253341.65787846598,
+          235722.76981506363
+        ],
+        "pooled_gain01_bits_per_target": 1.5202991571997055,
+        "locus_macro_gain01_bits_per_target": 1.4816679903042296,
+        "pooled_gain12_bits_per_target": 0.16042401288756272,
+        "locus_macro_gain12_bits_per_target": 0.1613332924692153,
+        "unseen_order1_context_targets": 4,
+        "unseen_order2_context_targets": 113,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 19799,
+            "loss_bits_order0_order1_order2": [
+              85969.12229307598,
+              66587.36229064675,
+              66621.31648666556
+            ],
+            "gain12_bits": -33.954196018797,
+            "mean_gain12_bits_per_target": -0.0017149449981714734,
+            "pooled_contribution12_bits_per_target": -0.00030916073478103745,
+            "equal_group_contribution12_bits_per_target": -0.0011786789999974432,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 19587,
+            "loss_bits_order0_order1_order2": [
+              77272.05981435205,
+              46103.0856542161,
+              39045.06038002403
+            ],
+            "gain12_bits": 7058.025274192075,
+            "mean_gain12_bits_per_target": 0.36034233288365114,
+            "pooled_contribution12_bits_per_target": 0.06426493734866721,
+            "equal_group_contribution12_bits_per_target": 0.07838708359491228,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 50642,
+            "loss_bits_order0_order1_order2": [
+              208151.0701280354,
+              128774.27994575635,
+              120708.93546529161
+            ],
+            "gain12_bits": 8065.344480464742,
+            "mean_gain12_bits_per_target": 0.15926196596628772,
+            "pooled_contribution12_bits_per_target": 0.07343680953194336,
+            "equal_group_contribution12_bits_per_target": 0.060055225360233125,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 19799,
+            "loss_bits_order0_order1_order2": [
+              48919.30118077461,
+              11876.929987846777,
+              9347.457483082453
+            ],
+            "gain12_bits": 2529.472504764324,
+            "mean_gain12_bits_per_target": 0.12775758900774403,
+            "pooled_contribution12_bits_per_target": 0.023031426741733127,
+            "equal_group_contribution12_bits_per_target": 0.023562988768332672,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3531404225458197,
+        "group_macro_gain12_bits_per_target": 0.16082661872348064,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 19799,
+        "units": 90028,
+        "targets": 109827,
+        "loss_bits_order0_order1_order2": [
+          420311.55341623805,
+          253341.65787846598,
+          235722.76981506363
+        ],
+        "pooled_gain01_bits_per_target": 1.5202991571997055,
+        "locus_macro_gain01_bits_per_target": 1.4816679903042296,
+        "pooled_gain12_bits_per_target": 0.16042401288756272,
+        "locus_macro_gain12_bits_per_target": 0.1613332924692153,
+        "unseen_order1_context_targets": 4,
+        "unseen_order2_context_targets": 113,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3531404225458197,
+        "group_macro_gain12_bits_per_target": 0.16082661872348064,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "unit_policy": "ascii_letters",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 107794,
+        "targets": 128800,
+        "loss_bits_order0_order1_order2": [
+          498787.4681760127,
+          265554.5418554873,
+          237101.48262226023
+        ],
+        "pooled_gain01_bits_per_target": 1.8108146453456941,
+        "locus_macro_gain01_bits_per_target": 1.7862969041495627,
+        "pooled_gain12_bits_per_target": 0.22090884497847085,
+        "locus_macro_gain12_bits_per_target": 0.22225162286674952,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 45,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              90949.98161787842,
+              66946.8304304331,
+              66940.56400657035
+            ],
+            "gain12_bits": 6.266423862749793,
+            "mean_gain12_bits_per_target": 0.00029831590320621696,
+            "pooled_contribution12_bits_per_target": 4.8652359182840007e-05,
+            "equal_group_contribution12_bits_per_target": 1.0331275873053895e-05,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20753,
+            "loss_bits_order0_order1_order2": [
+              83839.1086084076,
+              40366.645483701104,
+              32533.206257321803
+            ],
+            "gain12_bits": 7833.439226379304,
+            "mean_gain12_bits_per_target": 0.37746057082731677,
+            "pooled_contribution12_bits_per_target": 0.06081862753400081,
+            "equal_group_contribution12_bits_per_target": 0.06790455342153569,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 66035,
+            "loss_bits_order0_order1_order2": [
+              269069.2004858205,
+              145790.10594549333,
+              128393.00889055266
+            ],
+            "gain12_bits": 17397.09705494066,
+            "mean_gain12_bits_per_target": 0.2634526698711389,
+            "pooled_contribution12_bits_per_target": 0.1350706293085455,
+            "equal_group_contribution12_bits_per_target": 0.13713083352887942,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              54929.1774639062,
+              12450.959995859741,
+              9234.703467815405
+            ],
+            "gain12_bits": 3216.2565280443364,
+            "mean_gain12_bits_per_target": 0.15311132667068153,
+            "pooled_contribution12_bits_per_target": 0.024970935776741744,
+            "equal_group_contribution12_bits_per_target": 0.02209465238288552,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6898205727980251,
+        "group_macro_gain12_bits_per_target": 0.2271403706091737,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 107794,
+        "targets": 128800,
+        "loss_bits_order0_order1_order2": [
+          498787.4681760127,
+          265554.5418554873,
+          237101.48262226023
+        ],
+        "pooled_gain01_bits_per_target": 1.8108146453456941,
+        "locus_macro_gain01_bits_per_target": 1.7862969041495627,
+        "pooled_gain12_bits_per_target": 0.22090884497847085,
+        "locus_macro_gain12_bits_per_target": 0.22225162286674952,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 45,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6898205727980251,
+        "group_macro_gain12_bits_per_target": 0.2271403706091737,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "unit_policy": "bench_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 96800,
+        "targets": 117806,
+        "loss_bits_order0_order1_order2": [
+          453109.36259355233,
+          256660.2862820618,
+          235838.96333821258
+        ],
+        "pooled_gain01_bits_per_target": 1.6675642693198185,
+        "locus_macro_gain01_bits_per_target": 1.6316146199724118,
+        "pooled_gain12_bits_per_target": 0.17674246595121834,
+        "locus_macro_gain12_bits_per_target": 0.17840045496617,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 77,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              93184.03075714874,
+              71474.1015348071,
+              71469.65940514446
+            ],
+            "gain12_bits": 4.442129662640593,
+            "mean_gain12_bits_per_target": 0.00021146956405982065,
+            "pooled_contribution12_bits_per_target": 3.770715975960981e-05,
+            "equal_group_contribution12_bits_per_target": -9.478038135849431e-06,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20746,
+            "loss_bits_order0_order1_order2": [
+              82640.49911248489,
+              48475.685842072926,
+              40814.832158045574
+            ],
+            "gain12_bits": 7660.853684027349,
+            "mean_gain12_bits_per_target": 0.3692689522812759,
+            "pooled_contribution12_bits_per_target": 0.06502940159268075,
+            "equal_group_contribution12_bits_per_target": 0.07551124209889433,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 55048,
+            "loss_bits_order0_order1_order2": [
+              225060.94952963575,
+              125198.96205590945,
+              114790.30975558747
+            ],
+            "gain12_bits": 10408.652300321986,
+            "mean_gain12_bits_per_target": 0.18908320557190064,
+            "pooled_contribution12_bits_per_target": 0.08835417805818029,
+            "equal_group_contribution12_bits_per_target": 0.08514442726686651,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              52223.883194282964,
+              11511.536849272336,
+              8764.162019435069
+            ],
+            "gain12_bits": 2747.374829837267,
+            "mean_gain12_bits_per_target": 0.13079000427674317,
+            "pooled_contribution12_bits_per_target": 0.023321179140597822,
+            "equal_group_contribution12_bits_per_target": 0.02056308270123218,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.512391796032174,
+        "group_macro_gain12_bits_per_target": 0.18120927402885717,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 96800,
+        "targets": 117806,
+        "loss_bits_order0_order1_order2": [
+          453109.36259355233,
+          256660.2862820618,
+          235838.96333821258
+        ],
+        "pooled_gain01_bits_per_target": 1.6675642693198185,
+        "locus_macro_gain01_bits_per_target": 1.6316146199724118,
+        "pooled_gain12_bits_per_target": 0.17674246595121834,
+        "locus_macro_gain12_bits_per_target": 0.17840045496617002,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 77,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.512391796032174,
+        "group_macro_gain12_bits_per_target": 0.1812092740288572,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "unit_policy": "bench_and_minim_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 90064,
+        "targets": 111070,
+        "loss_bits_order0_order1_order2": [
+          423563.396992748,
+          254398.65221875435,
+          235883.03913086146
+        ],
+        "pooled_gain01_bits_per_target": 1.5230462300710694,
+        "locus_macro_gain01_bits_per_target": 1.4856102899399806,
+        "pooled_gain12_bits_per_target": 0.16670219760414948,
+        "locus_macro_gain12_bits_per_target": 0.16647760775181336,
+        "unseen_order1_context_targets": 2,
+        "unseen_order2_context_targets": 108,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              91495.43102700808,
+              71481.03391008078,
+              71474.83167992206
+            ],
+            "gain12_bits": 6.202230158723639,
+            "mean_gain12_bits_per_target": 0.0002952599332916138,
+            "pooled_contribution12_bits_per_target": 5.5840732499537575e-05,
+            "equal_group_contribution12_bits_per_target": 3.9110147687514185e-05,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20744,
+            "loss_bits_order0_order1_order2": [
+              82380.28519601694,
+              49503.43474236673,
+              41813.222645731854
+            ],
+            "gain12_bits": 7690.212096634873,
+            "mean_gain12_bits_per_target": 0.37071982725775515,
+            "pooled_contribution12_bits_per_target": 0.06923752675461306,
+            "equal_group_contribution12_bits_per_target": 0.08066012311332325,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 48314,
+            "loss_bits_order0_order1_order2": [
+              199239.79821449955,
+              121793.00826867063,
+              113815.98653517071
+            ],
+            "gain12_bits": 7977.021733499915,
+            "mean_gain12_bits_per_target": 0.1651078721178109,
+            "pooled_contribution12_bits_per_target": 0.07181976891599816,
+            "equal_group_contribution12_bits_per_target": 0.057852294153963195,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              50447.882555223456,
+              11621.175297636217,
+              8778.998270036827
+            ],
+            "gain12_bits": 2842.17702759939,
+            "mean_gain12_bits_per_target": 0.13530310518896457,
+            "pooled_contribution12_bits_per_target": 0.025589061201038894,
+            "equal_group_contribution12_bits_per_target": 0.022571273335072518,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3532776983311077,
+        "group_macro_gain12_bits_per_target": 0.16112280075004645,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 90064,
+        "targets": 111070,
+        "loss_bits_order0_order1_order2": [
+          423563.396992748,
+          254398.65221875435,
+          235883.03913086146
+        ],
+        "pooled_gain01_bits_per_target": 1.5230462300710694,
+        "locus_macro_gain01_bits_per_target": 1.4856102899399806,
+        "pooled_gain12_bits_per_target": 0.16670219760414948,
+        "locus_macro_gain12_bits_per_target": 0.16647760775181336,
+        "unseen_order1_context_targets": 2,
+        "unseen_order2_context_targets": 108,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3532776983311077,
+        "group_macro_gain12_bits_per_target": 0.16112280075004645,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "unit_policy": "ascii_letters",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 107794,
+        "targets": 128800,
+        "loss_bits_order0_order1_order2": [
+          498787.4681760127,
+          265554.5418554873,
+          237101.48262226023
+        ],
+        "pooled_gain01_bits_per_target": 1.8108146453456941,
+        "locus_macro_gain01_bits_per_target": 1.7862969041495627,
+        "pooled_gain12_bits_per_target": 0.22090884497847085,
+        "locus_macro_gain12_bits_per_target": 0.22225162286674952,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 45,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              90949.98161787842,
+              66946.8304304331,
+              66940.56400657035
+            ],
+            "gain12_bits": 6.266423862749793,
+            "mean_gain12_bits_per_target": 0.00029831590320621696,
+            "pooled_contribution12_bits_per_target": 4.8652359182840007e-05,
+            "equal_group_contribution12_bits_per_target": 1.0331275873053895e-05,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20753,
+            "loss_bits_order0_order1_order2": [
+              83839.1086084076,
+              40366.645483701104,
+              32533.206257321803
+            ],
+            "gain12_bits": 7833.439226379304,
+            "mean_gain12_bits_per_target": 0.37746057082731677,
+            "pooled_contribution12_bits_per_target": 0.06081862753400081,
+            "equal_group_contribution12_bits_per_target": 0.06790455342153569,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 66035,
+            "loss_bits_order0_order1_order2": [
+              269069.2004858205,
+              145790.10594549333,
+              128393.00889055266
+            ],
+            "gain12_bits": 17397.09705494066,
+            "mean_gain12_bits_per_target": 0.2634526698711389,
+            "pooled_contribution12_bits_per_target": 0.1350706293085455,
+            "equal_group_contribution12_bits_per_target": 0.13713083352887942,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              54929.1774639062,
+              12450.959995859741,
+              9234.703467815405
+            ],
+            "gain12_bits": 3216.2565280443364,
+            "mean_gain12_bits_per_target": 0.15311132667068153,
+            "pooled_contribution12_bits_per_target": 0.024970935776741744,
+            "equal_group_contribution12_bits_per_target": 0.02209465238288552,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6898205727980251,
+        "group_macro_gain12_bits_per_target": 0.2271403706091737,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 107794,
+        "targets": 128800,
+        "loss_bits_order0_order1_order2": [
+          498787.4681760127,
+          265554.5418554873,
+          237101.48262226023
+        ],
+        "pooled_gain01_bits_per_target": 1.8108146453456941,
+        "locus_macro_gain01_bits_per_target": 1.7862969041495627,
+        "pooled_gain12_bits_per_target": 0.22090884497847085,
+        "locus_macro_gain12_bits_per_target": 0.22225162286674952,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 45,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.6898205727980251,
+        "group_macro_gain12_bits_per_target": 0.2271403706091737,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "unit_policy": "bench_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 96800,
+        "targets": 117806,
+        "loss_bits_order0_order1_order2": [
+          453109.36259355233,
+          256660.2862820618,
+          235838.96333821258
+        ],
+        "pooled_gain01_bits_per_target": 1.6675642693198185,
+        "locus_macro_gain01_bits_per_target": 1.6316146199724118,
+        "pooled_gain12_bits_per_target": 0.17674246595121834,
+        "locus_macro_gain12_bits_per_target": 0.17840045496617,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 77,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              93184.03075714874,
+              71474.1015348071,
+              71469.65940514446
+            ],
+            "gain12_bits": 4.442129662640593,
+            "mean_gain12_bits_per_target": 0.00021146956405982065,
+            "pooled_contribution12_bits_per_target": 3.770715975960981e-05,
+            "equal_group_contribution12_bits_per_target": -9.478038135849431e-06,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20746,
+            "loss_bits_order0_order1_order2": [
+              82640.49911248489,
+              48475.685842072926,
+              40814.832158045574
+            ],
+            "gain12_bits": 7660.853684027349,
+            "mean_gain12_bits_per_target": 0.3692689522812759,
+            "pooled_contribution12_bits_per_target": 0.06502940159268075,
+            "equal_group_contribution12_bits_per_target": 0.07551124209889433,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 55048,
+            "loss_bits_order0_order1_order2": [
+              225060.94952963575,
+              125198.96205590945,
+              114790.30975558747
+            ],
+            "gain12_bits": 10408.652300321986,
+            "mean_gain12_bits_per_target": 0.18908320557190064,
+            "pooled_contribution12_bits_per_target": 0.08835417805818029,
+            "equal_group_contribution12_bits_per_target": 0.08514442726686651,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              52223.883194282964,
+              11511.536849272336,
+              8764.162019435069
+            ],
+            "gain12_bits": 2747.374829837267,
+            "mean_gain12_bits_per_target": 0.13079000427674317,
+            "pooled_contribution12_bits_per_target": 0.023321179140597822,
+            "equal_group_contribution12_bits_per_target": 0.02056308270123218,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.512391796032174,
+        "group_macro_gain12_bits_per_target": 0.18120927402885717,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 96800,
+        "targets": 117806,
+        "loss_bits_order0_order1_order2": [
+          453109.36259355233,
+          256660.2862820618,
+          235838.96333821258
+        ],
+        "pooled_gain01_bits_per_target": 1.6675642693198185,
+        "locus_macro_gain01_bits_per_target": 1.6316146199724118,
+        "pooled_gain12_bits_per_target": 0.17674246595121834,
+        "locus_macro_gain12_bits_per_target": 0.17840045496617002,
+        "unseen_order1_context_targets": 0,
+        "unseen_order2_context_targets": 77,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.512391796032174,
+        "group_macro_gain12_bits_per_target": 0.1812092740288572,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "unit_policy": "bench_and_minim_sequences",
+      "summary": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 90064,
+        "targets": 111070,
+        "loss_bits_order0_order1_order2": [
+          423563.396992748,
+          254398.65221875435,
+          235883.03913086146
+        ],
+        "pooled_gain01_bits_per_target": 1.5230462300710694,
+        "locus_macro_gain01_bits_per_target": 1.4856102899399806,
+        "pooled_gain12_bits_per_target": 0.16670219760414948,
+        "locus_macro_gain12_bits_per_target": 0.16647760775181336,
+        "unseen_order1_context_targets": 2,
+        "unseen_order2_context_targets": 108,
+        "roles": [
+          {
+            "role": "initial_unit",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              91495.43102700808,
+              71481.03391008078,
+              71474.83167992206
+            ],
+            "gain12_bits": 6.202230158723639,
+            "mean_gain12_bits_per_target": 0.0002952599332916138,
+            "pooled_contribution12_bits_per_target": 5.5840732499537575e-05,
+            "equal_group_contribution12_bits_per_target": 3.9110147687514185e-05,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "second_unit",
+            "targets": 20744,
+            "loss_bits_order0_order1_order2": [
+              82380.28519601694,
+              49503.43474236673,
+              41813.222645731854
+            ],
+            "gain12_bits": 7690.212096634873,
+            "mean_gain12_bits_per_target": 0.37071982725775515,
+            "pooled_contribution12_bits_per_target": 0.06923752675461306,
+            "equal_group_contribution12_bits_per_target": 0.08066012311332325,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "later_unit",
+            "targets": 48314,
+            "loss_bits_order0_order1_order2": [
+              199239.79821449955,
+              121793.00826867063,
+              113815.98653517071
+            ],
+            "gain12_bits": 7977.021733499915,
+            "mean_gain12_bits_per_target": 0.1651078721178109,
+            "pooled_contribution12_bits_per_target": 0.07181976891599816,
+            "equal_group_contribution12_bits_per_target": 0.057852294153963195,
+            "groups_with_no_role_targets": 0
+          },
+          {
+            "role": "termination",
+            "targets": 21006,
+            "loss_bits_order0_order1_order2": [
+              50447.882555223456,
+              11621.175297636217,
+              8778.998270036827
+            ],
+            "gain12_bits": 2842.17702759939,
+            "mean_gain12_bits_per_target": 0.13530310518896457,
+            "pooled_contribution12_bits_per_target": 0.025589061201038894,
+            "equal_group_contribution12_bits_per_target": 0.022571273335072518,
+            "groups_with_no_role_targets": 0
+          }
+        ],
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3532776983311077,
+        "group_macro_gain12_bits_per_target": 0.16112280075004645,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      },
+      "reference_summary_unchanged": {
+        "loci": 2485,
+        "tokens": 21006,
+        "units": 90064,
+        "targets": 111070,
+        "loss_bits_order0_order1_order2": [
+          423563.396992748,
+          254398.65221875435,
+          235883.03913086146
+        ],
+        "pooled_gain01_bits_per_target": 1.5230462300710694,
+        "locus_macro_gain01_bits_per_target": 1.4856102899399806,
+        "pooled_gain12_bits_per_target": 0.16670219760414948,
+        "locus_macro_gain12_bits_per_target": 0.16647760775181336,
+        "unseen_order1_context_targets": 2,
+        "unseen_order2_context_targets": 108,
+        "groups": 91,
+        "group_macro_gain01_bits_per_target": 1.3532776983311077,
+        "group_macro_gain12_bits_per_target": 0.16112280075004645,
+        "positive_order2_fold_count": 5,
+        "fixed_second_order_preference": true
+      }
+    }
+  ]
+}

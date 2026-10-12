@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "analysis_id": "labelled-iid-wrapping-boundary-cost-v1",
+  "status": "Known synthetic mathematical calibration; no manuscript fit or prospective evidence",
+  "recorded_on": "2026-10-12",
+  "accepted_reference_commit": "4d5baddaf0c9d5b9fd7c323579ceafefe24f03d4",
+  "reference_sha256": {
+    "research/line-wrap/PROTOCOL.md": "894f403e8a786c9ea27017e8eef7db849ad55c0d8ebab53e155de4d03b21c99d",
+    "research/line-wrap/parameters.json": "4e080abdd0478db1a15de688bd8f07f0aa5fe569bb58e008a7e8dc85ed0b1718",
+    "research/line-wrap/RESULTS.md": "86110a82e2edde0412f4e6cd48834fc2c8651f785bb875c1c3ecc0fc0d0f85e4",
+    "scripts/greedy_wrap_control.py": "519f6e138ea93cbc2e22e202ad459a93ef8d8b9ea8e71fe75c0cbd0345e7568f",
+    "research/line-wrap/interior/PROOF.md": "cb3fceb6078ee0f0a9c46f29212d5d547b30a092f8238da3693fa11ef714a399",
+    "research/transliteration/ENDPOINT_EDIT_DISTANCE.md": "34466905dfa02da3fdd2c28f125979873234cac77aaa454d680c5b7591c373df",
+    "scripts/paragraph_endpoint_distance.py": "783420f1dd49cc29c992d7c09994d9f176bbe221660b063584cb95260b3346fe"
+  },
+  "width": "literal Python string length of the fixed nonempty ASCII labels",
+  "separator_width": 1,
+  "finite_stream_tokens": 7,
+  "law": "IID label draws from the exact declared positive probabilities; preserve initial transient",
+  "boundary_inclusion": "Consecutive rows must both be overflow-closed; include all such boundaries; exclude every edge touching the final unclosed tail",
+  "capacity_domain": "capacity >= 2*maximum label width + separator; guarantees at least two tokens in each completed row",
+  "metric": "Unit insertion/deletion/substitution Levenshtein cost divided by maximum nonempty label length; no transposition, case folding or normalization",
+  "incoming_pair_reference": "Independent incoming label draws, including repeated-label pairs",
+  "width_pair_reference": "mu(u,v)=sum p(a|w(a)=u)*p(b|w(b)=v)*d(a,b) over every ordered label pair in the width bins",
+  "estimands": [
+    "pooled boundaries: E[sum cost]/E[boundary count]",
+    "equal eligible streams: E[sum cost/boundary count | boundary count>0]"
+  ],
+  "zero_boundary_handling": "Retain every stream and exact probability; its sum/count remain 0, its mean is null; any zero-denominator case mean/contrast is null",
+  "conditional_prediction": "Exact centered mean against the width-pair reference is zero under both estimands and in every positive-probability eligible complete-width-sequence class",
+  "unconditional_prediction": "No prescribed sign or success criterion; retain every contrast against the incoming-pair reference",
+  "laws": [
+    {
+      "id": "uniform-three",
+      "labels": [
+        "a",
+        "bb",
+        "bc"
+      ],
+      "probabilities": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ]
+    },
+    {
+      "id": "unequal-three",
+      "labels": [
+        "a",
+        "bb",
+        "bc"
+      ],
+      "probabilities": [
+        "1/2",
+        "3/8",
+        "1/8"
+      ]
+    },
+    {
+      "id": "constant-width",
+      "labels": [
+        "bb",
+        "bc"
+      ],
+      "probabilities": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "uniform-three-capacity-5",
+      "law_id": "uniform-three",
+      "capacity": 5
+    },
+    {
+      "id": "uniform-three-capacity-6",
+      "law_id": "uniform-three",
+      "capacity": 6
+    },
+    {
+      "id": "uniform-three-capacity-7",
+      "law_id": "uniform-three",
+      "capacity": 7
+    },
+    {
+      "id": "unequal-three-capacity-5",
+      "law_id": "unequal-three",
+      "capacity": 5
+    },
+    {
+      "id": "unequal-three-capacity-6",
+      "law_id": "unequal-three",
+      "capacity": 6
+    },
+    {
+      "id": "unequal-three-capacity-7",
+      "law_id": "unequal-three",
+      "capacity": 7
+    },
+    {
+      "id": "constant-width-capacity-5",
+      "law_id": "constant-width",
+      "capacity": 5
+    },
+    {
+      "id": "no-closed-pair-capacity-20",
+      "law_id": "uniform-three",
+      "capacity": 20
+    }
+  ],
+  "ledger": "All exact label streams, probabilities, completed-row/tail traces, boundary positions/widths/costs, per-stream sums/means and all case eligibility/denominator ledgers",
+  "exclusions": "No additional stream, boundary, law or capacity filtering; no stationary approximation or random simulation",
+  "publication": "Protocol/settings published and remote head verified before outcome calculations; known-law zero results are calibration, not independently certified preregistration"
+}

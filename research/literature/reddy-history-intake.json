@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "method": "bounded advertised author-history inventory v1",
+  "repository": "sravanareddy/deciphervoynich",
+  "head": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+  "inspected_local_date": "2026-10-12",
+  "producer_sha256": "d636fa7843fb8316d218a630446198f9554783b1766cf1b99bd1191df1554f51",
+  "advertised_branches": [
+    {
+      "name": "master",
+      "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5"
+    }
+  ],
+  "advertised_tags": [],
+  "commits_newest_first": [
+    {
+      "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+      "parents": [
+        "03ed8aa41458c9968767a75576e4df9454345056"
+      ],
+      "tree_sha1": "4e529b53db765deb6c243a38731c947e7ab25e92",
+      "author_date_from_api": "2015-07-30T21:53:10Z",
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "sha": "2f836aacf266b3e7fc17ec2d8a99aa68c904c1b9",
+          "size": 9
+        },
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "sha": "87c00b13275b8a942343da1dbffa999a99075857",
+          "size": 708
+        },
+        {
+          "path": "basic_stats.py",
+          "mode": "100644",
+          "sha": "d78b72f164ca76258fef7eb29001ffad2ec071dd",
+          "size": 2466
+        },
+        {
+          "path": "data/arabic.versed.nov.wds",
+          "mode": "100644",
+          "sha": "87dc7a737de1bafb7e0f5045af885fe37a7b9360",
+          "size": 102008
+        },
+        {
+          "path": "data/pinyin.wds",
+          "mode": "100644",
+          "sha": "e194e09cc401716c1be29f54a3448df94d8ab413",
+          "size": 123476
+        },
+        {
+          "path": "data/sinica.wds",
+          "mode": "100644",
+          "sha": "83f0c9691193eb08a76a17779db4e3d46da13414",
+          "size": 99466
+        },
+        {
+          "path": "data/voy.ann.wds",
+          "mode": "100644",
+          "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "size": 297568
+        },
+        {
+          "path": "data/voy.b.ann.wds",
+          "mode": "100644",
+          "sha": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "size": 133404
+        },
+        {
+          "path": "data/voy.b.paged.wds",
+          "mode": "100644",
+          "sha": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "size": 95465
+        },
+        {
+          "path": "data/voy.paged.wds",
+          "mode": "100644",
+          "sha": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "size": 198521
+        },
+        {
+          "path": "data/wsj.paged.nov.wds",
+          "mode": "100644",
+          "sha": "316038e780368b8cc195ea83741a42ad2e14b2f8",
+          "size": 123864
+        },
+        {
+          "path": "data/wsj.paged.wds",
+          "mode": "100644",
+          "sha": "6fb76100c9c82b07fcffa39074e896c3dccdb486",
+          "size": 178011
+        }
+      ],
+      "named_program_paths": [
+        "basic_stats.py"
+      ]
+    },
+    {
+      "commit": "03ed8aa41458c9968767a75576e4df9454345056",
+      "parents": [
+        "7e446ccf210f161368144ad9329b19fcccb1a55c"
+      ],
+      "tree_sha1": "a1638a0b796eefba08152ef76e56cb30eb3eb384",
+      "author_date_from_api": "2015-07-30T20:09:04Z",
+      "files": [
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "sha": "87c00b13275b8a942343da1dbffa999a99075857",
+          "size": 708
+        },
+        {
+          "path": "basic_stats.py",
+          "mode": "100644",
+          "sha": "0d68aa25c6b155b9f6ac5c43acbd07d04b196036",
+          "size": 668
+        },
+        {
+          "path": "data/arabic.versed.nov.wds",
+          "mode": "100644",
+          "sha": "87dc7a737de1bafb7e0f5045af885fe37a7b9360",
+          "size": 102008
+        },
+        {
+          "path": "data/pinyin.wds",
+          "mode": "100644",
+          "sha": "e194e09cc401716c1be29f54a3448df94d8ab413",
+          "size": 123476
+        },
+        {
+          "path": "data/sinica.wds",
+          "mode": "100644",
+          "sha": "83f0c9691193eb08a76a17779db4e3d46da13414",
+          "size": 99466
+        },
+        {
+          "path": "data/voy.ann.wds",
+          "mode": "100644",
+          "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "size": 297568
+        },
+        {
+          "path": "data/voy.b.ann.wds",
+          "mode": "100644",
+          "sha": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "size": 133404
+        },
+        {
+          "path": "data/voy.b.paged.wds",
+          "mode": "100644",
+          "sha": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "size": 95465
+        },
+        {
+          "path": "data/voy.paged.wds",
+          "mode": "100644",
+          "sha": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "size": 198521
+        },
+        {
+          "path": "data/wsj.paged.nov.wds",
+          "mode": "100644",
+          "sha": "316038e780368b8cc195ea83741a42ad2e14b2f8",
+          "size": 123864
+        },
+        {
+          "path": "data/wsj.paged.wds",
+          "mode": "100644",
+          "sha": "6fb76100c9c82b07fcffa39074e896c3dccdb486",
+          "size": 178011
+        }
+      ],
+      "named_program_paths": [
+        "basic_stats.py"
+      ]
+    },
+    {
+      "commit": "7e446ccf210f161368144ad9329b19fcccb1a55c",
+      "parents": [
+        "e1626855937071d0c69c86ba8677b8359621dfef"
+      ],
+      "tree_sha1": "b5e5f96dd96c901f9d255c0249dd46786966c84e",
+      "author_date_from_api": "2015-07-30T19:41:45Z",
+      "files": [
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "sha": "87c00b13275b8a942343da1dbffa999a99075857",
+          "size": 708
+        },
+        {
+          "path": "data/arabic.versed.nov.wds",
+          "mode": "100644",
+          "sha": "87dc7a737de1bafb7e0f5045af885fe37a7b9360",
+          "size": 102008
+        },
+        {
+          "path": "data/pinyin.wds",
+          "mode": "100644",
+          "sha": "e194e09cc401716c1be29f54a3448df94d8ab413",
+          "size": 123476
+        },
+        {
+          "path": "data/sinica.wds",
+          "mode": "100644",
+          "sha": "83f0c9691193eb08a76a17779db4e3d46da13414",
+          "size": 99466
+        },
+        {
+          "path": "data/voy.ann.wds",
+          "mode": "100644",
+          "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "size": 297568
+        },
+        {
+          "path": "data/voy.b.ann.wds",
+          "mode": "100644",
+          "sha": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "size": 133404
+        },
+        {
+          "path": "data/voy.b.paged.wds",
+          "mode": "100644",
+          "sha": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "size": 95465
+        },
+        {
+          "path": "data/voy.paged.wds",
+          "mode": "100644",
+          "sha": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "size": 198521
+        },
+        {
+          "path": "data/wsj.paged.nov.wds",
+          "mode": "100644",
+          "sha": "316038e780368b8cc195ea83741a42ad2e14b2f8",
+          "size": 123864
+        },
+        {
+          "path": "data/wsj.paged.wds",
+          "mode": "100644",
+          "sha": "6fb76100c9c82b07fcffa39074e896c3dccdb486",
+          "size": 178011
+        }
+      ],
+      "named_program_paths": []
+    },
+    {
+      "commit": "e1626855937071d0c69c86ba8677b8359621dfef",
+      "parents": [
+        "45cc018f464aaba643546cc57218f0a2f2420587"
+      ],
+      "tree_sha1": "542e2ee767f7386710118e541d4332c4bd43d70b",
+      "author_date_from_api": "2015-07-30T19:22:00Z",
+      "files": [
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "sha": "0799b91267121554d1f7881c5e338ee9acfc52fe",
+          "size": 423
+        },
+        {
+          "path": "data/pinyin.wds",
+          "mode": "100644",
+          "sha": "e194e09cc401716c1be29f54a3448df94d8ab413",
+          "size": 123476
+        },
+        {
+          "path": "data/sinica.wds",
+          "mode": "100644",
+          "sha": "83f0c9691193eb08a76a17779db4e3d46da13414",
+          "size": 99466
+        },
+        {
+          "path": "data/voy.ann.wds",
+          "mode": "100644",
+          "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "size": 297568
+        },
+        {
+          "path": "data/voy.b.ann.wds",
+          "mode": "100644",
+          "sha": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "size": 133404
+        },
+        {
+          "path": "data/voy.b.paged.wds",
+          "mode": "100644",
+          "sha": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "size": 95465
+        },
+        {
+          "path": "data/voy.paged.wds",
+          "mode": "100644",
+          "sha": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "size": 198521
+        }
+      ],
+      "named_program_paths": []
+    },
+    {
+      "commit": "45cc018f464aaba643546cc57218f0a2f2420587",
+      "parents": [
+        "d483622bad14040b9f8ebc68463dfb8c0274a1ea"
+      ],
+      "tree_sha1": "a98b324c756dd92d44b4519955e7f65029f45673",
+      "author_date_from_api": "2015-07-30T18:51:26Z",
+      "files": [
+        {
+          "path": "data/voy.ann.wds",
+          "mode": "100644",
+          "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "size": 297568
+        },
+        {
+          "path": "data/voy.b.ann.wds",
+          "mode": "100644",
+          "sha": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "size": 133404
+        },
+        {
+          "path": "data/voy.b.paged.wds",
+          "mode": "100644",
+          "sha": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "size": 95465
+        },
+        {
+          "path": "data/voy.paged.wds",
+          "mode": "100644",
+          "sha": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "size": 198521
+        }
+      ],
+      "named_program_paths": []
+    },
+    {
+      "commit": "d483622bad14040b9f8ebc68463dfb8c0274a1ea",
+      "parents": [],
+      "tree_sha1": "70c87c02194f1341fe1334b2af1bf1b1072ec82a",
+      "author_date_from_api": "2015-07-30T18:43:41Z",
+      "files": [
+        {
+          "path": "data/voy.ann.wds",
+          "mode": "100644",
+          "sha": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "size": 297568
+        }
+      ],
+      "named_program_paths": []
+    }
+  ],
+  "program_versions": [
+    {
+      "git_blob_sha1": "0d68aa25c6b155b9f6ac5c43acbd07d04b196036",
+      "bytes": 668,
+      "sha256": "a18f815627e25ef45c8195d1b99d10bec9b1190fc66bfeeb69bc6b12a2ddb151",
+      "definitions": [
+        {
+          "name": "count_wordlengths",
+          "line": 5,
+          "arguments": [
+            "filename"
+          ]
+        }
+      ],
+      "imports": [
+        "__future__.division",
+        "codecs",
+        "collections.Counter"
+      ],
+      "literal_native_paths": []
+    },
+    {
+      "git_blob_sha1": "d78b72f164ca76258fef7eb29001ffad2ec071dd",
+      "bytes": 2466,
+      "sha256": "12102b9c290838ebe0c60580f62cb449759cb71d13949dbcf5c23c82d1aa4ccc",
+      "definitions": [
+        {
+          "name": "log2",
+          "line": 7,
+          "arguments": [
+            "n"
+          ]
+        },
+        {
+          "name": "build_unigrams",
+          "line": 10,
+          "arguments": [
+            "wordlist"
+          ]
+        },
+        {
+          "name": "entropy",
+          "line": 16,
+          "arguments": [
+            "dist"
+          ]
+        },
+        {
+          "name": "CorpusStats.__init__",
+          "line": 20,
+          "arguments": [
+            "self",
+            "rawtext"
+          ]
+        },
+        {
+          "name": "CorpusStats.count_wordlengths",
+          "line": 29,
+          "arguments": [
+            "self"
+          ]
+        },
+        {
+          "name": "CorpusStats.compute_unigram_entropy",
+          "line": 42,
+          "arguments": [
+            "self"
+          ]
+        },
+        {
+          "name": "CorpusStats.get_bestsub",
+          "line": 46,
+          "arguments": [
+            "self"
+          ]
+        }
+      ],
+      "imports": [
+        "__future__.division",
+        "codecs",
+        "collections.Counter",
+        "collections.defaultdict",
+        "math.log",
+        "string"
+      ],
+      "literal_native_paths": [
+        "data/voy.b.paged.wds"
+      ]
+    }
+  ],
+  "native_input_blob_history": [
+    {
+      "path": "data/voy.ann.wds",
+      "first_commit_in_chain": "d483622bad14040b9f8ebc68463dfb8c0274a1ea",
+      "occurrences": [
+        {
+          "commit": "d483622bad14040b9f8ebc68463dfb8c0274a1ea",
+          "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "bytes": 297568
+        },
+        {
+          "commit": "45cc018f464aaba643546cc57218f0a2f2420587",
+          "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "bytes": 297568
+        },
+        {
+          "commit": "e1626855937071d0c69c86ba8677b8359621dfef",
+          "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "bytes": 297568
+        },
+        {
+          "commit": "7e446ccf210f161368144ad9329b19fcccb1a55c",
+          "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "bytes": 297568
+        },
+        {
+          "commit": "03ed8aa41458c9968767a75576e4df9454345056",
+          "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "bytes": 297568
+        },
+        {
+          "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+          "git_blob_sha1": "ecedcea5313a9d8d554ac1654654d5d2a98e6942",
+          "bytes": 297568
+        }
+      ],
+      "distinct_blob_identities": [
+        "ecedcea5313a9d8d554ac1654654d5d2a98e6942"
+      ]
+    },
+    {
+      "path": "data/voy.b.ann.wds",
+      "first_commit_in_chain": "45cc018f464aaba643546cc57218f0a2f2420587",
+      "occurrences": [
+        {
+          "commit": "45cc018f464aaba643546cc57218f0a2f2420587",
+          "git_blob_sha1": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "bytes": 133404
+        },
+        {
+          "commit": "e1626855937071d0c69c86ba8677b8359621dfef",
+          "git_blob_sha1": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "bytes": 133404
+        },
+        {
+          "commit": "7e446ccf210f161368144ad9329b19fcccb1a55c",
+          "git_blob_sha1": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "bytes": 133404
+        },
+        {
+          "commit": "03ed8aa41458c9968767a75576e4df9454345056",
+          "git_blob_sha1": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "bytes": 133404
+        },
+        {
+          "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+          "git_blob_sha1": "f2e37791d5e2acc46bcd6497bda73a0d0bda402e",
+          "bytes": 133404
+        }
+      ],
+      "distinct_blob_identities": [
+        "f2e37791d5e2acc46bcd6497bda73a0d0bda402e"
+      ]
+    },
+    {
+      "path": "data/voy.b.paged.wds",
+      "first_commit_in_chain": "45cc018f464aaba643546cc57218f0a2f2420587",
+      "occurrences": [
+        {
+          "commit": "45cc018f464aaba643546cc57218f0a2f2420587",
+          "git_blob_sha1": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "bytes": 95465
+        },
+        {
+          "commit": "e1626855937071d0c69c86ba8677b8359621dfef",
+          "git_blob_sha1": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "bytes": 95465
+        },
+        {
+          "commit": "7e446ccf210f161368144ad9329b19fcccb1a55c",
+          "git_blob_sha1": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "bytes": 95465
+        },
+        {
+          "commit": "03ed8aa41458c9968767a75576e4df9454345056",
+          "git_blob_sha1": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "bytes": 95465
+        },
+        {
+          "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+          "git_blob_sha1": "9be41bea2b7268195be0d8096551bf67bd52510a",
+          "bytes": 95465
+        }
+      ],
+      "distinct_blob_identities": [
+        "9be41bea2b7268195be0d8096551bf67bd52510a"
+      ]
+    },
+    {
+      "path": "data/voy.paged.wds",
+      "first_commit_in_chain": "45cc018f464aaba643546cc57218f0a2f2420587",
+      "occurrences": [
+        {
+          "commit": "45cc018f464aaba643546cc57218f0a2f2420587",
+          "git_blob_sha1": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "bytes": 198521
+        },
+        {
+          "commit": "e1626855937071d0c69c86ba8677b8359621dfef",
+          "git_blob_sha1": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "bytes": 198521
+        },
+        {
+          "commit": "7e446ccf210f161368144ad9329b19fcccb1a55c",
+          "git_blob_sha1": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "bytes": 198521
+        },
+        {
+          "commit": "03ed8aa41458c9968767a75576e4df9454345056",
+          "git_blob_sha1": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "bytes": 198521
+        },
+        {
+          "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+          "git_blob_sha1": "322147a5940795d8e70f7d27faf4f26a1aa2e8d6",
+          "bytes": 198521
+        }
+      ],
+      "distinct_blob_identities": [
+        "322147a5940795d8e70f7d27faf4f26a1aa2e8d6"
+      ]
+    }
+  ],
+  "api_capture_receipts": [
+    {
+      "local_capture_name": "commits.json",
+      "bytes": 8615,
+      "sha256": "777b50bcc1e56cf8c684f51ad5cd6c57f45b39f59178f3524c76a73976a1fb2d"
+    },
+    {
+      "local_capture_name": "branches.json",
+      "bytes": 214,
+      "sha256": "d2ebac5066126b722abac1e5026f0d01df1fccd0499cf7de490dbf0658fe567c"
+    },
+    {
+      "local_capture_name": "tags.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "local_capture_name": "643b881b2937bae8193814d8ff5d6e99a48bf7c5.tree.json",
+      "bytes": 3259,
+      "sha256": "38a01b32d5222ccdc8a56f829a401d8d3f061a18a65ff90565d0b057863f1ef2"
+    },
+    {
+      "local_capture_name": "03ed8aa41458c9968767a75576e4df9454345056.tree.json",
+      "bytes": 3031,
+      "sha256": "7de22f1068aa98d686f6f696e38d560d22df661b74854e15c87afddabb0f47f4"
+    },
+    {
+      "local_capture_name": "7e446ccf210f161368144ad9329b19fcccb1a55c.tree.json",
+      "bytes": 2798,
+      "sha256": "882584f049210c9ca84b4c5ccad7008adfe337c9f071eb0f03767c85f1420736"
+    },
+    {
+      "local_capture_name": "e1626855937071d0c69c86ba8677b8359621dfef.tree.json",
+      "bytes": 2066,
+      "sha256": "59a34dc5c0e8b872c041b85548837ee331bcb9e8fb441b5a402ccfaa2a1bf62c"
+    },
+    {
+      "local_capture_name": "45cc018f464aaba643546cc57218f0a2f2420587.tree.json",
+      "bytes": 1365,
+      "sha256": "d06dd7b532aadab37cef56b6712a38137bf660c0bb4f24b10a4efaafd0c51d3a"
+    },
+    {
+      "local_capture_name": "d483622bad14040b9f8ebc68463dfb8c0274a1ea.tree.json",
+      "bytes": 644,
+      "sha256": "e9f7fb59e4229976f8f95a0a1459cdcb95b506c9ee16be7814b0763c9a0a044a"
+    }
+  ],
+  "scope": "six reachable commits from the advertised master head; two statically inspected Python blobs; no author execution or comparator payload retrieval; no deleted/unreachable refs, forks or other archives searched"
+}
