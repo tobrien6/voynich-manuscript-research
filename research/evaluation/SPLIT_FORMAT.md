@@ -10,6 +10,21 @@ not choose real held-out folios or certify that any manuscript material is
 unseen. Transcription selection and the folio/image crosswalk are separate
 inputs. Preserve their versioned identifiers and unresolved mappings.
 
+The CLI rejects repeated object member names at every depth, even when their
+values agree or their names use different JSON escapes. A record containing
+both `"state": "unknown"` and `"state": "none_reported"` must not pass a
+freeze check by silently keeping only the latter declaration. This failure
+was reproduced on a synthetic record; no actual manuscript split was changed.
+The loader also rejects literal `NaN`, `Infinity`, and `-Infinity`, which are
+outside JSON's numeric grammar. [RFC 8259 sections 4 and 6](https://www.rfc-editor.org/rfc/rfc8259)
+describe the object-name interoperability problem and numeric grammar.
+
+Python callers reading serialized records should use
+`load_split_json(text)` before `validate(...)`. The dictionary validation API
+cannot recover duplicate declarations discarded by another decoder. These
+parsing checks preserve unambiguous declarations; they do not independently
+verify exposure, mappings, source identity, or pre-fit Git history.
+
 ## Records
 
 `schema_version` is `1`. Required top-level fields:
