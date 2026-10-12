@@ -34,7 +34,7 @@ extended codes, unsupported annotation, or invalid boundary structure. Free
 comments, recognized text tags, paragraph markers, and file-layout whitespace
 are handled by the adapter's documented rules, not counted as encoded letters.
 
-Restrict both editions to **P0/P1** loci and **@, +, or *** locators, with at
+Restrict both editions to **P0/P1** loci and `@`, `+`, or `*` locators, with at
 least two tokens under **every** edition/policy combination. Use the exact
 intersection of those eligible locus keys. Publish the included keys and each
 source/policy's excluded keys and reasons. This fixed-cohort rule prevents a
