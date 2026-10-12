@@ -120,8 +120,9 @@ interval, row hash, group count, trace event, configuration/log/output fingerpri
 all 992 exact profiles, all 744 original-relative seed differences and 248
 interaction values, plus both prediction differences and summaries. Source
 pins, 175 copied Java files, 235 class files and five build-log fingerprints
-were checked separately. All 642 tests pass on the recorded branch: 633 standard
-tests, including seven new focused tests, plus nine script tests.
+were checked separately. All 673 tests pass after accepted-main integration:
+664 standard tests, including seven new focused tests, plus nine script tests.
+The frozen helpers, producer and complete numerical result remain byte-identical.
 
 ## Reproduction and interpretation limits
 
