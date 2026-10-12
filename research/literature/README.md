@@ -12,6 +12,11 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
+Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
+attachments yielded no separate processed corpus or analysis implementation;
+that observation is limited to the inspected artifact.
+
 The separate [self-citation implementation audit](COPYING_MECHANISM.md), with
 [source fingerprints and observations](copying-mechanism.json), adds L004 and
 an explicit comparison contract for a published copying mechanism. It separates
