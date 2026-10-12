@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "research/folio-aliases/decisions.json": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8",
+    "research/image-index/MULTISPECTRAL_INTAKE_PLAN.md": "0fe9f143907dbcaeb00d8490cf2a408cd568ee39e4f40b8edd2c5f4806975aa3",
+    "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/image-index/multispectral-intake.json": "d3414bca64c2b71378cda05402b6a8271c99c2e993d3ccdacecd083e05c917e0",
+    "scripts/check_msi_intake.py": "d4d6efb124c7ecf3cc4327906326419c8c010b906eaf4c27c1ad84ae7a823bdf",
+    "scripts/verify_boundary_repeat_image.py": "665be6a8a45c749b92ffec6450232fac3952515dbec11d86ab2ba7269f945874"
+  },
+  "parent_commit": "ee961733dffbeb98893407114634ed82816a81bc",
+  "parent_pr": 163,
+  "parent_status_at_creation": "pending review",
+  "schema_version": 1,
+  "viewer_id": "local-msi-coordinate-comparison-v1"
+}
