@@ -34,6 +34,9 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [fixed B tail-control block](TYPE_TAILS.md) retains 1,000 additional controls
+per variant, both inclusive tail definitions and distinct frequency/rank scores,
+with the original controls and exposure/randomization limits explicit.
 The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
 global/record-conditioned ratio with A/B units kept separate, and preserves
 the opposing within-record/joining A residuals without new sampling or tails.
