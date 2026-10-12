@@ -72,6 +72,12 @@ The [catalog-section prefix analysis](research/transliteration/SECTION_STRATA.md
 
 The [y-layout-prefix v1 lookup diagnostic](research/hypotheses/y-layout-prefix-v1/RESULTS.md) tests a removal rule and decision criterion committed before dictionary construction. On 15 common diagnostic page-family units, deleting leading literal EVA y improves first-slot matches to a development-only internal vocabulary more than other-slot matches across all eight source/uncertainty treatments. The prediction survives its fixed criterion, with all counts, losses, exclusions, and hashes in the [report](research/hypotheses/y-layout-prefix-v1/results.json). Full-corpus results already helped develop this candidate, so its dictionary partition is not a valid held-out evaluation or the original pilot split. Glyph meaning, a causal layout-marker role, language, and translation remain unresolved.
 
+The [fixed y-lookup image-pair pilot](research/hypotheses/y-lookup-image-v1/RESULTS.md)
+traces two source-stable positive removal gains to their selected target and
+development-reference regions. Nonblind AI inspection describes broad visible
+correspondence with uncertain boundaries; both alignments remain provisional,
+no source correction is applied, and no glyph function or translation is inferred.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
