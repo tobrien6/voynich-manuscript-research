@@ -1,0 +1,70 @@
+{
+  "figure_version": 1,
+  "input_profile_sha256": "1f6eec5fabe5e3a1a190170e48925ef600abb012e786f3337cb70255becab4be",
+  "exports": [
+    "ZL3b",
+    "IT2a",
+    "GC2a",
+    "RF1b-full",
+    "RF1b-basic"
+  ],
+  "annotation_fields": [
+    "uncertain_space_comma",
+    "alternative_group",
+    "paragraph_start",
+    "ligature_group",
+    "high_ascii_escape"
+  ],
+  "printed_counts": [
+    [
+      2748,
+      817,
+      740,
+      446,
+      178
+    ],
+    [
+      0,
+      0,
+      772,
+      0,
+      0
+    ],
+    [
+      2459,
+      0,
+      775,
+      0,
+      341
+    ],
+    [
+      677,
+      0,
+      0,
+      759,
+      4125
+    ],
+    [
+      677,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "color_transform": "log10(count + 1)",
+  "python": "3.14.3",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "source_sha256": {
+    "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "IT2a": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+    "GC2a": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+    "RF1b-full": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+    "RF1b-basic": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2"
+  },
+  "output_sha256": {
+    ".png": "422d85621a64919e5c3d7be739eecf6b389d30c05c89b996d9ac0a0cc09446a7",
+    ".svg": "71a37ebf9c94cb442a190584ee339f5f2c2a40944ff5388c6c27d9fa0098916b"
+  }
+}
