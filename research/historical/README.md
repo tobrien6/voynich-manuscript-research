@@ -37,6 +37,9 @@ contrast, without a causal explanation or significance claim.
 The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
 global/record-conditioned ratio with A/B units kept separate, and preserves
 the opposing within-record/joining A residuals without new sampling or tails.
+The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
+path and global type deduplication, with signed type covariance, all four
+outcomes and descriptive SD scaling without a calibrated tail.
 
 ## Method
 
