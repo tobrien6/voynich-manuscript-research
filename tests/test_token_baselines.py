@@ -1,4 +1,4 @@
-from itertools import permutations
+from itertools import permutations, product
 import unittest
 from unittest.mock import patch
 
@@ -66,6 +66,21 @@ class TokenPolicyTests(unittest.TestCase):
                      '{a{b}}', 'a<!unclosed', '[a.b:ab]', '[x:@999;]']:
             with self.subTest(text=text), self.assertRaises(ValueError):
                 tokenize(text, 'split')
+
+    def test_joining_uncertain_spaces_does_not_repair_invalid_boundaries(self):
+        separators = ('.', ',', '<->', '<~>')
+        invalid = [separator + 'a' for separator in separators]
+        invalid += ['a' + separator for separator in separators]
+        invalid += ['a' + left + right + 'b' for left, right in product(separators, repeat=2)]
+        invalid += ['a, <!comment> .b', '<%>,a', 'a,<$>', 'a,<@H=2>b,']
+        for text, policy in product(invalid, ('split', 'join')):
+            with self.subTest(text=text, policy=policy), self.assertRaises(ValueError):
+                tokenize(text, policy)
+
+    def test_valid_uncertain_gaps_survive_comments_and_layout_under_both_policies(self):
+        text = '<%>a <! , . > , b . c<@H=2><$>'
+        self.assertEqual([token.value for token in tokenize(text, 'split')], ['a', 'b', 'c'])
+        self.assertEqual([token.value for token in tokenize(text, 'join')], ['ab', 'c'])
 
 
 if __name__ == '__main__':
