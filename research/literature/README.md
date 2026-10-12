@@ -12,11 +12,22 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
+Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
+attachments yielded no separate processed corpus or analysis implementation;
+that observation is limited to the inspected artifact.
+
 The separate [self-citation implementation audit](COPYING_MECHANISM.md), with
 [source fingerprints and observations](copying-mechanism.json), adds L004 and
 an explicit comparison contract for a published copying mechanism. It separates
 the paper's abstract claims from inspected release code, configuration, and a
 supplied output artifact; no generator execution or mechanism test is reported.
+
+A separate [source-build repeatability experiment](SELF_CITATION_REPLAY.md)
+now records six executions on one Java runtime. Every within-case repeat is
+byte-identical, and both 1,200-line runs exactly reproduce the supplied release
+output. This tests software reproducibility; manuscript mechanism comparisons,
+packaged-binary provenance, and paper-result replication remain separate.
 
 ## Three comparisons that need care
 
@@ -63,6 +74,11 @@ line. Neither result can be relabeled as a published whole-text statistic by
 changing its display label.
 
 ## Minimum plan for a later replication
+
+The [additional Java 17 source replay and row ledger](SELF_CITATION_JAVA17.md)
+add a second observed runtime result and explicit initialization denominators to
+the copying-mechanism work. The release bytes match the Java 22 receipt in PR #88;
+this remains software evidence, with no manuscript mechanism or translation test.
 
 The [fixed generator prefix diagnostic](SELF_CITATION_PREFIX_PROFILE.md)
 compares a source-informed model profile with an explicitly exposed B cohort.
