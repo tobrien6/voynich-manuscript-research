@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "scope": "Selective source-method register; no corpus replication or decipherment",
+  "inspected_on": "2026-10-11",
+  "inspection_timezone": "America/New_York",
+  "hash_scope": "Downloaded publication artifacts, not the authors' corpus bytes",
+  "papers": [
+    {
+      "id": "L001",
+      "title": "What We Know About The Voynich Manuscript",
+      "authors": ["Sravana Reddy", "Kevin Knight"],
+      "published": "2011-06",
+      "venue": "Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities",
+      "pages": "78-86",
+      "url": "https://aclanthology.org/W11-1511/",
+      "artifacts": [
+        {
+          "kind": "article_pdf",
+          "url": "https://aclanthology.org/W11-1511.pdf",
+          "sha256": "842e285c544bffefc1eefa58704cbde6a5e93f0706542dc6a67d374f2c7da599"
+        }
+      ],
+      "reported_input": {
+        "alphabet": "Currier",
+        "selection": "D'Imperio and others; Gillogly/Reeds machine-readable text",
+        "source_url": "http://www.voynich.net/reeds/gillogly/voynich.now",
+        "experimental_subset": "VMS B: Biological and Stars sections, unless otherwise specified",
+        "reported_subset_counts": {"pages": 43, "types": 3920, "tokens": 17597},
+        "locator": "Sections 2.2-2.3, pp. 79-80"
+      },
+      "reported_methods": [
+        {
+          "statistic": "Letter prediction accuracy, unigram and preceding-letter models",
+          "unit": "Correct predictions / letters in held-out word types; percent",
+          "control": "10-fold cross-validation over word types",
+          "locator": "Section 4.2 and Table 2, p. 81"
+        },
+        {
+          "statistic": "Topic strength 1 - T/T_rand, where T averages within-page word entropy",
+          "unit": "Words within pages; final ratio dimensionless",
+          "control": "Globally scramble words, then repaginate to original page lengths",
+          "locator": "Section 6.1, pp. 83-84"
+        }
+      ],
+      "unresolved_for_replication": [
+        "Exact historical input bytes and preprocessing are not recovered here",
+        "Do not equate this historical Currier source with current GC2a"
+      ],
+      "replication_status": "methods_only"
+    },
+    {
+      "id": "L002",
+      "title": "Keywords and Co-Occurrence Patterns in the Voynich Manuscript: An Information-Theoretic Analysis",
+      "authors": ["Marcelo A. Montemurro", "Damián H. Zanette"],
+      "published": "2013-06-21",
+      "venue": "PLOS ONE 8(6), e66344",
+      "url": "https://doi.org/10.1371/journal.pone.0066344",
+      "artifacts": [
+        {
+          "kind": "article_pdf",
+          "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0066344&type=printable",
+          "sha256": "dd37cc94ffea0e8e21127b0272cc3b138995b196ea69972ef1583e43044b63fc"
+        }
+      ],
+      "reported_input": {
+        "alphabet": "EVA",
+        "source_url": "http://www.ic.unicamp.br/~stolfi/voynich/98-12-28-interln16e6/",
+        "ordering": "Aggregate thematic sections contiguously, preserving relative within-section and overall section order",
+        "locator": "Materials and Methods: Electronic Versions, p. 5; Ordering and Reordering, p. 6"
+      },
+      "reported_methods": [
+        {
+          "statistic": "Word-location mutual information minus expected shuffled information",
+          "unit": "Word occurrences over contiguous text partitions; base-2 logarithms",
+          "control": "Global word-position shuffle preserving frequencies; expected entropy computed analytically",
+          "locator": "Information in the Distribution of Words, pp. 6-7, equations 1-3"
+        },
+        {
+          "statistic": "Cosine similarity of partition-frequency vectors",
+          "unit": "Pairs of word vectors",
+          "control": "Independently shuffle partition indices within each vector",
+          "locator": "Word-space Similarity Analysis, p. 7"
+        }
+      ],
+      "unresolved_for_replication": [
+        "Exact archive selection, parsing, processed bytes, and ordering manifest are not recovered here",
+        "Current EVA edition names alone cannot establish the historical input"
+      ],
+      "replication_status": "methods_only"
+    },
+    {
+      "id": "L003",
+      "title": "Probing the Statistical Properties of Unknown Texts: Application to the Voynich Manuscript",
+      "authors": ["Diego R. Amancio", "Eduardo G. Altmann", "Diego Rybski", "Osvaldo N. Oliveira Jr.", "Luciano da F. Costa"],
+      "published": "2013-07-02",
+      "venue": "PLOS ONE 8(7), e67310",
+      "url": "https://doi.org/10.1371/journal.pone.0067310",
+      "artifacts": [
+        {
+          "kind": "article_pdf",
+          "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0067310&type=printable",
+          "sha256": "03df749be24fe39e84714a02818c791bef53a7e34a1885ee99d369f98e563fc4"
+        },
+        {
+          "kind": "supporting_information_s1_tex",
+          "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0067310.s007&type=supplementary",
+          "sha256": "e8aa06273f81224de693d90189dee9a4e9bc4713722b4e22866d2abe0ebc29fc"
+        }
+      ],
+      "reported_input": {
+        "selection": "Takahashi H in TEXT16E6.EVT from text16e6.zip (December 1998 interlinear)",
+        "source_url": "http://www.ic.unicamp.br/~stolfi/voynich/98-12-28-interln16e6/",
+        "authors_accessed": "2010-10-22",
+        "reported_tokens": 37762,
+        "parsing": "Manual exclusions listed in supplement; comma/period/hyphen/equal separators become spaces; fillers, selected labels, special characters and comments removed; unreadable asterisks remain",
+        "locator": "Supporting Information S1: The Database; Transcription of the Voynich Manuscript and parsing"
+      },
+      "reported_methods": [
+        {
+          "statistic": "B: distinct types with at least one immediate identical-token pair",
+          "unit": "Types, not pair events",
+          "control": "Divide measurement by mean over 10 whole-text word shuffles preserving frequencies",
+          "locator": "Materials and Methods, pp. 7 and 9, equations 7-8"
+        }
+      ],
+      "unresolved_for_replication": [
+        "Exact original and parsed bytes, boundary handling, and shuffle implementation are not recovered here",
+        "The supplement's manual exclusions must be implemented and audited"
+      ],
+      "replication_status": "methods_only"
+    }
+  ]
+}
