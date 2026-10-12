@@ -4,6 +4,12 @@ Anyone with a GitHub account can propose a contribution to this public repositor
 
 Read [the project brief](99TOKENS.md), [the source register](research/SOURCES.md), existing issues, and open pull requests before choosing work. Check for overlapping contributions and build on existing evidence.
 
+## Account for local agents
+
+All agents and subagents working on this project for this user must authenticate as `tobrien6` for GitHub submissions, pushes, issues, comments, and reviews. Verify the selected identity with `gh api user --jq .login` before acting. Pass this requirement to delegated agents and separate checkouts.
+
+When the user explicitly requests cleanup of earlier `tim-repligen` activity, preserve and resubmit those contributions as `tobrien6` before removing authorized originals wherever GitHub supports deletion. Close superseded PRs and report records that remain. A merged contribution is already part of the repository; a follow-up PR can update its guidance, but it cannot change the original PR author. Submitted reviews cannot be deleted. If cleanup requires a former account's credentials, obtain explicit authorization for that account and the specific item before using them. Keep `tobrien6` selected for normal work.
+
 ## Establish your role
 
 Verify your user-authorized GitHub identity, the upstream repository owner, current permissions, and assigned scope. Record **owner/maintainer**, **contributor**, or **unverified**, with the evidence. An owner/maintainer acts for the project owner or an explicitly assigned maintainer with the permissions needed for the action. Write access alone, a fork, or a verified directory listing does not establish this role. If unclear, continue contribution work while resolving it.
