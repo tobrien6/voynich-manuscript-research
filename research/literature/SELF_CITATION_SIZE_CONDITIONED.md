@@ -22,7 +22,7 @@ All 31 Java 17 seeds 1–31, original control/observed outputs, configurations,
 process/log/ledger identities, initialization exclusions and parent eligibility
 are unchanged. No new Java processes, permutation draws, parameters, seed
 replacement or grouping policies were used. Complete parent report replay
-preceded new measurement. Its SHA-256 is
+preceded new measurement. The original parent SHA-256 is
 `f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d`.
 The separate Java 22 census and changed-rule ablations are separate experiments.
 
@@ -146,15 +146,15 @@ The plan was pushed and remote-verified at
 `75c462c4e52866c05fde302934b85b2bfffa8476`. The synthetic-tested producer and
 four-entry [manifest](self-citation-size-pins.json) were pushed and remote-verified
 at `8c9e3d7186d16ce600137ed779a491e2e7f489aa` **before** new conditional measurements.
-The manifest pins the complete parent report/producer/manifest and new plan;
+The original manifest pins the first parent report/producer/manifest and plan;
 all 22 parent source/helper/artifact pins are also checked. The producer
 reconstructs the parent report completely and validates every archived run
 before measuring exact-size cells. Output aliases are rejected before calculation
 and final exclusive writing; existing destinations are refused.
 
-- Frozen producer SHA-256: `91ce99488c38d53afa27302103bb698c2d87020e51a3d805186f2eaa1f12f801`.
-- Manifest SHA-256: `65c9d900f34172c98a5ff38b780fc2612a7fed9c5412a91634859f4d3976e275`.
-- Complete report SHA-256: `df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61`.
+- Original pre-amendment producer SHA-256: `91ce99488c38d53afa27302103bb698c2d87020e51a3d805186f2eaa1f12f801`.
+- Original pre-amendment manifest SHA-256: `65c9d900f34172c98a5ff38b780fc2612a7fed9c5412a91634859f4d3976e275`.
+- First complete report SHA-256: `df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61`.
 
 Before measurement, **95** relevant tests passed, including **14** new producer
 regressions. They verify original-size conditioning under all policies, exact
@@ -175,6 +175,42 @@ packet reader remains its source ingestion dependency. Three additional checker
 tests give **98** passing relevant tests. Complete producer replay from the
 second archived 31-run dataset matched every saved field, including diagnostics,
 missing-support records and provenance. Producer/report bytes stayed unchanged.
+
+## Accepted parent maintenance and exact preservation
+
+[Amendment 1](SELF_CITATION_SIZE_AMENDMENT_1.md) adopts the accepted parent
+serialization repair after PR #137 merge `8a08e771`. Local integer conversion
+preserves the interpreter guard. The original plan, original manifest, first
+parent/size reports and source texts remain in hashed inert snapshots, with an
+explicit [transition record](self-citation-size-amendment-1.json). No original
+pre-measurement timestamp or pin is silently replaced.
+
+The effective parent report is
+`113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829`.
+Only its producer fingerprint differs from the original. Every original numeric,
+selection, cell, weight, comparison, support and reporting function AST in this
+producer remains identical. The effective size report changes **only** four
+provenance fields: `input_pins`, `pin_manifest_sha256`, `implementation_sha256`
+and `parent_report_sha256`. Complete typed equality preserves every other field,
+including all 24 primary nulls and the two supported inside-range points.
+
+Current replay fingerprints are:
+
+- Effective producer: `e1a420948591eaaa4571cc4ab2ed60d9c6cd930dcd40168128f647c8b036ec2c`.
+- Effective 15-entry manifest: `7bb5faefbe8b6a7d2b2c3a6f678b973319175def3d4e4fabcc83d8b44b2276c0`.
+- Effective complete report: `2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522`.
+
+The amendment/snapshots were published at `b55d41e` before effective replay;
+the tested transition guard and effective producer at `f710f6a`. The guard checks
+archive/decompressed hashes, accepted parent identities, unchanged protected
+ASTs and exact report field allowances without executing any snapshot source.
+Full native replay and the separate arithmetic checker pass under the unchanged
+integer-string guard. All **106** relevant tests pass, including six new migration
+regressions. The separate checker again verifies 1,989 vectors, 768 standardized
+profiles, 3,840 weighted mean fields and 48 comparisons from the independent
+archive. [Completed validation](self-citation-size-amendment-1-validation.json)
+records the exact four-field transition. These are post-result maintenance
+identities, not new untouched evaluation or pre-measurement claims.
 
 Supply a matching archive from the
 [parent reproduction procedure](SELF_CITATION_PREFIX_PROFILE.md#reproduction-and-verification).

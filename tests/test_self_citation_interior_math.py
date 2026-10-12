@@ -32,6 +32,14 @@ class IndependentInteriorMathTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             independent.check([],[],[{'id':'ascii_letters','patterns':[]}])
 
+    def test_local_decimal_reader_preserves_large_signed_fraction_values(self):
+        from scripts.self_citation_interior import packed
+        value=Fraction(-(10**9000+1),10**9001+3)
+        self.assertEqual(independent.unpack(packed(value)),value)
+        self.assertEqual(independent.parse_decimal_integer('00012'),12)
+        for invalid in ('','-','+1','1_0','1.0','\u0661'):
+            with self.assertRaises(ValueError):independent.parse_decimal_integer(invalid)
+
 
 if __name__=='__main__':
     unittest.main()

@@ -115,9 +115,26 @@ and its 22-entry [input/helper manifest](self-citation-interior-pins.json) were
 published and remote-verified at `296650621a595830e1dd982e795db8a5f063f8cd`
 **before** this new measurement. Their SHA-256 fingerprints are:
 
-- Producer: `63628dcbe5aaa1fe16f2ee01b2150eed6717eff19fa0c27eb96d8398d6447ac8`.
+- Original producer: `63628dcbe5aaa1fe16f2ee01b2150eed6717eff19fa0c27eb96d8398d6447ac8`.
 - Pin manifest: `8d1b9e97d61ce0052b6e0d15e764f5e46007652ef81fa05d22f1f347d10a9d6e`.
-- Complete report: `f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d`.
+- Original complete report: `f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d`.
+
+During maintainer review, importing either arithmetic module was found to disable
+Python's process-wide integer conversion digit limit. Both now convert the long
+decimal fraction strings in small local chunks and leave that limit unchanged.
+The selection, counting, statistical and receipt functions are unchanged, as are
+the original plan and all 22 input pins. The complete report differs only in its
+producer fingerprint; every fraction string, display value and other field is
+preserved. The maintained producer is
+`fa01c8d9f44527895b9242302ac6158a54958b97f41fc1617b287693247c878f`;
+the maintained report is
+`113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829`.
+Two added regressions exercise signed 9,001-digit fractions, invalid decimal
+strings, the minimum supported digit limit and fresh-process imports. All 20
+focused producer/checker tests pass after this maintenance repair. Final maintainer
+integration with main `76df1248eca12db976a36c626867f335e26005d3` passes all 846 repository tests.
+Both the full package replay and the separate maintainer arithmetic audit also
+match the preserved report after integration.
 
 The producer validates the manifest itself, all accepted source/helper/artifact
 hashes, and every fixed run before measuring. It protects supplied run artifacts,

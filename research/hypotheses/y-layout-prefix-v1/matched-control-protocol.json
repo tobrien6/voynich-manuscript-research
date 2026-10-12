@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "analysis_id": "y-prefix-matched-other-prefix-v1",
+  "analysis_status": "targeted exploratory post-result control; all source data previously exposed",
+  "parent_common_eligible_loci": 3002,
+  "parent_cohort_sha256": "680d947d20ae7a4255c1ffe0d457657140f3649795aa9cfa9c1a996412d8d09b",
+  "evaluation_unit_frame": [
+    "numeric-families:104",
+    "numeric-families:114",
+    "numeric-families:15",
+    "numeric-families:17",
+    "numeric-families:19",
+    "numeric-families:42",
+    "numeric-families:44",
+    "numeric-families:45",
+    "numeric-families:66",
+    "numeric-families:67",
+    "numeric-families:80",
+    "numeric-families:81",
+    "numeric-families:82",
+    "numeric-families:96",
+    "numeric-families:99"
+  ],
+  "variant_order": [
+    {
+      "source_id": "ZL3b",
+      "uncertain_spaces": "split",
+      "alternatives": "exclude"
+    },
+    {
+      "source_id": "ZL3b",
+      "uncertain_spaces": "split",
+      "alternatives": "first"
+    },
+    {
+      "source_id": "ZL3b",
+      "uncertain_spaces": "join",
+      "alternatives": "exclude"
+    },
+    {
+      "source_id": "ZL3b",
+      "uncertain_spaces": "join",
+      "alternatives": "first"
+    },
+    {
+      "source_id": "IT2a",
+      "uncertain_spaces": "split",
+      "alternatives": "exclude"
+    },
+    {
+      "source_id": "IT2a",
+      "uncertain_spaces": "split",
+      "alternatives": "first"
+    },
+    {
+      "source_id": "IT2a",
+      "uncertain_spaces": "join",
+      "alternatives": "exclude"
+    },
+    {
+      "source_id": "IT2a",
+      "uncertain_spaces": "join",
+      "alternatives": "first"
+    }
+  ],
+  "target_prefix": "y",
+  "controls": "ASCII letters, lower-case initial other than y, at least two letters",
+  "position_classes": [
+    "first",
+    "other"
+  ],
+  "exact_ascii_length_match": true,
+  "frequency_bin": "0 if count is zero else count.bit_length()",
+  "pool_weighting": "all matching control occurrences equally; pools may be reused by targets",
+  "final_unit_rule": "both matched classes in every variant; equal unit weights",
+  "decision": "strictly positive adjusted first-minus-other gain in all eight variants, otherwise mixed/nonpositive; no joint units means indeterminate",
+  "input_sha256": {
+    "research/hypotheses/y-layout-prefix-v1/results.json": "8944187811166c1ba687d4065b9afe7fa7c853e3ed46acacb56ae3a28ae1a6f1",
+    "research/hypotheses/y-layout-prefix-v1/PLAN.md": "fbd1dd9cb23d16a182f0d237eaa3a2412083eb8eed50dd969d4128d7284e4034",
+    "research/hypotheses/y-layout-prefix-v1/partition.json": "354aace43b44b5158257c737fe81c64ccc27469026a4d3b69743e117c3e739ae",
+    "research/hypotheses/y-layout-prefix-v1/MATCHED_CONTROL_PLAN.md": "7e7d4d6f02648d69acbfa2394df57cd7e15d077d45fc3eff250827d99813fee9",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/hypotheses/y-layout-prefix-v1/MATCHED_CONTROL_EXPOSURE.md": "39b28e3a55377442af53a93667d9608b3d96d1f404ee5f6140e632a5c3e42c25"
+  },
+  "dependency_sha256": {
+    "y_layout_prefix.py": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3",
+    "audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "audit_transcription_images.py": "a3d9c789fa04e41a715d2247e40d16b43827de88c32afaaeb9e302d4ed7d9e5e",
+    "align_folio_canvases.py": "f431b528b0851e45afa0c62cdde5d4bad521e31ca49a0199b720e0fb35bce021",
+    "ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "locus_positions.py": "4efa53f41aa51860e4ada5b01882a697490d2b85497f36584a50fc855dea0f7f",
+    "prefix_strata.py": "8fba6f3ad3867f0b5086865a1c9c0c045db333ec8b56314082053ca2c96b8afc",
+    "section_strata.py": "8e4a3d308b8132b59543f41818c8c451d83b625b5296ab6b4e5908c67135b5da",
+    "token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "index_yale_manifest.py": "cf5cea25e41495b710ba4a9c8eedffe809eec392d1a43126e6706a10a12ba3a5",
+    "validate_evaluation_split.py": "f967f3ead88326870905fec2e64582b711246bc1bb3e057aba786dfaff5e172d",
+    "repetition_moments.py": "e758237cc966a4723e3613b8d7cce96e96f685ba682cdc1668558cf153749370",
+    "eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "audit_eva_token_coverage.py": "dcd97f39c14ac78137cf5c3f1d622d72aa0229a5e8d6b64651d236bae69baf1e",
+    "y_prefix_matched_controls.py": "486291a209a50ebb8d89a22eb8f7e37811415caecce48ff762cc2c201cffbb38"
+  },
+  "adjacent_plan_exposure": {
+    "pull_request": 109,
+    "head": "c26a766f4c186cb64805fd0488b908289e80e0b1",
+    "plan_sha256": "7864a580746595d2cfe42c6153a47b7284ddf30e40134b1a8e14960d00b2e8b1",
+    "numeric_results_seen_before_control_measurement": false
+  }
+}
