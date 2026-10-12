@@ -109,6 +109,11 @@ are numerical approximations, while the mass ratios and mathematical identity
 are exact. Only original synthetic counts/code and public source references
 are published.
 
+The [native B comparison](NATIVE_SUBSTITUTION_RESULTS.md) separately freezes
+all 595 symbol pairs and both metrics before scoring. Twenty-one maximizing
+sets change, while the four-symbol gallows-category observation persists;
+the native run remains an explicit exposed-input comparison.
+
 This clarifies a comparison choice that could otherwise alter constraints on
 a decoding proposal. A later native-source experiment should freeze candidate
 symbols, token/type weighting, normalization, tie rules and all comparisons
