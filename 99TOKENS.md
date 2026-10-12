@@ -46,6 +46,12 @@ The [token-order control generator](research/token-controls/README.md) supplies 
 
 The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records literal EVA q/y-prefix and notation-length contrasts at original first and last token slots under the same uncertainty policies, with [complete results](research/transliteration/locus_positions.json). It uses conditional within-locus controls and explicit eligibility counts. These measurements constrain simple exchangeability within the chosen units; they do not identify a language, cipher, glyph reading, or translation.
 
+The [paired paragraph-annotation audit](research/transliteration/ANNOTATION_AGREEMENT.md)
+records 29 paragraph-start and 54 paragraph-end disagreements across the 3,884
+shared P0 loci in ZL3b and IT2a. It preserves all discordant identifiers and
+source-specific metadata for later image review. These are differences between
+source annotations, not adjudicated manuscript boundaries or decoding results.
+
 The [fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md)
 tests transcription sensitivity on identical eligible locus samples. The
 observed effect directions persist, while notation-length measurements and
