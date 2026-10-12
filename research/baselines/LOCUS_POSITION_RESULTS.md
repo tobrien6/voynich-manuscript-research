@@ -22,6 +22,24 @@ source bytes; the analysis runner validates the adapter's declared hashes
 against the protocol and records the exact input JSON checksums. It does not
 independently reconstruct or authenticate an arbitrary supplied token packet.
 
+The [companion verifier](../../scripts/verify_locus_position_baseline.py) now
+replays both complete cached packets through the pinned producer before
+recomputing this analysis. It rejects altered tokens, omitted excluded records
+even with reconciled counts, and duplicate JSON keys. It checks every scientific
+result, cohort key, exclusion and null draw against this historical report.
+The [separate verification receipt](locus-position-verification.json) records
+input and canonical adapter checksums, historical engine and verification code
+hashes, and the verified scientific report's checksum.
+
+The original engine, protocol and result bytes remain unchanged because the
+[unit-sensitivity follow-up](EVA_UNIT_RESULTS.md) pins them. The companion fails
+if the historical engine or protocol changes. Valid JSON formatting changes in
+the adapter packets preserve canonical content identity and scientific results;
+the receipt separately records whether the supplied bytes match the original
+input pins. Replaying a producer verifies consistency with its selected
+transcription and preprocessing, rather than correctness of glyph readings or
+physical manuscript-line associations.
+
 The cohort is the intersection of eligible **P0/P1** loci with `@`, `+`, or `*` locators
 and at least two tokens in every source/policy combination. Every included key
 and every excluded key/reason is in
@@ -75,10 +93,10 @@ From the repository root:
 python3 scripts/audit_transliterations.py --check research/transliteration/coverage_audit.json
 python3 scripts/eva_token_adapter.py --uncertain-spaces split --output /tmp/voynich-position-split.json
 python3 scripts/eva_token_adapter.py --uncertain-spaces join --output /tmp/voynich-position-join.json
-python3 scripts/run_locus_position_baseline.py \
+python3 scripts/verify_locus_position_baseline.py \
   --split /tmp/voynich-position-split.json \
   --join /tmp/voynich-position-join.json \
-  --check research/baselines/locus-position-results.json
+  --check research/baselines/locus-position-verification.json
 python3 -m unittest discover -s tests -p 'test_locus_position_*.py' -v
 ```
 
@@ -86,6 +104,14 @@ The comparison includes cohort membership, all exclusions, the null draws and
 summary, and provenance. A changed source/adapter/implementation requires
 investigation before replacing the recorded result. The runner performs no
 network requests and prevents its output from overwriting an input.
+
+The companion's six integration tests additionally exercise token changes,
+omitted exclusions with reconciled counts, duplicate keys, valid formatting
+changes, historical engine/protocol/result guards, complete receipt replay,
+tampered receipt rejection, and protection against overwriting the baseline,
+protocol, packets or source data. They isolate the separately tested null draws;
+the complete manuscript analysis was also replayed through the real verifier.
+To write a fresh receipt to a separate path, replace `--check` with `--output`.
 
 ## Limits and next test
 
