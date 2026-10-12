@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "scope": "Manual source-envelope extract, not manuscript visibility or a locus crosswalk",
+  "inspected_on": "2026-10-12",
+  "selection_rule": "Union of exact modern locus keys with an explicit ! locator in the five pinned exports",
+  "selected_keys": [
+    "f89v2.26"
+  ],
+  "catalog_sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+  "reader_sha256": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+  "sources": [
+    {
+      "source_id": "ZL3b",
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "source_url": "https://voynich.nu/data/ZL3b-n.txt",
+      "native_alphabet": "Eva-",
+      "page_header_declared": true,
+      "target_status": "undeclared_locus",
+      "target_record": null,
+      "flanking_exact_keys": [
+        {
+          "key": "f89v2.25",
+          "identifier": "f89v2.25,@Lf",
+          "source_status": "present"
+        },
+        {
+          "key": "f89v2.27",
+          "identifier": "f89v2.27,@Lf",
+          "source_status": "present"
+        }
+      ]
+    },
+    {
+      "source_id": "IT2a",
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "source_url": "https://voynich.nu/data/IT2a-n.txt",
+      "native_alphabet": "EvaT",
+      "page_header_declared": true,
+      "target_status": "explicitly_nonexistent",
+      "target_record": {
+        "identifier": "f89v2.26,!Lf",
+        "locator": "!",
+        "kind": "Lf",
+        "physical_source_file_line": 3842,
+        "reader_body_ascii_bytes": 6,
+        "reader_body_sha256": "c19f3474f92a503f48b62a89d7efea493bf58a7e812b17ced6143282f13b465e"
+      },
+      "flanking_exact_keys": [
+        {
+          "key": "f89v2.25",
+          "identifier": "f89v2.25,@Lf",
+          "source_status": "present"
+        },
+        {
+          "key": "f89v2.27",
+          "identifier": "f89v2.27,@Lf",
+          "source_status": "present"
+        }
+      ]
+    },
+    {
+      "source_id": "GC2a",
+      "source_sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "source_url": "https://voynich.nu/data/GC2a-n.txt",
+      "native_alphabet": "v101",
+      "page_header_declared": true,
+      "target_status": "explicitly_nonexistent",
+      "target_record": {
+        "identifier": "f89v2.26,!Lf",
+        "locator": "!",
+        "kind": "Lf",
+        "physical_source_file_line": 4168,
+        "reader_body_ascii_bytes": 6,
+        "reader_body_sha256": "e1d7de545c0c20cc331fd6557b0016cf2d5a830291c16064753b2542d28f056a"
+      },
+      "flanking_exact_keys": [
+        {
+          "key": "f89v2.25",
+          "identifier": "f89v2.25,@Lf",
+          "source_status": "present"
+        },
+        {
+          "key": "f89v2.27",
+          "identifier": "f89v2.27,@Lf",
+          "source_status": "present"
+        }
+      ]
+    },
+    {
+      "source_id": "RF1b-full",
+      "source_sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+      "source_url": "https://voynich.nu/data/RF1b-e.txt",
+      "native_alphabet": "Eva-",
+      "page_header_declared": true,
+      "target_status": "undeclared_locus",
+      "target_record": null,
+      "flanking_exact_keys": [
+        {
+          "key": "f89v2.25",
+          "identifier": "f89v2.25,@Lf",
+          "source_status": "present"
+        },
+        {
+          "key": "f89v2.27",
+          "identifier": "f89v2.27,@Lf",
+          "source_status": "present"
+        }
+      ]
+    },
+    {
+      "source_id": "RF1b-basic",
+      "source_sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+      "source_url": "https://voynich.nu/data/RF1b-er.txt",
+      "native_alphabet": "Eva-",
+      "page_header_declared": true,
+      "target_status": "undeclared_locus",
+      "target_record": null,
+      "flanking_exact_keys": [
+        {
+          "key": "f89v2.25",
+          "identifier": "f89v2.25,@Lf",
+          "source_status": "present"
+        },
+        {
+          "key": "f89v2.27",
+          "identifier": "f89v2.27,@Lf",
+          "source_status": "present"
+        }
+      ]
+    }
+  ],
+  "format_reference": {
+    "url": "https://www.voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "document_issue": "2.0.2",
+    "document_issue_date": "2025-07-08",
+    "described_format": "2.0.1",
+    "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "inspected_locators": [
+      "section1.2",
+      "section6.4 Table8, printedpage21"
+    ]
+  }
+}
