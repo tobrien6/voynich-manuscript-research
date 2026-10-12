@@ -108,7 +108,7 @@ the [pinned sources](DECISION.md), then run:
 PYTHONPATH=tests python3 -m unittest \
   test_repeating_types test_repetition_moments test_token_baselines
 python3 scripts/repeating_types.py --check research/transliteration/repeating_types.json
-python3 scripts/repeating_types.py --output /tmp/repeating-types.json
+python3 scripts/write_repeating_types.py --output /tmp/repeating-types.json
 ```
 
 Eight new tests cover all 511 original retention/gap layouts of sizes 0–8
@@ -133,6 +133,11 @@ Fraction from `int(Decimal(numerator))` and `int(Decimal(denominator))` rather
 than changing the interpreter's integer-string limit. Rounded displays use
 eight decimals. Check mode compares the entire typed canonical report, including
 source/catalog, plan, engine, baseline and preprocessed-slot fingerprints.
+
+Use the [guarded companion](REPEATING_TYPE_WRITER.md) for report writes. It
+preserves this producer and its scientific fingerprints while checking output
+aliases after complete serialization. The frozen legacy writer remains
+unchanged and retains its documented serialization-stage gap.
 
 The producer checks every accepted source/policy pair count, denominator,
 token/slot/vocabulary count, cohort key digest and expectation before emitting
