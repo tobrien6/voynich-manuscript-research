@@ -41,11 +41,13 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
+- [Historical interlinear intake](research/historical/README.md): pin the recovered 1.6e6 archive and audit native H records before attempting published-method replication.
 - [Paired paragraph-annotation agreement](research/transliteration/ANNOTATION_AGREEMENT.md): exact boundary-mark disagreements between the pinned ZL/IT editions, with identifiers for image review and explicit limits on source-defined strata.
 - [Encoded paragraph-unit agreement](research/transliteration/PARAGRAPH_MEMBERSHIP.md): marker-pair checks, unassigned loci, and exact common paragraph membership for later unit-level comparisons.
 - [Token and repetition baselines](research/transliteration/BASELINES.md), [locus-position effects](research/transliteration/POSITION_EFFECTS.md), and [prefix stratification](research/transliteration/PREFIX_STRATA.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits. The stratification separates paragraph starts and source Currier labels rather than treating the pooled prefix pattern as uniform.
-- [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md): neighboring interior lengths depart from endpoint-fixed exchangeability in 2,165 common loci; position gradients and transcription effects remain alternative explanations.
+- [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md) and [early/late-half controls](research/transliteration/INTERIOR_HALVES.md): neighboring interior lengths depart from the stated controls in 2,165 common loci; finer position gradients and transcription effects remain alternative explanations.
 - [Fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md): compare transcription and uncertainty variants on identical eligible locus keys, preserving per-locus disagreement.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.

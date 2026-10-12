@@ -38,7 +38,29 @@
 - Limitations: canvas order is digitization order, not a count of physical leaves. Partial/composite scans and foldouts prevent a one-to-one mapping of canvases to folios or panels. A simple label such as `67r` can span more than one panel; labels do not define transcription boundaries. The live manifest and image derivatives may change. A checksum identifies inspected bytes rather than an immutable edition.
 - Reuse: the manifest repeats S003's rights caution and credits Yale University Library as provider; it does not supply a blanket image reuse license.
 
+## S005 — Zandbergen's foliation description
+
+- Author: René Zandbergen; [Description of the Voynich MS](https://voynich.nu/descr.html), Foliation, Theodore Petersen's numbering, and note 17.
+- Inspected: 2026-10-11 (America/New_York); web text and browser display.
+- Use: separate source-numbering conventions in the [terminal-reference check](folio-aliases/SOURCE_CHECK.md).
+- Limitation: does not explicitly verify the legacy Yale 117v/current 116v correspondence; reported historical counter inconsistencies are not physical folio offsets.
+- Reuse: link and selected paraphrase only; no whole-page copy is redistributed.
+
+## S006 — Hosted Currier Table A
+
+- Credit: Prescott Currier, *Table A: Voynich MS Pagination*, digital table hosted by René Zandbergen at [this PDF endpoint](https://voynich.nu/extra/img/curr_tabA.pdf).
+- Inspected: 2026-10-11 (America/New_York); one page, rendered visually and checked against extracted text.
+- Retrieved PDF: 9,421 bytes; SHA-256 `3be46a0016a61e17d27e6d9d7086236c1a363f3c09927535ce9de525fdca54d3`.
+- Use: column legend and folio 116 row in the [source-numbering observations](folio-aliases/source-numbering-observations.json).
+- Limitation: fingerprint identifies the hosted digital representation; it does not authenticate an original print or establish a Yale canvas mapping.
+- Reuse: source PDF/render kept local; only a citation, fingerprint, and selected identifier facts are recorded. No open PDF/image reuse license is asserted.
+
 ## Recording future sources
+
+The [historical interlinear intake](historical/README.md) records a recovered
+publisher-hosted 1.6e6 candidate, its original permission terms, exact archive and
+member identity, and a native-envelope audit. It does not establish equality to
+the input used by published studies.
 
 Assign each source a stable identifier. Record its author or institution, title, URL or persistent identifier, version and access date when inspected, relevant folios or pages, the specific claim it supports, limitations, and reuse terms when data or images are involved.
 

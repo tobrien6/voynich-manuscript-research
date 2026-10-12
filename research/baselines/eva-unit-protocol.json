@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "analysis_id": "fixed-cohort-eva-unit-sensitivity-v1",
+  "analysis_status": "post-result exploratory sensitivity",
+  "recorded_on": "2026-10-11",
+  "baseline_results_sha256": "4444267e98743c7c720d94a767ba0efc0ae07757ac82575e40497f7b4d933777",
+  "cohort_sha256": "b54e90732d33e3d656499a7cc7769a9904cbdbaf57d2760b1196a1d4dbbfe40b",
+  "preserve": ["source bytes", "cohort", "token boundaries", "native case", "locus metadata", "source/spacing policy pairing"],
+  "segmentation": "case-sensitive left-to-right longest match; ties sorted lexically; unmatched ASCII letters each emit one segment; never cross token boundaries",
+  "policies": [
+    {
+      "id": "ascii_letters",
+      "patterns": [],
+      "unit": "one native ASCII letter"
+    },
+    {
+      "id": "bench_sequences",
+      "patterns": ["ch", "Ch", "sh", "Sh", "cth", "cTh", "ckh", "cKh", "cph", "cPh", "cfh", "cFh"],
+      "unit": "one listed bench sequence, otherwise one unmatched ASCII letter"
+    },
+    {
+      "id": "bench_and_minim_sequences",
+      "patterns": ["ch", "Ch", "sh", "Sh", "cth", "cTh", "ckh", "cKh", "cph", "cPh", "cfh", "cFh", "in", "iin", "iiin", "il", "iil", "iiil", "ir", "iir", "iiir", "im", "iim", "iiim"],
+      "unit": "one listed bench or minim sequence, otherwise one unmatched ASCII letter"
+    }
+  ],
+  "fallback_examples_not_grouped": ["cTHh", "cthh", "ITh", "ith", "Ao", "Yk", "Ee", "Oy", "Qo"],
+  "measurement": "same equal-locus initial-minus-rest contrast as the baseline, using emitted segment counts per original token",
+  "conditional_null": "same 2,000 token-index draws as the baseline in every source/spacing variant, paired across unit policies",
+  "paired_change": "grouped-unit contrast minus ASCII contrast; report observed change and the paired conditional difference distribution",
+  "source": {
+    "author": "Gabriel Landini",
+    "title": "EVA Alphabet Font Version 2 Reference",
+    "url": "https://voynich.nu/hist/gabriel/eva2_reference.pdf",
+    "internal_update": "July 2004",
+    "pages": [4, 6, 7],
+    "sha256": "2f9a9c7e81dedfbd934e49eeac47de07e7e0855eda46f063a0624958d3e524fc",
+    "role": "documented connectivity spellings and historical alphabet comparisons; does not settle semantic or manuscript-glyph units"
+  },
+  "limit": "These are analyst-declared segment counts, not manuscript glyph counts, a complete Currier conversion, phonetic units, a language test, or independent validation. All three policies must be reported without choosing a preferred map from the result."
+}

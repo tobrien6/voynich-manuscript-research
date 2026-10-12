@@ -11,7 +11,10 @@ import json
 from pathlib import Path
 import re
 
-from index_yale_manifest import build
+try:
+    from .index_yale_manifest import build
+except ImportError:
+    from index_yale_manifest import build
 
 
 FOLIO = re.compile(r"f?([1-9]\d*)([rv])", re.IGNORECASE)

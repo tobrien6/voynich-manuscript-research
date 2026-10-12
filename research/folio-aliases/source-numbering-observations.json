@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "check_id": "legacy-final-label-source-context-v1",
+  "inspected_on": "2026-10-11",
+  "method": "manual source extracts with a visual check of the hosted table; no automatic crosswalk",
+  "issue_url": "https://github.com/tobrien6/voynich-manuscript-research/issues/13",
+  "alias_status": "unresolved",
+  "usable_for_verified_alias": false,
+  "observations": [
+    {
+      "source_scheme": "yale_legacy_ms408_catalog",
+      "source_url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM",
+      "locator": "Part VI, terminal description",
+      "identifier_kind": "folio_side",
+      "source_label": "117v"
+    },
+    {
+      "source_scheme": "yale_2002046_canvas_label",
+      "source_url": "https://collections.library.yale.edu/manifests/2002046",
+      "locator": "Pinned final numbered canvas labels",
+      "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+      "identifier_kind": "canvas_folio_side_label",
+      "source_labels": [
+        "116r",
+        "116v"
+      ],
+      "image_ids": [
+        "1006276",
+        "1006277"
+      ]
+    },
+    {
+      "source_scheme": "currier_table_a_hosted_pdf",
+      "source_id": "S006",
+      "source_url": "https://voynich.nu/extra/img/curr_tabA.pdf",
+      "locator": "PDF page 1, rightmost block, row 116; column legend below table",
+      "pdf_sha256": "3be46a0016a61e17d27e6d9d7086236c1a363f3c09927535ce9de525fdca54d3",
+      "pdf_bytes": 9421,
+      "pdf_pages": 1,
+      "identifier_kind": "separate_folio_and_page_columns",
+      "folio_column_1": "116",
+      "page_columns_3_and_4": [
+        235,
+        236
+      ],
+      "interpretation_scope": "source row only; no automatic recto-verso assignment or canvas join",
+      "visual_check": "full rendered page, column legend, and row checked; text extraction used secondarily"
+    },
+    {
+      "source_scheme": "reeds_1995_petersen_page_column",
+      "source_url": "https://www.ic.unicamp.br/~stolfi/voynich/mirror/gillogly/checklist",
+      "locator": "Solution explanation and final 116r/116v entries",
+      "identifier_kind": "folio_side_and_source_photo_page_counter",
+      "entries": [
+        {
+          "folio_side": "116r",
+          "source_page_counter": 234
+        },
+        {
+          "folio_side": "116v",
+          "source_page_counter": 235
+        }
+      ],
+      "reported_currier_counter_discrepancy_ranges": [
+        [
+          167,
+          179
+        ],
+        [
+          206,
+          236
+        ]
+      ]
+    },
+    {
+      "source_scheme": "stolfi_page_note_identification",
+      "source_url": "https://www.ic.unicamp.br/~stolfi/voynich/Notes/040/html/f116v.htm",
+      "locator": "Identification",
+      "identifier_kind": "folio_side_and_explicitly_attributed_page_label",
+      "folio_side": "f116v",
+      "source_page_label": "p234",
+      "page_label_attributed_to": "Stolfi"
+    },
+    {
+      "source_scheme": "zandbergen_foliation_description",
+      "source_id": "S005",
+      "source_url": "https://voynich.nu/descr.html",
+      "locator": "Foliation, Theodore Petersen's numbering, note 17",
+      "identifier_kind": "separate_folio_and_photo_page_ranges",
+      "folio_number_range": [
+        1,
+        116
+      ],
+      "petersen_photo_page_range": [
+        1,
+        236
+      ],
+      "explicit_legacy_117v_to_current_116v_equivalence_found": false
+    }
+  ],
+  "uninspected_reference": {
+    "title": "M. E. D'Imperio, The Voynich Manuscript: An Elegant Enigma",
+    "url": "https://www.nsa.gov/about/cryptologic-heritage/historical-figures-publications/publications/misc/assets/files/voynich_manuscript.pdf",
+    "status": "retrieval did not complete; contents not used as evidence"
+  },
+  "limitations": [
+    "A negative result covers only the cited inspected locators, not every publication or archival record.",
+    "Source page-counter differences do not authorize a one-folio shift or settle a legacy catalog label.",
+    "No historical numbering normalization, physical collation, glyph reading, or decipherment is established."
+  ],
+  "recorded_on": "2026-10-12"
+}
