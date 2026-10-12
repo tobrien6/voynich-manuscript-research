@@ -1,0 +1,946 @@
+{
+  "candidate_count": 2,
+  "candidate_keys_offsets": [
+    [
+      "f13v.8",
+      30
+    ],
+    [
+      "f75r.44",
+      48
+    ]
+  ],
+  "contexts": [
+    {
+      "dependency_group": "yale-leaves:13",
+      "disputed_ascii_offset": 30,
+      "frozen_offset_record": {
+        "ascii_offset": 30,
+        "disagreement_policies": [
+          "join"
+        ],
+        "left": {
+          "cut_by_policy": {
+            "join": false,
+            "split": true
+          },
+          "native_marker": ",",
+          "neighbor_letter_raw_positions": [
+            41,
+            43
+          ],
+          "raw_locus_separator_range": [
+            42,
+            43
+          ]
+        },
+        "right": {
+          "cut_by_policy": {
+            "join": true,
+            "split": true
+          },
+          "native_marker": "<->",
+          "neighbor_letter_raw_positions": [
+            38,
+            42
+          ],
+          "raw_locus_separator_range": [
+            39,
+            42
+          ]
+        }
+      },
+      "glyph_region": null,
+      "image_reference": {
+        "canvas_index_zero_based": "25",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006099",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006099",
+        "explicit_folio_sides": "13v",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006099/full/full/0/default.jpg",
+        "has_multiple_explicit_sides": "False",
+        "has_partial_marker": "False",
+        "image_height": "3770",
+        "image_oid": "1006099",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006099",
+        "image_width": "2812",
+        "label_class": "exact_single_side_label",
+        "viewer_image_number_one_based": "26",
+        "yale_label": "13v"
+      },
+      "native_locus_key": "f13v.8",
+      "source_context": [
+        {
+          "all_locus_count": 10,
+          "alphabet": "Eva-",
+          "neighbors_by_native_number": [
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": false,
+                "exclusion_reasons": [
+                  "alternative_reading"
+                ],
+                "token_count": null,
+                "tokens": null,
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f13v.7,+P0",
+              "native_text": "dain.okal.chy.qokchory<->dchy.kok[y:a]daiin<->shon",
+              "source_file_line": 558,
+              "source_variables": {
+                "B": "4",
+                "C": "1",
+                "F": "w",
+                "H": "1",
+                "I": "H",
+                "L": "A",
+                "P": "J",
+                "Q": "B"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": false,
+                "exclusion_reasons": [
+                  "alternative_reading"
+                ],
+                "token_count": null,
+                "tokens": null,
+                "uncertain_space_count": 0
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 7,
+                "tokens": [
+                  "otchy",
+                  "daiin",
+                  "ydain",
+                  "ykol",
+                  "okchy",
+                  "okald",
+                  "dytaiin"
+                ],
+                "uncertain_space_count": 4
+              },
+              "locus_identifier": "f13v.8,+P0",
+              "native_text": "otchy.daiin.y,dain.ykol<->okchy.o,kald<->d,y,taiin",
+              "source_file_line": 559,
+              "source_variables": {
+                "B": "4",
+                "C": "1",
+                "F": "w",
+                "H": "1",
+                "I": "H",
+                "L": "A",
+                "P": "J",
+                "Q": "B"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 11,
+                "tokens": [
+                  "otchy",
+                  "daiin",
+                  "y",
+                  "dain",
+                  "ykol",
+                  "okchy",
+                  "o",
+                  "kald",
+                  "d",
+                  "y",
+                  "taiin"
+                ],
+                "uncertain_space_count": 4
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 8,
+                "tokens": [
+                  "tchtod",
+                  "otal",
+                  "cthor",
+                  "ytal",
+                  "y",
+                  "chotal",
+                  "sho",
+                  "qocthy"
+                ],
+                "uncertain_space_count": 1
+              },
+              "locus_identifier": "f13v.9,+P0",
+              "native_text": "tchtod.otal.cthor.ytal<->y.cho,tal<->sho.qocthy",
+              "source_file_line": 560,
+              "source_variables": {
+                "B": "4",
+                "C": "1",
+                "F": "w",
+                "H": "1",
+                "I": "H",
+                "L": "A",
+                "P": "J",
+                "Q": "B"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 9,
+                "tokens": [
+                  "tchtod",
+                  "otal",
+                  "cthor",
+                  "ytal",
+                  "y",
+                  "cho",
+                  "tal",
+                  "sho",
+                  "qocthy"
+                ],
+                "uncertain_space_count": 1
+              }
+            }
+          ],
+          "ordered_present_p0_identifiers": [
+            "f13v.1,@P0",
+            "f13v.2,+P0",
+            "f13v.3,+P0",
+            "f13v.4,+P0",
+            "f13v.5,+P0",
+            "f13v.6,+P0",
+            "f13v.7,+P0",
+            "f13v.8,+P0",
+            "f13v.9,+P0",
+            "f13v.10,+P0"
+          ],
+          "page_variables": {
+            "B": "4",
+            "C": "1",
+            "F": "w",
+            "H": "1",
+            "I": "H",
+            "L": "A",
+            "P": "J",
+            "Q": "B"
+          },
+          "present_p0_count": 10,
+          "source_id": "ZL3b",
+          "source_path": "data/raw/ZL3b-n.txt",
+          "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "target_native_p0_rank_one_based": 8
+        },
+        {
+          "all_locus_count": 10,
+          "alphabet": "EvaT",
+          "neighbors_by_native_number": [
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 8,
+                "tokens": [
+                  "dain",
+                  "okal",
+                  "chy",
+                  "qokchory",
+                  "dchy",
+                  "koky",
+                  "daiin",
+                  "shoin"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f13v.7,+P0",
+              "native_text": "dain.okal.chy.qokchory<->dchy.koky.daiin<->shoin",
+              "source_file_line": 324,
+              "source_variables": {
+                "B": "4",
+                "C": "1",
+                "F": "w",
+                "H": "1",
+                "I": "H",
+                "L": "A",
+                "P": "J",
+                "Q": "B"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 8,
+                "tokens": [
+                  "dain",
+                  "okal",
+                  "chy",
+                  "qokchory",
+                  "dchy",
+                  "koky",
+                  "daiin",
+                  "shoin"
+                ],
+                "uncertain_space_count": 0
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 9,
+                "tokens": [
+                  "otchy",
+                  "daiin",
+                  "y",
+                  "dain",
+                  "ykol",
+                  "okchy",
+                  "okald",
+                  "d",
+                  "ytaiin"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f13v.8,+P0",
+              "native_text": "otchy.daiin.y.dain.ykol<->okchy.okald.d<->ytaiin",
+              "source_file_line": 325,
+              "source_variables": {
+                "B": "4",
+                "C": "1",
+                "F": "w",
+                "H": "1",
+                "I": "H",
+                "L": "A",
+                "P": "J",
+                "Q": "B"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 9,
+                "tokens": [
+                  "otchy",
+                  "daiin",
+                  "y",
+                  "dain",
+                  "ykol",
+                  "okchy",
+                  "okald",
+                  "d",
+                  "ytaiin"
+                ],
+                "uncertain_space_count": 0
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 9,
+                "tokens": [
+                  "tchtod",
+                  "otal",
+                  "cthor",
+                  "ytal",
+                  "y",
+                  "cho",
+                  "tal",
+                  "sho",
+                  "qocthy"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f13v.9,+P0",
+              "native_text": "tchtod.otal.cthor.ytal<->y.cho.tal<->sho.qocthy",
+              "source_file_line": 326,
+              "source_variables": {
+                "B": "4",
+                "C": "1",
+                "F": "w",
+                "H": "1",
+                "I": "H",
+                "L": "A",
+                "P": "J",
+                "Q": "B"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 2,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 9,
+                "tokens": [
+                  "tchtod",
+                  "otal",
+                  "cthor",
+                  "ytal",
+                  "y",
+                  "cho",
+                  "tal",
+                  "sho",
+                  "qocthy"
+                ],
+                "uncertain_space_count": 0
+              }
+            }
+          ],
+          "ordered_present_p0_identifiers": [
+            "f13v.1,@P0",
+            "f13v.2,+P0",
+            "f13v.3,+P0",
+            "f13v.4,+P0",
+            "f13v.5,+P0",
+            "f13v.6,+P0",
+            "f13v.7,+P0",
+            "f13v.8,+P0",
+            "f13v.9,+P0",
+            "f13v.10,+P0"
+          ],
+          "page_variables": {
+            "B": "4",
+            "C": "1",
+            "F": "w",
+            "H": "1",
+            "I": "H",
+            "L": "A",
+            "P": "J",
+            "Q": "B"
+          },
+          "present_p0_count": 10,
+          "source_id": "IT2a",
+          "source_path": "data/raw/IT2a-n.txt",
+          "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "target_native_p0_rank_one_based": 8
+        }
+      ],
+      "source_preference": null,
+      "verified_corpus_join": false
+    },
+    {
+      "dependency_group": "yale-leaves:75",
+      "disputed_ascii_offset": 48,
+      "frozen_offset_record": {
+        "ascii_offset": 48,
+        "disagreement_policies": [
+          "split",
+          "join"
+        ],
+        "left": {
+          "cut_by_policy": {
+            "join": true,
+            "split": true
+          },
+          "native_marker": "<->",
+          "neighbor_letter_raw_positions": [
+            56,
+            60
+          ],
+          "raw_locus_separator_range": [
+            57,
+            60
+          ]
+        },
+        "right": {
+          "cut_by_policy": {
+            "join": false,
+            "split": false
+          },
+          "native_marker": null,
+          "neighbor_letter_raw_positions": [
+            56,
+            57
+          ],
+          "raw_locus_separator_range": null
+        }
+      },
+      "glyph_region": null,
+      "image_reference": {
+        "canvas_index_zero_based": "134",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006208",
+        "explicit_folio_sides": "75r",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006208/full/full/0/default.jpg",
+        "has_multiple_explicit_sides": "False",
+        "has_partial_marker": "False",
+        "image_height": "3759",
+        "image_oid": "1006208",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006208",
+        "image_width": "2852",
+        "label_class": "exact_single_side_label",
+        "viewer_image_number_one_based": "135",
+        "yale_label": "75r"
+      },
+      "native_locus_key": "f75r.44",
+      "source_context": [
+        {
+          "all_locus_count": 53,
+          "alphabet": "Eva-",
+          "neighbors_by_native_number": [
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 6,
+                "tokens": [
+                  "yshedy",
+                  "chekar",
+                  "oldy",
+                  "qokain",
+                  "chkar",
+                  "otaroldy"
+                ],
+                "uncertain_space_count": 1
+              },
+              "locus_identifier": "f75r.43,+P0",
+              "native_text": "yshedy.chekar.oldy.qokain.chkar.otar,oldy",
+              "source_file_line": 4026,
+              "source_variables": {
+                "B": "1",
+                "C": "2",
+                "F": "a",
+                "H": "2",
+                "I": "B",
+                "L": "B",
+                "P": "A",
+                "Q": "M"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 7,
+                "tokens": [
+                  "yshedy",
+                  "chekar",
+                  "oldy",
+                  "qokain",
+                  "chkar",
+                  "otar",
+                  "oldy"
+                ],
+                "uncertain_space_count": 1
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 1,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 12,
+                "tokens": [
+                  "dchedy",
+                  "sain",
+                  "okedy",
+                  "qokedy",
+                  "otedy",
+                  "okoldy",
+                  "otar",
+                  "otam",
+                  "olaiin",
+                  "ch",
+                  "dar",
+                  "dy"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f75r.44,+P0",
+              "native_text": "dchedy.sain.okedy.qokedy.otedy.okoldy.otar.otam.olaiin.ch<->dar.dy",
+              "source_file_line": 4027,
+              "source_variables": {
+                "B": "1",
+                "C": "2",
+                "F": "a",
+                "H": "2",
+                "I": "B",
+                "L": "B",
+                "P": "A",
+                "Q": "M"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 1,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 12,
+                "tokens": [
+                  "dchedy",
+                  "sain",
+                  "okedy",
+                  "qokedy",
+                  "otedy",
+                  "okoldy",
+                  "otar",
+                  "otam",
+                  "olaiin",
+                  "ch",
+                  "dar",
+                  "dy"
+                ],
+                "uncertain_space_count": 0
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 10,
+                "tokens": [
+                  "sshedy",
+                  "shckhy",
+                  "qokey",
+                  "okedy",
+                  "sarol",
+                  "oty",
+                  "otedy",
+                  "qotedy",
+                  "otedy",
+                  "okaiin"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f75r.45,+P0",
+              "native_text": "sshedy.shckhy.qokey.okedy.sarol.oty.otedy.qotedy.otedy.okaiin",
+              "source_file_line": 4028,
+              "source_variables": {
+                "B": "1",
+                "C": "2",
+                "F": "a",
+                "H": "2",
+                "I": "B",
+                "L": "B",
+                "P": "A",
+                "Q": "M"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 10,
+                "tokens": [
+                  "sshedy",
+                  "shckhy",
+                  "qokey",
+                  "okedy",
+                  "sarol",
+                  "oty",
+                  "otedy",
+                  "qotedy",
+                  "otedy",
+                  "okaiin"
+                ],
+                "uncertain_space_count": 0
+              }
+            }
+          ],
+          "ordered_present_p0_identifiers": [
+            "f75r.1,@P0",
+            "f75r.2,+P0",
+            "f75r.3,+P0",
+            "f75r.4,+P0",
+            "f75r.5,+P0",
+            "f75r.6,+P0",
+            "f75r.7,+P0",
+            "f75r.8,+P0",
+            "f75r.9,+P0",
+            "f75r.10,+P0",
+            "f75r.11,+P0",
+            "f75r.12,+P0",
+            "f75r.13,+P0",
+            "f75r.14,+P0",
+            "f75r.15,+P0",
+            "f75r.16,+P0",
+            "f75r.17,+P0",
+            "f75r.18,+P0",
+            "f75r.19,+P0",
+            "f75r.20,+P0",
+            "f75r.21,+P0",
+            "f75r.22,+P0",
+            "f75r.23,+P0",
+            "f75r.24,+P0",
+            "f75r.25,+P0",
+            "f75r.26,+P0",
+            "f75r.27,+P0",
+            "f75r.28,+P0",
+            "f75r.29,+P0",
+            "f75r.30,+P0",
+            "f75r.31,+P0",
+            "f75r.32,+P0",
+            "f75r.33,+P0",
+            "f75r.34,+P0",
+            "f75r.35,+P0",
+            "f75r.36,+P0",
+            "f75r.37,+P0",
+            "f75r.38,+P0",
+            "f75r.39,+P0",
+            "f75r.40,+P0",
+            "f75r.41,+P0",
+            "f75r.42,+P0",
+            "f75r.43,+P0",
+            "f75r.44,+P0",
+            "f75r.45,+P0",
+            "f75r.46,+P0"
+          ],
+          "page_variables": {
+            "B": "1",
+            "C": "2",
+            "F": "a",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "A",
+            "Q": "M"
+          },
+          "present_p0_count": 46,
+          "source_id": "ZL3b",
+          "source_path": "data/raw/ZL3b-n.txt",
+          "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "target_native_p0_rank_one_based": 44
+        },
+        {
+          "all_locus_count": 53,
+          "alphabet": "EvaT",
+          "neighbors_by_native_number": [
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 7,
+                "tokens": [
+                  "yshedy",
+                  "chekar",
+                  "oldy",
+                  "qokain",
+                  "chkar",
+                  "otar",
+                  "oldy"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f75r.43,+P0",
+              "native_text": "yshedy.chekar.oldy.qokain.chkar.otar.oldy",
+              "source_file_line": 2568,
+              "source_variables": {
+                "B": "1",
+                "C": "2",
+                "F": "a",
+                "H": "2",
+                "I": "B",
+                "L": "B",
+                "P": "A",
+                "Q": "M"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 7,
+                "tokens": [
+                  "yshedy",
+                  "chekar",
+                  "oldy",
+                  "qokain",
+                  "chkar",
+                  "otar",
+                  "oldy"
+                ],
+                "uncertain_space_count": 0
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 11,
+                "tokens": [
+                  "dchedy",
+                  "sain",
+                  "okedy",
+                  "qokedy",
+                  "otedy",
+                  "okoldy",
+                  "otar",
+                  "otam",
+                  "olaiin",
+                  "chdar",
+                  "dy"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f75r.44,+P0",
+              "native_text": "dchedy.sain.okedy.qokedy.otedy.okoldy.otar.otam.olaiin.chdar.dy",
+              "source_file_line": 2569,
+              "source_variables": {
+                "B": "1",
+                "C": "2",
+                "F": "a",
+                "H": "2",
+                "I": "B",
+                "L": "B",
+                "P": "A",
+                "Q": "M"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 11,
+                "tokens": [
+                  "dchedy",
+                  "sain",
+                  "okedy",
+                  "qokedy",
+                  "otedy",
+                  "okoldy",
+                  "otar",
+                  "otam",
+                  "olaiin",
+                  "chdar",
+                  "dy"
+                ],
+                "uncertain_space_count": 0
+              }
+            },
+            {
+              "join_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 10,
+                "tokens": [
+                  "sshedy",
+                  "shckhy",
+                  "qokey",
+                  "okedy",
+                  "sorol",
+                  "oty",
+                  "otedy",
+                  "qotedy",
+                  "otedy",
+                  "okaiin"
+                ],
+                "uncertain_space_count": 0
+              },
+              "locus_identifier": "f75r.45,+P0",
+              "native_text": "sshedy.shckhy.qokey.okedy.sorol.oty.otedy.qotedy.otedy.okaiin",
+              "source_file_line": 2570,
+              "source_variables": {
+                "B": "1",
+                "C": "2",
+                "F": "a",
+                "H": "2",
+                "I": "B",
+                "L": "B",
+                "P": "A",
+                "Q": "M"
+              },
+              "split_adapter": {
+                "drawing_interruption_count": 0,
+                "eligible": true,
+                "exclusion_reasons": [],
+                "token_count": 10,
+                "tokens": [
+                  "sshedy",
+                  "shckhy",
+                  "qokey",
+                  "okedy",
+                  "sorol",
+                  "oty",
+                  "otedy",
+                  "qotedy",
+                  "otedy",
+                  "okaiin"
+                ],
+                "uncertain_space_count": 0
+              }
+            }
+          ],
+          "ordered_present_p0_identifiers": [
+            "f75r.1,@P0",
+            "f75r.2,+P0",
+            "f75r.3,+P0",
+            "f75r.4,+P0",
+            "f75r.5,+P0",
+            "f75r.6,+P0",
+            "f75r.7,+P0",
+            "f75r.8,+P0",
+            "f75r.9,+P0",
+            "f75r.10,+P0",
+            "f75r.11,+P0",
+            "f75r.12,+P0",
+            "f75r.13,+P0",
+            "f75r.14,+P0",
+            "f75r.15,+P0",
+            "f75r.16,+P0",
+            "f75r.17,+P0",
+            "f75r.18,+P0",
+            "f75r.19,+P0",
+            "f75r.20,+P0",
+            "f75r.21,+P0",
+            "f75r.22,+P0",
+            "f75r.23,+P0",
+            "f75r.24,+P0",
+            "f75r.25,+P0",
+            "f75r.26,+P0",
+            "f75r.27,+P0",
+            "f75r.28,+P0",
+            "f75r.29,+P0",
+            "f75r.30,+P0",
+            "f75r.31,+P0",
+            "f75r.32,+P0",
+            "f75r.33,+P0",
+            "f75r.34,+P0",
+            "f75r.35,+P0",
+            "f75r.36,+P0",
+            "f75r.37,+P0",
+            "f75r.38,+P0",
+            "f75r.39,+P0",
+            "f75r.40,+P0",
+            "f75r.41,+P0",
+            "f75r.42,+P0",
+            "f75r.43,+P0",
+            "f75r.44,+P0",
+            "f75r.45,+P0",
+            "f75r.46,+P0"
+          ],
+          "page_variables": {
+            "B": "1",
+            "C": "2",
+            "F": "a",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "A",
+            "Q": "M"
+          },
+          "present_p0_count": 46,
+          "source_id": "IT2a",
+          "source_path": "data/raw/IT2a-n.txt",
+          "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "target_native_p0_rank_one_based": 44
+        }
+      ],
+      "source_preference": null,
+      "verified_corpus_join": false
+    }
+  ],
+  "exposure": "All source bytes, native boundary inventories, exact-case source strings and neighboring readings exposed before pixels. Other project image inventories may have exposed these leaves; no untouched or independent image evaluation claim.",
+  "parent_head": "8b9771bc7af7517caf1af4a79204a99062e056a2",
+  "parent_pr": 196,
+  "question": "Provisional physical context of both drawing-involved source-cut disagreements, retaining original source alternatives.",
+  "schema_version": 1,
+  "selection_did_not_use_pixels": true,
+  "selection_predicate": "Either native marker in the complete union-disagreement ledger is <-> or <~>; retain every matching key/offset."
+}

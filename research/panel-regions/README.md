@@ -102,6 +102,11 @@ and order anchors support the proposed placements while pale details and all
 source differences remain open; both blocks share one exposed scan/leaf and
 still require independent glyph/region review before a verified crosswalk.
 
+The [two drawing-notation boundary cases](DRAWING_BOUNDARY_PAIR.md) retain
+every drawing-involved source-only cut in the complete native ledger, with
+frozen source context and provisional 13v/75r viewing windows. Exact rows,
+stroke ownership, glyph boundaries and source preference remain unresolved.
+
 ## Rosette small-circle review
 
 The separate [rosette region proposal](FROS_SMALL_CIRCLE.md) fixes four contiguous
