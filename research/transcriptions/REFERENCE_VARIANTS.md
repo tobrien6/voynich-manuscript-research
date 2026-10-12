@@ -22,6 +22,12 @@ All five inputs are ASCII with IVTFF 2.0 headers. Counts below distinguish decla
 
 The RF variants have identical alphabet headers and share all 5,385 present locus keys, yet **2,651 native text records differ**. The accepted reader removes locator padding and joins wrapped records; internal annotations remain in the comparison. This is not a glyph-error rate. The result demonstrates that alphabet and release-family names alone do not uniquely specify analysis inputs: exact variant URLs and byte hashes matter.
 
+The [nonexistent-locus source extract](NONEXISTENT_LOCUS.md) identifies the sole
+explicit nonexistent key, `f89v2.26`, in IT2a and GC2a. ZL3b and both RF variants
+omit that exact key while retaining its page header and numbered-key context.
+Explicit placeholders and undeclared keys remain different annotation states;
+neither supplies an independently verified manuscript-presence decision.
+
 GC uses a different native alphabet. Comparing its character counts or strings to Eva requires a documented conversion or unit definition; this audit performs neither. Page declarations describe edition surfaces rather than physical leaves. No image crosswalk, semantic reading, accuracy estimate, or translation is inferred from these counts.
 
 ## Reproduce with Python 3.10 or later

@@ -19,6 +19,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Section-beginning visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
 - [Three provisional f76r image/native-locus anchors](research/pilot/F76R_ANCHORS.md): frozen selections, both native readings, and source-linked review windows awaiting independent row checks.
+- [Local f76r image/native-text comparison](research/pilot/viewer/README.md): a reproducible read-only HTML artifact with literal source context and provisional review windows.
 - [Native foldout page conventions](research/pilot/NATIVE_PAGE_CONVENTIONS.md): documented carrier and panel ordering, with region/glyph review pending.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
@@ -29,6 +30,8 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md): common-cohort exploration with endpoints fixed in its permutation controls
 - [First-slot prefixes across catalog sections](research/transliteration/SECTION_STRATA.md): source-specific paragraph cohorts, section contrasts, and annotation disagreements.
 - [Exploratory y-prefix lookup candidate](research/hypotheses/y-layout-prefix-v1/RESULTS.md): a precommitted removal rule and development-only vocabulary test, with prior exposure and diagnostic limitations explicit.
+- [Prefix and vocabulary-opportunity controls](research/hypotheses/y-prefix-specificity-v1/RESULTS.md): fixed q/o comparisons and matched y frequency/length cells reduce the raw lookup contrast while retaining all treatments and exclusions.
+- [Fixed y-lookup image pairs](research/hypotheses/y-lookup-image-v1/RESULTS.md): two source-stable positive lookup cases traced to provisional target/internal-reference regions, retaining unverified glyph boundaries.
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
@@ -43,6 +46,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Literal-chain and token-boundary concordance](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md): fixed-cohort source/spacing comparisons retain identical encoded strings with different boundaries, without adjudicating manuscript word divisions.
 - [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
@@ -55,6 +59,7 @@ Link to source images and transcriptions until their reuse terms have been check
 - [Encoded paragraph-unit agreement](research/transliteration/PARAGRAPH_MEMBERSHIP.md): marker-pair checks, unassigned loci, and exact common paragraph membership for later unit-level comparisons.
 - [Token and repetition baselines](research/transliteration/BASELINES.md), [locus-position effects](research/transliteration/POSITION_EFFECTS.md), and [prefix stratification](research/transliteration/PREFIX_STRATA.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits. The stratification separates paragraph starts and source Currier labels rather than treating the pooled prefix pattern as uniform.
 - [Equal-token recurrence at fixed slot distances](research/transliteration/REPETITION_DISTANCES.md): distances 1–4 on the accepted P0 cohort, with excluded coordinates, exact conditional covariance, and source/policy sensitivity retained.
+- [Distinct repeating representations](research/transliteration/REPEATING_TYPES.md): each representation with any immediate self-repeat counted once, with an exact mean under the accepted fixed-gap locus control and explicit comparison limits.
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md) and [early/late-half controls](research/transliteration/INTERIOR_HALVES.md): neighboring interior lengths depart from the stated controls in 2,165 common loci; finer position gradients and transcription effects remain alternative explanations.
 - [Paired interior-order unit sensitivity](research/transliteration/INTERIOR_UNITS.md): the centered departure persists under all three declared count policies, while bench grouping lowers it and bench/minim paired changes have nonsmall tails.
 - [Grouped length prediction](research/baselines/GROUPED_LENGTH_RESULTS.md): a fixed previous-length model has mixed cross-validation gains and fails the declared preference criterion in all four treatments on previously exposed data.
