@@ -323,6 +323,24 @@ def verify_registration(commit, partition_path, fit_started_at):
     return committed
 
 
+def protect_output(path, prepared, partition_path, *, preparing=False):
+    """Keep both write modes from replacing explicit or implicit source inputs."""
+    protected = {(ROOT / pin['path']).resolve() for pin in prepared['input_pins'].values()}
+    catalog_path = ROOT / 'data/transliterations.json'
+    protected.add(catalog_path.resolve())
+    catalog = json.loads(catalog_path.read_bytes())
+    protected.update((ROOT / source['path']).resolve() for source in catalog['sources'])
+    protected.add((ROOT / BASE / 'PLAN.md').resolve())
+    # Initial preparation may create a partition. Once present, both the
+    # selected and standard registered paths must be preserved, including when
+    # --partition names a separate copy of the historical record.
+    for partition in (partition_path, ROOT / BASE / 'partition.json'):
+        if not preparing or partition.exists():
+            protected.add(partition.resolve())
+    if path.resolve() in protected:
+        raise ValueError('output must not replace a pinned input, raw source, plan or existing partition')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group(required=True)
@@ -335,9 +353,12 @@ def main():
     try:
         prepared = prepare_partition()
         if args.prepare:
+            protect_output(args.prepare, prepared, args.partition, preparing=True)
             args.prepare.write_text(json.dumps(prepared, indent=2) + '\n')
             print('Prepared exploratory dependency partition; no vocabulary fit or scoring performed.')
             return
+        if args.output:
+            protect_output(args.output, prepared, args.partition)
         partition = json.loads(args.partition.read_bytes())
         if partition != prepared:
             raise ValueError('committed diagnostic partition differs from current pinned inputs')
@@ -345,9 +366,6 @@ def main():
         commit = args.pre_run_commit or (expected['execution']['pre_run_commit'] if expected else None)
         fitted = expected['execution']['fit_started_at'] if expected else datetime.now(timezone.utc).isoformat()
         committed = verify_registration(commit, args.partition, fitted)
-        inputs = {ROOT / pin['path'] for pin in prepared['input_pins'].values()} | {args.partition.resolve()}
-        if args.output and args.output.resolve() in inputs:
-            raise ValueError('output must not replace a pinned analysis input')
         sources, _, _ = load_pins()
         report = analyze(sources, partition)
         report['partition_sha256'] = sha(args.partition.read_bytes())
