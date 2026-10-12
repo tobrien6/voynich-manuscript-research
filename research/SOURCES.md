@@ -89,3 +89,11 @@ results or a decipherment.
 - Accessed: 2026-10-12. PDF: 297 pages, 46,842,963 bytes, SHA-256 `69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891`.
 - Use: [exact terminal-source locators](folio-aliases/NEWBOLD_TERMINAL_SOURCE.md), historical foliation claims, plate/reproduction separation and changing readings/editorial contexts.
 - Limits: third-party hosted scan, not authenticated physical copy or current custodial representation. Manuscript readings, key interpretations and historical authorship/dating claims remain unaccepted; no current image comparison, verified alias, glyph correction or statistical use. PDF/full extraction/renders remain local.
+
+## S010 — Newbold's original 1921 lecture
+
+- Work: William Romaine Newbold, *The Voynich Roger Bacon Manuscript: The Mary Scott Newbold Lecture, Lecture V*, in *Transactions of the College of Physicians of Philadelphia*, third series, volume 43 (1921), pp. 431–474; opening footnote reports reading on 20 April 1921.
+- Archive record: https://archive.org/details/transactionsofco3431coll ; public PDF: https://archive.org/download/transactionsofco3431coll/transactionsofco3431coll.pdf
+- Inspected: 2026-10-12. Text PDF derivative: 652 pages, 52,867,297 bytes, SHA-256 `b661753be6315f0b0d5147acc73bb1d8d314fd5d8dc4c43413c9d4e4730dca65`.
+- Use: [original lecture follow-up](folio-aliases/NEWBOLD_1921_LECTURE.md), complete credited pp. 461–474, selected earlier key/context passages, exact printed/PDF locators and the `116V` extraction discrepancy against visually printed `116,`.
+- Limits and reuse: selected visual inspection of a digital derivative; no full-journal or physical-copy authentication. Historical key/readings/authorship/dating remain unaccepted, no modern folio alias or statistical use. Source PDF/full extraction/renders remain local; no blanket scan reuse license asserted.

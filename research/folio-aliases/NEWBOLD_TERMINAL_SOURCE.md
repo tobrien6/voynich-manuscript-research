@@ -92,3 +92,9 @@ Next inspect the original 1921 lecture, the actual Kennedy/Churchill reference
 7, and an explicit catalog-to-surface correspondence or custodial correction.
 Keep source schemes and changing historical rules separate from verified
 foliation, glyph interpretation and source-linked translation.
+
+Subsequent inspection: [S010's original 1921 lecture record](NEWBOLD_1921_LECTURE.md)
+now checks the credited pp. 461–474 and selected earlier context. The access
+limits and `original_lecture_inspected: false` in this note's original ledger
+remain the historical snapshot from S009's first inspection; the new record
+does not retroactively alter its exposure or establish the legacy alias.

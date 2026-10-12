@@ -82,9 +82,11 @@ The [standalone producer](../../../scripts/wrap_boundary_costs.py) uses exact
 rational arithmetic and reads seven historical references as actual Git blobs
 at `4d5baddaf0c9d5b9fd7c323579ceafefe24f03d4`. They are documentary/method
 references; later live edits do not enter the calculation. Its own protocol and
-settings must equal their original published blobs.
+settings must equal the frozen blobs retained in accepted main merge
+`4fe88fd8df8ae35ff9761b6442fd6adda0a27ee0`. The historical topic-plan commit
+`93d77fa` remains a chronology field and is not a runtime lookup dependency.
 
-From the repository root, with Python 3.10+ and the cited Git history:
+From the repository root, with Python 3.10+ and full main history:
 
 ```sh
 python3 -m unittest tests.test_wrap_boundary_costs -v
@@ -92,7 +94,7 @@ python3 scripts/wrap_boundary_costs.py --check research/line-wrap/boundary/resul
 python3 scripts/wrap_boundary_costs.py --output /tmp/new-boundary-calibration.json
 ```
 
-Eight tests pass. A separate maximal-fitting-prefix checker reconstructs all
+Ten tests pass. A separate maximal-fitting-prefix checker reconstructs all
 15,437 stream partitions, occurrence/carry conservation, both-row closure and
 tail exclusion. A recursive edit oracle independently checks every pair and
 boundary cost with the actual unequal within-width probabilities. The tests
@@ -104,10 +106,43 @@ are labeled implementation checks rather than extra declared cases. Drift,
 deterministic full replay and existing/symbolic/hardlink/late output protection
 are checked; outputs require a new unlinked file and exclusive writing.
 
-The entire first report reproduces byte for byte. It is 28,621,228 bytes with
-SHA-256 `6aa35b7ace4bcac9f968139aea286eed2b7ecb194a7d1f9d1c41e3f367ec5bba`.
-Its size reflects retention of every stream and boundary, rather than a
-favorable subset or only an aggregate result.
+The corrected complete report reproduces byte for byte. It is 28,621,228 bytes
+with SHA-256 `98a855f4f69e590e4b48ede12ccd6b580863d0ee984f722b45aec875b4d40098`.
+The original first report remains an actual Git blob at accepted merge
+`4fe88fd8df8ae35ff9761b6442fd6adda0a27ee0`, with SHA-256
+`6aa35b7ace4bcac9f968139aea286eed2b7ecb194a7d1f9d1c41e3f367ec5bba`.
+Only its producer/test entries in `implementation_sha256` change in the current
+report; every other key and value is identical. Both records retain every
+stream and boundary rather than a favorable subset or only aggregate results.
+
+## Main-only history compatibility correction
+
+After acceptance, a main-only integration found that the squash merge retained
+all frozen bytes but did not make the original topic-plan commit a main
+ancestor. The earlier producer's `git show 93d77fa:...` therefore failed before
+calculation in that checkout. Earlier validation with topic history present
+did not establish main-only reproducibility.
+
+The producer now reads the same frozen PLAN/settings blobs from the accepted
+main merge. Its historical `protocol_commit`, both protocol fingerprints,
+seven reference pins, laws, metric, geometry, selection, proof and all scientific
+records stay unchanged. Two new regressions forbid any lookup of the original
+topic object and compare the entire corrected parsed report to the original
+accepted Git blob, allowing precisely the two current implementation
+fingerprints. Those values are checked against actual current files; original
+fingerprints are checked against the original accepted code/test blobs.
+
+A fresh non-shallow single-branch main clone reproduced the original CLI
+failure. Applying only the repaired producer, tests and report then passed all
+ten focused tests and complete replay. The old topic object was absent both
+before and after; no topic fetch or borrowed object store was used. The accepted
+merge and reference commit were present and main ancestors. A normal full
+main-history clone is sufficient; shallow clones still need the referenced
+main history. The old report's byte check fails against corrected runtime
+fingerprints, as expected, without changing any scientific result.
+The full default Python discovery in that same independent checkout passes
+all 1,157 tests at main `dcb661b3ec7d3f4839de128cb9094d17703e87c5` with the
+three repair files applied. The topic object remains absent after that suite.
 
 ## Chronology and interpretation
 
@@ -119,8 +154,10 @@ The complete producer, proof and independent test source were syntax-compiled,
 published and remotely verified at
 [`4082f45`](https://github.com/tobrien6/voynich-manuscript-research/commit/4082f45fb8dc749df2542b0962f6488b13d3dee3)
 before the first CLI report calculation and first unit-test execution. The first
-report was preserved unchanged; all eight tests then passed. No law, metric,
-geometry, censoring rule, weighting, producer or test changed after outcomes.
+report was preserved unchanged; all eight original tests then passed. No law,
+metric, geometry, censoring rule or weighting changed after outcomes. The
+post-acceptance input-verification repair above updates only runtime provenance
+and adds its two regression tests.
 This is recorded chronology for known calibration, not independent exposure
 certification or an untouched manuscript prediction.
 
