@@ -61,9 +61,12 @@ safety limit remains unchanged. The report does not supply a B variance or tail.
 Eight core tests verify the formula against exhaustive distinct permutations of
 eleven small multisets, plus case/relabeling, empty/forced-repeat boundaries,
 asterisk diagnostics, record/gap overlap, seeded replay, multiset preservation,
-strict seed input and large-rational round-trip. Five runner tests cover complete
+strict seed input and large-rational round-trip. Eight runner tests cover complete
 trial retention, undefined denominators, both corpus hashes, dependency drift
-before reconstruction, and output protection/failure preservation.
+before reconstruction, and output protection/failure preservation. Temporary-only
+fixtures check direct, symlink and hardlink aliases for every protected path,
+including aliases created during report computation. The runner checks both
+before computation and immediately before writing the serialized report.
 
 The runner replays the frozen parser and validates all four record/flat corpus
 hashes before analysis. It reuses the accepted SHA-256 counter/Fisher–Yates
