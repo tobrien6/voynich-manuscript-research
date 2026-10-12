@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "amendment": "self-citation-size-parent-serialization-v1",
+  "published_transition_implementation_commit": "f710f6aa14ad1f37419b8ae4817763cddc2eb990",
+  "accepted_parent_head": "bb15b5a35ef9404bd2556a8939d24e5bb0e74e93",
+  "accepted_parent_merge": "8a08e771936e05fb3d8f7e283fe9e7a0cb206e89",
+  "first_size_report_sha256": "df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61",
+  "effective_size_report_sha256": "2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522",
+  "effective_driver_sha256": "e1a420948591eaaa4571cc4ab2ed60d9c6cd930dcd40168128f647c8b036ec2c",
+  "effective_manifest_sha256": "7bb5faefbe8b6a7d2b2c3a6f678b973319175def3d4e4fabcc83d8b44b2276c0",
+  "actual_changed_size_report_fields": [
+    "implementation_sha256",
+    "input_pins",
+    "parent_report_sha256",
+    "pin_manifest_sha256"
+  ],
+  "all_other_report_fields_identical_with_scalar_types": true,
+  "all_original_scientific_function_asts_identical": true,
+  "original_archive_compressed_and_decompressed_hashes_verified": true,
+  "full_effective_native_replay": true,
+  "second_independent_archive_complete_cache_replay": true,
+  "separate_literal_moment_support_weight_range_check": {
+    "count_vectors_including_empty": 1989,
+    "standardized_policy_profiles": 768,
+    "weighted_mean_fields_including_nulls": 3840,
+    "comparisons": 48,
+    "common_keys": 1426
+  },
+  "relevant_tests_passed": 106,
+  "original_plan_and_manifest_preserved": true,
+  "new_scientific_choices": 0,
+  "new_java_or_permutation_runs": 0
+}

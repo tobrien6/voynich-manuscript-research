@@ -57,6 +57,7 @@ Link to source images and transcriptions until their reuse terms have been check
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
 - [Self-citation generator audit](research/literature/COPYING_MECHANISM.md): pinned copying-model implementation and configuration, representation differences, and requirements for a prospective mechanism comparison.
 - [Fixed generator interior-order comparison](research/literature/SELF_CITATION_INTERIOR.md): all 24 manuscript points exceed the corresponding 31-seed ranges under three notation counts and two centering scopes; encoded-row and prior-exposure limits remain explicit.
+- [Exact-size generator comparison](research/literature/SELF_CITATION_SIZE_CONDITIONED.md): full-cohort standardization is undefined from missing size support; a predeclared 1,426-key common subset retains two inside-range points and 22 misses.
 - [Historical interlinear intake](research/historical/README.md): pin the recovered 1.6e6 archive and audit native H records before attempting published-method replication.
 - [Historical H/modern IT2a page envelopes](research/historical/MODERN_PAGE_ENVELOPES.md): equal global totals retain four page-count discrepancies and unmatched identifiers.
 - [Lossy lowercase notation comparison](research/historical/LOWERCASE_PROJECTION.md): 183 shared page streams match after explicit losses; frequency agreement can conceal sequence differences.
