@@ -3,7 +3,7 @@
   "scope": "Complete descriptive application of one primary-table reverse parser to native H fallback-retained tokens; partial notation output with opaque unmatched symbols, no Reddy comparison or glyph/translation claim",
   "plan_sha256": "f90bc92cb0e98eeab39820fe34b9665c306b63ee56de1cf9a1bc1cffb9a78ff5",
   "human_plan_sha256": "fabe0adc07952d761f60d7adb81032af699e9399a6cd8ec44abb764c52e6d3b6",
-  "producer_sha256": "4ee740b5aa56b6211a7f64e874da610eebc573a8bb79e7df46195abdf09a3314",
+  "producer_sha256": "10ed219f85081ab3a1a8661829deb847399e5a340c1a5b7e3b9c22e1b368e766",
   "frozen_dependency_hashes": {
     "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
     "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
@@ -163527,5 +163527,16 @@
       "output_equal": false
     }
   ],
-  "limits": "Partial definition-based notation with every unmatched symbol retained; one model, not full Bitrans emulation, complete Currier transliteration, physical glyph units, Reddy comparison, historical execution, language or translation"
+  "limits": "Partial definition-based notation with every unmatched symbol retained; one model, not full Bitrans emulation, complete Currier transliteration, physical glyph units, Reddy comparison, historical execution, language or translation",
+  "effective_dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "research/historical/intake.json": "9c85060ba04e7558485f98cdb6f51eb3e18942428a93874d8706542451b2aa1c",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "research/transliteration/currier-conversion-source.json": "77fe407b1437c44e523519bacfb29f79ce69d204b3127bc4919a62bb50c6a2f9"
+  },
+  "source_transition_sha256": "ff0850291af5c90e86e1236c20a3fee52f825aaabd6db9d922681489d6226371"
 }

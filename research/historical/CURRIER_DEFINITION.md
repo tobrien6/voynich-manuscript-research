@@ -13,8 +13,12 @@ The [primary source intake](../transliteration/CURRIER_CONVERSION_SOURCE.md),
 [catalog](../transliteration/currier-conversion-source.json) and
 [PR #181](https://github.com/tobrien6/voynich-manuscript-research/pull/181) at
 `a03ac3589bb138be98a701666a481d9d4b1174e6` pin the author-hosted definition,
-version 1.5 manual and README. Acceptance of that prerequisite is required
-before merging this follow-up. All three raw artifacts remain local. The
+version 1.5 manual and README. That prerequisite is now accepted at corrected
+head `410d4107e3bc775cf1fe9f6efeabd2ede919d10b`, merge
+`c30f7dd9eb1ead3ae8e7c8f1386db494a4f9db25`. The
+[source amendment](CURRIER_DEFINITION_SOURCE_AMENDMENT_1.md) records its
+three added inspected-page entries and preserves the complete first evidence.
+All three raw artifacts remain local. The
 definition is SHA-256
 `31105cb66e966bc7532c58178a867bf5b090c0473f047a3fdd30ee84bd339d32`.
 The current 2025 definition is not authenticated as a historical 2011
@@ -46,6 +50,9 @@ right-column definition and emit its single Currier left-column code once.
 Advance past the matched substring without rescanning output. If no rule
 matches, copy one original character opaquely and flag its token-local offset.
 This is one specified parser model, not full Bitrans program conformance.
+Bitrans's larger-group scheduling and equal-length overlap/file-order behavior
+are separate from this model's per-position longest match. Its IVTFF-header
+rewriting exception also does not enter isolated normalized-token processing.
 Output with unmatched symbols is **partial definition-based notation**, not
 certified complete Currier transliteration or verified manuscript glyph units.
 
@@ -138,15 +145,17 @@ python3 scripts/historical_currier_definition.py --reference /path/to/local/refe
 cmp /tmp/currier-definition.json research/historical/currier-definition.json
 ```
 
-Eleven focused tests cover greedy spans, noncumulative output, opaque offsets,
+Fourteen focused tests cover greedy spans, noncumulative output, opaque offsets,
 asterisks, exact character accounting, decoder conditions, malformed/ambiguous
 definitions, source identity/order, all pins, both complete-parent failures and
 existing-output preservation. All 20,439 allowed tokens of lengths one through
 three decode and remain distinct under a fictional synthetic definition; this
 test republishes no full author mapping. A separate trie generates a fictional
 38-rule catalog's complete 1,444-case diagnostics, which the parser verifies.
-Seventy temporary early/late direct/symlink/hardlink alias cases preserve all
-fourteen protected files.
+Ninety-five temporary early/late direct/symlink/hardlink alias cases preserve all
+nineteen protected files. Added transition tests bind the original plans,
+source/producer/report artifacts and exact permitted catalog change, and reject
+any changed source-derived result or boolean/integer substitution.
 
 The report replays byte for byte. An independent raw ZIP scanner with a comment
 walker and prefix trie imports none of the accepted readers/normalizer or new
@@ -154,7 +163,14 @@ producer. It checks all 5,214 record ledgers, all 37,919 token recoveries and
 8,151 type pairs, all unmatched events and rule-use counts, all character/
 length distributions, both flat vector hashes, complete repeat sets/scopes and
 every one of 37,918 equality-edge flags. Report SHA-256:
-`9f022fd41b7b227296dca88869b249f15a1904019d5c726926e50b2fc69b403a`.
+`9f022fd41b7b227296dca88869b249f15a1904019d5c726926e50b2fc69b403a`
+identifies the preserved first report. The accepted-source replay retains every
+observation, original plan/hash map and source vector exactly; only the producer
+fingerprint changes and two provenance fields are added. The runtime compares
+that complete normalized payload to the first report before writing. The
+amendment supplies original/effective source fingerprints and accepted chronology.
+Current amended report SHA-256:
+`c13357ab0c1a618084a6a52655fb46680d3fe85f770c2207a317500bf22d3d7d`.
 
 ## Rights and next work
 

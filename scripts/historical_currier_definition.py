@@ -2,6 +2,7 @@
 
 import argparse
 from collections import Counter
+import gzip
 import hashlib
 import itertools
 import json
@@ -25,6 +26,12 @@ FROZEN = ("data/historical/interlinear-16e6.json", "data/historical/text16e6.zip
           "research/historical/parsing.json", SOURCE)
 REFERENCES = ("Curr-Eva_def.bit", "Bitrans_manual.pdf", "000_README.txt")
 ALPHABET = set("abcdefghijklmnopqrstuvwxyz*")
+AMENDMENT = "research/historical/currier-definition-source-amendment-1.json"
+AMENDMENT_NOTE = "research/historical/CURRIER_DEFINITION_SOURCE_AMENDMENT_1.md"
+FIRST_SOURCE = "research/historical/frozen/currier-definition-source-first.json"
+FIRST_REPORT = "research/historical/frozen/currier-definition-report-first.json.gz"
+FIRST_PRODUCER = "research/historical/frozen/currier-definition-producer-first.source.txt.gz"
+TRANSITION_PATHS = (AMENDMENT, AMENDMENT_NOTE, FIRST_SOURCE, FIRST_REPORT, FIRST_PRODUCER)
 
 
 def sha(raw):
@@ -58,6 +65,57 @@ def check_report(actual, path):
         raise ValueError(f"complete report differs: {path.name}")
 
 
+def source_transition(root, plan):
+    amendment = read_json(root / AMENDMENT)
+    expected = {"amendment_version": 1, "source_pr": 181,
+                "original_source_head": "a03ac3589bb138be98a701666a481d9d4b1174e6",
+                "accepted_source_head": "410d4107e3bc775cf1fe9f6efeabd2ede919d10b",
+                "accepted_source_merge": "c30f7dd9eb1ead3ae8e7c8f1386db494a4f9db25",
+                "accepted_source_catalog_sha256": "77fe407b1437c44e523519bacfb29f79ce69d204b3127bc4919a62bb50c6a2f9",
+                "original_report_sha256": "9f022fd41b7b227296dca88869b249f15a1904019d5c726926e50b2fc69b403a",
+                "allowed_catalog_field": "manual_inspected_printed_pages", "allowed_page_additions": [12, 16, 17],
+                "unchanged_model": True, "unchanged_scientific_results": True,
+                "changed_report_metadata_fields": ["producer_sha256", "effective_dependency_hashes", "source_transition_sha256"]}
+    if any(canonical(amendment.get(key)) != canonical(value) for key, value in expected.items()):
+        raise ValueError("accepted-source transition options differ")
+    for key, name in (("original_plan_sha256", PLAN), ("original_human_plan_sha256", HUMAN_PLAN)):
+        if sha((root / name).read_bytes()) != amendment[key]:
+            raise ValueError("original primary-table plan bytes differ")
+    if set(amendment["preserved_files"]) != {FIRST_SOURCE, FIRST_REPORT, FIRST_PRODUCER}:
+        raise ValueError("preserved primary-table artifact set differs")
+    for name, expected_hash in amendment["preserved_files"].items():
+        if sha((root / name).read_bytes()) != expected_hash:
+            raise ValueError(f"preserved primary-table artifact differs: {name}")
+    original_bytes = (root / FIRST_SOURCE).read_bytes()
+    if (sha(original_bytes) != plan["dependency_hashes"][SOURCE]
+            or sha(original_bytes) != amendment["original_source_catalog_sha256"]
+            or sha((root / SOURCE).read_bytes()) != amendment["accepted_source_catalog_sha256"]):
+        raise ValueError("original or accepted source-catalog identity differs")
+    original, accepted = read_json(root / FIRST_SOURCE), read_json(root / SOURCE)
+    allowed = {**original, "manual_inspected_printed_pages": sorted(original["manual_inspected_printed_pages"] + [12, 16, 17])}
+    if canonical(accepted) != canonical(allowed):
+        raise ValueError("accepted source catalog changed beyond three inspected pages")
+    producer_bytes = gzip.decompress((root / FIRST_PRODUCER).read_bytes())
+    report_bytes = gzip.decompress((root / FIRST_REPORT).read_bytes())
+    if sha(producer_bytes) != amendment["original_producer_sha256"] or sha(report_bytes) != amendment["original_report_sha256"]:
+        raise ValueError("original model producer/report bytes differ")
+    first = json.loads(report_bytes)
+    if (first["producer_sha256"] != amendment["original_producer_sha256"]
+            or first["plan_sha256"] != amendment["original_plan_sha256"]
+            or first["human_plan_sha256"] != amendment["original_human_plan_sha256"]
+            or canonical(first["frozen_dependency_hashes"]) != canonical(plan["dependency_hashes"])):
+        raise ValueError("first report original provenance differs")
+    effective = {**plan["dependency_hashes"], SOURCE: amendment["accepted_source_catalog_sha256"]}
+    return effective, first
+
+
+def bind_first_results(result, effective, transition_sha, first):
+    original_view = {**result, "producer_sha256": first["producer_sha256"]}
+    if canonical(original_view) != canonical(first):
+        raise ValueError("original source-derived model observations changed")
+    return {**result, "effective_dependency_hashes": effective, "source_transition_sha256": transition_sha}
+
+
 def load_plan(root):
     plan = read_json(root / PLAN)
     options = {"plan_version": 1, "source_pr": 181,
@@ -72,8 +130,9 @@ def load_plan(root):
         raise ValueError("primary-table parser options differ")
     if set(plan["dependency_hashes"]) != set(FROZEN):
         raise ValueError("primary-table dependency set differs")
+    effective, _ = source_transition(root, plan)
     for name in FROZEN:
-        if sha((root / name).read_bytes()) != plan["dependency_hashes"][name]:
+        if sha((root / name).read_bytes()) != effective[name]:
             raise ValueError(f"frozen primary-table dependency differs: {name}")
     return plan
 
@@ -262,6 +321,7 @@ def analyze(native, definition):
 
 def run_audit(reference, root=ROOT):
     plan = load_plan(root)
+    effective, first = source_transition(root, plan)
     catalog = read_json(root / SOURCE)
     definition = verify_definition(reference, catalog)
     check_report(audit(root), root / "research/historical/intake.json")
@@ -269,7 +329,7 @@ def run_audit(reference, root=ROOT):
     native_catalog = read_json(root / "data/historical/interlinear-16e6.json")
     member = read_pinned_archive((root / native_catalog["path"]).read_bytes(), native_catalog)
     native = [row for row in parse_historical(member)[0] if row.transcriber == "H"]
-    return {"audit_version": 1, "scope": plan["scope"], "plan_sha256": sha((root / PLAN).read_bytes()),
+    result = {"audit_version": 1, "scope": plan["scope"], "plan_sha256": sha((root / PLAN).read_bytes()),
             "human_plan_sha256": sha((root / HUMAN_PLAN).read_bytes()), "producer_sha256": sha(Path(__file__).read_bytes()),
             "frozen_dependency_hashes": plan["dependency_hashes"], "source_pr": 181,
             "source_published_head": plan["source_published_head"], "verified_primary_artifacts": catalog["artifacts"],
@@ -278,10 +338,11 @@ def run_audit(reference, root=ROOT):
             "input_alphabet_decoder_condition_verified": True, "unmatched_policy": plan["unmatched_policy"],
             **analyze(native, definition),
             "limits": "Partial definition-based notation with every unmatched symbol retained; one model, not full Bitrans emulation, complete Currier transliteration, physical glyph units, Reddy comparison, historical execution, language or translation"}
+    return bind_first_results(result, effective, sha((root / AMENDMENT).read_bytes()), first)
 
 
 def protect_output(path, reference):
-    protected = [ROOT / name for name in (*FROZEN, PLAN, HUMAN_PLAN)] + [Path(__file__)]
+    protected = [ROOT / name for name in (*FROZEN, PLAN, HUMAN_PLAN, *TRANSITION_PATHS)] + [Path(__file__)]
     protected += [reference / name for name in REFERENCES]
     if any(path.resolve() == p.resolve() or path.exists() and p.exists() and path.samefile(p) for p in protected):
         raise ValueError("primary-table output aliases a frozen source, reference, plan or producer")

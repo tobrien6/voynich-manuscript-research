@@ -1,5 +1,7 @@
 import contextlib
+import ast
 from dataclasses import replace
+import gzip
 import hashlib
 import io
 import itertools
@@ -170,7 +172,7 @@ class HistoricalCurrierDefinitionTests(unittest.TestCase):
     def test_each_frozen_dependency_and_critical_policy_is_enforced(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
-            for name in (*module.FROZEN, module.PLAN):
+            for name in (*module.FROZEN, module.PLAN, module.HUMAN_PLAN, *module.TRANSITION_PATHS):
                 target = root / name; target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(module.ROOT / name, target)
             module.load_plan(root)
@@ -195,11 +197,11 @@ class HistoricalCurrierDefinitionTests(unittest.TestCase):
                 with patch.object(module, "check_report", side_effect=checker), self.assertRaises(ValueError): module.run_audit(Path("unused"))
                 analyze.assert_not_called()
 
-    def test_all_70_early_late_aliases_preserve_every_protected_file(self):
+    def test_all_95_early_late_aliases_preserve_every_protected_file(self):
         with tempfile.TemporaryDirectory() as temp:
             root, reference = Path(temp) / "root", Path(temp) / "reference"
             producer = root / "scripts/producer.py"
-            paths = [root / n for n in (*module.FROZEN, module.PLAN, module.HUMAN_PLAN)] + [producer]
+            paths = [root / n for n in (*module.FROZEN, module.PLAN, module.HUMAN_PLAN, *module.TRANSITION_PATHS)] + [producer]
             paths += [reference / n for n in module.REFERENCES]
             for i, p in enumerate(paths): p.parent.mkdir(parents=True, exist_ok=True); p.write_bytes(f"original-{i}".encode())
             original = [p.read_bytes() for p in paths]; count = 0
@@ -221,7 +223,58 @@ class HistoricalCurrierDefinitionTests(unittest.TestCase):
                         self.assertEqual([p.read_bytes() for p in paths], original)
                         if output != source: output.unlink()
                         count += 1
-            self.assertEqual(count, 70)
+            self.assertEqual(count, 95)
+
+    def test_transition_rejects_extra_catalog_changes_and_every_preserved_artifact_change(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for name in (*module.FROZEN, module.PLAN, module.HUMAN_PLAN, *module.TRANSITION_PATHS):
+                target = root / name; target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(module.ROOT / name, target)
+            plan = module.read_json(root / module.PLAN)
+            effective, first = module.source_transition(root, plan)
+            self.assertEqual({n for n in effective if effective[n] != plan["dependency_hashes"][n]}, {module.SOURCE})
+            self.assertEqual(first["tokens"], 37919)
+            for name in (module.FIRST_SOURCE, module.FIRST_REPORT, module.FIRST_PRODUCER, module.PLAN, module.HUMAN_PLAN):
+                path = root / name; original = path.read_bytes(); path.write_bytes(original + b" ")
+                with self.subTest(name=name), self.assertRaises(ValueError): module.source_transition(root, plan)
+                path.write_bytes(original)
+            amendment = module.read_json(root / module.AMENDMENT)
+            for key, value in (("allowed_page_additions", [12, 16]), ("unchanged_model", 1),
+                               ("accepted_source_catalog_sha256", "wrong"), ("original_report_sha256", "wrong")):
+                (root / module.AMENDMENT).write_text(json.dumps({**amendment, key: value}))
+                with self.subTest(key=key), self.assertRaises(ValueError): module.source_transition(root, plan)
+            (root / module.AMENDMENT).write_text(json.dumps(amendment))
+            changed = module.read_json(root / module.SOURCE)
+            changed["manual_inspected_printed_pages"].append(18)
+            (root / module.SOURCE).write_text(json.dumps(changed))
+            with self.assertRaises(ValueError): module.source_transition(root, plan)
+
+    def test_complete_original_payload_guard_allows_only_producer_and_two_added_metadata_fields(self):
+        first = {"producer_sha256": "first", "all_record_ledger": [{"tokens": 2, "fully_defined": True}], "tokens": 2}
+        current = {**first, "producer_sha256": "current"}
+        result = module.bind_first_results(current, {"source": "accepted"}, "transition", first)
+        self.assertEqual(result, {**current, "effective_dependency_hashes": {"source": "accepted"}, "source_transition_sha256": "transition"})
+        self.assertNotIn("effective_dependency_hashes", current)
+        for change in ({**current, "tokens": 3}, {**current, "extra": "field"},
+                       {**current, "all_record_ledger": [{"tokens": 2, "fully_defined": 1}]}):
+            with self.assertRaises(ValueError): module.bind_first_results(change, {}, "transition", first)
+
+    def test_preserved_first_producer_is_original_pre_measurement_content(self):
+        first = json.loads(gzip.decompress((module.ROOT / module.FIRST_REPORT).read_bytes()))
+        original_producer = gzip.decompress((module.ROOT / module.FIRST_PRODUCER).read_bytes())
+        self.assertEqual(module.sha(original_producer), first["producer_sha256"])
+        self.assertIn(b"def analyze(native, definition):", original_producer)
+        self.assertNotIn(b"def source_transition(", original_producer)
+        original_text = original_producer.decode("utf-8")
+        current_text = Path(module.__file__).read_text()
+        def bodies(text):
+            tree = ast.parse(text)
+            return {node.name: ast.get_source_segment(text, node) for node in tree.body
+                    if isinstance(node, (ast.FunctionDef, ast.ClassDef))}
+        old, new = bodies(original_text), bodies(current_text)
+        for name in ("Definition", "verify_definition", "repetitions", "analyze", "vector_sha", "canonical", "read_json"):
+            self.assertEqual(old[name], new[name], name)
 
     def test_failed_serialization_and_strict_check_preserve_existing_output(self):
         with tempfile.TemporaryDirectory() as temp:
