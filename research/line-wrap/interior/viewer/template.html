@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Conditional interior order under IID wrapping</title>
+<style>
+:root{color-scheme:light;--ink:#172f3d;--muted:#45616f;--paper:#f4f7f8;--line:#c6d7dc;--early:#d6ebf5;--late:#e1eccc}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:2rem 1.2rem 4rem}h1{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;max-width:850px}h2{font-size:1.6rem;line-height:1.25}h4{margin:.6rem 0}.kicker{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.lead{max-width:880px;font-size:1.13rem}a{color:#145b78;text-underline-offset:.15em}a:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #ac580e;outline-offset:3px}code{font: .9em ui-monospace,monospace;overflow-wrap:anywhere}.small{font-size:.86rem;color:var(--muted)}section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.2rem;margin:1.5rem 0;min-width:0}.notice{border-left:4px solid #ac580e;background:#fff3e5;padding:.8rem}.legend{display:flex;gap:.7rem;flex-wrap:wrap}.legend span{padding:.2rem .65rem;border:1px solid var(--line);border-radius:4px}.endpoint{background:#e4e8ea}.early{background:var(--early)}.late{background:var(--late)}.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}.facts div{background:var(--paper);padding:.7rem;border-radius:6px}dt{font-size:.82rem;color:var(--muted)}dd{margin:.1rem 0;font:1.2rem ui-monospace,monospace;overflow-wrap:anywhere}.table-scroll{overflow-x:auto;max-width:100%;margin:1rem 0}table{border-collapse:collapse;width:100%;font-size:.86rem}caption{text-align:left;color:var(--muted);padding-bottom:.5rem}th,td{padding:.55rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:var(--paper);font-size:.8rem}summary{cursor:pointer;padding:.5rem 0}summary::marker{color:#145b78}.order-detail{min-width:250px}.order-detail .table-scroll{margin-bottom:.4rem}.case-switch{padding:1rem 0}select{max-width:100%;padding:.6rem;font:inherit;background:#fff;color:var(--ink);border:1px solid var(--muted);border-radius:5px;margin-top:.3rem;display:block}.diagram-scroll{overflow-x:auto;padding:.4rem 0}.diagram{position:relative;min-height:4rem;padding-top:1.6rem}.capacity{position:absolute;top:0;height:3.9rem;border-left:2px solid #45616f;border-right:2px solid #45616f;border-top:2px solid #45616f;pointer-events:none}.capacity>span{position:absolute;top:-.15rem;left:.4rem;background:#fff;font-size:.75rem;padding:0 .2rem}.tokens{display:flex;gap:.8rem;position:relative}.token{flex-shrink:0;display:flex;justify-content:center;align-items:center;height:2rem;border:1px solid #45616f;font: .85rem ui-monospace,monospace}.tail .token{border-style:dashed}.stream-order{margin:.8rem 0;border-top:1px solid var(--line);padding:.3rem}.closed-row,.unclosed{padding:.8rem;margin:.7rem 0;background:var(--paper)}.unclosed{background:#fff3e5;border-left:4px dashed #ac580e}footer{font-size:.85rem}footer li{margin-bottom:.8rem}footer code{font-size:.8rem}[hidden]{display:none!important}@media(max-width:600px){main{padding:1.2rem .7rem 3rem}section{padding:.8rem}.facts{grid-template-columns:1fr}th,td{padding:.45rem}.order-detail{min-width:220px}}
+</style>
+</head>
+<body><main>
+<header><p class="kicker">Voynich research · known synthetic control</p>
+<h1>Equally likely orders can have nonzero scores</h1>
+<p class="lead">Under this fixed IID additive wrapping model, completed rows with the same endpoints and interior bag have equally likely interior orders. Their centered scores average to zero across the conditional orbit. An individual row or stream can still have a nonzero score.</p>
+<p>This display reads accepted exact certificates. It supplies no manuscript geometry, glyph reading, language or translation. All eight conditions, including the short and impossible cases, remain below.</p>
+<div class="legend" aria-label="Synthetic token position legend"><span class="endpoint">Fixed endpoints</span><span class="early">Early interior</span><span class="late">Late interior</span><span>Dashed tokens: unclosed tail</span></div>
+<p class="small">Numbers are synthetic widths; box widths and one-unit gaps depict the toy geometry. Early means ceil(interior count / 2). The half score includes the pair crossing the half boundary.</p>
+</header>
+@@OVERVIEW@@
+<div class="case-switch" hidden><label for="case-choice">Inspect a fixed condition</label><select id="case-choice">@@OPTIONS@@</select></div>
+<noscript><p class="notice">Scripts are disabled: every condition, exact value and stream remains available. Expand the details for width diagrams and incoming events.</p></noscript>
+<div id="cases">@@CASES@@</div>
+@@STREAM@@
+<section><h2>What the model assumes</h2><p>Positive integer widths are IID on a finite support with positive probabilities. Capacity and a nonnegative separator are fixed. Append on equality; close only on overflow; carry the same failed token into the next row. Conditioning must have positive probability and row selection must preserve the permitted permutations. The likelihood theorem requires at least two token positions; scoring requires at least five.</p><ul>@@LIMITS@@</ul><p>Raw event weights condition on the first width. Order probabilities additionally condition on endpoints, the interior bag and completion. For an impossible condition the distribution and mean are undefined. A constant eligible interior uses the accepted zero convention.</p></section>
+<footer><h2>Accepted source record</h2><p>Input commit <code>@@COMMIT@@</code>. All numbers above are displayed from the accepted certificates; selecting a condition does not run a new analysis. Source links require internet when opened; the display itself uses no network requests or saved state.</p><ul>@@SOURCES@@</ul></footer>
+</main>
+<script>
+(() => {
+  const control = document.querySelector('.case-switch');
+  const choice = document.getElementById('case-choice');
+  const cases = [...document.querySelectorAll('#cases > .case')];
+  const show = id => {
+    if (!cases.some(item => item.id === id)) return;
+    choice.value = id;
+    cases.forEach(item => { item.hidden = item.id !== id; });
+  };
+  control.hidden = false;
+  show(cases.some(item => '#' + item.id === location.hash) ? location.hash.slice(1) : choice.value);
+  choice.addEventListener('change', () => show(choice.value));
+  document.querySelectorAll('.case-link').forEach(link => link.addEventListener('click', () => show(link.hash.slice(1))));
+  window.addEventListener('hashchange', () => show(location.hash.slice(1)));
+})();
+</script>
+</body></html>
