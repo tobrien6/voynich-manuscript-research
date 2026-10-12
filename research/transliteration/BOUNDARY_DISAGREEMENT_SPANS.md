@@ -110,3 +110,7 @@ Their shared anchors are agreement between related encodings, rather than
 independent physical evidence. A candidate segmentation rule still needs
 frozen predictions and exposure-valid tests under the
 [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
+
+The [local span reviewer](span-viewer/README.md) searches both complete source
+comparisons and shows each original token partition with immutable file links.
+Its filters change the displayed view, without applying a source correction.
