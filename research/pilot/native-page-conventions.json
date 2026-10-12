@@ -25,7 +25,8 @@
     "research/pilot/inventory.json": "9d34cfdc78a0900e52a8833fd67d752b42aae4667fc57c815e6a205d0a786e79",
     "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
     "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
-    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
   },
   "records": [
     {
@@ -67,6 +68,13 @@
                 "Ri": 12
               }
             }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f67r1",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:67"
           }
         },
         {
@@ -95,6 +103,13 @@
                 "Pb": 32
               }
             }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f67r2",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:67"
           }
         }
       ],
@@ -151,6 +166,13 @@
                 "Pb": 3
               }
             }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f68r1",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:68"
           }
         },
         {
@@ -177,6 +199,13 @@
                 "P0": 5
               }
             }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f68r2",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:68"
           }
         },
         {
@@ -205,6 +234,13 @@
                 "Ri": 8
               }
             }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f68r3",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:68"
           }
         }
       ],
@@ -257,6 +293,13 @@
               "present_loci": 0,
               "present_loci_by_kind": {}
             }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "fRos",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:85+86"
           }
         }
       ],

@@ -6,6 +6,12 @@ The [exact-page readiness audit](TRANSCRIPTION_READINESS.md) leaves 67r, 68r,
 and the shared 85v/86r scan unresolved. What naming conventions does the
 transliteration publisher document for these surfaces?
 
+The accepted [whole-corpus image-reference audit](../folio-alignment/IMAGE_COVERAGE.md)
+already establishes their coarse side references. This follow-up adds a pinned
+copy identity for the convention source and initial image/orientation checks.
+Every native identifier cross-references that audit and retains its unresolved
+panel-region status.
+
 R. Zandbergen's [IVTFF specification](https://voynich.nu/software/ivtt/IVTFF_format.pdf),
 document issue 2.0.2 dated 8 July 2025, defines recto foldout numbering away
 from the binding, from left to right. Section 4.2 and the appendix distinguish
@@ -56,8 +62,8 @@ pinned files. The PDF and Yale images are linked, not redistributed.
 
 ## Validation and next test
 
-The record pins the inventory, canvas index, image-index audit, and source
-catalog by SHA-256. Each referenced canvas/label, native page presence, kind
+The record pins the inventory, canvas index, image-index audit, source catalog,
+and accepted whole-corpus report by SHA-256. Each referenced canvas/label, native page presence, kind
 count, and source digest was checked against those inputs. Source publication
 facts and image observations can be reviewed independently through the links
 above; copying or cropping the illustrations is unnecessary.
