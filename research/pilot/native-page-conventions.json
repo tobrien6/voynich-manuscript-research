@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "record_id": "pilot-native-page-conventions-v1",
+  "recorded_on": "2026-10-11",
+  "timezone": "America/New_York",
+  "status": "source_convention_documented_independent_review_pending",
+  "apply_to_statistics": false,
+  "format_source": {
+    "author": "R. Zandbergen",
+    "title": "IVTFF - Intermediate Voynich MS Transliteration File Format",
+    "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "file_format_version": "2.0.1",
+    "document_issue": "2.0.2",
+    "document_issue_date": "2025-07-08",
+    "retrieved_sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "inspected_printed_pages": [
+      11,
+      12,
+      35,
+      36,
+      37
+    ]
+  },
+  "input_pins": {
+    "research/pilot/inventory.json": "9d34cfdc78a0900e52a8833fd67d752b42aae4667fc57c815e6a205d0a786e79",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
+  },
+  "records": [
+    {
+      "inventory_target": "67r",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+      "yale_label": "67r",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006194",
+      "explicit_canvas_sides": [
+        "67r"
+      ],
+      "mapping_scope": "whole_canvas_reference_and_qualitative_order_only",
+      "format_source_printed_pages": [
+        11,
+        12,
+        35
+      ],
+      "native_pages": [
+        {
+          "page_id": "f67r1",
+          "qualitative_position": "left",
+          "edition_presence": {
+            "ZL3b": {
+              "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+              "header_present": true,
+              "present_loci": 19,
+              "present_loci_by_kind": {
+                "Cc": 3,
+                "P0": 4,
+                "Ri": 12
+              }
+            },
+            "IT2a": {
+              "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+              "header_present": true,
+              "present_loci": 19,
+              "present_loci_by_kind": {
+                "Cc": 3,
+                "P0": 4,
+                "Ri": 12
+              }
+            }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f67r1",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:67"
+          }
+        },
+        {
+          "page_id": "f67r2",
+          "qualitative_position": "right",
+          "edition_presence": {
+            "ZL3b": {
+              "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+              "header_present": true,
+              "present_loci": 74,
+              "present_loci_by_kind": {
+                "L0": 27,
+                "Ls": 12,
+                "P0": 3,
+                "Pb": 32
+              }
+            },
+            "IT2a": {
+              "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+              "header_present": true,
+              "present_loci": 74,
+              "present_loci_by_kind": {
+                "L0": 27,
+                "Ls": 12,
+                "P0": 3,
+                "Pb": 32
+              }
+            }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f67r2",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:67"
+          }
+        }
+      ],
+      "image_cross_check": {
+        "status": "AI-assisted initial observation; independent review pending",
+        "observer_account": "tobrien6",
+        "inspected_on": "2026-10-11",
+        "image_url": "https://collections.library.yale.edu/iiif/2/1006194/full/!1800,1800/0/default.jpg",
+        "image_sha256": "ed3657b74b4705da1b2605b12e0a9cda501df9384b8e0f8f5ce392498ee41e84",
+        "observation": "Binding context is visible at left. Two diagram panels appear side by side; the left has a face with colored rays and upper horizontal writing, while the right has a segmented circle with small disk/crescent forms and red writing."
+      },
+      "pixel_regions": null,
+      "glyph_alignment": null,
+      "independent_review": null
+    },
+    {
+      "inventory_target": "68r",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+      "yale_label": "68r",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006196",
+      "explicit_canvas_sides": [
+        "68r"
+      ],
+      "mapping_scope": "whole_canvas_reference_and_qualitative_order_only",
+      "format_source_printed_pages": [
+        11,
+        12,
+        35
+      ],
+      "native_pages": [
+        {
+          "page_id": "f68r1",
+          "qualitative_position": "left",
+          "edition_presence": {
+            "ZL3b": {
+              "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+              "header_present": true,
+              "present_loci": 37,
+              "present_loci_by_kind": {
+                "Cc": 1,
+                "Ls": 29,
+                "P0": 4,
+                "Pb": 3
+              }
+            },
+            "IT2a": {
+              "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+              "header_present": true,
+              "present_loci": 37,
+              "present_loci_by_kind": {
+                "Cc": 1,
+                "Ls": 29,
+                "P0": 4,
+                "Pb": 3
+              }
+            }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f68r1",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:68"
+          }
+        },
+        {
+          "page_id": "f68r2",
+          "qualitative_position": "middle",
+          "edition_presence": {
+            "ZL3b": {
+              "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+              "header_present": true,
+              "present_loci": 31,
+              "present_loci_by_kind": {
+                "Cc": 2,
+                "Ls": 24,
+                "P0": 5
+              }
+            },
+            "IT2a": {
+              "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+              "header_present": true,
+              "present_loci": 31,
+              "present_loci_by_kind": {
+                "Cc": 2,
+                "Ls": 24,
+                "P0": 5
+              }
+            }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f68r2",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:68"
+          }
+        },
+        {
+          "page_id": "f68r3",
+          "qualitative_position": "right",
+          "edition_presence": {
+            "ZL3b": {
+              "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+              "header_present": true,
+              "present_loci": 22,
+              "present_loci_by_kind": {
+                "Cc": 2,
+                "La": 1,
+                "Ls": 11,
+                "Ri": 8
+              }
+            },
+            "IT2a": {
+              "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+              "header_present": true,
+              "present_loci": 22,
+              "present_loci_by_kind": {
+                "Cc": 2,
+                "La": 1,
+                "Ls": 11,
+                "Ri": 8
+              }
+            }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "f68r3",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:68"
+          }
+        }
+      ],
+      "image_cross_check": {
+        "status": "AI-assisted initial observation; independent review pending",
+        "observer_account": "tobrien6",
+        "inspected_on": "2026-10-11",
+        "image_url": "https://collections.library.yale.edu/iiif/2/1006196/full/!1800,1800/0/default.jpg",
+        "image_sha256": "da1c31e2187794fdba8b4b4b7da0eecd48cd40f403e39586d44dfecd39816cb5",
+        "observation": "Binding context is visible at left. The unfolded recto shows left and middle fields of star-like forms with upper text, then a large segmented circular diagram at right. Creases alone do not define all text regions."
+      },
+      "pixel_regions": null,
+      "glyph_alignment": null,
+      "independent_review": null
+    },
+    {
+      "inventory_target": "85v",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+      "yale_label": "85v and 86r (foldout)",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006231",
+      "explicit_canvas_sides": [
+        "85v",
+        "86r"
+      ],
+      "mapping_scope": "whole_canvas_reference_and_qualitative_order_only",
+      "format_source_printed_pages": [
+        12,
+        36,
+        37
+      ],
+      "native_pages": [
+        {
+          "page_id": "fRos",
+          "qualitative_position": "entire shared surface",
+          "edition_presence": {
+            "ZL3b": {
+              "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+              "header_present": true,
+              "present_loci": 160,
+              "present_loci_by_kind": {
+                "Ca": 1,
+                "Cc": 11,
+                "L0": 137,
+                "Pb": 11
+              }
+            },
+            "IT2a": {
+              "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+              "header_present": false,
+              "present_loci": 0,
+              "present_loci_by_kind": {}
+            }
+          },
+          "coarse_reference_record": {
+            "report_path": "research/folio-alignment/transcription-image-coverage.json",
+            "page_id": "fRos",
+            "side_reference_status": "side_references_matched",
+            "panel_region_status": "unresolved",
+            "dependency_group": "yale-leaves:85+86"
+          }
+        }
+      ],
+      "image_cross_check": {
+        "status": "AI-assisted initial observation; independent review pending",
+        "observer_account": "tobrien6",
+        "inspected_on": "2026-10-11",
+        "image_url": "https://collections.library.yale.edu/iiif/2/1006231/full/!1800,1800/0/default.jpg",
+        "image_sha256": "0f16acfa51a93c8ba44dcd4c0f7e619648a4144fd4f6d07bed5271694f022daf",
+        "observation": "A single unfolded image shows connected circular forms across the whole surface, with two major vertical folds and a horizontal fold. No circle or individual text item is assigned to a physical panel."
+      },
+      "pixel_regions": null,
+      "glyph_alignment": null,
+      "independent_review": null
+    }
+  ]
+}

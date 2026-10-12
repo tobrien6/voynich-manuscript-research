@@ -97,3 +97,7 @@ additional predictions beyond restating them. A next test can distinguish
 representation artifacts from image-supported prefix structure, using a
 documented glyph-unit scheme and independently checked source regions before
 assigning any plaintext or semantic role.
+
+The [conservative common-cohort check](CONSERVATIVE_PREFIXES.md) now applies the
+accepted whole-locus adapter to the same prefix question, with one location list
+eligible under all source/spacing cases and source-defined paragraph partitions.
