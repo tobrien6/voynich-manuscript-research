@@ -97,3 +97,12 @@ window. Both complete native readings and all uncertain annotations remain in a
 reproducible checklist. Layout supports a candidate association; glyph alignment,
 arc boundaries/directions and independent review remain unresolved. The shared
 85v/86r carrier stays one dependency, and the proposal cannot fill IT2a's absent text.
+
+## f89v bottom-label context
+
+The separate [f89v context packet](F89V_CONTEXT.md) records both coarse Yale
+canvases naming 89v and two dependent bottom-band windows. Historical `f89v2`
+spans two reported physical panels. A layout match supports a provisional
+container association; exact label regions, faint-trace origins and the modern
+nonexistent-locus correspondence remain unresolved. It supplies no verified join
+or physical text-presence decision.

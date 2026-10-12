@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "inspection_date": "2026-10-12",
+  "status": "provisional_single_observer_context",
+  "usable_as_verified_image_text_join": false,
+  "exact_locus_mapping": null,
+  "scope": "Source-linked layout/context around an unresolved native label group; no glyph reading or presence adjudication",
+  "provenance": {
+    "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+    "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "canvas_index_sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "historical_catalog_sha256": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "historical_archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "historical_member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319",
+    "format_pdf_url": "https://www.voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "format_pdf_sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49"
+  },
+  "source_context": {
+    "native_page_container": "f89v2",
+    "reported_physical_panels": [
+      "f89v3",
+      "f89v2"
+    ],
+    "native_unit": "L3",
+    "reported_page_layout": "Three plant bands separated by two text blocks; source descriptions contrast f89v1 two bands and f89r2 four bands",
+    "historical_native_locators_by_transcriber": {
+      "H": [
+        "f89v2.L3.0;H",
+        "f89v2.L3.1;H",
+        "f89v2.L3.2;H",
+        "f89v2.L3.3a;H",
+        "f89v2.L3.3b;H",
+        "f89v2.L3.4;H"
+      ],
+      "L": [
+        "f89v2.L3.0;L",
+        "f89v2.L3.1;L",
+        "f89v2.L3.2;L",
+        "f89v2.L3.3b;L"
+      ],
+      "U": [
+        "f89v2.L3.0;U",
+        "f89v2.L3.1;U",
+        "f89v2.L3.2;U",
+        "f89v2.L3.3a;U",
+        "f89v2.L3.3b;U",
+        "f89v2.L3.4;U"
+      ],
+      "V": [
+        "f89v2.L3.0;V",
+        "f89v2.L3.1;V",
+        "f89v2.L3.2;V",
+        "f89v2.L3.4;V"
+      ]
+    },
+    "old_comment_locator": "Member TEXT16E6.EVT, unit f89v2.L3, comment immediately before H/U line 3a",
+    "old_comment_status": "The source suggests possible writing showing through from the other side; retained as an attributed possibility, not verified here",
+    "source_file_lines": {
+      "page_header": 29983,
+      "reported_panels": 29991,
+      "panel_explanation": [
+        29995,
+        29996,
+        29997
+      ],
+      "unit_header": 30257,
+      "reported_label_plant_count": 30261,
+      "conditional_showthrough_comment": 30289
+    }
+  },
+  "images": [
+    {
+      "image_oid": "1006234",
+      "pinned_yale_label": "89v (part)",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006234",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006234",
+      "native_dimensions": [
+        4204,
+        3809
+      ],
+      "info_url": "https://collections.library.yale.edu/iiif/2/1006234/info.json",
+      "info_response_sha256": "87a8200e5709661dba443ddf5ec2ebbe69cfe932559a1bfee89112dafe4a7a8f",
+      "inspected_full_derivative_url": "https://collections.library.yale.edu/iiif/2/1006234/full/!1800,1800/0/default.jpg",
+      "inspected_derivative_dimensions": [
+        1800,
+        1630
+      ],
+      "inspected_derivative_sha256": "d2a7ae87b7542e4d26dd7e7cfe6f3a71bab85144e8868f9015c6d92bc93e33a0",
+      "single_observer_layout_note": "Three broad illustration bands, three container-like drawings near the left of the main field, and two intervening writing blocks. Bottom band contains four separated plant-like assemblages beside a blue container."
+    },
+    {
+      "image_oid": "1006235",
+      "pinned_yale_label": "89v (part) and 90r",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006235",
+      "native_dimensions": [
+        7796,
+        3761
+      ],
+      "info_url": "https://collections.library.yale.edu/iiif/2/1006235/info.json",
+      "info_response_sha256": "5aa3bfb69160006607fbc0930811f7f66da1389928120ace56caf2c62699ef66",
+      "inspected_full_derivative_url": "https://collections.library.yale.edu/iiif/2/1006235/full/!1800,1800/0/default.jpg",
+      "inspected_derivative_dimensions": [
+        1800,
+        868
+      ],
+      "inspected_derivative_sha256": "76c7f0b97b17d65c20be3ab71eedc5a4cd3d1a4dba9a565c7d26a100bcdb078d",
+      "single_observer_layout_note": "Composite opening: left field has container/fragment illustration bands near the top and bottom with writing between; center and right fields have large plant-like drawings and writing. The metadata also names 90r."
+    }
+  ],
+  "context_windows": [
+    {
+      "name": "bottom_group_context",
+      "image_oid": "1006234",
+      "native_xywh": [
+        200,
+        2200,
+        3950,
+        1609
+      ],
+      "status": "provisional context window",
+      "exact_locus_mapping": null,
+      "source_url": "https://collections.library.yale.edu/iiif/2/1006234/200,2200,3950,1609/!1800,1800/0/default.jpg",
+      "inspected_dimensions": [
+        1800,
+        733
+      ],
+      "inspected_sha256": "ea980f1464ae198871d92ee32381d54dede255967f60007c86c1220d8fe34bed"
+    },
+    {
+      "name": "native_pixel_context",
+      "image_oid": "1006234",
+      "native_xywh": [
+        1800,
+        2600,
+        1300,
+        1000
+      ],
+      "status": "provisional context window",
+      "exact_locus_mapping": null,
+      "source_url": "https://collections.library.yale.edu/iiif/2/1006234/1800,2600,1300,1000/full/0/default.jpg",
+      "inspected_dimensions": [
+        1300,
+        1000
+      ],
+      "inspected_sha256": "e931d3b39357e477e32ceb0082b67ce5f7eb4f61965d987723313fa226d524d8"
+    }
+  ],
+  "interpretation": {
+    "candidate_native_page_container": "f89v2",
+    "candidate_image_oid": "1006234",
+    "basis": "Three-band/two-text-block layout agrees with the attributed historical page description; precise panel/locus placement remains unverified",
+    "native_context_note": "Clearer brown writing marks and much fainter traces are visible near the illustrated fragments. Their origin and correspondence to native 3a/3b or modern 26 are not established."
+  },
+  "exposure": {
+    "before_first_image_views": [
+      "Exact modern source statuses and the old H payload had been inspected",
+      "Historical L3 was described as 5 labels / 4 plants",
+      "Both coarse 89v canvas references were selected before looking at images"
+    ],
+    "after_full_views": [
+      "Historical page-level descriptions, multi-panel source container and conditional show-through comment inspected",
+      "Bottom band context then native-pixel context windows selected"
+    ],
+    "images_disclose_neighboring90r": true,
+    "independent_observer_reviewed": false,
+    "untouched_evaluation_claim": false
+  },
+  "dependencies": [
+    "Both full views reference portions of 89v; native source container may span physical panels",
+    "Both cropped views are dependent derivatives of 1006234",
+    "The composite 1006235 also exposes 90r; all viewing must enter later exposure/dependency review",
+    "A crease within the proposed native container does not by itself establish separate transcription pages"
+  ],
+  "publication": "Only source links, image metadata and original observations are added; JPEGs and source PDF remain local",
+  "usable_for_statistical_evaluation": false,
+  "verified_panel_mapping": false
+}
