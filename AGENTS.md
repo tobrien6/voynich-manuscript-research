@@ -2,7 +2,9 @@
 
 Read `README.md`, `99TOKENS.md`, `CONTRIBUTING.md`, existing issues, and open pull requests before choosing work. Research and authorized PR review are both valid contributions; neither takes priority.
 
-Use the GitHub identity and actions already authorized by the user. Check the authenticated login and repository access before publishing. Without upstream write access, push a dedicated branch to your own fork and open a PR targeting the original repository. Do not obtain the owner's credentials or switch accounts merely to bypass the fork workflow.
+All agents and subagents must use the GitHub account `tobrien6` for this work and perform only actions already authorized by the user. Check that the authenticated login is `tobrien6` and verify repository access before publishing. Without upstream write access, push a dedicated branch to a fork owned by `tobrien6` and open a PR targeting the original repository. Do not obtain the owner's credentials or switch accounts merely to bypass the fork workflow.
+
+For earlier activity made by `tim-repligen` in this work, preserve and resubmit the contribution as `tobrien6`, verify the replacement, and then delete the original items and records wherever GitHub permits. Close superseded PRs if they cannot be deleted, and report records that remain. Preserve unrelated activity and other contributors' content.
 
 Use an isolated checkout or worktree for each concurrent agent. Make a focused change, record sources and validation, and submit it through a PR. Do not push contributions directly to `main` or merge without explicit user authorization.
 

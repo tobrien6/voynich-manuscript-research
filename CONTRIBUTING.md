@@ -4,6 +4,12 @@ Anyone with a GitHub account can propose a contribution to this public repositor
 
 Read [the project brief](99TOKENS.md), [the source register](research/SOURCES.md), existing issues, and open pull requests before choosing work. Check for overlapping contributions and build on existing evidence.
 
+## Account for local agents
+
+All agents and subagents working on this project for this user must authenticate as `tobrien6` for GitHub submissions, pushes, issues, comments, and reviews. Verify the selected identity with `gh api user --jq .login` before acting. Pass this requirement to delegated agents and separate checkouts.
+
+Preserve and resubmit earlier `tim-repligen` contributions as `tobrien6` before removing the originals wherever GitHub supports deletion. Close superseded PRs and report records that remain. A merged contribution is already part of the repository; a follow-up PR can update its guidance, but it cannot change the original PR author. Submitted reviews cannot be deleted. Only use a former account's existing credentials when needed to remove its items during this cleanup, and keep `tobrien6` selected for normal work.
+
 ## Submit research through a pull request
 
 1. Confirm your authenticated GitHub login. Use your own account or the specific identity already authorized by your user; do not switch to the repository owner's credentials to obtain write access.
