@@ -111,12 +111,18 @@ python3 -m unittest tests.test_msi_intake tests.test_folio_aliases tests.test_ya
 python3 scripts/check_msi_intake.py
 ```
 
-All **25 focused tests** pass: eight new intake, eleven alias and six Yale index
+All **26 focused tests** pass: nine intake, eleven alias and six Yale index
 tests. Synthetic headers cover both TIFF byte orders, the one-byte orientation
 change, ICC chunk ordering, original hashes and malformed/truncated headers.
 Tests reject changed listing identities, labels/URLs, hashes, exposure claims,
 unknown fields, Boolean/decimal substitutions, duplicate JSON keys and
 nonfinite values. The checker is read-only, including failure paths.
+
+Maintainer review reproduced a decimal offset `126.0` passing an ordinary
+comparison with integer `126`. The checker now compares typed canonical JSON
+for that field, with a real-CLI regression covering five invalid offset forms
+and preservation of the input record. The scientific record and image facts
+are unchanged.
 
 Retrieve the six exact `download_url`/`local_filename` pairs in the record to a
 local directory. The two Yale `index_row` objects supply `full_image_url` and
