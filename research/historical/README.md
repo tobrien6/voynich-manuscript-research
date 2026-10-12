@@ -148,3 +148,8 @@ This is an exploratory full-source intake. Native source headers, records,
 comments and snippets were inspected; record that exposure in any later split.
 No glyph adjudication, statistical mechanism test, decipherment, or translation
 was performed.
+
+The [fixed f101 candidate comparisons](F101_RECORD_CANDIDATES.md) retain all four
+unmatched H/IT2a page names. Two ordered lossy record lists agree (10 and 28
+records), while opposite-side comparisons share no projection group. This source
+diagnostic leaves the exact-page audit unchanged and accepts no page alias.
