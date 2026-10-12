@@ -11,7 +11,6 @@ import hashlib
 import json
 from pathlib import Path
 import re
-import sys
 
 try:
     from .eva_token_adapter import build
@@ -19,11 +18,18 @@ except ImportError:
     from eva_token_adapter import build
 
 ROOT = Path(__file__).resolve().parents[1]
-if hasattr(sys, 'set_int_max_str_digits'):
-    sys.set_int_max_str_digits(0)
-
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
-def unpack(value):return Fraction(int(value['numerator']),int(value['denominator'])) if value is not None else None
+def parse_decimal_integer(text):
+    # Small decimal chunks avoid changing the process-wide integer conversion guard.
+    if not isinstance(text,str) or not re.fullmatch(r'-?[0-9]+',text):
+        raise ValueError('decimal integer string required')
+    negative=text.startswith('-');digits=text[1:] if negative else text
+    value=0
+    for offset in range(0,len(digits),18):
+        chunk=digits[offset:offset+18]
+        value=value*10**len(chunk)+int(chunk)
+    return -value if negative else value
+def unpack(value):return Fraction(parse_decimal_integer(value['numerator']),parse_decimal_integer(value['denominator'])) if value is not None else None
 def count_units(token,patterns):
     # Candidate comparison at each offset, independent of production ordered_patterns/segment.
     offset=0;pieces=[]
