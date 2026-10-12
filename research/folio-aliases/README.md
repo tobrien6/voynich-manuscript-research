@@ -28,7 +28,7 @@ another numbering distinction:
 Neither explicitly equates the legacy catalog's 117v with current 116v. Do not
 collapse page 234 and page 235 without their schemes, declare a missing leaf
 from an absent label, or infer a global folio offset. The proposed resolution
-and remaining checks are tracked in [issue #3](https://github.com/tobrien6/voynich-manuscript-research/issues/3).
+and remaining checks are tracked in [issue #13](https://github.com/tobrien6/voynich-manuscript-research/issues/13).
 No glyph reading, cipher key, dating conclusion, or translation is established.
 
 ## Registry and verification gate
