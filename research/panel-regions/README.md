@@ -98,6 +98,11 @@ reproducible checklist. Layout supports a candidate association; glyph alignment
 arc boundaries/directions and independent review remain unresolved. The shared
 85v/86r carrier stays one dependency, and the proposal cannot fill IT2a's absent text.
 
+The [two-direction f102r1 boundary review](102R_BOUNDARY_PAIR.md) freezes one
+ZL-only and one IT-only extra-boundary case before new image inspection.
+Both adjacent loci retain provisional row placement and unresolved word
+division; the shared 101v/102r carrier remains one image dependency.
+
 ## f89v bottom-label context
 
 The separate [f89v context packet](F89V_CONTEXT.md) records both coarse Yale
