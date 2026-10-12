@@ -24,13 +24,31 @@ INPUTS = {
     'canvas_index': 'research/image-index/canvases.csv',
     'index_audit': 'research/image-index/audit.json',
     'source_catalog': 'data/transliterations.json',
+    'selection_protocol': 'research/pilot/SAMPLING.md',
 }
 SIDE = re.compile(r'[1-9][0-9]*[rv]')
+# The targets fixed in SAMPLING.md; changing the sample requires a new audit version.
+PILOT_TARGETS = ('1r', '2r', '67r', '68r', '75r', '76r', '85v', '87r', '88r', '103r')
 
 
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+def validate_targets(inventory, expected_targets=None):
+    records = inventory.get('records')
+    require(isinstance(records, list) and bool(records), 'pilot records must be a nonempty list')
+    targets = []
+    for record in records:
+        require(isinstance(record, dict), 'pilot record must be an object')
+        target = record.get('target')
+        require(isinstance(target, str) and SIDE.fullmatch(target), 'invalid pilot target')
+        require(target not in targets, 'duplicate pilot target')
+        targets.append(target)
+    if expected_targets is not None:
+        require(set(targets) == set(expected_targets),
+                'inventory does not contain the original ten sampling targets')
 
 
 def page_summary(document, page):
@@ -49,6 +67,7 @@ def page_summary(document, page):
 
 def build_report(inventory, canvases, sources):
     """Compare identifiers only; even exact links leave glyph/region review pending."""
+    validate_targets(inventory)
     sources = paired_sources(sources)
     index = {}
     for row in canvases:
@@ -57,12 +76,9 @@ def build_report(inventory, canvases, sources):
         require(row['has_multiple_explicit_sides'] in {'True', 'False'},
                 'invalid combined-view flag')
         index[uri] = row
-    seen, entries = set(), []
+    entries = []
     for record in inventory['records']:
         target = record['target']
-        require(isinstance(target, str) and SIDE.fullmatch(target), 'invalid pilot target')
-        require(target not in seen, 'duplicate pilot target')
-        seen.add(target)
         row = index.get(record['canvas_uri'])
         require(row is not None, 'pilot canvas absent from index')
         require(row['yale_label'] == record['yale_label'], 'pilot/index label mismatch')
@@ -151,6 +167,7 @@ def build_report(inventory, canvases, sources):
 def audit(root=ROOT):
     raw = {name: (root / path).read_bytes() for name, path in INPUTS.items()}
     inventory = json.loads(raw['inventory'])
+    validate_targets(inventory, PILOT_TARGETS)
     index_audit = json.loads(raw['index_audit'])
     require(inventory['manifest_sha256'] == index_audit['manifest_sha256'],
             'inventory and image index refer to different manifests')
@@ -160,6 +177,8 @@ def audit(root=ROOT):
     require(len(rows) == index_audit['canvas_count'] == inventory['manifest_canvas_count'],
             'canvas count disagrees with declared manifest inventory')
     report = build_report(inventory, rows, load_sources(root))
+    report['selection'] = {'protocol': INPUTS['selection_protocol'],
+                           'required_original_targets': list(PILOT_TARGETS)}
     report['inputs'] = {name: {'path': path, 'sha256': hashlib.sha256(raw[name]).hexdigest()}
                         for name, path in INPUTS.items()}
     report['manifest'] = {'url': inventory['manifest_url'],

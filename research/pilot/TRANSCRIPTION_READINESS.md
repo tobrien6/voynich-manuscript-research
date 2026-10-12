@@ -11,8 +11,12 @@ IVTFF reader, [source pins](../../data/transliterations.json), and
 [Yale canvas index](../image-index/README.md). It verifies source bytes, compares
 the inventory's manifest identity with the index audit, and checks each selected
 canvas's label, image identifier, and explicitly named sides. The
-[complete report](transcription-readiness.json) records hashes of all four
+[complete report](transcription-readiness.json) records hashes of all five
 metadata inputs as well as both transcription editions.
+
+The audit requires the original ten targets fixed in `SAMPLING.md`. Empty,
+truncated, duplicated, or substituted samples are rejected before checking
+coverage. Removing an unresolved target cannot make the completeness gate pass.
 
 An `exact_page_metadata_link` requires the exact `f`-prefixed target identifier
 and at least one present locus in both editions, with no shared canvas or
@@ -70,7 +74,8 @@ report; consumers requiring full coverage must request `--require-complete`.
 
 Synthetic tests cover differing locus kinds/locators, nonexistent and missing
 records, empty page headers, panel-candidate isolation, shared scans, duplicate
-targets, and inconsistent image metadata. The committed real report can be
+targets, changed sampling targets, CLI failure distinctions, and inconsistent
+image metadata. The committed real report can be
 reproduced offline against the exact recorded input hashes.
 
 ## Limits and next test

@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch
 
 from scripts.ivtff import parse_ivtff
-from scripts.audit_pilot_transcriptions import build_report, main
+from scripts.audit_pilot_transcriptions import build_report, main, validate_targets, PILOT_TARGETS
 
 
 def source(ident, text):
@@ -26,6 +26,18 @@ def fixture(target='1r', sides='1r', combined='False'):
 
 
 class PilotTranscriptionTests(unittest.TestCase):
+    def test_empty_or_truncated_inventory_cannot_claim_complete_coverage(self):
+        with self.assertRaisesRegex(ValueError, 'nonempty'):
+            validate_targets({'records': []})
+        with self.assertRaisesRegex(ValueError, 'original ten'):
+            validate_targets({'records': [{'target': '1r'}]}, PILOT_TARGETS)
+        records = [{'target': target} for target in PILOT_TARGETS]
+        validate_targets({'records': records}, PILOT_TARGETS)
+        # Replacing a blocked target with an easier side still changes the sample.
+        records[6]['target'] = '3r'
+        with self.assertRaisesRegex(ValueError, 'original ten'):
+            validate_targets({'records': records}, PILOT_TARGETS)
+
     def test_exact_link_retains_all_kinds_absent_loci_and_source_disagreements(self):
         sources = [source('ZL3b', '<f1r>\n<f1r.1,@P0> a\n<f1r.2,@L0> b\n<f1r.3,!P0> c\n'),
                    source('IT2a', '<f1r>\n<f1r.1,+P0> a\n')]
@@ -90,6 +102,13 @@ class PilotTranscriptionTests(unittest.TestCase):
             self.assertEqual(bool(stderr.getvalue()), bool(count))
             if count:
                 self.assertIn('3 targets retain mapping blockers', stderr.getvalue())
+
+    def test_cli_invalid_inventory_exits_one_instead_of_reporting_completeness(self):
+        with patch('scripts.audit_pilot_transcriptions.audit', side_effect=ValueError('invalid inventory')), \
+                patch('sys.argv', ['audit', '--require-complete']), \
+                redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as raised:
+            main()
+        self.assertEqual(raised.exception.code, 1)
 
 
 if __name__ == '__main__':

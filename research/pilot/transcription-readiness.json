@@ -2132,6 +2132,21 @@
       }
     }
   ],
+  "selection": {
+    "protocol": "research/pilot/SAMPLING.md",
+    "required_original_targets": [
+      "1r",
+      "2r",
+      "67r",
+      "68r",
+      "75r",
+      "76r",
+      "85v",
+      "87r",
+      "88r",
+      "103r"
+    ]
+  },
   "inputs": {
     "inventory": {
       "path": "research/pilot/inventory.json",
@@ -2148,6 +2163,10 @@
     "source_catalog": {
       "path": "data/transliterations.json",
       "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "selection_protocol": {
+      "path": "research/pilot/SAMPLING.md",
+      "sha256": "add52bf4745323b63537413baff3ff5277da663d42c96dc4a61bde5c40418ff9"
     }
   },
   "manifest": {
