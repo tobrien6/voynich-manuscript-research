@@ -51,7 +51,7 @@ The [example report](example-alignment.json) uses the manifest retrieved on Octo
 | `117v` | label_unmatched | 0 | No folio alias is supplied. |
 | `f67r1` | unsupported_identifier | 0 | No convention-specific panel mapping is supplied. |
 
-The 117v control relates to the unresolved [catalog/digital foliation issue](https://github.com/tobrien6/voynich-manuscript-research/issues/3). It tests safe behavior in the presence of conflicting labels; it does not resolve the conflict.
+The 117v control relates to the unresolved [catalog/digital foliation issue](https://github.com/tobrien6/voynich-manuscript-research/issues/13). It tests safe behavior in the presence of conflicting labels; it does not resolve the conflict.
 
 ## Limits and next test
 
