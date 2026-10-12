@@ -1,8 +1,14 @@
 from fractions import Fraction
 import itertools
+from contextlib import redirect_stderr
+import io
+from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 
-from scripts.audit_self_citation_prefix_weights import as_fraction, measure, strict_json
+from scripts import audit_self_citation_prefix_weights as audit
+from scripts.audit_self_citation_prefix_weights import FAMILY, as_fraction, measure, strict_json, summarize
 
 
 class PrefixWeightTests(unittest.TestCase):
@@ -60,6 +66,40 @@ class PrefixWeightTests(unittest.TestCase):
                 measure(*args)
         with self.assertRaisesRegex(ValueError, 'duplicate'):
             strict_json(b'{"flag":true,"flag":1}')
+
+    def test_seed_summary_does_not_pool_seeds_with_unequal_row_counts(self):
+        cases = []
+        for seed in range(1, 21):
+            rows = [['q', 'a']] if seed <= 10 else [['a', 'q']] * 9
+            cells = [{'model_paragraph_initial': start, 'boundary': boundary, 'prefix': prefix,
+                      **measure(rows, boundary, prefix)} for start, boundary, prefix in FAMILY]
+            cases.append({'seed': seed, 'cells': cells})
+        target = next(c for c in summarize(cases) if c['model_paragraph_initial'] is True
+                      and c['boundary'] == 'first' and c['prefix'] == 'q')
+        self.assertEqual(as_fraction(target['equal_row_mean_across_seeds_exact']), 0)
+        self.assertEqual(as_fraction(target['opportunity_weighted_mean_across_seeds_exact']), 0)
+        # Pooling rows would instead give (10 - 90) / 100 = -4/5.
+        self.assertEqual(target['seed_sign_transitions'], {'negative->negative': 10, 'positive->positive': 10})
+
+    def test_new_record_writer_cannot_follow_late_input_aliases(self):
+        for kind in ('symlink', 'hardlink'):
+            with self.subTest(kind=kind), tempfile.TemporaryDirectory() as d:
+                root = Path(d); source = root / 'source'; source.write_bytes(b'public synthetic fixture')
+                output = root / 'new.json'
+                def calculate(*args):
+                    output.symlink_to(source) if kind == 'symlink' else output.hardlink_to(source)
+                    return {'summary': 'synthetic'}
+                with patch.object(audit, 'audit', side_effect=calculate), \
+                        patch('sys.argv', ['audit', '--raw-work', str(root), '--output', str(output)]), \
+                        redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                    audit.main()
+                self.assertEqual(source.read_bytes(), b'public synthetic fixture')
+
+    def test_changed_frozen_input_fails_before_raw_case_reads(self):
+        with tempfile.TemporaryDirectory() as d:
+            source = Path(d) / 'source.json'; source.write_bytes(b'{"changed":true}')
+            with patch.object(audit, 'SOURCE', source), self.assertRaisesRegex(ValueError, 'identity changed'):
+                audit.audit(Path(d) / 'no-native-artifacts')
 
 
 if __name__ == '__main__':
