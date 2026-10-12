@@ -64,6 +64,11 @@ changing its display label.
 
 ## Minimum plan for a later replication
 
+The [fixed generator prefix diagnostic](SELF_CITATION_PREFIX_PROFILE.md)
+compares a source-informed model profile with an explicitly exposed B cohort.
+All 31 control/observer pairs preserve bytes; 24 of 32 related target points
+fall outside the finite seed ranges. Unit/context equivalence remains unverified.
+
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
    project's modern inputs.

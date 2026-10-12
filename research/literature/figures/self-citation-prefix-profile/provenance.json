@@ -1,0 +1,986 @@
+{
+  "schema_version": 1,
+  "input_report_sha256": "140731ba67ca1a9bd2bb35460a4f6a19b5cff671627c4020f9f76f9362191ca9",
+  "renderer_sha256": "30ff6f520726823780384dc3e8eae159ece8a36908aa219c5ce864ec723336b6",
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.4",
+    "backend": "Agg"
+  },
+  "plotted_comparisons": [
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 1370,
+      "target": {
+        "numerator": -6658559,
+        "denominator": 164564400,
+        "mean": -0.04046172197632052
+      },
+      "seed_minimum": {
+        "numerator": -305563,
+        "denominator": 54054000,
+        "mean": -0.005652921152921153
+      },
+      "seed_maximum": {
+        "numerator": 2761148003,
+        "denominator": 104601456960,
+        "mean": 0.026396840763469227
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 16110814,
+        "denominator": 462837375,
+        "mean": 0.03480880082339936
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 1370,
+      "target": {
+        "numerator": -361937,
+        "denominator": 6856850,
+        "mean": -0.05278473351466052
+      },
+      "seed_minimum": {
+        "numerator": -305563,
+        "denominator": 54054000,
+        "mean": -0.005652921152921153
+      },
+      "seed_maximum": {
+        "numerator": 2761148003,
+        "denominator": 104601456960,
+        "mean": 0.026396840763469227
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 349029829,
+        "denominator": 7405398000,
+        "mean": 0.04713181236173937
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 1368,
+      "target": {
+        "numerator": -20362561,
+        "denominator": 492972480,
+        "mean": -0.04130567491313105
+      },
+      "seed_minimum": {
+        "numerator": -305563,
+        "denominator": 54054000,
+        "mean": -0.005652921152921153
+      },
+      "seed_maximum": {
+        "numerator": 2761148003,
+        "denominator": 104601456960,
+        "mean": 0.026396840763469227
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 439395661,
+        "denominator": 12324312000,
+        "mean": 0.0356527537602099
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 1368,
+      "target": {
+        "numerator": -20362561,
+        "denominator": 492972480,
+        "mean": -0.04130567491313105
+      },
+      "seed_minimum": {
+        "numerator": -305563,
+        "denominator": 54054000,
+        "mean": -0.005652921152921153
+      },
+      "seed_maximum": {
+        "numerator": 2761148003,
+        "denominator": 104601456960,
+        "mean": 0.026396840763469227
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 439395661,
+        "denominator": 12324312000,
+        "mean": 0.0356527537602099
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 1370,
+      "target": {
+        "numerator": 37420219,
+        "denominator": 246846600,
+        "mean": 0.15159300958571031
+      },
+      "seed_minimum": {
+        "numerator": 19155599,
+        "denominator": 5480835360,
+        "mean": 0.0034950144899079764
+      },
+      "seed_maximum": {
+        "numerator": 36347,
+        "denominator": 1066065,
+        "mean": 0.03409454395369888
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 2059290869,
+        "denominator": 17526108600,
+        "mean": 0.11749846563201143
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 1370,
+      "target": {
+        "numerator": 18791783,
+        "denominator": 123423300,
+        "mean": 0.15225474444452547
+      },
+      "seed_minimum": {
+        "numerator": 19155599,
+        "denominator": 5480835360,
+        "mean": 0.0034950144899079764
+      },
+      "seed_maximum": {
+        "numerator": 36347,
+        "denominator": 1066065,
+        "mean": 0.03409454395369888
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 1035444253,
+        "denominator": 8763054300,
+        "mean": 0.11816020049082658
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 1368,
+      "target": {
+        "numerator": 75800689,
+        "denominator": 492972480,
+        "mean": 0.1537625163173409
+      },
+      "seed_minimum": {
+        "numerator": 19155599,
+        "denominator": 5480835360,
+        "mean": 0.0034950144899079764
+      },
+      "seed_maximum": {
+        "numerator": 36347,
+        "denominator": 1066065,
+        "mean": 0.03409454395369888
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 119671549,
+        "denominator": 1000029888,
+        "mean": 0.11966797236364199
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 1368,
+      "target": {
+        "numerator": 75800689,
+        "denominator": 492972480,
+        "mean": 0.1537625163173409
+      },
+      "seed_minimum": {
+        "numerator": 19155599,
+        "denominator": 5480835360,
+        "mean": 0.0034950144899079764
+      },
+      "seed_maximum": {
+        "numerator": 36347,
+        "denominator": 1066065,
+        "mean": 0.03409454395369888
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 119671549,
+        "denominator": 1000029888,
+        "mean": 0.11966797236364199
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 1370,
+      "target": {
+        "numerator": -9462317,
+        "denominator": 98738640,
+        "mean": -0.09583195595969318
+      },
+      "seed_minimum": {
+        "numerator": -133733,
+        "denominator": 4161080,
+        "mean": -0.03213901198727254
+      },
+      "seed_maximum": {
+        "numerator": -3098831,
+        "denominator": 486125640,
+        "mean": -0.006374547534666141
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 8496377753,
+        "denominator": 133395902640,
+        "mean": 0.06369294397242065
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 1370,
+      "target": {
+        "numerator": -797989,
+        "denominator": 8228220,
+        "mean": -0.09698197179949004
+      },
+      "seed_minimum": {
+        "numerator": -133733,
+        "denominator": 4161080,
+        "mean": -0.03213901198727254
+      },
+      "seed_maximum": {
+        "numerator": -3098831,
+        "denominator": 486125640,
+        "mean": -0.006374547534666141
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 1441630859,
+        "denominator": 22232650440,
+        "mean": 0.06484295981221751
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 1368,
+      "target": {
+        "numerator": -12432337,
+        "denominator": 123243120,
+        "mean": -0.10087651951687039
+      },
+      "seed_minimum": {
+        "numerator": -133733,
+        "denominator": 4161080,
+        "mean": -0.03213901198727254
+      },
+      "seed_maximum": {
+        "numerator": -3098831,
+        "denominator": 486125640,
+        "mean": -0.006374547534666141
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 2288979005,
+        "denominator": 33300291024,
+        "mean": 0.06873750752959785
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 1368,
+      "target": {
+        "numerator": -12432337,
+        "denominator": 123243120,
+        "mean": -0.10087651951687039
+      },
+      "seed_minimum": {
+        "numerator": -133733,
+        "denominator": 4161080,
+        "mean": -0.03213901198727254
+      },
+      "seed_maximum": {
+        "numerator": -3098831,
+        "denominator": 486125640,
+        "mean": -0.006374547534666141
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 2288979005,
+        "denominator": 33300291024,
+        "mean": 0.06873750752959785
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 1370,
+      "target": {
+        "numerator": -9239479,
+        "denominator": 493693200,
+        "mean": -0.018715021798963404
+      },
+      "seed_minimum": {
+        "numerator": -1208029,
+        "denominator": 37394280,
+        "mean": -0.032305181434165865
+      },
+      "seed_maximum": {
+        "numerator": -12211,
+        "denominator": 1335510,
+        "mean": -0.009143323524346504
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 1370,
+      "target": {
+        "numerator": -458503,
+        "denominator": 17631900,
+        "mean": -0.026004174252349434
+      },
+      "seed_minimum": {
+        "numerator": -1208029,
+        "denominator": 37394280,
+        "mean": -0.032305181434165865
+      },
+      "seed_maximum": {
+        "numerator": -12211,
+        "denominator": 1335510,
+        "mean": -0.009143323524346504
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 1368,
+      "target": {
+        "numerator": -444263,
+        "denominator": 22407840,
+        "mean": -0.019826230462195376
+      },
+      "seed_minimum": {
+        "numerator": -1208029,
+        "denominator": 37394280,
+        "mean": -0.032305181434165865
+      },
+      "seed_maximum": {
+        "numerator": -12211,
+        "denominator": 1335510,
+        "mean": -0.009143323524346504
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 1368,
+      "target": {
+        "numerator": -444263,
+        "denominator": 22407840,
+        "mean": -0.019826230462195376
+      },
+      "seed_minimum": {
+        "numerator": -1208029,
+        "denominator": 37394280,
+        "mean": -0.032305181434165865
+      },
+      "seed_maximum": {
+        "numerator": -12211,
+        "denominator": 1335510,
+        "mean": -0.009143323524346504
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 313,
+      "target": {
+        "numerator": -4194857,
+        "denominator": 22558536,
+        "mean": -0.1859543101555881
+      },
+      "seed_minimum": {
+        "numerator": -11873,
+        "denominator": 325710,
+        "mean": -0.03645267262288539
+      },
+      "seed_maximum": {
+        "numerator": 48053,
+        "denominator": 119279160,
+        "mean": 0.0004028616566380917
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 3430937,
+        "denominator": 22949160,
+        "mean": 0.14950163753270274
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 313,
+      "target": {
+        "numerator": -27571,
+        "denominator": 137720,
+        "mean": -0.20019604995643334
+      },
+      "seed_minimum": {
+        "numerator": -11873,
+        "denominator": 325710,
+        "mean": -0.03645267262288539
+      },
+      "seed_maximum": {
+        "numerator": 48053,
+        "denominator": 119279160,
+        "mean": 0.0004028616566380917
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 13354547,
+        "denominator": 81557784,
+        "mean": 0.16374337733354796
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 315,
+      "target": {
+        "numerator": -21667579,
+        "denominator": 113513400,
+        "mean": -0.19088124397648207
+      },
+      "seed_minimum": {
+        "numerator": -11873,
+        "denominator": 325710,
+        "mean": -0.03645267262288539
+      },
+      "seed_maximum": {
+        "numerator": 48053,
+        "denominator": 119279160,
+        "mean": 0.0004028616566380917
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 823896473,
+        "denominator": 5335129800,
+        "mean": 0.1544285713535967
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "rows": 315,
+      "target": {
+        "numerator": -21667579,
+        "denominator": 113513400,
+        "mean": -0.19088124397648207
+      },
+      "seed_minimum": {
+        "numerator": -11873,
+        "denominator": 325710,
+        "mean": -0.03645267262288539
+      },
+      "seed_maximum": {
+        "numerator": 48053,
+        "denominator": 119279160,
+        "mean": 0.0004028616566380917
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 823896473,
+        "denominator": 5335129800,
+        "mean": 0.1544285713535967
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 313,
+      "target": {
+        "numerator": -115259,
+        "denominator": 28198170,
+        "mean": -0.004087463831872778
+      },
+      "seed_minimum": {
+        "numerator": -10140349,
+        "denominator": 119639520,
+        "mean": -0.08475751992318258
+      },
+      "seed_maximum": {
+        "numerator": -119699,
+        "denominator": 3030720,
+        "mean": -0.03949523545560131
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 261989177,
+        "denominator": 7399199808,
+        "mean": 0.03540777162372853
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 313,
+      "target": {
+        "numerator": -321,
+        "denominator": 120505,
+        "mean": -0.0026637898842371685
+      },
+      "seed_minimum": {
+        "numerator": -10140349,
+        "denominator": 119639520,
+        "mean": -0.08475751992318258
+      },
+      "seed_maximum": {
+        "numerator": -119699,
+        "denominator": 3030720,
+        "mean": -0.03949523545560131
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 6987775,
+        "denominator": 189723072,
+        "mean": 0.03683144557136414
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 315,
+      "target": {
+        "numerator": -1577,
+        "denominator": 300300,
+        "mean": -0.005251415251415251
+      },
+      "seed_minimum": {
+        "numerator": -10140349,
+        "denominator": 119639520,
+        "mean": -0.08475751992318258
+      },
+      "seed_maximum": {
+        "numerator": -119699,
+        "denominator": 3030720,
+        "mean": -0.03949523545560131
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 2248641,
+        "denominator": 65665600,
+        "mean": 0.03424382020418606
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "rows": 315,
+      "target": {
+        "numerator": -1577,
+        "denominator": 300300,
+        "mean": -0.005251415251415251
+      },
+      "seed_minimum": {
+        "numerator": -10140349,
+        "denominator": 119639520,
+        "mean": -0.08475751992318258
+      },
+      "seed_maximum": {
+        "numerator": -119699,
+        "denominator": 3030720,
+        "mean": -0.03949523545560131
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 2248641,
+        "denominator": 65665600,
+        "mean": 0.03424382020418606
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 313,
+      "target": {
+        "numerator": -9348749,
+        "denominator": 112792680,
+        "mean": -0.08288435916231443
+      },
+      "seed_minimum": {
+        "numerator": -3951,
+        "denominator": 202664,
+        "mean": -0.01949532230687246
+      },
+      "seed_maximum": {
+        "numerator": 5429,
+        "denominator": 568260,
+        "mean": 0.009553725407383943
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 1176145283,
+        "denominator": 18554395860,
+        "mean": 0.06338903685544198
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 313,
+      "target": {
+        "numerator": -259363,
+        "denominator": 2892120,
+        "mean": -0.0896791972670567
+      },
+      "seed_minimum": {
+        "numerator": -3951,
+        "denominator": 202664,
+        "mean": -0.01949532230687246
+      },
+      "seed_maximum": {
+        "numerator": 5429,
+        "denominator": 568260,
+        "mean": 0.009553725407383943
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 33390241,
+        "denominator": 475753740,
+        "mean": 0.07018387496018423
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 315,
+      "target": {
+        "numerator": -232769,
+        "denominator": 2522520,
+        "mean": -0.09227637441923156
+      },
+      "seed_minimum": {
+        "numerator": -3951,
+        "denominator": 202664,
+        "mean": -0.01949532230687246
+      },
+      "seed_maximum": {
+        "numerator": 5429,
+        "denominator": 568260,
+        "mean": 0.009553725407383943
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 1078601,
+        "denominator": 14819805,
+        "mean": 0.07278105211235911
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "rows": 315,
+      "target": {
+        "numerator": -232769,
+        "denominator": 2522520,
+        "mean": -0.09227637441923156
+      },
+      "seed_minimum": {
+        "numerator": -3951,
+        "denominator": 202664,
+        "mean": -0.01949532230687246
+      },
+      "seed_maximum": {
+        "numerator": 5429,
+        "denominator": 568260,
+        "mean": 0.009553725407383943
+      },
+      "within_fixed_seed_range": false,
+      "outside_range_gap": {
+        "numerator": 1078601,
+        "denominator": 14819805,
+        "mean": 0.07278105211235911
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 313,
+      "target": {
+        "numerator": -4643,
+        "denominator": 7519512,
+        "mean": -0.0006174602819970232
+      },
+      "seed_minimum": {
+        "numerator": -24259,
+        "denominator": 764610,
+        "mean": -0.031727285805835656
+      },
+      "seed_maximum": {
+        "numerator": 168617,
+        "denominator": 4615380,
+        "mean": 0.0365337198670532
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 313,
+      "target": {
+        "numerator": -22529,
+        "denominator": 8676360,
+        "mean": -0.002596595807458427
+      },
+      "seed_minimum": {
+        "numerator": -24259,
+        "denominator": 764610,
+        "mean": -0.031727285805835656
+      },
+      "seed_maximum": {
+        "numerator": 168617,
+        "denominator": 4615380,
+        "mean": 0.0365337198670532
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "split",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 315,
+      "target": {
+        "numerator": -9481,
+        "denominator": 1081080,
+        "mean": -0.00876993376993377
+      },
+      "seed_minimum": {
+        "numerator": -24259,
+        "denominator": 764610,
+        "mean": -0.031727285805835656
+      },
+      "seed_maximum": {
+        "numerator": 168617,
+        "denominator": 4615380,
+        "mean": 0.0365337198670532
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    },
+    {
+      "source_id": "IT2a",
+      "spacing": "join",
+      "paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "rows": 315,
+      "target": {
+        "numerator": -9481,
+        "denominator": 1081080,
+        "mean": -0.00876993376993377
+      },
+      "seed_minimum": {
+        "numerator": -24259,
+        "denominator": 764610,
+        "mean": -0.031727285805835656
+      },
+      "seed_maximum": {
+        "numerator": 168617,
+        "denominator": 4615380,
+        "mean": 0.0365337198670532
+      },
+      "within_fixed_seed_range": true,
+      "outside_range_gap": {
+        "numerator": 0,
+        "denominator": 1,
+        "mean": 0.0
+      },
+      "all_seed_contrasts_defined": true
+    }
+  ],
+  "artifacts": [
+    {
+      "filename": "profile.png",
+      "bytes": 147536,
+      "sha256": "30f9539665fa13e9ca56d0778db56d9b49ae0a295e1a8e28fe6bed6596b4510d"
+    },
+    {
+      "filename": "profile.svg",
+      "bytes": 173781,
+      "sha256": "0e798e56c99ebebfde82554d32fe99d8a9cfc2a956248ed1b2c2d081456f1ce2"
+    }
+  ],
+  "scope": "Original statistical figure; fixed-seed range, no calibrated interval or mechanism validation"
+}
