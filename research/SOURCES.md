@@ -64,6 +64,15 @@
 - Reuse: public viewing/download statement and requested credit retained; no Creative Commons license inferred. Binaries remain local.
 - Limits: dependent views of the same surfaces; no full archive audit, pipeline reconstruction, glyph adjudication, historical attribution, verified legacy alias or translation.
 
+## S008 — D'Imperio report preserved by GovInfo
+
+- Author: M. E. D'Imperio; *The Voynich Manuscript: An Elegant Enigma*, 1978. Rendered cover credits the National Security Agency/Central Security Service.
+- Sources: [GovInfo record](https://www.govinfo.gov/app/details/GOVPUB-D-PURL-gpo58694) and [preserved PDF](https://www.govinfo.gov/content/pkg/GOVPUB-D-PURL-gpo58694/pdf/GOVPUB-D-PURL-gpo58694.pdf).
+- Inspected: 2026-10-12 (America/New_York); cover and PDF pages 4, 31, 32, 38, 81 and 103 rendered in full and visually checked.
+- Representation: 141 PDF pages, 32,892,602 bytes; SHA-256 `e357921308c1ba43e327378a47bec389f755f843b3ad26ec11bb48cc3d6e066a`.
+- Use and limits: selected terminal-reference locators and reproduction credits in the [source follow-up](folio-aliases/ENIGMA_CONTEXT.md); no accepted historical reading, original-source inspection, Yale alias or complete-text absence claim.
+- Reuse: PDF, extracted text and renders remain local; only brief observations, citations and fingerprints are published.
+
 ## Recording future sources
 
 The [historical interlinear intake](historical/README.md) records a recovered
