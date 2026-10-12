@@ -114,6 +114,11 @@ setting, scientific result or original exposure record changes in this repair.
 
 ## Scope and next experiment
 
+A [row-versus-opportunity weighting audit](SELF_CITATION_PREFIX_WEIGHTS.md)
+reuses all twenty default cases and the same eligible rows. It retains all 160
+cells and exact covariance decompositions: all eight mean signs persist, while
+five individual seed/cell signs reverse. No generator or manuscript input changes.
+
 A [specified paragraph augmentation intervention](SELF_CITATION_GALLOWS_ZERO.md)
 now tests the two predicted mean responses using the same fixed seed grid and
 shared measurement definition, retaining opposite seed outcomes and all other

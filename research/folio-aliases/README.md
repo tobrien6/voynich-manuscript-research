@@ -43,6 +43,11 @@ readings. It preserves that source trail separately from a verified alias and
 records a visibly populated page with empty extracted text, preventing
 label-absence claims from literal search.
 
+The [editorial-marker follow-up](CATALOG_EDITORIAL_FLAG.md) locates a Spanish
+publisher file and an English licensed snippet that retain the catalog label
+with `[sic]`. These bounded observations supply no explicit replacement or
+catalog-to-canvas correspondence. The registry and blocked lookup remain unchanged.
+
 ## Registry and verification gate
 
 [decisions.json](decisions.json) is the versioned registry. Each source key is
