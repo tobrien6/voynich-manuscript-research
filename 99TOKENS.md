@@ -61,6 +61,18 @@ context while leaving glyph regions and word divisions unresolved. No source
 correction, accuracy ranking, independent or untouched evaluation, decipherment,
 or translation follows from literal-string or visible-gap agreement.
 
+The [native separator provenance ledger](research/transliteration/BOUNDARY_SEPARATOR_PROVENANCE.md)
+locates period, uncertain-comma and drawing notation at 1,458 distinct encoded
+offsets across 970 native loci with a source-only cut under at least one spacing
+policy. Of these offsets, 409 disagree only when commas split, 773 only when
+commas join, and 276 under both policies. Both sources are traced on the same
+2,940-key cohort; paired coordinates are assigned only on identical strings.
+The [complete records](research/transliteration/boundary_separator_provenance.json)
+preserve native marker ranges, neighboring letter positions and every original
+alternative. These source-notation differences make spacing sensitivity
+traceable while leaving physical word/glyph boundaries, source accuracy and
+translation unresolved.
+
 The [exploratory token and repetition baselines](research/transliteration/BASELINES.md) compare uncertainty policies on 3,884 shared present P0 loci in ZL3b and IT2a, with [complete recorded results](research/transliteration/token_baselines.json). The primary split/exclude treatment has 272 equal adjacent pairs against a conditional expectation of 270.77; other treatments expose sensitivity to preprocessing. This full-corpus exploration does not provide an untouched evaluation set or validate a decoding rule.
 
 The [token-order control generator](research/token-controls/README.md) supplies reproducible within-row and within-folio-side shuffles that preserve excluded slots and stated sampling constraints. Its committed examples are synthetic. The [split record format and validator](research/evaluation/SPLIT_FORMAT.md) check declared dependencies, input identity, exposure, and freeze chronology; they do not choose real held-out material or prove exposure history. A reviewed image/transcription mapping, a real frozen split, and a first registered hypothesis remain the next steps toward a decipherment test.
