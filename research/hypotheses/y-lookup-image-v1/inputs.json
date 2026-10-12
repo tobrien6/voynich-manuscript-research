@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "analysis_id": "y-lookup-image-v1",
+  "parent_version": "1c6abb48776a6a59b527f502b50289edf9709191",
+  "maximum_target_units": 2,
+  "image_inspection_started": false,
+  "valid_candidate_holdout": false,
+  "previously_unseen": false,
+  "pins": {
+    "plan": {
+      "path": "research/hypotheses/y-lookup-image-v1/PLAN.md",
+      "sha256": "9f18613430e50d05c7aac6b6a39fdd0a4ac2502a0cea869eff50ac5e64a7d8ac"
+    },
+    "parent_plan": {
+      "path": "research/hypotheses/y-layout-prefix-v1/PLAN.md",
+      "sha256": "fbd1dd9cb23d16a182f0d237eaa3a2412083eb8eed50dd969d4128d7284e4034"
+    },
+    "parent_partition": {
+      "path": "research/hypotheses/y-layout-prefix-v1/partition.json",
+      "sha256": "354aace43b44b5158257c737fe81c64ccc27469026a4d3b69743e117c3e739ae"
+    },
+    "parent_report": {
+      "path": "research/hypotheses/y-layout-prefix-v1/results.json",
+      "sha256": "8944187811166c1ba687d4065b9afe7fa7c853e3ed46acacb56ae3a28ae1a6f1"
+    },
+    "parent_implementation": {
+      "path": "scripts/y_layout_prefix.py",
+      "sha256": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3"
+    },
+    "catalog": {
+      "path": "data/transliterations.json",
+      "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "canvas_index": {
+      "path": "research/image-index/canvases.csv",
+      "sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+    },
+    "image_report": {
+      "path": "research/folio-alignment/transcription-image-coverage.json",
+      "sha256": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
+    }
+  }
+}

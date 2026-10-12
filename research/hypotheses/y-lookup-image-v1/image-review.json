@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "analysis_id": "y-lookup-image-v1",
+  "plan_commit": "a73b529bfd0a960708cb95cf1a11f48273d284d5",
+  "selection_commit": "05ff51305618637b55fd9735f36c4ad4b8ff5307",
+  "selection_sha256": "cfa6a7a8ad4e500ac415619235eac27759eb59b803c0e15971832ad9557be117",
+  "plan_sha256": "9f18613430e50d05c7aac6b6a39fdd0a4ac2502a0cea869eff50ac5e64a7d8ac",
+  "inspection_date_local": "2026-10-12",
+  "access_timezone": "America/New_York",
+  "recorded_at_utc": "2026-10-12T06:15:26.175763+00:00",
+  "chronology_statement": "Published plan and complete selection before this observer viewed the four whole-page overviews, then row and group windows. Git/run history is not independent certification.",
+  "observer": "Codex AI; single, nonblind observer with parent results, selected source contexts and earlier project reviews available",
+  "independent_human_adjudication": false,
+  "image_alignment_verified": false,
+  "source_corrections_applied": false,
+  "valid_candidate_holdout": false,
+  "previously_unseen": false,
+  "retrieved_resources": [
+    {
+      "name": "f17r-whole.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006106/full/!1600,1600/0/default.jpg",
+      "sha256": "777ae7a361b82f370edcd8a3c4d40ba51510db6728b3e6e7872ba4851047480c",
+      "bytes": 433388,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1132,
+        1600
+      ]
+    },
+    {
+      "name": "f17r-info.json",
+      "url": "https://collections.library.yale.edu/iiif/2/1006106/info.json",
+      "sha256": "657acb076fd62ed5a8c60e21383434522abfe5f6953ea7d1570f017044b7a085",
+      "bytes": 884,
+      "status": "retrieved"
+    },
+    {
+      "name": "f18r-whole.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006108/full/!1600,1600/0/default.jpg",
+      "sha256": "afd12f9dfa672e782c424345f3b32756f6fbf063d8c6c6ec38b73e9fd39f582f",
+      "bytes": 390274,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1132,
+        1600
+      ]
+    },
+    {
+      "name": "f18r-info.json",
+      "url": "https://collections.library.yale.edu/iiif/2/1006108/info.json",
+      "sha256": "d4df0322f129912deffe5b4e40a8563849bfc69a04ee36f617d60700ade6585b",
+      "bytes": 884,
+      "status": "retrieved"
+    },
+    {
+      "name": "f19v-whole.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006111/full/!1600,1600/0/default.jpg",
+      "sha256": "aabdc694bee0442991868cf44d7ec236b539fbc6a8d5dc97d6fe540e32d86802",
+      "bytes": 452493,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1209,
+        1600
+      ]
+    },
+    {
+      "name": "f19v-info.json",
+      "url": "https://collections.library.yale.edu/iiif/2/1006111/info.json",
+      "sha256": "b33b230e82453e6a1463c162a1e2e095fec3c061d220fdf46fe84c420a3a2974",
+      "bytes": 885,
+      "status": "retrieved"
+    },
+    {
+      "name": "f35v-whole.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006143/full/!1600,1600/0/default.jpg",
+      "sha256": "ee87ba079e9c55c7855b15b90607a1d09bac7ddd3315ea582bbd3ef2aef5500c",
+      "bytes": 487407,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1211,
+        1600
+      ]
+    },
+    {
+      "name": "f35v-info.json",
+      "url": "https://collections.library.yale.edu/iiif/2/1006143/info.json",
+      "sha256": "f5befa4994db70a7d34b459977cf422ed83831bfd781b3a5026225ef730012bc",
+      "bytes": 885,
+      "status": "retrieved"
+    },
+    {
+      "name": "f17r-context.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006106/300,440,2040,310/full/0/default.jpg",
+      "native_region_xywh": [
+        300,
+        440,
+        2040,
+        310
+      ],
+      "sha256": "532b285407b8bc7c59c9c8b8ac0e853e244e69c29b99d37285bc123a16cc4a33",
+      "bytes": 149105,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        2040,
+        310
+      ]
+    },
+    {
+      "name": "f18r-context.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006108/230,680,1600,350/full/0/default.jpg",
+      "native_region_xywh": [
+        230,
+        680,
+        1600,
+        350
+      ],
+      "sha256": "7380fc32ee0ecf8f17a5cfb6e029e866aa8398e3ca58d12889374f3c98f22e16",
+      "bytes": 132684,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1600,
+        350
+      ]
+    },
+    {
+      "name": "f19v-context.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006111/870,580,1250,290/full/0/default.jpg",
+      "native_region_xywh": [
+        870,
+        580,
+        1250,
+        290
+      ],
+      "sha256": "7735a8915039d0528937723ecdcb6819feb004234e4ed5bad49ecd7f498dbb31",
+      "bytes": 98693,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1250,
+        290
+      ]
+    },
+    {
+      "name": "f35v-context.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006143/850,1530,1000,430/full/0/default.jpg",
+      "native_region_xywh": [
+        850,
+        1530,
+        1000,
+        430
+      ],
+      "sha256": "96b516ca802631d717a418bcca2e71952d2427fb4573dbacc346eb0c2d94a91d",
+      "bytes": 116091,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        1000,
+        430
+      ]
+    },
+    {
+      "name": "basic-eva.gif",
+      "url": "https://voynich.nu/img/extra/eva01.gif",
+      "sha256": "c470d909c07c586f327a4a84f35efa879f765745744a0439690ed706f7b3e09f",
+      "bytes": 51004,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        640,
+        1032
+      ]
+    },
+    {
+      "name": "f17r-token.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006106/320,560,520,170/full/0/default.jpg",
+      "native_region_xywh": [
+        320,
+        560,
+        520,
+        170
+      ],
+      "sha256": "f62ff079196b65884099db8da7aa3e0e6bbe6e6f46df038d44e12665f40a200f",
+      "bytes": 26076,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        520,
+        170
+      ]
+    },
+    {
+      "name": "f18r-token.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006108/610,775,330,155/full/0/default.jpg",
+      "native_region_xywh": [
+        610,
+        775,
+        330,
+        155
+      ],
+      "sha256": "75db94269370810a080fe49a578355c55e785d2c53986ad1b5c2a78a6c6cd421",
+      "bytes": 15956,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        330,
+        155
+      ]
+    },
+    {
+      "name": "f19v-token.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006111/900,670,420,170/full/0/default.jpg",
+      "native_region_xywh": [
+        900,
+        670,
+        420,
+        170
+      ],
+      "sha256": "91079fbdfe6117d38c5b14987ded9ddd8b9bc6b63fa4d18bc60e854876f0da22",
+      "bytes": 23368,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        420,
+        170
+      ]
+    },
+    {
+      "name": "f35v-token.jpg",
+      "url": "https://collections.library.yale.edu/iiif/2/1006143/1420,1630,330,180/full/0/default.jpg",
+      "native_region_xywh": [
+        1420,
+        1630,
+        330,
+        180
+      ],
+      "sha256": "70a2da188e7df493e7428104e6ba52d5eead24fdcc7cb3ac3559349e5671cfc3",
+      "bytes": 19591,
+      "status": "retrieved",
+      "pixel_dimensions": [
+        330,
+        180
+      ]
+    }
+  ],
+  "failed_requests": [
+    {
+      "name": "basic-eva.gif",
+      "url": "https://voynich.nu/img/extra/eva01.gif",
+      "status": "first_request_failed",
+      "http_status": 406
+    }
+  ],
+  "cases": [
+    {
+      "target_key": "f17r.2",
+      "reference_key": "f18r.6",
+      "reference_slot_zero_based": 2,
+      "alignment_status": "single_observer_provisional",
+      "comparison_status": "provisional_broad_correspondence",
+      "target_page": "f17r",
+      "reference_page": "f18r",
+      "target_row_evidence": "Second row of the top three-row block, below the tall opening at f17r.1 and above the shorter f17r.3; shared sequence and relative row length support this placement. The second-group ch/sh disagreement is retained.",
+      "reference_row_evidence": "Second row of the following paragraph, after the tall t-starting f18r.5 and before the bud-interrupted f18r.7. The proposed third group lies after a low curled group and a tall looped group.",
+      "target_visible": "A pale looped beginning with a descending/curved stroke is followed closely by a compact double-lobed shape, low angled strokes, and an upturned terminal curve. Green wash and low contrast limit fine separation.",
+      "reference_visible": "The proposed internal group has a double-lobed initial, low angled strokes, and a conspicuous curved/upturned ending. Its ink is darker than the target.",
+      "comparison": "The low sequence after the target beginning is broadly compatible with the reference along the double-lobed start, angled middle, and curled end. A y-like initial is plausible using Basic Eva, but its exact separation and glyph identity are not verified. No distinct word-space boundary after it is established.",
+      "alternatives": "The preceding row has an elevated initial and the following row a low horizontal beginning, supporting the proposed middle row over those neighbors. This is not an exhaustive alignment search or a glyph-by-glyph adjudication.",
+      "remaining_uncertainties": [
+        "First cluster is pale and partly lies on green wash.",
+        "Encoded ASCII y+dair need not describe separate physical glyphs or an added marker.",
+        "Native second-group ZL choky versus IT shoky remains unresolved.",
+        "Both editions are related representations, not independent ground truth."
+      ]
+    },
+    {
+      "target_key": "f19v.4",
+      "reference_key": "f35v.15",
+      "reference_slot_zero_based": 3,
+      "alignment_status": "single_observer_provisional",
+      "comparison_status": "provisional_broad_correspondence",
+      "target_page": "f19v",
+      "reference_page": "f35v",
+      "target_row_evidence": "Fourth row of the upper paragraph, between the longer f19v.3 and the q-starting f19v.5 on the marked parchment. Its initial is followed by another tall-looped cluster and two repeated terminal groups, compatible with the shared source sequence.",
+      "reference_row_evidence": "Row between the tall-starting f35v.14 and the low double-lobed beginning of f35v.16. The final cluster is after three broader groups and ends near the adjacent leaf, compatible with source ykol.cheol.okchy.tch.",
+      "target_visible": "A curled descending beginning precedes paired tall stems with looped tops, followed by a low horizontal and curved form. Dark speckling affects later groups on the row.",
+      "reference_visible": "The final group has paired tall stems and looped tops followed by a low horizontal and curved form. One stem/top is more open and rectangular than in the target.",
+      "comparison": "The body after the target initial broadly resembles the reference in tall paired stems, looped tops, and the following low form. The target has an additional preceding curled shape, compatible with the literal y comparison. Letter/glyph boundaries and a meaningful prefix role remain unresolved.",
+      "alternatives": "Neighboring rows have different first-cluster shapes and terminal sequences; relative order supports the proposed target/reference rows. The final reference group is distinguished from the preceding tall cluster by its row-end position and following low form. No exhaustive alternative placement search is claimed.",
+      "remaining_uncertainties": [
+        "Tall-loop shapes vary between pages; visual resemblance is not exact glyph identity.",
+        "Source slot 3 is an encoded position, not a validated physical token boundary.",
+        "The y/tch boundary and function are not adjudicated.",
+        "No word, morpheme, language, or translation follows from these features."
+      ]
+    }
+  ]
+}

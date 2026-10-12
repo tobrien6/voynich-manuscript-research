@@ -1,0 +1,6793 @@
+{
+  "schema_version": 1,
+  "analysis_id": "y-lookup-image-v1",
+  "status": "selection_only_before_pixels",
+  "input_pins": {
+    "plan": {
+      "path": "research/hypotheses/y-lookup-image-v1/PLAN.md",
+      "sha256": "9f18613430e50d05c7aac6b6a39fdd0a4ac2502a0cea869eff50ac5e64a7d8ac"
+    },
+    "parent_plan": {
+      "path": "research/hypotheses/y-layout-prefix-v1/PLAN.md",
+      "sha256": "fbd1dd9cb23d16a182f0d237eaa3a2412083eb8eed50dd969d4128d7284e4034"
+    },
+    "parent_partition": {
+      "path": "research/hypotheses/y-layout-prefix-v1/partition.json",
+      "sha256": "354aace43b44b5158257c737fe81c64ccc27469026a4d3b69743e117c3e739ae"
+    },
+    "parent_report": {
+      "path": "research/hypotheses/y-layout-prefix-v1/results.json",
+      "sha256": "8944187811166c1ba687d4065b9afe7fa7c853e3ed46acacb56ae3a28ae1a6f1"
+    },
+    "parent_implementation": {
+      "path": "scripts/y_layout_prefix.py",
+      "sha256": "0c32a056a79a196a5987faf3ae202f0a7a83860f47476f492fe125a350a3edc3"
+    },
+    "catalog": {
+      "path": "data/transliterations.json",
+      "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "canvas_index": {
+      "path": "research/image-index/canvases.csv",
+      "sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+    },
+    "image_report": {
+      "path": "research/folio-alignment/transcription-image-coverage.json",
+      "sha256": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
+    }
+  },
+  "selection": {
+    "common_eligible_locations": 3002,
+    "sorted_common_eligible_keys_sha256": "680d947d20ae7a4255c1ffe0d457657140f3649795aa9cfa9c1a996412d8d09b",
+    "diagnostic_eligible_locus_count": 563,
+    "candidate_count": 16,
+    "candidates": [
+      {
+        "locus_key": "f17r.2",
+        "unit_id": "numeric-families:17",
+        "original_first_form": "ydair",
+        "reference_form": "dair",
+        "chosen_reference": {
+          "locus_key": "f18r.6",
+          "original_slot_zero_based": 2,
+          "unit_id": "numeric-families:18"
+        }
+      },
+      {
+        "locus_key": "f17v.15",
+        "unit_id": "numeric-families:17",
+        "original_first_form": "ychor",
+        "reference_form": "chor",
+        "chosen_reference": {
+          "locus_key": "f1r.20",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:1"
+        }
+      },
+      {
+        "locus_key": "f19v.4",
+        "unit_id": "numeric-families:19",
+        "original_first_form": "ytch",
+        "reference_form": "tch",
+        "chosen_reference": {
+          "locus_key": "f35v.15",
+          "original_slot_zero_based": 3,
+          "unit_id": "numeric-families:35"
+        }
+      },
+      {
+        "locus_key": "f19v.6",
+        "unit_id": "numeric-families:19",
+        "original_first_form": "ychoy",
+        "reference_form": "choy",
+        "chosen_reference": {
+          "locus_key": "f16v.3",
+          "original_slot_zero_based": 2,
+          "unit_id": "numeric-families:16"
+        }
+      },
+      {
+        "locus_key": "f19v.7",
+        "unit_id": "numeric-families:19",
+        "original_first_form": "ycho",
+        "reference_form": "cho",
+        "chosen_reference": {
+          "locus_key": "f3r.4",
+          "original_slot_zero_based": 5,
+          "unit_id": "numeric-families:3"
+        }
+      },
+      {
+        "locus_key": "f19v.9",
+        "unit_id": "numeric-families:19",
+        "original_first_form": "ychor",
+        "reference_form": "chor",
+        "chosen_reference": {
+          "locus_key": "f1r.20",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:1"
+        }
+      },
+      {
+        "locus_key": "f19v.13",
+        "unit_id": "numeric-families:19",
+        "original_first_form": "yees",
+        "reference_form": "ees",
+        "chosen_reference": {
+          "locus_key": "f3v.4",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:3"
+        }
+      },
+      {
+        "locus_key": "f42r.8",
+        "unit_id": "numeric-families:42",
+        "original_first_form": "yshol",
+        "reference_form": "shol",
+        "chosen_reference": {
+          "locus_key": "f1r.18",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:1"
+        }
+      },
+      {
+        "locus_key": "f44r.4",
+        "unit_id": "numeric-families:44",
+        "original_first_form": "ychor",
+        "reference_form": "chor",
+        "chosen_reference": {
+          "locus_key": "f1r.20",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:1"
+        }
+      },
+      {
+        "locus_key": "f66r.52",
+        "unit_id": "numeric-families:66",
+        "original_first_form": "ykshedy",
+        "reference_form": "kshedy",
+        "chosen_reference": {
+          "locus_key": "f79r.16",
+          "original_slot_zero_based": 3,
+          "unit_id": "numeric-families:79"
+        }
+      },
+      {
+        "locus_key": "f99r.52",
+        "unit_id": "numeric-families:99",
+        "original_first_form": "ychor",
+        "reference_form": "chor",
+        "chosen_reference": {
+          "locus_key": "f1r.20",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:1"
+        }
+      },
+      {
+        "locus_key": "f104r.9",
+        "unit_id": "numeric-families:104",
+        "original_first_form": "ycheeoy",
+        "reference_form": "cheeoy",
+        "chosen_reference": {
+          "locus_key": "f31v.5",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:31"
+        }
+      },
+      {
+        "locus_key": "f104r.35",
+        "unit_id": "numeric-families:104",
+        "original_first_form": "yshoiin",
+        "reference_form": "shoiin",
+        "chosen_reference": {
+          "locus_key": "f28v.5",
+          "original_slot_zero_based": 4,
+          "unit_id": "numeric-families:28"
+        }
+      },
+      {
+        "locus_key": "f104v.2",
+        "unit_id": "numeric-families:104",
+        "original_first_form": "ychedaiin",
+        "reference_form": "chedaiin",
+        "chosen_reference": {
+          "locus_key": "f31r.12",
+          "original_slot_zero_based": 4,
+          "unit_id": "numeric-families:31"
+        }
+      },
+      {
+        "locus_key": "f104v.21",
+        "unit_id": "numeric-families:104",
+        "original_first_form": "yshor",
+        "reference_form": "shor",
+        "chosen_reference": {
+          "locus_key": "f4r.10",
+          "original_slot_zero_based": 1,
+          "unit_id": "numeric-families:4"
+        }
+      },
+      {
+        "locus_key": "f114v.41",
+        "unit_id": "numeric-families:114",
+        "original_first_form": "yaiin",
+        "reference_form": "aiin",
+        "chosen_reference": {
+          "locus_key": "f3r.20",
+          "original_slot_zero_based": 5,
+          "unit_id": "numeric-families:3"
+        }
+      }
+    ],
+    "excluded_diagnostic_loci": [
+      {
+        "locus_key": "f104r.11",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.13",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.14",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.15",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.17",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104r.18",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.2",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.20",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.21",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.23",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.24",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.25",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.26",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.28",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.29",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.3",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.31",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.32",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_qualifying_development_reference"
+        ],
+        "reference_form": "sheeody"
+      },
+      {
+        "locus_key": "f104r.33",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.37",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.38",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.4",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.40",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.41",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.42",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.44",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.45",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.6",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.7",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104r.8",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.10",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.11",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.13",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.16",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.17",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.18",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.20",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.23",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.24",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.25",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.26",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.28",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.3",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.30",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.31",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.33",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.34",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f104v.36",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.38",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.39",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.4",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.40",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.42",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.43",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.44",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.5",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.7",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f104v.9",
+        "unit_id": "numeric-families:104",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.10",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.12",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.13",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.15",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.16",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.17",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.18",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.2",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.20",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.21",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.23",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.25",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.26",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.27",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.30",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.31",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.33",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.36",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.37",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.38",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.40",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.41",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.43",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.44",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114r.45",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.5",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.6",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.7",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114r.9",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.10",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.12",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.13",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.15",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.16",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114v.17",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.2",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.21",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.22",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114v.24",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.25",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.27",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.28",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.3",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.30",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.31",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.32",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.34",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.35",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114v.37",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.38",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.4",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.40",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.5",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f114v.7",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f114v.9",
+        "unit_id": "numeric-families:114",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13r.10",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13r.2",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13r.3",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13r.4",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13r.6",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13r.7",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f13r.8",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f13r.9",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f13v.10",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13v.2",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13v.3",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13v.4",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13v.5",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f13v.7",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f13v.8",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f13v.9",
+        "unit_id": "numeric-families:13",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.10",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.11",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.12",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.13",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.14",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.15",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15r.2",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.3",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.4",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.5",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.6",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.7",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.8",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15r.9",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f15v.10",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.11",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.12",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.3",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.4",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.5",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.6",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f15v.8",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f15v.9",
+        "unit_id": "numeric-families:15",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.10",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.11",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.12",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.3",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.5",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f17r.6",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.8",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17r.9",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.10",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.11",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.12",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.13",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f17v.14",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.16",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.17",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.18",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.19",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.2",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f17v.20",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f17v.21",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.22",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.23",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.3",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.4",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.5",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f17v.6",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.7",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.8",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f17v.9",
+        "unit_id": "numeric-families:17",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f19r.10",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.11",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.12",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f19r.13",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.2",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.3",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.4",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.5",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.6",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.8",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19r.9",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19v.10",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19v.11",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19v.12",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19v.2",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19v.3",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f19v.5",
+        "unit_id": "numeric-families:19",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.10",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42r.11",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42r.12",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42r.13",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42r.14",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42r.17",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.18",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.19",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.2",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.20",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.21",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.22",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.3",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.4",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42r.5",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42v.10",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.11",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.13",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.14",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.15",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f42v.2",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.3",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.4",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.5",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.6",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.7",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f42v.8",
+        "unit_id": "numeric-families:42",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44r.10",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44r.11",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f44r.2",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f44r.3",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44r.6",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44r.9",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.10",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.11",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.12",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f44v.13",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.2",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f44v.3",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.5",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.6",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f44v.9",
+        "unit_id": "numeric-families:44",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.10",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.11",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.2",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.3",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.4",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.6",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45r.7",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45v.10",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f45v.11",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45v.2",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f45v.3",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f45v.4",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f45v.7",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f45v.9",
+        "unit_id": "numeric-families:45",
+        "reasons": [
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f5r.2",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5r.3",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5r.4",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5r.6",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5r.7",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5v.2",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5v.3",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5v.4",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5v.5",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f5v.6",
+        "unit_id": "numeric-families:5",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.51",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.53",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.54",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.55",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f66r.56",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.59",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.60",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.61",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.62",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.64",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.65",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.66",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.68",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.69",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.71",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.72",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.73",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f66r.74",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f66r.75",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.76",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.77",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.78",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.79",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.80",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66r.81",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.10",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.11",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f66v.12",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.13",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f66v.2",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.3",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_qualifying_development_reference"
+        ],
+        "reference_form": "tos"
+      },
+      {
+        "locus_key": "f66v.4",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.5",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.7",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f66v.8",
+        "unit_id": "numeric-families:66",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f67r1.2",
+        "unit_id": "numeric-families:67",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_no_unique_exact_single_side_canvas"
+        ]
+      },
+      {
+        "locus_key": "f67r1.3",
+        "unit_id": "numeric-families:67",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment",
+          "target_no_unique_exact_single_side_canvas"
+        ]
+      },
+      {
+        "locus_key": "f67r1.4",
+        "unit_id": "numeric-families:67",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_no_unique_exact_single_side_canvas"
+        ]
+      },
+      {
+        "locus_key": "f67r2.73",
+        "unit_id": "numeric-families:67",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_no_unique_exact_single_side_canvas"
+        ]
+      },
+      {
+        "locus_key": "f67r2.74",
+        "unit_id": "numeric-families:67",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment",
+          "target_no_unique_exact_single_side_canvas"
+        ]
+      },
+      {
+        "locus_key": "f7r.10",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f7r.2",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7r.3",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7r.4",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7r.5",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7r.7",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7r.8",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7r.9",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7v.2",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f7v.3",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f7v.4",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f7v.5",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f7v.7",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7v.8",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f7v.9",
+        "unit_id": "numeric-families:7",
+        "reasons": [
+          "unit_not_scorable_in_parent_all_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f80r.12",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.13",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.14",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.15",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.16",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.17",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.19",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.20",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.21",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.22",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.23",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f80r.24",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.25",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.26",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.27",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.29",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.30",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.31",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.32",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.33",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.35",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.36",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.37",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.38",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.39",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.41",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.42",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.43",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.44",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.45",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.46",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.48",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.50",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.51",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.52",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80r.53",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.10",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.11",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.12",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.13",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.15",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.16",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.17",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.18",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f80v.2",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.20",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.21",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.22",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.24",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f80v.25",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.26",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.28",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.29",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.3",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.31",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.32",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.33",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.34",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.35",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.36",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.37",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.39",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.4",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.40",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.41",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.42",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.43",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.44",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.5",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.6",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.8",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f80v.9",
+        "unit_id": "numeric-families:80",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.10",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.11",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.12",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f81r.13",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.14",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.15",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.17",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.18",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.19",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.2",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.20",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.21",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.22",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.25",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.26",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.27",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.28",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.29",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.3",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.30",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.31",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.4",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.5",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.6",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.7",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.8",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81r.9",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.12",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.13",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.14",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.15",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.16",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.17",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.18",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.19",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.2",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.20",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.21",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.22",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.23",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.24",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f81v.25",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.27",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.3",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.4",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.5",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.6",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.7",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f81v.8",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f81v.9",
+        "unit_id": "numeric-families:81",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.12",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.13",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.14",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.15",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.16",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.17",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.18",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.2",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f82r.21",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.22",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.23",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.24",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.25",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.26",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.27",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.28",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.29",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.3",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f82r.30",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.31",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.32",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.33",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.4",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f82r.5",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f82r.6",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.7",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.8",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82r.9",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.10",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.12",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.13",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.14",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.16",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.17",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.18",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f82v.19",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.21",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.22",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.23",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f82v.24",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.25",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.26",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.27",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.29",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.30",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.31",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.32",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.34",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f82v.35",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.36",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.37",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.38",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.6",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.7",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.8",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f82v.9",
+        "unit_id": "numeric-families:82",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.10",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.11",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f96r.12",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f96r.13",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.2",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f96r.3",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.4",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.5",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.6",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.7",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96r.8",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f96v.10",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.11",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.12",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.13",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.2",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f96v.3",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f96v.4",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.5",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.6",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f96v.7",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f96v.8",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f96v.9",
+        "unit_id": "numeric-families:96",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.16",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.17",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.18",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.29",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.30",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.31",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.42",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.43",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.44",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.48",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "not_a_positive_lookup_gain_in_every_treatment"
+        ]
+      },
+      {
+        "locus_key": "f99r.49",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.50",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99r.51",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.11",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.12",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.13",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.22",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.23",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.24",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.33",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.34",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.35",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form"
+        ]
+      },
+      {
+        "locus_key": "f99v.38",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.39",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.40",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.41",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      },
+      {
+        "locus_key": "f99v.42",
+        "unit_id": "numeric-families:99",
+        "reasons": [
+          "first_form_differs_across_treatments",
+          "no_shared_scorable_y_first_form",
+          "target_inline_drawing_interruption"
+        ]
+      }
+    ],
+    "reference_pools": {
+      "sheeody": {
+        "eligible_occurrences": [],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f102v2.31",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          }
+        ]
+      },
+      "shoiin": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f28v.5",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:28"
+          }
+        ],
+        "excluded_stable_occurrences": []
+      },
+      "cheeoy": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f31v.5",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:31"
+          }
+        ],
+        "excluded_stable_occurrences": []
+      },
+      "chedaiin": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f31r.12",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:31"
+          },
+          {
+            "locus_key": "f77r.22",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:77"
+          },
+          {
+            "locus_key": "f77r.35",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:77"
+          },
+          {
+            "locus_key": "f105v.4",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.34",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f112v.14",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f112v.33",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f112v.34",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:112"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f76v.3",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:76",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "shor": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f4r.10",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:4"
+          },
+          {
+            "locus_key": "f6r.10",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f18r.10",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:18"
+          },
+          {
+            "locus_key": "f36r.2",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:36"
+          },
+          {
+            "locus_key": "f46r.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:46"
+          },
+          {
+            "locus_key": "f49r.10",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:49"
+          },
+          {
+            "locus_key": "f52v.11",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:52"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f10r.9",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:10",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f16r.2",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:16",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f28r.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:28",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f28r.3",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:28",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f29r.6",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:29",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f29r.6",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:29",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f2r.2",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:2",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f52r.2",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:52",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f52r.5",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:52",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f86v5.2",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v6.26",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v6.4",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f88v.7",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f8v.2",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "aiin": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f3r.20",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f16r.6",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:16"
+          },
+          {
+            "locus_key": "f20v.4",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:20"
+          },
+          {
+            "locus_key": "f31r.2",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:31"
+          },
+          {
+            "locus_key": "f31v.9",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:31"
+          },
+          {
+            "locus_key": "f31v.10",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:31"
+          },
+          {
+            "locus_key": "f33r.5",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:33"
+          },
+          {
+            "locus_key": "f33r.7",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:33"
+          },
+          {
+            "locus_key": "f33r.7",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:33"
+          },
+          {
+            "locus_key": "f34v.2",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:34"
+          },
+          {
+            "locus_key": "f34v.11",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:34"
+          },
+          {
+            "locus_key": "f39r.11",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f39r.11",
+            "original_slot_zero_based": 11,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f39v.5",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f43r.3",
+            "original_slot_zero_based": 12,
+            "unit_id": "numeric-families:43"
+          },
+          {
+            "locus_key": "f43v.16",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:43"
+          },
+          {
+            "locus_key": "f46r.3",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:46"
+          },
+          {
+            "locus_key": "f46r.12",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:46"
+          },
+          {
+            "locus_key": "f54r.12",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:54"
+          },
+          {
+            "locus_key": "f54v.7",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:54"
+          },
+          {
+            "locus_key": "f55r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:55"
+          },
+          {
+            "locus_key": "f55r.5",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:55"
+          },
+          {
+            "locus_key": "f56v.13",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:56"
+          },
+          {
+            "locus_key": "f58r.9",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f58r.18",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f58v.7",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f58v.18",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f58v.27",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f76v.41",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:76"
+          },
+          {
+            "locus_key": "f78r.19",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:78"
+          },
+          {
+            "locus_key": "f78r.37",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:78"
+          },
+          {
+            "locus_key": "f78r.37",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:78"
+          },
+          {
+            "locus_key": "f79r.42",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:79"
+          },
+          {
+            "locus_key": "f79v.31",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:79"
+          },
+          {
+            "locus_key": "f79v.39",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:79"
+          },
+          {
+            "locus_key": "f79v.40",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:79"
+          },
+          {
+            "locus_key": "f83r.10",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:83"
+          },
+          {
+            "locus_key": "f84v.39",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:84"
+          },
+          {
+            "locus_key": "f88r.27",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:88+89+90"
+          },
+          {
+            "locus_key": "f103v.10",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:103"
+          },
+          {
+            "locus_key": "f103v.24",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:103"
+          },
+          {
+            "locus_key": "f105r.15",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105r.16",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.6",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.11",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.12",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.16",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.16",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.17",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.19",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.26",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.30",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.31",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f106r.5",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106r.11",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106r.11",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106r.11",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106r.16",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106r.40",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106v.16",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f106v.29",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f107r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107r.2",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107r.28",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107r.28",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107r.40",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107v.6",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107v.33",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107v.40",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f107v.46",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f108v.26",
+            "original_slot_zero_based": 10,
+            "unit_id": "numeric-families:108"
+          },
+          {
+            "locus_key": "f108v.50",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:108"
+          },
+          {
+            "locus_key": "f111r.14",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:111"
+          },
+          {
+            "locus_key": "f111r.15",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:111"
+          },
+          {
+            "locus_key": "f111r.30",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:111"
+          },
+          {
+            "locus_key": "f111r.46",
+            "original_slot_zero_based": 11,
+            "unit_id": "numeric-families:111"
+          },
+          {
+            "locus_key": "f111r.53",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:111"
+          },
+          {
+            "locus_key": "f111v.5",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:111"
+          },
+          {
+            "locus_key": "f112r.20",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f112r.25",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f112r.29",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f112r.45",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f112v.28",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f113r.6",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113r.6",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113r.38",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113r.40",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113r.43",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113v.37",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113v.41",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f115r.24",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:115"
+          },
+          {
+            "locus_key": "f115v.25",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:115"
+          },
+          {
+            "locus_key": "f115v.36",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:115"
+          },
+          {
+            "locus_key": "f116r.5",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:116"
+          },
+          {
+            "locus_key": "f116r.11",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:116"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f101r.5",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f101r.9",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f101v.20",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f101v.20",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f26r.10",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:26",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f34r.12",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:34",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f34r.4",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:34",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f35r.14",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:35",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f39v.9",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:39",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f40r.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:40",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f48v.3",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:48",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f55v.10",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:55",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f55v.11",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:55",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f55v.12",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:55",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f76v.6",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:76",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f85r1.29",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f85r1.33",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.13",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.14",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.15",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.20",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.20",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.24",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.27",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.32",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.32",
+            "original_slot_zero_based": 11,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.34",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v5.35",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v6.35",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f86v6.9",
+            "original_slot_zero_based": 10,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89r2.25",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v2.20",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v2.8",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f8r.17",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f95v2.5",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:94+95",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          }
+        ]
+      },
+      "dair": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f18r.6",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:18"
+          },
+          {
+            "locus_key": "f39r.2",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f58r.30",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f103v.8",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:103"
+          },
+          {
+            "locus_key": "f105r.32",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f105v.34",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:105"
+          },
+          {
+            "locus_key": "f111r.54",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:111"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f100v.15",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f14v.8",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:14",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f1v.4",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:1",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f23v.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:23",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f38v.3",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:38",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f88v.24",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v2.20",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f93v.3",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:93",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "chor": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f1r.20",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:1"
+          },
+          {
+            "locus_key": "f2v.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:2"
+          },
+          {
+            "locus_key": "f3r.2",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f3r.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f3r.6",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f3r.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f3v.8",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f3v.9",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f4v.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:4"
+          },
+          {
+            "locus_key": "f6r.12",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f6v.2",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f6v.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f6v.13",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f6v.21",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f9v.12",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:9"
+          },
+          {
+            "locus_key": "f10v.6",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:10"
+          },
+          {
+            "locus_key": "f16v.5",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:16"
+          },
+          {
+            "locus_key": "f16v.9",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:16"
+          },
+          {
+            "locus_key": "f18r.11",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:18"
+          },
+          {
+            "locus_key": "f20r.10",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:20"
+          },
+          {
+            "locus_key": "f20r.13",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:20"
+          },
+          {
+            "locus_key": "f20v.10",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:20"
+          },
+          {
+            "locus_key": "f21r.12",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:21"
+          },
+          {
+            "locus_key": "f21r.12",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:21"
+          },
+          {
+            "locus_key": "f21v.3",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:21"
+          },
+          {
+            "locus_key": "f22v.7",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:22"
+          },
+          {
+            "locus_key": "f23r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:23"
+          },
+          {
+            "locus_key": "f25r.2",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:25"
+          },
+          {
+            "locus_key": "f25v.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:25"
+          },
+          {
+            "locus_key": "f30r.6",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:30"
+          },
+          {
+            "locus_key": "f30v.4",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:30"
+          },
+          {
+            "locus_key": "f30v.9",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:30"
+          },
+          {
+            "locus_key": "f35v.21",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:35"
+          },
+          {
+            "locus_key": "f35v.21",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:35"
+          },
+          {
+            "locus_key": "f37v.9",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:37"
+          },
+          {
+            "locus_key": "f39r.13",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f39v.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f47r.7",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:47"
+          },
+          {
+            "locus_key": "f56v.6",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:56"
+          },
+          {
+            "locus_key": "f58v.31",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f87r.5",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:87"
+          },
+          {
+            "locus_key": "f88r.21",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:88+89+90"
+          },
+          {
+            "locus_key": "f100r.15",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:100+101+102"
+          },
+          {
+            "locus_key": "f100r.23",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:100+101+102"
+          },
+          {
+            "locus_key": "f107v.19",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f108v.36",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:108"
+          },
+          {
+            "locus_key": "f112r.25",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:112"
+          },
+          {
+            "locus_key": "f113r.24",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113v.14",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f115r.20",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:115"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f101r.8",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f101v.20",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f10r.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:10",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f10r.9",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:10",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f18r.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:18",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f22r.5",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:22",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f27r.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:27",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f29r.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:29",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f29v.9",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:29",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f2r.12",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:2",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f2r.3",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:2",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f2v.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:2",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f2v.6",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:2",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f30r.12",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:30",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f30r.9",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:30",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f32r.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:32",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f32v.10",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:32",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f32v.5",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:32",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f34r.13",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:34",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f47v.5",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:47",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f52r.5",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:52",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f54r.11",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:54",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f56r.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:56",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f68v3.3",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:68",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f6r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:6",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f6r.2",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:6",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f85r1.21",
+            "original_slot_zero_based": 9,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f85r1.6",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f88v.17",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89r1.10",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89r2.13",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89r2.14",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v2.18",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v2.8",
+            "original_slot_zero_based": 14,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v2.9",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f8r.18",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8r.3",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8r.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8r.4",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8v.15",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8v.15",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8v.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f95r2.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:94+95",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f9r.5",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:9",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f9v.2",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:9",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f9v.3",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:9",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "ees": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f3v.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:3"
+          }
+        ],
+        "excluded_stable_occurrences": []
+      },
+      "tch": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f35v.15",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:35"
+          }
+        ],
+        "excluded_stable_occurrences": []
+      },
+      "choy": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f16v.3",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:16"
+          },
+          {
+            "locus_key": "f24v.10",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:24"
+          },
+          {
+            "locus_key": "f47r.8",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:47"
+          },
+          {
+            "locus_key": "f56r.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:56"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f100v.21",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f101v.20",
+            "original_slot_zero_based": 19,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f9v.6",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:9",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "cho": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f3r.4",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f6r.7",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f20v.9",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:20"
+          },
+          {
+            "locus_key": "f24r.5",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:24"
+          },
+          {
+            "locus_key": "f25v.5",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:25"
+          },
+          {
+            "locus_key": "f35v.8",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:35"
+          },
+          {
+            "locus_key": "f35v.9",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:35"
+          },
+          {
+            "locus_key": "f49r.18",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:49"
+          },
+          {
+            "locus_key": "f49r.20",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:49"
+          },
+          {
+            "locus_key": "f56r.5",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:56"
+          },
+          {
+            "locus_key": "f56r.12",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:56"
+          },
+          {
+            "locus_key": "f100r.27",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:100+101+102"
+          },
+          {
+            "locus_key": "f106r.30",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:106"
+          },
+          {
+            "locus_key": "f107r.39",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f115r.11",
+            "original_slot_zero_based": 10,
+            "unit_id": "numeric-families:115"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f102v2.20",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f24v.2",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:24",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f28r.6",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:28",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f29v.9",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:29",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f88v.8",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f8v.16",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "shol": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f1r.18",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:1"
+          },
+          {
+            "locus_key": "f3v.3",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:3"
+          },
+          {
+            "locus_key": "f4r.8",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:4"
+          },
+          {
+            "locus_key": "f4r.8",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:4"
+          },
+          {
+            "locus_key": "f6r.12",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:6"
+          },
+          {
+            "locus_key": "f20v.4",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:20"
+          },
+          {
+            "locus_key": "f21r.11",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:21"
+          },
+          {
+            "locus_key": "f22r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:22"
+          },
+          {
+            "locus_key": "f24v.8",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:24"
+          },
+          {
+            "locus_key": "f25v.4",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:25"
+          },
+          {
+            "locus_key": "f39r.9",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:39"
+          },
+          {
+            "locus_key": "f43r.11",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:43"
+          },
+          {
+            "locus_key": "f43r.12",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:43"
+          },
+          {
+            "locus_key": "f46r.7",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:46"
+          },
+          {
+            "locus_key": "f51r.10",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:51"
+          },
+          {
+            "locus_key": "f53v.2",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:53"
+          },
+          {
+            "locus_key": "f58r.18",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f58v.31",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:58"
+          },
+          {
+            "locus_key": "f76r.49",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:76"
+          },
+          {
+            "locus_key": "f78v.24",
+            "original_slot_zero_based": 7,
+            "unit_id": "numeric-families:78"
+          },
+          {
+            "locus_key": "f78v.30",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:78"
+          },
+          {
+            "locus_key": "f83r.2",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:83"
+          },
+          {
+            "locus_key": "f83v.28",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:83"
+          },
+          {
+            "locus_key": "f87r.14",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:87"
+          },
+          {
+            "locus_key": "f93r.7",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:93"
+          },
+          {
+            "locus_key": "f93r.19",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:93"
+          },
+          {
+            "locus_key": "f93r.21",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:93"
+          },
+          {
+            "locus_key": "f100r.15",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:100+101+102"
+          },
+          {
+            "locus_key": "f100r.23",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:100+101+102"
+          },
+          {
+            "locus_key": "f100r.23",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:100+101+102"
+          },
+          {
+            "locus_key": "f103r.23",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:103"
+          },
+          {
+            "locus_key": "f103v.46",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:103"
+          },
+          {
+            "locus_key": "f107v.3",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:107"
+          },
+          {
+            "locus_key": "f108r.22",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:108"
+          },
+          {
+            "locus_key": "f108r.32",
+            "original_slot_zero_based": 8,
+            "unit_id": "numeric-families:108"
+          },
+          {
+            "locus_key": "f108v.21",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:108"
+          },
+          {
+            "locus_key": "f113r.17",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:113"
+          },
+          {
+            "locus_key": "f113r.21",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:113"
+          }
+        ],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f101r.6",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f101v.26",
+            "original_slot_zero_based": 16,
+            "unit_id": "numeric-families:100+101+102",
+            "reasons": [
+              "reference_inline_drawing_interruption",
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f23v.7",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:23",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f27r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:27",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f27r.3",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:27",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f28r.8",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:28",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f35r.14",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:35",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f37r.6",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:37",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f4r.2",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:4",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f86v6.29",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:85+86",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f89v1.17",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          },
+          {
+            "locus_key": "f8r.19",
+            "original_slot_zero_based": 4,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8r.19",
+            "original_slot_zero_based": 6,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8v.14",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8v.3",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f8v.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:8",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f93v.4",
+            "original_slot_zero_based": 1,
+            "unit_id": "numeric-families:93",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          },
+          {
+            "locus_key": "f9r.5",
+            "original_slot_zero_based": 5,
+            "unit_id": "numeric-families:9",
+            "reasons": [
+              "reference_inline_drawing_interruption"
+            ]
+          }
+        ]
+      },
+      "kshedy": {
+        "eligible_occurrences": [
+          {
+            "locus_key": "f79r.16",
+            "original_slot_zero_based": 3,
+            "unit_id": "numeric-families:79"
+          }
+        ],
+        "excluded_stable_occurrences": []
+      },
+      "tos": {
+        "eligible_occurrences": [],
+        "excluded_stable_occurrences": [
+          {
+            "locus_key": "f88v.25",
+            "original_slot_zero_based": 2,
+            "unit_id": "numeric-families:88+89+90",
+            "reasons": [
+              "reference_no_unique_exact_single_side_canvas"
+            ]
+          }
+        ]
+      }
+    },
+    "selected_pairs": [
+      {
+        "locus_key": "f17r.2",
+        "unit_id": "numeric-families:17",
+        "original_first_form": "ydair",
+        "reference_form": "dair",
+        "chosen_reference": {
+          "locus_key": "f18r.6",
+          "original_slot_zero_based": 2,
+          "unit_id": "numeric-families:18"
+        },
+        "target_native_context": {
+          "ZL3b": {
+            "locus": {
+              "identifier": "f17r.2,+P0",
+              "file_line": 700,
+              "text": "ydair.choky.okshy.qodar.ckhody.dor.otchol.qodcthy.ods"
+            },
+            "preceding": {
+              "identifier": "f17r.1,@P0",
+              "file_line": 699,
+              "text": "<%>fshody.daram.ydar,chog.opydy.ypod.chop.otchy.dody.oldckhy"
+            },
+            "following": {
+              "identifier": "f17r.3,+P0",
+              "file_line": 701,
+              "text": "chol.or.chy.qodam.okor.chor.okchom<$>"
+            },
+            "original_slot_zero_based": 0
+          },
+          "IT2a": {
+            "locus": {
+              "identifier": "f17r.2,+P0",
+              "file_line": 411,
+              "text": "ydair.shoky.okshy.qodar.ckhody.dor.otchol.qodcthy.ods"
+            },
+            "preceding": {
+              "identifier": "f17r.1,@P0",
+              "file_line": 410,
+              "text": "<%>fshody.daram.ydarchom.opydy.ypod.chop.otchy.dody.oldckhy"
+            },
+            "following": {
+              "identifier": "f17r.3,+P0",
+              "file_line": 412,
+              "text": "chol.or.chy.qodam.okor.chor.okchom<$>"
+            },
+            "original_slot_zero_based": 0
+          }
+        },
+        "reference_native_context": {
+          "ZL3b": {
+            "locus": {
+              "identifier": "f18r.6,+P0",
+              "file_line": 760,
+              "text": "ychy.kchor.dair.ytol.chcthy.dar.dar.dal"
+            },
+            "preceding": {
+              "identifier": "f18r.5,+P0",
+              "file_line": 759,
+              "text": "<%>tchor.shor.cthaiin.cthol.chlol.chom"
+            },
+            "following": {
+              "identifier": "f18r.7,+P0",
+              "file_line": 761,
+              "text": "oshor.shaiin.cthy.sholdy.doldy<->doldaiin"
+            },
+            "original_slot_zero_based": 2
+          },
+          "IT2a": {
+            "locus": {
+              "identifier": "f18r.6,+P0",
+              "file_line": 452,
+              "text": "ychy.kchor.dair.ytol.chcthy.dar.dar.dal"
+            },
+            "preceding": {
+              "identifier": "f18r.5,+P0",
+              "file_line": 451,
+              "text": "<%>tchor.shor.cthaiin.cthol.chlol.chom"
+            },
+            "following": {
+              "identifier": "f18r.7,+P0",
+              "file_line": 453,
+              "text": "oshor.shaiin.cthy.sholdy.doldy.doldaiin"
+            },
+            "original_slot_zero_based": 2
+          }
+        }
+      },
+      {
+        "locus_key": "f19v.4",
+        "unit_id": "numeric-families:19",
+        "original_first_form": "ytch",
+        "reference_form": "tch",
+        "chosen_reference": {
+          "locus_key": "f35v.15",
+          "original_slot_zero_based": 3,
+          "unit_id": "numeric-families:35"
+        },
+        "target_native_context": {
+          "ZL3b": {
+            "locus": {
+              "identifier": "f19v.4,+P0",
+              "file_line": 818,
+              "text": "ytch.chcthy.qotol.daiin.daiin"
+            },
+            "preceding": {
+              "identifier": "f19v.3,+P0",
+              "file_line": 817,
+              "text": "otchy.chol,daiin.qotol.ytol.daiiin"
+            },
+            "following": {
+              "identifier": "f19v.5,+P0",
+              "file_line": 819,
+              "text": "qotchy.qoteey.daiin.doty.qot"
+            },
+            "original_slot_zero_based": 0
+          },
+          "IT2a": {
+            "locus": {
+              "identifier": "f19v.4,+P0",
+              "file_line": 490,
+              "text": "ytch.chcthy.qotol.daiin.daiin"
+            },
+            "preceding": {
+              "identifier": "f19v.3,+P0",
+              "file_line": 489,
+              "text": "otchy.chol.daiin.qotol.ytol.daiin"
+            },
+            "following": {
+              "identifier": "f19v.5,+P0",
+              "file_line": 491,
+              "text": "qotchy.qoteey.daiin.doty.qot"
+            },
+            "original_slot_zero_based": 0
+          }
+        },
+        "reference_native_context": {
+          "ZL3b": {
+            "locus": {
+              "identifier": "f35v.15,+P0",
+              "file_line": 1497,
+              "text": "ykol.cheol.okchy.tch"
+            },
+            "preceding": {
+              "identifier": "f35v.14,+P0",
+              "file_line": 1496,
+              "text": "tcheain.shy.tar.dain"
+            },
+            "following": {
+              "identifier": "f35v.16,+P0",
+              "file_line": 1498,
+              "text": "ydaiin.okeey.d,aiin"
+            },
+            "original_slot_zero_based": 3
+          },
+          "IT2a": {
+            "locus": {
+              "identifier": "f35v.15,+P0",
+              "file_line": 912,
+              "text": "ykol.cheol.okchy.tch"
+            },
+            "preceding": {
+              "identifier": "f35v.14,+P0",
+              "file_line": 911,
+              "text": "tcheain.shy.tar.dain"
+            },
+            "following": {
+              "identifier": "f35v.16,+P0",
+              "file_line": 913,
+              "text": "ydaiin.okeey.daiin"
+            },
+            "original_slot_zero_based": 3
+          }
+        }
+      }
+    ],
+    "unfilled_target_units": 0,
+    "stable_development_reference_occurrences": 10790,
+    "reference_occurrence_intersection_excludes_source_policy_disagreement": true,
+    "images_by_page": {
+      "f17r": {
+        "yale_label": "17r",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006106",
+        "image_oid": "1006106",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006106",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006106/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006106",
+        "image_width": "2649",
+        "image_height": "3743"
+      },
+      "f18r": {
+        "yale_label": "18r",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006108",
+        "image_oid": "1006108",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006108",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006108/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006108",
+        "image_width": "2649",
+        "image_height": "3743"
+      },
+      "f19v": {
+        "yale_label": "19v",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006111",
+        "image_oid": "1006111",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006111",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006111/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006111",
+        "image_width": "2849",
+        "image_height": "3769"
+      },
+      "f35v": {
+        "yale_label": "35v",
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006143",
+        "image_oid": "1006143",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006143",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006143/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006143",
+        "image_width": "2853",
+        "image_height": "3769"
+      }
+    }
+  },
+  "implementation_sha256": {
+    "scripts/select_y_lookup_images.py": "e26e96c7b1cfb37ef0695268866956037c34b2418cf9518971c5b2b4bc1344e4",
+    "scripts/select_initial_prefix_images.py": "59798024498bfc95165ee4e777dd01d14ca818da878a3f25975c146545dd2452",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/locus_positions.py": "4efa53f41aa51860e4ada5b01882a697490d2b85497f36584a50fc855dea0f7f",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b"
+  },
+  "image_alignment_verified": false,
+  "source_corrections_applied": false,
+  "valid_candidate_holdout": false,
+  "previously_unseen": false
+}
