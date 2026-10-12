@@ -2,6 +2,7 @@
 
 import argparse
 import hashlib
+from http.client import HTTPException
 import json
 import os
 from pathlib import Path
@@ -35,9 +36,14 @@ def sha(raw):
 
 
 def validate_url(url):
-    parsed = urlsplit(url)
+    require(type(url) is str, 'resource URL must be a public HTTPS string')
+    try:
+        parsed = urlsplit(url)
+        port = parsed.port
+    except ValueError as error:
+        raise ReceiptError('resource URL is malformed') from error
     require(parsed.scheme == 'https' and not parsed.username and not parsed.password
-            and not parsed.query and not parsed.fragment and parsed.port in (None, 443),
+            and not parsed.query and not parsed.fragment and port in (None, 443),
             'resource URL is not an accepted public HTTPS address')
     allowed = (parsed.hostname == 'collections.library.yale.edu'
                and re.fullmatch(r'/iiif/2/[0-9]+/(?:info\.json|[^/]+/[^/]+/0/default\.jpg)', parsed.path))
@@ -123,13 +129,20 @@ def retrieve(resource, timeout, opener):
     request = Request(resource['url'], headers={
         'User-Agent': 'Mozilla/5.0 (compatible; VoynichReceipt/1.0; +https://github.com/tobrien6/voynich-manuscript-research)',
         'Accept': 'image/jpeg,image/gif,application/json;q=0.9,*/*;q=0.5'})
-    with opener.open(request, timeout=timeout) as response:
-        validate_url(response.geturl())
-        require(urlsplit(response.geturl()).hostname == urlsplit(resource['url']).hostname,
-                'response changes the recorded provider')
-        require(response.status == 200, 'resource response is not successful')
-        limit = resource['bytes'] if resource['bytes'] is not None else MAX_BYTES
-        raw = response.read(limit + 1)
+    try:
+        with opener.open(request, timeout=timeout) as response:
+            validate_url(response.geturl())
+            require(urlsplit(response.geturl()).hostname == urlsplit(resource['url']).hostname,
+                    'response changes the recorded provider')
+            require(response.status == 200, 'resource response is not successful')
+            limit = resource['bytes'] if resource['bytes'] is not None else MAX_BYTES
+            raw = response.read(limit + 1)
+    except URLError:
+        raise
+    except HTTPException as error:
+        raise ReceiptError('incomplete or invalid HTTP response') from error
+    except OSError as error:
+        raise URLError('network or TLS retrieval failure') from error
     verify_bytes(raw, resource)
     return raw
 

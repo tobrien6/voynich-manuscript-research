@@ -37,8 +37,10 @@ python3 scripts/fetch_recorded_viewer_assets.py --study f76r --directory /tmp/f7
 A subset is labeled separately from the complete inventory in the retrieval
 receipt. The local receipt records the source commit/digest, requested URLs,
 expected hashes/sizes and each resource's outcome. It uses a fresh filename on
-every run, so earlier failures remain available. There is one bounded request
-per missing resource, with a 20-second default timeout (maximum 30). Rerun the
+every run, so earlier failures remain available. There is one initial retrieval attempt
+per missing resource, with a 20-second default network I/O timeout (maximum 30).
+Same-provider redirects are validated. Total elapsed time can exceed the I/O
+timeout. Rerun the
 command to retry explicitly; verified files are reused, while existing mismatches
 or linked files are refused and preserved. No automatic hash refresh occurs.
 
@@ -62,9 +64,10 @@ manuscript evaluation set.
 python3 -m unittest tests.test_recorded_viewer_assets -v
 ```
 
-Nine focused tests cover all 35 actual recorded entries, archived-record drift,
+Eleven focused tests cover all 35 actual recorded entries, archived-record drift,
 provider/address restrictions, exact downloads and cache reuse, partial/mismatched
-responses, mixed outcomes, existing/late aliases, output isolation and preservation
+responses, interrupted chunked HTTP bodies, read timeouts, malformed redirect
+addresses, mixed outcomes, existing/late aliases, output isolation and preservation
 of unrelated files. Validation includes one live recorded service-JSON download,
 verified f76r cache reuse accepted by its existing image verifier, and all 17
 lookup inputs reused to produce/check the existing complete local viewer packet.

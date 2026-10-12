@@ -1,4 +1,5 @@
 import hashlib
+from http.client import HTTPResponse
 import io
 import json
 import os
@@ -99,6 +100,67 @@ class RecordedAssetsTests(unittest.TestCase):
                 self.assertEqual(report['resources'][0]['status'], 'failed')
                 self.assertFalse((directory / asset['name']).exists())
                 self.assertEqual(json.loads(path.read_text()), report)
+
+    def test_incomplete_chunked_http_and_read_timeouts_keep_receipt_and_next_asset(self):
+        class TruncatedSocket:
+            def makefile(self, *args):
+                # Real HTTPResponse parsing reaches an incomplete chunk body.
+                return io.BytesIO(b'HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\n\r\nE\r\nfixture')
+
+        class TimedOutResponse(Response):
+            def read(self, *args):
+                raise TimeoutError('fixture transport diagnostic must not be copied')
+
+        for failure in ('chunked', 'timeout'):
+            with self.subTest(failure=failure), tempfile.TemporaryDirectory() as folder:
+                directory = Path(folder)
+                bad, good = resource('bad.jpg'), resource('good.jpg')
+                good['url'] = 'https://collections.library.yale.edu/iiif/2/1006210/1,1,2,2/full/0/default.jpg'
+                requests = []
+
+                class InterruptedOpener:
+                    def open(self, request, timeout):
+                        requests.append(request.full_url)
+                        if request.full_url == good['url']:
+                            return Response(b'fixture pixels', good['url'])
+                        if failure == 'timeout':
+                            return TimedOutResponse(b'', bad['url'])
+                        response = HTTPResponse(TruncatedSocket(), method='GET')
+                        response.begin()
+                        response.geturl = lambda: bad['url']
+                        return response
+
+                with patch.object(subject, 'load_source', return_value=({'id': 'f76r'}, [bad, good])):
+                    report, path = subject.fetch_assets('f76r', directory, opener=InterruptedOpener())
+                self.assertEqual([r['status'] for r in report['resources']], ['failed', 'downloaded_verified'])
+                reason = ('incomplete or invalid HTTP response' if failure == 'chunked'
+                          else 'network or TLS retrieval failure')
+                self.assertEqual(report['resources'][0]['reason'], reason)
+                self.assertEqual(json.loads(path.read_text()), report)
+                self.assertFalse(report['complete_successful_selection'])
+                self.assertFalse((directory / bad['name']).exists())
+                self.assertEqual((directory / good['name']).read_bytes(), b'fixture pixels')
+                self.assertEqual(requests, [bad['url'], good['url']])
+                self.assertEqual(list(directory.glob('.recorded-resource-*')), [])
+
+    def test_malformed_redirect_addresses_are_receipt_failures(self):
+        for address in ('https://collections.library.yale.edu:bad/iiif/2/1/info.json',
+                        'https://[malformed/iiif/2/1/info.json'):
+            with self.subTest(address=address), tempfile.TemporaryDirectory() as folder:
+                directory, asset = Path(folder), resource()
+
+                class RedirectedOpener:
+                    def open(self, request, timeout):
+                        return subject.RecordedRedirects().redirect_request(
+                            request, None, 302, 'redirect', {}, address)
+
+                with patch.object(subject, 'load_source', return_value=({'id': 'f76r'}, [asset])):
+                    report, path = subject.fetch_assets('f76r', directory, opener=RedirectedOpener())
+                self.assertEqual(report['resources'][0]['status'], 'failed')
+                self.assertEqual(report['resources'][0]['reason'], 'resource URL is malformed')
+                self.assertEqual(json.loads(path.read_text()), report)
+                self.assertFalse((directory / asset['name']).exists())
+                self.assertEqual(list(directory.glob('.recorded-resource-*')), [])
 
     def test_mixed_success_and_failure_remain_separate_in_receipt(self):
         good, bad = resource('good.jpg'), resource('bad.jpg')
