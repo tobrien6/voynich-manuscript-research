@@ -99,6 +99,13 @@ paired pilot corpus. In particular, a documented `fRos` correspondence cannot
 supply the absent IT2a page. The original exact-page audit retains its three
 blockers because its stricter exact-identifier rule has not changed.
 
+The [rosette source-coverage diagnostic](ROSETTE_SOURCE_COVERAGE.md) checks
+historical `f85v2` and the other constituent-panel names separately from modern
+`fRos`. The recovered historical surface has U/V records but no H records, and
+IT2a lacks all seven queried page headers.
+Other modern editions retain different rosette locus counts. Renaming cannot
+fill the paired-source gap; no historical/modern locus crosswalk is assigned.
+
 Next, independently review the carrier and orientation records, then link
 native locus identifiers to actual text regions while preserving shared-image
 and cross-panel dependencies. Keep this record's `apply_to_statistics` false

@@ -1,0 +1,876 @@
+{
+  "schema_version": 1,
+  "analysis_id": "synthetic-greedy-wrapping-control-v1",
+  "status": "exploratory synthetic control; no manuscript fit",
+  "parameters": {
+    "schema_version": 1,
+    "analysis_id": "synthetic-greedy-wrapping-control-v1",
+    "status": "exploratory synthetic control; no manuscript fit",
+    "recorded_on": "2026-10-12",
+    "laws": [
+      {
+        "id": "two-length",
+        "uniform_support": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "five-length",
+        "uniform_support": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "id": "two-capacity-7",
+        "law_id": "two-length",
+        "capacity": 7
+      },
+      {
+        "id": "two-capacity-8",
+        "law_id": "two-length",
+        "capacity": 8
+      },
+      {
+        "id": "five-capacity-18",
+        "law_id": "five-length",
+        "capacity": 18
+      },
+      {
+        "id": "five-capacity-24",
+        "law_id": "five-length",
+        "capacity": 24
+      },
+      {
+        "id": "five-capacity-30",
+        "law_id": "five-length",
+        "capacity": 30
+      }
+    ],
+    "separator_width": 1,
+    "overflow": "append if used + separator + token <= capacity; otherwise close row and carry the same token unchanged",
+    "overlong_token": "reject",
+    "minimum_tokens_per_closed_row": 2,
+    "final_row": "exclude any row not closed by overflow, including an exactly full final row",
+    "weighting": "equal completed row; first token length minus mean other token lengths",
+    "fixed_chunk_sizes": [
+      3,
+      4,
+      5
+    ],
+    "token_count_per_law": 100000,
+    "seed": "voynich-synthetic-greedy-wrap-v1-2026-10-12",
+    "generator": "shared HashDraws uniform_index(len(support), context, zero_based_token_index)",
+    "context": "ASCII JSON [seed, law_id] with separators comma and colon",
+    "stream_digest": "SHA256 of ASCII JSON length array with separators comma and colon",
+    "exact_prediction": "stationary row-boundary Markov kernel and exact rational equal-row reward",
+    "finite_check": {
+      "law": [
+        2,
+        3
+      ],
+      "capacity": 8,
+      "transition_kernel": [
+        [
+          "3/8",
+          "5/8"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      "stationary_start_probabilities": [
+        "4/9",
+        "5/9"
+      ],
+      "conditional_contrasts": [
+        "-1/2",
+        "1/2"
+      ],
+      "equal_row_contrast": "1/18"
+    },
+    "limit": "Synthetic layout counterexample only; no manuscript geometry, language, glyph mapping, decipherment or translation is inferred."
+  },
+  "streams": [
+    {
+      "law_id": "two-length",
+      "count": 100000,
+      "context_ascii": "[\"voynich-synthetic-greedy-wrap-v1-2026-10-12\",\"two-length\"]",
+      "sha256": "19bb9ef84e45909a0660c016a8b82a29b80524695a2a53879b19e0a21bd15879",
+      "length_frequency": {
+        "2": 50093,
+        "3": 49907
+      },
+      "initial_length": 3,
+      "initialization": "First row starts with stream[0]; no burn-in or forced stationary start"
+    },
+    {
+      "law_id": "five-length",
+      "count": 100000,
+      "context_ascii": "[\"voynich-synthetic-greedy-wrap-v1-2026-10-12\",\"five-length\"]",
+      "sha256": "335b62b8b531d1c68523223e9dfba475e644932448739b02db30faaa4f13a70b",
+      "length_frequency": {
+        "2": 20029,
+        "3": 20050,
+        "4": 19923,
+        "5": 20049,
+        "6": 19949
+      },
+      "initial_length": 5,
+      "initialization": "First row starts with stream[0]; no burn-in or forced stationary start"
+    }
+  ],
+  "cases": [
+    {
+      "id": "two-capacity-7",
+      "law_id": "two-length",
+      "capacity": 7,
+      "exact": {
+        "state_first_lengths": [
+          2,
+          3
+        ],
+        "transition_kernel_exact": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "conditional_equal_row_contrasts_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "stationary_first_length_probabilities_exact": [
+          "1/2",
+          "1/2"
+        ],
+        "stationary_row_token_count_probabilities_exact": {
+          "2": "1"
+        },
+        "stationary_equal_row_contrast_exact": "0",
+        "stationary_equal_row_contrast_decimal": 0.0,
+        "transition_graph": {
+          "communicating_classes_indices": [
+            [
+              0,
+              1
+            ]
+          ],
+          "closed_classes_indices": [
+            [
+              0,
+              1
+            ]
+          ],
+          "stationary_support_indices": [
+            0,
+            1
+          ],
+          "aperiodicity_certified_by_recurrent_self_transition": true
+        }
+      },
+      "finite_simulation": {
+        "completed_rows": 49999,
+        "retained_token_count": 99998,
+        "row_token_count_frequency": {
+          "2": 49999
+        },
+        "retained_length_frequency": {
+          "2": 50093,
+          "3": 49905
+        },
+        "first_length_frequency": {
+          "2": 24957,
+          "3": 25042
+        },
+        "observed_equal_row_contrast": 0.003580071601,
+        "uniform_within_row_conditional_expectation": 0,
+        "uniform_within_row_conditional_standard_deviation": 0.003149221602,
+        "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance",
+        "excluded_unclosed_final_lengths": [
+          3,
+          3
+        ],
+        "observed_minus_stationary_prediction": 0.003580071601
+      }
+    },
+    {
+      "id": "two-capacity-8",
+      "law_id": "two-length",
+      "capacity": 8,
+      "exact": {
+        "state_first_lengths": [
+          2,
+          3
+        ],
+        "transition_kernel_exact": [
+          [
+            "3/8",
+            "5/8"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "conditional_equal_row_contrasts_exact": [
+          "-1/2",
+          "1/2"
+        ],
+        "stationary_first_length_probabilities_exact": [
+          "4/9",
+          "5/9"
+        ],
+        "stationary_row_token_count_probabilities_exact": {
+          "2": "8/9",
+          "3": "1/9"
+        },
+        "stationary_equal_row_contrast_exact": "1/18",
+        "stationary_equal_row_contrast_decimal": 0.055555555556,
+        "transition_graph": {
+          "communicating_classes_indices": [
+            [
+              0,
+              1
+            ]
+          ],
+          "closed_classes_indices": [
+            [
+              0,
+              1
+            ]
+          ],
+          "stationary_support_indices": [
+            0,
+            1
+          ],
+          "aperiodicity_certified_by_recurrent_self_transition": true
+        }
+      },
+      "finite_simulation": {
+        "completed_rows": 47306,
+        "retained_token_count": 99998,
+        "row_token_count_frequency": {
+          "2": 41920,
+          "3": 5386
+        },
+        "retained_length_frequency": {
+          "2": 50093,
+          "3": 49905
+        },
+        "first_length_frequency": {
+          "2": 21026,
+          "3": 26280
+        },
+        "observed_equal_row_contrast": 0.056123958906,
+        "uniform_within_row_conditional_expectation": 0,
+        "uniform_within_row_conditional_standard_deviation": 0.003231221019,
+        "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance",
+        "excluded_unclosed_final_lengths": [
+          3,
+          3
+        ],
+        "observed_minus_stationary_prediction": 0.00056840335
+      }
+    },
+    {
+      "id": "five-capacity-18",
+      "law_id": "five-length",
+      "capacity": 18,
+      "exact": {
+        "state_first_lengths": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "transition_kernel_exact": [
+          [
+            "1831/15625",
+            "2476/15625",
+            "3106/15625",
+            "3756/15625",
+            "4456/15625"
+          ],
+          [
+            "1846/15625",
+            "2476/15625",
+            "3126/15625",
+            "3826/15625",
+            "4351/15625"
+          ],
+          [
+            "76/625",
+            "102/625",
+            "26/125",
+            "151/625",
+            "166/625"
+          ],
+          [
+            "77/625",
+            "21/125",
+            "126/625",
+            "141/625",
+            "176/625"
+          ],
+          [
+            "396/3125",
+            "501/3125",
+            "576/3125",
+            "751/3125",
+            "901/3125"
+          ]
+        ],
+        "conditional_equal_row_contrasts_exact": [
+          "-2",
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "stationary_first_length_probabilities_exact": [
+          "1246677885/10192375823",
+          "1653070740/10192375823",
+          "2012252050/10192375823",
+          "2423918698/10192375823",
+          "168026850/599551519"
+        ],
+        "stationary_row_token_count_probabilities_exact": {
+          "2": "10993288048/254809395575",
+          "3": "5913942341/10192375823",
+          "4": "441780793302/1274046977875",
+          "5": "37691626186/1274046977875",
+          "6": "365325522/1274046977875"
+        },
+        "stationary_equal_row_contrast_exact": "3990405088/10192375823",
+        "stationary_equal_row_contrast_decimal": 0.391508825547,
+        "transition_graph": {
+          "communicating_classes_indices": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "closed_classes_indices": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "stationary_support_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "aperiodicity_certified_by_recurrent_self_transition": true
+        }
+      },
+      "finite_simulation": {
+        "completed_rows": 29720,
+        "retained_token_count": 99997,
+        "row_token_count_frequency": {
+          "2": 1265,
+          "3": 17221,
+          "4": 10376,
+          "5": 848,
+          "6": 10
+        },
+        "retained_length_frequency": {
+          "2": 20028,
+          "3": 20049,
+          "4": 19922,
+          "5": 20049,
+          "6": 19949
+        },
+        "first_length_frequency": {
+          "2": 3644,
+          "3": 4832,
+          "4": 5869,
+          "5": 7046,
+          "6": 8329
+        },
+        "observed_equal_row_contrast": 0.392806191117,
+        "uniform_within_row_conditional_expectation": 0,
+        "uniform_within_row_conditional_standard_deviation": 0.009807724186,
+        "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance",
+        "excluded_unclosed_final_lengths": [
+          4,
+          3,
+          2
+        ],
+        "observed_minus_stationary_prediction": 0.00129736557
+      }
+    },
+    {
+      "id": "five-capacity-24",
+      "law_id": "five-length",
+      "capacity": 24,
+      "exact": {
+        "state_first_lengths": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "transition_kernel_exact": [
+          [
+            "46673/390625",
+            "62203/390625",
+            "77833/390625",
+            "94083/390625",
+            "109833/390625"
+          ],
+          [
+            "46691/390625",
+            "62321/390625",
+            "78571/390625",
+            "94321/390625",
+            "108721/390625"
+          ],
+          [
+            "9358/78125",
+            "12608/78125",
+            "15758/78125",
+            "18638/78125",
+            "21763/78125"
+          ],
+          [
+            "9482/78125",
+            "12632/78125",
+            "15512/78125",
+            "18637/78125",
+            "21862/78125"
+          ],
+          [
+            "9526/78125",
+            "12406/78125",
+            "15531/78125",
+            "18756/78125",
+            "21906/78125"
+          ]
+        ],
+        "conditional_equal_row_contrasts_exact": [
+          "-2",
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "stationary_first_length_probabilities_exact": [
+          "120936775885/1002065261471",
+          "160510340000/1002065261471",
+          "400324070705/2004130522942",
+          "240220501398/1002065261471",
+          "560471217671/2004130522942"
+        ],
+        "stationary_row_token_count_probabilities_exact": {
+          "3": "7926800258599/250516315367750",
+          "4": "57331753599276/125258157683875",
+          "5": "1351250066966489/3131453942096875",
+          "6": "1192679251975651/15657269710484375",
+          "7": "92440613389851/31314539420968750",
+          "8": "225600909416/15657269710484375"
+        },
+        "stationary_equal_row_contrast_exact": "398307827299/1002065261471",
+        "stationary_equal_row_contrast_decimal": 0.397486912893,
+        "transition_graph": {
+          "communicating_classes_indices": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "closed_classes_indices": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "stationary_support_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "aperiodicity_certified_by_recurrent_self_transition": true
+        }
+      },
+      "finite_simulation": {
+        "completed_rows": 21924,
+        "retained_token_count": 99996,
+        "row_token_count_frequency": {
+          "3": 709,
+          "4": 9967,
+          "5": 9553,
+          "6": 1629,
+          "7": 66
+        },
+        "retained_length_frequency": {
+          "2": 20028,
+          "3": 20048,
+          "4": 19922,
+          "5": 20049,
+          "6": 19949
+        },
+        "first_length_frequency": {
+          "2": 2617,
+          "3": 3510,
+          "4": 4347,
+          "5": 5308,
+          "6": 6142
+        },
+        "observed_equal_row_contrast": 0.407701605546,
+        "uniform_within_row_conditional_expectation": 0,
+        "uniform_within_row_conditional_standard_deviation": 0.010815248857,
+        "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance",
+        "excluded_unclosed_final_lengths": [
+          3,
+          4,
+          3,
+          2
+        ],
+        "observed_minus_stationary_prediction": 0.010214692653
+      }
+    },
+    {
+      "id": "five-capacity-30",
+      "law_id": "five-length",
+      "capacity": 30,
+      "exact": {
+        "state_first_lengths": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "transition_kernel_exact": [
+          [
+            "234188/1953125",
+            "312021/1953125",
+            "390592/1953125",
+            "469382/1953125",
+            "546942/1953125"
+          ],
+          [
+            "1169696/9765625",
+            "1562551/9765625",
+            "1956501/9765625",
+            "2344301/9765625",
+            "2732576/9765625"
+          ],
+          [
+            "46873/390625",
+            "62631/390625",
+            "78143/390625",
+            "93674/390625",
+            "109304/390625"
+          ],
+          [
+            "235194/1953125",
+            "312754/1953125",
+            "390409/1953125",
+            "468559/1953125",
+            "546209/1953125"
+          ],
+          [
+            "234921/1953125",
+            "312576/1953125",
+            "390726/1953125",
+            "468376/1953125",
+            "546526/1953125"
+          ]
+        ],
+        "conditional_equal_row_contrasts_exact": [
+          "-2",
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "stationary_first_length_probabilities_exact": [
+          "895329520924119875/7452968903260899844",
+          "298268847073905695/1863242225815224961",
+          "1490969884509993095/7452968903260899844",
+          "894102642529958025/3726484451630449922",
+          "74478172302544573/266177460830746423"
+        ],
+        "stationary_row_token_count_probabilities_exact": {
+          "4": "3098846084092514587/133088730415373211500",
+          "5": "2068659503545997067883/5822631955672578003125",
+          "6": "54865127609564144101877/116452639113451560062500",
+          "7": "16135147352695304007607/116452639113451560062500",
+          "8": "33466775484161331014681/2911315977836289001562500",
+          "9": "25831755678559639796/103975570637010321484375",
+          "10": "1014637059753682153/1455657988918144500781250"
+        },
+        "stationary_equal_row_contrast_exact": "743812125964637402/1863242225815224961",
+        "stationary_equal_row_contrast_decimal": 0.399203128643,
+        "transition_graph": {
+          "communicating_classes_indices": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "closed_classes_indices": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "stationary_support_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "aperiodicity_certified_by_recurrent_self_transition": true
+        }
+      },
+      "finite_simulation": {
+        "completed_rows": 17342,
+        "retained_token_count": 99996,
+        "row_token_count_frequency": {
+          "4": 434,
+          "5": 6024,
+          "6": 8249,
+          "7": 2437,
+          "8": 195,
+          "9": 3
+        },
+        "retained_length_frequency": {
+          "2": 20028,
+          "3": 20048,
+          "4": 19922,
+          "5": 20049,
+          "6": 19949
+        },
+        "first_length_frequency": {
+          "2": 2122,
+          "3": 2766,
+          "4": 3425,
+          "5": 4205,
+          "6": 4824
+        },
+        "observed_equal_row_contrast": 0.395064281046,
+        "uniform_within_row_conditional_expectation": 0,
+        "uniform_within_row_conditional_standard_deviation": 0.011790843505,
+        "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance",
+        "excluded_unclosed_final_lengths": [
+          3,
+          4,
+          3,
+          2
+        ],
+        "observed_minus_stationary_prediction": -0.004138847597
+      }
+    }
+  ],
+  "fixed_count_controls": [
+    {
+      "law_id": "two-length",
+      "chunk_size": 3,
+      "exact_iid_equal_row_expectation": "0",
+      "excluded_trailing_lengths": [
+        3
+      ],
+      "completed_rows": 33333,
+      "retained_token_count": 99999,
+      "row_token_count_frequency": {
+        "3": 33333
+      },
+      "retained_length_frequency": {
+        "2": 50093,
+        "3": 49906
+      },
+      "first_length_frequency": {
+        "2": 16715,
+        "3": 16618
+      },
+      "observed_equal_row_contrast": -0.0007800078,
+      "uniform_within_row_conditional_expectation": 0,
+      "uniform_within_row_conditional_standard_deviation": 0.003347084412,
+      "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance"
+    },
+    {
+      "law_id": "two-length",
+      "chunk_size": 4,
+      "exact_iid_equal_row_expectation": "0",
+      "excluded_trailing_lengths": [],
+      "completed_rows": 25000,
+      "retained_token_count": 100000,
+      "row_token_count_frequency": {
+        "4": 25000
+      },
+      "retained_length_frequency": {
+        "2": 50093,
+        "3": 49907
+      },
+      "first_length_frequency": {
+        "2": 12457,
+        "3": 12543
+      },
+      "observed_equal_row_contrast": 0.003533333333,
+      "uniform_within_row_conditional_expectation": 0,
+      "uniform_within_row_conditional_standard_deviation": 0.003642880423,
+      "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance"
+    },
+    {
+      "law_id": "two-length",
+      "chunk_size": 5,
+      "exact_iid_equal_row_expectation": "0",
+      "excluded_trailing_lengths": [],
+      "completed_rows": 20000,
+      "retained_token_count": 100000,
+      "row_token_count_frequency": {
+        "5": 20000
+      },
+      "retained_length_frequency": {
+        "2": 50093,
+        "3": 49907
+      },
+      "first_length_frequency": {
+        "2": 10012,
+        "3": 9988
+      },
+      "observed_equal_row_contrast": 0.0004125,
+      "uniform_within_row_conditional_expectation": 0,
+      "uniform_within_row_conditional_standard_deviation": 0.003946279894,
+      "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance"
+    },
+    {
+      "law_id": "five-length",
+      "chunk_size": 3,
+      "exact_iid_equal_row_expectation": "0",
+      "excluded_trailing_lengths": [
+        2
+      ],
+      "completed_rows": 33333,
+      "retained_token_count": 99999,
+      "row_token_count_frequency": {
+        "3": 33333
+      },
+      "retained_length_frequency": {
+        "2": 20028,
+        "3": 20050,
+        "4": 19923,
+        "5": 20049,
+        "6": 19949
+      },
+      "first_length_frequency": {
+        "2": 6628,
+        "3": 6685,
+        "4": 6614,
+        "5": 6714,
+        "6": 6692
+      },
+      "observed_equal_row_contrast": 0.009450094501,
+      "uniform_within_row_conditional_expectation": 0,
+      "uniform_within_row_conditional_standard_deviation": 0.009487734204,
+      "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance"
+    },
+    {
+      "law_id": "five-length",
+      "chunk_size": 4,
+      "exact_iid_equal_row_expectation": "0",
+      "excluded_trailing_lengths": [],
+      "completed_rows": 25000,
+      "retained_token_count": 100000,
+      "row_token_count_frequency": {
+        "4": 25000
+      },
+      "retained_length_frequency": {
+        "2": 20029,
+        "3": 20050,
+        "4": 19923,
+        "5": 20049,
+        "6": 19949
+      },
+      "first_length_frequency": {
+        "2": 5065,
+        "3": 5031,
+        "4": 4928,
+        "5": 4999,
+        "6": 4977
+      },
+      "observed_equal_row_contrast": -0.008946666667,
+      "uniform_within_row_conditional_expectation": 0,
+      "uniform_within_row_conditional_standard_deviation": 0.010330993283,
+      "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance"
+    },
+    {
+      "law_id": "five-length",
+      "chunk_size": 5,
+      "exact_iid_equal_row_expectation": "0",
+      "excluded_trailing_lengths": [],
+      "completed_rows": 20000,
+      "retained_token_count": 100000,
+      "row_token_count_frequency": {
+        "5": 20000
+      },
+      "retained_length_frequency": {
+        "2": 20029,
+        "3": 20050,
+        "4": 19923,
+        "5": 20049,
+        "6": 19949
+      },
+      "first_length_frequency": {
+        "2": 3961,
+        "3": 4048,
+        "4": 4044,
+        "5": 3944,
+        "6": 4003
+      },
+      "observed_equal_row_contrast": 0.0007625,
+      "uniform_within_row_conditional_expectation": 0,
+      "uniform_within_row_conditional_standard_deviation": 0.011185705163,
+      "conditional_variance_limit": "Independent within-row index choices; not generative wrapping sampling variance"
+    }
+  ],
+  "input_sha256": {
+    "parameters": "4e080abdd0478db1a15de688bd8f07f0aa5fe569bb58e008a7e8dc85ed0b1718",
+    "protocol": "894f403e8a786c9ea27017e8eef7db849ad55c0d8ebab53e155de4d03b21c99d"
+  },
+  "implementation_sha256": {
+    "greedy_wrap_control.py": "519f6e138ea93cbc2e22e202ad459a93ef8d8b9ea8e71fe75c0cbd0345e7568f",
+    "locus_position_baseline.py": "305104fadc07be62fe81f881acd3a87b36d4f7a06efd620acc5f01a58b096d33",
+    "shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f"
+  }
+}
