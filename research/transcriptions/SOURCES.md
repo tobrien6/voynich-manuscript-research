@@ -24,6 +24,15 @@ Inspected 2026-10-11 (America/New_York). `TR` identifiers are local to this regi
 - Supports: the site explicitly makes the transliterations collected in its linked tables available under CC0 and requests source acknowledgement. This resolves the earlier intake note that had checked only file headers and the download listing.
 - Scope: applies to the linked transliteration datasets; the manuscript-image source register retains its separate rights notes.
 
+## TR004 — IVTFF locator-status specification, targeted follow-up
+
+- Author: René Zandbergen; [IVTFF specification](https://www.voynich.nu/software/ivtt/IVTFF_format.pdf), document issue 2.0.2 (8 July 2025), describing format 2.0.1.
+- Inspected: 2026-10-12 (America/New_York); cover, section 1.2, and section 6.4/Table 8, printed page 21.
+- Retrieved SHA-256: `7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49`, matching the accepted TR-FORMAT [documentation pin](../transliteration/comparator_documentation.json).
+- Supports: the locator field's explicit nonexistent-text status and source-locus numbering conventions, used alongside observed omissions in the [scoped source extract](NONEXISTENT_LOCUS.md).
+- Limitation: this checks format semantics, not manuscript visibility, a panel/region mapping, or the accuracy of a particular source annotation. It is a targeted inspection, not full conformance validation.
+- Reuse: source PDF remains local; citation, fingerprint and selected paraphrase only are added.
+
 ## TR-D001–TR-D005 — Downloaded edition files
 
 | ID | Exact source | Identity evidence |

@@ -13,6 +13,8 @@ This audit compares [Yale's current manuscript overview](https://beinecke.librar
 **Next test.** Trace the handwriting comparison credited to A. G. Watson in S002 and the scholarship underlying S001's doubt. Check whether they concern the same evidence. Keep separate evidence for ownership, foliation, and any proposed cipher author.
 
 The [Dee documentary trail](DEE_EVIDENCE.md) now identifies a published numeral-attribution disagreement and different specimen-reference spellings in the catalog and a mediated quotation. Its [ledger](dee-evidence.json) preserves both representations, exact artifact identities and the still-uninspected original entry. It does not establish an owner, foliator or cipher author.
+The [catalog-reference follow-up](DEE_CATALOG_REFERENCES.md) adds primary printed
+locators for 487, 847 and 1790 while preserving the original reference dispute.
 
 ## 2. The catalog's terminal folio reference does not match the manifest
 

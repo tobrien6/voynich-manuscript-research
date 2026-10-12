@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "case_id": "67r1-1-native-boundary-2026-10-12-v1",
+  "locus_key": "f67r1.1",
+  "status": "source-boundary-disagreement-with-provisional-image-detail",
+  "word_boundary_adjudication": "unresolved",
+  "change_to_pinned_sources": null,
+  "verified_glyph_region": null,
+  "source_records": [
+    {
+      "source_id": "ZL3b",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "alphabet": "Eva-",
+      "locus_identifier": "f67r1.1,@P0",
+      "source_file_line": 2823,
+      "native_text": "<%>teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.o.aiin",
+      "uncertain_comma_count": 0,
+      "treatments": [
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "exclude",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "o",
+            "aiin"
+          ],
+          "token_count": 9,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44,
+            45
+          ]
+        },
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "first",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "o",
+            "aiin"
+          ],
+          "token_count": 9,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44,
+            45
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "exclude",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "o",
+            "aiin"
+          ],
+          "token_count": 9,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44,
+            45
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "first",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "o",
+            "aiin"
+          ],
+          "token_count": 9,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "alphabet": "EvaT",
+      "locus_identifier": "f67r1.1,@P0",
+      "source_file_line": 1768,
+      "native_text": "<%>teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.oaiin",
+      "uncertain_comma_count": 0,
+      "treatments": [
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "exclude",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "oaiin"
+          ],
+          "token_count": 8,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44
+          ]
+        },
+        {
+          "uncertain_spaces": "split",
+          "alternatives": "first",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "oaiin"
+          ],
+          "token_count": 8,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "exclude",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "oaiin"
+          ],
+          "token_count": 8,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44
+          ]
+        },
+        {
+          "uncertain_spaces": "join",
+          "alternatives": "first",
+          "token_values": [
+            "teeodaiin",
+            "shey",
+            "epairody",
+            "osaiin",
+            "yteeoey",
+            "shey",
+            "epaiin",
+            "oaiin"
+          ],
+          "token_count": 8,
+          "representation_chain": "teeodaiinsheyepairodyosaiinyteeoeysheyepaiinoaiin",
+          "internal_boundary_character_offsets": [
+            9,
+            13,
+            21,
+            27,
+            34,
+            38,
+            44
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "same_literal_representation_chain": true,
+    "representation_chain_length_characters": 49,
+    "boundary_offsets_only_in_ZL3b": [
+      45
+    ],
+    "boundary_offsets_only_in_IT2a": []
+  },
+  "inspection_detail": {
+    "url": "https://collections.library.yale.edu/iiif/2/1006194/1850,350,500,160/full/0/default.jpg",
+    "full_context_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006194",
+    "region_xywh_in_original_image": [
+      1850,
+      350,
+      500,
+      160
+    ],
+    "width": 500,
+    "height": 160,
+    "bytes": 18258,
+    "sha256": "ae707a0cafa30b4b59f235d992a998752c9f9ad1b09ccb80dfc55c71b15d51b4",
+    "inspected_on": "2026-10-12",
+    "timezone": "America/New_York",
+    "observer": "Codex working for tobrien6",
+    "purpose": "source-provided viewing detail, not an exact glyph/word mask or verified locus extent",
+    "row_assignment": "provisional f67r1.1 association from the accepted 67r layout proposal",
+    "direct_observation": "A closed oval/circular mark is followed by a short cluster of strokes to its right, with a visible blank gap and no obvious ink connection at the viewed scale. Faint writing and strokes from another row appear near the detail boundary.",
+    "interpretation_limit": "A visible gap alone does not establish a word boundary or adjudicate the two encoded groupings."
+  },
+  "context": "research/panel-regions/f67r-proposal.json",
+  "glyph_reference": {
+    "url": "https://voynich.nu/transcr.html",
+    "locator": "Table 3, Basic Eva character forms",
+    "image_url": "https://voynich.nu/img/extra/eva01.gif",
+    "sha256": "c470d909c07c586f327a4a84f35efa879f765745744a0439690ed706f7b3e09f",
+    "scope": "private visual consultation of basic shapes only; current punctuation processing follows the accepted IVTFF lexer, not legacy chart examples"
+  },
+  "prior_exposure": "The source records and proposed row identity were known before this detail inspection. This is not a blinded or independent glyph review.",
+  "limits": [
+    "Offsets count characters in preserved encoded token strings, not pixels, manuscript glyphs or decoded text.",
+    "Equal concatenated strings do not establish equal segmentation, physical glyph correspondence or linguistic words.",
+    "The four treatments vary existing uncertainty annotations; they do not cover every actual source or image ambiguity.",
+    "No source correction, verified corpus join, held-out claim, decipherment or translation is assigned."
+  ]
+}

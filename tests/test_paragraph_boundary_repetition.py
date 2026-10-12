@@ -156,6 +156,32 @@ class BoundaryRepetitionTests(unittest.TestCase):
                     producer.assert_not_called()
                     self.assertEqual(target.read_bytes(), before)
 
+    def test_cli_rejects_symlink_and_hardlink_aliases_created_during_calculation(self):
+        for link_kind in ('symlink', 'hardlink'):
+            for protected in (PLAN, COVERAGE):
+                with self.subTest(link_kind=link_kind, protected=protected), \
+                        tempfile.TemporaryDirectory() as directory:
+                    root = synthetic_root(Path(directory))
+                    target, output = root / protected, root / 'late-output.json'
+                    before = target.read_bytes()
+
+                    def late_producer(root):
+                        if link_kind == 'symlink':
+                            output.symlink_to(target)
+                        else:
+                            os.link(target, output)
+                        return {'cohort': {'common_eligible_units': 0,
+                                           'eligible_boundaries_in_all_variants': 0}}
+
+                    with patch('scripts.paragraph_boundary_repetition.ROOT', root), \
+                            patch('scripts.paragraph_boundary_repetition.build', side_effect=late_producer), \
+                            patch('sys.argv', ['boundary.py', '--output', str(output)]), \
+                            redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as failed:
+                        main()
+                    self.assertEqual(failed.exception.code, 1)
+                    self.assertEqual(target.read_bytes(), before)
+                    self.assertEqual(output.read_bytes(), before)
+
     def test_complete_cli_replay_rejects_tampered_science_types_and_duplicate_json(self):
         with tempfile.TemporaryDirectory() as directory:
             root = synthetic_root(Path(directory))
