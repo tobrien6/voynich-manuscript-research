@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "comparison_id": "fixed-self-citation-prefix-profile-v1",
-  "status": "frozen_before_new_feature_measurements",
+  "status": "frozen_pre_measurement_amendment_1",
   "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
   "configuration_path": "executable/conf.properties",
   "configuration_sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800",
@@ -69,6 +69,29 @@
   "author_code_change": "Exactly the known observer insertion from PR #100; no algorithm/random/state changes.",
   "observer_snapshot": {
     "pull_request": "https://github.com/tobrien6/voynich-manuscript-research/pull/100",
+    "head": "d86cccdc0afd19ebeea8b4de3f3068294c87d05f",
+    "artifacts": [
+      {
+        "path": "scripts/trace_self_citation_rows.py",
+        "sha256": "a078447279d7557d243fdce925a66749747d5c665cb69c97923a69328cf4b778"
+      },
+      {
+        "path": "scripts/replay_self_citation.py",
+        "sha256": "4579f7caaf75ec124a8ffcbfd53b2e173f1ea117bdf7a7ee24761e53d2ee225f"
+      }
+    ]
+  },
+  "prior_exposure": [
+    "Manuscript inputs and preceding prefix results are fully exposed.",
+    "Source code and the seed-19/1200-row release bytes and row/count diagnostics are exposed.",
+    "No new seed-ensemble prefix statistic has been computed before this record."
+  ],
+  "evaluation_claim": "Exploratory encoded-unit diagnostic on exposed data; no untouched manuscript split or glyph/physical-line equivalence.",
+  "source_and_program_context_equivalence_verified": false,
+  "paper_sample_identity_verified": false,
+  "mechanism_or_translation_validated": false,
+  "superseded_observer_snapshot": {
+    "pull_request": "https://github.com/tobrien6/voynich-manuscript-research/pull/100",
     "head": "b71d705cfefc8ffc2cc214a1908d7f1ed62ec0bc",
     "artifacts": [
       {
@@ -81,13 +104,28 @@
       }
     ]
   },
-  "prior_exposure": [
-    "Manuscript inputs and preceding prefix results are fully exposed.",
-    "Source code and the seed-19/1200-row release bytes and row/count diagnostics are exposed.",
-    "No new seed-ensemble prefix statistic has been computed before this record."
+  "source_manifest_sha256": "7aa11db0b5d77f79ea975a656a2bfd040b288fd872d5b6d2a17cb4db939c38d5",
+  "undefined_comparison_rule": "If the target or any one of the 31 matching seed-strata is undefined, that specific comparison range/criterion is undefined. Retain all seed cases; never drop undefined values. Other comparisons remain reported. The all-32 compatibility criterion is undefined if any comparison is undefined; successful execution/reporting remains separately recorded.",
+  "reused_observer_helpers": [
+    "instrument",
+    "trace_events",
+    "row_ledger",
+    "configuration",
+    "canonical"
   ],
-  "evaluation_claim": "Exploratory encoded-unit diagnostic on exposed data; no untouched manuscript split or glyph/physical-line equivalence.",
-  "source_and_program_context_equivalence_verified": false,
-  "paper_sample_identity_verified": false,
-  "mechanism_or_translation_validated": false
+  "observer_producer_reused": false,
+  "adaptation_scope": "Own Java17 producer, fixed 1-31 seeds and cohort-derived row count; reuse only pinned pure observation/configuration helpers. Do not call the Java22/seed19/1200-row observe() or replay() producers or claim their control contract.",
+  "amendment": {
+    "number": 1,
+    "recorded_at_utc": "2026-10-12T05:43:17Z",
+    "original_plan_commit": "586d4b50e155880cd5fb9c7f554c22b16b3dd046",
+    "original_protocol_sha256": "74af1eefd12d5b36a1f2802cca3ff096610314bdf55ef9899728ce2a53fe3546",
+    "new_feature_measurements_started_at_amendment": false,
+    "changes": [
+      "Corrected observer/helper snapshot and explicit producer adaptation scope.",
+      "Undefined comparisons retain all fixed seeds and block the overall compatibility criterion, not other reported comparisons.",
+      "Pin the exact source manifest for the already verified author commit."
+    ],
+    "scientific_selection_seeds_statistic_changed": false
+  }
 }
