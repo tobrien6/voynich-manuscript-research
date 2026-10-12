@@ -2,7 +2,7 @@ from fractions import Fraction
 from itertools import permutations
 import unittest
 
-from scripts.repeated_types import (
+from scripts.global_repeated_types import (
     boundary_diagnostics, counts, exact_means, exact_record, ratio, whole_text_control,
 )
 
