@@ -29,7 +29,7 @@ This is not a blinded test or independent image/transcription reproduction.
 | --- | --- | --- | --- |
 | `f68r1`, left near binding | Three longer upper rows, followed by a short row near the left; a small upper drawing interrupts the writing area. | 37 total: 4 P0, 3 Pb, 29 Ls, 1 Cc. | Locations 1-4; check the drawing interruption at location 3. |
 | `f68r2`, middle | Five upper rows above/alongside a small circular drawing, with scattered writing and star-like forms below. | 31 total: 5 P0, 2 Cc, 24 Ls. | Locations 1-5; check the drawing interruption at location 5. |
-| `f68r3`, right | Large circular drawing with sector/circular writing and a crease passing through it. | 22 total: 2 Cc, 8 Ri, 11 Ls, 1 La; **zero P0**. | No P0 rows are assigned; non-P0 regions remain unreviewed. |
+| `f68r3`, right | Large circular drawing with sector/circular writing and a crease passing through it. | 22 total: 2 Cc, 8 Ri, 11 Ls, 1 La; **zero P0**. | No P0 rows are assigned; a separate [non-paragraph packet and two radial attempts](F68R3_NONPARAGRAPH.md) now preserve this scope. |
 
 A zero P0 count is a statement about the source's locus kinds. It does not mean
 that the third page is absent, blank, or free of horizontal writing. The
@@ -64,5 +64,7 @@ python3 -m unittest tests.test_panel_review -v
 Next, compare each proposed row with the original-resolution glyph sequence
 and the drawing-interruption positions. Reject or revise mismatches, and
 record precise reviewed regions before proposing a verified image/text join.
-The circular/radial material on `f68r3` needs a separate region review. No
-decipherment, translation, or untouched-material claim follows from this packet.
+The [f68r3 non-paragraph follow-up](F68R3_NONPARAGRAPH.md) retains all 22 records
+and proposes two compatible radial placements. Exact glyphs, boundaries and
+independent review remain pending. No decipherment, translation, or
+untouched-material claim follows from these packets.

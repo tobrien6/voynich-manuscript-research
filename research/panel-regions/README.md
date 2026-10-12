@@ -102,3 +102,8 @@ The [two-direction f102r1 boundary review](102R_BOUNDARY_PAIR.md) freezes one
 ZL-only and one IT-only extra-boundary case before new image inspection.
 Both adjacent loci retain provisional row placement and unresolved word
 division; the shared 101v/102r carrier remains one image dependency.
+
+The [f68r3 non-paragraph packet](F68R3_NONPARAGRAPH.md) retains all 22 native
+circular/radial/label records despite zero P0 locations. Its fixed first/last
+radial image attempts remain provisional, with all glyph alternatives and
+twenty other unreviewed locations preserved on the shared 68r carrier.
