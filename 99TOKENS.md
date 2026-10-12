@@ -48,6 +48,8 @@ The [prefix stratification](research/transliteration/PREFIX_STRATA.md) separates
 
 The [interior notation-length order analysis](research/transliteration/INTERIOR_ORDER.md) keeps endpoints fixed and tests neighboring interior lengths on 2,165 loci eligible in both sources and spacing policies. All four treatments depart above their conditional permutation expectations, with all 999 controls retained in the [report](research/transliteration/interior_length_order.json). This exploratory result adds an order constraint; interior position gradients and transcription effects remain possible explanations, and no decipherment or untouched evaluation is claimed.
 
+The [early/late-half sensitivity test](research/transliteration/INTERIOR_HALVES.md) preserves each half's interior length distribution on that identical cohort. Centered effects decrease but remain beyond all 999 controls in each treatment; the primary effect changes from 0.089062 to 0.067330. This limits a coarse positional explanation while retaining finer gradients and other mechanisms as alternatives.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
