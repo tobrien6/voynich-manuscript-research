@@ -10,6 +10,10 @@ All five exports are pinned in [the source catalogue](../../data/transliteration
 
 ## Reproducible file observations
 
+The [annotation figure](figures/README.md) shows the five exports' retained
+notation with exact counts, coverage denominators, and reproducible PNG/SVG
+outputs. It visualizes the same verified profiles used below.
+
 The [extended coverage audit](coverage_audit.json) uses the existing shared reader to retain page/locus metadata and distinguish present from explicitly nonexistent records. The [comparator profile](comparator_profiles.json) adds annotation occurrence counts. All counts below are computed from the pinned files, not new manuscript observations.
 
 | Export | All records | Present records | Uncertain commas | Alternative groups | Paragraph starts | High-ASCII escapes | Ligature groups |

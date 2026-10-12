@@ -110,8 +110,14 @@ the same line as a preceding item. Paragraph boundaries and excluded readings
 also differ. The report's eligibility and metadata counts expose these choices;
 they do not correct or independently verify the annotations.
 
-Next, test whether the contrasts persist after separating source-marked
-paragraph starts and excluding same-line fragments. Use source Currier labels
-as documented strata, without equating them to identified natural languages.
+The [prefix stratification](PREFIX_STRATA.md) now separates source-marked
+paragraph starts and excludes same-line fragments, using source Currier labels
+as documented strata without equating them to identified natural languages.
 Candidate mechanisms should then make additional preregistered predictions
 with the separate evaluation-split workflow and recorded prior exposure.
+
+The [fixed-cohort sensitivity comparison](COHORT_EFFECTS.md) now evaluates all
+eight source/policy variants on identical eligible locus keys. All six effect
+directions persist, while notation-length sensitivity and per-locus differences
+remain. This addresses changing eligibility alongside the accepted prefix
+stratification above; physical-line verification remains pending.
