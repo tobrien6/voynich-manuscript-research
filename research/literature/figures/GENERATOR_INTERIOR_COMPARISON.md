@@ -79,12 +79,14 @@ identical. Only `input_report_sha256` and `renderer.script_sha256` differ in
 provenance. **PNG/SVG bytes remain exactly identical.**
 
 [Completed verification](generator-interior-figure-amendment-1-validation.json)
-records 13 focused figure tests and 119 relevant tests, complete byte rerender,
+records 13 focused figure tests and 120 relevant tests, complete byte rerender,
 archive/source AST identities and the unchanged global guard. Negative tests
 reject changed pixels, coordinates, environment or input identities. These are
 post-result maintenance records, with no new data, plotting choices or scientific
-outcome. The figure remains stacked on PR #143 until that parent is accepted;
-retargeting to main does not itself certify review or a decipherment.
+outcome. PR #143 is accepted at `27f8f3c`, merged as `88ba715`; its final producer and
+report bytes match the effective identities above. After integrating this
+accepted parent, the figure is retargeted to main. Retargeting does not itself
+certify review or a decipherment.
 
 ## Reproduce the exports
 
