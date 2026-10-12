@@ -84,6 +84,12 @@ streams on 223 exact shared page IDs, while 39 differing streams retain the same
 symbol frequencies. It preserves omitted-symbol counts and the excluded modern
 envelope separately; those matches do not establish full text or glyph identity.
 
+The [native record-projection audit](RECORD_PROJECTIONS.md) retains record
+boundaries and order under that same lossy projection: 211 shared pages have
+equal nonempty projection bags, including 29 with different order. One-to-one
+and ambiguous projection groups retain native locators without becoming a
+verified locus or image crosswalk.
+
 ## Reproduce and next test
 
 Python 3.10 or later, standard library only; run from the repository root:
