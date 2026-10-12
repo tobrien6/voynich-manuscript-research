@@ -35,8 +35,8 @@ the source disagreements in the first and median anchors and the source
 uncertainty in neighboring loci. Agreement at the last anchor is not independent
 glyph evidence.
 
-This chat is a second AI-assisted observer using the same model/provider context
-and related text editions. It has read the first observer's interpretation and
+This is a second AI-assisted check in another Codex chat; model independence
+is not established. It uses related text editions and the first observer's interpretation, and
 has previously worked on whole-corpus analyses and project evidence. Record
 that dependence and the new pixel exposure. No claim of independent human
 validation, source correction, glyph adjudication, word segmentation, decoding,
