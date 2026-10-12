@@ -1,0 +1,2717 @@
+{
+  "artist_positions": [
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.022521077812678605,
+        0.00750302709379764
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.09691577728731515,
+        0.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.01845208277352796,
+        0.007933829821729903
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.07459661093137517,
+        1.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.0227762652632238,
+        0.019261214195019694
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.0638950714811186,
+        2.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.019327458210769945,
+        0.021468557243231018
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.0467871566469233,
+        3.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.019016324220339283,
+        0.01057185184065333
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.10337496183268778,
+        4.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.017869066578017456,
+        0.012569661872456868
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.07336760107990867,
+        5.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.022521077812678605,
+        0.00750302709379764
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.06075645836223513,
+        0.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.01845208277352796,
+        0.007933829821729903
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.04986655012738387,
+        1.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.0227762652632238,
+        0.019261214195019694
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.03191440715728411,
+        2.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.019327458210769945,
+        0.021468557243231018
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.02522476565999715,
+        3.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.019016324220339283,
+        0.01057185184065333
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.07123012164869741,
+        4.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.017869066578017456,
+        0.012569661872456868
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.050756856663082876,
+        5.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.022521077812678605,
+        0.00750302709379764
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.09031506249687628,
+        0.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.01845208277352796,
+        0.007933829821729903
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.0707912049342725,
+        1.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.0227762652632238,
+        0.019261214195019694
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.05192977656852274,
+        2.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.019327458210769945,
+        0.021468557243231018
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.03969379409440438,
+        3.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.019016324220339283,
+        0.01057185184065333
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.09782574571054754,
+        4.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.017869066578017456,
+        0.012569661872456868
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.06882637631731844,
+        5.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.022521077812678605,
+        0.00750302709379764
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.09031506249687628,
+        0.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.01845208277352796,
+        0.007933829821729903
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.0707912049342725,
+        1.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.0227762652632238,
+        0.019261214195019694
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.05192977656852274,
+        2.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.019327458210769945,
+        0.021468557243231018
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.03969379409440438,
+        3.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.019016324220339283,
+        0.01057185184065333
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.09782574571054754,
+        4.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "prior_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.017869066578017456,
+        0.012569661872456868
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.06882637631731844,
+        5.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.03709502258737236,
+        0.01387775717794784
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.08690111239272703,
+        0.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.029366546059538194,
+        0.006752884432680909
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.06718772080599263,
+        1.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.030433166055657584,
+        0.02054374159085911
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.05552245568689217,
+        2.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.027042021321869086,
+        0.019374028800964564
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.03947883225869878,
+        3.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.03908335502795346,
+        0.00606041469333644
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.094661342428098,
+        4.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.03215019125736486,
+        0.006984417300467058
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.06641849472875737,
+        5.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.03196722159851347,
+        0.024517695357306073
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.04995802452288244,
+        0.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.026342343219196127,
+        0.013126404731148476
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.04307360446003753,
+        1.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.025730805249752506,
+        0.03276132035008459
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.022021950343056908,
+        2.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.023000143022942888,
+        0.02896616937178514
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.017994308828381104,
+        3.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.02672114695412766,
+        0.010532919260469646
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.06265508977027534,
+        4.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.024157457526889442,
+        0.012687509768041201
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "ZL3b",
+      "source_xy": [
+        0.04442056778992059,
+        5.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.03299602467935511,
+        0.01711857514048263
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.08027489660602949,
+        0.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.027651024977490987,
+        0.010280927793631937
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.06374414367411448,
+        1.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.028014976838629555,
+        0.023373220325784958
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.042776198798320696,
+        2.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.025345783735003017,
+        0.020672033958745756
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.031787464274127875,
+        3.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.035105595073694644,
+        0.005821334064762214
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.09075897154072622,
+        4.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.029983881817517488,
+        0.009703667110516683
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.062476761046310385,
+        5.0
+      ],
+      "spacing": "split"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.03299602467935511,
+        0.01711857514048263
+      ],
+      "range_y": [
+        0.0,
+        0.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.08027489660602949,
+        0.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "ascii_letters",
+      "range_x": [
+        -0.027651024977490987,
+        0.010280927793631937
+      ],
+      "range_y": [
+        1.0,
+        1.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.06374414367411448,
+        1.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.028014976838629555,
+        0.023373220325784958
+      ],
+      "range_y": [
+        2.0,
+        2.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.042776198798320696,
+        2.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_sequences",
+      "range_x": [
+        -0.025345783735003017,
+        0.020672033958745756
+      ],
+      "range_y": [
+        3.0,
+        3.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.031787464274127875,
+        3.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.035105595073694644,
+        0.005821334064762214
+      ],
+      "range_y": [
+        4.0,
+        4.0
+      ],
+      "scope": "unrestricted",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.09075897154072622,
+        4.0
+      ],
+      "spacing": "join"
+    },
+    {
+      "family": "supported_plotted_comparisons",
+      "policy_id": "bench_and_minim_sequences",
+      "range_x": [
+        -0.029983881817517488,
+        0.009703667110516683
+      ],
+      "range_y": [
+        5.0,
+        5.0
+      ],
+      "scope": "half",
+      "source_id": "IT2a",
+      "source_xy": [
+        0.062476761046310385,
+        5.0
+      ],
+      "spacing": "join"
+    }
+  ],
+  "common_coverage": {
+    "denominator": "795",
+    "mean": 0.8968553459119497,
+    "numerator": "713"
+  },
+  "common_generator_original_sizes": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "common_source_loci": 1426,
+  "figure_version": "frozen-generator-interior-comparison-v1",
+  "input_report_sha256": {
+    "research/literature/self-citation-interior.json": "f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d",
+    "research/literature/self-citation-size-conditioned.json": "df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61"
+  },
+  "output_sha256": {
+    "png": "b7a8bdf68de84617cafe05245867d238223af003ec7d6651e01f8b60e0cad0c7",
+    "svg": "6c59c34fa449dc1141758a10f4329b96bac00fe50b5a2175baab0ddd74384b1b"
+  },
+  "primary_seeds_with_complete_size_support": [
+    {
+      "complete_seeds": 3,
+      "fixed_seeds": 31,
+      "source_id": "ZL3b",
+      "spacing": "split"
+    },
+    {
+      "complete_seeds": 12,
+      "fixed_seeds": 31,
+      "source_id": "ZL3b",
+      "spacing": "join"
+    },
+    {
+      "complete_seeds": 9,
+      "fixed_seeds": 31,
+      "source_id": "IT2a",
+      "spacing": "split"
+    },
+    {
+      "complete_seeds": 9,
+      "fixed_seeds": 31,
+      "source_id": "IT2a",
+      "spacing": "join"
+    }
+  ],
+  "primary_undefined_comparisons": [
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "795174872180761239012260583728109619989773807499165951038249312487950104641768112193635030828300571256623807128099797410774495501127181450207394373795225600",
+        "mean": 0.09691577728731515,
+        "numerator": "77064990816739945417670107803648366241733483412987307722199319978951191834464235088705076899279827273202329844437329781369388351113992988899220345692246557"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "969725453878977120746659248448914170719236350608738964680791844497500127611912331943457354668659233239785130644024143183871335976984367622204139480238080000",
+        "mean": 0.07459661093137517,
+        "numerator": "72338232393261246153233976625166865196566747057509928879516098276381007790657324518447916196279918064610785969071463325453492383682723712664463647636564827"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "1022213944263414802843365552564919698841498034529619505462117601146616031995938345725655515610006379097874519925061173017842246127131200000",
+        "mean": 0.0638950714811186,
+        "numerator": "65314433037707074047058802750208641989958134761751793615117999080596398934717339946204475415108612755761532010432340852445690509078995199"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "9633344210738421101995876967371803241882277477407134219474996273205709485529722970118577579108700116618369475773776494520145327502084428800000",
+        "mean": 0.0467871566469233,
+        "numerator": "450716784621550210985633934933527750837398250466084731427455135195988520808596300223058164529381585681547772142331499483877858312357021606487"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "438226893134453354700532290392442523153463808964608986863200011649558438568044802664693892121432631975253557455235250330000",
+        "mean": 0.10337496183268778,
+        "numerator": "45301688351831463151954016176550846765895206766383406848427767401062240270082428007813944774324397593751004538179632976501"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "739525936996836247879606238236422451728983092254053399057212939896420305032428935281223707205581765231805607834807014400000",
+        "mean": 0.07336760107990867,
+        "numerator": "54257243933829551838045771199465273574437972935839288984397450908757703676291798849510197204189638861759004474544215463293"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "3554748005994803427700785269112718306959317036589346731747053566699014341311430244595581832091612054516680740690136568470353588763165936800000",
+        "mean": 0.06075645836223513,
+        "numerator": "215973899214461618237644349376730872333202888287447089299602241429834836979121435580750445395070245179389317199008496948929680252997998343877"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "3476543549862917752291367993192238504206212061784381103648618388231636025802578779214479031785596589317313764394953563964005809810376286190400000",
+        "mean": 0.04986655012738387,
+        "numerator": "173363233199272243374098037070351777071765621483174063001197790179825932443192019211546092444025613589170798893257214001511975584931057643747953"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "9579760898985589150907381089633775986589271656647394034216114692649344356678478166111159955729745208451545409325431252435200000",
+        "mean": 0.03191440715728411,
+        "numerator": "305732389799656154100277618348551761774281975490283336677602374699640859790091770897769821560805177584116593317679310554701681"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "598735056186599321931711318102110999161829478540462127138507168290584022292404885381947497233109075528221588082839453277200000",
+        "mean": 0.02522476565999715,
+        "numerator": "15102951484732195572241930338797342883679267871893773480542931328809218054454007048410177215171724181806018075242786772150631"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "2435483315584465953798576055799413137655029715408788260280069708361401451895007955546123576174043744342914364160000",
+        "mean": 0.07123012164869741,
+        "numerator": "173479772842454421657370147028521304419506940678252548312799707130359475871997049286089078053558016195127221036879"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "155947785845251832488825324330481069620252585437569821568440050188804134069729550032942303593850477061680896000000",
+        "mean": 0.050756856663082876,
+        "numerator": "7915419413072592410800623385479052335347795993295079141700576779103314848053452900995475498232067105464782717411"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "284862997274360241258701362253174813454223629043276537722576747026241601884163697158609138704155856503465498431984402993923873715372800000",
+        "mean": 0.09031506249687628,
+        "numerator": "25727419401881341052841424798741494919745231065219224004122585414804226060384741720440976310778130626470246700380851871619604370177267153"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "14453048914341224872283584905897922114203767284090451703398104428068258116649147582152589984779276087860038973075419183481190224295756800000",
+        "mean": 0.0707912049342725,
+        "numerator": "1023148747620194353363255498651629046593103034747140220028847825071275815887736954932883879320218120318318401280751572164179223703045996563"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "288444440401471957230584466027847607768129061769045755004868959240572946181722927914322021313488941969755150400000",
+        "mean": 0.05192977656852274,
+        "numerator": "14978855342481012429744226007096683835789816531340195169093590227072902546483816562187587289805574482834019838967"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "1501117268589266332833525117386914009807421514225668819024163948415536982681575796531369567415935071168396974867256000000",
+        "mean": 0.03969379409440438,
+        "numerator": "59585039770937049814314045430214771965676456721773453018961318034490473731046427397696960375279070006034630075475304333"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "302054897983246901623376232504649635656646012597765738112666144681327889271192804594276686889306912542273001600000",
+        "mean": 0.09782574571054754,
+        "numerator": "29548745640734490589562636979116236230941858717023225591151508314072146676805199538836385092054267089297000024107"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "536301553562091437576198616896010577594453124408277943179631726270929109522321918361266770599381661044443900800000",
+        "mean": 0.06882637631731844,
+        "numerator": "36911692545027022459765885477060880458528370110711985675199722857948208940978147497164543338053672580845652209323"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "284862997274360241258701362253174813454223629043276537722576747026241601884163697158609138704155856503465498431984402993923873715372800000",
+        "mean": 0.09031506249687628,
+        "numerator": "25727419401881341052841424798741494919745231065219224004122585414804226060384741720440976310778130626470246700380851871619604370177267153"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "14453048914341224872283584905897922114203767284090451703398104428068258116649147582152589984779276087860038973075419183481190224295756800000",
+        "mean": 0.0707912049342725,
+        "numerator": "1023148747620194353363255498651629046593103034747140220028847825071275815887736954932883879320218120318318401280751572164179223703045996563"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "288444440401471957230584466027847607768129061769045755004868959240572946181722927914322021313488941969755150400000",
+        "mean": 0.05192977656852274,
+        "numerator": "14978855342481012429744226007096683835789816531340195169093590227072902546483816562187587289805574482834019838967"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "1501117268589266332833525117386914009807421514225668819024163948415536982681575796531369567415935071168396974867256000000",
+        "mean": 0.03969379409440438,
+        "numerator": "59585039770937049814314045430214771965676456721773453018961318034490473731046427397696960375279070006034630075475304333"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "302054897983246901623376232504649635656646012597765738112666144681327889271192804594276686889306912542273001600000",
+        "mean": 0.09782574571054754,
+        "numerator": "29548745640734490589562636979116236230941858717023225591151508314072146676805199538836385092054267089297000024107"
+      },
+      "within_fixed_seed_range": null
+    },
+    {
+      "all_fixed_seed_values_defined": false,
+      "outside_range_gap": null,
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": null,
+      "seed_minimum": null,
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "536301553562091437576198616896010577594453124408277943179631726270929109522321918361266770599381661044443900800000",
+        "mean": 0.06882637631731844,
+        "numerator": "36911692545027022459765885477060880458528370110711985675199722857948208940978147497164543338053672580845652209323"
+      },
+      "within_fixed_seed_range": null
+    }
+  ],
+  "prior_plotted_comparisons": [
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "25120943844251000993389593464154070420486737459242928158338787103228766195709409172151993947553161169990667542947941270329619605212749684188558932651814062547666812086144000000",
+        "mean": 0.0894127501935175,
+        "numerator": "2246132676571396137921726096459187064867266795477009798734079701442994986915853685265887972561760320730166329448911413438915382695753350125891960834569018662804316518292383551"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "3253624696785747984966274821358989756655050079126040185169547516548940529241614390187338440954972641354321675091818487945724738930476000000",
+        "mean": 0.00750302709379764,
+        "numerator": "24412034253032596222390648916306765431144195118314292138698546071413341572313055130986132113850861255002234808150227661917858687115641571"
+      },
+      "seed_minimum": {
+        "denominator": "2920407789263890426504759924533592837986073275192065453342150451641056070467166894019840000",
+        "mean": -0.022521077812678605,
+        "numerator": "-65770731066764776703520700367471017571367418832363341850353041165450725080867838512355807"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "795174872180761239012260583728109619989773807499165951038249312487950104641768112193635030828300571256623807128099797410774495501127181450207394373795225600",
+        "mean": 0.09691577728731515,
+        "numerator": "77064990816739945417670107803648366241733483412987307722199319978951191834464235088705076899279827273202329844437329781369388351113992988899220345692246557"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "256203229618118221788110624295481176707040561906175591854768715562872894632419990976716922721798201119435960563426518514755866934227045401022890868430454593848059904000",
+        "mean": 0.06666278110964526,
+        "numerator": "17079219815616798431506373570859158278113609772479395617007798426043092394563835330529518824997582685397102006296375646570674902882841308117503942847001138400966244451"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "38515402886371999864578100260192913887653869613773474022020435460129199592152410517817095483379568279040000",
+        "mean": 0.007933829821729903,
+        "numerator": "305574652015840146962626449732970837981662779630861021992034205001991839191467235158714749461746170020341"
+      },
+      "seed_minimum": {
+        "denominator": "1244334711401881069735960854625825475739089916923826361289110610050405006467963230474370000533609454539904000000",
+        "mean": -0.01845208277352796,
+        "numerator": "-22960567092761531670878069380476027938148478003425198017220373319334591072433874845323736895138012907838220459"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "969725453878977120746659248448914170719236350608738964680791844497500127611912331943457354668659233239785130644024143183871335976984367622204139480238080000",
+        "mean": 0.07459661093137517,
+        "numerator": "72338232393261246153233976625166865196566747057509928879516098276381007790657324518447916196279918064610785969071463325453492383682723712664463647636564827"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "7614036103424467390582648515129194437870380347084063006112817188143074298825407660729212820680237662113640979009660491847678891204508800000",
+        "mean": 0.04463385728609891,
+        "numerator": "339843800811452307153582808542697230233202433810257155503100425787653619070383369926068999800236590863665484020466801005749044356864569541"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "21575699587334810881317518426177386004258973000509536242683072080583130704446277760000",
+        "mean": 0.019261214195019694,
+        "numerator": "415574171159053772864442454548889247837045788197033705911636558679571124770182325937"
+      },
+      "seed_minimum": {
+        "denominator": "136013206339256009595627007703322334224299632823007725751996151744493485876152107282230464000",
+        "mean": -0.0227762652632238,
+        "numerator": "-3097872866884487679395640612135593144325704336076091782851012441570033596198660717944813341"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "1022213944263414802843365552564919698841498034529619505462117601146616031995938345725655515610006379097874519925061173017842246127131200000",
+        "mean": 0.0638950714811186,
+        "numerator": "65314433037707074047058802750208641989958134761751793615117999080596398934717339946204475415108612755761532010432340852445690509078995199"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "43194672428794855908949254789183246794246340947083601822807241354051407048020370736983299467616429555159785713953384927041941952348055987200000",
+        "mean": 0.02531859940369228,
+        "numerator": "1093628607598368830716510274423306788700816030681065494167717026042824227666595169438319114503411507115914931036793802979564640906669517133263"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "474191199721644195193791613762140351741955450560649148190836749023805070427390720000",
+        "mean": 0.021468557243231018,
+        "numerator": "10180200915460511499053480040337275945607769593372843206008599125664251390714141559"
+      },
+      "seed_minimum": {
+        "denominator": "77226513378773086772767344477833591340520262961206984434794957530038923662137581619200",
+        "mean": -0.019327458210769945,
+        "numerator": "-1492592210091702818192628101392769529905187397642085918793977885556605915715519398867"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "9633344210738421101995876967371803241882277477407134219474996273205709485529722970118577579108700116618369475773776494520145327502084428800000",
+        "mean": 0.0467871566469233,
+        "numerator": "450716784621550210985633934933527750837398250466084731427455135195988520808596300223058164529381585681547772142331499483877858312357021606487"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "8993945229564821199155890899463686146330820992038753569313192185398320168732087292272710886626449587787418648980599969860000",
+        "mean": 0.09280310999203445,
+        "numerator": "834666088401637646996886235500901470845943842118966692148150931918461338259557392000789053098374695926093363246301324366349"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "38144255505886298853585811365598001663378608518686934125797575098503987773382620000",
+        "mean": 0.01057185184065333,
+        "numerator": "403255417780255021771465888059890441733645289200048395217957555170369135037052931"
+      },
+      "seed_minimum": {
+        "denominator": "2830701368391181446747148466135562152995240944696627694300925931893692299739922673746937600000",
+        "mean": -0.019016324220339283,
+        "numerator": "-53829534992284774494634917720138275773688343527524865007263556813368834640279376532693597431"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "438226893134453354700532290392442523153463808964608986863200011649558438568044802664693892121432631975253557455235250330000",
+        "mean": 0.10337496183268778,
+        "numerator": "45301688351831463151954016176550846765895206766383406848427767401062240270082428007813944774324397593751004538179632976501"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "245046462026086099871858787477959174546887739943090154391344573371309660368654812626035917185342352197545212104797146607385600000",
+        "mean": 0.0607979392074518,
+        "numerator": "14898319901263128226154428355182386276510905121877716949657229040961197239062230503145157976800375025228489721620903660745119437"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "14647394114260338759776951564389632638737385671175782704306268837825531304978926080000",
+        "mean": 0.012569661872456868,
+        "numerator": "184112791328867331391323767271190111082794805403860920921494634349790934471724038511"
+      },
+      "seed_minimum": {
+        "denominator": "502072315986539781304976286861442685288653727849681535665927051862540863929297641646080000",
+        "mean": -0.017869066578017456,
+        "numerator": "-8971563641342897644040876147994610566122597420827554589924957781688846951223362992173897"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "739525936996836247879606238236422451728983092254053399057212939896420305032428935281223707205581765231805607834807014400000",
+        "mean": 0.07336760107990867,
+        "numerator": "54257243933829551838045771199465273574437972935839288984397450908757703676291798849510197204189638861759004474544215463293"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "7212236810013563535671698608895169275420567731655499200678066841092598579996095286373690542383264187838961164707581358153768078627926682103558000820602082029182418903000000",
+        "mean": 0.053253431268437484,
+        "numerator": "384076357253752144781676114853022070910136170826396291094569301336194216773502738613691388399548330101550669002941612653436341059278552051267953520288621926848912635825107"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "3253624696785747984966274821358989756655050079126040185169547516548940529241614390187338440954972641354321675091818487945724738930476000000",
+        "mean": 0.00750302709379764,
+        "numerator": "24412034253032596222390648916306765431144195118314292138698546071413341572313055130986132113850861255002234808150227661917858687115641571"
+      },
+      "seed_minimum": {
+        "denominator": "2920407789263890426504759924533592837986073275192065453342150451641056070467166894019840000",
+        "mean": -0.022521077812678605,
+        "numerator": "-65770731066764776703520700367471017571367418832363341850353041165450725080867838512355807"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "3554748005994803427700785269112718306959317036589346731747053566699014341311430244595581832091612054516680740690136568470353588763165936800000",
+        "mean": 0.06075645836223513,
+        "numerator": "215973899214461618237644349376730872333202888287447089299602241429834836979121435580750445395070245179389317199008496948929680252997998343877"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "45744070973341885932554841218349819168372166802838891245579144257901045129100647662372392344066832894169590147351725811022194723926975373867022195468800000",
+        "mean": 0.04193272030565397,
+        "numerator": "1918173333767129411897715827606627906173863970490020605700514191477949996496603366453209186571054781481356368288866279920525823472225862028696488393381921"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "38515402886371999864578100260192913887653869613773474022020435460129199592152410517817095483379568279040000",
+        "mean": 0.007933829821729903,
+        "numerator": "305574652015840146962626449732970837981662779630861021992034205001991839191467235158714749461746170020341"
+      },
+      "seed_minimum": {
+        "denominator": "1244334711401881069735960854625825475739089916923826361289110610050405006467963230474370000533609454539904000000",
+        "mean": -0.01845208277352796,
+        "numerator": "-22960567092761531670878069380476027938148478003425198017220373319334591072433874845323736895138012907838220459"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "3476543549862917752291367993192238504206212061784381103648618388231636025802578779214479031785596589317313764394953563964005809810376286190400000",
+        "mean": 0.04986655012738387,
+        "numerator": "173363233199272243374098037070351777071765621483174063001197790179825932443192019211546092444025613589170798893257214001511975584931057643747953"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1331586764958996891976125971459094862135908760273987770756039942278258865578308465089451233846434583974764811896234944088492800000",
+        "mean": 0.012653192962264418,
+        "numerator": "16848824283023624122769750134145444416975677735048003680829199275419743637981287374450561267984056519265021698955062779302188549"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "21575699587334810881317518426177386004258973000509536242683072080583130704446277760000",
+        "mean": 0.019261214195019694,
+        "numerator": "415574171159053772864442454548889247837045788197033705911636558679571124770182325937"
+      },
+      "seed_minimum": {
+        "denominator": "136013206339256009595627007703322334224299632823007725751996151744493485876152107282230464000",
+        "mean": -0.0227762652632238,
+        "numerator": "-3097872866884487679395640612135593144325704336076091782851012441570033596198660717944813341"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "9579760898985589150907381089633775986589271656647394034216114692649344356678478166111159955729745208451545409325431252435200000",
+        "mean": 0.03191440715728411,
+        "numerator": "305732389799656154100277618348551761774281975490283336677602374699640859790091770897769821560805177584116593317679310554701681"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1331586764958996891976125971459094862135908760273987770756039942278258865578308465089451233846434583974764811896234944088492800000",
+        "mean": 0.003756208416766132,
+        "numerator": "5001717414193369079791682979571364020522148319022643928234351784343695251755338041368564972818903802371212570021598987525685809"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "474191199721644195193791613762140351741955450560649148190836749023805070427390720000",
+        "mean": 0.021468557243231018,
+        "numerator": "10180200915460511499053480040337275945607769593372843206008599125664251390714141559"
+      },
+      "seed_minimum": {
+        "denominator": "77226513378773086772767344477833591340520262961206984434794957530038923662137581619200",
+        "mean": -0.019327458210769945,
+        "numerator": "-1492592210091702818192628101392769529905187397642085918793977885556605915715519398867"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "598735056186599321931711318102110999161829478540462127138507168290584022292404885381947497233109075528221588082839453277200000",
+        "mean": 0.02522476565999715,
+        "numerator": "15102951484732195572241930338797342883679267871893773480542931328809218054454007048410177215171724181806018075242786772150631"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "233371981982352341753695193763255630300095313077060184523995735258910948001074277244796149583624693672012770021120000",
+        "mean": 0.060658269808044084,
+        "numerator": "14155940648723530540813866121035970792580678115997572652963061864395810223214657088186174707484355738806658191056347"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "38144255505886298853585811365598001663378608518686934125797575098503987773382620000",
+        "mean": 0.01057185184065333,
+        "numerator": "403255417780255021771465888059890441733645289200048395217957555170369135037052931"
+      },
+      "seed_minimum": {
+        "denominator": "2830701368391181446747148466135562152995240944696627694300925931893692299739922673746937600000",
+        "mean": -0.019016324220339283,
+        "numerator": "-53829534992284774494634917720138275773688343527524865007263556813368834640279376532693597431"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "2435483315584465953798576055799413137655029715408788260280069708361401451895007955546123576174043744342914364160000",
+        "mean": 0.07123012164869741,
+        "numerator": "173479772842454421657370147028521304419506940678252548312799707130359475871997049286089078053558016195127221036879"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1484336295212575305596613671413655374032188567798960251213970176661532790796220195447010665674382461241684124416000000",
+        "mean": 0.03818719479062601,
+        "numerator": "56682639240078767576352309764692484830357377275351170401106522460742350529711485006533050687746919751794451240940531"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "14647394114260338759776951564389632638737385671175782704306268837825531304978926080000",
+        "mean": 0.012569661872456868,
+        "numerator": "184112791328867331391323767271190111082794805403860920921494634349790934471724038511"
+      },
+      "seed_minimum": {
+        "denominator": "502072315986539781304976286861442685288653727849681535665927051862540863929297641646080000",
+        "mean": -0.017869066578017456,
+        "numerator": "-8971563641342897644040876147994610566122597420827554589924957781688846951223362992173897"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "155947785845251832488825324330481069620252585437569821568440050188804134069729550032942303593850477061680896000000",
+        "mean": 0.050756856663082876,
+        "numerator": "7915419413072592410800623385479052335347795993295079141700576779103314848053452900995475498232067105464782717411"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1071423956553489420796565227384543686176175120475588527255019965589737830338376656566860506214787661984402824624086262572522214971597538245400624712884809770094304000000",
+        "mean": 0.08281203540307863,
+        "numerator": "88726798621814151458803210200957598338091293656606284845260242213963952626061201785850749468906903602888381092934301550535013028062813313673522529601334472612000408481"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "3253624696785747984966274821358989756655050079126040185169547516548940529241614390187338440954972641354321675091818487945724738930476000000",
+        "mean": 0.00750302709379764,
+        "numerator": "24412034253032596222390648916306765431144195118314292138698546071413341572313055130986132113850861255002234808150227661917858687115641571"
+      },
+      "seed_minimum": {
+        "denominator": "2920407789263890426504759924533592837986073275192065453342150451641056070467166894019840000",
+        "mean": -0.022521077812678605,
+        "numerator": "-65770731066764776703520700367471017571367418832363341850353041165450725080867838512355807"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "284862997274360241258701362253174813454223629043276537722576747026241601884163697158609138704155856503465498431984402993923873715372800000",
+        "mean": 0.09031506249687628,
+        "numerator": "25727419401881341052841424798741494919745231065219224004122585414804226060384741720440976310778130626470246700380851871619604370177267153"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "33744622240970795176097681857294578956311614656855322718810883516078839165692126396271510175399491021271508507494525232301606764395783344977484952140800000",
+        "mean": 0.0628573751125426,
+        "numerator": "2121098378231749149419519986091837135172211809062388440923232535563725700981590537312242362026237215207098161418796389267622714566811220017240966311867683"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "38515402886371999864578100260192913887653869613773474022020435460129199592152410517817095483379568279040000",
+        "mean": 0.007933829821729903,
+        "numerator": "305574652015840146962626449732970837981662779630861021992034205001991839191467235158714749461746170020341"
+      },
+      "seed_minimum": {
+        "denominator": "1244334711401881069735960854625825475739089916923826361289110610050405006467963230474370000533609454539904000000",
+        "mean": -0.01845208277352796,
+        "numerator": "-22960567092761531670878069380476027938148478003425198017220373319334591072433874845323736895138012907838220459"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "14453048914341224872283584905897922114203767284090451703398104428068258116649147582152589984779276087860038973075419183481190224295756800000",
+        "mean": 0.0707912049342725,
+        "numerator": "1023148747620194353363255498651629046593103034747140220028847825071275815887736954932883879320218120318318401280751572164179223703045996563"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "2104087062190669111904470500673422326351915198091105537926307114249677047994007082869180200377966133368811894183683200000",
+        "mean": 0.032668562373503046,
+        "numerator": "68737499430456660620719312467441408151162777314462387228368754535187366257722450022875984153675573237785174109770250421"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "21575699587334810881317518426177386004258973000509536242683072080583130704446277760000",
+        "mean": 0.019261214195019694,
+        "numerator": "415574171159053772864442454548889247837045788197033705911636558679571124770182325937"
+      },
+      "seed_minimum": {
+        "denominator": "136013206339256009595627007703322334224299632823007725751996151744493485876152107282230464000",
+        "mean": -0.0227762652632238,
+        "numerator": "-3097872866884487679395640612135593144325704336076091782851012441570033596198660717944813341"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "288444440401471957230584466027847607768129061769045755004868959240572946181722927914322021313488941969755150400000",
+        "mean": 0.05192977656852274,
+        "numerator": "14978855342481012429744226007096683835789816531340195169093590227072902546483816562187587289805574482834019838967"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "92735689037292453450604440585236021050325151323274651486381683924337618041217349207937942164806655507736524225132704000000",
+        "mean": 0.018225236851173356,
+        "numerator": "1690129897261415612302890167001931988394774636063222655790076991481090137937971217624146534494039454485739493902413009647"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "474191199721644195193791613762140351741955450560649148190836749023805070427390720000",
+        "mean": 0.021468557243231018,
+        "numerator": "10180200915460511499053480040337275945607769593372843206008599125664251390714141559"
+      },
+      "seed_minimum": {
+        "denominator": "77226513378773086772767344477833591340520262961206984434794957530038923662137581619200",
+        "mean": -0.019327458210769945,
+        "numerator": "-1492592210091702818192628101392769529905187397642085918793977885556605915715519398867"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "1501117268589266332833525117386914009807421514225668819024163948415536982681575796531369567415935071168396974867256000000",
+        "mean": 0.03969379409440438,
+        "numerator": "59585039770937049814314045430214771965676456721773453018961318034490473731046427397696960375279070006034630075475304333"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "11346508951901859951480013388235388719482545746898227464181462363672829649851885384264669476177612808654964790797080099200000",
+        "mean": 0.08725389386989421,
+        "numerator": "990027087883049472961955425359305590231546616591449696331467410489979025730930948019796939651140904497663504791722579946049"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "38144255505886298853585811365598001663378608518686934125797575098503987773382620000",
+        "mean": 0.01057185184065333,
+        "numerator": "403255417780255021771465888059890441733645289200048395217957555170369135037052931"
+      },
+      "seed_minimum": {
+        "denominator": "2830701368391181446747148466135562152995240944696627694300925931893692299739922673746937600000",
+        "mean": -0.019016324220339283,
+        "numerator": "-53829534992284774494634917720138275773688343527524865007263556813368834640279376532693597431"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "302054897983246901623376232504649635656646012597765738112666144681327889271192804594276686889306912542273001600000",
+        "mean": 0.09782574571054754,
+        "numerator": "29548745640734490589562636979116236230941858717023225591151508314072146676805199538836385092054267089297000024107"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "136158107422822319417760160658824664633790548962778729570177548364073955798222624611176033714131353703859577489564961190400000",
+        "mean": 0.056256714444861584,
+        "numerator": "7659807768638503265977764126282767855815532527768599645668013428749215850581737744522557426658419772090401532856070284698569"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "14647394114260338759776951564389632638737385671175782704306268837825531304978926080000",
+        "mean": 0.012569661872456868,
+        "numerator": "184112791328867331391323767271190111082794805403860920921494634349790934471724038511"
+      },
+      "seed_minimum": {
+        "denominator": "502072315986539781304976286861442685288653727849681535665927051862540863929297641646080000",
+        "mean": -0.017869066578017456,
+        "numerator": "-8971563641342897644040876147994610566122597420827554589924957781688846951223362992173897"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "536301553562091437576198616896010577594453124408277943179631726270929109522321918361266770599381661044443900800000",
+        "mean": 0.06882637631731844,
+        "numerator": "36911692545027022459765885477060880458528370110711985675199722857948208940978147497164543338053672580845652209323"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1071423956553489420796565227384543686176175120475588527255019965589737830338376656566860506214787661984402824624086262572522214971597538245400624712884809770094304000000",
+        "mean": 0.08281203540307863,
+        "numerator": "88726798621814151458803210200957598338091293656606284845260242213963952626061201785850749468906903602888381092934301550535013028062813313673522529601334472612000408481"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "3253624696785747984966274821358989756655050079126040185169547516548940529241614390187338440954972641354321675091818487945724738930476000000",
+        "mean": 0.00750302709379764,
+        "numerator": "24412034253032596222390648916306765431144195118314292138698546071413341572313055130986132113850861255002234808150227661917858687115641571"
+      },
+      "seed_minimum": {
+        "denominator": "2920407789263890426504759924533592837986073275192065453342150451641056070467166894019840000",
+        "mean": -0.022521077812678605,
+        "numerator": "-65770731066764776703520700367471017571367418832363341850353041165450725080867838512355807"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "284862997274360241258701362253174813454223629043276537722576747026241601884163697158609138704155856503465498431984402993923873715372800000",
+        "mean": 0.09031506249687628,
+        "numerator": "25727419401881341052841424798741494919745231065219224004122585414804226060384741720440976310778130626470246700380851871619604370177267153"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "33744622240970795176097681857294578956311614656855322718810883516078839165692126396271510175399491021271508507494525232301606764395783344977484952140800000",
+        "mean": 0.0628573751125426,
+        "numerator": "2121098378231749149419519986091837135172211809062388440923232535563725700981590537312242362026237215207098161418796389267622714566811220017240966311867683"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "38515402886371999864578100260192913887653869613773474022020435460129199592152410517817095483379568279040000",
+        "mean": 0.007933829821729903,
+        "numerator": "305574652015840146962626449732970837981662779630861021992034205001991839191467235158714749461746170020341"
+      },
+      "seed_minimum": {
+        "denominator": "1244334711401881069735960854625825475739089916923826361289110610050405006467963230474370000533609454539904000000",
+        "mean": -0.01845208277352796,
+        "numerator": "-22960567092761531670878069380476027938148478003425198017220373319334591072433874845323736895138012907838220459"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "14453048914341224872283584905897922114203767284090451703398104428068258116649147582152589984779276087860038973075419183481190224295756800000",
+        "mean": 0.0707912049342725,
+        "numerator": "1023148747620194353363255498651629046593103034747140220028847825071275815887736954932883879320218120318318401280751572164179223703045996563"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "2104087062190669111904470500673422326351915198091105537926307114249677047994007082869180200377966133368811894183683200000",
+        "mean": 0.032668562373503046,
+        "numerator": "68737499430456660620719312467441408151162777314462387228368754535187366257722450022875984153675573237785174109770250421"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "21575699587334810881317518426177386004258973000509536242683072080583130704446277760000",
+        "mean": 0.019261214195019694,
+        "numerator": "415574171159053772864442454548889247837045788197033705911636558679571124770182325937"
+      },
+      "seed_minimum": {
+        "denominator": "136013206339256009595627007703322334224299632823007725751996151744493485876152107282230464000",
+        "mean": -0.0227762652632238,
+        "numerator": "-3097872866884487679395640612135593144325704336076091782851012441570033596198660717944813341"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "288444440401471957230584466027847607768129061769045755004868959240572946181722927914322021313488941969755150400000",
+        "mean": 0.05192977656852274,
+        "numerator": "14978855342481012429744226007096683835789816531340195169093590227072902546483816562187587289805574482834019838967"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "92735689037292453450604440585236021050325151323274651486381683924337618041217349207937942164806655507736524225132704000000",
+        "mean": 0.018225236851173356,
+        "numerator": "1690129897261415612302890167001931988394774636063222655790076991481090137937971217624146534494039454485739493902413009647"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "474191199721644195193791613762140351741955450560649148190836749023805070427390720000",
+        "mean": 0.021468557243231018,
+        "numerator": "10180200915460511499053480040337275945607769593372843206008599125664251390714141559"
+      },
+      "seed_minimum": {
+        "denominator": "77226513378773086772767344477833591340520262961206984434794957530038923662137581619200",
+        "mean": -0.019327458210769945,
+        "numerator": "-1492592210091702818192628101392769529905187397642085918793977885556605915715519398867"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "1501117268589266332833525117386914009807421514225668819024163948415536982681575796531369567415935071168396974867256000000",
+        "mean": 0.03969379409440438,
+        "numerator": "59585039770937049814314045430214771965676456721773453018961318034490473731046427397696960375279070006034630075475304333"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "11346508951901859951480013388235388719482545746898227464181462363672829649851885384264669476177612808654964790797080099200000",
+        "mean": 0.08725389386989421,
+        "numerator": "990027087883049472961955425359305590231546616591449696331467410489979025730930948019796939651140904497663504791722579946049"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "38144255505886298853585811365598001663378608518686934125797575098503987773382620000",
+        "mean": 0.01057185184065333,
+        "numerator": "403255417780255021771465888059890441733645289200048395217957555170369135037052931"
+      },
+      "seed_minimum": {
+        "denominator": "2830701368391181446747148466135562152995240944696627694300925931893692299739922673746937600000",
+        "mean": -0.019016324220339283,
+        "numerator": "-53829534992284774494634917720138275773688343527524865007263556813368834640279376532693597431"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "302054897983246901623376232504649635656646012597765738112666144681327889271192804594276686889306912542273001600000",
+        "mean": 0.09782574571054754,
+        "numerator": "29548745640734490589562636979116236230941858717023225591151508314072146676805199538836385092054267089297000024107"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "136158107422822319417760160658824664633790548962778729570177548364073955798222624611176033714131353703859577489564961190400000",
+        "mean": 0.056256714444861584,
+        "numerator": "7659807768638503265977764126282767855815532527768599645668013428749215850581737744522557426658419772090401532856070284698569"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "14647394114260338759776951564389632638737385671175782704306268837825531304978926080000",
+        "mean": 0.012569661872456868,
+        "numerator": "184112791328867331391323767271190111082794805403860920921494634349790934471724038511"
+      },
+      "seed_minimum": {
+        "denominator": "502072315986539781304976286861442685288653727849681535665927051862540863929297641646080000",
+        "mean": -0.017869066578017456,
+        "numerator": "-8971563641342897644040876147994610566122597420827554589924957781688846951223362992173897"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "536301553562091437576198616896010577594453124408277943179631726270929109522321918361266770599381661044443900800000",
+        "mean": 0.06882637631731844,
+        "numerator": "36911692545027022459765885477060880458528370110711985675199722857948208940978147497164543338053672580845652209323"
+      },
+      "within_fixed_seed_range": false
+    }
+  ],
+  "prior_source_loci": 1590,
+  "renderer": {
+    "dejavu_sans_sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+    "freetype": "2.6.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.4",
+    "pillow": "12.3.0",
+    "python": "3.14.3",
+    "script_sha256": "36950c61442ce79ebfebf64220425f285470fe6b6a05ec78b969cfd155baf3fe"
+  },
+  "schema_version": 1,
+  "scope": "48 existing points/ranges and24 undefined primary ranges; no new measurements, calibrated probability coverage, independent treatments or decipherment",
+  "shared_x_limits": [
+    -0.05048002037680476,
+    0.11477162718153908
+  ],
+  "supported_plotted_comparisons": [
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "323623640875317699010226916928519091026915003709605180928306716679441914210187550221271017021697275219373785059799837670995917478081707213368038400000",
+        "mean": 0.07302335521477919,
+        "numerator": "23632084083538460651274474175438898950982474338248229702602110910946327295787979997322170995033928988676012579196412729098475613733551283264438688193"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "15073127252644037903455513144529932476428229275581932146446021826963776308670679087690580653427824261776978754385560025600000",
+        "mean": 0.01387775717794784,
+        "numerator": "209181199924501997450925345920365450603354323527382450131329087610038719045681045862384713360383723330833581019501564179413"
+      },
+      "seed_minimum": {
+        "denominator": "831272885265864556299259140097173757901826139584209052235915512118188527030131329226092794334039695295137280",
+        "mean": -0.03709502258737236,
+        "numerator": "-30836086455207435703200395371867989761104494953493041476108953181106261877870585621049419824049880897727803"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "1746808754233300868221935965094938934748765386324283406035734824671770683880256795671332276261969627966841780251728677762732874020249600",
+        "mean": 0.08690111239272703,
+        "numerator": "151799623880227577838240902955149143711146937970794204861779286652811021486245595602895704162286650004765369241362693784344670372008313"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "68230727675641661559743659629413066281145425590075165713328461336216447733395672750492041335544642025483221801455608449849688342718859624945316044800000",
+        "mean": 0.06043483637331172,
+        "numerator": "4123512862709395483025135835377834200689305939809597661846368746424839069707695413872579578147687864894410193198336925929647866912015696674324458849571"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "24358173640272765251984109241560370881908018509340402348656771272373462514811817405707978335939364007031597667087065001369600000",
+        "mean": 0.006752884432680909,
+        "numerator": "164487931583936433025836320097390944830442931461710467857763708359376434312738521182227721694387318430723290094073059249780173"
+      },
+      "seed_minimum": {
+        "denominator": "72424650128788449467572952580966263657196602411274213676054138993297175417500192058823334706353208452588835520000",
+        "mean": -0.029366546059538194,
+        "numerator": "-2126861823853004732056531532411993554445612140691053827984047083588359070752787895291166536867699416951908296039"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "935486674613744379281465219865838767392230732695575339162272788285758399351646774702271423509331348959847107242892670661638832240640000",
+        "mean": 0.06718772080599263,
+        "numerator": "62853217511674732388115887630863815873997563486391361374822930094990106637932852711065559094967543512622691812913757737305727665489311"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "2576072902112206950804661114392519005706881198225967461393151773492025675740358200135741939333537713081350293851555652452228560000",
+        "mean": 0.034978714096033064,
+        "numerator": "90107717533521065136546668413611809626138117132950258237152590683732269411042074094966301098326154892473835956586420536637381253"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "1522867613263478981306997301202106448657414676891726672637790623739006653149076192000",
+        "mean": 0.02054374159085911,
+        "numerator": "31285398723973275453006362332187100232678896955781619632492809076118575740982959861"
+      },
+      "seed_minimum": {
+        "denominator": "1164945117939854969786698989400029095727427375616948060339213657264207491448010994664359200000",
+        "mean": -0.030433166055657584,
+        "numerator": "-35452968219991214187492872706819644747974846851790030032985000994139077327076821077723351247"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "2788370248883363275421878250373053443884071042394395939006882241220033236747045689790750159150888298754093086100305440000",
+        "mean": 0.05552245568689217,
+        "numerator": "154817163582275041451633746659909363763410479049292315669366930984136350844336631609674682191925206441000192059740541717"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "5874110725591664404870428308017287788692785003258699452351933356022718610730855624351996441277885546627940955802172008299520000",
+        "mean": 0.02010480345773422,
+        "numerator": "118097841626988959682166495854511674580394644956248470658620636558936500168675661694210881245478821826036580444175835500551611"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "9137205679580873887841983807212638691944488061350360035826743742434039918894457152000",
+        "mean": 0.019374028800964564,
+        "numerator": "177024485996536828405018659576134268363005250132574808143296570403787801371161447073"
+      },
+      "seed_minimum": {
+        "denominator": "130764426368002833675750206162783716033988462456499516097562194168648712527969359630950400000",
+        "mean": -0.027042021321869086,
+        "numerator": "-3536134405985512710390464185570789589154658027984867432159975861978361097366174863067724727"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "48045764288451797976500056006427997802310147192026514641349355541022111156256787270240618126907613763147450098959109120000",
+        "mean": 0.03947883225869878,
+        "numerator": "1896790669084768774329396195297514646539358348532905759447562464396884546249458306675032374579108275360655822078280716271"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "543907507141689038347452740657743269447328334267881176585566973730636991919722179222685312600033819421813778754809797168000",
+        "mean": 0.08860092773476155,
+        "numerator": "48190709734655096489762701429815361159400459550987369644429570681742500835009297063988891660408491206675050654385995212517"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "41870679841843249145814128937029624862504505294334368139978763764380717804693251529921400761754404656000",
+        "mean": 0.00606041469333644,
+        "numerator": "253753683333492731105309154761820296127506239250268377344973294575958470406295439951666817574864780131"
+      },
+      "seed_minimum": {
+        "denominator": "704863723307836477980142238698351374018749949015231957649152622311735848272659685440000",
+        "mean": -0.03908335502795346,
+        "numerator": "-27548439144365328526407830782184627651075294668461926153695214406310369435177594712287"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "5466803221065723078765258613577734394642797496982018530539075373502212677660258185307211885134800",
+        "mean": 0.094661342428098,
+        "numerator": "517494931696331533267266941249406748653103803146140820379860144058556161302796398714061836589221"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "12542055137062596536426065154971032625932797619396250304139857088861626785260728536258673496016412594056206661165056000",
+        "mean": 0.05943407742829031,
+        "numerator": "745425476126064535781354177548841472558533963647917985985568029166453894669187885517264851268009838211602476304451441"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "200911620180127282398633960063529849315167330623823658623469104267144027043928687151392821665964032000",
+        "mean": 0.006984417300467058,
+        "numerator": "1403250595850947420783432314264458714153004959457520234054868507306067106501581228591038923615986967"
+      },
+      "seed_minimum": {
+        "denominator": "142382472108182968551988732217066977551787489701076855445128829706970641351077256458880000",
+        "mean": -0.03215019125736486,
+        "numerator": "-4577623709974500418576784057084973814833270250426414787841853180364045049617614936013959"
+      },
+      "source_id": "ZL3b",
+      "spacing": "split",
+      "target": {
+        "denominator": "13995016245928251081639062050759000050285561592273967438180032956165664454810260954386462425945088000",
+        "mean": 0.06641849472875737,
+        "numerator": "929527912759059198187481525883223819676639518537144864593316254753015203948217475082002347044676071"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "24446834749062725768895398236101833172764909099178532492714832120081503046866165960114070180601875768131555689119573841914750470740179569695535104000",
+        "mean": 0.02544032916557637,
+        "numerator": "621935523072606308377952762210185047071493585785263431600231266679288572143580206407652003186794269475859494709485741396493578194739842839750326929"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "111442624497979971741103767771844834100232764421818834274900260723277279479531190745069181929134345130209923967065003274240000",
+        "mean": 0.024517695357306073,
+        "numerator": "2732316317260127620857861032133998069013414082667132401858923789663217823460784020225609529352980834871142690067135027442479"
+      },
+      "seed_minimum": {
+        "denominator": "1655420574372307416401667487564943169307350912257696312595523176989649723828575818487390507573787621773459097600",
+        "mean": -0.03196722159851347,
+        "numerator": "-52919196339698001181294185527734942373398275596953476690758014540130882983495560058801919680311660740771231951"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "505130627043249152797361820593291552897750888352856828348144753768660941753493536847979536144594973028221527254349440000",
+        "mean": 0.04995802452288244,
+        "numerator": "25235328253085625994628968348157034339294108335118419188687401185798662169092980623939829091978835701533908644903019089"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "7247573693152790121267136591050964579011719261294927094976659943516582598958638757406080323053223136200708255954595726294771616255370473216868352000",
+        "mean": 0.029947199728889054,
+        "numerator": "217044536938688680645674059227994939809148098703463658701828275114597011528694982239213084255760536658136787182690713905965224185017643749913739137"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "411480459684849126428690834849888618216244053249792618861170193439793031924422858135640056353726812788467411570701550551040000",
+        "mean": 0.013126404731148476,
+        "numerator": "5401259052782353632325589456060677713605638367491543586728947422155798453449595971758311458882169788118607568267846699081829"
+      },
+      "seed_minimum": {
+        "denominator": "289698600515153797870291810323865054628786409645096854704216555973188701670000768235293338825412833810355342080000",
+        "mean": -0.026342343219196127,
+        "numerator": "-7631339964890969348279968630230840029862259972419610564337013587741084157802589295291572487713659602843195125867"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "587972049878342013856129159170591367572982034042725348197240493386721336201066476891048180072308548604849857724062748160000",
+        "mean": 0.04307360446003753,
+        "numerator": "25326075510017162433599832418341214498502713861133441532653354342452572529022183698650900156963064585420751644165448137051"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1",
+        "mean": 0.0,
+        "numerator": "0"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "36548822718323495551367935228850554767777952245401440143306974969736159675577828608000",
+        "mean": 0.03276132035008459,
+        "numerator": "1197387689493445571713944835346536613496217586333296150566679309271278225279366283663"
+      },
+      "seed_minimum": {
+        "denominator": "267576544562848704408855368880796609025991552651943838853477968049956945463535000320000",
+        "mean": -0.025730805249752506,
+        "numerator": "-6884959957548382630478655002446028357194598162283835698003139604085645635568171050243"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "68743177216027033071096453908571712600205883143420118624338154010997533595144668705876107024169300088656307407376423040000",
+        "mean": 0.022021950343056908,
+        "numerator": "1513858835075308355340614453285705602727823456137812820622988891340131634597256689595936237602919041525084277158490461683"
+      },
+      "within_fixed_seed_range": true
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "1",
+        "mean": 0.0,
+        "numerator": "0"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "73097645436646991102735870457701109535555904490802880286613949939472319351155657216000",
+        "mean": 0.02896616937178514,
+        "numerator": "2117358778396613953597779881459249690192244605570493638474369113605572613702830030809"
+      },
+      "seed_minimum": {
+        "denominator": "1103046805066925356867815998671493170162387734670978696256435258986685453139471360000",
+        "mean": -0.023000143022942888,
+        "numerator": "-25370234277539488195274473158491881674182571144866455455325806023979580654641177107"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "8208140563107705441324949720426473146293239778318820134249331822208660727778467905179236659602304488197768048641960960000",
+        "mean": 0.017994308828381104,
+        "numerator": "147699816199322018219295606028956862566967609211871793941313043814237815053412821554048742846773815982581006889392559647"
+      },
+      "within_fixed_seed_range": true
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "6052314188232112059447895128334969085857712823748436037151584579340664512780542956832098208019304582677412370739200",
+        "mean": 0.0521221705098057,
+        "numerator": "315459752097950412178350615685375362771149783281072063900875038626544823198640962623880861219675806604699307344791"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "146498056381342810082337262546323848458976178579871417746279555194792519719531334381223932464765440000",
+        "mean": 0.010532919260469646,
+        "numerator": "1543052199680413762867411270633125423175942535314903685696502829047641595242001797532671840007926087"
+      },
+      "seed_minimum": {
+        "denominator": "5638909786462691823841137909586810992149999592121855661193220978493886786181277483520000",
+        "mean": -0.02672114695412766,
+        "numerator": "-150678137065138203025446580006497905066308857514856602873667930336772524396998977637187"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "196357316285126060417296039461987487960878460593049748841159006211439238183437599122136662240000",
+        "mean": 0.06265508977027534,
+        "numerator": "12302785278894922252583811349571538935734867257146841138872155623804848173383590306043532972927"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "34241572751341997187532411478067921100148596071639151723788804916077743547507199832573278821690017606955728228694097920",
+        "mean": 0.03173305802187939,
+        "numerator": "1086589814878739907007059892239144209526917131284326397925971366691548716523236371769123474764800754900616722559801171"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "56255253650435639071617508817788357808246852574670624414571349194800327572300032402389990066469928960000",
+        "mean": 0.012687509768041201,
+        "numerator": "713739080193537602370652124070120583498654833632213579857628481835340717417306756381324151413848591073"
+      },
+      "seed_minimum": {
+        "denominator": "1139059776865463748415909857736535820414299917608614843561030637655765130808618051671040000",
+        "mean": -0.024157457526889442,
+        "numerator": "-27516788180215605503632313854233426000134931537427726315388749139733602975606276236313849"
+      },
+      "source_id": "ZL3b",
+      "spacing": "join",
+      "target": {
+        "denominator": "9710761823555325169728095042483744859156171142056278488144590852638449597435459447494758568960000",
+        "mean": 0.04442056778992059,
+        "numerator": "431357553875012221151590197295311555529153280165800753406766966881892812618912595028214351389823"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "8862997011619750678558207320548341033517407025701084597361950849698768716767961189154877169848366697088777263239032269140839851457736950468633600000",
+        "mean": 0.06315632146554687,
+        "numerator": "559754288414038163979139589923746898984464103350353983614811357168554192110994308339213053595206543512558481323222341762335121116950498680573148607"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "7104467311746223198495365195455108173889838731890950685024891621108926566820113409998160347982314502050882652900393958732800000",
+        "mean": 0.01711857514048263,
+        "numerator": "121618357509230344250397292841262030927494845161924324070134217515769803542396584542474849497222191449282478155394564879854409"
+      },
+      "seed_minimum": {
+        "denominator": "11921753107619497854744518943368932289250469532720035173013026994781428052263406100217832873473779169150425600",
+        "mean": -0.03299602467935511,
+        "numerator": "-393370459760191464262703941477108555632694524746381553012219356431704609668995951081382598003436744204120559"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "238193754491449832105930239139230863466504451698525258987810699834157173928804399099885757321308319818661874736605440000",
+        "mean": 0.08027489660602949,
+        "numerator": "19120979014003108179662679503622680881086282421455499393963609876193163013068948068721294199663352815524346465616110861"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "34175716476805758616520447428034403025243121491103382207427682476438452171857258345381206366935301983974325127049708429807078467221033681007051161600000",
+        "mean": 0.053463215880482536,
+        "numerator": "1827143707869630187722910862578065297726491634287060524893384802321639415194669788007859806960363394216461599378940624780377895048594555392787384049479"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "113671476987939571175925843127281730782237419710255210960398265937742825069121814559970565567717032032814122446406303339724800000",
+        "mean": 0.010280927793631937,
+        "numerator": "1168648247108501000909088669391481735122810963173616117113452054351127053597788502138304790779781152999975803030168278941725053"
+      },
+      "seed_minimum": {
+        "denominator": "3576525932285849356423355683010679686775140859816010551903908098434428415679021830065349862042133750745127680000",
+        "mean": -0.027651024977490987,
+        "numerator": "-98894607886280261674876561185660353942154894706902474429347600862640113868429170663950089180183698018943545893"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "636063100636447751108356649668195435960416319771131162504846300942181483843123104521578587417565707216592928659522560000",
+        "mean": 0.06374414367411448,
+        "numerator": "40545297672772455846894087582415169714074882728477471188922959287927324579169677743360081971372085309732313627141501273"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "5165725489019350208104559406850023432946903753838929023543946595947553682673406023832389873994431544457449233440000",
+        "mean": 0.019402978472535738,
+        "numerator": "100230460458471597578098240365274453311830131678788114561665493999392209879850855416748907202203437310080024085887"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "115660831387099669466354225407754920151196051409498228301604351170051138213853888000",
+        "mean": 0.023373220325784958,
+        "numerator": "2703366095074144818715208387872766543281594241099475984620585174160144739549900421"
+      },
+      "seed_minimum": {
+        "denominator": "2756742557798822836212286234653470327201991917453579287135174328725214319709840858560000",
+        "mean": -0.028014976838629555,
+        "numerator": "-77230078906798416248948772776283079124908696559860713210095657055144631884625722939691"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "936123321910839848535148806968178910164338206595372294676901827077938683023433917735558816421661504320000",
+        "mean": 0.042776198798320696,
+        "numerator": "40043797317802445064315230664517410684814017416083654485537864333933713427488438393273253221490105245801"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "37647181215428900759065046586285776837082737963583710004918762312890504869180428749445144384716993528545955777040000",
+        "mean": 0.01111543031538212,
+        "numerator": "418464619370662682761156098050951633468040132907235543543428979877045882336019177922303522663576770719330935277737"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "1661310123560158888698542510402297943989906920245520006513953407715279985253537664000",
+        "mean": 0.020672033958745756,
+        "numerator": "34342659290243711573490166431115524556726873478154231941056608732459205737793970887"
+      },
+      "seed_minimum": {
+        "denominator": "143207405599938848634404479722258198815687891815770352578450614479231912712199525120000",
+        "mean": -0.025345783735003017,
+        "numerator": "-3629703931586910216025153092709696926420691422586837307597973806817983138414353876631"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "710429287809392460146806704035360228766603987654321970499893307334506598274878472436974466304001302391680000",
+        "mean": 0.031787464274127875,
+        "numerator": "22582745605535172913940257912630212634050227686932110628876750832661471417399157748346061095075650144977319"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "6462893519644078191332259203748667026270646609217764392015943345246188349242080826272873515538532156113905920000",
+        "mean": 0.08493763747596401,
+        "numerator": "548942906817285826914693871711309166678238335505124049951102739651975069090883064096877409067470951103644766921"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "535968498956132232008550960535331152898693336267822260047364226322411657510480491638624143163776000",
+        "mean": 0.005821334064762214,
+        "numerator": "3120051680612803688793143247385980173022692562708156929907197658053598338576379933969346018934081"
+      },
+      "seed_minimum": {
+        "denominator": "34808085101621554468155172281400067852777775260011454698723586286999301149267144960000",
+        "mean": -0.035105595073694644,
+        "numerator": "-1221958540868229670374955718615038884149772950802214364536800281005527728497836335539"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "21217348772456656192582944644199492440478794959379451578936097546242328120548101426807445760000",
+        "mean": 0.09075897154072622,
+        "numerator": "1925664753409056236343661144284298682630104007922061433425965855572525241179296467391961232223"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "8034889237017931422892054676456215142107370695102391679878204288285644204742835464697373303403138530766973419520000",
+        "mean": 0.0527730939357937,
+        "numerator": "424025964468845054637022387264428128379273888931385193933063089761898596730638531139969222676769418610416013034183"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "14063813412608909767904377204447089452061713143667656103642837298700081893075008100597497516617482240000",
+        "mean": 0.009703667110516683,
+        "numerator": "136470563660376478007636994807474402766430164941596837393822286143970876117810348386384201112070929481"
+      },
+      "seed_minimum": {
+        "denominator": "28351746735998201623255422584043603654278671784364168746540985604733301742548239040000",
+        "mean": -0.029983881817517488,
+        "numerator": "-850095423452357236732134749907076033870013443089996230966283706674186299812818308621"
+      },
+      "source_id": "IT2a",
+      "spacing": "split",
+      "target": {
+        "denominator": "1568515293867924633617520383287474965629801025968111305535735482938993287632926579004746240000",
+        "mean": 0.062476761046310385,
+        "numerator": "97995755212469635570707949180602005926818507712908640491169475339149039484504272713222279827"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "8862997011619750678558207320548341033517407025701084597361950849698768716767961189154877169848366697088777263239032269140839851457736950468633600000",
+        "mean": 0.06315632146554687,
+        "numerator": "559754288414038163979139589923746898984464103350353983614811357168554192110994308339213053595206543512558481323222341762335121116950498680573148607"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "7104467311746223198495365195455108173889838731890950685024891621108926566820113409998160347982314502050882652900393958732800000",
+        "mean": 0.01711857514048263,
+        "numerator": "121618357509230344250397292841262030927494845161924324070134217515769803542396584542474849497222191449282478155394564879854409"
+      },
+      "seed_minimum": {
+        "denominator": "11921753107619497854744518943368932289250469532720035173013026994781428052263406100217832873473779169150425600",
+        "mean": -0.03299602467935511,
+        "numerator": "-393370459760191464262703941477108555632694524746381553012219356431704609668995951081382598003436744204120559"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "238193754491449832105930239139230863466504451698525258987810699834157173928804399099885757321308319818661874736605440000",
+        "mean": 0.08027489660602949,
+        "numerator": "19120979014003108179662679503622680881086282421455499393963609876193163013068948068721294199663352815524346465616110861"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "34175716476805758616520447428034403025243121491103382207427682476438452171857258345381206366935301983974325127049708429807078467221033681007051161600000",
+        "mean": 0.053463215880482536,
+        "numerator": "1827143707869630187722910862578065297726491634287060524893384802321639415194669788007859806960363394216461599378940624780377895048594555392787384049479"
+      },
+      "policy_id": "ascii_letters",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "113671476987939571175925843127281730782237419710255210960398265937742825069121814559970565567717032032814122446406303339724800000",
+        "mean": 0.010280927793631937,
+        "numerator": "1168648247108501000909088669391481735122810963173616117113452054351127053597788502138304790779781152999975803030168278941725053"
+      },
+      "seed_minimum": {
+        "denominator": "3576525932285849356423355683010679686775140859816010551903908098434428415679021830065349862042133750745127680000",
+        "mean": -0.027651024977490987,
+        "numerator": "-98894607886280261674876561185660353942154894706902474429347600862640113868429170663950089180183698018943545893"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "636063100636447751108356649668195435960416319771131162504846300942181483843123104521578587417565707216592928659522560000",
+        "mean": 0.06374414367411448,
+        "numerator": "40545297672772455846894087582415169714074882728477471188922959287927324579169677743360081971372085309732313627141501273"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "5165725489019350208104559406850023432946903753838929023543946595947553682673406023832389873994431544457449233440000",
+        "mean": 0.019402978472535738,
+        "numerator": "100230460458471597578098240365274453311830131678788114561665493999392209879850855416748907202203437310080024085887"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "115660831387099669466354225407754920151196051409498228301604351170051138213853888000",
+        "mean": 0.023373220325784958,
+        "numerator": "2703366095074144818715208387872766543281594241099475984620585174160144739549900421"
+      },
+      "seed_minimum": {
+        "denominator": "2756742557798822836212286234653470327201991917453579287135174328725214319709840858560000",
+        "mean": -0.028014976838629555,
+        "numerator": "-77230078906798416248948772776283079124908696559860713210095657055144631884625722939691"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "936123321910839848535148806968178910164338206595372294676901827077938683023433917735558816421661504320000",
+        "mean": 0.042776198798320696,
+        "numerator": "40043797317802445064315230664517410684814017416083654485537864333933713427488438393273253221490105245801"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "37647181215428900759065046586285776837082737963583710004918762312890504869180428749445144384716993528545955777040000",
+        "mean": 0.01111543031538212,
+        "numerator": "418464619370662682761156098050951633468040132907235543543428979877045882336019177922303522663576770719330935277737"
+      },
+      "policy_id": "bench_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "1661310123560158888698542510402297943989906920245520006513953407715279985253537664000",
+        "mean": 0.020672033958745756,
+        "numerator": "34342659290243711573490166431115524556726873478154231941056608732459205737793970887"
+      },
+      "seed_minimum": {
+        "denominator": "143207405599938848634404479722258198815687891815770352578450614479231912712199525120000",
+        "mean": -0.025345783735003017,
+        "numerator": "-3629703931586910216025153092709696926420691422586837307597973806817983138414353876631"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "710429287809392460146806704035360228766603987654321970499893307334506598274878472436974466304001302391680000",
+        "mean": 0.031787464274127875,
+        "numerator": "22582745605535172913940257912630212634050227686932110628876750832661471417399157748346061095075650144977319"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "6462893519644078191332259203748667026270646609217764392015943345246188349242080826272873515538532156113905920000",
+        "mean": 0.08493763747596401,
+        "numerator": "548942906817285826914693871711309166678238335505124049951102739651975069090883064096877409067470951103644766921"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "unrestricted",
+      "seed_maximum": {
+        "denominator": "535968498956132232008550960535331152898693336267822260047364226322411657510480491638624143163776000",
+        "mean": 0.005821334064762214,
+        "numerator": "3120051680612803688793143247385980173022692562708156929907197658053598338576379933969346018934081"
+      },
+      "seed_minimum": {
+        "denominator": "34808085101621554468155172281400067852777775260011454698723586286999301149267144960000",
+        "mean": -0.035105595073694644,
+        "numerator": "-1221958540868229670374955718615038884149772950802214364536800281005527728497836335539"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "21217348772456656192582944644199492440478794959379451578936097546242328120548101426807445760000",
+        "mean": 0.09075897154072622,
+        "numerator": "1925664753409056236343661144284298682630104007922061433425965855572525241179296467391961232223"
+      },
+      "within_fixed_seed_range": false
+    },
+    {
+      "all_fixed_seed_values_defined": true,
+      "outside_range_gap": {
+        "denominator": "8034889237017931422892054676456215142107370695102391679878204288285644204742835464697373303403138530766973419520000",
+        "mean": 0.0527730939357937,
+        "numerator": "424025964468845054637022387264428128379273888931385193933063089761898596730638531139969222676769418610416013034183"
+      },
+      "policy_id": "bench_and_minim_sequences",
+      "scope": "half",
+      "seed_maximum": {
+        "denominator": "14063813412608909767904377204447089452061713143667656103642837298700081893075008100597497516617482240000",
+        "mean": 0.009703667110516683,
+        "numerator": "136470563660376478007636994807474402766430164941596837393822286143970876117810348386384201112070929481"
+      },
+      "seed_minimum": {
+        "denominator": "28351746735998201623255422584043603654278671784364168746540985604733301742548239040000",
+        "mean": -0.029983881817517488,
+        "numerator": "-850095423452357236732134749907076033870013443089996230966283706674186299812818308621"
+      },
+      "source_id": "IT2a",
+      "spacing": "join",
+      "target": {
+        "denominator": "1568515293867924633617520383287474965629801025968111305535735482938993287632926579004746240000",
+        "mean": 0.062476761046310385,
+        "numerator": "97995755212469635570707949180602005926818507712908640491169475339149039484504272713222279827"
+      },
+      "within_fixed_seed_range": false
+    }
+  ]
+}

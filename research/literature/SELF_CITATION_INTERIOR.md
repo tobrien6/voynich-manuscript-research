@@ -11,6 +11,8 @@ new measurement. The [complete report](self-citation-interior.json) retains ever
 seed, eligibility exclusion, count-vector fingerprint, exact rational mean,
 range endpoint and gap. No Java process, seed, configuration or permutation draw
 was added or changed for this comparison.
+A [combined figure](figures/GENERATOR_INTERIOR_COMPARISON.md) displays these
+original points alongside the separately declared exact-size sensitivity result.
 
 ## Fixed inputs and comparison units
 
