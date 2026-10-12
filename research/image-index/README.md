@@ -6,6 +6,11 @@ This contribution indexes the complete public [Yale IIIF manifest for object 200
 
 ## Files and units
 
+The [multispectral source intake](MULTISPECTRAL_INTAKE.md) adds selected public
+supplementary views of 1r and 116v with hashes, processing limits and an EXIF
+orientation difference between two otherwise identical 116v copies. These views
+leave glyph readings and legacy numbering unresolved.
+
 - [canvases.csv](canvases.csv): one row per Yale canvas, including its exact label, zero-based manifest index, one-based viewer position, canvas URI, image identifier, catalog image link, full image URL, image service, and source dimensions.
 - [folio-sides.csv](folio-sides.csv): one row per explicitly labeled numbered side, with **every matching canvas** retained. Semicolon-separated lists of indices, image identifiers, canvas URIs, and links have corresponding positions. This is the reverse lookup for locating source views before transcription.
 - [audit.json](audit.json): calculated counts, repeated mappings, numbering gaps, the catalog comparison, access date, and SHA-256 of the exact input response.
