@@ -61,6 +61,11 @@ describe different editions; reproduce the counts from the pinned bytes.
 
 ## Limits and next experiment
 
+A [synthetic entropy sanity check](../representation/ENTROPY_SANITY.md) shows
+how reversible serialization changes character-context measurements while
+preserving the underlying symbol sequence. Define units and contexts explicitly
+before calling an encoded-character statistic a glyph statistic.
+
 The [native-Eva token adapter](TOKEN_ADAPTER.md) supplies explicit split/join
 spacing policies and traceable eligible/excluded locus records for later tests.
 It is a conservative preprocessing choice, not a glyph adjudication or decoding.

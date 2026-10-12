@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "scope": "Synthetic measurement-unit sanity check; no manuscript observations or glyph mapping",
+  "generator": {
+    "method": "seeded shuffle of a fixed balanced multiset",
+    "seed": 20261011,
+    "count_per_symbol": 1024,
+    "symbol_count": 4096,
+    "python": "3.14.3"
+  },
+  "source_sequence_sha256": "ecf34d3143297b1c3d0e8cc9ce4c291f7db8b40d9ec8d52a92d0e6006eae2753",
+  "log2_distinct_balanced_sequences": 8174.0223155302,
+  "support_interpretation": "If chosen uniformly from all distinct balanced sequences, this is the ensemble entropy in bits; conditioning on the recorded seed makes this realization deterministic.",
+  "atomic_empirical_bits_per_symbol": {
+    "0": 2.0,
+    "1": 1.999449688971,
+    "2": 1.991382608183
+  },
+  "representations": [
+    {
+      "name": "single_ascii",
+      "mapping": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "round_trip_verified": true,
+      "ascii_character_count": 4096,
+      "characters_per_symbol": 1.0,
+      "serialized_sha256": "fe50a68241736dcade7c659af17be72bf5fcb73ab372a8ae1816d38d57f1cdbc",
+      "ideal_uniform_block_bits_per_original_symbol": 1.995610916877,
+      "ideal_uniform_block_bits_per_ascii_character": 1.995610916877,
+      "empirical_bits_per_ascii_character": {
+        "0": 2.0,
+        "1": 1.999449688971,
+        "2": 1.991382608183
+      },
+      "decoded_bits_per_symbol": {
+        "0": 2.0,
+        "1": 1.999449688971,
+        "2": 1.991382608183
+      }
+    },
+    {
+      "name": "escaped_ascii",
+      "mapping": {
+        "A": "@128;",
+        "B": "@129;",
+        "C": "@130;",
+        "D": "@131;"
+      },
+      "round_trip_verified": true,
+      "ascii_character_count": 20480,
+      "characters_per_symbol": 5.0,
+      "serialized_sha256": "600df207135ea0835e2263bd777374c835b110ebc4a89da862bd6a6ef9294264",
+      "ideal_uniform_block_bits_per_original_symbol": 1.995610916877,
+      "ideal_uniform_block_bits_per_ascii_character": 0.399122183375,
+      "empirical_bits_per_ascii_character": {
+        "0": 2.741446071166,
+        "1": 0.580510368955,
+        "2": 0.400039066315
+      },
+      "decoded_bits_per_symbol": {
+        "0": 2.0,
+        "1": 1.999449688971,
+        "2": 1.991382608183
+      }
+    }
+  ]
+}
