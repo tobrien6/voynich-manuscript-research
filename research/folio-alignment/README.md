@@ -51,7 +51,7 @@ The [example report](example-alignment.json) uses the manifest retrieved on Octo
 | `117v` | label_unmatched | 0 | No folio alias is supplied. |
 | `f67r1` | unsupported_identifier | 0 | No convention-specific panel mapping is supplied. |
 
-The 117v control relates to the unresolved [catalog/digital foliation issue](https://github.com/tobrien6/voynich-manuscript-research/issues/3). It tests safe behavior in the presence of conflicting labels; it does not resolve the conflict.
+The 117v control relates to the unresolved [catalog/digital foliation issue](https://github.com/tobrien6/voynich-manuscript-research/issues/13). It tests safe behavior in the presence of conflicting labels; it does not resolve the conflict.
 
 ## Limits and next test
 
@@ -61,6 +61,12 @@ The Python interface is `align(raw_manifest_bytes, requested_identifiers, access
 
 Run `python3 -m unittest discover -s scripts -p 'test_align_folio_canvases.py'` to check partial/combined mappings, absent aliases, panel-suffix rejection, shared-index image references, CLI failure behavior, and digest verification.
 
-The next step is to document the chosen transcription edition's folio and panel notation, then create a reviewed crosswalk retaining both original transcription identifiers and these image references. Record aliases only with cited supporting evidence. A manuscript-wide transcription join should report unmatched and unsupported identifiers before calculating corpus statistics.
+The [whole-corpus image-reference audit](IMAGE_COVERAGE.md) now documents the
+pinned ZL3b/IT2a naming convention, retains coarse side references separately
+from strict lookups and unresolved panel regions, and derives transitive
+shared-scan dependency groups. It leaves this utility's suffix rejection intact.
+The next step is a reviewed image/text crosswalk with explicit panel regions.
+Record historical aliases only with cited supporting evidence, and keep
+incomplete or unsupported joins visible before defining statistical samples.
 
 Images are linked; this report contains metadata rather than redistributed scans. No decipherment or translation is established by an identifier join.
