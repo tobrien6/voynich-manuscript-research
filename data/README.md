@@ -16,6 +16,8 @@ The [comparator extension](../research/transliteration/COMPARATORS.md) adds nati
 v101 and full/basic reference-Eva exports while retaining their separate roles.
 Exploratory [token and repetition baselines](../research/transliteration/BASELINES.md)
 compare uncertainty policies on paired loci.
+[Locus-position effects](../research/transliteration/POSITION_EFFECTS.md) test
+boundary contrasts with conditional controls and explicit eligibility rules.
 Run the audit offline with Python 3.10 or later:
 
 ```sh

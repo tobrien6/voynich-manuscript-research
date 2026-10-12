@@ -38,6 +38,8 @@ The [working transliteration decision](research/transliteration/DECISION.md) now
 
 The [reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) extends the accepted ZL/IT source decision with GC and both RF variants, using the same IVTFF reader. Identical RF alphabet headers conceal different native text, so later analyses must retain exact variant URLs and source hashes. This is a corpus identity check, not a decipherment result.
 
+The [token and repetition baselines](research/transliteration/BASELINES.md) expose sensitivity to uncertain spacing and compare adjacent equal representations with within-locus shuffles. The [locus-position analysis](research/transliteration/POSITION_EFFECTS.md) records prefix and notation-length contrasts at original boundary slots under the same uncertainty policies. These are exploratory constraints on candidate mechanisms from already exposed public text; they are not a held-out decipherment evaluation or a translation.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.

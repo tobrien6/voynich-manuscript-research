@@ -22,7 +22,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [GC and full/basic reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) and [aggregate records](research/transcriptions/intake-audit.json)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
-Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending. Decoding and translation are the research objective; no new transcription, statistical result, or validated decipherment has been established.
+Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending. Exploratory statistics on pinned transliterations are now recorded. Decoding and translation are the research objective; no new transcription or validated decipherment has been established.
 
 ## Research practice
 
@@ -32,6 +32,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Token and repetition baselines](research/transliteration/BASELINES.md) and [locus-position effects](research/transliteration/POSITION_EFFECTS.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.
 - [Reproducible token-order controls](research/token-controls/README.md): synthetic-tested line and folio-side shuffles with explicit sampling constraints and pinned input provenance.
