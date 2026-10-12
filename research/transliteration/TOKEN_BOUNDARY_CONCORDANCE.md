@@ -8,6 +8,9 @@ disagreements under both policies, including the
 [f67r1.1 case](https://github.com/tobrien6/voynich-manuscript-research/pull/106).
 Literal string agreement therefore does not establish tokenization agreement.
 
+The [source-pinned count figure](figures/TOKEN_BOUNDARIES.md) displays both
+complete category partitions and the common denominator.
+
 This exposed-data description measures the pinned transcriptions. It does not
 adjudicate manuscript spaces, choose an edition, or establish glyph equivalence,
 a language, a decipherment, or a translation. It supplies a traceable set of
@@ -128,3 +131,7 @@ conventions. Next, review deterministically selected persistent disagreements
 against independently assigned manuscript regions, retaining image uncertainty;
 test any frozen segmentation rule on exposure-valid reserved material under the
 [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
+
+The [exact token-count accounting](BOUNDARY_COUNT_ACCOUNTING.md) separates
+same-chain boundary contributions from the unaligned different-chain remainder
+and retains equal-token-count cases with different encoded boundaries.

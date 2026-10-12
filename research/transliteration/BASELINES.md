@@ -109,6 +109,11 @@ every distance-1 summary and extends equal-pair counting to distances 2–4,
 retaining excluded coordinates and cross-distance covariance. It remains an
 exploratory conditional-control description.
 
+The [distinct repeating-type follow-up](REPEATING_TYPES.md) counts each
+representation with any immediate self-repeat once across the cohort. Its
+exact conditional mean uses fixed-gap independent-set counts and cross-locus
+no-event products; it supplies no type-count variance or tail probability.
+
 It does not test a particular language, cipher, grammatical structure, or text
 generation mechanism. A candidate could be compatible with this result without
 being supported by it. `P0` loci are analysis units; we have not reconstructed
