@@ -103,7 +103,7 @@ complete repository import closure and late alias rejection by exclusive
 creation. A separate post-result scanner and flat-counter calculation, without
 calling the production fit or score functions, independently reconstruct all
 60 sparse fitted-count hashes and every one of 29,820 locus scores using exact
-rational probabilities. Largest locus-loss difference is 5.69e-14 bits; all
+rational probabilities. Largest locus-loss difference is below 5.69e-14 bits; all
 counts, pooled/macro gains and decisions agree. This checks computation on the
 same inputs, not independent manuscript evidence.
 
