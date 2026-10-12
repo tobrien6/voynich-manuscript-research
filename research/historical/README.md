@@ -84,6 +84,11 @@ streams on 223 exact shared page IDs, while 39 differing streams retain the same
 symbol frequencies. It preserves omitted-symbol counts and the excluded modern
 envelope separately; those matches do not establish full text or glyph identity.
 
+The [f46v source-container example](F46V_SOURCE_CONTAINER.md) preserves one
+historical H envelope and two present IT2a P0/Pt loci with the same joined
+lowercase projection. The default modern adapter excludes Pt by kind; this
+source-unit difference creates no verified record or image crosswalk.
+
 ## Reproduce and next test
 
 Python 3.10 or later, standard library only; run from the repository root:
