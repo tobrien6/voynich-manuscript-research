@@ -1,6 +1,6 @@
 {
   "control": "independent uniform token-bag permutations within original loci; exclusions fixed",
-  "engine_sha256": "26fecd7cf5f9ff7994f6e889916870d7f028f5fd05644d0f5985cb2143b9d0bd",
+  "engine_sha256": "12ecac6a7e21b0be3a587226831c446b08da74832937797d4b1706c793e892a2",
   "limits": [
     "Conditional SD scaling supplies no normal tail, confidence or mechanism probability.",
     "Global deduplication and finite bags couple type indicators; signed covariance retained.",

@@ -198,8 +198,9 @@ def main():
                 raise ValueError('variance report differs from complete producer replay')
             print('Accepted mean report and exact covariance-aware type variance verified.')
         elif args.output:
+            rendered = parent.encoded(result)
             protect_output(args.output)
-            args.output.write_bytes(parent.encoded(result))
+            args.output.write_bytes(rendered)
         else:
             print(parent.encoded(result).decode('utf-8'), end='')
     except (OSError, ValueError, TypeError, KeyError) as error:

@@ -1,8 +1,10 @@
 from collections import Counter
+import contextlib
 from decimal import Decimal, localcontext
 from fractions import Fraction
 from itertools import permutations, product
 import json
+import io
 import os
 from pathlib import Path
 import shutil
@@ -185,6 +187,39 @@ class RepeatingTypeVarianceTests(unittest.TestCase):
             self.assertEqual(failed.returncode, 1)
             self.assertIn('complete parent replay', failed.stderr)
             self.assertFalse((root / 'failed.json').exists())
+
+    def test_serialization_aliases_are_rejected_before_writing_protected_inputs(self):
+        for alias_kind in ('symlink', 'hardlink'):
+            for protected_path in (module.PLAN, module.MEAN_REPORT, module.ENGINE):
+                with self.subTest(alias_kind=alias_kind, protected_path=protected_path), \
+                        tempfile.TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    (root / 'data').mkdir()
+                    (root / 'data/transliterations.json').write_text('{"sources":[]}')
+                    source = root / protected_path
+                    source.parent.mkdir(parents=True, exist_ok=True)
+                    original = b'original synthetic protected input\n'
+                    source.write_bytes(original)
+                    target = root / 'variance.json'
+                    original_encoded = parent.encoded
+
+                    def serialize(value):
+                        rendered = original_encoded(value)
+                        if alias_kind == 'symlink':
+                            target.symlink_to(source)
+                        else:
+                            os.link(source, target)
+                        return rendered
+
+                    with patch.object(module, 'ROOT', root), patch.object(parent, 'ROOT', root), \
+                            patch.object(module, 'report', return_value={'synthetic': True}), \
+                            patch.object(parent, 'encoded', side_effect=serialize), \
+                            patch('sys.argv', ['variance', '--output', str(target)]), \
+                            contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                        module.main()
+                    self.assertEqual(error.exception.code, 1)
+                    self.assertEqual(source.read_bytes(), original)
+                    self.assertEqual(target.read_bytes(), original)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 # Conditional spread of the distinct repeating-type count
 
-The primary ZL split/exclude result has **exact conditional variance 33.4164**
+The primary ZL split/exclude result has **conditional variance about 33.4164**
 and **SD 5.7807**. Its 103 observed repeating representations, against mean
 93.9073, are 1.573 conditional SD above that mean. This adds spread to the
 [accepted type-count description](REPEATING_TYPES.md), with every original
@@ -97,13 +97,15 @@ python3 scripts/repeating_type_variance.py \
 python3 scripts/repeating_type_variance.py --output /tmp/repeating-type-variance.json
 ```
 
-Seven new test methods cover 255 original retention layouts, 21,845 direct
+The original seven test methods cover 255 original retention layouts, 21,845 direct
 three-color assignments and 2,816 marked-count cases; exhaustive independent
 locus permutations; global deduplication; signed and forced-indicator cases;
 and all 64 masks of a double-occurrence bag against the accepted pair moments.
 Complete synthetic-source CLI tests protect copied mean/plan/code/raw inputs,
 reject a changed parent mean and typed variance cache, and replay both policies.
-The parent and accepted moment/tokenizer suites bring the targeted total to 30.
+The original implementation's targeted suite had 30 tests, including the parent
+and accepted moment/tokenizer suites. The writer regression below brings the
+current targeted total to 31.
 
 A separate original-coordinate recursive counter, without retained-component
 convolution or ratio corrections, verifies every actual variant's global
@@ -125,6 +127,14 @@ Source/catalog, parent mean/plan/engine, new plan/engine and preprocessed-slot
 fingerprints are retained. Output guards run before calculation and before
 writing, protecting the parent inputs, accepted mean, new plan and producer.
 The committed result contains no native token strings or pair identities.
+
+A post-result maintainer correction completes serialization before the final
+output guard. Temporary symlink/hardlink aliases introduced during serialization
+are rejected without altering the accepted mean, plan or implementation bytes.
+The original pre-measurement implementation and result remain in history; this
+writer repair changes only the current engine fingerprint in the report.
+All scientific fields and parent pins are preserved. The checks do not claim
+an atomic filesystem transaction.
 
 ## Interpretation and next test
 
