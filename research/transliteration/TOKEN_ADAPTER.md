@@ -2,6 +2,11 @@
 
 This adapter provides a versioned preprocessing interface for the separately owned baseline, shuffle-control, and evaluation-split work. It reuses the pinned source catalog and `scripts.ivtff` reader. It produces **encoded transcription strings**, not decoded words, manuscript glyph units, or physical-line segments.
 
+For eligible plain-text loci it also reuses the native token grammar in
+`scripts.token_baselines`. Ambiguous loci are flagged and excluded before that
+lexer's first-alternative path is reached. This keeps boundary handling shared
+while making the new whole-locus eligibility policy explicit.
+
 ## Explicit processing choices
 
 Run from the repository root with Python 3.10 or later:

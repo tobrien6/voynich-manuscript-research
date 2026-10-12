@@ -13,8 +13,12 @@ import re
 
 try:
     from .audit_transliterations import ROOT, load_sources
+    from .token_baselines import tokenize as native_token_slots
+    from .ivtff import TAG
 except ImportError:
     from audit_transliterations import ROOT, load_sources
+    from token_baselines import tokenize as native_token_slots
+    from ivtff import TAG
 
 
 INLINE = re.compile(r"<[^<>]*>")
@@ -34,7 +38,7 @@ def tokenize(text, uncertain_spaces):
         if tag in ("<->", "<~>"):
             drawing_count += 1
             return "."
-        if tag in ("<%>", "<$>") or tag.startswith("<!") or tag.startswith("<@"):
+        if tag in ("<%>", "<$>") or tag.startswith("<!") or TAG.fullmatch(tag):
             return ""
         raise ValueError("unsupported inline annotation")
 
@@ -51,13 +55,19 @@ def tokenize(text, uncertain_spaces):
     if any(marker in payload for marker in ("]", "}", ";", ":")) and not flags:
         flags.append("unsupported_notation")
     comma_count = payload.count(",")
-    normalized = payload.replace(",", "." if uncertain_spaces == "split" else "")
-    tokens = normalized.split(".")
+    tokens = None
     if not flags:
-        if any(not token for token in tokens):
-            flags.append("empty_token_boundary")
-        elif any(not re.fullmatch(r"[A-Za-z]+", token) for token in tokens):
-            flags.append("non_plain_eva_character")
+        try:
+            # Reuse the existing grammar and boundary handling. Flagged ambiguous
+            # loci never reach its first-alternative selection path.
+            tokens = [slot.value for slot in native_token_slots(text, uncertain_spaces)]
+        except ValueError:
+            flags.append("unsupported_token_structure")
+        else:
+            if not tokens:
+                flags.append("empty_token_boundary")
+            elif any(not re.fullmatch(r"[A-Za-z]+", token) for token in tokens):
+                flags.append("non_plain_eva_character")
     return {
         "tokens": tokens if not flags else None,
         "token_count": len(tokens) if not flags else None,
