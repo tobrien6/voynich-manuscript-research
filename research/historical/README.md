@@ -34,6 +34,9 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
+path and global type deduplication, with signed type covariance, all four
+outcomes and descriptive SD scaling without a calibrated tail.
 
 ## Method
 
