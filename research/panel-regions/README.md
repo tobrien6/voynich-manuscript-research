@@ -6,7 +6,7 @@ placement of native `f67r1` and `f67r2` before a glyph-level alignment?
 The [proposal record](f67r-proposal.json) is provisional. It is **not usable as
 a verified corpus join** and does not make the pilot's unresolved 67r target
 complete. It complements the
-[whole-corpus side-reference audit proposed in PR #37](https://github.com/tobrien6/voynich-manuscript-research/pull/37).
+[whole-corpus side-reference audit in PR #37](https://github.com/tobrien6/voynich-manuscript-research/pull/37).
 
 ## Sources and observation method
 
