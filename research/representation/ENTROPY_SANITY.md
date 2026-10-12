@@ -4,6 +4,11 @@ This synthetic check supports the project's requirement to define transcription
 units before measuring glyph or character entropy. It uses invented symbols and
 known reversible encodings. It establishes no manuscript statistic or glyph map.
 
+The separate [finite-edge accounting check](ENTROPY_EDGES.md) holds atomic
+units fixed and compares marginal counting populations. Together the two
+examples distinguish representation effects from finite-boundary estimator
+differences; neither is a manuscript entropy result.
+
 ## Method fixed by the example
 
 Create 1,024 instances of each atomic label A, B, C, and D. Shuffle that balanced
