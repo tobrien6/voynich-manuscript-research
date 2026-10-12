@@ -2,7 +2,7 @@
   "schema_version": 1,
   "plan_commit": "6449488",
   "intake_report": "research/source-audit/terminal-folio-intake.json",
-  "intake_report_sha256": "be852d36232a712304c9f2e400d5a04977b7e2fbf00f44a09cb13b777e85e701",
+  "intake_report_sha256": "6e450e4fb1b234227e6d788a802b520b35dc24eef9f52be45e925ce47a6f79fa",
   "inspection_metadata_recorded_at_utc": "2026-10-12T04:05:16Z",
   "inspection_timezone": "America/New_York",
   "observer": "Codex initial source-image observation; one observer, not independently replicated",
@@ -146,5 +146,6 @@
     "Image fingerprints identify inspected bytes, not invariant future derivatives or verified readings.",
     "The alias registry remains unresolved and the flyleaf stays unnumbered."
   ],
-  "complementary_numbering_audit_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/57"
+  "complementary_numbering_audit_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/57",
+  "accepted_numbering_context_merge": "65aa7fe"
 }

@@ -2187,7 +2187,7 @@
     },
     "folio_aliases": {
       "path": "research/folio-aliases/decisions.json",
-      "sha256": "b0637ffd39c38ad2428f3667cb07aa65b23ed0d6537ae2af1583c49337766387"
+      "sha256": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8"
     }
   },
   "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309"
