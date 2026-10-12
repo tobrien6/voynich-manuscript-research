@@ -133,6 +133,12 @@ pass for their respective claims, and neither certifies unseen material,
 independent review, or correct image/text alignment. Existing full-corpus
 analysis and inventory exposure still belong in the split declaration.
 
+The image gate reads split files with the [same strict JSON loader](../evaluation/SPLIT_FORMAT.md)
+as the base validator. Duplicate decoded object names and literal non-JSON
+numeric constants fail before structural or image-dependency checks, preserving
+one unambiguous declaration at both entry points. The coverage report and its
+source/image pins are unaffected by this serialized-split check.
+
 Tests exercise partial-view preservation, explicit convention rejection,
 Rosettes deduplication, absent historical aliases, transitive grouping,
 per-source/nonexistent denominators, pair isolation, source/index pin gates,
