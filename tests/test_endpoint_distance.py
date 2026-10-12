@@ -39,6 +39,33 @@ def synthetic_root(root):
     return root
 
 
+@lru_cache(None)
+def direct_position_probability(size, canonical_edges):
+    """Count position assignments, without contracting chains or calling its counter."""
+    edges = [(size - 1 if a == -1 else a, size - 1 if b == -1 else b)
+             for a, b in canonical_edges]
+    if any(a == b or a == size - 1 or b == 0 for a, b in edges):
+        return Fraction()
+    if len({a for a, _ in edges}) != len(edges) or len({b for _, b in edges}) != len(edges):
+        return Fraction()
+    identities = sorted({i for edge in edges for i in edge if i not in (0, size - 1)})
+    valid = total = 0
+    for slots in permutations(range(1, size - 1), len(identities)):
+        positions = {0: 0, size - 1: size - 1, **dict(zip(identities, slots))}
+        total += 1
+        valid += all(positions[b] == positions[a] + 1 for a, b in edges)
+    return Fraction(valid, total)
+
+
+def independent_probability(size, edges):
+    # Sort original identities rather than the production encounter-order renaming.
+    inner = sorted({i for edge in edges for i in edge if i not in (0, size - 1)})
+    ranks = {node: i + 1 for i, node in enumerate(inner)}
+    mapping = lambda node: 0 if node == 0 else (-1 if node == size - 1 else ranks[node])
+    canonical = tuple(sorted((mapping(a), mapping(b)) for a, b in edges))
+    return direct_position_probability(size, canonical)
+
+
 class EndpointDistanceTests(unittest.TestCase):
     def test_edit_distance_matches_independent_recursive_program_on_small_strings(self):
         @lru_cache(None)
@@ -170,6 +197,60 @@ class EndpointDistanceTests(unittest.TestCase):
                 with patch('scripts.paragraph_endpoint_distance.ROOT', root), \
                         patch('sys.argv', ['edit.py', '--check', str(output)]), \
                         redirect_stderr(io.StringIO()), self.assertRaises(SystemExit): main()
+
+    def test_real_costs_and_moments_by_independent_string_and_position_programs(self):
+        root = Path(__file__).resolve().parents[1]
+        record = json.loads((root / 'research/transliteration/paragraph_endpoint_distance.json').read_text())
+        corpus = corpus_build(root)
+        units = {p['common_unit_id']: p for p in corpus['paragraphs'] if p['common_eligible']}
+        self.assertEqual({p['common_unit_id'] for p in record['paragraphs']}, set(units))
+        def f(value): return Fraction(value['numerator'], value['denominator'])
+        @lru_cache(None)
+        def distance(a, b):
+            if not a: return len(b)
+            if not b: return len(a)
+            return min(1 + distance(a[1:], b), 1 + distance(a, b[1:]),
+                       (a[0] != b[0]) + distance(a[1:], b[1:]))
+        totals = [{'observed': Fraction(), 'mean': Fraction(), 'variance': Fraction(), 'invariant': 0}
+                  for _ in range(4)]
+        for paragraph in record['paragraphs']:
+            native = units[paragraph['common_unit_id']]
+            for vi, (variant, source) in enumerate(zip(paragraph['variants'], native['variants'])):
+                rows = source['loci'];size = len(rows)
+                weights = [[None if a == b else Fraction(distance(rows[a]['tokens'][-1], rows[b]['tokens'][0]),
+                                                        max(len(rows[a]['tokens'][-1]), len(rows[b]['tokens'][0])))
+                            for b in range(size)] for a in range(size)]
+                expected_matrix = [[None if w is None else {'numerator': w.numerator, 'denominator': w.denominator}
+                                    for w in row] for row in weights]
+                self.assertEqual(variant['cost_matrix'], expected_matrix)
+                probabilities = {(a, b): independent_probability(size, [(a, b)])
+                                 for a in range(size) for b in range(size) if a != b}
+                for (a, b), p in probabilities.items():
+                    self.assertEqual(f(variant['adjacency_probability_matrix'][a][b]), p)
+                edges = [edge for edge, p in probabilities.items() if p and weights[edge[0]][edge[1]]]
+                mean = sum((weights[a][b] * probabilities[a, b] for a, b in edges), Fraction())
+                diagonal = sum((weights[a][b] ** 2 * probabilities[a, b] * (1 - probabilities[a, b])
+                                for a, b in edges), Fraction())
+                covariance = Fraction()
+                for first, second in combinations(edges, 2):
+                    q = independent_probability(size, [first, second])
+                    covariance += weights[first[0]][first[1]] * weights[second[0]][second[1]] * (
+                        q - probabilities[first] * probabilities[second])
+                variance = diagonal + 2 * covariance
+                observed = sum((weights[i][i + 1] for i in range(size - 1)), Fraction())
+                self.assertEqual(f(variant['observed_cost_sum']), observed)
+                self.assertEqual(f(variant['conditional_mean_cost_sum']), mean)
+                self.assertEqual(f(variant['conditional_variance_cost_sum']), variance)
+                self.assertEqual(f(variant['diagonal_variance']), diagonal)
+                self.assertEqual(f(variant['twice_covariance_sum']), 2 * covariance)
+                self.assertEqual(variant['invariant'], variance == 0)
+                totals[vi]['observed'] += observed;totals[vi]['mean'] += mean
+                totals[vi]['variance'] += variance;totals[vi]['invariant'] += variance == 0
+        for variant, total in zip(record['variants'], totals):
+            self.assertEqual(f(variant['observed_cost_sum']), total['observed'])
+            self.assertEqual(f(variant['conditional_mean_cost_sum']), total['mean'])
+            self.assertEqual(f(variant['conditional_variance_cost_sum']), total['variance'])
+            self.assertEqual(variant['invariant_paragraphs'], total['invariant'])
 
 
 if __name__ == '__main__':
