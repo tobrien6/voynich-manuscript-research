@@ -1,0 +1,48 @@
+{
+  "first_requests": [
+    {
+      "native_dimensions": [
+        2812,
+        3770
+      ],
+      "native_locus_key": "f13v.8",
+      "url": "https://collections.library.yale.edu/iiif/2/1006099/full/!1800,1800/0/default.jpg"
+    },
+    {
+      "native_dimensions": [
+        2852,
+        3759
+      ],
+      "native_locus_key": "f75r.44",
+      "url": "https://collections.library.yale.edu/iiif/2/1006208/full/!1800,1800/0/default.jpg"
+    }
+  ],
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/panel-regions/drawing-boundary-pair-source-context.json": "d60d0f03583cce1a2d45f973cd9dd0d80896e9e1b7bda787d1689dababd360fc",
+    "research/transliteration/BOUNDARY_SEPARATOR_PLAN.json": "97743e5c1d8a56de1ce89b826a70e8fdd60b74e29f9f2c647ffc975298bda17c",
+    "research/transliteration/boundary_separator_provenance.json": "fa6dd39126e2ab7886d6832a8878a2861c2e4db66b641ef43810df8da81b0540"
+  },
+  "inspection_protocol": "Inspect one bounded whole carrier per case, then at most one source-informed row/block crop and one native-resolution target detail for each. Keep orientation. Choose crop coordinates adaptively from that carrier, record native rectangles/URLs/dimensions/bytes/hashes and viewing resizes. Retain both attempts and failed mappings, without replacements or silent additional leaves.",
+  "limits": "Dependent contribution remains draft until196acceptance and prerequisite-aware integration. No held178/191 update, verification promotion, pixel/PDF/font republication, independent/untouched evaluation, source preference, decipherment or translation.",
+  "observation_scope": "Record broad provisional row/illustration geometry around the annotated gap, distinguishing source claims from visible shapes. P0 ordinals are source order, not certified physical rows. Do not choose a preferred source, transcribe fresh glyphs, assign exact word masks, correct data or promote corpus-join readiness.",
+  "parent_head": "8b9771bc7af7517caf1af4a79204a99062e056a2",
+  "parent_pr": 196,
+  "pixel_inspection_started": false,
+  "review_id": "drawing-boundary-pair-v1",
+  "rights": "Link Yale source URLs; public access does not establish an open image license. Image bytes and IIIF metadata caches remain local.",
+  "schema_version": 1,
+  "selection": [
+    [
+      "f13v.8",
+      30
+    ],
+    [
+      "f75r.44",
+      48
+    ]
+  ],
+  "source_context": "research/panel-regions/drawing-boundary-pair-source-context.json"
+}
