@@ -28,11 +28,12 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Exploratory token and repetition baselines](research/transliteration/BASELINES.md) and [recorded results](research/transliteration/token_baselines.json)
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md): common-cohort exploration with endpoints fixed in its permutation controls
 - [First-slot prefixes across catalog sections](research/transliteration/SECTION_STRATA.md): source-specific paragraph cohorts, section contrasts, and annotation disagreements.
+- [Exploratory y-prefix lookup candidate](research/hypotheses/y-layout-prefix-v1/RESULTS.md): a precommitted removal rule and development-only vocabulary test, with prior exposure and diagnostic limitations explicit.
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
 
-Exploratory token and repetition baselines now compare uncertainty policies on the paired ZL3b and IT2a inputs. A reproducible shuffle generator supplies synthetic-tested controls for later registered experiments, and an evaluation-split validator checks declared dependencies and prior exposure. No real evaluation split or registered decoding hypothesis has been established. Decoding and translation remain the research objective; glyph adjudication, a validated decipherment, and source-linked translations remain pending.
+Exploratory token and repetition baselines now compare uncertainty policies on the paired ZL3b and IT2a inputs. A reproducible shuffle generator supplies synthetic-tested controls for later registered experiments, and an evaluation-split validator checks declared dependencies and prior exposure. The precommitted y-prefix representation candidate supplies a specific exploratory lookup prediction on data already used for candidate development. A real exposure-valid evaluation split, glyph adjudication, a validated decipherment, and source-linked translations remain pending. Decoding and translation remain the research objective.
 
 ## Research practice
 
