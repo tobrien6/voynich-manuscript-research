@@ -17,6 +17,17 @@ paper-associated 2015 repository snapshot. Its full/B input counts and all
 native annotated/page streams agree, while exact 2011 preprocessing and the
 Table 2 predictor remain unresolved.
 
+The [synthetic substitution-normalization control](SUBSTITUTION_NORMALIZATION.md)
+derives the affected-mass factor connecting conditional and whole-corpus
+word-entropy decreases. A fixed toy reverses their candidate ranking; no
+manuscript substitution result or case assignment is inferred.
+
+The [generated known-case entropy controls](KNOWN_CASE_ENTROPY_CONTROLS.md)
+retain an independently specified capitalization rule while an unrelated
+replacement can maximize word-entropy decrease. Both conditional and
+whole-corpus definitions have a constructed failure; no manuscript case
+function or natural-language error rate is inferred.
+
 The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
 Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
 attachments yielded no separate processed corpus or analysis implementation;

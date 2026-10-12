@@ -148,16 +148,37 @@ class SizeConditionedTests(unittest.TestCase):
             def calculate(_):
                 output.hardlink_to(source)
                 return {}
+            error=io.StringIO()
             with patch.object(m,'ROOT',root),patch.object(m.parent,'protect_output'),patch.object(m,'report',side_effect=calculate), \
-                    patch('sys.argv',['size','--runs',folder,'--new-report',str(output)]),contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):
+                    patch.object(m.transition,'verify_result',return_value=[]) as transition, \
+                    patch('sys.argv',['size','--runs',folder,'--new-report',str(output)]),contextlib.redirect_stderr(error),self.assertRaises(SystemExit) as exit_error:
                 m.main()
+            transition.assert_called_once_with({},root)
+            self.assertEqual(exit_error.exception.code,1)
+            self.assertIn('output aliases size-standardization inputs',error.getvalue())
             self.assertEqual(source.read_text(),'preserve');self.assertEqual(output.read_text(),'preserve')
 
     def test_cli_saved_report_scalar_types_are_not_coerced(self):
         with tempfile.TemporaryDirectory() as folder:
             saved=Path(folder)/'report.json';saved.write_text('{"count":false}')
+            error=io.StringIO()
             with patch.object(m,'report',return_value={'count':0}),patch('sys.argv',['size','--runs',folder,'--check',str(saved)]), \
-                    contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):m.main()
+                    patch.object(m.transition,'verify_result',return_value=[]) as transition, \
+                    contextlib.redirect_stderr(error),self.assertRaises(SystemExit) as exit_error:m.main()
+            transition.assert_called_once_with({'count':0},m.ROOT)
+            self.assertEqual(exit_error.exception.code,1)
+            self.assertIn('complete size-conditioned report differs from replay',error.getvalue())
+            self.assertEqual(saved.read_text(),'{"count":false}')
+
+    def test_cli_accepts_valid_typed_cache_after_transition_validation(self):
+        expected={'count':0,'mean':1.0}
+        with tempfile.TemporaryDirectory() as folder:
+            saved=Path(folder)/'report.json';raw=json.dumps(expected,sort_keys=True);saved.write_text(raw)
+            with patch.object(m,'report',return_value=expected),patch('sys.argv',['size','--runs',folder,'--check',str(saved)]), \
+                    patch.object(m.transition,'verify_result',return_value=[]) as transition,contextlib.redirect_stdout(io.StringIO()):
+                m.main()
+            transition.assert_called_once_with(expected,m.ROOT)
+            self.assertEqual(saved.read_text(),raw)
 
 
 if __name__=='__main__':
