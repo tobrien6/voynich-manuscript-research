@@ -7,6 +7,7 @@ refuses protected output paths and creates new reports exclusively.
 import argparse
 import json
 from pathlib import Path
+import unicodedata
 
 try:
     from . import audit_transliterations as audit
@@ -57,7 +58,12 @@ def protect_output(output, inputs, directories):
            for directory in directories):
         raise ValueError('new report must be outside the data and scripts directories')
     for source in inputs:
-        if resolved == source.resolve() or (
+        same_named_entry = (
+            unicodedata.normalize('NFC', resolved.name).casefold()
+            == unicodedata.normalize('NFC', source.name).casefold()
+            and resolved.parent.exists() and source.parent.exists()
+            and resolved.parent.samefile(source.parent))
+        if resolved == source.resolve() or same_named_entry or (
                 output.exists() and source.exists() and output.samefile(source)):
             raise ValueError('new report aliases an input, accepted checklist or executing module')
     if output.exists() or output.is_symlink():

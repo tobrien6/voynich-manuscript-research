@@ -241,6 +241,43 @@ class ChecklistWriterTests(unittest.TestCase):
                 self.refuse(root, '--new-report', parent / target.name)
             self.assertFalse(target.exists())
 
+    def test_removed_entry_source_name_variants_remain_protected(self):
+        for original_name, output_name in (('Retained.txt', 'retained.TXT'),
+                                           ('Retainedé.txt', 'retainedE\u0301.TXT')):
+            with self.subTest(name=original_name), tempfile.TemporaryDirectory() as directory:
+                root, _ = fixture(directory)
+                external = root / 'external'
+                external.mkdir()
+                target = external / original_name
+                target.write_bytes((root / 'data/raw/ZL3b.txt').read_bytes())
+                catalog_path = root / writer.CONTEXT[0]
+                catalog = json.loads(catalog_path.read_text())
+                catalog['sources'].append(dict(catalog['sources'][0], id='synthetic-extra', path=str(target)))
+                catalog_path.write_text(json.dumps(catalog))
+                empty = root / 'empty'
+                empty.mkdir()
+                parent = root / 'parent'
+                parent.symlink_to(empty, target_is_directory=True)
+                output = parent / output_name
+                variant = root / 'EXTERNAL'
+                if not variant.exists() or not variant.samefile(external):
+                    variant = external
+                original_build = writer.producer.build
+
+                def changed(*args, **kwargs):
+                    report = original_build(*args, **kwargs)
+                    catalog['sources'].pop()
+                    catalog_path.write_text(json.dumps(catalog))
+                    target.unlink()
+                    parent.unlink()
+                    parent.symlink_to(variant, target_is_directory=True)
+                    return report
+
+                with patch.object(writer.producer, 'build', side_effect=changed):
+                    self.refuse(root, '--new-report', output)
+                self.assertFalse(target.exists())
+                self.assertFalse(output.exists())
+
     def test_current_catalog_additions_protect_new_external_paths(self):
         with tempfile.TemporaryDirectory() as directory:
             root, report = fixture(directory)

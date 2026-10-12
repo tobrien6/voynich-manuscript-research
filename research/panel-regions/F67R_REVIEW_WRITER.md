@@ -37,7 +37,9 @@ resolved destinations, then add current paths after calculation and
 serialization. They also exclude the resolved `data` and `scripts` directories,
 including destinations reached through a parent link. Existing ancestor
 directory identities also detect case variants on case-insensitive filesystems.
-A source removed from
+Within the same physical parent directory, Unicode-normalized case variants of
+protected file names are conservatively refused even on case-sensitive
+filesystems and when an entry file has been removed. A source removed from
 the catalog during calculation remains protected by the entry snapshot; a new
 declaration is covered by the final check.
 
@@ -84,7 +86,8 @@ The tests run both copied CLIs in synthetic temporary trees, preserve the six
 legacy overwrite reproductions and demonstrate their refusal by the companion.
 They check direct/symbolic/hard aliases at entry, aliases introduced during
 calculation or serialization, catalog removal and addition, resolved directory
-links and case variants, actual module paths, source-pin drift, existing/dangling destinations
+links and case variants, removed-entry name variants, actual module paths,
+source-pin drift, existing/dangling destinations
 and a destination appearing between the final guard and exclusive open.
 Complete cache checks retain reordered-object compatibility while rejecting
 equal-valued type substitutions, missing/extra/changed fields, reordered arrays,
