@@ -2,9 +2,10 @@ from copy import deepcopy
 from contextlib import redirect_stdout, redirect_stderr
 from fractions import Fraction
 from functools import lru_cache
-from itertools import permutations, product
+from itertools import combinations, product
 import io
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -218,6 +219,112 @@ class EndpointUnitDistanceTests(unittest.TestCase):
                         patch('sys.argv', ['unit.py', '--output', str(output)]), \
                         redirect_stderr(io.StringIO()), self.assertRaises(SystemExit): main()
                 self.assertEqual(target.read_bytes(), original);output.unlink()
+
+    def test_every_real_segment_matrix_and_paired_moment_by_independent_programs(self):
+        report = json.loads((ROOT / 'research/transliteration/endpoint_unit_distance.json').read_text())
+        parent = json.loads((ROOT / PARENT).read_text())
+        corpus = corpus_build(ROOT)
+        units = [p for p in corpus['paragraphs'] if p['common_eligible']]
+        self.assertEqual([p['common_unit_id'] for p in report['paragraphs']],
+                         [p['common_unit_id'] for p in units])
+        maps = [(), BENCH, BENCH + MINIM]
+        results = [[[] for _ in range(5)] for _ in range(4)]
+
+        def assert_summary(record, observed, mean, variance, boundaries):
+            centered = observed - mean
+            for key, value in [('observed_cost_sum', observed), ('conditional_mean_cost_sum', mean),
+                               ('conditional_variance_cost_sum', variance), ('centered_cost_sum', centered)]:
+                self.assertEqual(fraction(record[key]), value)
+            self.assertEqual(record['boundary_count'], boundaries)
+            for key, value in [('observed_mean_cost', observed), ('conditional_expected_mean_cost', mean),
+                               ('centered_mean_cost', centered)]:
+                self.assertEqual(record[key], float(value / boundaries) if boundaries else None)
+            sd = math.sqrt(float(variance))
+            self.assertEqual(record['conditional_sd_cost_sum'], sd)
+            self.assertEqual(record['sd_scaled_contrast'], float(centered) / sd if sd else None)
+
+        for native, recorded, original in zip(units, report['paragraphs'], parent['paragraphs']):
+            self.assertEqual(recorded['member_keys'], native['member_keys'])
+            self.assertEqual(recorded['source_unit_ids'], native['source_unit_ids'])
+            for vi, (source, variant, old) in enumerate(zip(native['variants'], recorded['variants'], original['variants'])):
+                rows = source['loci']; size = len(rows)
+                matrices = [independent_matrix(rows, patterns) for patterns in maps]
+                for ui, weights in enumerate(matrices):
+                    expected = [[None if w is None else {'numerator': w.numerator, 'denominator': w.denominator}
+                                 for w in row] for row in weights]
+                    self.assertEqual(old['cost_matrix'] if ui == 0 else variant['policies'][ui]['cost_matrix'], expected)
+                    self.assertEqual(variant['policies'][ui]['initial_terminal_segment_counts'],
+                                     [[len(independent_segments(r['tokens'][0], maps[ui])),
+                                       len(independent_segments(r['tokens'][-1], maps[ui]))] for r in rows])
+                probabilities = {(a, b): independent_probability(size, [(a, b)])
+                                 for a in range(size) for b in range(size) if a != b}
+                for (a, b), probability in probabilities.items():
+                    self.assertEqual(fraction(old['adjacency_probability_matrix'][a][b]), probability)
+                changes = [[[None if a == b else weights[a][b] - matrices[0][a][b]
+                             for b in range(size)] for a in range(size)] for weights in matrices[1:]]
+                for mi, (weights, record) in enumerate(zip(matrices + changes,
+                                                          variant['policies'] + variant['paired_changes'])):
+                    edges = [e for e, p in probabilities.items() if p and weights[e[0]][e[1]]]
+                    observed = sum((weights[i][i+1] for i in range(size - 1)), Fraction())
+                    mean = sum((weights[a][b] * probabilities[a, b] for a, b in edges), Fraction())
+                    diagonal = sum((weights[a][b] ** 2 * probabilities[a, b] * (1 - probabilities[a, b])
+                                    for a, b in edges), Fraction())
+                    covariance = Fraction(); zero = 0
+                    for left, right in combinations(edges, 2):
+                        q = independent_probability(size, [left, right]);zero += q == 0
+                        covariance += weights[left[0]][left[1]] * weights[right[0]][right[1]] * (
+                            q - probabilities[left] * probabilities[right])
+                    variance = diagonal + 2 * covariance
+                    assert_summary(record, observed, mean, variance, size - 1)
+                    self.assertEqual(fraction(record['diagonal_variance']), diagonal)
+                    self.assertEqual(fraction(record['twice_covariance_sum']), 2 * covariance)
+                    self.assertEqual(record['invariant'], variance == 0)
+                    self.assertEqual(record['possible_interior_orders'], math.factorial(max(size - 2, 0)))
+                    self.assertEqual(record['nonzero_weight_possible_edges'], len(edges))
+                    joints = len(edges) * (len(edges) - 1) // 2
+                    self.assertEqual(record['joint_events_evaluated'], joints)
+                    self.assertEqual(record['zero_joint_events'], zero)
+                    self.assertEqual(record['positive_joint_events'], joints - zero)
+                    results[vi][mi].append((observed, mean, variance, diagonal, 2*covariance, len(edges), joints, zero))
+
+        for vi, variant in enumerate(report['variants']):
+            for mi, record in enumerate(variant['policies'] + variant['paired_changes']):
+                values = results[vi][mi]
+                totals = [sum((x[i] for x in values), Fraction()) for i in range(8)]
+                assert_summary(record, *totals[:3], sum(len(p['member_keys']) - 1 for p in units))
+                self.assertEqual(fraction(record['diagonal_variance']), totals[3])
+                self.assertEqual(fraction(record['twice_covariance_sum']), totals[4])
+                ids = [p['common_unit_id'] for p, value in zip(units, values) if value[2] == 0]
+                self.assertEqual(record['invariant_unit_ids'], ids)
+                self.assertEqual(record['invariant_paragraphs'], len(ids))
+                self.assertEqual(record['varying_paragraphs'], len(units) - len(ids))
+                for key, value in zip(('nonzero_weight_possible_edges', 'joint_events_evaluated',
+                                       'zero_joint_events'), totals[5:]):
+                    self.assertEqual(record[key], value)
+                self.assertEqual(record['positive_joint_events'], totals[6] - totals[7])
+                if mi >= 3: continue
+                baseline = results[vi][0]
+                self.assertEqual(record['newly_invariant_from_ascii'],
+                                 [p['common_unit_id'] for p, a, b in zip(units, baseline, values) if a[2] and not b[2]])
+                self.assertEqual(record['newly_varying_from_ascii'],
+                                 [p['common_unit_id'] for p, a, b in zip(units, baseline, values) if not a[2] and b[2]])
+                roles = [token for p in units for left, right in zip(p['variants'][vi]['loci'], p['variants'][vi]['loci'][1:])
+                         for token in (left['tokens'][-1], right['tokens'][0])]
+                pieces = [independent_segments(token, maps[mi]) for token in roles]
+                audit = record['scope_audit']
+                self.assertEqual(audit['endpoint_roles'], len(roles))
+                self.assertEqual(audit['native_ascii_letters'], sum(map(len, roles)))
+                self.assertEqual(audit['emitted_segments'], sum(map(len, pieces)))
+                self.assertEqual(audit['pattern_hits'], {p: sum(row.count(p) for row in pieces) for p in maps[mi]})
+                capitals = {p for row in pieces for p in row if len(p) == 1 and p.isupper()}
+                self.assertEqual(audit['uppercase_single_letter_fallback_counts'],
+                                 {p: sum(row.count(p) for row in pieces) for p in capitals})
+                self.assertEqual(audit['unlisted_example_substring_counts'],
+                                 {p: sum(token.count(p) for token in roles) for p in EXAMPLES})
+                endpoints = [[[independent_segments(r['tokens'][0], maps[mi]),
+                               independent_segments(r['tokens'][-1], maps[mi])] for r in p['variants'][vi]['loci']]
+                             for p in units]
+                self.assertEqual(audit['ordered_all_locus_endpoint_segments_sha256'], digest(encoded(endpoints)))
 
 
 if __name__ == '__main__':
