@@ -1,5 +1,9 @@
 # Three fixed immediate-repeat image cases
 
+The [local comparison viewer](repeat-viewer/README.md) displays the accepted
+native contexts, all policy/event slots and recorded image windows together,
+with original notes separately attributed and every mapping still provisional.
+
 The same uncertainty treatments can agree on a repeat while the two editions
 still disagree about its literal representation. Fixed cases at `f4r.2` and
 `f2r.10` demonstrate that source fact; the image windows make the differing
@@ -13,6 +17,12 @@ to source/image questions. It selects **one adjacent event within a native
 locus**, whereas the accepted statistic counts each repeating representation
 once across the entire cohort. The three cases cannot estimate type accuracy,
 repeat prevalence or a decipherment mechanism.
+
+The [fixed 1r multispectral follow-up](MSI_FIRST_REPEAT_CHECK.md) compares all
+three accepted selected processed JPEGs with the ordinary full reference.
+Stronger broad-stroke visibility coexists with intersecting background forms
+and uncertain small contours; exact glyph equality and the source/row proposal
+remain unresolved, with the original selection and statistics unchanged.
 
 ## Frozen selection and source accounting
 
