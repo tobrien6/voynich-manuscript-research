@@ -8,6 +8,7 @@ Explore the manuscript's digitized folios, documented history, illustrations, an
 
 - [Project brief and research plan](99TOKENS.md)
 - [Primary source register](research/SOURCES.md)
+- [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 The project is at the scoping stage. No new transcription, statistical result, or decipherment claim has been established.
