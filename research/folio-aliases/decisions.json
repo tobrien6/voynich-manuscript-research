@@ -40,6 +40,16 @@
           "url": "https://ic.unicamp.br/~stolfi/voynich/Notes/040/html/f116v.htm",
           "locator": "Identification and Description; inspected 2026-10-11",
           "statement": "Stolfi identifies the last page as f116v and p234 in his own scheme, describing short writing near the head. His page number differs from Reeds's Petersen column and must not be used without its source scheme."
+        },
+        {
+          "url": "https://voynich.nu/extra/img/curr_tabA.pdf",
+          "locator": "Single PDF page, rightmost block, folio 116 row and column legend; SHA-256 3be46a0016a61e17d27e6d9d7086236c1a363f3c09927535ce9de525fdca54d3",
+          "statement": "The hosted table separates folio 116 from page fields 235 and 236. This records source-numbering context, not a Yale 117v alias."
+        },
+        {
+          "url": "https://voynich.nu/descr.html",
+          "locator": "Foliation, Theodore Petersen's numbering, note 17; inspected 2026-10-11",
+          "statement": "The description distinguishes foliation 1-116 and Petersen photo-pages 1-236, and reports Currier counter discrepancies. It does not explicitly connect legacy Yale 117v to current 116v."
         }
       ],
       "rationale": "Preserve the legacy label and candidate separately until a documented foliation source or independent review establishes the correspondence. No missing leaf or global numbering offset is inferred.",
