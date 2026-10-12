@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "status": "provisional_informed_AI_layout_association",
+  "apply_to_statistics": false,
+  "verified_locus_crosswalk": null,
+  "independent_glyph_review": null,
+  "plan_commit": "ac62f99175de0bdaf388d42ccb7da03646185a14",
+  "plan_sha256": "2b163e525cc0a4a6837ef2b83a59029a624143416448e0934ab7df560a393281",
+  "targets": [
+    "fRos.112,@L0",
+    "fRos.113,=Cc",
+    "fRos.114,+Ca",
+    "fRos.115,=L0"
+  ],
+  "inspected_on": "2026-10-12",
+  "inspection_timezone": "America/New_York",
+  "observer_account": "tobrien6",
+  "prior_exposure": "Informed AI review: accepted whole-image notes and both native texts/source annotations were read before the fixed plan. Earlier pilot image inspection is known. Not a blinded or independent expert replication.",
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+  "yale_label": "85v and 86r (foldout)",
+  "image_id": "1006231",
+  "explicit_canvas_sides": [
+    "85v",
+    "86r"
+  ],
+  "dependency_group": "yale-leaves:85+86",
+  "original_image_dimensions": {
+    "width": 7925,
+    "height": 7268
+  },
+  "image_region_pixels": {
+    "x": 800,
+    "y": 6000,
+    "width": 1100,
+    "height": 1050
+  },
+  "image_region_normalized": {
+    "x": 0.10094637223974763,
+    "y": 0.825536598789213,
+    "width": 0.138801261829653,
+    "height": 0.14446890478811228
+  },
+  "region_scope": "Broad inspection window containing the candidate feature, its surrounding writing and adjacent drawing context; not individual text masks or panel boundaries.",
+  "image_inspection_order": [
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006231/full/!4000,4000/0/default.jpg",
+      "bytes": 3546005,
+      "width": 4000,
+      "height": 3668,
+      "sha256": "96ae90928df395e5a1f9b9384171ef44c29a77513d73ffa799066269cfee75bd"
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006231/800,6000,1100,1050/full/0/default.jpg",
+      "bytes": 257989,
+      "width": 1100,
+      "height": 1050,
+      "sha256": "e586870fa07880cac5836b9e5f63ab510fe827c56888ebafacdee2d4384dd436"
+    }
+  ],
+  "direct_image_observations": [
+    "A small brown outlined ring is visible near the lower-left portion of the full shared scan, below the lowest large circular drawing in its left column.",
+    "Inside the small ring, two irregular drawn segments meet; short dark writing curves around the outside of the ring.",
+    "A separate slanted short text item is visible to the lower left, with another short slanted or steeply oriented item to the upper right. Neighboring text and drawing elements also enter the broad window."
+  ],
+  "interpretation": "This distinctive group is compatible with the source-author locator description. The four native-to-image associations are candidates, supported by layout rather than a complete glyph comparison.",
+  "target_layout_assessments": [
+    {
+      "locus_id": "fRos.112,@L0",
+      "source_annotation": "left of clock",
+      "layout": "A separate lower-left item is compatible with this relative description.",
+      "glyph_alignment": "unresolved"
+    },
+    {
+      "locus_id": "fRos.113,=Cc",
+      "source_annotation": "above clock; 08:00; clockwise circular type",
+      "layout": "Short curved writing is visible around the candidate ring, but this exact arc extent, start and direction are unverified.",
+      "glyph_alignment": "unresolved"
+    },
+    {
+      "locus_id": "fRos.114,+Ca",
+      "source_annotation": "below clock; 06:30; anticlockwise circular type",
+      "layout": "Writing also extends below the ring, but the division from the other circular locus and its direction are unverified.",
+      "glyph_alignment": "unresolved"
+    },
+    {
+      "locus_id": "fRos.115,=L0",
+      "source_annotation": "right of clock",
+      "layout": "A separate upper-right item is compatible with the relative description, without a complete native-glyph match.",
+      "glyph_alignment": "unresolved"
+    }
+  ],
+  "unresolved": [
+    "Exact glyph strings and uncertain spaces/ligatures/alternatives in both alphabets.",
+    "Arc boundaries, clockwise/anticlockwise direction and source clock-position starting comments.",
+    "Physical panel identity and exact native-locus-to-image text masks.",
+    "Independent expert review and any use in the paired decipherment pilot."
+  ],
+  "interpretation_limit": "The source-author term clock does not establish the function or meaning of the drawing; no reading, decipherment or translation is claimed."
+}

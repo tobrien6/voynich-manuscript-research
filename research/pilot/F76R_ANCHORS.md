@@ -84,6 +84,22 @@ python3 scripts/verify_f76r_review.py
 python3 -m unittest discover -s tests -p 'test_f76r_*.py' -v
 ```
 
+For a generated copy, use the guarded companion entry point:
+
+```sh
+python3 scripts/write_f76r_selection_cache.py --output /tmp/f76r-selection-cache.json
+```
+
+It recomputes the selection and requires literal byte equality with the frozen
+record before writing. It protects all cataloged source files, metadata,
+helpers, and the frozen selection/review, including resolved-path, symlink and
+hardlink aliases. The original selector and pre-inspection pins remain unchanged;
+its historical direct `--output` path is not repaired by this companion. Current
+generated-write instructions use the companion; the selector's `--check` remains
+read-only. Five writer tests use temporary inputs for alias checks, verify
+refusal before production and after a late alias is introduced, retain a prior
+cache on changed production, and reproduce the real frozen record byte for byte.
+
 For optional byte verification, download the four URLs and `info.json` into a
 local directory using the `local_filename` values recorded in the JSON, then
 run `python3 scripts/verify_f76r_review.py --image-dir DIRECTORY`. Local pixels

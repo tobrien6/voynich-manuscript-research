@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "Publication/version and companion-source audit; no corpus or R execution",
+  "inspected_on": "2026-10-12",
+  "inspection_timezone": "America/New_York",
+  "publication": {
+    "title": "Character Entropy in Modern and Historical Texts: Comparison Metrics for an Undeciphered Manuscript",
+    "authors": ["Luke Lindemann", "Claire Bowern"],
+    "url": "https://arxiv.org/abs/2010.14697v2",
+    "arxiv_revision_date": "2021-05-18",
+    "pdf_title_page_date": "2021-05-20",
+    "pdf_url": "https://arxiv.org/pdf/2010.14697v2",
+    "pdf_sha256": "e4cc5dffecb5ab0312685d553b68abed46d7b564693a9f2041ed512c7df236c8",
+    "pdf_bytes": 10931819,
+    "visually_inspected_printed_pages": [1, 23, 24],
+    "method_locators": "Section 4.1; Section 4.2; Figure 7 caption",
+    "reported_measurement": "h2 describes a next character conditioned on the preceding character; Figure 7 includes spaces",
+    "version_observation": "Retrieved v2 PDF abstract reports 311 Wikipedia samples; unversioned arXiv HTML abstract reports 294. Use the identified artifact, not an unversioned summary, for version-specific facts."
+  },
+  "companion": {
+    "repository": "https://github.com/chirila/Voynich-public",
+    "revision": "decc4caaa6515b86e42a219d1da8d81114736f2e",
+    "files": [
+      {
+        "path": "R code/Entropy_Functions.R",
+        "url": "https://github.com/chirila/Voynich-public/blob/decc4caaa6515b86e42a219d1da8d81114736f2e/R%20code/Entropy_Functions.R",
+        "git_blob_sha1": "91e8d8a8e8b87652a5870a2092117e87a1953c10",
+        "sha256": "045345b38c1eb2f16271fdad60ca86d5e9c49bbea711d613445d8a71ec9ac989",
+        "bytes": 25069,
+        "locators": "sumentropy lines 22-69; condbigram lines 73-114; quick_h2 lines 766-799; multi_stats lines 938-961",
+        "source_observation": "sumentropy normalizes full characters and qgrams separately, then subtracts H1 from H2. condbigram divides pair counts by full-character counts. Space handling defaults to replacement, not removal."
+      },
+      {
+        "path": "R code/2_Create_Voynich_Stat_File.Rmd",
+        "url": "https://github.com/chirila/Voynich-public/blob/decc4caaa6515b86e42a219d1da8d81114736f2e/R%20code/2_Create_Voynich_Stat_File.Rmd",
+        "git_blob_sha1": "e452e56d82fb18f2059f015c9f98abeec8fea18d",
+        "sha256": "7c2b537112e9a18e6243ab276882f91b759d96362e532782994c0fef46aec231",
+        "bytes": 13204,
+        "locators": "source call line 10; corpus inputs lines 37-85; multi_stats call line 109",
+        "source_observation": "The statistics driver reads multiple named representations and passes each document to multi_stats."
+      }
+    ],
+    "executed": false,
+    "publication_run_revision_established": false,
+    "package_versions_established": false,
+    "processed_corpus_identity_established": false
+  },
+  "interpretation_limits": [
+    "The synthetic finite-edge example compares declared algebra and sample populations, not an executed R pipeline.",
+    "Endpoint differences in short invented samples do not establish the size or significance of a difference in any published long-corpus result.",
+    "No corpus, representation, boundary or package behavior has been replicated; no linguistic interpretation is adjudicated."
+  ]
+}
