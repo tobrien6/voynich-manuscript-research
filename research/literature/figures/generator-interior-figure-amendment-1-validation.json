@@ -19,6 +19,10 @@
   "first_renderer_and_exports_retained_in_hashed_inert_archives": true,
   "complete_byte_rerender_check": true,
   "focused_figure_tests": 13,
-  "relevant_tests": 119,
-  "parent_143_must_be_accepted_before_retargeting_figure_to_main": true
+  "relevant_tests": 120,
+  "parent_143_must_be_accepted_before_retargeting_figure_to_main": true,
+  "accepted_size_head": "27f8f3cd795231567a7f47e4989babd41a432595",
+  "accepted_size_merge": "88ba71592a6c058c7a2ed0ce6c34397d9bb3c041",
+  "accepted_size_report_sha256": "2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522",
+  "actual_accepted_parent_identity_reconciliation_complete": true
 }
