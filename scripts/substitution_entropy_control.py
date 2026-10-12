@@ -93,6 +93,11 @@ def load(raw):
     return json.loads(raw, object_pairs_hook=object_pairs, parse_constant=invalid)
 
 
+def canonical_json(value):
+    """Retain JSON scalar types when comparing a cached report."""
+    return json.dumps(value, sort_keys=True, separators=(',', ':'), allow_nan=False)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group(required=True)
@@ -104,7 +109,7 @@ def main():
             raise ValueError('output exists; choose a new record')
         result = report()
         if args.check:
-            if result != load(REPORT.read_bytes()):
+            if canonical_json(result) != canonical_json(load(REPORT.read_bytes())):
                 raise ValueError('synthetic report differs from reconstruction')
             print('Synthetic substitution-normalization report matches.')
         else:

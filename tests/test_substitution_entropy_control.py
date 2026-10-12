@@ -1,8 +1,16 @@
 from collections import Counter
+import copy
+from contextlib import redirect_stderr, redirect_stdout
 from fractions import Fraction
+import io
+import json
 import math
+from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 
+from scripts import substitution_entropy_control as module
 from scripts.substitution_entropy_control import TOY_COUNTS, measure, report
 
 
@@ -63,6 +71,37 @@ class SubstitutionEntropyControlTests(unittest.TestCase):
                                        ({'a': 1}, 'ab', 'b'), ({'z': 1}, 'a', 'b')]:
             with self.subTest(counts=counts, source=source, target=target), self.assertRaises(ValueError):
                 measure(counts, source, target)
+
+    def test_actual_cli_rejects_boolean_and_numeric_type_substitutions(self):
+        expected = report()
+        for mutation in ('schema_bool', 'schema_float', 'score_bool', 'score_int', 'count_bool', 'count_float'):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
+                altered = copy.deepcopy(expected)
+                if mutation.startswith('schema'):
+                    altered['schema_version'] = True if mutation.endswith('bool') else 1.0
+                elif mutation.startswith('score'):
+                    altered['results'][0]['subset_entropy_decrease_bits'] = True if mutation.endswith('bool') else 1
+                else:
+                    altered['results'][0]['collision_classes'][0]['original_synthetic_counts'][0]['occurrences'] = True if mutation.endswith('bool') else 1.0
+                path = Path(directory) / 'report.json'
+                original = json.dumps(altered).encode()
+                path.write_bytes(original)
+                with patch.object(module, 'REPORT', path), patch('sys.argv', ['control', '--check']), \
+                        redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                    module.main()
+                self.assertEqual(error.exception.code, 1)
+                self.assertEqual(path.read_bytes(), original)
+
+    def test_typed_cli_accepts_equivalent_object_order_and_preserves_cache_bytes(self):
+        expected = report()
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'report.json'
+            raw = json.dumps(expected, sort_keys=True).encode()
+            path.write_bytes(raw)
+            with patch.object(module, 'REPORT', path), patch('sys.argv', ['control', '--check']), \
+                    redirect_stdout(io.StringIO()):
+                module.main()
+            self.assertEqual(path.read_bytes(), raw)
 
 
 if __name__ == '__main__':
