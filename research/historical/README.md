@@ -51,6 +51,10 @@ The [literal H/Reddy envelope audit](REDDY_ENVELOPES.md) locates the recovered
 paper file's one-record gap in a normalized-empty H record. Every shared key
 retains the same order and fallback-retained count; all eight listed-code count
 differences remain explicit without claiming text or alphabet equivalence.
+The [positional type-partition comparison](REDDY_TYPE_CORRESPONDENCE.md) then
+retains every nominally paired token and type relation: 36 Reddy classes combine
+73 H types, adding five immediate-repeat edges while B remains 118. Within
+records and flattened joins stay separate; no notation/glyph map is inferred.
 
 ## Method
 
