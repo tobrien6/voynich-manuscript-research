@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "viewer_id": "iid-wrap-conditional-orbit-viewer-v1",
+  "accepted_input_commit": "0245b4ed6d77a098837798ad683213aea1835278",
+  "input_sha256": {
+    "research/line-wrap/interior/certificates.json": "3b2450af7a70fa5fcdddaa093f76a5c952ebedad5ada6f4f00952fcb133f8a00",
+    "research/line-wrap/interior/settings.json": "85b23d4513cccd953e96a696339ff46465c7faf9665ef21934972f2180286325",
+    "research/line-wrap/interior/PROOF.md": "cb3fceb6078ee0f0a9c46f29212d5d547b30a092f8238da3693fa11ef714a399",
+    "research/line-wrap/interior/RESULTS.md": "5ce2caa787eea78bfb606adb23c04416bdfe3bec9cb51e15008d8f4c31b9d091"
+  },
+  "scope": "Display all accepted finite certificates; no new analysis, corpus, images, simulation, fit or saved observations"
+}
