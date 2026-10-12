@@ -131,3 +131,7 @@ conventions. Next, review deterministically selected persistent disagreements
 against independently assigned manuscript regions, retaining image uncertainty;
 test any frozen segmentation rule on exposure-valid reserved material under the
 [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
+
+The [exact token-count accounting](BOUNDARY_COUNT_ACCOUNTING.md) separates
+same-chain boundary contributions from the unaligned different-chain remainder
+and retains equal-token-count cases with different encoded boundaries.

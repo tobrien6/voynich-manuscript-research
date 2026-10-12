@@ -1,0 +1,172 @@
+{
+  "figure_version": "historical-repeat-null-conditioning-v1",
+  "input_report_sha256": {
+    "research/historical/repeated-types.json": "683a0906eaf01dbacf5394eb0ded820802df0f09c293302a452351494338dc2a",
+    "research/historical/record-conditioned.json": "56fc5f036627cffbf3f597090fbafd22afe102c2430f6f606c4f1d46c5b17b1b"
+  },
+  "edge_scope": "All N-1 adjacent edges in each surviving flat stream, including native-record joins",
+  "source_credit": "Jorge Stolfi; Gabriel Landini and Jim Reeds; Takeshi Takahashi; original transcribers credited in the unmodified member",
+  "source_permission": {
+    "statement_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/",
+    "locator": "Permissions section",
+    "terms_summary": "Publisher permits copying, use, modification and republication with due credit and without imposing additional conditions or copyrights on these files or derivatives",
+    "repository_license_applies": false
+  },
+  "points": [
+    {
+      "ring_policy": "exclude_R2",
+      "f66r_column_unit_removed": "M",
+      "tokens": 37759,
+      "distinct_types": 8137,
+      "flat_corpus_sha256": "6011cc2640aa27257c62cec9740dbf706ed22defba3a2142172a9b73b13a8261",
+      "record_corpus_sha256": "63bd8a7f9752c1268038f0f1bcd2a5a3b5e151b7ae4614a292d343ec813faf85",
+      "all_adjacent_edges": 37758,
+      "cross_record_joining_edges": 5126,
+      "observed": {
+        "A": 313,
+        "B": 114
+      },
+      "global_exact_mean_decimal": {
+        "A": 116.53820281257448,
+        "B": 47.52428230487689
+      },
+      "native_record_exact_mean_decimal": {
+        "A": 318.7282871450125,
+        "B": 105.49457307854077
+      },
+      "observed_over_exact_mean": {
+        "global": {
+          "A": 2.685814543608418,
+          "B": 2.398773731472036
+        },
+        "native_record": {
+          "A": 0.9820276788222243,
+          "B": 1.0806243077084823
+        }
+      },
+      "A_conditional_scope_residuals": {
+        "within_record": 21.42713576861979,
+        "cross_record": -27.155422913632265,
+        "total": -5.728287145012472
+      }
+    },
+    {
+      "ring_policy": "exclude_R2",
+      "f66r_column_unit_removed": "L",
+      "tokens": 37776,
+      "distinct_types": 8129,
+      "flat_corpus_sha256": "2ba83767113efadc3b9371d38c0b5c9382f73e3b76cd4da097885e8df948dc6f",
+      "record_corpus_sha256": "e53f7bd10aea557abef1fa530649b179adb7704dc7a9207fedee5eeda7fc8370",
+      "all_adjacent_edges": 37775,
+      "cross_record_joining_edges": 5143,
+      "observed": {
+        "A": 314,
+        "B": 115
+      },
+      "global_exact_mean_decimal": {
+        "A": 116.55723210504024,
+        "B": 47.56409238758476
+      },
+      "native_record_exact_mean_decimal": {
+        "A": 319.7282871450125,
+        "B": 106.49457307854077
+      },
+      "observed_over_exact_mean": {
+        "global": {
+          "A": 2.693955530078359,
+          "B": 2.4177902747076794
+        },
+        "native_record": {
+          "A": 0.9820838900550128,
+          "B": 1.0798672333771073
+        }
+      },
+      "A_conditional_scope_residuals": {
+        "within_record": 21.42713576861979,
+        "cross_record": -27.155422913632265,
+        "total": -5.728287145012472
+      }
+    },
+    {
+      "ring_policy": "exclude_single_character_tokens",
+      "f66r_column_unit_removed": "M",
+      "tokens": 37713,
+      "distinct_types": 8133,
+      "flat_corpus_sha256": "2c7e1a6104a4fa5fb43a32246e3060ed8e76307d34c377abce9e6cbb8efaf712",
+      "record_corpus_sha256": "59d077d0b033b3d5a4a2a50c1f5f04144a1a0488fc1a079470c7ed489b8edfb2",
+      "all_adjacent_edges": 37712,
+      "cross_record_joining_edges": 5126,
+      "observed": {
+        "A": 314,
+        "B": 114
+      },
+      "global_exact_mean_decimal": {
+        "A": 116.51939649457746,
+        "B": 47.4627429179435
+      },
+      "native_record_exact_mean_decimal": {
+        "A": 317.80770047675026,
+        "B": 104.75487778515578
+      },
+      "observed_over_exact_mean": {
+        "global": {
+          "A": 2.694830298186558,
+          "B": 2.40188394078046
+        },
+        "native_record": {
+          "A": 0.9880188539452056,
+          "B": 1.0882548136212353
+        }
+      },
+      "A_conditional_scope_residuals": {
+        "within_record": 23.324074195254614,
+        "cross_record": -27.131774672004894,
+        "total": -3.8077004767502824
+      }
+    },
+    {
+      "ring_policy": "exclude_single_character_tokens",
+      "f66r_column_unit_removed": "L",
+      "tokens": 37730,
+      "distinct_types": 8127,
+      "flat_corpus_sha256": "2923af51caa2b506238d11d34ef30b843bf102548124aa5519951ca3d638d51d",
+      "record_corpus_sha256": "b3c7f22f1ba9e3d1f88800d4491a63349fd84ff167bc65352cb47fa3a89a5366",
+      "all_adjacent_edges": 37729,
+      "cross_record_joining_edges": 5143,
+      "observed": {
+        "A": 315,
+        "B": 115
+      },
+      "global_exact_mean_decimal": {
+        "A": 116.53278558176517,
+        "B": 47.49926240666266
+      },
+      "native_record_exact_mean_decimal": {
+        "A": 318.80770047675026,
+        "B": 105.75487778515578
+      },
+      "observed_over_exact_mean": {
+        "global": {
+          "A": 2.7031019504719587,
+          "B": 2.4210902269478
+        },
+        "native_record": {
+          "A": 0.9880564350514238,
+          "B": 1.0874202912287976
+        }
+      },
+      "A_conditional_scope_residuals": {
+        "within_record": 23.324074195254614,
+        "cross_record": -27.131774672004894,
+        "total": -3.8077004767502824
+      }
+    }
+  ],
+  "limits": "Display of four exposed approximate H studies; matched input/edges, changed null conditioning; no uncertainty intervals, causal allocation, calibrated tail, language or decipherment",
+  "renderer": {
+    "matplotlib": "3.11.2",
+    "font": "DejaVu Sans",
+    "dpi": 180,
+    "script_sha256": "5be2e28bc1fc46353f830d971408bdc7234aa62fb4492506157886f37b4445d9"
+  }
+}

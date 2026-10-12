@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "method": "paragraph-context call-site ablation v1",
+  "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "parent_report_path": "research/literature/self-citation-prefix-profile.json",
+  "parent_report_sha256": "140731ba67ca1a9bd2bb35460a4f6a19b5cff671627c4020f9f76f9362191ca9",
+  "plan_path": "research/literature/SELF_CITATION_CONTEXT_PLAN.md",
+  "plan_sha256": "7b8769c1415df36ddad2e75d25e491c9daad42653bf85656154855a23be452a6",
+  "source_manifest_sha256": "7aa11db0b5d77f79ea975a656a2bfd040b288fd872d5b6d2a17cb4db939c38d5",
+  "observer_snapshot": {
+    "pull_request": "https://github.com/tobrien6/voynich-manuscript-research/pull/100",
+    "head": "d86cccdc0afd19ebeea8b4de3f3068294c87d05f",
+    "artifacts": [
+      {
+        "path": "scripts/trace_self_citation_rows.py",
+        "sha256": "a078447279d7557d243fdce925a66749747d5c665cb69c97923a69328cf4b778"
+      },
+      {
+        "path": "scripts/replay_self_citation.py",
+        "sha256": "4579f7caaf75ec124a8ffcbfd53b2e173f1ea117bdf7a7ee24761e53d2ee225f"
+      }
+    ]
+  },
+  "helper_fingerprints": [
+    {
+      "path": "scripts/self_citation_prefix_profile.py",
+      "sha256": "e4934f1d09d0fedbd1112d70f35f2634f0717aa972d07cee930a221f1b34a60f"
+    },
+    {
+      "path": "scripts/conservative_prefixes.py",
+      "sha256": "c179c02e292335ed3dabfbe7fa9916b6b9548285047bd18a464fd5364a8032fc"
+    },
+    {
+      "path": "scripts/prefix_strata.py",
+      "sha256": "8fba6f3ad3867f0b5086865a1c9c0c045db333ec8b56314082053ca2c96b8afc"
+    },
+    {
+      "path": "scripts/locus_positions.py",
+      "sha256": "4efa53f41aa51860e4ada5b01882a697490d2b85497f36584a50fc855dea0f7f"
+    },
+    {
+      "path": "scripts/audit_transliterations.py",
+      "sha256": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b"
+    },
+    {
+      "path": "scripts/ivtff.py",
+      "sha256": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65"
+    },
+    {
+      "path": "scripts/token_baselines.py",
+      "sha256": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+    },
+    {
+      "path": "scripts/eva_token_adapter.py",
+      "sha256": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf"
+    },
+    {
+      "path": "scripts/repetition_moments.py",
+      "sha256": "e758237cc966a4723e3613b8d7cce96e96f685ba682cdc1668558cf153749370"
+    }
+  ],
+  "runtime": {
+    "java": "openjdk version \"17.0.16\" 2025-07-15 LTS\nOpenJDK Runtime Environment Zulu17.60+17-CA (build 17.0.16+8-LTS)\nOpenJDK 64-Bit Server VM Zulu17.60+17-CA (build 17.0.16+8-LTS, mixed mode, sharing)",
+    "javac": "javac 17.0.16"
+  },
+  "runtime_launcher_sha256": {
+    "java": "82ced1dca95801054d6d3c02033e4cde4553e52ad24776f0176f65e206875303",
+    "javac": "82ced1dca95801054d6d3c02033e4cde4553e52ad24776f0176f65e206875303"
+  },
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "settings": [
+    {
+      "id": "original",
+      "suppress_chooser": false,
+      "suppress_morpher": false
+    },
+    {
+      "id": "chooser_off",
+      "suppress_chooser": true,
+      "suppress_morpher": false
+    },
+    {
+      "id": "morpher_off",
+      "suppress_chooser": false,
+      "suppress_morpher": true
+    },
+    {
+      "id": "both_off",
+      "suppress_chooser": true,
+      "suppress_morpher": true
+    }
+  ],
+  "repeats": 2,
+  "total_rows_including_initialization": 1684,
+  "initialized_rows": 1,
+  "minimal_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "timeout_seconds": 60,
+  "directional_prediction": {
+    "paragraph_initial": true,
+    "boundary": "first",
+    "prefix": "y",
+    "contrasts": [
+      "morpher_off - original",
+      "both_off - chooser_off"
+    ],
+    "criterion": "both equal-seed mean differences strictly positive; null if an execution fails or a required contrast is undefined"
+  },
+  "evaluation_claim": "Finite exposed-data program ablation; no manuscript fit score, independent mechanism validation, held-out claim or translation"
+}

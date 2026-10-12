@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "method": "exact native-token-count boundary accounting v1",
+  "analysis_unit": "paired native transcription locus key",
+  "parent_report_path": "research/transliteration/token_boundary_concordance.json",
+  "parent_report_pr": 113,
+  "parent_reviewed_head": "5611563bf851320c93decd862976d3327f1e262a",
+  "parent_report_sha256": "8c93d9cf1bb83e4f9690378d5fdd6100377e019bf17dede7e0f70de7a4df1bb6",
+  "selected_native_loci": 2940,
+  "selected_native_keys_sha256": "85ee6b804b6e8d0ddfe2dbf7a3b8bb04e34d426ca03429b81cff2dfd983d67c2",
+  "sources": [
+    {
+      "alphabet": "Eva-",
+      "id": "ZL3b",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "alphabet": "EvaT",
+      "id": "IT2a",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ],
+  "formula_same_chain": "n_ZL - n_IT = |B_ZL \\ B_IT| - |B_IT \\ B_ZL|, with common endpoints excluded",
+  "formula_total": "total native-token delta = zero on identical partitions + same-chain boundary-only delta + unaligned different-chain remainder",
+  "rows": [
+    {
+      "spacing": "split",
+      "ZL3b_native_tokens": 25233,
+      "IT2a_native_tokens": 24855,
+      "overall_delta_ZL_minus_IT": 378,
+      "same_chain_same_boundaries": {
+        "native_loci": 1492,
+        "token_delta": 0
+      },
+      "same_chain_different_boundaries": {
+        "native_loci": 562,
+        "token_delta": 239,
+        "ZL_more_tokens_loci": 361,
+        "IT_more_tokens_loci": 173,
+        "equal_tokens_changed_boundaries_loci": 28,
+        "positive_delta_sum": 427,
+        "negative_delta_sum": -188,
+        "unique_ZL_boundary_offsets": 462,
+        "unique_IT_boundary_offsets": 223,
+        "symmetric_boundary_difference_count": 685,
+        "equal_token_count_native_keys": [
+          "f100r.24",
+          "f103r.4",
+          "f106r.6",
+          "f106v.19",
+          "f107r.24",
+          "f107v.49",
+          "f108r.15",
+          "f111v.32",
+          "f112r.7",
+          "f113v.43",
+          "f115r.30",
+          "f116r.14",
+          "f42v.7",
+          "f45v.7",
+          "f51r.6",
+          "f75r.29",
+          "f78v.4",
+          "f79r.28",
+          "f80v.32",
+          "f81r.14",
+          "f81r.24",
+          "f81r.5",
+          "f84v.35",
+          "f88v.22",
+          "f89v1.13",
+          "f94r.4",
+          "f95r2.8",
+          "f95v1.3"
+        ]
+      },
+      "different_chains_unaligned": {
+        "native_loci": 886,
+        "token_delta": 139,
+        "aligned_boundary_difference": null,
+        "interpretation": "unpartitioned different-chain remainder; not attributable exclusively to glyph edits or token boundaries"
+      }
+    },
+    {
+      "spacing": "join",
+      "ZL3b_native_tokens": 23434,
+      "IT2a_native_tokens": 24855,
+      "overall_delta_ZL_minus_IT": -1421,
+      "same_chain_same_boundaries": {
+        "native_loci": 1287,
+        "token_delta": 0
+      },
+      "same_chain_different_boundaries": {
+        "native_loci": 767,
+        "token_delta": -943,
+        "ZL_more_tokens_loci": 27,
+        "IT_more_tokens_loci": 719,
+        "equal_tokens_changed_boundaries_loci": 21,
+        "positive_delta_sum": 29,
+        "negative_delta_sum": -972,
+        "unique_ZL_boundary_offsets": 53,
+        "unique_IT_boundary_offsets": 996,
+        "symmetric_boundary_difference_count": 1049,
+        "equal_token_count_native_keys": [
+          "f103v.38",
+          "f107v.33",
+          "f108r.39",
+          "f108v.25",
+          "f108v.5",
+          "f111r.26",
+          "f111r.37",
+          "f115r.30",
+          "f11v.6",
+          "f14v.7",
+          "f15r.15",
+          "f16r.11",
+          "f21r.3",
+          "f28r.1",
+          "f35v.12",
+          "f49r.17",
+          "f58v.11",
+          "f7v.8",
+          "f81v.6",
+          "f93r.8",
+          "f99v.22"
+        ]
+      },
+      "different_chains_unaligned": {
+        "native_loci": 886,
+        "token_delta": -478,
+        "aligned_boundary_difference": null,
+        "interpretation": "unpartitioned different-chain remainder; not attributable exclusively to glyph edits or token boundaries"
+      }
+    }
+  ],
+  "comma_policy_change_accounting": {
+    "ZL_split_minus_join_native_tokens": 1799,
+    "IT_split_minus_join_native_tokens": 0,
+    "same_chain_cohort_boundary_delta_change_split_minus_join": 1182,
+    "different_chain_remainder_change_split_minus_join": 617
+  },
+  "equal_count_examples": [
+    {
+      "comparison_spacing": "split",
+      "selection": "first lexicographically sorted native key with equal token counts and different boundaries on an identical chain in this comparison",
+      "native_locus_key": "f100r.24",
+      "parent_disagreement_record": {
+        "chain_ascii_length": 56,
+        "chain_ascii_sha256": "36e340384b45128d6a23a3ef3be9bcaa2cf639bc7ed645efeb9e5146c63f0245",
+        "left_drawing_interruption_count": 0,
+        "left_identifier": "f100r.24,+P0",
+        "left_source_file_line": 6405,
+        "left_token_count": 10,
+        "native_locus_key": "f100r.24",
+        "only_left_boundary_offsets": [
+          28
+        ],
+        "only_right_boundary_offsets": [
+          37
+        ],
+        "right_drawing_interruption_count": 0,
+        "right_identifier": "f100r.24,+P0",
+        "right_source_file_line": 4169,
+        "right_token_count": 10
+      },
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "source_file_line": 6405,
+          "locus_identifier": "f100r.24,+P0",
+          "native_text": "saiichor.sheor.qockhody.odeor.yk,sheey.cholsheody.sai.cheol.raiin",
+          "treatments": [
+            {
+              "spacing": "split",
+              "tokens": [
+                "saiichor",
+                "sheor",
+                "qockhody",
+                "odeor",
+                "yk",
+                "sheey",
+                "cholsheody",
+                "sai",
+                "cheol",
+                "raiin"
+              ],
+              "native_token_count": 10,
+              "chain_ascii": "saiichorsheorqockhodyodeoryksheeycholsheodysaicheolraiin",
+              "boundary_offsets": [
+                8,
+                13,
+                21,
+                26,
+                28,
+                33,
+                43,
+                46,
+                51
+              ],
+              "uncertain_space_count": 1,
+              "drawing_interruption_count": 0
+            },
+            {
+              "spacing": "join",
+              "tokens": [
+                "saiichor",
+                "sheor",
+                "qockhody",
+                "odeor",
+                "yksheey",
+                "cholsheody",
+                "sai",
+                "cheol",
+                "raiin"
+              ],
+              "native_token_count": 9,
+              "chain_ascii": "saiichorsheorqockhodyodeoryksheeycholsheodysaicheolraiin",
+              "boundary_offsets": [
+                8,
+                13,
+                21,
+                26,
+                33,
+                43,
+                46,
+                51
+              ],
+              "uncertain_space_count": 1,
+              "drawing_interruption_count": 0
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "source_file_line": 4169,
+          "locus_identifier": "f100r.24,+P0",
+          "native_text": "saiichor.sheor.qockhody.odeor.yksheey.chol.sheody.sai.cheol.raiin",
+          "treatments": [
+            {
+              "spacing": "split",
+              "tokens": [
+                "saiichor",
+                "sheor",
+                "qockhody",
+                "odeor",
+                "yksheey",
+                "chol",
+                "sheody",
+                "sai",
+                "cheol",
+                "raiin"
+              ],
+              "native_token_count": 10,
+              "chain_ascii": "saiichorsheorqockhodyodeoryksheeycholsheodysaicheolraiin",
+              "boundary_offsets": [
+                8,
+                13,
+                21,
+                26,
+                33,
+                37,
+                43,
+                46,
+                51
+              ],
+              "uncertain_space_count": 0,
+              "drawing_interruption_count": 0
+            },
+            {
+              "spacing": "join",
+              "tokens": [
+                "saiichor",
+                "sheor",
+                "qockhody",
+                "odeor",
+                "yksheey",
+                "chol",
+                "sheody",
+                "sai",
+                "cheol",
+                "raiin"
+              ],
+              "native_token_count": 10,
+              "chain_ascii": "saiichorsheorqockhodyodeoryksheeycholsheodysaicheolraiin",
+              "boundary_offsets": [
+                8,
+                13,
+                21,
+                26,
+                33,
+                37,
+                43,
+                46,
+                51
+              ],
+              "uncertain_space_count": 0,
+              "drawing_interruption_count": 0
+            }
+          ]
+        }
+      ],
+      "image_or_glyph_region_verified": false
+    },
+    {
+      "comparison_spacing": "join",
+      "selection": "first lexicographically sorted native key with equal token counts and different boundaries on an identical chain in this comparison",
+      "native_locus_key": "f103v.38",
+      "parent_disagreement_record": {
+        "chain_ascii_length": 31,
+        "chain_ascii_sha256": "27258b378399ca5ae752b63491bfcbe0546be014254255926ce71a99f940b1c1",
+        "left_drawing_interruption_count": 0,
+        "left_identifier": "f103v.38,+P0",
+        "left_source_file_line": 6827,
+        "left_token_count": 7,
+        "native_locus_key": "f103v.38",
+        "only_left_boundary_offsets": [
+          6
+        ],
+        "only_right_boundary_offsets": [
+          25
+        ],
+        "right_drawing_interruption_count": 0,
+        "right_identifier": "f103v.38,+P0",
+        "right_source_file_line": 4432,
+        "right_token_count": 7
+      },
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "source_file_line": 6827,
+          "locus_identifier": "f103v.38,+P0",
+          "native_text": "oteey.l.chees.ol.chey.chey.chol,keechy<$>",
+          "treatments": [
+            {
+              "spacing": "split",
+              "tokens": [
+                "oteey",
+                "l",
+                "chees",
+                "ol",
+                "chey",
+                "chey",
+                "chol",
+                "keechy"
+              ],
+              "native_token_count": 8,
+              "chain_ascii": "oteeylcheesolcheycheycholkeechy",
+              "boundary_offsets": [
+                5,
+                6,
+                11,
+                13,
+                17,
+                21,
+                25
+              ],
+              "uncertain_space_count": 1,
+              "drawing_interruption_count": 0
+            },
+            {
+              "spacing": "join",
+              "tokens": [
+                "oteey",
+                "l",
+                "chees",
+                "ol",
+                "chey",
+                "chey",
+                "cholkeechy"
+              ],
+              "native_token_count": 7,
+              "chain_ascii": "oteeylcheesolcheycheycholkeechy",
+              "boundary_offsets": [
+                5,
+                6,
+                11,
+                13,
+                17,
+                21
+              ],
+              "uncertain_space_count": 1,
+              "drawing_interruption_count": 0
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "source_file_line": 4432,
+          "locus_identifier": "f103v.38,+P0",
+          "native_text": "oteey.lchees.ol.chey.chey.chol.keechy<$>",
+          "treatments": [
+            {
+              "spacing": "split",
+              "tokens": [
+                "oteey",
+                "lchees",
+                "ol",
+                "chey",
+                "chey",
+                "chol",
+                "keechy"
+              ],
+              "native_token_count": 7,
+              "chain_ascii": "oteeylcheesolcheycheycholkeechy",
+              "boundary_offsets": [
+                5,
+                11,
+                13,
+                17,
+                21,
+                25
+              ],
+              "uncertain_space_count": 0,
+              "drawing_interruption_count": 0
+            },
+            {
+              "spacing": "join",
+              "tokens": [
+                "oteey",
+                "lchees",
+                "ol",
+                "chey",
+                "chey",
+                "chol",
+                "keechy"
+              ],
+              "native_token_count": 7,
+              "chain_ascii": "oteeylcheesolcheycheycholkeechy",
+              "boundary_offsets": [
+                5,
+                11,
+                13,
+                17,
+                21,
+                25
+              ],
+              "uncertain_space_count": 0,
+              "drawing_interruption_count": 0
+            }
+          ]
+        }
+      ],
+      "image_or_glyph_region_verified": false
+    }
+  ],
+  "exposure": "exploratory bookkeeping on accepted exposed data; no new selection, source correction, inferential test, independent samples or untouched evaluation",
+  "boundary_event_semantics": "encoded adapter separators, including drawing interruptions; not adjudicated manuscript word spaces",
+  "may_attribute_different_chain_remainder_to_glyph_edits_only": false,
+  "source_corrections_applied": false
+}

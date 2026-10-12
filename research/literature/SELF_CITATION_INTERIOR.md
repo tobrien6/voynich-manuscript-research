@@ -129,7 +129,10 @@ the maintained report is
 `113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829`.
 Two added regressions exercise signed 9,001-digit fractions, invalid decimal
 strings, the minimum supported digit limit and fresh-process imports. All 20
-focused producer/checker tests pass after this maintenance repair.
+focused producer/checker tests pass after this maintenance repair. Final maintainer
+integration with main `76df1248eca12db976a36c626867f335e26005d3` passes all 846 repository tests.
+Both the full package replay and the separate maintainer arithmetic audit also
+match the preserved report after integration.
 
 The producer validates the manifest itself, all accepted source/helper/artifact
 hashes, and every fixed run before measuring. It protects supplied run artifacts,
