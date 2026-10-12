@@ -4,10 +4,37 @@ import subprocess
 import tempfile
 from unittest.mock import patch
 
-from scripts.replay_self_citation import configuration, properties, run_process, text_projection
+from scripts.replay_self_citation import (
+    REMOVED_ENV, configuration, matches_runtime_version, process_environment,
+    properties, run_process, text_projection,
+)
 
 
 class SelfCitationReplayTests(unittest.TestCase):
+    def test_compiler_and_vm_options_are_removed_without_mutating_inherited_environment(self):
+        inherited = {name: 'synthetic fixture value' for name in REMOVED_ENV}
+        inherited.update(PATH='synthetic path', TZ='synthetic timezone')
+        before = dict(inherited)
+        result = process_environment(inherited)
+        self.assertIn('JDK_JAVAC_OPTIONS', REMOVED_ENV)
+        self.assertTrue(set(REMOVED_ENV).isdisjoint(result))
+        self.assertEqual(result['PATH'], 'synthetic path')
+        self.assertEqual(result['TZ'], 'UTC')
+        self.assertEqual(result['LANG'], 'en_US.UTF-8')
+        self.assertEqual(result['LC_ALL'], 'en_US.UTF-8')
+        self.assertEqual(inherited, before)
+
+    def test_runtime_guard_requires_the_exact_declared_version_token(self):
+        for name, output in [('java', 'openjdk version "22.0.2" 2024-07-16\nbuild details'),
+                             ('java', 'java version "22.0.2"'), ('javac', 'javac 22.0.2')]:
+            self.assertTrue(matches_runtime_version(name, output), output)
+        for name, output in [('java', 'openjdk version "22.0.20"'),
+                             ('java', 'openjdk version "22.0.2-ea"'),
+                             ('java', 'openjdk version "23.0.1"\nbuild mentions 22.0.2'),
+                             ('javac', 'javac 22.0.20'),
+                             ('javac', 'javac 23.0.1\ncompatible with 22.0.2'), ('java', '')]:
+            self.assertFalse(matches_runtime_version(name, output), output)
+
     def test_config_overrides_preserve_every_other_effective_property(self):
         raw = b'# synthetic properties only\na=old\nb=unchanged\nc=1\n'
         result = configuration(raw, {'a': 'new', 'c': '2'})

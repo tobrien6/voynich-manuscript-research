@@ -2,7 +2,7 @@
   "schema_version": 1,
   "method": "pinned self-citation source-build repeatability v1",
   "plan_sha256": "1fa16eae74d2ecba414f600e6ba5ae00f965d1ad61d30e75b9cdcedc466b8de9",
-  "runner_sha256": "6a560e8af8d18c2d0ed7121e6a68a57db98888de1bab287c7658082da5c29b3e",
+  "runner_sha256": "4579f7caaf75ec124a8ffcbfd53b2e173f1ea117bdf7a7ee24761e53d2ee225f",
   "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
   "source_inventory": [
     {
@@ -196,8 +196,8 @@
     "timed_out": false,
     "stdout_bytes": 0,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "stderr_bytes": 475,
-    "stderr_sha256": "c757177a150c2ebb8e285916806fc89f8c7d385fab85e7358c62f9474f28cb6e"
+    "stderr_bytes": 470,
+    "stderr_sha256": "e1465f3874f030557e5a0dcaff8ac70473142681ef62b4f38ee9ed859e11d8cd"
   },
   "build_flags": [
     "--release",
@@ -469,6 +469,7 @@
     "JAVA_TOOL_OPTIONS",
     "_JAVA_OPTIONS",
     "JDK_JAVA_OPTIONS",
+    "JDK_JAVAC_OPTIONS",
     "CLASSPATH",
     "GH_TOKEN",
     "GITHUB_TOKEN"

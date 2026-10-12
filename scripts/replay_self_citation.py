@@ -16,12 +16,27 @@ REVISION = '9e98c9122a0f490905e8b66f3911fc7ce095fd26'
 CONFIG_HASH = '00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800'
 SUPPLIED_HASH = 'a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956'
 CASES = [('short-19', 60, 19), ('short-20', 60, 20), ('release-19', 1200, 19)]
-REMOVED_ENV = ['JAVA_TOOL_OPTIONS', '_JAVA_OPTIONS', 'JDK_JAVA_OPTIONS', 'CLASSPATH',
+REMOVED_ENV = ['JAVA_TOOL_OPTIONS', '_JAVA_OPTIONS', 'JDK_JAVA_OPTIONS', 'JDK_JAVAC_OPTIONS', 'CLASSPATH',
                'GH_TOKEN', 'GITHUB_TOKEN']
 
 
 def digest(raw):
     return hashlib.sha256(raw).hexdigest()
+
+
+def process_environment(inherited):
+    """Exclude compiler/VM injection options without recording their values."""
+    environment = {key: value for key, value in inherited.items() if key not in REMOVED_ENV}
+    environment.update({'TZ': 'UTC', 'LANG': 'en_US.UTF-8', 'LC_ALL': 'en_US.UTF-8'})
+    return environment
+
+
+def matches_runtime_version(name, output):
+    """Check the version token rather than a substring such as 22.0.20."""
+    first_line = output.splitlines()[0] if output.splitlines() else ''
+    pattern = (r'(?:openjdk|java) version "22\.0\.2"(?:\s|$)' if name == 'java'
+               else r'javac 22\.0\.2(?:\s|$)')
+    return re.match(pattern, first_line) is not None
 
 
 def properties(raw):
@@ -112,15 +127,14 @@ def replay(reference, java_home, work):
     classes, empty_classpath = work / 'classes', work / 'empty-classpath'
     classes.mkdir()
     empty_classpath.mkdir()
-    environment = {key: value for key, value in os.environ.items() if key not in REMOVED_ENV}
-    environment.update({'TZ': 'UTC', 'LANG': 'en_US.UTF-8', 'LC_ALL': 'en_US.UTF-8'})
+    environment = process_environment(os.environ)
     java, javac = java_home / 'bin/java', java_home / 'bin/javac'
     versions = {}
     for name, executable in [('java', java), ('javac', javac)]:
         result = subprocess.run([str(executable), '-version'], capture_output=True, env=environment,
                                 check=True, timeout=15)
         version = (result.stdout + result.stderr).decode('utf-8').strip()
-        if '22.0.2' not in version:
+        if not matches_runtime_version(name, version):
             raise ValueError('this recorded plan targets Java 22.0.2; use a new plan for another runtime')
         versions[name] = {'version_output': version, 'executable_sha256': digest(executable.read_bytes())}
     build_flags = ['--release', '8', '-encoding', 'UTF-8', '-proc:none']

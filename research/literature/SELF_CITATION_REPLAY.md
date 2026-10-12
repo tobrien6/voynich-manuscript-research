@@ -14,6 +14,15 @@ timestamped preregistration or a registered manuscript hypothesis. The
 [complete run record](self-citation-repeatability.json) retains every planned
 case, source/class fingerprint, effective setting, exit outcome and output hash.
 
+Review added `JDK_JAVAC_OPTIONS` to the suppressed compiler/VM environment
+variables and made version checks compare the exact version token. The earlier
+[run record at the original PR head](https://github.com/tobrien6/voynich-manuscript-research/blob/7e92ba26f3df19ef2d336510fcb2564fa26a7250/research/literature/self-citation-repeatability.json)
+remains available. The corrected runner repeated all six fixed cases in new
+directories. Source/class inventories, frozen plan, effective configurations,
+and every generated-output fingerprint were unchanged; runner and local
+build-log provenance were refreshed. No seed, setting or comparison was chosen
+from these repeated outcomes.
+
 ## Source, configuration and build
 
 Use author repository commit
@@ -94,10 +103,12 @@ PYTHONPATH=tests python3 -m unittest test_self_citation_replay -v
 
 The harness retains build/process stdout and stderr, every effective property
 file, compiled classes, and all six outputs beneath the work directory. The
-JSON records fingerprints instead of their text. Helpers are tested using
+JSON records fingerprints instead of their text. Eight helper tests use
 synthetic property/text fixtures, including duplicate/unsupported declarations,
 exact preservation of unmodified properties and row characters, invalid UTF-8,
-and preservation of failed/timed-out process logs. The six actual Java executions
+preservation of failed/timed-out process logs, compiler/VM environment filtering,
+and rejection of near-matching version strings. A deliberately injected synthetic
+compiler option was excluded in an actual launcher check. The six actual Java executions
 are the integration check; ordinary unit tests do not download or invoke Java.
 
 ## Interpretation and next test
