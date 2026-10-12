@@ -176,7 +176,9 @@ missing-support records and provenance. Producer/report bytes stayed unchanged.
 
 Supply a matching archive from the
 [parent reproduction procedure](SELF_CITATION_PREFIX_PROFILE.md#reproduction-and-verification).
-For Python 3.10 or later:
+Exact receipt replay uses the recorded **Python 3.14.3** runtime and frozen helper
+bytes. A different Python version changes provenance and requires an explicitly
+versioned parent/result record, even if its numerical calculation agrees.
 
 ```sh
 python3 scripts/self_citation_size_conditioned.py \
