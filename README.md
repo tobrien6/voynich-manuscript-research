@@ -45,6 +45,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Literal-chain and token-boundary concordance](research/transliteration/TOKEN_BOUNDARY_CONCORDANCE.md): fixed-cohort source/spacing comparisons retain identical encoded strings with different boundaries, without adjudicating manuscript word divisions.
 - [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
