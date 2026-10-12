@@ -102,3 +102,8 @@ subtypes and boundary convention and disclose which choices affect its cohort.
 Image review needs an explicit paragraph definition and glyph-level alignment.
 These exposed metadata results must remain separate from an untouched
 decipherment evaluation or a translation claim.
+
+The [residual image pilot](RESIDUAL_PARAGRAPH_IMAGE_PILOT.md) inspects every
+residual end disagreement on the first three selected pages: 19v, 24v, and
+26v. It distinguishes a right-aligned terminal-row context from divisions
+within ordinary P0 text and keeps all five boundaries unresolved.
