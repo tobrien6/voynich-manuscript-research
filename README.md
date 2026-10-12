@@ -13,9 +13,14 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Project brief and research plan](99TOKENS.md)
 - [Decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md)
 - [Primary source register](research/SOURCES.md)
+- [Boundary-focused pilot inventory](research/PILOT_INVENTORY.md)
+- [Selection protocol recorded before inspection](research/PILOT_SELECTION.md)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
-The project is at the scoping stage. Decoding and translation are its objective; no new transcription, statistical result, or validated decipherment has been established.
+A first boundary-focused pilot records ten digitized surfaces across six catalog
+parts, with source links and qualitative observations. Independent verification
+is pending. Decoding and translation are the project objective; no new
+transcription, statistical result, or validated decipherment has been established.
 
 ## Research practice
 
