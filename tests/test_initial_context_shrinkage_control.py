@@ -111,5 +111,20 @@ class InitialContextControlTests(unittest.TestCase):
             with patch('sys.argv',['control','--check',str(path)]),patch.object(c,'build_report',return_value={'schema_version':1}),\
                     redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):c.main()
 
+    def test_failed_analytical_predictions_and_identity_retain_every_variant(self):
+        original=c.probabilities
+        def weaker_second(model,w,x,y):
+            q0,q1,q2,qeff=original(model,w,x,y)
+            return q0,q1,q1,qeff  # Normalized, but violates the declared prediction.
+        with patch.object(c,'probabilities',side_effect=weaker_second):report=c.build_report()
+        self.assertEqual(len(report['treatments']),3)
+        for t in report['treatments']:
+            self.assertEqual(len(t['folds']),5)
+            self.assertFalse(t['summary']['all_analytical_predictions_match'])
+            self.assertFalse(t['summary']['full_alphabet_equivalence'])
+            self.assertFalse(t['summary']['equivalent_loss_identity'])
+            self.assertFalse(t['summary']['fixed_second_order_preference'])
+            self.assertEqual(t['summary']['pooled_gain12_bits_per_target'],0)
+
 
 if __name__=='__main__':unittest.main()

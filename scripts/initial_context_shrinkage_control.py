@@ -112,9 +112,9 @@ def score(row, model):
     sequence = events(row['units'])
     qs = [probabilities(model, *event) for event in sequence]
     losses = [-math.fsum(math.log2(float(q[j])) for q in qs) for j in range(4)]
-    require(all(q[2] == q[3] for q in qs), 'constant-older-context equivalence failed')
     return {'group': row['group'], 'fold': row['fold'], 'tokens': 1, 'units': len(row['units']),
             'targets': len(sequence), 'loss_bits_q0_q1_q2_q1_eff': losses,
+            'constant_context_equivalence': all(q[2] == q[3] for q in qs),
             'gain12_bits_per_target': (losses[1]-losses[2])/len(sequence),
             'gain_q2_over_q1_eff_bits_per_target': (losses[3]-losses[2])/len(sequence)}
 
@@ -157,19 +157,19 @@ def build_report(root=ROOT):
             for x in (BOS, 'a'):
                 qs = [probabilities(model, BOS, x, y) for y in alphabet]
                 require(all(sum(q[j] for q in qs) == 1 for j in range(4)), 'distribution normalization failed')
-                require(all(q[2] == q[3] for q in qs), 'full-alphabet equivalence failed')
                 all_probabilities.append({'older': BOS, 'previous': x,
                     'effective_strength': rational(effective_strength(model['first_totals'][x])),
+                    'full_alphabet_equivalence': all(q[2] == q[3] for q in qs),
                     'targets': [{'target': y, 'q0_q1_q2_q1_eff': [rational(p) for p in q]}
                                 for y,q in zip(alphabet,qs)]})
             require(distributions is None or distributions == all_probabilities, 'toy folds differ unexpectedly')
             distributions = all_probabilities
-            for event in events(['a']):
-                require([rational(q) for q in probabilities(model, *event)[:3]] ==
-                        [expected[k] for k in ('q0','q1','q2')], 'analytical prediction failed')
             folds.append({'fold': fold, 'training_groups': [r['group'] for r in training],
                           'scoring_groups': [r['group'] for r in scoring],
                           'training_counts': counts_record(model),
+                          'analytical_target_prediction_matches': all(
+                              [rational(q) for q in probabilities(model, *event)[:3]] ==
+                              [expected[k] for k in ('q0','q1','q2')] for event in events(['a'])),
                           'probabilities_sha256': digest(encoded(distributions)),
                           'scored_locus': score(scoring[0], model)})
         scores = [f['scored_locus'] for f in folds]
@@ -177,12 +177,14 @@ def build_report(root=ROOT):
         losses = [math.fsum(s['loss_bits_q0_q1_q2_q1_eff'][j] for s in scores) for j in range(4)]
         pooled = (losses[1]-losses[2])/targets
         group = math.fsum(s['gain12_bits_per_target'] for s in scores)/len(scores)
-        require(losses[2] == losses[3], 'equivalent model loss changed')
         treatments.append({'unit_policy': policy['id'], 'target_alphabet': alphabet,
             'older_context_values': [BOS], 'all_context_probabilities': distributions, 'folds': folds,
             'summary': {'groups': 5, 'tokens': 5, 'units': 5, 'targets': targets,
                 'loss_bits_q0_q1_q2_q1_eff': losses, 'pooled_gain12_bits_per_target': pooled,
                 'equal_group_gain12_bits_per_target': group,
+                'all_analytical_predictions_match': all(f['analytical_target_prediction_matches'] for f in folds),
+                'full_alphabet_equivalence': all(c['full_alphabet_equivalence'] for c in distributions),
+                'equivalent_loss_identity': losses[2] == losses[3],
                 'gain_q2_over_q1_eff_bits_per_target': (losses[3]-losses[2])/targets,
                 'fixed_second_order_preference': preference(pooled, group,
                     [s['gain12_bits_per_target'] for s in scores])}})

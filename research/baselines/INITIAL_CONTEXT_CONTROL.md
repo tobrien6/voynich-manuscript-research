@@ -16,12 +16,21 @@ model, or dispute the reviewed numerical scores.
 The [plan](INITIAL_CONTEXT_CONTROL_PLAN.md) and
 [protocol](initial-context-control-plan.json) were committed and published at
 [`f78e32a`](https://github.com/tobrien6/voynich-manuscript-research/commit/f78e32a).
-The standalone producer and nine synthetic tests were committed and published
+The initial standalone producer and nine synthetic tests were committed and published
 at [`dca9dc9`](https://github.com/tobrien6/voynich-manuscript-research/commit/dca9dc9bed25c8ff9e133a6bedd5c102bc94d31a)
 before the saved report was constructed. These chronological records remain
 declarations, not independent certification of execution history. The expected
 fractions and positive outcome were reasoned out before publication and are
 explicitly recorded in the plan.
+
+After that saved construction, failure reporting was corrected to retain all
+declared variants if an analytical prediction or equivalence fails, as the plan
+requires. Those checks now have explicit status fields rather than aborting
+the report. A tenth synthetic test simulates a normalized weaker second model
+and confirms every failed variant and criterion remains visible. The actual
+probabilities, counts, losses and gains are unchanged; the final report adds
+status fields and updates producer and probability-table fingerprints. This reporting change was
+made after the known result and is not claimed as a pre-result implementation.
 
 The model equations and reporting convention come from the reviewed
 [PR #123 specification](https://github.com/tobrien6/voynich-manuscript-research/blob/7a4b7ae3ccd1196e1389f16247c77e9505a626fe/scripts/grouped_symbol_prediction.py),
@@ -123,12 +132,14 @@ python3 scripts/initial_context_shrinkage_control.py --output /tmp/initial-conte
 cmp research/baselines/initial_context_shrinkage_control.json /tmp/initial-context-control-replay.json
 ```
 
-Nine tests check manual probabilities, exact whole-alphabet normalization,
+Ten tests check manual probabilities, exact whole-alphabet normalization,
 the general strength identity over 460 count/prior cases, BOS/EOS reset and
 target accounting, complete disjoint folds, an excluded-group perturbation,
 criterion boundaries, immutable inputs, duplicate/nonfinite JSON refusal and
 early/late output collisions, including symlink/hardlink aliases. Exclusive
 creation prevents an input from being overwritten by a late alias.
+The failure-retention test keeps all three variants and all five folds while
+recording failed analytical and equivalence checks with a nonpositive gain.
 
 Complete replay and a separate output replay match every field and byte.
 A separate closed-form calculation verifies all 390 full-alphabet target

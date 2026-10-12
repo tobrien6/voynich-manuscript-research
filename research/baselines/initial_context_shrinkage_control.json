@@ -7,7 +7,7 @@
     "research/baselines/INITIAL_CONTEXT_CONTROL_PLAN.md": "17d617603b493dd3e664d12e65087426087a09ea8b25060ffb521aa0f441e97e",
     "research/baselines/eva-unit-protocol.json": "a2ded6526829759169d9462708ea00f969ebe47127acf5c90e2f0b1e7e2fc3ec"
   },
-  "implementation_sha256": "c4b5352e2e5c21bfbe9b93cfeb76b2409dd3339c68bd2950bdcb644adba39ddb",
+  "implementation_sha256": "45328a5f7f7d1af6ca917090391824973edba1d397f39f3823472c8f7292e0e0",
   "referenced_predictor": {
     "referenced_predictor_pr": 123,
     "referenced_predictor_head": "7a4b7ae3ccd1196e1389f16247c77e9505a626fe",
@@ -129,6 +129,7 @@
             64,
             9
           ],
+          "full_alphabet_equivalence": true,
           "targets": [
             {
               "target": "<EOS>",
@@ -1252,6 +1253,7 @@
             64,
             9
           ],
+          "full_alphabet_equivalence": true,
           "targets": [
             {
               "target": "<EOS>",
@@ -2420,7 +2422,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c3a4400370d0ebc04b82a7dfab5b684781a59b928f4b100b8b771411994e44ca",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "95e957027320c892f82a0f029d019899af4b8531f47e95cc41e84145667d8a87",
           "scored_locus": {
             "group": "toy-0",
             "fold": 0,
@@ -2433,6 +2436,7 @@
               2.3461294179457592,
               2.3461294179457592
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.543142325026529,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -2487,7 +2491,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c3a4400370d0ebc04b82a7dfab5b684781a59b928f4b100b8b771411994e44ca",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "95e957027320c892f82a0f029d019899af4b8531f47e95cc41e84145667d8a87",
           "scored_locus": {
             "group": "toy-1",
             "fold": 1,
@@ -2500,6 +2505,7 @@
               2.3461294179457592,
               2.3461294179457592
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.543142325026529,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -2554,7 +2560,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c3a4400370d0ebc04b82a7dfab5b684781a59b928f4b100b8b771411994e44ca",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "95e957027320c892f82a0f029d019899af4b8531f47e95cc41e84145667d8a87",
           "scored_locus": {
             "group": "toy-2",
             "fold": 2,
@@ -2567,6 +2574,7 @@
               2.3461294179457592,
               2.3461294179457592
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.543142325026529,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -2621,7 +2629,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c3a4400370d0ebc04b82a7dfab5b684781a59b928f4b100b8b771411994e44ca",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "95e957027320c892f82a0f029d019899af4b8531f47e95cc41e84145667d8a87",
           "scored_locus": {
             "group": "toy-3",
             "fold": 3,
@@ -2634,6 +2643,7 @@
               2.3461294179457592,
               2.3461294179457592
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.543142325026529,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -2688,7 +2698,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c3a4400370d0ebc04b82a7dfab5b684781a59b928f4b100b8b771411994e44ca",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "95e957027320c892f82a0f029d019899af4b8531f47e95cc41e84145667d8a87",
           "scored_locus": {
             "group": "toy-4",
             "fold": 4,
@@ -2701,6 +2712,7 @@
               2.3461294179457592,
               2.3461294179457592
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.543142325026529,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -2719,6 +2731,9 @@
         ],
         "pooled_gain12_bits_per_target": 0.5431423250265291,
         "equal_group_gain12_bits_per_target": 0.543142325026529,
+        "all_analytical_predictions_match": true,
+        "full_alphabet_equivalence": true,
+        "equivalent_loss_identity": true,
         "gain_q2_over_q1_eff_bits_per_target": 0.0,
         "fixed_second_order_preference": true
       }
@@ -2803,6 +2818,7 @@
             64,
             9
           ],
+          "full_alphabet_equivalence": true,
           "targets": [
             {
               "target": "<EOS>",
@@ -4178,6 +4194,7 @@
             64,
             9
           ],
+          "full_alphabet_equivalence": true,
           "targets": [
             {
               "target": "<EOS>",
@@ -5598,7 +5615,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c288675e477fb981457163558547318e095b0ddf985208bb7be82909585afa8d",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "f5da982a7d68b594380b6ca8202867937e4d24a76a7528cf91cff2e3eb1d1e85",
           "scored_locus": {
             "group": "toy-0",
             "fold": 0,
@@ -5611,6 +5629,7 @@
               2.4277366980598187,
               2.4277366980598187
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.5775450291586732,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -5665,7 +5684,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c288675e477fb981457163558547318e095b0ddf985208bb7be82909585afa8d",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "f5da982a7d68b594380b6ca8202867937e4d24a76a7528cf91cff2e3eb1d1e85",
           "scored_locus": {
             "group": "toy-1",
             "fold": 1,
@@ -5678,6 +5698,7 @@
               2.4277366980598187,
               2.4277366980598187
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.5775450291586732,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -5732,7 +5753,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c288675e477fb981457163558547318e095b0ddf985208bb7be82909585afa8d",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "f5da982a7d68b594380b6ca8202867937e4d24a76a7528cf91cff2e3eb1d1e85",
           "scored_locus": {
             "group": "toy-2",
             "fold": 2,
@@ -5745,6 +5767,7 @@
               2.4277366980598187,
               2.4277366980598187
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.5775450291586732,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -5799,7 +5822,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c288675e477fb981457163558547318e095b0ddf985208bb7be82909585afa8d",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "f5da982a7d68b594380b6ca8202867937e4d24a76a7528cf91cff2e3eb1d1e85",
           "scored_locus": {
             "group": "toy-3",
             "fold": 3,
@@ -5812,6 +5836,7 @@
               2.4277366980598187,
               2.4277366980598187
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.5775450291586732,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -5866,7 +5891,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "c288675e477fb981457163558547318e095b0ddf985208bb7be82909585afa8d",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "f5da982a7d68b594380b6ca8202867937e4d24a76a7528cf91cff2e3eb1d1e85",
           "scored_locus": {
             "group": "toy-4",
             "fold": 4,
@@ -5879,6 +5905,7 @@
               2.4277366980598187,
               2.4277366980598187
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.5775450291586732,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -5897,6 +5924,9 @@
         ],
         "pooled_gain12_bits_per_target": 0.5775450291586732,
         "equal_group_gain12_bits_per_target": 0.5775450291586732,
+        "all_analytical_predictions_match": true,
+        "full_alphabet_equivalence": true,
+        "equivalent_loss_identity": true,
         "gain_q2_over_q1_eff_bits_per_target": 0.0,
         "fixed_second_order_preference": true
       }
@@ -5993,6 +6023,7 @@
             64,
             9
           ],
+          "full_alphabet_equivalence": true,
           "targets": [
             {
               "target": "<EOS>",
@@ -7620,6 +7651,7 @@
             64,
             9
           ],
+          "full_alphabet_equivalence": true,
           "targets": [
             {
               "target": "<EOS>",
@@ -9292,7 +9324,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "d3ffcc2b99eafb5e9ec0926ca4707d28d8ecd9be48d23e9d3bde4462cfc5113f",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "989944add7b7756c7e0997be7e0f2d2acc90b837501547e2231ad209331f9c63",
           "scored_locus": {
             "group": "toy-0",
             "fold": 0,
@@ -9305,6 +9338,7 @@
               2.489811349327035,
               2.489811349327035
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.6049539759086222,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -9359,7 +9393,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "d3ffcc2b99eafb5e9ec0926ca4707d28d8ecd9be48d23e9d3bde4462cfc5113f",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "989944add7b7756c7e0997be7e0f2d2acc90b837501547e2231ad209331f9c63",
           "scored_locus": {
             "group": "toy-1",
             "fold": 1,
@@ -9372,6 +9407,7 @@
               2.489811349327035,
               2.489811349327035
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.6049539759086222,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -9426,7 +9462,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "d3ffcc2b99eafb5e9ec0926ca4707d28d8ecd9be48d23e9d3bde4462cfc5113f",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "989944add7b7756c7e0997be7e0f2d2acc90b837501547e2231ad209331f9c63",
           "scored_locus": {
             "group": "toy-2",
             "fold": 2,
@@ -9439,6 +9476,7 @@
               2.489811349327035,
               2.489811349327035
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.6049539759086222,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -9493,7 +9531,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "d3ffcc2b99eafb5e9ec0926ca4707d28d8ecd9be48d23e9d3bde4462cfc5113f",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "989944add7b7756c7e0997be7e0f2d2acc90b837501547e2231ad209331f9c63",
           "scored_locus": {
             "group": "toy-3",
             "fold": 3,
@@ -9506,6 +9545,7 @@
               2.489811349327035,
               2.489811349327035
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.6049539759086222,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -9560,7 +9600,8 @@
             ],
             "total_targets": 8
           },
-          "probabilities_sha256": "d3ffcc2b99eafb5e9ec0926ca4707d28d8ecd9be48d23e9d3bde4462cfc5113f",
+          "analytical_target_prediction_matches": true,
+          "probabilities_sha256": "989944add7b7756c7e0997be7e0f2d2acc90b837501547e2231ad209331f9c63",
           "scored_locus": {
             "group": "toy-4",
             "fold": 4,
@@ -9573,6 +9614,7 @@
               2.489811349327035,
               2.489811349327035
             ],
+            "constant_context_equivalence": true,
             "gain12_bits_per_target": 0.6049539759086222,
             "gain_q2_over_q1_eff_bits_per_target": 0.0
           }
@@ -9591,6 +9633,9 @@
         ],
         "pooled_gain12_bits_per_target": 0.6049539759086221,
         "equal_group_gain12_bits_per_target": 0.6049539759086222,
+        "all_analytical_predictions_match": true,
+        "full_alphabet_equivalence": true,
+        "equivalent_loss_identity": true,
         "gain_q2_over_q1_eff_bits_per_target": 0.0,
         "fixed_second_order_preference": true
       }
