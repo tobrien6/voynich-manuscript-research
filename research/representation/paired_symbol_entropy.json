@@ -15,7 +15,7 @@
   "record_fingerprints": {
     "research/representation/paired-entropy-plan.json": "aecdd268ef21c5a8ef6167f00a79a2f29361fd4cde5a598bc266bb63b3b8c52a",
     "research/representation/PAIRED_ENTROPY_PLAN.md": "7ad639ce39a3d8a81eb02b5cc7b28e44926989f7568c34c8d8f87af1f3183dd1",
-    "scripts/paired_symbol_entropy.py": "3c527488613a8d347ea3921b923f58edf12f6efa945a2039dbfcb858d781aff2"
+    "scripts/paired_symbol_entropy.py": "d1701a2f7be862098a278ac1ef770f9df069a4f0ad8dfde1dec7b6af58a655ad"
   },
   "sources": [
     {

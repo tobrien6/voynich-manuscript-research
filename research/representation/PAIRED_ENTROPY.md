@@ -131,9 +131,12 @@ python3 -m unittest tests.test_paired_symbol_entropy -v
 Check mode verifies the plan's source/implementation pins before loading data,
 checks exact source bytes, recreates the common cohort and all 24 treatments,
 and compares the complete report. Changed pins require review and versioning.
-Output guards preserve inputs even through symlink/hardlink aliases.
+Output guards check existing symlink/hardlink aliases before calculation and
+again immediately before writing. Temporary-fixture tests also verify that an
+alias created during calculation is rejected without changing input bytes;
+this bounded check does not claim an atomic filesystem operation.
 
-Ten synthetic tests cover manual branching and pooled weighting, singleton/null
+Eleven synthetic tests cover manual branching and pooled weighting, singleton/null
 cases, both boundary policies, reversible grouping/case, cohort/exclusion
 accounting, duplicate/missing identities, changed pins and safe output behavior.
 An independent successor-distribution calculation checks all 196 pairs of

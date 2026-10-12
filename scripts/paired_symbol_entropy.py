@@ -261,6 +261,7 @@ def main():
             raise ValueError("paired entropy report differs from replay")
         text = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
         if args.output:
+            protect_output(args.output, protected)
             args.output.write_text(text, encoding="utf-8")
         elif not args.check:
             print(text, end="")

@@ -172,6 +172,32 @@ class PairedSymbolEntropyTests(unittest.TestCase):
                     self.assertIn("including file aliases", stderr.getvalue())
                     self.assertEqual(original.read_bytes(), before)
 
+    def test_alias_created_during_calculation_is_rejected_before_output_write(self):
+        for alias_kind in ('symlink', 'hardlink'):
+            with self.subTest(alias_kind=alias_kind), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                fixture_root(root)
+                original = root / 'data/raw/fixture.txt'
+                destination = root / 'late-output.json'
+                before = original.read_bytes()
+
+                def create_alias_after_initial_check(_):
+                    if alias_kind == 'symlink':
+                        destination.symlink_to(original)
+                    else:
+                        os.link(original, destination)
+                    return {'synthetic': 'report fixture'}
+
+                with patch.object(analysis, 'ROOT', root), \
+                        patch.object(analysis, 'make_report', side_effect=create_alias_after_initial_check) as run, \
+                        patch('sys.argv', ['audit', '--output', str(destination)]), \
+                        contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as failure:
+                    analysis.main()
+                self.assertEqual(failure.exception.code, 1)
+                run.assert_called_once_with(root)
+                self.assertEqual(original.read_bytes(), before)
+                self.assertEqual(destination.read_bytes(), before)
+
     def test_invalid_segment_or_boundary_populations_fail(self):
         for segments in ([], [[]], [[""]], [[1]]):
             with self.assertRaises(ValueError):
