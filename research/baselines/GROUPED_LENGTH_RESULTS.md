@@ -108,6 +108,13 @@ rules, chronology, fitted values and complete scientific report bytes.
 
 ## Interpretation and next step
 
+The [registered exact-slot follow-up](EXACT_SLOT_LENGTH_RESULTS.md) retains the
+same cohort and group folds, with exact interior size/target-slot features and
+a matched previous-class weight. Both new refinements lose on every fold and
+treatment; the primary previous-class comparison fails its criterion throughout.
+All old coarse fitted/scored records remain unchanged. The follow-up is another
+exposed-data predictive comparison, with no direct-dependence or decipherment claim.
+
 This fixed model is limited by the observed results; the study does not refute
 all sequence structure or show that the text is random. The previous
 permutation questions conditioned on locus multisets, whereas this predictor

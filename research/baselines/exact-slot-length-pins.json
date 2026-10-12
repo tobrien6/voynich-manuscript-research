@@ -1,0 +1,20 @@
+{
+  "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+  "research/baselines/EXACT_SLOT_LENGTH_PLAN.md": "662ab1ce9ee2551b0a3385c6e0179e554a0d42a45df5152112d4c92cd995707c",
+  "research/baselines/GROUPED_LENGTH_PLAN.md": "f07091094685cb4bfaced56ead1802cf46700ab2930a5aa207a2ae96e7add9c1",
+  "research/baselines/grouped-length-prediction.json": "d271a627a4f37f4916f032fd5021cf6e14bcc9c0817337a6aeeccb1f29cc9810",
+  "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46",
+  "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+  "research/transliteration/interior_length_order.json": "d3ada06de64c80f315ea6fa38f71f25158857cdf0d2a34728d1c6fc6ad7b6a6c",
+  "scripts/audit_transcription_images.py": "a3d9c789fa04e41a715d2247e40d16b43827de88c32afaaeb9e302d4ed7d9e5e",
+  "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+  "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+  "scripts/grouped_length_prediction.py": "10d090fa79506c41d0974b9a3b1c75ecaf2d8bcc6adee16093291fb63ff432fb",
+  "scripts/index_yale_manifest.py": "cf5cea25e41495b710ba4a9c8eedffe809eec392d1a43126e6706a10a12ba3a5",
+  "scripts/interior_length_order.py": "729e8a774a889b6370196ab09b56d228f7b3fe4c747f169a5217488453d28c3a",
+  "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+  "scripts/repetition_moments.py": "e758237cc966a4723e3613b8d7cce96e96f685ba682cdc1668558cf153749370",
+  "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+  "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+  "scripts/validate_evaluation_split.py": "f967f3ead88326870905fec2e64582b711246bc1bb3e057aba786dfaff5e172d"
+}
