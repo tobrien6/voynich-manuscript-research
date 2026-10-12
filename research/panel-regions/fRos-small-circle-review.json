@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "scope": "Fixed native records for a provisional image-layout review",
+  "apply_to_statistics": false,
+  "verified_locus_crosswalk": null,
+  "input_pins": {
+    "research/panel-regions/fRos-small-circle-proposal.json": "e3753a97f2f30dc38f75a7d89549fdb31bfb90f3041bb962aee34d7b9d31b3e7",
+    "research/panel-regions/FROS_SMALL_CIRCLE_PLAN.md": "2b163e525cc0a4a6837ef2b83a59029a624143416448e0934ab7df560a393281",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "scripts/build_fros_review.py": "fd97677b7b9d969d32dff7f0a456b13cf6a406a3d544d625de92a9170521ce77",
+    "research/pilot/inventory.json": "9d34cfdc78a0900e52a8833fd67d752b42aae4667fc57c815e6a205d0a786e79",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
+  },
+  "proposal": "research/panel-regions/fRos-small-circle-proposal.json",
+  "target_identifiers": [
+    "fRos.112,@L0",
+    "fRos.113,=Cc",
+    "fRos.114,+Ca",
+    "fRos.115,=L0"
+  ],
+  "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+  "dependency_group": "yale-leaves:85+86",
+  "editions": [
+    {
+      "id": "ZL3b",
+      "alphabet": "Eva-",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "source_url": "https://voynich.nu/data/ZL3b-n.txt",
+      "loci": [
+        {
+          "identifier": "fRos.112,@L0",
+          "source_physical_line": 5391,
+          "native_text": "<!left of clock>opa{i'h}efchdy",
+          "kind": "L0",
+          "locator": "@",
+          "glyph_alignment": "unresolved"
+        },
+        {
+          "identifier": "fRos.113,=Cc",
+          "source_physical_line": 5392,
+          "native_text": "<!above clock><!08:00>sar.odaiin,or",
+          "kind": "Cc",
+          "locator": "=",
+          "glyph_alignment": "unresolved"
+        },
+        {
+          "identifier": "fRos.114,+Ca",
+          "source_physical_line": 5393,
+          "native_text": "<!below clock><!06:30>o.dar.[aiird:???]",
+          "kind": "Ca",
+          "locator": "+",
+          "glyph_alignment": "unresolved"
+        },
+        {
+          "identifier": "fRos.115,=L0",
+          "source_physical_line": 5394,
+          "native_text": "<!right of clock>oteoly",
+          "kind": "L0",
+          "locator": "=",
+          "glyph_alignment": "unresolved"
+        }
+      ]
+    },
+    {
+      "id": "GC2a",
+      "alphabet": "v101",
+      "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "source_url": "https://voynich.nu/data/GC2a-n.txt",
+      "loci": [
+        {
+          "identifier": "fRos.112,@L0",
+          "source_physical_line": 3790,
+          "native_text": "oja2cu189",
+          "kind": "L0",
+          "locator": "@",
+          "glyph_alignment": "unresolved"
+        },
+        {
+          "identifier": "fRos.113,=Cc",
+          "source_physical_line": 3791,
+          "native_text": "say.a89m.oy",
+          "kind": "Cc",
+          "locator": "=",
+          "glyph_alignment": "unresolved"
+        },
+        {
+          "identifier": "fRos.114,+Ca",
+          "source_physical_line": 3792,
+          "native_text": "o.8.ay.am.8",
+          "kind": "Ca",
+          "locator": "+",
+          "glyph_alignment": "unresolved"
+        },
+        {
+          "identifier": "fRos.115,=L0",
+          "source_physical_line": 3793,
+          "native_text": "okcoe9",
+          "kind": "L0",
+          "locator": "=",
+          "glyph_alignment": "unresolved"
+        }
+      ]
+    }
+  ]
+}

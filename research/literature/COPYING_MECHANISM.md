@@ -70,6 +70,12 @@ neither a regenerated output nor proof of identity with the paper's sample.
 
 ## Reproduction gaps found by source inspection
 
+The later [static packaged-artifact check](GENERATOR_ARTIFACT_IDENTITY.md)
+pins the JAR and embedded configuration and compares a compiler-only source
+build. It retains unmatched classes and disassembly differences without
+inferring changed generator behavior. The source-only inspection above remains
+distinct from this later artifact evidence and from runtime reproduction.
+
 `PseudoRandomNumberGenerator.seed()` constructs `java.util.Random` from a
 numeric seed. `Config` prefers an external configuration file when present,
 otherwise using the resource loader. Preserve the complete effective file,

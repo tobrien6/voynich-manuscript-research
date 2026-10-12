@@ -20,6 +20,9 @@ named archive and prescribes additional parsing and manual exclusions. Those
 steps have not been implemented here. No published result is reproduced.
 The [published-methods register](../literature/README.md) records the measurement
 units and null scopes that a later replication must match.
+The [planned parsing reconstruction](PARSING.md) now implements four explicit
+exclusion interpretations and preserves their length discrepancies and unmatched
+label phrases. It does not reproduce a published statistic.
 
 ## Method
 

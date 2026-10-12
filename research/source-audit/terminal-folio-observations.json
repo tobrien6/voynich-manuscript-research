@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "plan_commit": "6449488",
+  "intake_report": "research/source-audit/terminal-folio-intake.json",
+  "intake_report_sha256": "6e450e4fb1b234227e6d788a802b520b35dc24eef9f52be45e925ce47a6f79fa",
+  "inspection_metadata_recorded_at_utc": "2026-10-12T04:05:16Z",
+  "inspection_timezone": "America/New_York",
+  "observer": "Codex initial source-image observation; one observer, not independently replicated",
+  "historical_alias_verified": false,
+  "new_voynich_glyph_reading_or_translation": false,
+  "records": [
+    {
+      "yale_label": "116r",
+      "source_page_id": "f116r",
+      "image_metadata": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+        "image_oid": "1006276",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006276",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006276/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006276",
+        "image_width": "2559",
+        "image_height": "3787"
+      },
+      "inspected_images": [
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006276/full/full/0/default.jpg",
+          "pixel_width": 2559,
+          "pixel_height": 3787,
+          "sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c"
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006276/1820,100,460,210/full/0/default.jpg",
+          "pixel_width": 460,
+          "pixel_height": 210,
+          "sha256": "3becef17899a462636825c6b68b7c6282cd9414f9b39552ec81f4ac40e54e4f8",
+          "region_xywh_full_image_pixels": [
+            1820,
+            100,
+            460,
+            210
+          ]
+        }
+      ],
+      "observation_status": "single_observer",
+      "direct_observations": [
+        "The upper-right numeral appears to read 116; it is retained in the linked native-pixel crop.",
+        "Dense paragraph-like writing covers most of the page. Star-like marks occur along the left margin of the upper part, with larger gaps between some text groups."
+      ],
+      "limits": [
+        "No independent count of all physical writing rows is supplied.",
+        "The visible numeral supports the current label; it does not explain the older catalog's different terminal reference."
+      ]
+    },
+    {
+      "yale_label": "116v",
+      "source_page_id": "f116v",
+      "image_metadata": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+        "image_oid": "1006277",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006277",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006277",
+        "image_width": "2686",
+        "image_height": "3697"
+      },
+      "inspected_images": [
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg",
+          "pixel_width": 2686,
+          "pixel_height": 3697,
+          "sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17"
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006277/550,160,1900,510/full/0/default.jpg",
+          "pixel_width": 1900,
+          "pixel_height": 510,
+          "sha256": "7d579ebdb777e397fccc9ab8e99034083eaf5506b96a348cfaa6f7f2176e1531",
+          "region_xywh_full_image_pixels": [
+            550,
+            160,
+            1900,
+            510
+          ]
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006277/600,450,650,210/full/0/default.jpg",
+          "pixel_width": 650,
+          "pixel_height": 210,
+          "sha256": "8e98f7f2734ca0349af151bb732b33461cfbc0a0217c33f2f529e262b714719b",
+          "region_xywh_full_image_pixels": [
+            600,
+            450,
+            650,
+            210
+          ]
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006277/620,500,310,120/full/0/default.jpg",
+          "pixel_width": 310,
+          "pixel_height": 120,
+          "sha256": "be9b2ee003439e8a494542ed95dcd66be96a49463e45728c54453a685e0191ba",
+          "region_xywh_full_image_pixels": [
+            620,
+            500,
+            310,
+            120
+          ]
+        }
+      ],
+      "observation_status": "single_observer",
+      "apparent_horizontal_rows_in_upper_writing_group": 4,
+      "direct_observations": [
+        "The upper writing group contains one relatively high, short row and three lower rows separated by visible vertical space.",
+        "Three small drawn forms appear in the left margin; most of the lower surface lacks a dense text block."
+      ],
+      "limits": [
+        "The count is confined to the upper horizontal group, not every small or marginal mark on the page.",
+        "Neither the native word pair nor its source-to-image region is glyph-adjudicated by this observation.",
+        "A four-row group does not prove or refute the catalog's three-line presumed-key description, which may concern a subset. No key is validated."
+      ],
+      "native_locus_review_anchor": {
+        "plan_commit": "0d3cd3c0ffacc96a351d04b52f522519ec810df8",
+        "selection_rule": "Sole present f116v Lx locus; no agreement or readability filter.",
+        "native_locus_key": "f116v.1",
+        "association_status": "provisional",
+        "usable_as_verified_corpus_join": false,
+        "glyph_reading_verified": false,
+        "glyph_correction_proposed": false,
+        "source_record_is_not_physical_row_number": true,
+        "review_region_image_indices": [
+          2,
+          3
+        ],
+        "physical_position_description": "Left beginning of the lowest of the four apparent rows in the upper writing group.",
+        "source_contexts": [
+          {
+            "source_id": "ZL3b",
+            "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+            "alphabet": "Eva-",
+            "url": "https://voynich.nu/data/ZL3b-n.txt",
+            "locus_identifier": "f116v.1,@Lx",
+            "source_file_line": 8508,
+            "kind": "Lx",
+            "locator": "@",
+            "native_payload_outside_free_comments": "oror.sheey",
+            "free_comments_present": true
+          },
+          {
+            "source_id": "RF1b-full",
+            "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+            "alphabet": "Eva-",
+            "url": "https://voynich.nu/data/RF1b-e.txt",
+            "locus_identifier": "f116v.1,@Lx",
+            "source_file_line": 5613,
+            "kind": "Lx",
+            "locator": "@",
+            "native_payload_outside_free_comments": "oror.sheey",
+            "free_comments_present": false
+          },
+          {
+            "source_id": "RF1b-basic",
+            "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+            "alphabet": "Eva-",
+            "url": "https://voynich.nu/data/RF1b-er.txt",
+            "locus_identifier": "f116v.1,@Lx",
+            "source_file_line": 5613,
+            "kind": "Lx",
+            "locator": "@",
+            "native_payload_outside_free_comments": "oror.sheey",
+            "free_comments_present": false
+          }
+        ],
+        "absent_source_headers": [
+          "IT2a",
+          "GC2a"
+        ],
+        "direct_observations": [
+          "Two separated writing clusters occupy the left beginning of the lowest apparent row; adjoining writing continues to their right.",
+          "The narrower window retains both clusters and a small amount of adjoining context. A curved upper stroke is visible above the second cluster.",
+          "The broader window retains part of the row above, colored marks above the first cluster, and the continuation of the lowest row."
+        ],
+        "association_basis": [
+          "The two clusters occur at the position described by the publisher for the native-script pair.",
+          "The accepted source intake contains exactly one present Lx record on this side in ZL3b and each RF export; no alternative present native locus is available on this page in those files.",
+          "This is a plausible position association from source-informed inspection, not a letter-by-letter match or independent replication."
+        ],
+        "unresolved_readings": [
+          "The source spelling oror.sheey, the glyph inventory, and the exact token boundary are not adjudicated by this review.",
+          "The source ordinal .1 is preserved and is not converted to a physical writing-row number.",
+          "Review windows include background and adjoining context; their edges are not verified glyph or token boxes.",
+          "Adjoining writing receives no transcription, language identification or translation.",
+          "All regions are from one already exposed image, inspected by the same observer; equal source payloads are not independent glyph evidence.",
+          "The legacy 117v alias remains unresolved and receives no evidence upgrade from this association."
+        ]
+      }
+    },
+    {
+      "yale_label": "[Back flyleaf recto]",
+      "source_page_id": null,
+      "image_metadata": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037113",
+        "image_oid": "1037113",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1037113",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1037113/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1037113",
+        "image_width": "2570",
+        "image_height": "3787"
+      },
+      "inspected_images": [
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1037113/full/full/0/default.jpg",
+          "pixel_width": 2570,
+          "pixel_height": 3787,
+          "sha256": "0866fe9ca5683fb6f29044fe8ffcbc4c5e76c9e11055868484af57d00d3ab4fb"
+        }
+      ],
+      "observation_status": "single_observer",
+      "direct_observations": [
+        "The distinct, pale surface is largely blank at the inspected scale, with creases and faint marks. No comparable upper four-row writing block is apparent."
+      ],
+      "limits": [
+        "The index supplies an unnumbered flyleaf label. No native transcription page, material identification, or folio 117 assignment is inferred."
+      ]
+    }
+  ],
+  "document_sources": [
+    {
+      "id": "TF001",
+      "author": "Rene Zandbergen",
+      "url": "https://voynich.nu/q20/index.html",
+      "locator": "Folio 116, f116v, Text",
+      "publisher_update_verbatim": "09/06/2025",
+      "supports": "Publisher distinguishes four visible writing rows from one native-script word-pair locus. No explicit legacy 117v alias is given."
+    },
+    {
+      "id": "TF002",
+      "author": "Rene Zandbergen",
+      "url": "https://voynich.nu/extra/sp_transcr.html",
+      "locator": "Inventory of the transliterated text, Lx row",
+      "supports": "Lx denotes individual pieces of marginal, possibly external writing, rather than ordinary paragraph lines."
+    }
+  ],
+  "limits": [
+    "Source edition coverage is not physical manuscript completeness.",
+    "Image fingerprints identify inspected bytes, not invariant future derivatives or verified readings.",
+    "The alias registry remains unresolved and the flyleaf stays unnumbered."
+  ],
+  "complementary_numbering_audit_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/57",
+  "accepted_numbering_context_merge": "65aa7fe",
+  "terminal_native_locus_review_performed": true,
+  "native_locus_review_recorded_at_utc": "2026-10-12T04:27:46Z"
+}

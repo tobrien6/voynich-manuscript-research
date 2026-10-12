@@ -1,0 +1,31 @@
+{
+  "plan_version": 1,
+  "scope": "Exploratory historical parsing reconstruction; no repetition statistic or decipherment",
+  "source_id": "LS16e6",
+  "archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+  "member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319",
+  "transcriber": "H",
+  "supplement_url": "https://doi.org/10.1371/journal.pone.0067310.s007",
+  "supplement_sha256": "e8aa06273f81224de693d90189dee9a4e9bc4713722b4e22866d2abe0ebc29fc",
+  "supplement_section": "Transcription of the Voynich Manuscript and parsing",
+  "reported_token_count": 37762,
+  "tune_to_reported_count": false,
+  "resolved_operational_exclusions": [
+    {"rule": "f49v_column", "page": "f49v", "unit": "L"},
+    {"rule": "f69r_center", "page": "f69r", "unit": "W"},
+    {"rule": "f70r1_outer_ring", "page": "f70r1", "unit": "C", "line": "1"},
+    {"rule": "f75_corner", "page": "f75v", "unit": "K"},
+    {"rule": "f76_column", "page": "f76r", "unit": "L"}
+  ],
+  "ring_policies": ["exclude_R2", "exclude_single_character_tokens"],
+  "f66r_column_units": ["M", "L"],
+  "ring_page": "f57v",
+  "ring_units": ["R1", "R2", "R3", "R4"],
+  "special_codes": ["&138", "&152", "&153", "&169", "&170", "&171", "&172", "&195", "&252", "&253", "&F", "&I'", "&I\"", "&I", "&K", "&o'", "&O'", "&O", "&q\"", "&S", "&T", "&Y"],
+  "figure_label_phrases": ["okchdy", "dar alocfhy", "dchedaly", "otarodl shy orory"],
+  "token_alphabet": "lowercase ASCII letters and retained asterisk",
+  "code_removal_policy": "Remove one immediately preceding encoded fallback character for each exact listed curly code annotation",
+  "figure_label_policy": "Exact complete normalized-record match only; retain unmatched phrases",
+  "output_order": "Archive H record order, then original token index",
+  "prior_exposure": "Full structural archive audit, selected H bodies/unit comments/code annotations and f66r image inspected; reported length already known"
+}
