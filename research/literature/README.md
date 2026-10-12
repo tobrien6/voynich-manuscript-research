@@ -12,6 +12,12 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The separate [self-citation implementation audit](COPYING_MECHANISM.md), with
+[source fingerprints and observations](copying-mechanism.json), adds L004 and
+an explicit comparison contract for a published copying mechanism. It separates
+the paper's abstract claims from inspected release code, configuration, and a
+supplied output artifact; no generator execution or mechanism test is reported.
+
 ## Three comparisons that need care
 
 | Source | Relevant reported measurement | Comparison limit |
