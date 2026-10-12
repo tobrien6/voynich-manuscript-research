@@ -128,3 +128,8 @@ additional eligibility requirements, source/glyph representation, dependency
 groups, and exposure-aware split. It should preserve the source-locus boundaries
 where its control requires them. This producer supplies a traceable input and
 honest exclusion denominators, not a tested decipherment or new unseen data.
+
+The [boundary recurrence follow-up](PARAGRAPH_BOUNDARY_REPETITION.md) measures
+exact token equality between consecutive original loci within these whole
+units. It keeps all 652 encoded boundaries and accounts for shared-locus
+covariance under its declared within-locus permutation control.
