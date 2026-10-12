@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "method": "pinned self-citation source-build repeatability v1",
+  "plan_sha256": "1fa16eae74d2ecba414f600e6ba5ae00f965d1ad61d30e75b9cdcedc466b8de9",
+  "runner_sha256": "4579f7caaf75ec124a8ffcbfd53b2e173f1ea117bdf7a7ee24761e53d2ee225f",
+  "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "source_inventory": [
+    {
+      "path": "source/src/main/java/de/voynich/text/Constants.java",
+      "bytes": 2215,
+      "sha256": "bda4ef3df6e5be3ea40ceeca66de001e30f873632380d940ce6e792bf3807248"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Glyph.java",
+      "bytes": 26311,
+      "sha256": "130222af0e736a79dbfa507b24d0a2d182169ece6899ea64ac9147fc11c5169e"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/GlyphGroup.java",
+      "bytes": 5703,
+      "sha256": "397f764b6b9c792d6bd8f98430363554890474a5c34a204e3e10033b57b1b37b"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "bytes": 14824,
+      "sha256": "7afa236373a997d2e2ccef9a8e7ee799c5766b63ddf161bab8b72ce0f3bbf1e9"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/StatisticHelper.java",
+      "bytes": 14988,
+      "sha256": "e40bffd4518c3555771fb3d502908d1ff7af5e516648d080111c384512cc9918"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Substitution.java",
+      "bytes": 1288,
+      "sha256": "a5ed5263b28c7289dd6922109b59bb3e26d175e257004e2b82d2397b79e736b5"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java",
+      "bytes": 14827,
+      "sha256": "62e3051c61c8126ad80ea24c4e17488f0093f247e62bc638493574d55015a0a2"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/DummyCanFollow.java",
+      "bytes": 1653,
+      "sha256": "e77f4bfb08c354f9b77901c068d3fdf67f3f073ffee523a3f46f8f6eafaaab88"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/I_CanFollow.java",
+      "bytes": 1163,
+      "sha256": "0a559ecf0c9839469034a878b34f0085da85a1491b36171d75d126c1a883ef7c"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/StatisticCanFollow.java",
+      "bytes": 3963,
+      "sha256": "51f87de0a79a9d6f79b4c9daafbc474f86a19b25385691c4303cc3746bf35848"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+      "bytes": 3192,
+      "sha256": "5d9f34e70bf1d71a4274280fec70518fc441a91ff1349fc16288d244e5eaa4d5"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/CalcGephiElements.java",
+      "bytes": 1616,
+      "sha256": "28c37a018847ffe4507f6b7d2f851ba3373d98b8808aa0f48066301a2235a60f"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/FollowMatrix.java",
+      "bytes": 3789,
+      "sha256": "90050119690b51502d23e11848370af97454f9c2d5a451889bea0cf53e0d6527"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroups.java",
+      "bytes": 92663,
+      "sha256": "56d11c54a7247f48a789590dc4d3dd376e35cc74006d528091217150a4a91562"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsThree.java",
+      "bytes": 91541,
+      "sha256": "64171ebcf37bcf6f88f626796ca682c7403ccd11806ada46ec645fb94c3aeac3"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/vms/VoynichGroupsTwo.java",
+      "bytes": 53415,
+      "sha256": "c2094fce408c48949732f506bbe660252728a21152b04249455728ae81d38f91"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/AbstractBaseGroupMorpher.java",
+      "bytes": 22901,
+      "sha256": "fd3466fe5879d8e25c7892ef6e08b34f02706c2f3c2c09dddd31cb802e8ba0f1"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/I_GroupMorpher.java",
+      "bytes": 771,
+      "sha256": "ecb24cb45de8d3cc9312cd010c310ae1e54b83afcd5db30bd2dad3e8da6a2ad4"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/MorphTester.java",
+      "bytes": 14597,
+      "sha256": "a49bf4ad27648391c6214ce958a71c07281dc3e11c10c693d88a0724a75b94f2"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+      "bytes": 32733,
+      "sha256": "a35454d7e6adbda8a86471433e58849c2fe5674f625a09cb68facf4e61eec614"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "bytes": 2283,
+      "sha256": "b6c1dd6533d142624cfd3c9ed59fc5eb9df5c20024ad54e9ff73571e1da3c6ba"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/I_SourceGroupChooser.java",
+      "bytes": 1481,
+      "sha256": "e1c20387877f6ef59c0074cdba0f91aab8b5e0aaed8bb3d762501335d6bb5d99"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+      "bytes": 6243,
+      "sha256": "9b919d7b58a5c2b533131d946d1ac28b4b6f4b356a37d5f2ef0d26346e50c360"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java",
+      "bytes": 14220,
+      "sha256": "e2208e05496acbe30abc79998084332c988cb32327d064a55647b97d11085611"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/RandomSourceGroupChooser.java",
+      "bytes": 1209,
+      "sha256": "43b43041872e454696b6b72875fedf41f75ada04cba8a29cd049e4f13dab2d5d"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Config.java",
+      "bytes": 23193,
+      "sha256": "f6cfdbe3dfa14def6f67b9197bdd18c3eb340fb3d7972da04bf315749e23adb7"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Converter.java",
+      "bytes": 2608,
+      "sha256": "28fda083bee68928873b2df349474b45b7511211465646bba5db73f1e5c6f869"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/FileTools.java",
+      "bytes": 2039,
+      "sha256": "57cd83e27b6441e8b33890bf1fa0e48e164435d92d308e7447268c04cbeee2d9"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/GephiNode.java",
+      "bytes": 4279,
+      "sha256": "a04e22ce9b3f84bfade9448f718767816e02ebe617e1cd064fc44f21ed04fb8b"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Levenshtein.java",
+      "bytes": 4285,
+      "sha256": "31de446321bf1fc9283cde3a8f9d03b94f64515f81e78c3583c8d75a63ab0303"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/PropertiesLoader.java",
+      "bytes": 2292,
+      "sha256": "bed2a5f67bb08362909b275bc4a3342d95ae57cc0540dee46262552a2263b6bb"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/StringUtil.java",
+      "bytes": 6041,
+      "sha256": "334a4f3d820b5625841b639eebb9cfb10667884c9594c2bb60dcf8e9cf383a25"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/I_RandomNumberGenerator.java",
+      "bytes": 260,
+      "sha256": "d38a6670a90a850f73abfc63e70c7b96c188209a3b64d5836f88253ecebd0c81"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+      "bytes": 871,
+      "sha256": "62c756d5f8490d7ee70d6ac508ca765f6dc023cfb604d40f5632e7eabd8857e9"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java",
+      "bytes": 509,
+      "sha256": "419c1e639924ed179c980c04c853f6e9f1a7db2e301963c59681c7dd3edc178f"
+    },
+    {
+      "path": "executable/conf.properties",
+      "bytes": 5496,
+      "sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800"
+    },
+    {
+      "path": "executable/generate/vms_generated.txt",
+      "bytes": 62795,
+      "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956"
+    }
+  ],
+  "build": {
+    "exit_code": 0,
+    "timed_out": false,
+    "stdout_bytes": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 470,
+    "stderr_sha256": "e1465f3874f030557e5a0dcaff8ac70473142681ef62b4f38ee9ed859e11d8cd"
+  },
+  "build_flags": [
+    "--release",
+    "8",
+    "-encoding",
+    "UTF-8",
+    "-proc:none"
+  ],
+  "class_inventory": [
+    {
+      "path": "de/voynich/text/Constants.class",
+      "bytes": 2173,
+      "sha256": "3d91b3544bb123392b2a3c7bb7f1df19e704c7349e39f5ed3ac12aab7e349dc2"
+    },
+    {
+      "path": "de/voynich/text/Glyph.class",
+      "bytes": 16034,
+      "sha256": "9540de0940b939ae3b5916dd0a5a2f3361a3d1a87c85ff233bb964fad00d8f17"
+    },
+    {
+      "path": "de/voynich/text/GlyphGroup$GENERATE_TYPE.class",
+      "bytes": 1395,
+      "sha256": "e8eb7af6a2958443cb369fd15a90661369f0d96a983007c02ebe81f4c2fcb452"
+    },
+    {
+      "path": "de/voynich/text/GlyphGroup.class",
+      "bytes": 4292,
+      "sha256": "d63c7d0b9e7d846832922e39119d18a574599ae568fe2cc3a92b3653320dccae"
+    },
+    {
+      "path": "de/voynich/text/SelfCitationTextGenerator$CURRIER.class",
+      "bytes": 1215,
+      "sha256": "0b16137269c9c3b1187c6fc9cbf94921937d7e73b596721c59e0b490b962331f"
+    },
+    {
+      "path": "de/voynich/text/SelfCitationTextGenerator.class",
+      "bytes": 7941,
+      "sha256": "66194ced00fd35db482893ed1642bb8093ddcd2957acb1761eadde061fd08d11"
+    },
+    {
+      "path": "de/voynich/text/StatisticHelper$1.class",
+      "bytes": 817,
+      "sha256": "fc6672d8622599afeec418dc9c8ead84ec17bd05eb309fb5e91a45bf9b079ade"
+    },
+    {
+      "path": "de/voynich/text/StatisticHelper$SUGGEST_METHOD.class",
+      "bytes": 1297,
+      "sha256": "23bafd560ffe24c2b6af1d1c1b90777558fe9037ae06cb9c9878a6d188d298a0"
+    },
+    {
+      "path": "de/voynich/text/StatisticHelper.class",
+      "bytes": 10025,
+      "sha256": "91cd9c01d2ccc416af4d21973f9d178adec16e20957bb795e9c8d0090c948c80"
+    },
+    {
+      "path": "de/voynich/text/Substitution.class",
+      "bytes": 1082,
+      "sha256": "fb65446b006c3b0849e8dcf651bf3c0eca594746bd4f4e0bd96a2dabeb12aa6a"
+    },
+    {
+      "path": "de/voynich/text/canfollow/CurveLineCanFollow$Type.class",
+      "bytes": 1419,
+      "sha256": "044c5cc48f1d4ef8d4323bd552bd44cae0c01801566bc4b41d688a7227876eaa"
+    },
+    {
+      "path": "de/voynich/text/canfollow/CurveLineCanFollow.class",
+      "bytes": 7994,
+      "sha256": "2843e29dd6d5abd5b80697aa0a5f697caacbf630aabab6c4cfeae0dd2a9dced3"
+    },
+    {
+      "path": "de/voynich/text/canfollow/DummyCanFollow.class",
+      "bytes": 991,
+      "sha256": "cb171a13cfa681dc1d3bf4c7b0d75c3ebd4cab2b1dd5b8f5bb1cab52407985c8"
+    },
+    {
+      "path": "de/voynich/text/canfollow/I_CanFollow.class",
+      "bytes": 382,
+      "sha256": "95fc139b2d9e7dfd1a2082c24e317d5233ff9457399329f0d83cdd3db4611d17"
+    },
+    {
+      "path": "de/voynich/text/canfollow/StatisticCanFollow.class",
+      "bytes": 2463,
+      "sha256": "efce7fd9c2224a9a2a1a6679c3ae1cdbde285923986439a89919552c8439ff7a"
+    },
+    {
+      "path": "de/voynich/text/canfollow/VoynichCanFollow.class",
+      "bytes": 2056,
+      "sha256": "6dc67443dd297d54e865320d2950a079f608b7fdf614b7b9029468cce045fac4"
+    },
+    {
+      "path": "de/voynich/text/canfollow/vms/CalcGephiElements.class",
+      "bytes": 1949,
+      "sha256": "f8f9f1a3304e1d86ca622d80079afec124041f99df892782f945957710771ed7"
+    },
+    {
+      "path": "de/voynich/text/canfollow/vms/FollowMatrix.class",
+      "bytes": 3960,
+      "sha256": "ceaa7a4d2993ddc875f24db3742b0bbe3ba2f8c7bd58635e947e1832a78e8697"
+    },
+    {
+      "path": "de/voynich/text/canfollow/vms/VoynichGroups.class",
+      "bytes": 102850,
+      "sha256": "2fbe96058e91b47f47bc211c4ae4b3e733da4acfffbce2632d5c8e54b54f424b"
+    },
+    {
+      "path": "de/voynich/text/canfollow/vms/VoynichGroupsThree.class",
+      "bytes": 101516,
+      "sha256": "36b15fdc724c6a13515a020b286f6f9c18f6fd34a0490e027208d8f1aa59c3cb"
+    },
+    {
+      "path": "de/voynich/text/canfollow/vms/VoynichGroupsTwo.class",
+      "bytes": 59379,
+      "sha256": "e6cb9054297b40e4fc7d87be95d61c480fc2202c7d41f6b1f90ac7ab6f5bb274"
+    },
+    {
+      "path": "de/voynich/text/morph/AbstractBaseGroupMorpher.class",
+      "bytes": 11860,
+      "sha256": "a84c844c66328ec8253015f6c9b5c49743658c2d8dd2afd597cd26ae5137b843"
+    },
+    {
+      "path": "de/voynich/text/morph/I_GroupMorpher$MorphMethod.class",
+      "bytes": 1268,
+      "sha256": "3e7c3e46828b7b912096107591f06f895c464e5e023347384746cd6f55c0e365"
+    },
+    {
+      "path": "de/voynich/text/morph/I_GroupMorpher.class",
+      "bytes": 720,
+      "sha256": "d88b993d590c3d7c770bacb40708ee76069e8881699fd81d11d24605825377b9"
+    },
+    {
+      "path": "de/voynich/text/morph/MorphTester.class",
+      "bytes": 6220,
+      "sha256": "a4d6c894c043de321fb385746d51e62e027a4064ede472ca14f01378945aec9b"
+    },
+    {
+      "path": "de/voynich/text/morph/SlimGroupMorpher$1.class",
+      "bytes": 896,
+      "sha256": "c9c7123224d034a5f985938e459fe80616c6232926c9fea290f87b92df694905"
+    },
+    {
+      "path": "de/voynich/text/morph/SlimGroupMorpher.class",
+      "bytes": 13330,
+      "sha256": "2073578f3112e2e9de3599a59601bbd3618f2a0d617395f800ba1cc6b45f1051"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/ChooserHelper.class",
+      "bytes": 2222,
+      "sha256": "efc8a4b8b973652a5d55913f9908f760d8b0f02dfd6ea8922ae26ecde7b6e084"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/I_SourceGroupChooser$ChooseMode.class",
+      "bytes": 1417,
+      "sha256": "410eb629a2f123d611801c7f20d1c35d1828f0207074171dbc0d1de74f8be0cf"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/I_SourceGroupChooser.class",
+      "bytes": 770,
+      "sha256": "bc2c115d1e6616600a5c20a3e8a391453fe33110e34ed776a77f9b42476a54d0"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/PageSourceGroupChooser$1.class",
+      "bytes": 1045,
+      "sha256": "3c32559c3a3de21f29524e13ff44d58dab883036293d9668d1d3028abd4f199e"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/PageSourceGroupChooser.class",
+      "bytes": 4877,
+      "sha256": "b13bc26af764406ce55326eabe67c98458e88ab46c62bb1f70ad6b33ce391954"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/PositionSourceGroupChooser$1.class",
+      "bytes": 1006,
+      "sha256": "dfb039e2c30e17a55b8e10219a124725c870d4efb7f70922b024f96421dd606b"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/PositionSourceGroupChooser.class",
+      "bytes": 5015,
+      "sha256": "f9b8e62c0ef65fac70d02927f114394d229df359767ddf8386907e5e40fe337d"
+    },
+    {
+      "path": "de/voynich/text/sourcechooser/RandomSourceGroupChooser.class",
+      "bytes": 1265,
+      "sha256": "4eed8fa7e73ba7647bd07b7403ccd6e11754417813f0f2de62a1e1fc84356d21"
+    },
+    {
+      "path": "de/voynich/text/util/Config$1.class",
+      "bytes": 898,
+      "sha256": "a41e1dd4a69836e688d4452b5d7072ac6b9b10e26f740aaaec35decbbcecdcf1"
+    },
+    {
+      "path": "de/voynich/text/util/Config.class",
+      "bytes": 15969,
+      "sha256": "291a0c98dd80f5173ee5b66fe363eb74273058ca1dedc307616b4e1b94d82cff"
+    },
+    {
+      "path": "de/voynich/text/util/Converter.class",
+      "bytes": 2237,
+      "sha256": "b847d01c018e643a7b9810631efdac029e225afe833f2519a7f01ab7c2ebc7f8"
+    },
+    {
+      "path": "de/voynich/text/util/FileTools.class",
+      "bytes": 2248,
+      "sha256": "c94a18239d676b0519c23c13b1dedac9a6d77462be90d36ec1828d1ed6401bd7"
+    },
+    {
+      "path": "de/voynich/text/util/GephiNode.class",
+      "bytes": 4313,
+      "sha256": "0927b7a637f45f97f00472501a8b3c11d6e3b6da1383e97b1e7bf0b740480296"
+    },
+    {
+      "path": "de/voynich/text/util/Levenshtein.class",
+      "bytes": 2617,
+      "sha256": "1b25162c61b74ba590d6372aaf540225b2c4dc1d6c72b38cc19ab6d9b927b4cf"
+    },
+    {
+      "path": "de/voynich/text/util/PropertiesLoader.class",
+      "bytes": 2327,
+      "sha256": "56be1884e7cde214246bc4ea53554716e450963647e177805fb74ac3b85face7"
+    },
+    {
+      "path": "de/voynich/text/util/StringUtil.class",
+      "bytes": 3380,
+      "sha256": "02d919393a4d341085bb1bdcec7cb94141c411c14518d89638cf5421d18c6752"
+    },
+    {
+      "path": "de/voynich/text/util/random/I_RandomNumberGenerator.class",
+      "bytes": 177,
+      "sha256": "af5130e1a3b854c6dff8c264a86efa43a2d60cf92bb0e631b2ec019152593893"
+    },
+    {
+      "path": "de/voynich/text/util/random/PseudoRandomNumberGenerator.class",
+      "bytes": 618,
+      "sha256": "a439d584df75d4c03eff02b7609fcdf1a9cb7289bd3f7caae357372a4ce08a5c"
+    },
+    {
+      "path": "de/voynich/text/util/random/RealRandomNumberGenerator.class",
+      "bytes": 541,
+      "sha256": "3b84fff797bcf08ea5ada7c9ceddfc7792556c689f435ad4820caa7e00a8957b"
+    }
+  ],
+  "sorted_class_inventory_sha256": "9a8f3e105e1d90dae04a91e9d41cf52e4a76d3023055398c61a56658432cc472",
+  "runtime": {
+    "java": {
+      "version_output": "openjdk version \"22.0.2\" 2024-07-16\nOpenJDK Runtime Environment Homebrew (build 22.0.2)\nOpenJDK 64-Bit Server VM Homebrew (build 22.0.2, mixed mode, sharing)",
+      "executable_sha256": "0da598bf5f100f5b054b1b8b3df74b180e04619dd24955ac92bc330641e64f0b"
+    },
+    "javac": {
+      "version_output": "javac 22.0.2",
+      "executable_sha256": "094b1094874e139e403e5f03a64ea167bb4e399b602395846d4f7f6546297a76"
+    }
+  },
+  "platform": {
+    "system": "Darwin",
+    "release": "25.2.0",
+    "machine": "arm64"
+  },
+  "jvm_flags": [
+    "-Dfile.encoding=UTF-8",
+    "-Duser.timezone=UTC",
+    "-Duser.language=en",
+    "-Duser.country=US"
+  ],
+  "subprocess_locale": {
+    "TZ": "UTC",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8"
+  },
+  "suppressed_environment_names": [
+    "JAVA_TOOL_OPTIONS",
+    "_JAVA_OPTIONS",
+    "JDK_JAVA_OPTIONS",
+    "JDK_JAVAC_OPTIONS",
+    "CLASSPATH",
+    "GH_TOKEN",
+    "GITHUB_TOKEN"
+  ],
+  "supplied_output": {
+    "bytes": 62795,
+    "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+    "text_rows": 1200,
+    "projected_sha256": "b6cbeff13faecb33f01c2a50f3c7b22258adc9217373dd5c431a30fb3e491c5a",
+    "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+  },
+  "cases": [
+    {
+      "case": "short-19",
+      "requested_rows_including_initialization": 60,
+      "seed": 19,
+      "declared_overrides": {
+        "save.path": "./output/",
+        "save.filename": "generated.txt",
+        "text.lines_to_create": "60",
+        "method.random.pseudo.seed": "19"
+      },
+      "effective_configuration_sha256": "d3a7bd46b9574109dec81c78cef5f7e450808a7e3076eefcbaa9077546391edd",
+      "effective_properties_excluding_initial_text": {
+        "save.path": "./output/",
+        "save.filename": "generated.txt",
+        "save.properties_in_seperate_file": "false",
+        "save.gephi.nodes": "false",
+        "save.gephi.use_voynich_similarities": "false",
+        "save.length.distribution": "false",
+        "stats.calculate.entropy": "true",
+        "stats.calculate.random_walk": "false",
+        "text.lines_to_create": "60",
+        "text.max_line_length": "55",
+        "text.min_line_length": "15",
+        "text.lines_per_page": "29",
+        "text.max_repeat_count": "3",
+        "method.random": "pseudo",
+        "method.random.pseudo.seed": "19",
+        "method.canFollow": "curveline",
+        "method.canFollow.error_rate": "0",
+        "method.sourceChooser": "page",
+        "method.sourceChooser.same_position_probability": "28",
+        "method.morph": "slim",
+        "method.morph.add_remove.probability": "20",
+        "method.morph.combine_split.probability": "30",
+        "method.morph.replace.probability": "50",
+        "method.morph.reuse_last.probability": "10",
+        "method.morph.combined.dismiss_as_source_probability": "30",
+        "method.morph.use_word_final_substitutions": "true",
+        "method.suggestions": "top",
+        "method.suggestions.probability": "40",
+        "method.suggestions.iType_min_percentage": "20",
+        "method.suggestions.olType_min_percentage": "25",
+        "method.suggestions.dyType_min_percentage": "25"
+      },
+      "initialization_text_sha256": "39b5e912961ae744c56df73084b83ab97e1d6471b60ace8a4fb4fb559b99c24d",
+      "runs": [
+        {
+          "repeat": 1,
+          "process": {
+            "exit_code": 0,
+            "timed_out": false,
+            "stdout_bytes": 136,
+            "stdout_sha256": "c2cea448aaaa039571f16ea23f9b9437775cf62a2afbe6487af0d97d775c4d27",
+            "stderr_bytes": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "output": {
+            "bytes": 4089,
+            "sha256": "f81ab51d839dd476c612fb6bac32a62e1b01e3b1a6c04972fe19db6af973e085",
+            "text_rows": 60,
+            "projected_sha256": "bf53181f3c0450135652226b43b296ab36fb650fff82a071377eb27b4e483bfc",
+            "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+          },
+          "completed_expected_rows": true,
+          "matches_supplied_full_bytes": false,
+          "matches_supplied_projected_bytes": false
+        },
+        {
+          "repeat": 2,
+          "process": {
+            "exit_code": 0,
+            "timed_out": false,
+            "stdout_bytes": 136,
+            "stdout_sha256": "c2cea448aaaa039571f16ea23f9b9437775cf62a2afbe6487af0d97d775c4d27",
+            "stderr_bytes": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "output": {
+            "bytes": 4089,
+            "sha256": "f81ab51d839dd476c612fb6bac32a62e1b01e3b1a6c04972fe19db6af973e085",
+            "text_rows": 60,
+            "projected_sha256": "bf53181f3c0450135652226b43b296ab36fb650fff82a071377eb27b4e483bfc",
+            "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+          },
+          "completed_expected_rows": true,
+          "matches_supplied_full_bytes": false,
+          "matches_supplied_projected_bytes": false
+        }
+      ],
+      "repeats_full_bytes_equal": true,
+      "repeats_projected_bytes_equal": true
+    },
+    {
+      "case": "short-20",
+      "requested_rows_including_initialization": 60,
+      "seed": 20,
+      "declared_overrides": {
+        "save.path": "./output/",
+        "save.filename": "generated.txt",
+        "text.lines_to_create": "60",
+        "method.random.pseudo.seed": "20"
+      },
+      "effective_configuration_sha256": "7b184acdebc0d9a42a4bf86370dc1d13232e377a85671287021ee5ae8eae0adc",
+      "effective_properties_excluding_initial_text": {
+        "save.path": "./output/",
+        "save.filename": "generated.txt",
+        "save.properties_in_seperate_file": "false",
+        "save.gephi.nodes": "false",
+        "save.gephi.use_voynich_similarities": "false",
+        "save.length.distribution": "false",
+        "stats.calculate.entropy": "true",
+        "stats.calculate.random_walk": "false",
+        "text.lines_to_create": "60",
+        "text.max_line_length": "55",
+        "text.min_line_length": "15",
+        "text.lines_per_page": "29",
+        "text.max_repeat_count": "3",
+        "method.random": "pseudo",
+        "method.random.pseudo.seed": "20",
+        "method.canFollow": "curveline",
+        "method.canFollow.error_rate": "0",
+        "method.sourceChooser": "page",
+        "method.sourceChooser.same_position_probability": "28",
+        "method.morph": "slim",
+        "method.morph.add_remove.probability": "20",
+        "method.morph.combine_split.probability": "30",
+        "method.morph.replace.probability": "50",
+        "method.morph.reuse_last.probability": "10",
+        "method.morph.combined.dismiss_as_source_probability": "30",
+        "method.morph.use_word_final_substitutions": "true",
+        "method.suggestions": "top",
+        "method.suggestions.probability": "40",
+        "method.suggestions.iType_min_percentage": "20",
+        "method.suggestions.olType_min_percentage": "25",
+        "method.suggestions.dyType_min_percentage": "25"
+      },
+      "initialization_text_sha256": "39b5e912961ae744c56df73084b83ab97e1d6471b60ace8a4fb4fb559b99c24d",
+      "runs": [
+        {
+          "repeat": 1,
+          "process": {
+            "exit_code": 0,
+            "timed_out": false,
+            "stdout_bytes": 137,
+            "stdout_sha256": "c9517984b4f7d9f838e61ded37b99b76dded205779c2136125fe1dd7f195b02a",
+            "stderr_bytes": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "output": {
+            "bytes": 3998,
+            "sha256": "b4fad9a461fca1bd2239476f7edd042ef7f84f83cd57dc8739ea639eef110629",
+            "text_rows": 60,
+            "projected_sha256": "8ff01fa9c5871f5625dd171b047be79c530a22988352b0fd635bfb8f3fd9f246",
+            "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+          },
+          "completed_expected_rows": true,
+          "matches_supplied_full_bytes": false,
+          "matches_supplied_projected_bytes": false
+        },
+        {
+          "repeat": 2,
+          "process": {
+            "exit_code": 0,
+            "timed_out": false,
+            "stdout_bytes": 137,
+            "stdout_sha256": "c9517984b4f7d9f838e61ded37b99b76dded205779c2136125fe1dd7f195b02a",
+            "stderr_bytes": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "output": {
+            "bytes": 3998,
+            "sha256": "b4fad9a461fca1bd2239476f7edd042ef7f84f83cd57dc8739ea639eef110629",
+            "text_rows": 60,
+            "projected_sha256": "8ff01fa9c5871f5625dd171b047be79c530a22988352b0fd635bfb8f3fd9f246",
+            "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+          },
+          "completed_expected_rows": true,
+          "matches_supplied_full_bytes": false,
+          "matches_supplied_projected_bytes": false
+        }
+      ],
+      "repeats_full_bytes_equal": true,
+      "repeats_projected_bytes_equal": true
+    },
+    {
+      "case": "release-19",
+      "requested_rows_including_initialization": 1200,
+      "seed": 19,
+      "declared_overrides": {
+        "save.path": "./output/",
+        "save.filename": "generated.txt"
+      },
+      "effective_configuration_sha256": "5402e0987b38f8698a79b1a5b005eb7fa94e5dbf28923a25fa911d06c9db13ef",
+      "effective_properties_excluding_initial_text": {
+        "save.path": "./output/",
+        "save.filename": "generated.txt",
+        "save.properties_in_seperate_file": "false",
+        "save.gephi.nodes": "false",
+        "save.gephi.use_voynich_similarities": "false",
+        "save.length.distribution": "false",
+        "stats.calculate.entropy": "true",
+        "stats.calculate.random_walk": "false",
+        "text.lines_to_create": "1200",
+        "text.max_line_length": "55",
+        "text.min_line_length": "15",
+        "text.lines_per_page": "29",
+        "text.max_repeat_count": "3",
+        "method.random": "pseudo",
+        "method.random.pseudo.seed": "19",
+        "method.canFollow": "curveline",
+        "method.canFollow.error_rate": "0",
+        "method.sourceChooser": "page",
+        "method.sourceChooser.same_position_probability": "28",
+        "method.morph": "slim",
+        "method.morph.add_remove.probability": "20",
+        "method.morph.combine_split.probability": "30",
+        "method.morph.replace.probability": "50",
+        "method.morph.reuse_last.probability": "10",
+        "method.morph.combined.dismiss_as_source_probability": "30",
+        "method.morph.use_word_final_substitutions": "true",
+        "method.suggestions": "top",
+        "method.suggestions.probability": "40",
+        "method.suggestions.iType_min_percentage": "20",
+        "method.suggestions.olType_min_percentage": "25",
+        "method.suggestions.dyType_min_percentage": "25"
+      },
+      "initialization_text_sha256": "39b5e912961ae744c56df73084b83ab97e1d6471b60ace8a4fb4fb559b99c24d",
+      "runs": [
+        {
+          "repeat": 1,
+          "process": {
+            "exit_code": 0,
+            "timed_out": false,
+            "stdout_bytes": 139,
+            "stdout_sha256": "f917e051a1c47dfa995c4de2c2647d507a536d416ef86e38054c56c58f0bb678",
+            "stderr_bytes": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "output": {
+            "bytes": 62795,
+            "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+            "text_rows": 1200,
+            "projected_sha256": "b6cbeff13faecb33f01c2a50f3c7b22258adc9217373dd5c431a30fb3e491c5a",
+            "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+          },
+          "completed_expected_rows": true,
+          "matches_supplied_full_bytes": true,
+          "matches_supplied_projected_bytes": true
+        },
+        {
+          "repeat": 2,
+          "process": {
+            "exit_code": 0,
+            "timed_out": false,
+            "stdout_bytes": 139,
+            "stdout_sha256": "f917e051a1c47dfa995c4de2c2647d507a536d416ef86e38054c56c58f0bb678",
+            "stderr_bytes": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "output": {
+            "bytes": 62795,
+            "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+            "text_rows": 1200,
+            "projected_sha256": "b6cbeff13faecb33f01c2a50f3c7b22258adc9217373dd5c431a30fb3e491c5a",
+            "first_row_sha256": "80274ab2c66b8f9014bac1a12ab3fa56d43896f4bfd4e293c9e2a38354a8ef6a"
+          },
+          "completed_expected_rows": true,
+          "matches_supplied_full_bytes": true,
+          "matches_supplied_projected_bytes": true
+        }
+      ],
+      "repeats_full_bytes_equal": true,
+      "repeats_projected_bytes_equal": true
+    }
+  ],
+  "short_seed_change_changes_projected_bytes": true,
+  "all_runs_complete_and_within_case_text_repeatable": true,
+  "scope": "software replay; initialized manuscript text is input; no manuscript mechanism test or translation"
+}

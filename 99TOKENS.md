@@ -30,7 +30,7 @@ Prepare a decipherment pilot of 10 folios selected across the six sections descr
 
 Before developing a candidate, commit a provisional split of eight development folios and two held-out folios, recording any prior exposure. This small pilot tests the workflow; it cannot establish manuscript-wide validity. Deliver the inventory, transcription decision, split manifest, and a first registered hypothesis with a measurable prediction and failure condition using the [evaluation protocol](research/DECIPHERMENT_PROTOCOL.md).
 
-The [visual inventory](research/pilot/INVENTORY.md) now records ten selected target folio sides with Yale image identifiers, visible text layouts, illustrations, and uncertainties. Its [selection protocol](research/pilot/SAMPLING.md), [machine-readable records](research/pilot/inventory.json), and [source-check script](scripts/verify_pilot.py) make the contribution checkable. Several canvases contain multiple foldout panels retained within one record. The development/evaluation split, first registered hypothesis, independent observation review, and translations remain pending. The visual inspection of all ten images must be disclosed when defining prior exposure for a later split.
+The [visual inventory](research/pilot/INVENTORY.md) now records ten selected target folio sides with Yale image identifiers, visible text layouts, illustrations, and uncertainties. Its [selection protocol](research/pilot/SAMPLING.md), [machine-readable records](research/pilot/inventory.json), and [source-check script](scripts/verify_pilot.py) make the contribution checkable. Several canvases contain multiple foldout panels retained within one record. The pilot-specific development/evaluation split, frozen candidate, independent observation review, and translations remain pending. The visual inspection of all ten images must be disclosed when defining prior exposure for a later split.
 
 The [section boundary survey](research/boundary-pilot/INVENTORY.md) and [standalone-recto boundary inventory](research/PILOT_INVENTORY.md), with its [selection protocol](research/PILOT_SELECTION.md) and [CSV](research/data/pilot-folios.csv), add complementary boundary records. The survey includes 102r within a shared scan; the standalone-recto rule selects 100r instead. These inventories share most of their images, so their observations do not create independent manuscript samples. Prior exposure must be recorded across all inventories when defining a later split.
 
@@ -69,6 +69,17 @@ The [exact half-control invariance audit](research/transliteration/HALF_DEGENERA
 The [grouped length-prediction comparison](research/baselines/GROUPED_LENGTH_RESULTS.md) fits context-only and previous-length models with five folds over 86 recorded image-dependency components. Every treatment fails its fixed preference criterion: pooled gains can conceal losses when groups receive equal weight, and ZL join loses under both weightings. Whole-corpus prior exposure remains explicit; these diagnostic conditional scores neither create untouched evaluation material nor establish a decoding mechanism.
 
 The [catalog-section prefix analysis](research/transliteration/SECTION_STRATA.md) separates first-slot contrasts across Yale's six numeric ranges and source-marked paragraph starts, with [complete results](research/transliteration/section_strata.json). It retains 29 paragraph-start annotation disagreements and source-specific eligibility. Non-start y contrasts are positive in all six ranges, while the final-text paragraph-start contrast is near zero and differs in sign between sources. These exposed-data measurements preserve small cohorts, unresolved foliation, and representation limits; they do not establish a section's meaning or a decipherment.
+
+The [y-layout-prefix v1 lookup diagnostic](research/hypotheses/y-layout-prefix-v1/RESULTS.md) tests a removal rule and decision criterion committed before dictionary construction. On 15 common diagnostic page-family units, deleting leading literal EVA y improves first-slot matches to a development-only internal vocabulary more than other-slot matches across all eight source/uncertainty treatments. The prediction survives its fixed criterion, with all counts, losses, exclusions, and hashes in the [report](research/hypotheses/y-layout-prefix-v1/results.json). Full-corpus results already helped develop this candidate, so its dictionary partition is not a valid held-out evaluation or the original pilot split. Glyph meaning, a causal layout-marker role, language, and translation remain unresolved.
+
+The [preplanned prefix-specificity controls](research/hypotheses/y-prefix-specificity-v1/RESULTS.md)
+retain the accepted lookup diagnostic's locations, partition and dictionaries.
+On common units, y removal has greater first-versus-other gain than fixed q/o
+controls. Matching y development frequency and representation length lowers
+primary selectivity from +0.39232859 to +0.10641026 on the same 13 units, with
+sparse cells and every treatment/exclusion in the [complete report](research/hypotheses/y-prefix-specificity-v1/results.json).
+These exposed-data controls constrain lookup interpretations; they do not
+identify a glyph function, language, or translation.
 
 ## Evidence standard
 

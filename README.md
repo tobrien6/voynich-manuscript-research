@@ -29,11 +29,13 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Exploratory token and repetition baselines](research/transliteration/BASELINES.md) and [recorded results](research/transliteration/token_baselines.json)
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md): common-cohort exploration with endpoints fixed in its permutation controls
 - [First-slot prefixes across catalog sections](research/transliteration/SECTION_STRATA.md): source-specific paragraph cohorts, section contrasts, and annotation disagreements.
+- [Exploratory y-prefix lookup candidate](research/hypotheses/y-layout-prefix-v1/RESULTS.md): a precommitted removal rule and development-only vocabulary test, with prior exposure and diagnostic limitations explicit.
+- [Prefix and vocabulary-opportunity controls](research/hypotheses/y-prefix-specificity-v1/RESULTS.md): fixed q/o comparisons and matched y frequency/length cells reduce the raw lookup contrast while retaining all treatments and exclusions.
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
 Source-linked visual inventories cover section beginnings and boundaries across the six catalog groups. Their samples overlap; shared folios and scans must not be counted as independent evidence. Independent visual review is pending.
 
-Exploratory token and repetition baselines now compare uncertainty policies on the paired ZL3b and IT2a inputs. A reproducible shuffle generator supplies synthetic-tested controls for later registered experiments, and an evaluation-split validator checks declared dependencies and prior exposure. No real evaluation split or registered decoding hypothesis has been established. Decoding and translation remain the research objective; glyph adjudication, a validated decipherment, and source-linked translations remain pending.
+Exploratory token and repetition baselines now compare uncertainty policies on the paired ZL3b and IT2a inputs. A reproducible shuffle generator supplies synthetic-tested controls for later registered experiments, and an evaluation-split validator checks declared dependencies and prior exposure. The precommitted y-prefix representation candidate supplies a specific exploratory lookup prediction on data already used for candidate development. A real exposure-valid evaluation split, glyph adjudication, a validated decipherment, and source-linked translations remain pending. Decoding and translation remain the research objective.
 
 ## Research practice
 
@@ -43,17 +45,21 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
 - [Published methods and comparison limits](research/literature/README.md): primary-paper input choices, measurement units, and shuffle scopes, with explicit gaps to resolve before replication.
 - [Self-citation generator audit](research/literature/COPYING_MECHANISM.md): pinned copying-model implementation and configuration, representation differences, and requirements for a prospective mechanism comparison.
 - [Historical interlinear intake](research/historical/README.md): pin the recovered 1.6e6 archive and audit native H records before attempting published-method replication.
 - [Historical H/modern IT2a page envelopes](research/historical/MODERN_PAGE_ENVELOPES.md): equal global totals retain four page-count discrepancies and unmatched identifiers.
+- [Lossy lowercase notation comparison](research/historical/LOWERCASE_PROJECTION.md): 183 shared page streams match after explicit losses; frequency agreement can conceal sequence differences.
 - [Paired paragraph-annotation agreement](research/transliteration/ANNOTATION_AGREEMENT.md): exact boundary-mark disagreements between the pinned ZL/IT editions, with identifiers for image review and explicit limits on source-defined strata.
 - [Encoded paragraph-unit agreement](research/transliteration/PARAGRAPH_MEMBERSHIP.md): marker-pair checks, unassigned loci, and exact common paragraph membership for later unit-level comparisons.
 - [Token and repetition baselines](research/transliteration/BASELINES.md), [locus-position effects](research/transliteration/POSITION_EFFECTS.md), and [prefix stratification](research/transliteration/PREFIX_STRATA.md): uncertainty-aware exploratory tests on paired text sources, with conditional controls and recorded limits. The stratification separates paragraph starts and source Currier labels rather than treating the pooled prefix pattern as uniform.
+- [Equal-token recurrence at fixed slot distances](research/transliteration/REPETITION_DISTANCES.md): distances 1–4 on the accepted P0 cohort, with excluded coordinates, exact conditional covariance, and source/policy sensitivity retained.
 - [Interior notation-length order](research/transliteration/INTERIOR_ORDER.md) and [early/late-half controls](research/transliteration/INTERIOR_HALVES.md): neighboring interior lengths depart from the stated controls in 2,165 common loci; finer position gradients and transcription effects remain alternative explanations.
 - [Grouped length prediction](research/baselines/GROUPED_LENGTH_RESULTS.md): a fixed previous-length model has mixed cross-validation gains and fails the declared preference criterion in all four treatments on previously exposed data.
+- [Synthetic grouped-predictor controls](research/baselines/GROUPED_CONTROL_RESULTS.md): all 64 uniform-independent simulations fail the criterion and all 64 simulations at each specified persistence level meet it; full fixed-seed results and known-process references are retained.
 - [Fixed-cohort position comparison](research/transliteration/COHORT_EFFECTS.md): compare transcription and uncertainty variants on identical eligible locus keys, preserving per-locus disagreement.
 - [Yale source and foliation audit](research/source-audit/README.md): contested provenance claims, terminal folio identifiers, and a reproducible check of image-label sampling units.
 - [Folio request alignment](research/folio-alignment/README.md): preserve all indexed image matches and report unmatched or unsupported transcription identifiers explicitly.

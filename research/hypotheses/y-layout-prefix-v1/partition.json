@@ -1,0 +1,2319 @@
+{
+  "schema_version": 1,
+  "candidate_version": "y-layout-prefix-v1",
+  "status": "exploratory_dictionary_partition",
+  "seed": "y-layout-prefix-v1-2026-10-11",
+  "prior_exposure": "Full-corpus results motivated this candidate; all units used for candidate development.",
+  "valid_candidate_holdout": false,
+  "previously_unseen": false,
+  "image_region_alignment_reviewed": false,
+  "sources": [
+    {
+      "id": "ZL3b",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    },
+    {
+      "id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    }
+  ],
+  "selection": {
+    "shared_present_p0_count": 3884,
+    "shared_regular_p0_count": 3848,
+    "excluded_nonregular_keys": [
+      "f11v.6",
+      "f49v.10",
+      "f49v.12",
+      "f49v.14",
+      "f49v.16",
+      "f49v.18",
+      "f49v.2",
+      "f49v.20",
+      "f49v.22",
+      "f49v.24",
+      "f49v.26",
+      "f49v.28",
+      "f49v.30",
+      "f49v.32",
+      "f49v.34",
+      "f49v.36",
+      "f49v.38",
+      "f49v.4",
+      "f49v.40",
+      "f49v.42",
+      "f49v.44",
+      "f49v.46",
+      "f49v.48",
+      "f49v.50",
+      "f49v.52",
+      "f49v.6",
+      "f49v.8",
+      "f76r.11",
+      "f76r.15",
+      "f76r.19",
+      "f76r.23",
+      "f76r.28",
+      "f76r.32",
+      "f76r.38",
+      "f76r.5",
+      "f76r.8"
+    ],
+    "excluded_source_paragraph_start_keys": [
+      "f100r.12",
+      "f100r.22",
+      "f100v.14",
+      "f101r.1",
+      "f101r.3",
+      "f101r.7",
+      "f101v.19",
+      "f101v.22",
+      "f101v.25",
+      "f102r1.13",
+      "f102r1.3",
+      "f102r1.8",
+      "f102r2.16",
+      "f102r2.2",
+      "f102r2.8",
+      "f102v1.13",
+      "f102v1.19",
+      "f102v1.7",
+      "f102v2.17",
+      "f102v2.30",
+      "f102v2.37",
+      "f103r.1",
+      "f103r.13",
+      "f103r.16",
+      "f103r.18",
+      "f103r.21",
+      "f103r.24",
+      "f103r.27",
+      "f103r.30",
+      "f103r.33",
+      "f103r.35",
+      "f103r.37",
+      "f103r.40",
+      "f103r.43",
+      "f103r.45",
+      "f103r.48",
+      "f103r.5",
+      "f103r.52",
+      "f103r.8",
+      "f103v.1",
+      "f103v.12",
+      "f103v.14",
+      "f103v.17",
+      "f103v.20",
+      "f103v.27",
+      "f103v.30",
+      "f103v.33",
+      "f103v.37",
+      "f103v.39",
+      "f103v.43",
+      "f103v.5",
+      "f103v.9",
+      "f104r.1",
+      "f104r.10",
+      "f104r.12",
+      "f104r.16",
+      "f104r.19",
+      "f104r.22",
+      "f104r.27",
+      "f104r.30",
+      "f104r.34",
+      "f104r.36",
+      "f104r.39",
+      "f104r.43",
+      "f104r.5",
+      "f104v.1",
+      "f104v.12",
+      "f104v.15",
+      "f104v.19",
+      "f104v.22",
+      "f104v.27",
+      "f104v.29",
+      "f104v.32",
+      "f104v.35",
+      "f104v.37",
+      "f104v.41",
+      "f104v.6",
+      "f104v.8",
+      "f105r.1",
+      "f105r.11",
+      "f105r.14",
+      "f105r.17",
+      "f105r.24",
+      "f105r.26",
+      "f105r.28",
+      "f105r.31",
+      "f105r.35",
+      "f105r.6",
+      "f105v.1",
+      "f105v.14",
+      "f105v.18",
+      "f105v.20",
+      "f105v.23",
+      "f105v.25",
+      "f105v.29",
+      "f105v.32",
+      "f105v.5",
+      "f105v.8",
+      "f106r.1",
+      "f106r.10",
+      "f106r.13",
+      "f106r.15",
+      "f106r.18",
+      "f106r.22",
+      "f106r.24",
+      "f106r.27",
+      "f106r.32",
+      "f106r.34",
+      "f106r.36",
+      "f106r.38",
+      "f106r.4",
+      "f106r.42",
+      "f106r.8",
+      "f106v.1",
+      "f106v.11",
+      "f106v.15",
+      "f106v.18",
+      "f106v.20",
+      "f106v.22",
+      "f106v.26",
+      "f106v.28",
+      "f106v.32",
+      "f106v.34",
+      "f106v.37",
+      "f106v.40",
+      "f106v.42",
+      "f106v.5",
+      "f106v.9",
+      "f107r.1",
+      "f107r.13",
+      "f107r.16",
+      "f107r.18",
+      "f107r.21",
+      "f107r.24",
+      "f107r.27",
+      "f107r.30",
+      "f107r.34",
+      "f107r.38",
+      "f107r.4",
+      "f107r.42",
+      "f107r.45",
+      "f107r.48",
+      "f107r.8",
+      "f107v.1",
+      "f107v.11",
+      "f107v.16",
+      "f107v.20",
+      "f107v.23",
+      "f107v.25",
+      "f107v.29",
+      "f107v.32",
+      "f107v.35",
+      "f107v.37",
+      "f107v.41",
+      "f107v.43",
+      "f107v.45",
+      "f107v.5",
+      "f107v.8",
+      "f108r.1",
+      "f108r.11",
+      "f108r.14",
+      "f108r.17",
+      "f108r.21",
+      "f108r.24",
+      "f108r.29",
+      "f108r.31",
+      "f108r.35",
+      "f108r.37",
+      "f108r.39",
+      "f108r.41",
+      "f108r.45",
+      "f108r.48",
+      "f108r.5",
+      "f108r.8",
+      "f108v.1",
+      "f108v.12",
+      "f108v.15",
+      "f108v.20",
+      "f108v.28",
+      "f108v.30",
+      "f108v.34",
+      "f108v.5",
+      "f108v.7",
+      "f10r.1",
+      "f10r.6",
+      "f10v.1",
+      "f10v.4",
+      "f111r.1",
+      "f111r.36",
+      "f111r.44",
+      "f111r.48",
+      "f111r.51",
+      "f111r.6",
+      "f111v.1",
+      "f111v.26",
+      "f111v.29",
+      "f111v.31",
+      "f111v.34",
+      "f111v.37",
+      "f111v.45",
+      "f111v.48",
+      "f112r.1",
+      "f112r.11",
+      "f112r.15",
+      "f112r.16",
+      "f112r.19",
+      "f112r.23",
+      "f112r.27",
+      "f112r.31",
+      "f112r.34",
+      "f112r.37",
+      "f112r.39",
+      "f112r.42",
+      "f112v.1",
+      "f112v.11",
+      "f112v.15",
+      "f112v.20",
+      "f112v.23",
+      "f112v.25",
+      "f112v.27",
+      "f112v.30",
+      "f112v.32",
+      "f112v.36",
+      "f112v.39",
+      "f112v.42",
+      "f112v.45",
+      "f112v.7",
+      "f113r.1",
+      "f113r.10",
+      "f113r.13",
+      "f113r.16",
+      "f113r.20",
+      "f113r.22",
+      "f113r.25",
+      "f113r.27",
+      "f113r.30",
+      "f113r.34",
+      "f113r.37",
+      "f113r.39",
+      "f113r.4",
+      "f113r.42",
+      "f113r.45",
+      "f113r.8",
+      "f113v.1",
+      "f113v.10",
+      "f113v.13",
+      "f113v.18",
+      "f113v.21",
+      "f113v.25",
+      "f113v.28",
+      "f113v.33",
+      "f113v.36",
+      "f113v.38",
+      "f113v.4",
+      "f113v.42",
+      "f113v.45",
+      "f113v.47",
+      "f113v.7",
+      "f114r.1",
+      "f114r.11",
+      "f114r.14",
+      "f114r.19",
+      "f114r.22",
+      "f114r.24",
+      "f114r.28",
+      "f114r.32",
+      "f114r.35",
+      "f114r.39",
+      "f114r.4",
+      "f114r.42",
+      "f114r.8",
+      "f114v.1",
+      "f114v.11",
+      "f114v.14",
+      "f114v.18",
+      "f114v.20",
+      "f114v.23",
+      "f114v.26",
+      "f114v.29",
+      "f114v.33",
+      "f114v.36",
+      "f114v.6",
+      "f114v.8",
+      "f115r.1",
+      "f115r.10",
+      "f115r.13",
+      "f115r.19",
+      "f115r.22",
+      "f115r.26",
+      "f115r.29",
+      "f115r.35",
+      "f115r.37",
+      "f115r.4",
+      "f115r.40",
+      "f115r.42",
+      "f115r.8",
+      "f115v.1",
+      "f115v.11",
+      "f115v.13",
+      "f115v.18",
+      "f115v.21",
+      "f115v.24",
+      "f115v.29",
+      "f115v.31",
+      "f115v.34",
+      "f115v.37",
+      "f115v.41",
+      "f115v.6",
+      "f115v.8",
+      "f116r.1",
+      "f116r.10",
+      "f116r.15",
+      "f116r.18",
+      "f116r.31",
+      "f116r.4",
+      "f116r.46",
+      "f116r.7",
+      "f11r.1",
+      "f11r.5",
+      "f11v.1",
+      "f13r.1",
+      "f13r.5",
+      "f13v.1",
+      "f13v.6",
+      "f14r.1",
+      "f14r.8",
+      "f14v.1",
+      "f15r.1",
+      "f15v.1",
+      "f16r.1",
+      "f16r.10",
+      "f16r.5",
+      "f16v.1",
+      "f16v.7",
+      "f17r.1",
+      "f17r.4",
+      "f17r.7",
+      "f17v.1",
+      "f18r.1",
+      "f18r.5",
+      "f18v.1",
+      "f19r.1",
+      "f19v.1",
+      "f19v.8",
+      "f1r.1",
+      "f1r.11",
+      "f1r.22",
+      "f1r.7",
+      "f1v.1",
+      "f1v.5",
+      "f20r.1",
+      "f20r.5",
+      "f20r.9",
+      "f20v.1",
+      "f20v.5",
+      "f21r.1",
+      "f21r.4",
+      "f21r.8",
+      "f21v.1",
+      "f22r.1",
+      "f22r.10",
+      "f22r.4",
+      "f22r.7",
+      "f22v.1",
+      "f22v.6",
+      "f23r.1",
+      "f23r.4",
+      "f23r.6",
+      "f23v.1",
+      "f23v.6",
+      "f24r.1",
+      "f24v.1",
+      "f24v.12",
+      "f24v.6",
+      "f25r.1",
+      "f25v.1",
+      "f26r.1",
+      "f26r.7",
+      "f26v.1",
+      "f26v.3",
+      "f26v.5",
+      "f26v.7",
+      "f27r.1",
+      "f27r.7",
+      "f27v.1",
+      "f28r.1",
+      "f28v.1",
+      "f28v.4",
+      "f28v.7",
+      "f29r.1",
+      "f29r.5",
+      "f29v.1",
+      "f29v.10",
+      "f29v.5",
+      "f2r.1",
+      "f2r.8",
+      "f2v.1",
+      "f2v.5",
+      "f30r.1",
+      "f30r.8",
+      "f30v.1",
+      "f31r.1",
+      "f31r.10",
+      "f31r.6",
+      "f31v.1",
+      "f31v.6",
+      "f32r.1",
+      "f32r.6",
+      "f32v.1",
+      "f32v.7",
+      "f33r.1",
+      "f33v.1",
+      "f33v.7",
+      "f34r.1",
+      "f34r.10",
+      "f34v.1",
+      "f34v.6",
+      "f35r.1",
+      "f35r.9",
+      "f35v.1",
+      "f36r.1",
+      "f36r.4",
+      "f36v.1",
+      "f37r.1",
+      "f37r.4",
+      "f37r.8",
+      "f37v.1",
+      "f37v.14",
+      "f37v.8",
+      "f38r.1",
+      "f38v.1",
+      "f39r.1",
+      "f39r.10",
+      "f39r.6",
+      "f39v.1",
+      "f39v.7",
+      "f3r.1",
+      "f3r.11",
+      "f3r.15",
+      "f3r.18",
+      "f3v.1",
+      "f3v.7",
+      "f40r.1",
+      "f40r.8",
+      "f40v.1",
+      "f40v.13",
+      "f41r.1",
+      "f41r.6",
+      "f41v.2",
+      "f42r.1",
+      "f42r.16",
+      "f42r.7",
+      "f42v.1",
+      "f42v.9",
+      "f43r.1",
+      "f43r.10",
+      "f43r.7",
+      "f43v.1",
+      "f43v.10",
+      "f43v.6",
+      "f44r.1",
+      "f44r.5",
+      "f44r.8",
+      "f44v.1",
+      "f44v.4",
+      "f44v.8",
+      "f45r.1",
+      "f45r.5",
+      "f45r.8",
+      "f45v.1",
+      "f45v.5",
+      "f45v.8",
+      "f46r.1",
+      "f46r.11",
+      "f46r.14",
+      "f46r.6",
+      "f46r.9",
+      "f46v.1",
+      "f47r.1",
+      "f47r.6",
+      "f47v.1",
+      "f47v.7",
+      "f48r.1",
+      "f48v.1",
+      "f48v.7",
+      "f49r.1",
+      "f49r.12",
+      "f49r.4",
+      "f4r.1",
+      "f4r.5",
+      "f4v.1",
+      "f4v.7",
+      "f50r.1",
+      "f50v.1",
+      "f51r.1",
+      "f51v.1",
+      "f52r.1",
+      "f52v.1",
+      "f52v.7",
+      "f53r.1",
+      "f53v.1",
+      "f54r.1",
+      "f54r.6",
+      "f54v.1",
+      "f55r.1",
+      "f55r.7",
+      "f55v.1",
+      "f55v.7",
+      "f56r.1",
+      "f56r.9",
+      "f56v.1",
+      "f56v.7",
+      "f57r.1",
+      "f57r.6",
+      "f58r.1",
+      "f58r.16",
+      "f58r.26",
+      "f58v.1",
+      "f58v.23",
+      "f58v.29",
+      "f58v.30",
+      "f58v.34",
+      "f5r.1",
+      "f5r.5",
+      "f5v.1",
+      "f65v.1",
+      "f65v.4",
+      "f66r.50",
+      "f66r.57",
+      "f66r.63",
+      "f66r.67",
+      "f66r.70",
+      "f66v.1",
+      "f66v.6",
+      "f66v.9",
+      "f67r1.1",
+      "f67r2.72",
+      "f68r1.1",
+      "f68r2.1",
+      "f68v2.1",
+      "f68v3.1",
+      "f69r.1",
+      "f6r.1",
+      "f6v.1",
+      "f6v.6",
+      "f75r.1",
+      "f75r.27",
+      "f75r.32",
+      "f75v.1",
+      "f75v.38",
+      "f75v.43",
+      "f76r.1",
+      "f76r.39",
+      "f76r.44",
+      "f76r.51",
+      "f76v.1",
+      "f76v.10",
+      "f76v.16",
+      "f76v.25",
+      "f76v.34",
+      "f76v.37",
+      "f77r.25",
+      "f77r.38",
+      "f77r.9",
+      "f77v.16",
+      "f77v.29",
+      "f77v.6",
+      "f78r.28",
+      "f78r.3",
+      "f78v.1",
+      "f78v.20",
+      "f79r.1",
+      "f79r.13",
+      "f79r.21",
+      "f79r.26",
+      "f79r.31",
+      "f79r.35",
+      "f79r.39",
+      "f79r.7",
+      "f79v.1",
+      "f79v.10",
+      "f79v.12",
+      "f79v.23",
+      "f79v.28",
+      "f79v.33",
+      "f79v.37",
+      "f7r.1",
+      "f7r.6",
+      "f7v.1",
+      "f7v.6",
+      "f80r.11",
+      "f80r.18",
+      "f80r.28",
+      "f80r.34",
+      "f80r.40",
+      "f80r.47",
+      "f80v.1",
+      "f80v.14",
+      "f80v.19",
+      "f80v.23",
+      "f80v.27",
+      "f80v.30",
+      "f80v.38",
+      "f80v.7",
+      "f81r.1",
+      "f81r.16",
+      "f81r.24",
+      "f81v.1",
+      "f81v.10",
+      "f82r.1",
+      "f82r.11",
+      "f82r.20",
+      "f82v.11",
+      "f82v.15",
+      "f82v.20",
+      "f82v.28",
+      "f82v.33",
+      "f82v.5",
+      "f83r.1",
+      "f83r.18",
+      "f83r.9",
+      "f83v.1",
+      "f83v.11",
+      "f83v.21",
+      "f84r.13",
+      "f84r.17",
+      "f84r.20",
+      "f84r.22",
+      "f84r.27",
+      "f84r.36",
+      "f84v.21",
+      "f84v.3",
+      "f84v.7",
+      "f85r1.1",
+      "f85r1.11",
+      "f85r1.17",
+      "f85r1.20",
+      "f85r1.23",
+      "f85r1.26",
+      "f85r1.28",
+      "f85r1.31",
+      "f85r1.7",
+      "f86v3.15",
+      "f86v3.18",
+      "f86v4.5",
+      "f86v4.8",
+      "f86v5.1",
+      "f86v5.12",
+      "f86v5.18",
+      "f86v5.26",
+      "f86v5.7",
+      "f86v6.1",
+      "f86v6.13",
+      "f86v6.20",
+      "f86v6.30",
+      "f87r.1",
+      "f87r.11",
+      "f87v.1",
+      "f87v.10",
+      "f88r.18",
+      "f88r.26",
+      "f88r.7",
+      "f88v.15",
+      "f88v.21",
+      "f88v.6",
+      "f89r1.15",
+      "f89r1.19",
+      "f89r1.6",
+      "f89r2.12",
+      "f89r2.22",
+      "f89r2.6",
+      "f89v1.13",
+      "f89v1.5",
+      "f89v2.15",
+      "f89v2.19",
+      "f89v2.7",
+      "f8r.1",
+      "f8r.14",
+      "f8r.9",
+      "f8v.1",
+      "f8v.12",
+      "f90r1.1",
+      "f90r2.1",
+      "f90v1.1",
+      "f90v1.7",
+      "f90v2.1",
+      "f90v2.5",
+      "f93r.1",
+      "f93v.1",
+      "f94r.1",
+      "f94v.1",
+      "f94v.5",
+      "f94v.8",
+      "f95r1.1",
+      "f95r1.6",
+      "f95r2.1",
+      "f95r2.5",
+      "f95v1.1",
+      "f95v1.11",
+      "f95v1.6",
+      "f95v1.9",
+      "f95v2.1",
+      "f96r.1",
+      "f96r.9",
+      "f96v.1",
+      "f99r.15",
+      "f99r.28",
+      "f99r.41",
+      "f99r.47",
+      "f99v.10",
+      "f99v.21",
+      "f99v.32",
+      "f99v.37",
+      "f9r.1",
+      "f9r.6",
+      "f9v.1",
+      "f9v.5"
+    ],
+    "selected_location_count": 3131,
+    "sorted_selected_keys_sha256": "d7d5ca42d0c25b900254b9fd4c7701e317590ec75e8a41b92f92f64b0c625a46"
+  },
+  "exact_string_dependency_edges": [],
+  "units": [
+    {
+      "unit_id": "numeric-families:80",
+      "numeric_source_families": [
+        "80"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "00d222e9e4b03c1a2ab3db274ab86e8e3e0e83a5f9addd0897bf7e3b76286179",
+      "selected_source_pages": [
+        "f80r",
+        "f80v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006218",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006219"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:104",
+      "numeric_source_families": [
+        "104"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "01366254daf8382cb5739081f3d616a67a2ff4a1b29302c435792bdd7ab45013",
+      "selected_source_pages": [
+        "f104r",
+        "f104v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006256",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006257"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:5",
+      "numeric_source_families": [
+        "5"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "075e357cc807a3b9bd95b82c484fa3242b621cb26be99df82f136286a22f666d",
+      "selected_source_pages": [
+        "f5r",
+        "f5v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006084",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006085"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:114",
+      "numeric_source_families": [
+        "114"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "0804a96c5d7f63fce487f1f7388bccbd2ea16decc6d317a104410ee690a1d2e1",
+      "selected_source_pages": [
+        "f114r",
+        "f114v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006272",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006273"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:82",
+      "numeric_source_families": [
+        "82"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "0f3ec68ebfbf1c73879057bed1732b125904ce24a020f4ce9052e320fe3dc370",
+      "selected_source_pages": [
+        "f82r",
+        "f82v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006222",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006223"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:96",
+      "numeric_source_families": [
+        "96"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "0f8adf0b6fbe54767a02d57c7cf7ece25b024a77be942d10de21310613fe2f23",
+      "selected_source_pages": [
+        "f96r",
+        "f96v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006244",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006245"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:19",
+      "numeric_source_families": [
+        "19"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "12acc1ca06b15fbec122e1f421576177f2455c28617d61f6ad4504e337ba9e52",
+      "selected_source_pages": [
+        "f19r",
+        "f19v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006110",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006111"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:42",
+      "numeric_source_families": [
+        "42"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "12ebd8e0782e06a3eac552c498e14c94afd1493dde372b9948d89d5a63460b51",
+      "selected_source_pages": [
+        "f42r",
+        "f42v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006156",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006157"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:15",
+      "numeric_source_families": [
+        "15"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "134aa6cd623c54266098dfcad756d3b3fc21f7d5899a64bcb8def81b9acd5ae9",
+      "selected_source_pages": [
+        "f15r",
+        "f15v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006102",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006103"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:7",
+      "numeric_source_families": [
+        "7"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "13c1812b1e786419f710cb0080ac18c9bfc856c981cc44e16e896e7e28bca6c4",
+      "selected_source_pages": [
+        "f7r",
+        "f7v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006088",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006089"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:66",
+      "numeric_source_families": [
+        "66"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "15b6b987b062fe837804ab0e280ac5b4850c78b976be0a0341435fb2d7e2d0f9",
+      "selected_source_pages": [
+        "f66r",
+        "f66v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006192",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006193"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:99",
+      "numeric_source_families": [
+        "99"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "1c8742122435ad89eb893e9cede772d0eee84bf1e2a66ac34570bebf1dfbf536",
+      "selected_source_pages": [
+        "f99r",
+        "f99v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006246",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006247"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:67",
+      "numeric_source_families": [
+        "67"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "1d4a8901101d7b07c347c7dce4d17e44067360dc6e43d32348d1ebc86da67616",
+      "selected_source_pages": [
+        "f67r1",
+        "f67r2"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006195"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:45",
+      "numeric_source_families": [
+        "45"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "1f4ec1574c69c2e4d752624298773eff63aa85b73c19351722e9c92bfe8055a8",
+      "selected_source_pages": [
+        "f45r",
+        "f45v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006162",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006163"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:44",
+      "numeric_source_families": [
+        "44"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "21ad1574811e77bc21faf60ac6069e7476139f18df09a9445ed6071aa3d5da85",
+      "selected_source_pages": [
+        "f44r",
+        "f44v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006160",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006161"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:81",
+      "numeric_source_families": [
+        "81"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "24ae9a4b214d5a3dc68665750bd133696d954beee4ffb8e09833d706dcd28cdd",
+      "selected_source_pages": [
+        "f81r",
+        "f81v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006220",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006221"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:17",
+      "numeric_source_families": [
+        "17"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "26b7e9fa4a355ee704c4ff4269d4faf50b4cbbbffd53ead1259edd7edbe06412",
+      "selected_source_pages": [
+        "f17r",
+        "f17v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006106",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006107"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:13",
+      "numeric_source_families": [
+        "13"
+      ],
+      "partition": "diagnostic_evaluation",
+      "rank_sha256": "2f1c377087c73bec437d02e8f50482d4b055a4edd266d99e8809d828840e17e6",
+      "selected_source_pages": [
+        "f13r",
+        "f13v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006098",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006099"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:112",
+      "numeric_source_families": [
+        "112"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "3a198ae50409d76b2e013177e881d70ea14f352907c9a5538bf5ec145b77002e",
+      "selected_source_pages": [
+        "f112r",
+        "f112v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006268",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006269"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:106",
+      "numeric_source_families": [
+        "106"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "417eb463bdeecc99945a90f6ef10991aeb648d170dbb25359b9f01cd718de71b",
+      "selected_source_pages": [
+        "f106r",
+        "f106v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006260",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006261"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:29",
+      "numeric_source_families": [
+        "29"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "43416a1de67935c691fe25922a932f520be522b1483f05ae95a217978ecec3c4",
+      "selected_source_pages": [
+        "f29r",
+        "f29v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006130",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006131"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:113",
+      "numeric_source_families": [
+        "113"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "43620872cf68d105271477fa43a0e589e6ef7de39c0b1f30a4770b2570aea61a",
+      "selected_source_pages": [
+        "f113r",
+        "f113v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006270",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006271"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:54",
+      "numeric_source_families": [
+        "54"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "47c8880246757304f6351ce6dc380e6824db8f5684fd4bbf5687108e7dd7cb9e",
+      "selected_source_pages": [
+        "f54r",
+        "f54v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006180",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006181"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:10",
+      "numeric_source_families": [
+        "10"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "482c3d535d1c5b055f2d0bbb172d6a4f60b95ed58e242862ce61a1ff8e154f1a",
+      "selected_source_pages": [
+        "f10r",
+        "f10v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006094",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006095"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:21",
+      "numeric_source_families": [
+        "21"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "485ffaf5b0369bf28fe2cc5fe292764aa9be408e34673dafb8d9bbbf5b376e1d",
+      "selected_source_pages": [
+        "f21r",
+        "f21v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006114",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006115"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:30",
+      "numeric_source_families": [
+        "30"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "48eabd7fb7ed9705a3bda0861bb9211551efd674949b2896dfc63ea9946d3503",
+      "selected_source_pages": [
+        "f30r",
+        "f30v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006132",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006133"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:55",
+      "numeric_source_families": [
+        "55"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "4b1fea29996236708b8dd0e0f64133467f80718338aeef1f51493f5746d3b6bb",
+      "selected_source_pages": [
+        "f55r",
+        "f55v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006182",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006183"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:111",
+      "numeric_source_families": [
+        "111"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "4b473935a809a22a25a6bc7501dd5efc6bcb5ea0b9ce1be217de78963585a147",
+      "selected_source_pages": [
+        "f111r",
+        "f111v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006266",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006267"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:57",
+      "numeric_source_families": [
+        "57"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "4bbc48c5ad225971cb89141d17ff5951f7fd601347f8de679eea28f2f83b5eec",
+      "selected_source_pages": [
+        "f57r"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006186",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006187"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:36",
+      "numeric_source_families": [
+        "36"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "4e6b1bbcd9d851a036a2263c3ffba0f3803a3488e7558317f85c379de8ca905a",
+      "selected_source_pages": [
+        "f36r",
+        "f36v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006144",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006145"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:1",
+      "numeric_source_families": [
+        "1"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "4f4c0f52a7d4d67addedf57093fdb2f5578c78c24f0221eb4f482f6043480f95",
+      "selected_source_pages": [
+        "f1r",
+        "f1v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006077"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:11",
+      "numeric_source_families": [
+        "11"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "4fc61a0cbf3122ff1b4837937fc703bd9d64fe387488f169931c2311c5ac9144",
+      "selected_source_pages": [
+        "f11r",
+        "f11v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006096",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006097"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:16",
+      "numeric_source_families": [
+        "16"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "50f6f340bf42fcae563c7928c01f17b31084d6d0a82eb7beacb3b4b02449b236",
+      "selected_source_pages": [
+        "f16r",
+        "f16v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006104",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006105"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:83",
+      "numeric_source_families": [
+        "83"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "572e9a18a8026b5954c504b43cafd246d8cc76fc5ca1b9f4f89fc303112b10a1",
+      "selected_source_pages": [
+        "f83r",
+        "f83v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006224",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006225"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:108",
+      "numeric_source_families": [
+        "108"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "5a2b48acd2233937ed4d6e0fff55a4c8d7e63bb8d3af97cbd5f58f3c1b848246",
+      "selected_source_pages": [
+        "f108r",
+        "f108v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006264",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006265"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:33",
+      "numeric_source_families": [
+        "33"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "5a5b0097864e4f7a5806920c30972091ac208086fada261173c6728f3a62ab35",
+      "selected_source_pages": [
+        "f33r",
+        "f33v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006138",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006139"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:32",
+      "numeric_source_families": [
+        "32"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "5a8c49b5f0dca8586843d0a6824ec51d4c5b29c47f05faa20516b8488be28c19",
+      "selected_source_pages": [
+        "f32r",
+        "f32v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006136",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006137"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:9",
+      "numeric_source_families": [
+        "9"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "5fd112cb52706f178e91cf8f76018e3d5aebb4f636c67e66ab90b02d744dd842",
+      "selected_source_pages": [
+        "f9r",
+        "f9v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006092",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006093"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:100+101+102",
+      "numeric_source_families": [
+        "100",
+        "101",
+        "102"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "605d8b2a728f81f3e996be36ad121634cc6f0f041c4a6b98634fc55d09182c6d",
+      "selected_source_pages": [
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v",
+        "f102r1",
+        "f102r2",
+        "f102v1",
+        "f102v2"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006248",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006250",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006252",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006253"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:76",
+      "numeric_source_families": [
+        "76"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "60bbc8aeb77c63e15851bc6ce9e545a1a2b1e7ac3842487c4d03ced38d538682",
+      "selected_source_pages": [
+        "f76r",
+        "f76v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006211"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:35",
+      "numeric_source_families": [
+        "35"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "647d0b75ef35bfb909e420114dd6b62f19745dc00723a9bb37db1b65be321f79",
+      "selected_source_pages": [
+        "f35r",
+        "f35v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006142",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006143"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:78",
+      "numeric_source_families": [
+        "78"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "68b86782c8a3065582d53446a78fd4abe126033756d9743a7c641b2548b1be78",
+      "selected_source_pages": [
+        "f78r",
+        "f78v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006214",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006215"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:39",
+      "numeric_source_families": [
+        "39"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "6a23809d93ef9700a62a6fb40754ba4109634c4ef4e23ae85b195762536046ae",
+      "selected_source_pages": [
+        "f39r",
+        "f39v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006150",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006151"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:2",
+      "numeric_source_families": [
+        "2"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "6c3d2cf80bbc724f5f346ef6ed8b0e0ad4fab774c8e4859d0e8dd18c59431ea4",
+      "selected_source_pages": [
+        "f2r",
+        "f2v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006078",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006079"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:48",
+      "numeric_source_families": [
+        "48"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "719ac6ebec63613f3e3de99b219d43a4a78925cbcef1238c7ce1a94a9fe31f6f",
+      "selected_source_pages": [
+        "f48r",
+        "f48v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006168",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006169"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:3",
+      "numeric_source_families": [
+        "3"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "7a923b6300b8a9ca84935cc878de4096e0eafc78dba7061be9b44442fe459c41",
+      "selected_source_pages": [
+        "f3r",
+        "f3v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006080",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006081"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:88+89+90",
+      "numeric_source_families": [
+        "88",
+        "89",
+        "90"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "7b7aaaaa305b740739ebad516c2fa5dbf917291927f49acc26d76d33c2561d9b",
+      "selected_source_pages": [
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v1",
+        "f89v2",
+        "f90r1",
+        "f90r2",
+        "f90v1",
+        "f90v2"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006233",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006234",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006236",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006237",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037112"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:51",
+      "numeric_source_families": [
+        "51"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "7e69b602469b8818b0c95da82ff478a8d804fa8528fa8e894cada28a038d50a2",
+      "selected_source_pages": [
+        "f51r",
+        "f51v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006174",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006175"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:18",
+      "numeric_source_families": [
+        "18"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "7e72fa2cb8a816c20168bbc208034e2ae715f2ee33c5474663fc42a8aaebea9e",
+      "selected_source_pages": [
+        "f18r",
+        "f18v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006108",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006109"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:23",
+      "numeric_source_families": [
+        "23"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "7fd0912349208929149324ca0b3ae91ac56a9f5b956b7223ab1a07c48a0e425f",
+      "selected_source_pages": [
+        "f23r",
+        "f23v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006118",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006119"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:4",
+      "numeric_source_families": [
+        "4"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "8519bcd73d7b5fd092d3328d97dad42b1599748982736506cf31cdd08075aa3c",
+      "selected_source_pages": [
+        "f4r",
+        "f4v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006082",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006083"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:58",
+      "numeric_source_families": [
+        "58"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "88a2aa66b5919b6d6c0c80f7ca13935b590d0f5432ecc7b0889076d99d4c04b3",
+      "selected_source_pages": [
+        "f58r",
+        "f58v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006188",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006189"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:52",
+      "numeric_source_families": [
+        "52"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "88d10d8282e5b139fc20b0dcec6e6a193b965a1cda2b1f5ea000f388af6d35f7",
+      "selected_source_pages": [
+        "f52r",
+        "f52v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006176",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006177"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:6",
+      "numeric_source_families": [
+        "6"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "893402edaf8b0729f7bf2adc80eb2ed2f0f4c31e8b574cd39b91e8a0e8eee4fc",
+      "selected_source_pages": [
+        "f6r",
+        "f6v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006086",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006087"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:43",
+      "numeric_source_families": [
+        "43"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "8fb7f52ec1cac03afde9b9d9be20367a3f0f2677830baec749c0c808e9c87ae4",
+      "selected_source_pages": [
+        "f43r",
+        "f43v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006158",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006159"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:103",
+      "numeric_source_families": [
+        "103"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "91e70e76065c31f3e98abb2230fd8b32b6efed88608487933bc74cb2926b0c91",
+      "selected_source_pages": [
+        "f103r",
+        "f103v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006255"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:46",
+      "numeric_source_families": [
+        "46"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "94fc9993b0a7a31f5889e319f872c5ac0d6626a6589c517babe7aace8acebef0",
+      "selected_source_pages": [
+        "f46r",
+        "f46v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006164",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006165"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:115",
+      "numeric_source_families": [
+        "115"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "9e58ac17d3c54f970848223d3ce1e9f430dae579f30c329c66b2652adf2b8c49",
+      "selected_source_pages": [
+        "f115r",
+        "f115v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006274",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006275"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:40",
+      "numeric_source_families": [
+        "40"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "a206c5e8b51fa639ac19a0c8b44ec25f90eeca2bd87dbb6bac63edde2b0db001",
+      "selected_source_pages": [
+        "f40r",
+        "f40v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006152",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006153"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:85+86",
+      "numeric_source_families": [
+        "85",
+        "86"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "a66e4243ddf46232b56753b167c8288a50f112ccd503b3cd8e7bc6cd05284723",
+      "selected_source_pages": [
+        "f85r1",
+        "f86v3",
+        "f86v4",
+        "f86v5",
+        "f86v6"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:56",
+      "numeric_source_families": [
+        "56"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "a7f4ee37401e1fecc816a08e86405e8ae0f40f77bb0ba1c0a4432454d6397403",
+      "selected_source_pages": [
+        "f56r",
+        "f56v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006184",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006185"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:87",
+      "numeric_source_families": [
+        "87"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "ad33a9d2c2fb9be0a5aa7a2c2f136ee8b20f42c254ee5c8b54b52835a2ac9924",
+      "selected_source_pages": [
+        "f87r",
+        "f87v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1043429"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:93",
+      "numeric_source_families": [
+        "93"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "ad60691d8ecf3fa1c35154a9ad7c1b496da60ec0bb6f7c7e3c7a16eb889dd2e0",
+      "selected_source_pages": [
+        "f93r",
+        "f93v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006238",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006239"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:105",
+      "numeric_source_families": [
+        "105"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "adae01eb8ca8edd1dbdafff57a6a5f536aaa784c93bd300febd51497ca75b442",
+      "selected_source_pages": [
+        "f105r",
+        "f105v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006258",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006259"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:116",
+      "numeric_source_families": [
+        "116"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "afc426db371ea3c0efde8e9d3b53c6c56133dfaf38e22ca1512482a332b97a4f",
+      "selected_source_pages": [
+        "f116r"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:31",
+      "numeric_source_families": [
+        "31"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "b00a05f0b64a722a5d7b9e84ab90ef25a2a6e7a96a8223148a8fa8d122068d86",
+      "selected_source_pages": [
+        "f31r",
+        "f31v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006134",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006135"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:38",
+      "numeric_source_families": [
+        "38"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "b3c3759b97a2fc432e039ba56b858d4a8b310e1918291d520e255422cba58f1f",
+      "selected_source_pages": [
+        "f38r",
+        "f38v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006148",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006149"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:22",
+      "numeric_source_families": [
+        "22"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "b7a9e43081f36a98b31f3d4847bf1330efc22c9d034f469a2b49c174a9affc72",
+      "selected_source_pages": [
+        "f22r",
+        "f22v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006116",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006117"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:26",
+      "numeric_source_families": [
+        "26"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "bc8ac041d7da65be7713ed19de6076bb18ea1fe4d4262464c1e09eb0e2ed8264",
+      "selected_source_pages": [
+        "f26r",
+        "f26v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006124",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006125"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:28",
+      "numeric_source_families": [
+        "28"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "bd04c2eb363b2857c1dc4d24b8030f2971690837c410073f468be038ae65f245",
+      "selected_source_pages": [
+        "f28r",
+        "f28v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006128",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006129"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:14",
+      "numeric_source_families": [
+        "14"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "bfebddb7854a7a55b40dbbbe8cd8f386fbaa9e470b4752f7a5f999c54dbdfba9",
+      "selected_source_pages": [
+        "f14r",
+        "f14v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006100",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006101"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:47",
+      "numeric_source_families": [
+        "47"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "c17dbec74de3ea6ed888c8b38ae36655f8ffc1366c3f524e6e9670866b6ea40d",
+      "selected_source_pages": [
+        "f47r",
+        "f47v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006166",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006167"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:79",
+      "numeric_source_families": [
+        "79"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "c19e6d2b519e215055dca6bc2bc6347140c508692b14c37139cd9b1f58418bde",
+      "selected_source_pages": [
+        "f79r",
+        "f79v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006216",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006217"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:20",
+      "numeric_source_families": [
+        "20"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "c3275cdb9d7e0fefdfb3a1781c69f80ece8a3bec24e247a02d61610b5849bf44",
+      "selected_source_pages": [
+        "f20r",
+        "f20v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006112",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006113"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:37",
+      "numeric_source_families": [
+        "37"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "c3343e455c626c9752fbc6c2ad9d61f0235e5631b87be165926b82f50230353a",
+      "selected_source_pages": [
+        "f37r",
+        "f37v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006146",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006147"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:25",
+      "numeric_source_families": [
+        "25"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "c8f74fd7b3edb3d7299ba16643894303560c2db48f4ffddd3a39080b1a3c88c9",
+      "selected_source_pages": [
+        "f25r",
+        "f25v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006122",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006123"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:107",
+      "numeric_source_families": [
+        "107"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "c911667550c1f2bba7edb77b4d3a441768da96dd7ed5de0554e39c6465f4675c",
+      "selected_source_pages": [
+        "f107r",
+        "f107v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006262",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006263"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:69+70",
+      "numeric_source_families": [
+        "69",
+        "70"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "d4180c0fd6ea959da5321ad6ad3f18de25513604cc5747871ca4dc3f69767ff5",
+      "selected_source_pages": [
+        "f69r"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006198",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006199",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006200",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006201"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:49",
+      "numeric_source_families": [
+        "49"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "d70d4882ee74affe6bee496bac5d8135f53280a0620733ac7d344b9369b06af6",
+      "selected_source_pages": [
+        "f49r"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006170",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006171"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:84",
+      "numeric_source_families": [
+        "84"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "d7c4dbe167d1233092737638fceb3d8f1101099daccf90befed124702a3588cd",
+      "selected_source_pages": [
+        "f84r",
+        "f84v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006227"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:27",
+      "numeric_source_families": [
+        "27"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "d7dbf6070ad725bf739d0d5d743d8b13bbc43d117871e858a192b8133f4cd4eb",
+      "selected_source_pages": [
+        "f27r",
+        "f27v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006126",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006127"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:94+95",
+      "numeric_source_families": [
+        "94",
+        "95"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "d8ca5f7fd1c9119e4953cda7b1569f97c09ad7b37d087dbd9253429da2b65509",
+      "selected_source_pages": [
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v1",
+        "f95v2"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006240",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006241",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006242",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006243"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:24",
+      "numeric_source_families": [
+        "24"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "db1ea89f88aa3b443d314ab8202098f6fa47c9a1ba1758eedcfa827cd4ec50ed",
+      "selected_source_pages": [
+        "f24r",
+        "f24v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006120",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006121"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:77",
+      "numeric_source_families": [
+        "77"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "dc40faff47fcea62fde10baa1fecd1e6b4ddcc2df4928885a97a100b165f3190",
+      "selected_source_pages": [
+        "f77r",
+        "f77v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006212",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006213"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:50",
+      "numeric_source_families": [
+        "50"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "e3aa7a59ccd3ec9ada0c5e49f18947e560b4dfb29b54ba92377cda6acfd02423",
+      "selected_source_pages": [
+        "f50r",
+        "f50v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006172",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006173"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:34",
+      "numeric_source_families": [
+        "34"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "ee3b6dd22e484d19628fb2d384af4c647d32bcfdb2cb7e3edc0f920618006549",
+      "selected_source_pages": [
+        "f34r",
+        "f34v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006140",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006141"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:8",
+      "numeric_source_families": [
+        "8"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "f2ba4ae69df91617cac77aed978bee49443f0d68d967ca52393383a3d43f4324",
+      "selected_source_pages": [
+        "f8r",
+        "f8v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006090",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006091"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:75",
+      "numeric_source_families": [
+        "75"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "f2bc32715addc2e85d7fc6cad90d1154fbf7f2071c0177eb9345303f03c0fcc9",
+      "selected_source_pages": [
+        "f75r",
+        "f75v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006209"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:41",
+      "numeric_source_families": [
+        "41"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "f7b72c59ea0a5a86e12a5bf49c8479b0f440f5469b58d6517964161628100009",
+      "selected_source_pages": [
+        "f41r",
+        "f41v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006154",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006155"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:53",
+      "numeric_source_families": [
+        "53"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "fb6e1b586fcb478eec5aebcb4627287019d0c13cc4c8efdaaab690f09b28e342",
+      "selected_source_pages": [
+        "f53r",
+        "f53v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006178",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006179"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:68",
+      "numeric_source_families": [
+        "68"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "fd0acb92de60fcc94c8f5dac7da8da858e9a95ec1baff70b88314d97dd853c60",
+      "selected_source_pages": [
+        "f68r1",
+        "f68r2",
+        "f68v2",
+        "f68v3"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006197"
+      ]
+    },
+    {
+      "unit_id": "numeric-families:65",
+      "numeric_source_families": [
+        "65"
+      ],
+      "partition": "dictionary_development",
+      "rank_sha256": "fd3370bab73ca1a0413b8ea18abdc9ac617fdcf1b2b860bad7b24dff9bbfa9d3",
+      "selected_source_pages": [
+        "f65v"
+      ],
+      "canvas_ids": [
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006190",
+        "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006191"
+      ]
+    }
+  ],
+  "input_pins": {
+    "source_catalog": {
+      "path": "data/transliterations.json",
+      "sha256": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    },
+    "image_report": {
+      "path": "research/folio-alignment/transcription-image-coverage.json",
+      "sha256": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46"
+    },
+    "canvas_index": {
+      "path": "research/image-index/canvases.csv",
+      "sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f"
+    },
+    "image_index_audit": {
+      "path": "research/image-index/audit.json",
+      "sha256": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc"
+    },
+    "plan": {
+      "path": "research/hypotheses/y-layout-prefix-v1/PLAN.md",
+      "sha256": "fbd1dd9cb23d16a182f0d237eaa3a2412083eb8eed50dd969d4128d7284e4034"
+    }
+  }
+}
