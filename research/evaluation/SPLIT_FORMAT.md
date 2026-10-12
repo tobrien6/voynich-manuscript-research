@@ -135,3 +135,9 @@ Run its `--split` check in addition to this validator's input/freeze check.
 Its coarse side references do not resolve image regions or substitute for a
 reviewed physical mapping. Preserve prior exposure and any unresolved panel
 localization in the candidate record.
+
+The [freeze artifact audit](FREEZE_RECEIPT.md) separately checks that a named
+Git commit contains the pre-fit split, input, and every listed rule/preprocessing
+artifact, with matching current bytes and optional later-run ancestry. It does
+not establish truthful exposure history, discover omitted dependencies, or
+validate the candidate's reading or translation.
