@@ -1,0 +1,118 @@
+{
+  "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "manifest_canvas_count": 213,
+  "selection_protocol": "research/boundary-pilot/PROTOCOL.md",
+  "entries": [
+    {
+      "target_folio": "1r",
+      "catalog_part": "I",
+      "canvas_index": 2,
+      "canvas_label": "1r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006076",
+      "width": 2972,
+      "height": 3766
+    },
+    {
+      "target_folio": "66r",
+      "catalog_part": "I",
+      "canvas_index": 118,
+      "canvas_label": "66r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006192",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006192/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006192",
+      "width": 2793,
+      "height": 3707
+    },
+    {
+      "target_folio": "67r",
+      "catalog_part": "II",
+      "canvas_index": 120,
+      "canvas_label": "67r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006194/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006194",
+      "width": 4972,
+      "height": 3738
+    },
+    {
+      "target_folio": "73r",
+      "catalog_part": "II",
+      "canvas_index": 132,
+      "canvas_label": "73r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006206",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006206",
+      "width": 2834,
+      "height": 3761
+    },
+    {
+      "target_folio": "75r",
+      "catalog_part": "III",
+      "canvas_index": 134,
+      "canvas_label": "75r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006208/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006208",
+      "width": 2852,
+      "height": 3759
+    },
+    {
+      "target_folio": "84r",
+      "catalog_part": "III",
+      "canvas_index": 152,
+      "canvas_label": "84r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006226/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006226",
+      "width": 2753,
+      "height": 3745
+    },
+    {
+      "target_folio": "86r",
+      "catalog_part": "IV",
+      "canvas_index": 157,
+      "canvas_label": "85v and 86r (foldout)",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006231",
+      "width": 7925,
+      "height": 7268
+    },
+    {
+      "target_folio": "87r",
+      "catalog_part": "V",
+      "canvas_index": 158,
+      "canvas_label": "87r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006232/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006232",
+      "width": 2753,
+      "height": 3745
+    },
+    {
+      "target_folio": "102r",
+      "catalog_part": "V",
+      "canvas_index": 179,
+      "canvas_label": "101v (part) and 102r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006251/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006251",
+      "width": 8176,
+      "height": 3864
+    },
+    {
+      "target_folio": "103r",
+      "catalog_part": "VI",
+      "canvas_index": 182,
+      "canvas_label": "103r",
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254",
+      "image_id": "https://collections.library.yale.edu/iiif/2/1006254/full/full/0/default.jpg",
+      "image_service": "https://collections.library.yale.edu/iiif/2/1006254",
+      "width": 2688,
+      "height": 3805
+    }
+  ]
+}
