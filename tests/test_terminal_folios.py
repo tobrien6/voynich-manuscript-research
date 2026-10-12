@@ -1,0 +1,268 @@
+from copy import deepcopy
+from contextlib import redirect_stderr, redirect_stdout
+import io
+import json
+from pathlib import Path
+import tempfile
+import unittest
+from unittest.mock import patch
+
+from scripts import audit_terminal_folios as module
+from scripts.audit_terminal_folios import ROOT, SOURCE_IDS, audit, build_report, source_page, verify_observations
+from scripts.ivtff import parse_ivtff
+
+
+HEADER = '#=IVTFF Eva- 2.0 M\n'
+
+
+def documents():
+    document = parse_ivtff(HEADER + '<f116r>\n<f116r.1,@P0> q.a\n'
+                           '<f116v>\n<f116v.1,@Lx> oror.sheey<!comment>\n')
+    return [({'id': identifier, 'sha256': 'synthetic', 'url': 'https://example.test/source',
+              'path': 'synthetic.txt', 'alphabet': 'Eva-'}, document)
+            for identifier in SOURCE_IDS]
+
+
+def canvas(label, index):
+    numbered = label in {'116r', '116v'}
+    return {'yale_label': label, 'label_class': 'exact_single_side_label' if numbered else 'non_numbered_view',
+            'has_partial_marker': 'False', 'has_multiple_explicit_sides': 'False',
+            'explicit_folio_sides': label if numbered else '',
+            'canvas_uri': 'https://example.test/canvas/' + str(index),
+            'image_oid': str(index), 'catalog_image_url': 'https://example.test/catalog/' + str(index),
+            'full_image_url': 'https://example.test/image/' + str(index),
+            'image_service_url': 'https://example.test/service/' + str(index),
+            'image_width': '1000', 'image_height': '2000'}
+
+
+def canvases():
+    return [canvas(label, index) for index, label in enumerate(
+        ('116r', '116v', '[Back flyleaf recto]'))]
+
+
+ALIAS = {'source_scheme': 'yale_legacy_ms408_catalog', 'source_label': '117v',
+         'status': 'unresolved', 'mapping_allowed': False, 'target': None}
+
+
+def pinned_observations():
+    raw = (ROOT / 'research/source-audit/terminal-folio-intake.json').read_bytes()
+    record = json.loads((ROOT / 'research/source-audit/terminal-folio-observations.json').read_text())
+    return json.loads(raw), raw, record
+
+
+class TerminalFolioTests(unittest.TestCase):
+    def test_cli_output_preserves_inputs_readers_and_their_aliases(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = [root / path for path in module.INPUTS.values()]
+            paths += [root / 'data/raw/source.txt', root / 'scripts/reader.py',
+                      root / 'research/source-audit/terminal-folio-observations.json',
+                      root / 'research/source-audit/TERMINAL_FOLIO_PLAN.md',
+                      root / 'research/source-audit/TERMINAL_ANCHOR_PLAN.md',
+                      root / 'supplied-check.json', root / 'supplied-observations.json']
+            for path in paths:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text('synthetic protected input')
+            (root / module.INPUTS['source_catalog']).write_text(json.dumps(
+                {'sources': [{'path': 'data/raw/source.txt'}]}))
+            before = {path: path.read_bytes() for path in paths}
+            targets = list(paths) + [root / 'scripts/new.py', root / 'data/raw/new.txt']
+            for index, path in enumerate(paths):
+                for kind in ('symlink', 'hardlink'):
+                    alias = root / f'{kind}-{index}.json'
+                    if kind == 'symlink':
+                        alias.symlink_to(path)
+                    else:
+                        alias.hardlink_to(path)
+                    targets.append(alias)
+            for target in targets:
+                with self.subTest(target=target.name), patch.object(module, 'ROOT', root), \
+                        patch.object(module, 'audit') as replay, \
+                        patch('sys.argv', ['audit', '--output', str(target), '--check',
+                                           str(paths[-2]), '--observations', str(paths[-1])]), \
+                        redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()), \
+                        self.assertRaises(SystemExit) as error:
+                    module.main()
+                self.assertEqual(error.exception.code, 1)
+                replay.assert_not_called()
+                self.assertEqual({path: path.read_bytes() for path in paths}, before)
+            for existing in (False, True):
+                output = root / f'ordinary-{existing}.json'
+                if existing:
+                    output.write_text('replaceable synthetic report')
+                with patch.object(module, 'ROOT', root), \
+                        patch.object(module, 'audit', return_value={'fixture': 'okay'}), \
+                        patch('sys.argv', ['audit', '--output', str(output)]), \
+                        redirect_stdout(io.StringIO()):
+                    module.main()
+                self.assertEqual(json.loads(output.read_text()), {'fixture': 'okay'})
+                self.assertEqual({path: path.read_bytes() for path in paths}, before)
+
+    def test_missing_header_empty_header_and_present_locus_are_distinct(self):
+        missing = parse_ivtff(HEADER + '<f116r>\n')
+        empty = parse_ivtff(HEADER + '<f116v>\n')
+        present = documents()[0][1]
+        self.assertEqual(source_page(missing, 'f116v')['presence_state'], 'header_absent')
+        self.assertEqual(source_page(empty, 'f116v')['presence_state'], 'header_without_present_loci')
+        self.assertEqual(source_page(present, 'f116v')['presence_state'], 'present_loci')
+
+    def test_nonexistent_locus_is_preserved_without_becoming_present_text(self):
+        doc = parse_ivtff(HEADER + '<f116v>\n<f116v.1,!Lx> oror.sheey\n')
+        result = source_page(doc, 'f116v')
+        self.assertEqual(result['presence_state'], 'header_without_present_loci')
+        self.assertEqual(result['explicitly_nonexistent_locus_identifiers'], ['f116v.1,!Lx'])
+        self.assertEqual(result['native_payload_records'], [])
+
+    def test_lx_payload_stays_apart_from_paragraphs_and_free_comments(self):
+        result = source_page(documents()[0][1], 'f116v')
+        self.assertEqual(result['present_generic_p_loci'], 0)
+        self.assertEqual(result['present_p0_p1_loci'], 0)
+        self.assertEqual(result['present_loci_by_kind'], {'Lx': 1})
+        record = result['native_payload_records'][0]
+        self.assertEqual(record['native_payload_outside_free_comments'], 'oror.sheey')
+        self.assertTrue(record['free_comments_present'])
+
+    def test_flyleaf_never_acquires_a_native_page_or_edition(self):
+        report = build_report(documents(), canvases(), ALIAS)
+        flyleaf = report['entries'][2]
+        self.assertIsNone(flyleaf['source_page_id'])
+        self.assertEqual(flyleaf['editions'], [])
+        self.assertTrue(flyleaf['unnumbered_flyleaf_has_no_assigned_native_page'])
+
+    def test_changed_removed_or_verified_alias_requires_new_review(self):
+        for update in ({'mapping_allowed': True}, {'target': {}}, {'status': 'unregistered'},
+                       {'status': 'verified'}, {'source_label': 'f117v'}):
+            alias = {**ALIAS, **update}
+            with self.subTest(update=update), self.assertRaises(ValueError):
+                build_report(documents(), canvases(), alias)
+
+    def test_missing_duplicate_partial_or_compound_terminal_image_fails(self):
+        for mode in ('missing', 'duplicate', 'partial', 'combined', 'numbered_flyleaf'):
+            rows = canvases()
+            if mode == 'missing':
+                rows.pop()
+            elif mode == 'duplicate':
+                rows.append(deepcopy(rows[0]))
+            elif mode == 'partial':
+                rows[0]['has_partial_marker'] = 'True'
+            elif mode == 'combined':
+                rows[1]['has_multiple_explicit_sides'] = 'True'
+            else:
+                rows[2]['explicit_folio_sides'] = '117r'
+            with self.subTest(mode=mode), self.assertRaises(ValueError):
+                build_report(documents(), rows, ALIAS)
+
+    def test_missing_or_duplicate_source_file_cannot_inflate_the_five_edition_audit(self):
+        for sources in (documents()[:-1], documents() + documents()[:1]):
+            with self.assertRaises(ValueError):
+                build_report(sources, canvases(), ALIAS)
+
+    def test_pinned_intake_preserves_terminal_asymmetry_and_absent_control(self):
+        result = audit()
+        recto, verso, flyleaf = result['entries']
+        self.assertEqual([entry['present_loci'] for entry in recto['editions']], [50] * 5)
+        self.assertEqual([entry['header_present'] for entry in verso['editions']],
+                         [True, False, False, True, True])
+        self.assertEqual([entry['present_loci_by_kind'] for entry in verso['editions']],
+                         [{'Lx': 1}, {}, {}, {'Lx': 1}, {'Lx': 1}])
+        self.assertFalse(result['legacy_117v_lookup']['mapping_allowed'])
+        self.assertTrue(all(not entry['header_present'] for entry in result['f117v_source_controls']))
+
+    def test_observation_binding_and_region_metadata_do_not_authorize_an_alias(self):
+        report, raw, observations = pinned_observations()
+        verify_observations(observations, report, raw)
+        for change in ('alias', 'new_reading', 'missing', 'page', 'binding', 'region'):
+            altered = deepcopy(observations)
+            if change == 'alias':
+                altered['historical_alias_verified'] = True
+            elif change == 'new_reading':
+                altered['new_voynich_glyph_reading_or_translation'] = True
+            elif change == 'missing':
+                altered['records'].pop()
+            elif change == 'page':
+                altered['records'][2]['source_page_id'] = 'f117r'
+            elif change == 'binding':
+                altered['intake_report_sha256'] = '0' * 64
+            else:
+                altered['records'][1]['inspected_images'][1]['url'] = 'https://example.test/wrong-region'
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_keeps_all_contexts_absent_headers_and_original_ordinal(self):
+        report, raw, observations = pinned_observations()
+        verify_observations(observations, report, raw)
+        anchor = observations['records'][1]['native_locus_review_anchor']
+        self.assertEqual(anchor['native_locus_key'], 'f116v.1')
+        self.assertEqual([source['source_id'] for source in anchor['source_contexts']],
+                         ['ZL3b', 'RF1b-full', 'RF1b-basic'])
+        self.assertEqual(anchor['absent_source_headers'], ['IT2a', 'GC2a'])
+        self.assertEqual([source['source_file_line'] for source in anchor['source_contexts']],
+                         [8508, 5613, 5613])
+        self.assertEqual([source['free_comments_present'] for source in anchor['source_contexts']],
+                         [True, False, False])
+        self.assertFalse(anchor['usable_as_verified_corpus_join'])
+
+    def test_native_anchor_rejects_missing_altered_or_invented_source_context(self):
+        report, raw, observations = pinned_observations()
+        for change in ('missing', 'text', 'line', 'invented', 'absent'):
+            altered = deepcopy(observations)
+            anchor = altered['records'][1]['native_locus_review_anchor']
+            if change == 'missing':
+                anchor['source_contexts'].pop()
+            elif change == 'text':
+                anchor['source_contexts'][0]['native_payload_outside_free_comments'] = 'invented'
+            elif change == 'line':
+                anchor['source_contexts'][0]['source_file_line'] += 1
+            elif change == 'invented':
+                anchor['source_contexts'].append({**anchor['source_contexts'][0], 'source_id': 'IT2a'})
+            else:
+                anchor['absent_source_headers'] = []
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_rejects_verified_claims_and_missing_observation_limits(self):
+        report, raw, observations = pinned_observations()
+        updates = [('association_status', 'confirmed'), ('usable_as_verified_corpus_join', True),
+                   ('glyph_reading_verified', True), ('glyph_correction_proposed', True),
+                   ('source_record_is_not_physical_row_number', False),
+                   ('direct_observations', []), ('association_basis', []),
+                   ('unresolved_readings', []), ('physical_position_description', '')]
+        for field, value in updates:
+            altered = deepcopy(observations)
+            altered['records'][1]['native_locus_review_anchor'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_requires_plan_identity_and_preserved_source_key(self):
+        report, raw, observations = pinned_observations()
+        for field, value in (('plan_commit', ''), ('native_locus_key', 'f116v.4')):
+            altered = deepcopy(observations)
+            altered['records'][1]['native_locus_review_anchor'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_rejects_missing_misassigned_or_noncontained_windows(self):
+        report, raw, observations = pinned_observations()
+        for change in ('missing_image', 'indices', 'containment', 'missing_anchor', 'flag'):
+            altered = deepcopy(observations)
+            item = altered['records'][1]
+            if change == 'missing_image':
+                item['inspected_images'].pop()
+            elif change == 'indices':
+                item['native_locus_review_anchor']['review_region_image_indices'] = [3, 2]
+            elif change == 'containment':
+                image = item['inspected_images'][3]
+                region = [1100, 500, 310, 120]
+                image['region_xywh_full_image_pixels'] = region
+                image['url'] = item['image_metadata']['image_service_url'] + '/' + \
+                    ','.join(map(str, region)) + '/full/0/default.jpg'
+            elif change == 'missing_anchor':
+                item.pop('native_locus_review_anchor')
+            else:
+                altered['terminal_native_locus_review_performed'] = False
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+
+if __name__ == '__main__':
+    unittest.main()

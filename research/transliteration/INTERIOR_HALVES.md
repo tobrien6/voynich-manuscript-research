@@ -74,6 +74,11 @@ statistics: for example, the interior `[1, 3, 2]` has a nonconstant early
 half but the same adjacent-product statistic under both permitted orders.
 The original fully constant-interior counts remain 13, 13, 14, and 14.
 
+The [separate exact invariance diagnostic](HALF_DEGENERACY.md) identifies 55,
+73, 58, and 58 loci whose statistic cannot vary under any permitted half
+permutation, including the narrower counts above. It preserves the full
+2,165-locus denominator and changes no accepted statistic, control or tail.
+
 The [complete report](interior_half_controls.json) retains the parent/source/plan
 pins, unchanged cohort, each treatment's block-size distribution, all 999
 control statistics, exact expectations, control means and deviations, and

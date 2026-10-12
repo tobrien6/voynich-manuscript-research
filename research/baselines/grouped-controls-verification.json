@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "method": "frozen-grouped-controls-reviewed-cli-guard-compatibility-v2",
+  "freeze_commit": "8e5851e3abd2c21d18766a1b884c0a321cd6048f",
+  "frozen_result_sha256": "c89b5fbc1bbe06d005eca566c2ea44d4751943f34eb5648e5c0198f3c0e5d1bc",
+  "frozen_source_snapshots": {
+    "scripts/grouped_length_prediction.py": {
+      "path": "research/baselines/frozen/grouped-length-prediction-v1.source.txt",
+      "sha256": "3a987a939fb389d25a75dfaf6494b5c3a97467f0bf5fcf846edca7d3eca69fd3"
+    },
+    "scripts/grouped_predictor_controls.py": {
+      "path": "research/baselines/frozen/grouped-predictor-controls-v1.source.txt",
+      "sha256": "da0229d580459b21c0c62b06faf167e8b9aa969f9b5a43bd85174ca48d1b03ba"
+    }
+  },
+  "frozen_producer_sha256": "3a987a939fb389d25a75dfaf6494b5c3a97467f0bf5fcf846edca7d3eca69fd3",
+  "current_producer_sha256": "10d090fa79506c41d0974b9a3b1c75ecaf2d8bcc6adee16093291fb63ff432fb",
+  "producer_bytes_changed": true,
+  "scientific_ast_identical_outside_reviewed_cli_guard": true,
+  "excluded_cli_main_body": true,
+  "reviewed_output_helper_ast_sha256": "7f75d126ee0229fbcdb9418339a2169ef53da39126738d7f4dc69d0bde377822",
+  "benchmark_program_sha256": "da0229d580459b21c0c62b06faf167e8b9aa969f9b5a43bd85174ca48d1b03ba",
+  "benchmark_plan_sha256": "c3a9859fd4726c2e384469638a299d0678dfaf5c7277a9f22b6560707cf79394",
+  "current_input_sha256": {
+    "research/baselines/grouped-length-prediction.json": "d271a627a4f37f4916f032fd5021cf6e14bcc9c0817337a6aeeccb1f29cc9810",
+    "scripts/grouped_length_prediction.py": "10d090fa79506c41d0974b9a3b1c75ecaf2d8bcc6adee16093291fb63ff432fb",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/interior_length_order.py": "729e8a774a889b6370196ab09b56d228f7b3fe4c747f169a5217488453d28c3a"
+  },
+  "python_version": "3.14.3",
+  "datasets_replayed": 192,
+  "all_stored_dataset_fields_reproduced": true,
+  "frozen_result_records_changed": false,
+  "verifier_sha256": "cffaedf6650e058308576e50bed3472da3018839b6696440f9511839f251444c",
+  "limits": "Verifies unchanged scientific code and exact synthetic records; does not execute or validate the revised parent CLI, and does not establish a manuscript mechanism."
+}
