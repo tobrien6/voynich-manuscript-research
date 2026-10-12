@@ -82,8 +82,9 @@ plate caption; the legacy catalog supplies no image identifier connecting its
 label to this photograph. Qualified source/physical-surface review remains
 necessary for a stronger association and for the separate catalog question.
 
-The [S009 source ledger](newbold-terminal-source.json), all older source
-records and the alias registry remain byte-identical to the accepted base.
+The [S009 source ledger](newbold-terminal-source.json), source-numbering and
+editorial-marker ledgers, and alias registry remain byte-identical to the
+plan's accepted base.
 The existing 11 alias tests and registry validation pass; actual legacy
 lookup exits 1 with `mapping_allowed: false` and null target. Source/canvas
 pin checks and all 20 planned plate/surface/feature records verify. These
