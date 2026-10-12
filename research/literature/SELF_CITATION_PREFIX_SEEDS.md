@@ -82,7 +82,7 @@ installation. Use new work/output paths:
 python3 scripts/census_self_citation_prefixes.py \
   --reference PATH_TO_PINNED_RELEASE --java-home PATH_TO_RECORDED_JAVA \
   --work PATH_TO_NEW_CENSUS_DIRECTORY --output PATH_TO_NEW_RECORD.json
-PYTHONPATH=tests python3 -m unittest test_self_citation_prefix_seeds \
+PYTHONPATH=tests python3 -m unittest test_self_citation_prefix_seeds test_self_citation_seed_figure \
   test_self_citation_trace test_self_citation_replay test_prefix_conditional_bounds -v
 MPLCONFIGDIR=PATH_TO_WRITABLE_CACHE python scripts/plot_self_citation_prefix_seeds.py
 ```
@@ -98,6 +98,19 @@ eligibility across all cells, explicit undefined seeds, and changed row bytes
 or identities; existing observer/environment/exact-moment checks remain in use.
 The 40 actual JVM executions are the integration check. Per-case raw output,
 trace, ledger, configuration and process fingerprints are retained for replay.
+
+Maintainer review identified an output-prefix collision in the figure writer.
+The [original census and figure](https://github.com/tobrien6/voynich-manuscript-research/tree/cf11ad686ad0bd4cc92631a287b4644b3c9aa35f/research/literature)
+remain available. The renderer now rejects resolved-path/inode aliases of its
+input, source dependencies and sibling artifacts before each write, including
+SVG canonicalization. Three additional tests cover direct, symbolic/hardlink,
+cross-artifact and late sidecar aliases; all 24 focused tests pass. Reproduction
+with the recorded plotting runtime preserves the complete PNG and SVG bytes
+and every one of the 160 sidecar points. Only the renderer fingerprint changes.
+Forty independent reviewer JVM runs reproduce every case, output, event/ledger
+identity and measurement; a separate native-row arithmetic check verifies all
+160 exact means/denominators and eight descriptive summaries. No generation
+setting, scientific result or original exposure record changes in this repair.
 
 ## Scope and next experiment
 

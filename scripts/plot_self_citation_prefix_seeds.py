@@ -13,6 +13,24 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'research/literature/self-citation-prefix-seeds.json'
 
 
+def protected_inputs():
+    return [SOURCE, Path(__file__), ROOT / 'requirements-figure.txt',
+            *[ROOT / path for path in [
+                'research/literature/SELF_CITATION_PREFIX_SEED_PLAN.md',
+                'research/literature/self-citation-repeatability.json',
+                'research/literature/self-citation-row-trace.json',
+                'scripts/census_self_citation_prefixes.py', 'scripts/trace_self_citation_rows.py',
+                'scripts/replay_self_citation.py', 'scripts/prefix_conditional_bounds.py']]]
+
+
+def protect_destination(destination, inputs, artifacts):
+    """Reject existing or newly created path/inode aliases before each write."""
+    for source in [*inputs, *[path for path in artifacts if path != destination]]:
+        if (destination.resolve() == source.resolve() or
+                (destination.exists() and source.exists() and destination.samefile(source))):
+            raise ValueError('figure output aliases a protected input or another artifact')
+
+
 def figure_data(raw):
     report = json.loads(raw)
     if (report['schema_version'] != 1 or report['method'] != 'fixed-seed native generated prefix census v1' or
@@ -44,6 +62,10 @@ def main():
     parser.add_argument('--output-prefix', type=Path,
                         default=ROOT / 'research/literature/figures/self-citation-prefix-seeds')
     args = parser.parse_args()
+    png, svg, sidecar = [args.output_prefix.with_suffix(suffix) for suffix in ['.png', '.svg', '.json']]
+    artifacts, inputs = [png, svg, sidecar], protected_inputs()
+    for destination in artifacts:
+        protect_destination(destination, inputs, artifacts)
     data = figure_data(SOURCE.read_bytes())
     import matplotlib
     matplotlib.use('Agg')
@@ -88,13 +110,18 @@ def main():
                          'Initialization is excluded. Dots show the chosen seed grid; no confidence interval or manuscript comparison is drawn.',
                 fontsize=10, color='#525b65', va='top')
     args.output_prefix.parent.mkdir(parents=True, exist_ok=True)
-    figure.savefig(args.output_prefix.with_suffix('.png'), dpi=160)
-    svg = args.output_prefix.with_suffix('.svg')
+    protect_destination(png, inputs, artifacts)
+    figure.savefig(png, dpi=160)
+    protect_destination(svg, inputs, artifacts)
     figure.savefig(svg, metadata={'Date': None})
-    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines()) + '\n')
+    protect_destination(svg, inputs, artifacts)
+    normalized = '\n'.join(line.rstrip() for line in svg.read_text().splitlines()) + '\n'
+    protect_destination(svg, inputs, artifacts)
+    svg.write_text(normalized)
     data.update({'renderer': {'matplotlib': matplotlib.__version__, 'python': platform.python_version(), 'font': 'DejaVu Sans'},
                  'figure_producer_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
-    args.output_prefix.with_suffix('.json').write_text(json.dumps(data, indent=2) + '\n')
+    protect_destination(sidecar, inputs, artifacts)
+    sidecar.write_text(json.dumps(data, indent=2) + '\n')
     print(f'Plotted all {len(data["points"])} points to {args.output_prefix}.')
 
 
