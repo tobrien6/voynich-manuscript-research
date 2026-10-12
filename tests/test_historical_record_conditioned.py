@@ -1,6 +1,8 @@
 import contextlib
 import hashlib
 import io
+import json
+import os
 from pathlib import Path
 import shutil
 import tempfile
@@ -79,11 +81,14 @@ class HistoricalRecordConditionedTests(unittest.TestCase):
     def test_dependency_drift_fails_before_source_reconstruction(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for name in (*module.FROZEN_PATHS, module.PLAN_PATH):
+            for name in (*module.FROZEN_PATHS, module.PLAN_PATH, module.AMENDMENT_PATH):
                 path = root / name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(module.ROOT / name, path)
-            module.load_plan(root)
+            plan, digest, amendment, effective = module.load_plan(root)
+            self.assertEqual(digest, amendment["original_plan_sha256"])
+            self.assertEqual({k for k in effective if effective[k] != plan["dependency_hashes"][k]},
+                             {"scripts/historical_repeated_types.py", module.GLOBAL_REPORT})
             path = root / module.GLOBAL_REPORT
             path.write_bytes(path.read_bytes() + b"drift")
             with patch.object(module, "reconstruct") as rebuild:
@@ -115,6 +120,89 @@ class HistoricalRecordConditionedTests(unittest.TestCase):
                         with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
                             module.main()
                 self.assertEqual(output.read_text(), "preserve output")
+
+    def test_amendment_requires_byte_identical_original_plan(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in (*module.FROZEN_PATHS, module.PLAN_PATH, module.AMENDMENT_PATH):
+                path = root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(module.ROOT / name, path)
+            path = root / module.PLAN_PATH
+            path.write_bytes(path.read_bytes() + b"\n")
+            with self.assertRaisesRegex(ValueError, "unsupported output-protection amendment"):
+                module.load_plan(root)
+
+    def test_metadata_only_global_migration_rejects_changed_scientific_payload(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in (*module.FROZEN_PATHS, module.PLAN_PATH, module.AMENDMENT_PATH):
+                path = root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(module.ROOT / name, path)
+            path = root / module.GLOBAL_REPORT
+            report = json.loads(path.read_bytes())
+            report["variants"][0]["observed"]["distinct_repeating_types_B"] += 1
+            path.write_text(json.dumps(report))
+            amendment_path = root / module.AMENDMENT_PATH
+            amendment = json.loads(amendment_path.read_bytes())
+            amendment["replacement_dependencies"][module.GLOBAL_REPORT]["repaired_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+            amendment_path.write_text(json.dumps(amendment))
+            with patch.object(module, "reconstruct") as rebuild:
+                with self.assertRaisesRegex(ValueError, "changed more than its runner fingerprint"):
+                    module.run_study(root)
+                rebuild.assert_not_called()
+
+    def test_all_protected_direct_symlink_hardlink_aliases_preserve_temporary_bytes(self):
+        names = (*module.FROZEN_PATHS, module.PLAN_PATH, "research/historical/RECORD_CONDITIONED_PLAN.md",
+                 module.AMENDMENT_PATH, module.AMENDMENT_NOTE,
+                 "scripts/historical_record_conditioned.py", "scripts/record_conditioned_repeated_types.py")
+        for name in names:
+            for kind in ("direct", "symlink", "hardlink"):
+                with self.subTest(name=name, kind=kind), tempfile.TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    source = root / name
+                    source.parent.mkdir(parents=True)
+                    source.write_bytes(b"preserve frozen bytes")
+                    output = source if kind == "direct" else root / "output.json"
+                    if kind == "symlink":
+                        output.symlink_to(source)
+                    elif kind == "hardlink":
+                        os.link(source, output)
+                    with patch.object(module, "ROOT", root), patch.object(module, "__file__", str(root / "scripts/historical_record_conditioned.py")):
+                        with patch.object(module, "run_study") as build, patch("sys.argv", ["assay", "--output", str(output)]):
+                            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                                module.main()
+                            self.assertEqual(error.exception.code, 1)
+                            build.assert_not_called()
+                    self.assertEqual(source.read_bytes(), b"preserve frozen bytes")
+                    self.assertEqual(output.read_bytes(), b"preserve frozen bytes")
+
+    def test_aliases_introduced_after_first_check_fail_at_write_for_every_protected_file(self):
+        names = (*module.FROZEN_PATHS, module.PLAN_PATH, "research/historical/RECORD_CONDITIONED_PLAN.md",
+                 module.AMENDMENT_PATH, module.AMENDMENT_NOTE,
+                 "scripts/historical_record_conditioned.py", "scripts/record_conditioned_repeated_types.py")
+        for name in names:
+            for kind in ("symlink", "hardlink"):
+                with self.subTest(name=name, kind=kind), tempfile.TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    source = root / name
+                    source.parent.mkdir(parents=True)
+                    source.write_bytes(b"preserve frozen bytes")
+                    output = root / "output.json"
+                    def build(_root):
+                        if kind == "symlink":
+                            output.symlink_to(source)
+                        else:
+                            os.link(source, output)
+                        return {"synthetic": "must not overwrite source"}
+                    with patch.object(module, "ROOT", root), patch.object(module, "__file__", str(root / "scripts/historical_record_conditioned.py")):
+                        with patch.object(module, "run_study", side_effect=build), patch("sys.argv", ["assay", "--output", str(output)]):
+                            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                                module.main()
+                            self.assertEqual(error.exception.code, 1)
+                    self.assertEqual(source.read_bytes(), b"preserve frozen bytes")
+                    self.assertEqual(output.read_bytes(), b"preserve frozen bytes")
 
 
 if __name__ == "__main__":

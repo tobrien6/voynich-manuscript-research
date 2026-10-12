@@ -3,9 +3,9 @@
   "scope": "Exploratory matched-input/all-flat-edge native-record-conditioned H A/B assay; exposed approximate inputs",
   "study_plan_sha256": "c606cb48e3f5a6e8d6805a88f7a3495276a2a0356472a0abd599b9caa6e9f7a3",
   "human_plan_sha256": "c4d0d84b22dd634c9835a4ba942214551dac4c2866ed8bc1dc694343b5f4d8c4",
-  "runner_sha256": "09027df08829ba0bd772e4b73fecd6fa0d61ff8b54eae37176a2d3b092fd81c8",
+  "runner_sha256": "a040f5f57624fa8fdb8b4fbe1cf84e674b5f02438b06c59c3a32c4ea0bbcd393",
   "metric_helper_sha256": "dccbc20120a4d98200d0c5d351fa784ced56c299c15f2be3b20bc9eff1858e3d",
-  "frozen_dependency_hashes": {
+  "registered_dependency_hashes": {
     "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
     "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
     "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
@@ -18,6 +18,26 @@
     "research/historical/repeated-types-plan.json": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
     "research/historical/REPEATED_TYPES_PLAN.md": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
     "research/historical/repeated-types.json": "71c46911b9c38f3b5125d2411707ea5d4a3f364f1d6126fece167aebabe075c6"
+  },
+  "frozen_dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/global_repeated_types.py": "cebe7bae733a401d7c76d15ee7c4724d2f9aab1efe2433db74e0d6a8d3c0da08",
+    "scripts/historical_repeated_types.py": "9a8918d6ecd7fa2ddcf52802ee96ef7646c5c21c089069db18d0c10e77e51268",
+    "research/historical/repeated-types-plan.json": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
+    "research/historical/REPEATED_TYPES_PLAN.md": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
+    "research/historical/repeated-types.json": "683a0906eaf01dbacf5394eb0ded820802df0f09c293302a452351494338dc2a"
+  },
+  "write_guard_amendment": {
+    "version": 1,
+    "machine_record_sha256": "62be8201169470a7c35a1db6a16f6cc6f340bb3ee0de9bf381e245faf6aeeedf",
+    "human_note_sha256": "b2ca02b0a54adec2204a40c670b806caf34429e904ba30c4de871ca743ac1aab",
+    "repaired_global_commit": "72e6871ad695dc3c32314d36f1ae9b34fef8e232"
   },
   "global_study_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/126",
   "global_study_commit": "ecd5f547ca705ca6daff8e699bd99d5f34dd668a",

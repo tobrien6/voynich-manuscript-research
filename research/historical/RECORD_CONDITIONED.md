@@ -9,6 +9,9 @@ pins all dependencies and retains exact rational means, scope contributions,
 input equality checks and all forty controls. It builds on the
 [global assay](REPEATED_TYPES.md), whose observations were already exposed.
 These approximate H streams remain unverified as the original authors' input.
+An explicit [safety amendment](RECORD_CONDITIONED_AMENDMENT_1.md) repairs output
+alias protection after the first measurement, retains the original plan/pins,
+and records two prerequisite hash migrations without changing scientific results.
 
 ## Matched observations and changed expectations
 
@@ -65,7 +68,7 @@ sparse runs of records containing it can therefore be factored exactly. For A,
 internal c(c−1)/m expectations and joining bag-overlap probabilities are summed
 separately. No cyclic closing edge is added.
 
-Fourteen focused tests pass. Before the source run, endpoint matrices were
+Eighteen focused tests pass. Before the source run, endpoint matrices were
 checked against every occupancy subset for lengths 1–8, and whole-stream A/B
 means against exhaustive independent permutations of eleven tiny-record cases.
 Two further nontrivial separated-run cases were added afterward without changing
@@ -73,10 +76,16 @@ the metric implementation or results. The tests also verify single-record
 reduction to the global formula, forced singleton joining, empty records,
 case/relabel invariance, per-record bag preservation, deterministic replay,
 source/global-input/observed-edge mismatches and protected-output failures.
+Additional safety regressions cover direct/symlink/hardlink aliases to every
+protected file, including aliases introduced during computation. Checks run
+before computation and immediately before writing. Amendment tests require the
+original plan bytes and reject global payload changes beyond the runner hash.
 
 The plan, core mathematical validation and guarded runner were committed
-separately before the first manuscript measurement. All twelve frozen source/
-global-study dependency pins remain unchanged. The runner requires the previous
+separately before the first manuscript measurement. All twelve original source/
+global-study dependency pins are retained. The amendment explicitly migrates
+only the repaired global runner and its report; the other ten remain unchanged.
+The runner requires the previous
 global report's observed counts, boundary diagnostics, N, type count, variant
 identity and both corpus hashes to match before computing the conditional mean.
 

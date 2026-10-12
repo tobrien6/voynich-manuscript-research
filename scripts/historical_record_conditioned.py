@@ -23,6 +23,8 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 PLAN_PATH = "research/historical/record-conditioned-plan.json"
+AMENDMENT_PATH = "research/historical/record-conditioned-amendment-1.json"
+AMENDMENT_NOTE = "research/historical/RECORD_CONDITIONED_AMENDMENT_1.md"
 GLOBAL_REPORT = "research/historical/repeated-types.json"
 FROZEN_PATHS = (*GLOBAL_INPUTS, "scripts/global_repeated_types.py", "scripts/historical_repeated_types.py",
                 "research/historical/repeated-types-plan.json", "research/historical/REPEATED_TYPES_PLAN.md", GLOBAL_REPORT)
@@ -41,10 +43,28 @@ def load_plan(root):
             or plan.get("retain_asterisks") is not True or plan.get("include_all_parser_variants") is not True
             or set(plan.get("dependency_hashes", {})) != set(FROZEN_PATHS)):
         raise ValueError("unsupported native-record-conditioned assay plan")
+    plan_digest = hashlib.sha256(raw).hexdigest()
+    amendment = json.loads((root / AMENDMENT_PATH).read_bytes())
+    replacements = amendment.get("replacement_dependencies", {})
+    if (type(amendment.get("amendment_version")) is not int or amendment["amendment_version"] != 1
+            or amendment.get("original_plan_sha256") != plan_digest
+            or amendment.get("reason") != "Output alias protection only; scientific input, edges, metrics, null and trials unchanged"
+            or set(replacements) != {"scripts/historical_repeated_types.py", GLOBAL_REPORT}):
+        raise ValueError("unsupported output-protection amendment")
+    effective = dict(plan["dependency_hashes"])
+    for name, replacement in replacements.items():
+        if (set(replacement) != {"original_sha256", "repaired_sha256"}
+                or replacement["original_sha256"] != plan["dependency_hashes"][name]):
+            raise ValueError("amendment does not retain an original registered dependency")
+        effective[name] = replacement["repaired_sha256"]
     for name in FROZEN_PATHS:
-        if hashlib.sha256((root / name).read_bytes()).hexdigest() != plan["dependency_hashes"][name]:
+        if hashlib.sha256((root / name).read_bytes()).hexdigest() != effective[name]:
             raise ValueError(f"frozen conditional dependency differs: {name}")
-    return plan, hashlib.sha256(raw).hexdigest()
+    global_payload = json.loads((root / GLOBAL_REPORT).read_bytes())
+    global_payload.pop("runner_sha256")
+    if hashlib.sha256(encoded(global_payload)).hexdigest() != amendment["global_payload_excluding_runner_sha256"]:
+        raise ValueError("amended global report changed more than its runner fingerprint")
+    return plan, plan_digest, amendment, effective
 
 
 def fraction_from_record(value):
@@ -103,7 +123,7 @@ def assay_variant(summary, corpus, global_result, plan):
 
 
 def run_study(root=ROOT):
-    plan, plan_digest = load_plan(root)
+    plan, plan_digest, amendment, effective = load_plan(root)
     parsed, corpus = reconstruct(root)
     if parsed != json.loads((root / "research/historical/parsing.json").read_text()):
         raise ValueError("frozen parsing report does not replay")
@@ -121,12 +141,27 @@ def run_study(root=ROOT):
         "human_plan_sha256": hashlib.sha256((root / "research/historical/RECORD_CONDITIONED_PLAN.md").read_bytes()).hexdigest(),
         "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "metric_helper_sha256": hashlib.sha256(Path(__file__).with_name("record_conditioned_repeated_types.py").read_bytes()).hexdigest(),
-        "frozen_dependency_hashes": plan["dependency_hashes"], "global_study_pr": plan["global_study_pr"],
+        "registered_dependency_hashes": plan["dependency_hashes"], "frozen_dependency_hashes": effective,
+        "write_guard_amendment": {"version": 1,
+                                  "machine_record_sha256": hashlib.sha256((root / AMENDMENT_PATH).read_bytes()).hexdigest(),
+                                  "human_note_sha256": hashlib.sha256((root / AMENDMENT_NOTE).read_bytes()).hexdigest(),
+                                  "repaired_global_commit": amendment["repaired_global_commit"]},
+        "global_study_pr": plan["global_study_pr"],
         "global_study_commit": plan["global_study_commit"], "source_credit": catalog["credit"], "source_permission": catalog["permission"],
         "seed": plan["seed"], "trials_per_variant": plan["trials"], "algorithm": ALGORITHM,
         "frame": plan["shuffle_frame"], "edge_scope": EDGE_SCOPE, "condition_on": plan["condition_on"], "variants": results,
         "limits": "Matched exposed approximate inputs/edges; no causal attribution, verified physical-line identity, original-author replication, calibrated tail, language or decipherment",
     }
+
+
+def protect_output(path):
+    protected = {ROOT / name for name in FROZEN_PATHS}
+    protected.update((ROOT / PLAN_PATH, ROOT / "research/historical/RECORD_CONDITIONED_PLAN.md",
+                      ROOT / AMENDMENT_PATH, ROOT / AMENDMENT_NOTE,
+                      Path(__file__), Path(__file__).with_name("record_conditioned_repeated_types.py")))
+    if any(path.resolve() == source.resolve()
+           or path.exists() and source.exists() and path.samefile(source) for source in protected):
+        raise ValueError("conditional output must not overwrite frozen inputs, plans, amendments or code")
 
 
 def main():
@@ -135,16 +170,15 @@ def main():
     parser.add_argument("--check", type=Path)
     args = parser.parse_args()
     try:
-        protected = {ROOT / name for name in FROZEN_PATHS}
-        protected.update((ROOT / PLAN_PATH, ROOT / "research/historical/RECORD_CONDITIONED_PLAN.md",
-                          Path(__file__), Path(__file__).with_name("record_conditioned_repeated_types.py")))
-        if args.output and args.output.resolve() in {p.resolve() for p in protected}:
-            raise ValueError("conditional output must not overwrite frozen inputs, plans or code")
+        if args.output:
+            protect_output(args.output)
         result = run_study(ROOT)
         if args.check and result != json.loads(args.check.read_text()):
             raise ValueError("native-record-conditioned report differs")
         if args.output:
-            args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+            payload = json.dumps(result, indent=2, allow_nan=False) + "\n"
+            protect_output(args.output)
+            args.output.write_text(payload, encoding="utf-8")
         elif not args.check:
             print(json.dumps(result, indent=2, allow_nan=False))
     except (ValueError, KeyError, OSError) as error:
