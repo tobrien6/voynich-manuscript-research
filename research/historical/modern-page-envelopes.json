@@ -1,0 +1,4657 @@
+{
+  "schema_version": 1,
+  "method": "historical-H-modern-IT-exact-page-envelope-v1",
+  "scope": "Source envelope counts and identifier order; no text comparison, normalization or locus crosswalk",
+  "inputs": {
+    "historical": {
+      "id": "LS16e6",
+      "archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+      "archive_bytes": 347914,
+      "member": "L16+H-EV/TEXT16E6.EVT",
+      "member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319",
+      "member_bytes": 1720292
+    },
+    "modern": {
+      "id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "bytes": 342104,
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    },
+    "catalog_sha256": {
+      "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+      "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    }
+  },
+  "summary": {
+    "historical_H_records": 5214,
+    "historical_record_pages": 225,
+    "modern_declared_loci": 5215,
+    "modern_present_loci": 5214,
+    "modern_page_headers": 225,
+    "modern_present_pages": 225,
+    "modern_pages_without_present_loci": [],
+    "global_present_counts_equal": true,
+    "shared_exact_page_ids": 223,
+    "shared_pages_with_equal_present_counts": 219,
+    "shared_pages_with_different_present_counts": 4,
+    "historical_only_present_page_ids": [
+      "f101r1",
+      "f101v2"
+    ],
+    "modern_only_present_page_ids": [
+      "f101r",
+      "f101v"
+    ],
+    "modern_nonexistent_loci": [
+      "f89v2.26,!Lf"
+    ],
+    "historical_ordered_locator_sha256": "048c9427df834cc4bcb92bceffc277552f26eab1a86be9cb6100c002f7d3a341",
+    "modern_ordered_declared_identifier_sha256": "328649e6be21869d2b46e8a6170d8accdd39edebb2b97f435b7749e95ce2cbb6"
+  },
+  "page_profiles": [
+    {
+      "page_id": "f100r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 27,
+      "historical_native_units": {
+        "L1": 5,
+        "L2": 6,
+        "L3": 6,
+        "P1": 4,
+        "P2": 6
+      },
+      "historical_ordered_locator_sha256": "e9c9e2c2419d30512d3639fd3051f387a1ee6d915e0ea5e6724e878ff28ea3c9",
+      "modern_declared_loci": 27,
+      "modern_present_loci": 27,
+      "modern_present_kinds": {
+        "Lf": 17,
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "794bee6b487a13287c2c2a48304b47e2fc036c6b4203f5b25e77a871849e7ed6",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f100v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 22,
+      "historical_native_units": {
+        "B": 4,
+        "M": 5,
+        "P": 9,
+        "T": 4
+      },
+      "historical_ordered_locator_sha256": "5d42a0c36b55f08dafc0aca3d937b1ac3be93b6a28d85b4de08e022aca48c499",
+      "modern_declared_loci": 22,
+      "modern_present_loci": 22,
+      "modern_present_kinds": {
+        "Lf": 13,
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "1fb52f647b716269dc36137c167c273c9eca4c54620d93d6009a04b61018aaf8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f101r",
+      "status": "modern_only",
+      "historical_H_records": 0,
+      "historical_native_units": {},
+      "historical_ordered_locator_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "99bbe9ad87e797b1c4a5de05bcc5e795c2c316ce6d0bb1f3295ac64e7ad077a9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": null
+    },
+    {
+      "page_id": "f101r1",
+      "status": "historical_only",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "733022a35009113415615cf8ec80771e7d2b3fac7153497f1d1474754a1891e9",
+      "modern_declared_loci": 0,
+      "modern_present_loci": 0,
+      "modern_present_kinds": {},
+      "modern_ordered_declared_identifier_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": null
+    },
+    {
+      "page_id": "f101v",
+      "status": "modern_only",
+      "historical_H_records": 0,
+      "historical_native_units": {},
+      "historical_ordered_locator_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "modern_declared_loci": 28,
+      "modern_present_loci": 28,
+      "modern_present_kinds": {
+        "Lf": 18,
+        "P0": 9,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "9cbecd24070f68ed0f194f0eb84471a285c6447c67da166109c2421746309901",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": null
+    },
+    {
+      "page_id": "f101v2",
+      "status": "historical_only",
+      "historical_H_records": 28,
+      "historical_native_units": {
+        "P": 9,
+        "R1": 9,
+        "R2": 9,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "29820ad57a271abb34deb41699bc2e444e89c913faa95a78cb703217a4706722",
+      "modern_declared_loci": 0,
+      "modern_present_loci": 0,
+      "modern_present_kinds": {},
+      "modern_ordered_declared_identifier_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": null
+    },
+    {
+      "page_id": "f102r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 17,
+      "historical_native_units": {
+        "L1": 4,
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "95826cee58c56e7450a047d8ff1b5ffe5ce0d74fa1f218f138abddacff1e0185",
+      "modern_declared_loci": 17,
+      "modern_present_loci": 17,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 1,
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "a82abe126f96d6aba7ba1d849ce19cd6651c7a454a7f2b66c863ca771356ce79",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f102r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 20,
+      "historical_native_units": {
+        "P": 15,
+        "X": 5
+      },
+      "historical_ordered_locator_sha256": "a7f39375217bac339ada9d7f866aa24e335a40908ac074b70f0631945af399e6",
+      "modern_declared_loci": 20,
+      "modern_present_loci": 20,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 2,
+        "P0": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "8ce3872832e95120540e06e71941fc14d078ce800b4965ab086339f4aad521be",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f102v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 23,
+      "historical_native_units": {
+        "L1": 6,
+        "L2": 3,
+        "P1": 8,
+        "P2": 6
+      },
+      "historical_ordered_locator_sha256": "289e64c65076bc829de088df3377c5c57ea49b3d12429e2f28d361483e5de549",
+      "modern_declared_loci": 23,
+      "modern_present_loci": 23,
+      "modern_present_kinds": {
+        "Lc": 1,
+        "Lf": 8,
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "ac64e838da5a69bab3c80854d27a1bc95dafff7872a1ee6c25f936a14401075f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f102v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 39,
+      "historical_native_units": {
+        "C": 3,
+        "L1": 7,
+        "L2": 7,
+        "L3": 5,
+        "P1": 7,
+        "P2": 10
+      },
+      "historical_ordered_locator_sha256": "f33b5873d5fe380b6d82730ef47d67ae8381ccab39ec8b6a15c291d16b599d7e",
+      "modern_declared_loci": 39,
+      "modern_present_loci": 39,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 19,
+        "P0": 17
+      },
+      "modern_ordered_declared_identifier_sha256": "2ea238427f626d0c457a7ea68a364b35b4ffab572ed71a97834d385fafb3e830",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f103r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 54,
+      "historical_native_units": {
+        "P": 54
+      },
+      "historical_ordered_locator_sha256": "e6034a58bea4f879303358e3f97242dd99f36133154ecbb95564e2983ffe1527",
+      "modern_declared_loci": 54,
+      "modern_present_loci": 54,
+      "modern_present_kinds": {
+        "P0": 54
+      },
+      "modern_ordered_declared_identifier_sha256": "4efbed5ba8c3f6f8324c179dc2f7f822e3d1f94397ae5b27999b4f431581259f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f103v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 46,
+      "historical_native_units": {
+        "P": 46
+      },
+      "historical_ordered_locator_sha256": "f25f1460abd6f2abd2221048d3a0c24aeaa3c2d92849465a94dfe0d5de564f54",
+      "modern_declared_loci": 46,
+      "modern_present_loci": 46,
+      "modern_present_kinds": {
+        "P0": 46
+      },
+      "modern_ordered_declared_identifier_sha256": "391b8d64fc32bdc804e09e90724f759c367019fd2841666e27b3e9364f3bc09d",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f104r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "P": 45
+      },
+      "historical_ordered_locator_sha256": "0ea80d649257d33117a7002ea2c3470c43144fe83d11f4b968c4dd16a995810a",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "P0": 45
+      },
+      "modern_ordered_declared_identifier_sha256": "6f00dd9f050c4ab84dae7aa9fbb4e9ed881364336d321af3efd0130b2a54c6aa",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f104v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 44,
+      "historical_native_units": {
+        "P": 44
+      },
+      "historical_ordered_locator_sha256": "8196b7288d4c43558e2f4f82e71d606bd9bc923e9eb90294819941a218b0050f",
+      "modern_declared_loci": 44,
+      "modern_present_loci": 44,
+      "modern_present_kinds": {
+        "P0": 44
+      },
+      "modern_ordered_declared_identifier_sha256": "b124b423c76cb0fd0d60b7f4bc69940e6c6b1fb8d250a118264ea5e26ceec6d8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f105r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 37,
+      "historical_native_units": {
+        "P1": 9,
+        "P2": 26,
+        "T1": 1,
+        "T2": 1
+      },
+      "historical_ordered_locator_sha256": "6a0b2c9389a52bb5691e1d8d72835f34225347c269455e612c5ca19ba33882ef",
+      "modern_declared_loci": 37,
+      "modern_present_loci": 37,
+      "modern_present_kinds": {
+        "P0": 35,
+        "Pc": 1,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "d3d42a688f2aed31b191130fc6ed606d5c9ef30510c850becb518a4ca05b867e",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f105v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 38,
+      "historical_native_units": {
+        "P": 38
+      },
+      "historical_ordered_locator_sha256": "d7bc6332e8f577bd38f7b8dcdd917cb005f9577dda0ee1ffb59751912bc72f40",
+      "modern_declared_loci": 38,
+      "modern_present_loci": 38,
+      "modern_present_kinds": {
+        "P0": 38
+      },
+      "modern_ordered_declared_identifier_sha256": "58923f34423abcefa05ce22bfc0282e320b629d8804ddb338117a39f2ecb0047",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f106r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 47,
+      "historical_native_units": {
+        "P": 47
+      },
+      "historical_ordered_locator_sha256": "9d41ebe41159640b5710aed52b90c33afa3b7b9c6d1ed5c8eae64cb9264f03a5",
+      "modern_declared_loci": 46,
+      "modern_present_loci": 46,
+      "modern_present_kinds": {
+        "P0": 46
+      },
+      "modern_ordered_declared_identifier_sha256": "817aa937984e690040f7ef76e217b89bcaa42d18a31f7655864aa300a4037438",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": -1
+    },
+    {
+      "page_id": "f106v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 47,
+      "historical_native_units": {
+        "P": 47
+      },
+      "historical_ordered_locator_sha256": "8246f363db019133a3b60d92cd51ee8863d97cada223512836734e5acc453d8b",
+      "modern_declared_loci": 47,
+      "modern_present_loci": 47,
+      "modern_present_kinds": {
+        "P0": 47
+      },
+      "modern_ordered_declared_identifier_sha256": "eb19372f332a02a68303f6cc5d517ecce8f947a7e313dbcd5c245a4ca3b1e2cd",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f107r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 51,
+      "historical_native_units": {
+        "P": 51
+      },
+      "historical_ordered_locator_sha256": "d6153fc25d9fd453976f73e3c8f8b3a8e231406e43958a54391f092e0e27795e",
+      "modern_declared_loci": 51,
+      "modern_present_loci": 51,
+      "modern_present_kinds": {
+        "P0": 51
+      },
+      "modern_ordered_declared_identifier_sha256": "e8be5f7cc3a87b0d475959da7e03c7d3f5bc822feafa4119f8c9075655e0a339",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f107v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 49,
+      "historical_native_units": {
+        "P": 49
+      },
+      "historical_ordered_locator_sha256": "83a745d38dfe561cbe31260c702dfb75836d4b09382a5102ba6c8fc827c76bcf",
+      "modern_declared_loci": 49,
+      "modern_present_loci": 49,
+      "modern_present_kinds": {
+        "P0": 49
+      },
+      "modern_ordered_declared_identifier_sha256": "05317e574bb1efa748188b6c50a74a363d200bb2dc772e14419ceca0db2e9aa2",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f108r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 50,
+      "historical_native_units": {
+        "P": 50
+      },
+      "historical_ordered_locator_sha256": "6830ed7e16c1a2ac68e9da454c56ebc6f9a8f9b49d38b35fd7259cd9174b74d0",
+      "modern_declared_loci": 50,
+      "modern_present_loci": 50,
+      "modern_present_kinds": {
+        "P0": 50
+      },
+      "modern_ordered_declared_identifier_sha256": "340e3a15aec55e9475bec400cb87d10ec0bccda96d97b309a3d9dfbeb037263e",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f108v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 53,
+      "historical_native_units": {
+        "P": 52,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "50b3654709fd494128d65b265cf0fc5f2ca6ec83fb08fcf9a6d6ae4d53a2630d",
+      "modern_declared_loci": 53,
+      "modern_present_loci": 53,
+      "modern_present_kinds": {
+        "P0": 52,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "8c84056c067f538cf838b2b4270ac822bdfcfdda6f6b81cb64a7f4c8e325e2b1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f10r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "d8151bb3416024799c22e20470b912666ccbfc3e50fbde653c1763621c7c1814",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "faabe3a114495705d8184c27940e19ee65d2b386f29195d6d00921b268a41d33",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f10v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 7
+      },
+      "historical_ordered_locator_sha256": "90e7f63830547795ef03cb40f94e7f9223ffb5aa5990d15375b640e25dd09401",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "f31d6634b8a296db877099a43ce3755679ac4f49b5253ce17c557de02eb53807",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f111r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 54,
+      "historical_native_units": {
+        "P": 54
+      },
+      "historical_ordered_locator_sha256": "91a1fdc0e8b9dce4e4cab92efa6b2447ba4f7ca6678a30d091287e7c408d7ef3",
+      "modern_declared_loci": 54,
+      "modern_present_loci": 54,
+      "modern_present_kinds": {
+        "P0": 54
+      },
+      "modern_ordered_declared_identifier_sha256": "7211d174865de4debbf542986b4879367303c442d650224f53ca91a97cc85a90",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f111v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 51,
+      "historical_native_units": {
+        "P": 51
+      },
+      "historical_ordered_locator_sha256": "e94b6ffc4757a5f51b797f9b5a391639f6181aa56b109ca98d3f86be6a6e8f70",
+      "modern_declared_loci": 51,
+      "modern_present_loci": 51,
+      "modern_present_kinds": {
+        "P0": 51
+      },
+      "modern_ordered_declared_identifier_sha256": "3bf66f6c8ea6e25f98f25db9c2f89689eabd4c603a250444ae7a8d309dab7de5",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f112r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "P": 45
+      },
+      "historical_ordered_locator_sha256": "f5eca2a652fccfd4314edf16d87b68eadf4cffc66f5b1c852dff858055a1a432",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "P0": 45
+      },
+      "modern_ordered_declared_identifier_sha256": "00cd9523126ac2007aba2d30f4731037b5024767e09a66146f4501612ce4b71b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f112v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 47,
+      "historical_native_units": {
+        "P": 47
+      },
+      "historical_ordered_locator_sha256": "53170f0fdb7c6941b7185cde0481437fd3df5aa6495db48b41bf90d93b4ccc09",
+      "modern_declared_loci": 47,
+      "modern_present_loci": 47,
+      "modern_present_kinds": {
+        "P0": 47
+      },
+      "modern_ordered_declared_identifier_sha256": "31733df151d52ef195c1a33e85bac95536ae277a4cbe6ee595ebc14edd80718e",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f113r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 51,
+      "historical_native_units": {
+        "P": 51
+      },
+      "historical_ordered_locator_sha256": "40c9945fdcbf587ced7ec79ddf4c5cde05c6d53289a2ddaf7bc344b8c0cf9fb1",
+      "modern_declared_loci": 51,
+      "modern_present_loci": 51,
+      "modern_present_kinds": {
+        "P0": 51
+      },
+      "modern_ordered_declared_identifier_sha256": "9d5cabef3471bf4d9bf799cf2f79109e3483e4c791c3336a879452f59469adef",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f113v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 49,
+      "historical_native_units": {
+        "P": 49
+      },
+      "historical_ordered_locator_sha256": "9493bab9230acd2e8e3d06f54492676220ef016ef3cbde01d8be3171cbf8fc0b",
+      "modern_declared_loci": 49,
+      "modern_present_loci": 49,
+      "modern_present_kinds": {
+        "P0": 49
+      },
+      "modern_ordered_declared_identifier_sha256": "a7e390b069c4d610340d973d429347a5f55a4ccd86f6f2e2bafc6ae94a2c0562",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f114r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "P1": 33,
+        "P2": 11,
+        "T1": 1
+      },
+      "historical_ordered_locator_sha256": "aad2122f1114c82e78a2933330d64787419a8e85ae72f48e313b3635acdcde8d",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "P0": 44,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "46249bca3154d493ae68fbc7ca53949da5c70d252bdc79aafb5718c5f5c4589d",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f114v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 41,
+      "historical_native_units": {
+        "P": 41
+      },
+      "historical_ordered_locator_sha256": "03d847812544465bac1cf4f9aa9481d2c1c144fa782faa515f6e294f037dc146",
+      "modern_declared_loci": 41,
+      "modern_present_loci": 41,
+      "modern_present_kinds": {
+        "P0": 41
+      },
+      "modern_ordered_declared_identifier_sha256": "f5a0678feeac751c1434025fd55272b5232b193dabc9211073af5e3c619979d7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f115r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "P": 45
+      },
+      "historical_ordered_locator_sha256": "5a762d2196e6faf3ed47f1f7a7c22b66742fc998b6c6bb48d98011d943b1168d",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "P0": 45
+      },
+      "modern_ordered_declared_identifier_sha256": "83ae2e1f542a77f83f0122e7069ebb15de652644d1b53ba47a89b2f746939b60",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f115v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "P": 45
+      },
+      "historical_ordered_locator_sha256": "bf22a2c6a32604b09a3b8f36ebb52f656ffc98ac9d395ef1d93e7f724b2bbd39",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "P0": 45
+      },
+      "modern_ordered_declared_identifier_sha256": "b6666f001240f63e3836f9be414d7aa6967f598fa4d411ac1a3da70501f7ae52",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f116r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 50,
+      "historical_native_units": {
+        "P": 30,
+        "Q": 20
+      },
+      "historical_ordered_locator_sha256": "ffc4a5f69620e089ad3e72145733b89cf85faac2a4fef5b76491c78be9cfdfbe",
+      "modern_declared_loci": 50,
+      "modern_present_loci": 50,
+      "modern_present_kinds": {
+        "P0": 50
+      },
+      "modern_ordered_declared_identifier_sha256": "e594f6d5d2356c8a2514cea2f81a6d9feb990848d50a8e67a043bc991be3f1a1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f11r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 7
+      },
+      "historical_ordered_locator_sha256": "52deb3364953f67e687ca6afd19ee932e2127adc425983ab457fe7509ea76bc2",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "30a7e82a6655165279d676acc61a8021ee1a1dddbb63f7f7a4af040f2a06173f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f11v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 6,
+      "historical_native_units": {
+        "P": 6
+      },
+      "historical_ordered_locator_sha256": "54e8a64de8fde53e2efc0c844ce0c070a286d4ef084639ab1bffa1ffd601a440",
+      "modern_declared_loci": 6,
+      "modern_present_loci": 6,
+      "modern_present_kinds": {
+        "P0": 6
+      },
+      "modern_ordered_declared_identifier_sha256": "5f18725302175c3cf7cfd9b04748e3f206d9d2c3b0c542337ab93650d24ad099",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f13r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "6e27682ce91527921637b52e7e9b38a7bb503e03f4526f572c1aa65757984480",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "b190ea09868dd3aec5640db1b50fbebf947f020e7d5544bbed96a113afbc965b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f13v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "9a12213dccda9b5b48b9138b045edf85163bef06a3a9a4e9aae12b70f9e9adfe",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "99de4453806794f5de41a25a7a245ccf07a912dd03d9b5983ee835d54a03289a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f14r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "f5b651c0f0dddf26e582794d0a8bd54e3acab9ad728408619208354b0d2b7d14",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "3951e6eb2747ab5d605258d3fad06f0bfc543b06da13dadb66345deb75475f8d",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f14v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "3c9b020898649db55a9a52f2df5792716426443b11f979d2540471a645dc70a4",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "8b558d20f5185c44ee6971cab383f6e52a750f759e04e77e78e7921be4b6d729",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f15r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 15,
+      "historical_native_units": {
+        "P": 15
+      },
+      "historical_ordered_locator_sha256": "79fd36e86761327174a352bacad6545a8298e918765f7a3cad6be7d8b490d5bf",
+      "modern_declared_loci": 15,
+      "modern_present_loci": 15,
+      "modern_present_kinds": {
+        "P0": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "b715e410dc755b52f33593ab2f7d96be71a37ce9c8b8b734177092c81eeca2a1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f15v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "272179e6345e99a6d987ca4ec1d138bcb6be3b01e584e16929d10dc082caa0a2",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "331b674ca37e8767d7cf710be960e4a9a75c35c4ea3a0c2d80cbd89a73ecb957",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f16r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P1": 3,
+        "P2": 9,
+        "T1": 1
+      },
+      "historical_ordered_locator_sha256": "a2de5880a9ba92df035d556ca0e1d2575216dc517f7e16d18b720ec52695fbb9",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 12,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "86a6def78427f292e0900ecaa9d9c01fcb1cf83c52e52dc84fc556ac5297d8cf",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f16v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "83efa8d1b91d14e2ed4e72e503bfd2472801f6c7a683cfc750542d3738c4b44b",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "e572b3f09dccb68f4e1cc748d7e272bc4ad53a9eee24c02e03d1de3cfbb473d1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f17r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "fc895f72e3ebfda0ae2ecdd435c4bb14e5bb5965127b4b8184a3b459b56a127c",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "c8a02ba7ee5736df0231f087a78f61b773ce80740849d7262e1f080a669e0c54",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f17v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 23,
+      "historical_native_units": {
+        "P": 23
+      },
+      "historical_ordered_locator_sha256": "67e1c72279d4846a6fcd37f0c0e7164e66703ea5ccaf0e8aa52b8124ea636f18",
+      "modern_declared_loci": 23,
+      "modern_present_loci": 23,
+      "modern_present_kinds": {
+        "P0": 23
+      },
+      "modern_ordered_declared_identifier_sha256": "b17afe4d5c6ac631736ebfc8a4bdefeb38de9284c6a38722027b1c55ad534b1a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f18r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 13,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "d3cd6e5fc31e5920cc4769fcac6b5cb5310545a0d05cdd10b526ad71f75d6935",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 13,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "43b74883344886e977789ec76ac19bc57373c7b36ee49471257e6881f56c5f1a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f18v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "4772f2d16376495ea67c76d4ab11b695320f430b3d8525e49aea9fa7a5e8b3c0",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "020064eb044882e1e8ceaf55696c2ad846afef58f0c5183793e724622cfa3d76",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f19r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "f4994234e925ffc6e352866e5ba3b212ffb7110b118f5fde067d52133b03ef3f",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "efebecda6c6f16bc85a713258e7be744bd458ede3a58e22d9698486246731ca9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f19v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 13,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "eb0eed13962bd22fa8fe7522ce440929322850036ccc9bb1165bffeddc80dd38",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 13,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "ab2cb3d3a2377918b49be9ecb8e3c4cd5f2ba47f7956ec235c497b4e37c82f88",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f1r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 28,
+      "historical_native_units": {
+        "P1": 5,
+        "P2": 3,
+        "P3": 10,
+        "P4": 6,
+        "T1": 1,
+        "T2": 1,
+        "T3": 1,
+        "T4": 1
+      },
+      "historical_ordered_locator_sha256": "2fffa94bdbcde8f795e48015632fde4d85035c728d5483046e1374330724feaa",
+      "modern_declared_loci": 28,
+      "modern_present_loci": 28,
+      "modern_present_kinds": {
+        "P0": 24,
+        "Pt": 4
+      },
+      "modern_ordered_declared_identifier_sha256": "785c59833c39a74362ccd4784ae3c10beeb570053bc9fee7219baf47a3262864",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f1v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "9298f6fd71c73b59a220071f9f7567e8313e476289aad6a178c06a945f30a294",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "784ab5502cefd04bd6f09ecd4c643232111231896070c611dbeb76648068ea5c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f20r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "90fa76a4cda83e59649eff4dd227d655a4607b3fd7adf5cb71977f1858a15b1b",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "b3edae64ca4bb6fa3b5a2f2e39478d827aefa92718b77045ce566840674bcb85",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f20v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "2fe113dfaed18dc0d234c0ec2770fc8aa12ca56f73206db33018093dfb7b8a66",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "752d79972b5a0d3b625d46098c98b2dfe0baa02c13c0e288859ca63426acad35",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f21r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "fa72af1b570dec606f2ec893a404945e21572e4e90eef82c684d5878b56e92a0",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "0e3f181b44e50975f460999d0ec103b0141e5f401e8eb7b6b4ad8edcb000c877",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f21v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 8
+      },
+      "historical_ordered_locator_sha256": "688f5e4e53d048f3a12438ffd390479ff9d87a53ca8c98b6ca8b623f9b9606e9",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "P0": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "41c03d4c98a3fc257ca9a98e2c273aeb2990e5bfb707b911f6ee4263b5b93ce0",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f22r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "ea8ee03aaaca05862d55d235b05b6959789c5d34900863f82a47549df0f02d69",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "84850298d03c11b9036cff15685e46ef9e48093f04db01a4fc98a434e535af65",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f22v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 15,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "0e3cc644d99aa6c4166832253ed5e7815d84cf3f58dd8a65ef20570463bd0a4d",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 15,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "33579e9e088b02bf24956cebdcfaf190bd8dd812554decfc0995d73a5122fe2b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f23r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "e79cfd7813ab2ac21917ac2f1edad672b17a95c128b372d61c2031db2c8c8657",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "5693e5175153621a4c692c2c46275e137ac340b3bd8769c15e89036af993297f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f23v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "59657c0319d1c41d974aadd97f11c8d65b3a12ca1cfc093d0c86f5951598c976",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "4ed9193b14f7f011db6a70e94a66ce5eb74d057aa449331dc02fd34127b72b5a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f24r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 20,
+      "historical_native_units": {
+        "P": 19,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "79610f118305a9c76e7ee8dd96770d8803b65a6212ff1d6ada4ba553e0485f40",
+      "modern_declared_loci": 20,
+      "modern_present_loci": 20,
+      "modern_present_kinds": {
+        "P0": 19,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "8f6dd602ef85331408c41b897e74b94c6404be561f22bf2b795b2753cbd4ea94",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f24v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 16
+      },
+      "historical_ordered_locator_sha256": "f9f29a167032237a1e1ed09e5ef781570f0049ce88f78018e58fbbd30befcf34",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "c7f73da4d79b161e24698a362fc1060b25f1671965371536a88aca99f41bef5a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f25r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 6,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "71c1ae9d00f47e5e55e8ebadaf19c7074c6a2b05174acf99943e4d2148dc1f63",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 6,
+        "Pt": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "6bec2f9914ec2f40d92a8fbd912599491763c24c8ef52c30538a36a230b31f85",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f25v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 7
+      },
+      "historical_ordered_locator_sha256": "15c83a906badb6512dd853143989d4734b25e795267cc6fdc2de361a069eb2fe",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "603f3a3ef03844464f8c384b2e8276c6ae285891db52cb3729eac1b87642a7d1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f26r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "700eb1d350b6fbc4aacf51d5aed947bb23df9bbe5c08acc165b573101b5bd413",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "34c45a025a78d89bdded423dec47939ba2939a121978608ac20d465f05bb05ca",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f26v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "9acc97602f7f2292fa60af770b3987bd4d80ac30f60c6b79bccdaf7e26b1d668",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "d35bbdf5b81342aa41e0592c0094d4a56aa8451fc9b0effa3c929961bc1aaa61",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f27r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 12,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "ec7dab0a2d6a7cfbcf4dcd740814e3161bd28e2000f92556271ce275e313dade",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 12,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "74772c616396c62548756722e12f202feed51c175a89bec99ba98f4db8323d6d",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f27v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 8
+      },
+      "historical_ordered_locator_sha256": "ce16903a058026db92e38f3db402088eca23607b12347ac5014d79f1a9a4568c",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "P0": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "4366076cb20be54a666cb29c02e3a26e351df841638a49077d11c4928af7b858",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f28r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "b8594f591f64d9fab67730178b7a764e8dd9b2cc4064c21fbe757e1b69396fab",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "e631924449abec47ef7446dbe2e68dd9fe01801bd62e21cfd384d09d9abbe9a4",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f28v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P1": 5,
+        "P2": 3,
+        "T1": 1
+      },
+      "historical_ordered_locator_sha256": "d449e0af3494f97e5792acfd2adefc160209b918f0aaa0d48e4dbddd52254745",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 8,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "b4ea31e6666612ba86f14c563904c0f3c39f82dbac5b748e551c8a628c856fff",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f29r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "8421506f7b0a7026a99a95b888d4d9d1774380dea73f5c2cf7cc947b31062099",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "639824377c5ae4786a214fa20c4e9d9d9750ef10ababc88ed1d0764bcfef3c7a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f29v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "3ca9b5cb5721c4f79863c2ed20a87d978656ec9b65648e2f98f339123b6cb843",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "018f0c3ca3651f8507ddfe86e2bf7990d0ff11e8dbe8dfa964b6588f0d2a4d7b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f2r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "11bd98d4b81740fbe76f4afa8fab872564d63e65f7799d962a69fffe97f39c27",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "1b851a520f5516bd7f204fa3d189aa6a6e80040a0d6b430d62208a7b1081962d",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f2v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 8
+      },
+      "historical_ordered_locator_sha256": "8c9837a31b32cb9843fae82ff769ddf8bc3832a395663bd9823a73223989fe40",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "P0": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "b02828d6215c4f7e904cb0f2667b6b8e7ca9819a2bf30feb9eb10859356eb00c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f30r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "0eff72c312708bb66fb475b12165be146d5c0634b6dae5521c2b7f9b55a3a87a",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "413f9a71a46fde90d07848ea25f6ecdd4c4adfe54573448f349dc00a8f21de30",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f30v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "a50c68765dc9aa6c5f586a781e584cdcb2478344cb1f86de1c81b63a8fcd037e",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "00978213d2c04264e60199b434c4c1af5fedb9b8ba9fa7daa9a0ea0f56a2761c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f31r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 15,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "4f1d73d29f20579ddddd7b6c2571835628449d9ac59da44ae0ba3aca1b0fe90a",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 15,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "d71226806fb62aca3091544435b664c1267941f4904274501501dc8c81d473ab",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f31v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "ffbe0a935fabd421986538d4446754b5fb140da7664adbd2a86cc94a5e258e5f",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "daece7fc200ad443aaaf668d36d94018679cb1ac91e3cb423f4c496ef6840c54",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f32r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "P": 19
+      },
+      "historical_ordered_locator_sha256": "9818720846df10424f41e8d72c9873ed08f657c5573cbc3e5d2f8fc2cd16af9d",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "P0": 19
+      },
+      "modern_ordered_declared_identifier_sha256": "15d2f3593d1f38c70dba00738d57802c3bfaf8dae13b8d6956c3caba927486a6",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f32v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "e79b49da0756a7e5ef2c5be6fabebd34127d94659b01ec8334bbbbe9915c342b",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "34a4968bc9dec0dfc0ebd705a40d885fd386611973976b5ddd8646a154be50c2",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f33r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 7
+      },
+      "historical_ordered_locator_sha256": "7ddff237d4e02775c7bd7431abeb533f5c733688479eea3d628eb4eb1e7c4734",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "78012a47c49a289b205c273d85369f7421262230f79bbc40dc1d7b7de945c3be",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f33v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "a424106aa6c62a6b64fdbe67ba14f6d9cb6558ca08da7140d061cc7fc066c67d",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "ae0cf25d00607de7e320b27971b462a565af7ecf07db065add1acb02ca3c9b52",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f34r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 15,
+      "historical_native_units": {
+        "P": 15
+      },
+      "historical_ordered_locator_sha256": "dbe9a8d8a924f60d88dbbba1786d5cd8875df52422e1776855b031c532c70fe8",
+      "modern_declared_loci": 15,
+      "modern_present_loci": 15,
+      "modern_present_kinds": {
+        "P0": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "880b47ab2a0f0dd0ecd078a19c78ee9a61dcc3d67134d6534799234759ba47ba",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f34v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "766925162fd470d9081817d40e2f70fda59fe82d73de5e9989f8d92b04ef5c2c",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "8f067c909b042af4dc404c80c66b5a2cbaeede3788d79b33372fd33e6ef1ae3e",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f35r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 15,
+      "historical_native_units": {
+        "P": 15
+      },
+      "historical_ordered_locator_sha256": "de41642566b0ccf902275f04888f1472b1535497550ab43bb180a0594382a2a0",
+      "modern_declared_loci": 15,
+      "modern_present_loci": 15,
+      "modern_present_kinds": {
+        "P0": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "fd56bb075999ce47b6c6b51651534f2e2a7e18e875de10f24f032127c9dac473",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f35v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 21,
+      "historical_native_units": {
+        "P": 21
+      },
+      "historical_ordered_locator_sha256": "b275db5be4b03e9a2a97330eb7c097f736572f870879f7deb1413b5f3989db4e",
+      "modern_declared_loci": 21,
+      "modern_present_loci": 21,
+      "modern_present_kinds": {
+        "P0": 21
+      },
+      "modern_ordered_declared_identifier_sha256": "08162171021bd72b176d4beace07147f29c6d364d8d14b0aabd17b58e78a28e9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f36r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "8c71fc14d9f2b164d70a28724f72c4984fe1283b3d6c624613a8db9f69a56cf3",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "c573a98edd10f497c7d8113adffecf4722bb02872f527eeb21f547e9a00246c7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f36v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "06f538f9f865afdcbe3aedf1a949572e5116ac62edfc6af8e16eb1682c499e24",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 4,
+        "P1": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "9dff21fbfb42cafd4f0bad19dfa4827d282c3b7e2fcc439c29fbc4e5cfdebab4",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f37r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "3c319e22b0eac5a71a92edf63b1cd3695fca5dff7ac5a2e2ebfd79329874349f",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "ca1ec4f969dc006ee1f87d2628e5107a29c1cfd8ec18d57d5f1b06ef6f342e29",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f37v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 23,
+      "historical_native_units": {
+        "P": 23
+      },
+      "historical_ordered_locator_sha256": "13a346faf703a502459bfac8edf59784316f922e75553d4c398bf1d9727dacf5",
+      "modern_declared_loci": 23,
+      "modern_present_loci": 23,
+      "modern_present_kinds": {
+        "P0": 23
+      },
+      "modern_ordered_declared_identifier_sha256": "a333608ccd7f316f98d8182dbd32f91564125a6ebbcdbe40d64b62562f9d13d6",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f38r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 6,
+      "historical_native_units": {
+        "P": 6
+      },
+      "historical_ordered_locator_sha256": "c159908342183348c5a5e10d8fa3fe8d9a07c9da4f52ec36c87f22df7bfd8bd1",
+      "modern_declared_loci": 6,
+      "modern_present_loci": 6,
+      "modern_present_kinds": {
+        "P0": 6
+      },
+      "modern_ordered_declared_identifier_sha256": "87481565df38699fa732e8229b235d1257ce3be47e4cc7fb3aa5f8ca78e1b009",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f38v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 8
+      },
+      "historical_ordered_locator_sha256": "d6c8978326acbebb0e363b193186b243a66fbbdd600758f289b44556478f81ca",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "P0": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "fd229a51af858c328ea76b0779b53b13192e5a9da024e764a98b2ccc1e7c5e58",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f39r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 15,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "d5ee6f49590ebcbbdd0cbf735d2fdf6cfab373bfd8cd89428f99b46713ccb870",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 15,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "def504cce9a8378755ef8b8a47b28d67b86536059ea6935034c075617d7ea36a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f39v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "b0ce28130cf6abec933d09926be90d9ceb37f793394514047534879b9ed69e66",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "8beae97209e6863819130634766c1a321a2e4656e84ec89690d09cf2a76b5ff3",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f3r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 20,
+      "historical_native_units": {
+        "P": 20
+      },
+      "historical_ordered_locator_sha256": "f29d3a6ff3a3a8af9a039be5667a981b3cd6f9744462afbfe7192c202c28aa88",
+      "modern_declared_loci": 20,
+      "modern_present_loci": 20,
+      "modern_present_kinds": {
+        "P0": 20
+      },
+      "modern_ordered_declared_identifier_sha256": "446f9e2cf8335b3fcb88a74bac737a82798f1fbb20ace7779167b9de4794fbc8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f3v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "e9bbbc174b6ac51e47293f65841235ed61c1b37e261befceb7df17b22b245e6d",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "9cd0f8f0691df21496d31d6b64b5ab86c4f823a4321b0782680f23370aeba6fe",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f40r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "16a119bd42597cf2493e6509fdb814fc8e387b5482178d0784c8c57f2e9d57b0",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "490df721c2936605d3e86ed8f17df0b8a13bfb1c011d21124ad2f0cee995f8d3",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f40v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "P": 18,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "d08794c4487bc41dc21647b071b047dbf75e22c3094c8246dd6143328ad94c59",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "P0": 18,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "ab9c775577d082cb6ff876569f9631ae7b9ba3eb9c8ee20696b411e73fa4c119",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f41r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "dc7d320572981ccec33a950a64a70b673f84f3414ae9a3efd56b6180618e2f7c",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "be5b98333a6afccc3c9920161ca6f3641d3265ceb45de5776da80bce1989dcce",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f41v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 7,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "d289e174e7e3846b66b2ebde3632b6297217c4d43d3792a2e9b0097c7e098f0c",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "Lp": 1,
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "94dd7ff02bbc8bb5937c689229989e9b8aba4bb1e32f426830674e1cc0fe16dc",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f42r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 23,
+      "historical_native_units": {
+        "P1": 5,
+        "P2": 8,
+        "P3": 7,
+        "T1": 1,
+        "T2": 1,
+        "T3": 1
+      },
+      "historical_ordered_locator_sha256": "cceae528b0ff270b7d334471e60beeaaba52306b6a3c0e1b907d9f816318d70b",
+      "modern_declared_loci": 23,
+      "modern_present_loci": 23,
+      "modern_present_kinds": {
+        "P0": 20,
+        "Pc": 1,
+        "Pr": 2
+      },
+      "modern_ordered_declared_identifier_sha256": "8b57f8598eef8f8423bb2c7065016a9f7a04b0abb29c3e893e7d3bb8fb11740b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f42v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 15,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "7cf5d7263a5d859c2c8aaf499e6c91ba9566f66abcc939e999bb0f62efb16ebd",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 15,
+        "Pt": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "999bef7c3f5cbba930083f4471be1af4599e3c23194b0d0dceb20966a6c942ab",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f43r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "6152f5da77c8539ea0af048198392ac74f4b449d0b9a277f6c77a7f29d01da96",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "58570032acf8673660e8740990465402710904ebb736ca8246c90b87cd477065",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f43v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 16
+      },
+      "historical_ordered_locator_sha256": "c44a4accad4c2b9e1e2aaac415c1847c54db0fec0870c2be44597b583465b449",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "ec3d7724c6f9468b2e42d30469128e20ee75db0b4d0ef00272ebd3e4cba3d326",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f44r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "e16727eeca24beb9d70aee9f49304df1a8365a72541adccdfc909b888a5fad4a",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "713b0841b32f7dad02f7f03576c64385a36258413ef9233f424b927fe934b12a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f44v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "23d84d42eaadd58a41a3650bbd0a2287fa9d68c1d4698dc1a5473db51b6b78d4",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "ba07032a2a640bfffb29ffe8ca7b223fc9e641dac6f39794d14b0ef91ecb7c98",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f45r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "ebd818f59de24cc547fbada3f19f08499731df292782929a5a27071bea14b5bd",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "e52a7d620922dbd098cec88e5477aa8e949bba4a4ca53380ae65b60534dae648",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f45v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "4ffb683ca2f30e46095074219445b18e7c2955507af32ddf6f8adc6e8bb50cee",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "bf95bb5377e87a0499519e24f0152c7f85268f9a051bc105f943871f31c7e7c7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f46r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 15,
+      "historical_native_units": {
+        "P": 15
+      },
+      "historical_ordered_locator_sha256": "ea5c97850321c8e42f4cd88bc8e5416a7bc18bf7e2cd5303a8543ac9dd818901",
+      "modern_declared_loci": 15,
+      "modern_present_loci": 15,
+      "modern_present_kinds": {
+        "P0": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "d2d07837e82ea621ba54918db2e14d8887e70444807169158841166323d3a330",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f46v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "0c40ebb9c96fa6b642c81925f22c6bd92b714c0a5f917d0c13f7b71a1ea5c2cf",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 7,
+        "P1": 5,
+        "Pt": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "03da29af51e8da814ebbeb3350d91eab90a2f3e666090d3e2503b0397edfbecc",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 1
+    },
+    {
+      "page_id": "f47r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "71b498297f475f8f312a6edd3e4fde3c12b6ad54c3cc96bbd0eb71306748182b",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "44ed67c37a1f30f1e500352a8b1e60d2bde604bc218f0941a9c6298ae1497739",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f47v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "7961d68c9c8dac152a6100f39940f9a7f0a1045d614b4f845d27fb0ad2ccd212",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "dd5010a35b89a296393962a623f4b24317f34fc755786a16765b8ec7ac875453",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f48r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "37f8b2f9ab3511fa574555ea0b514905d4367a1a8c01c8ca34944645903f3685",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 7,
+        "Pc": 1,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "f76cc84bac86116ab5b9a3813bc0d9a96501a78707d6e7720c2e05a12a19fad9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f48v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "26124634c6b658e5250cc6d23f5dda9cd1102b2ef6bd94dd334488750ee1bf07",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "c8fbc9e08b5d85589280cdeca1f3d9b9f46935d7ecb3730e4f406e7711ba3773",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f49r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 21,
+      "historical_native_units": {
+        "P": 21
+      },
+      "historical_ordered_locator_sha256": "2eb0014a8ab9fce54c38eae2bac787ba8db72142274492698faf1891e69d0297",
+      "modern_declared_loci": 21,
+      "modern_present_loci": 21,
+      "modern_present_kinds": {
+        "P0": 21
+      },
+      "modern_ordered_declared_identifier_sha256": "6454a75247866155220fc7220579b8f3c8071f160d2ce61c68490fc11c94d911",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f49v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 52,
+      "historical_native_units": {
+        "L": 26,
+        "P": 26
+      },
+      "historical_ordered_locator_sha256": "324ca499040b7c9c47c118c0ade918371fd5f3611b761af59334377982a80221",
+      "modern_declared_loci": 52,
+      "modern_present_loci": 52,
+      "modern_present_kinds": {
+        "L0": 26,
+        "P0": 26
+      },
+      "modern_ordered_declared_identifier_sha256": "6da705409975270da6e36de2d2199a769a00c9ab4b90cac9a5600289b1980fa5",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f4r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "cceec4ccb32d2937b31dc2d925c70556fabe163228cb72185a2c50c72299070a",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "9eafbb89fbf746852b3b7fde0e042fa8723a78bf341caca451d9591ca7c213d4",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f4v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "a2523ce60549b2e0560b5e47d2bb5e60111b14b0827f95e967696dd8157a684b",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "4460498963a7d43308edcafa04a415a2e8a02fd245a82a4eefe6641928f774fd",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f50r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "de9ad42c0f6a59fcc2c3bba1552372df81de7a05adbcab161afdd86a8f4c0459",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "adba53c7b5fbfc88d16384b3b974edf3252d450f75900a7c3eebc8c0f86c9c62",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f50v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "f5c98e5832325595afc4e634ca32108c62510d701b6b124ecdab50c91f7a8fdd",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "cadb4bdcf81d70cdc126b7dfce7275f5b815c11360c296185e5053130dfd8bc7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f51r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 15,
+      "historical_native_units": {
+        "P": 15
+      },
+      "historical_ordered_locator_sha256": "260d009f2e5f5150e2c33297b5884ece1aeebabe7da855cd3ffff66c759d6d60",
+      "modern_declared_loci": 15,
+      "modern_present_loci": 15,
+      "modern_present_kinds": {
+        "P0": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "285c54044ed9a3a146db6cde421e19e37142f95c63039b135ce0f4f4e981c460",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f51v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "585295f7dc64ebf70154680460052af7bca216f247207fb0bd6b64eadda915ca",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "3d4142e9288b843952112456ad9226a558f41a6649d6e186bef1ac93081e7ca1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f52r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 8
+      },
+      "historical_ordered_locator_sha256": "b05200d8b19719dbf2914e03822e9ee2f68451124676ccf817d2e693c03d422b",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "P0": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "58e204c98500dcc407d7f8fb1357b0b726db43b1982dc68b6896e3c7cfba5444",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f52v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "5aff92cf6d768a2fa6241a3a553ff3256312d995242fd99aa873b435c7dcffd8",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "c23723df310ee0acbb054db5b16daff1af4828994e8f26f5174739e59558c1fd",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f53r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "95987c6fc5955e98f3f697b29ebd88b301c8441917c6ef70a41e6581df9bf11d",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "9cb317d9f262a199a7143d533f08e709d6af969886cdd200191732865cb58c28",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f53v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "3fe86fb126b0758eff0176138d4f3bb43cf9af4333316db8a80cecb007f08235",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "658a5e3d9eb42f5453bf03c41994a0a7d2e7a395d6d04f3516ed50a192287872",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f54r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "de369f05074859f796d66f0c8a9844cafac70e32ed51d67e6c24cc30c56e4ae8",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "c6ccd1186f003c5eb0f553f9e9086d181814c231923d092ee3dc5f510f3bf555",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f54v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 16
+      },
+      "historical_ordered_locator_sha256": "597f92a02a9acbf851040186917d1fbf3a391779667c4d46d31f03329f3b915d",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "0028cca17f9146783e977715b17fd63c3233cfec9287b8bf14b15456ccf3b1c9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f55r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "4fa7375e6c9beaf452d7da353caeb906e1a9339128c56ff2f814e8ec75b2f6f9",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "06ae746e729be5e73e485707b0e0c2e193a0252882eefd86c63ec1c87927c862",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f55v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "0c8eca5b9c07bcbead2aa352b0c7a38b8e83d82d77a36c614a478862469bb119",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "71fd501137191a210a9b8eeece677275ce5262af86936cf580a4bbada07e18dc",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f56r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "P": 19
+      },
+      "historical_ordered_locator_sha256": "dcf8d7f0906e9cc609170f5ad18490370983c3df2cb7c178351e14c1ba42f100",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "P0": 19
+      },
+      "modern_ordered_declared_identifier_sha256": "82f37fe304e08a84af49be5d62cf47ec080b64c7d1ae2dd186cfcdbf6b9f764b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f56v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 16
+      },
+      "historical_ordered_locator_sha256": "cbc36f08a99b3dff20316f4282f6961f92b31ca77d83b2e301494782f7b7d9d1",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "20993b21ffe3f03f9a4fad730077eb4ce3d9ef2c74a2fafda8b1f699fb06934f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f57r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "c80342cf961fe503547218177dde0daacb605acf2963310c8340956bbee94ea5",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "928efe6fadec4419653418171155a7268d4b2c211415008e7edb5762db5e3eae",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f57v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "R4": 1,
+        "T": 1,
+        "X": 4,
+        "Y": 4
+      },
+      "historical_ordered_locator_sha256": "a73e4b6ec55349d3309543c94f08bcb7c78a345b99059e69ca46bb150ac731b6",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "Cc": 4,
+        "L0": 5,
+        "Ro": 4
+      },
+      "modern_ordered_declared_identifier_sha256": "bd6282bba4c6aa89226c1bbfb128ad40e0da48de764d8020cd59661dd3f3e94f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f58r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 41,
+      "historical_native_units": {
+        "P": 41
+      },
+      "historical_ordered_locator_sha256": "98070cc2f2833ec57d61f1c74f977071982fbaaf44e5a6dac0eb99dd95b8a218",
+      "modern_declared_loci": 41,
+      "modern_present_loci": 41,
+      "modern_present_kinds": {
+        "P0": 41
+      },
+      "modern_ordered_declared_identifier_sha256": "728b72062b6703b45acfbf42e27b88037b2df63c53cec305f8a7ad7615200669",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f58v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 39,
+      "historical_native_units": {
+        "P1": 21,
+        "P2": 17,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "ea3cc8830b73e67882805f798764c8040c4506c66fabdb148e3508ffafc4fc2b",
+      "modern_declared_loci": 39,
+      "modern_present_loci": 39,
+      "modern_present_kinds": {
+        "P0": 38,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "8129d80fbf7e4a0554d5a395069603a90bee3b0fec3aa0ef6d18480911d6e0af",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f5r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 7
+      },
+      "historical_ordered_locator_sha256": "751f3f84edda9fc5497f74dd0e9ccf629e45cc44ea22541b1c5b1a30031543c1",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "c6bc1f57ee061be7b111b1f921a9aa635dd7555678834b4570ff75263096790c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f5v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 6,
+      "historical_native_units": {
+        "P": 6
+      },
+      "historical_ordered_locator_sha256": "16fffe7de56261dac71403848fb22f742b92241f1d30fceba27d300754017edd",
+      "modern_declared_loci": 6,
+      "modern_present_loci": 6,
+      "modern_present_kinds": {
+        "P0": 6
+      },
+      "modern_ordered_declared_identifier_sha256": "eeafa8e786e579b3fafc53fa5f2512fc9a469a63528a2a95bcb7af577db00407",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f65r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 1,
+      "historical_native_units": {
+        "L": 1
+      },
+      "historical_ordered_locator_sha256": "b8273a01863170418decb302a4819da6d25a0ac75624276cbf9056e00aa973e8",
+      "modern_declared_loci": 1,
+      "modern_present_loci": 1,
+      "modern_present_kinds": {
+        "Lp": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "f12cb7ead92c44d841e58aec0e959b8e7ad7727407b56feabf8d9f04d76473c4",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f65v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 6,
+      "historical_native_units": {
+        "P": 6
+      },
+      "historical_ordered_locator_sha256": "3271e7c36b132f553f964511c7df382aa299a55f2087e5f04a1d5194820407ac",
+      "modern_declared_loci": 6,
+      "modern_present_loci": 6,
+      "modern_present_kinds": {
+        "P0": 6
+      },
+      "modern_ordered_declared_identifier_sha256": "644291e018eaf3ff02276df6608679c02dff98c38e2f7af45376f7319aa3ae7e",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f66r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 82,
+      "historical_native_units": {
+        "L": 15,
+        "M": 34,
+        "R": 32,
+        "W": 1
+      },
+      "historical_ordered_locator_sha256": "385339d3ac03642f0f73f4e0c7d081e6c34b5e764cfdb4c543bc4f370829f030",
+      "modern_declared_loci": 82,
+      "modern_present_loci": 82,
+      "modern_present_kinds": {
+        "L0": 49,
+        "Lx": 1,
+        "P0": 32
+      },
+      "modern_ordered_declared_identifier_sha256": "bcdca7e249a494e71492fc71626a0a027230dea6ec80c8bf6ac226f3bfaee7a0",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f66v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "4f2342b6a8538784af0119f4a0fa8240e52bbc39cf79c7c2ddd77c04285b72fc",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "eb7ec1184e5bfd987a34ee14f709ff307bb33c0df18225efea439fad931804ad",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f67r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "P": 4,
+        "R": 3,
+        "S": 12
+      },
+      "historical_ordered_locator_sha256": "6f9fa2c31ae8aaa819b6fb7ae530aabd2b4e5c7500a5d459d49381deee42b6e2",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "P0": 4,
+        "Ri": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "bc5a02a8c53c53d78a20da20c06a75a7254f5812f61b5690162f0207b3fbb01a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f67r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 74,
+      "historical_native_units": {
+        "C": 32,
+        "L": 7,
+        "P": 3,
+        "X": 12,
+        "Y": 12,
+        "Z": 8
+      },
+      "historical_ordered_locator_sha256": "21eaf78b96fd03b1576cc5f2806c3bc14d06e7497163826839e60fd5ba7177d9",
+      "modern_declared_loci": 74,
+      "modern_present_loci": 74,
+      "modern_present_kinds": {
+        "L0": 27,
+        "Ls": 12,
+        "P0": 3,
+        "Pb": 32
+      },
+      "modern_ordered_declared_identifier_sha256": "0afe6f2449afe04bf793189eccb582ac20d7edfffe6d476b57d9de405092e948",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f67v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 29,
+      "historical_native_units": {
+        "X": 12,
+        "Y": 17
+      },
+      "historical_ordered_locator_sha256": "50120588c32385823dda841c47b8f2bc9de7a21ede6faffca1e5be991eedf8b2",
+      "modern_declared_loci": 29,
+      "modern_present_loci": 29,
+      "modern_present_kinds": {
+        "L0": 12,
+        "Ro": 17
+      },
+      "modern_ordered_declared_identifier_sha256": "99197fabb5d851a43ce3066800c1dab365ea2d4b538b21c43c90d46547388456",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f67v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 20,
+      "historical_native_units": {
+        "C": 8,
+        "F": 2,
+        "L": 4,
+        "R": 4,
+        "S": 2
+      },
+      "historical_ordered_locator_sha256": "dec256bf246232c3ed1c9d015b0133daa1622a86a1a2080dd8495fea7e605fba",
+      "modern_declared_loci": 20,
+      "modern_present_loci": 20,
+      "modern_present_kinds": {
+        "La": 4,
+        "Pb": 8,
+        "Ri": 4,
+        "Ro": 4
+      },
+      "modern_ordered_declared_identifier_sha256": "d226e70271bb439b1d1816244597e66e7565eb485c7ea3cb158e6f63ac550383",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f68r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 37,
+      "historical_native_units": {
+        "P": 4,
+        "S": 29,
+        "X": 3,
+        "Y": 1
+      },
+      "historical_ordered_locator_sha256": "267f350fc45e23cfb6c69cbf39c25be18635075cefc14fbf0d06364a90b20121",
+      "modern_declared_loci": 37,
+      "modern_present_loci": 37,
+      "modern_present_kinds": {
+        "Cc": 1,
+        "Ls": 29,
+        "P0": 4,
+        "Pb": 3
+      },
+      "modern_ordered_declared_identifier_sha256": "cd9fe9bbbbb93a196bbd9f2673b88529296869ddbaa3e0a443665b851f6c20c8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f68r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 31,
+      "historical_native_units": {
+        "L": 1,
+        "P": 5,
+        "S": 24,
+        "U": 1
+      },
+      "historical_ordered_locator_sha256": "a961dd4c074d776daf32d12746a0a7a5c40d4b11d724079fe7f61e4897c04607",
+      "modern_declared_loci": 31,
+      "modern_present_loci": 31,
+      "modern_present_kinds": {
+        "Cc": 2,
+        "Ls": 24,
+        "P0": 5
+      },
+      "modern_ordered_declared_identifier_sha256": "14164a9866af6d2f6fda71f892b3cb9e10be309e420778909891269bc9303cce",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f68r3",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 22,
+      "historical_native_units": {
+        "C1": 1,
+        "C2": 1,
+        "R": 8,
+        "X": 12
+      },
+      "historical_ordered_locator_sha256": "4007eb3e7f45a4c8832af17dc9103b23d61efb10f32e1659e81e685384fdcf25",
+      "modern_declared_loci": 22,
+      "modern_present_loci": 22,
+      "modern_present_kinds": {
+        "Cc": 2,
+        "La": 1,
+        "Ls": 11,
+        "Ri": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "7e130695e029c2759a161f88f40d3892b03c42aff3a019717e9ea977e1e6a3db",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f68v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "C": 2,
+        "X": 8
+      },
+      "historical_ordered_locator_sha256": "972a795b991ab04a6396598c037675c5cc2a68ebf069b309fb5fb23cd9d99ca0",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "Cc": 2,
+        "Ro": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "8e5ac0e3e48fb07378bb13b50a6c571a5e1a127dca310c1ffb94da5e3877f837",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f68v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 18,
+      "historical_native_units": {
+        "C": 1,
+        "P": 5,
+        "R": 8,
+        "S": 4
+      },
+      "historical_ordered_locator_sha256": "f7571a07f3ba9fb691b7571d8b7658ccf9f051d6de31ae536a4ca8064fe71721",
+      "modern_declared_loci": 18,
+      "modern_present_loci": 18,
+      "modern_present_kinds": {
+        "Cc": 1,
+        "P0": 5,
+        "Ro": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "ebdb93a667845c58d91d8ea33935f5282d0c74fc43519be032936b17480dbd2c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f68v3",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "B": 3,
+        "I": 1,
+        "L": 2,
+        "O": 1,
+        "P": 4,
+        "S": 8
+      },
+      "historical_ordered_locator_sha256": "4d51437236990d75d682efa87b0cb55c88d9b015df63dd1fd218762240a5dec1",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "Cc": 2,
+        "L0": 2,
+        "P0": 4,
+        "Pb": 3,
+        "Ri": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "d1aa6426ebb60dc491cd05af698d4e68386718def7c7dbadbd722696658f7b6a",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f69r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 49,
+      "historical_native_units": {
+        "C": 16,
+        "P": 4,
+        "R": 22,
+        "S": 1,
+        "W": 6
+      },
+      "historical_ordered_locator_sha256": "55ea4e1ad44743c1a28ff14c43bf48f3b884561710beeeec53d853febb0562d6",
+      "modern_declared_loci": 49,
+      "modern_present_loci": 49,
+      "modern_present_kinds": {
+        "Cc": 1,
+        "L0": 22,
+        "P0": 4,
+        "Ro": 22
+      },
+      "modern_ordered_declared_identifier_sha256": "25f14d83f60bf001d6a29511bd44d31ff5acd4acf8f09c3cd118957568ab56d7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f69v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 31,
+      "historical_native_units": {
+        "C": 3,
+        "L": 28
+      },
+      "historical_ordered_locator_sha256": "bc49013bb8a8b2806a1c2de0c9d454f536db5641b7b5ceac3964609262d64c99",
+      "modern_declared_loci": 31,
+      "modern_present_loci": 31,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Ri": 28
+      },
+      "modern_ordered_declared_identifier_sha256": "4440b0c6676111926c8c45144b0575b609b590936fcfb0eb32d1ce35b3b848a1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f6r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 14,
+      "historical_native_units": {
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "af04516c47f056d7677d660804c89895c3d8cd7ffc4c2ad42eb5bd4094d0f78c",
+      "modern_declared_loci": 14,
+      "modern_present_loci": 14,
+      "modern_present_kinds": {
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "f1d0dba3fd69e582b5ebb8b4124a61b85ac6207913345ded9504c204016cb448",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f6v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 21,
+      "historical_native_units": {
+        "P": 21
+      },
+      "historical_ordered_locator_sha256": "1420bb5796158051ad0c6c119a4200dc022947e74ebd2c06bf052a1f6afc60f5",
+      "modern_declared_loci": 21,
+      "modern_present_loci": 21,
+      "modern_present_kinds": {
+        "P0": 21
+      },
+      "modern_ordered_declared_identifier_sha256": "3685063e181574f4218a78cce414cd3f611073329e96993ce46e85011105f184",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f70r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "C": 3,
+        "I": 1,
+        "X": 6,
+        "Y": 9
+      },
+      "historical_ordered_locator_sha256": "712dee80089404bc4a6259cb2fafa1e985f6d66e4aa863c5c5fd338102863140",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "Cc": 4,
+        "Ri": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "011548f840d6352c945c1e766250d6ff132e58babadc7f8aebddc893d5b7d611",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f70r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 19,
+      "historical_native_units": {
+        "C": 4,
+        "I": 1,
+        "P": 14
+      },
+      "historical_ordered_locator_sha256": "702831e0a6c4d1780af16043dfa488056881cf34a4831e33701b7f0c0059126e",
+      "modern_declared_loci": 19,
+      "modern_present_loci": 19,
+      "modern_present_kinds": {
+        "Cc": 5,
+        "P1": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "10e5fb58cf8697adf8aff90efb566019ae289314c5e2836a7afbe1a8089f3aa6",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f70v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 17,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "S1": 5,
+        "S2": 10
+      },
+      "historical_ordered_locator_sha256": "4e902b4b6dc25a59d5cd61fb0714afb0eabe42f581f1d075033f55ac917251a0",
+      "modern_declared_loci": 17,
+      "modern_present_loci": 17,
+      "modern_present_kinds": {
+        "Cc": 2,
+        "Lz": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "b87cfecd5ae8d6f08d44ba1abca0c8446ac1dccac115f73494c38d03d641b11b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f70v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 33,
+      "historical_native_units": {
+        "C": 1,
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 10,
+        "S2": 19
+      },
+      "historical_ordered_locator_sha256": "c6c9a8f195d7897a6de804ba24bea3de1018efaf84a8c299c46bd2f53725b927",
+      "modern_declared_loci": 33,
+      "modern_present_loci": 33,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "16516a76afeea598b497f0b3271a764100cb9866c7cd4534cc5f23ce0bd69856",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f71r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 18,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 10,
+        "S2": 5
+      },
+      "historical_ordered_locator_sha256": "7438f099a8f855a602f5f33df0bc2217ffadad890954c6c13c37f3a884f1475f",
+      "modern_declared_loci": 18,
+      "modern_present_loci": 18,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "4cf6992275c4c01e99102f9cc65477e7c8535e22a21b9a54aa57c47a78688c6b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f71v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 18,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 10,
+        "S2": 5
+      },
+      "historical_ordered_locator_sha256": "03ded9a0449587ee90ab3763bbf103dd58e4b17280c167f882ea47760a16b3b7",
+      "modern_declared_loci": 18,
+      "modern_present_loci": 18,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "a5b500905f4c30222614f19dc2c843dde1c84dd522ee0cd5110e71cbc775f282",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f72r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 18,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 10,
+        "S2": 5
+      },
+      "historical_ordered_locator_sha256": "f3760b12f292e49884552c25c9f00dcdaeb7fa94dd2b2e945b3e97c2c12795c5",
+      "modern_declared_loci": 18,
+      "modern_present_loci": 18,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 15
+      },
+      "modern_ordered_declared_identifier_sha256": "277e8c06ef2a5d8db572cdd90c8fb473608a0eaf25105e888e9de8ba6ee6c558",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f72r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 32,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S0": 5,
+        "S1": 15,
+        "S2": 9
+      },
+      "historical_ordered_locator_sha256": "42275a9f0d66c12aeee52f5d251f9435913f40039022a20294c6c6a719acece6",
+      "modern_declared_loci": 32,
+      "modern_present_loci": 32,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 29
+      },
+      "modern_ordered_declared_identifier_sha256": "e26c7c4b0f542dfe320af4afdd59e5b811e34a8b42793b02235bba2d3eb41ab7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f72r3",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 34,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "R4": 1,
+        "S1": 12,
+        "S2": 11,
+        "S3": 7
+      },
+      "historical_ordered_locator_sha256": "39246d2a07749b28ed7a73f07be379dfcd634bfb677c6041eafd315030400488",
+      "modern_declared_loci": 34,
+      "modern_present_loci": 34,
+      "modern_present_kinds": {
+        "Cc": 4,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "9ba068d30f644116e02580ec1ae3a4e90b7b4797fb7185dd41e866e8362caea6",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f72v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 33,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 20,
+        "S2": 10
+      },
+      "historical_ordered_locator_sha256": "61fcef41284c8a36841f31f63c836e23c20b656d1cf53e7daccec98ae15441ca",
+      "modern_declared_loci": 33,
+      "modern_present_loci": 33,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "d8c0d1d85512e6a940cdbf6695fa8b02d223db5b6ae1fc2ff30c1e40f7087464",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f72v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 33,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 18,
+        "S2": 12
+      },
+      "historical_ordered_locator_sha256": "02fa5275807a07a8b1b3af4a3d37c12cd6a99e0325df3aeaf2443172036d54a8",
+      "modern_declared_loci": 33,
+      "modern_present_loci": 33,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "d0bc1d3b5a4192cd72674d3953e9d53d9957332383a9edf305738065820d47e4",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f72v3",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 33,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S1": 18,
+        "S2": 12
+      },
+      "historical_ordered_locator_sha256": "87b6611ed8c6c8a0f3f4cf59d61a56f811bc2cdc3b2e1b06cb794bd93bd5d839",
+      "modern_declared_loci": 33,
+      "modern_present_loci": 33,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "41940e1aff52d3aa5518d5904a0086341de620fd90029ff3bdc42cb9af8b51bb",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f73r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 33,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S0": 4,
+        "S1": 16,
+        "S2": 10
+      },
+      "historical_ordered_locator_sha256": "c6d61cc40da78e843238d66249726b05164baaa29d73d61554b27bb3c0b94890",
+      "modern_declared_loci": 33,
+      "modern_present_loci": 33,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "9716c5133f6e824eb820420b16cd7b7f19379d37dcdee84920b8d51f6c16ba80",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f73v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 33,
+      "historical_native_units": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "S0": 4,
+        "S1": 16,
+        "S2": 10
+      },
+      "historical_ordered_locator_sha256": "6b8fa13f4e222b45cef9599e2a8bd5495496d5962e603b33c62bd99cb23ccf37",
+      "modern_declared_loci": 33,
+      "modern_present_loci": 33,
+      "modern_present_kinds": {
+        "Cc": 3,
+        "Lz": 30
+      },
+      "modern_ordered_declared_identifier_sha256": "8405d26d7c986fa95e156027218fa124787ef45494a4034d033820b4b4c06cbd",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f75r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 53,
+      "historical_native_units": {
+        "L": 7,
+        "P": 46
+      },
+      "historical_ordered_locator_sha256": "706108f16e1f7e0e92985d5caa22b84e5c47f9925d69be83347f486ea22ed37a",
+      "modern_declared_loci": 53,
+      "modern_present_loci": 53,
+      "modern_present_kinds": {
+        "P0": 46,
+        "Pb": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "09957ef744a98b6eed45c7c1db70463799b1ebeb72ecff447e5e8804b813b0d1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f75v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 69,
+      "historical_native_units": {
+        "K": 5,
+        "L1": 20,
+        "L2": 4,
+        "L3": 3,
+        "P1": 11,
+        "P2": 12,
+        "P3": 11,
+        "P4": 3
+      },
+      "historical_ordered_locator_sha256": "40f67e4e766aa698ffcfad64ecc4bf29ba4c9911ed99650414b4b906f98d96f9",
+      "modern_declared_loci": 70,
+      "modern_present_loci": 70,
+      "modern_present_kinds": {
+        "L0": 6,
+        "Ln": 20,
+        "Lt": 7,
+        "P0": 23,
+        "P1": 11,
+        "Pb": 3
+      },
+      "modern_ordered_declared_identifier_sha256": "426ee954da715d568885285b244f33f5c087658884405a48771157ce938354b9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 1
+    },
+    {
+      "page_id": "f76r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 56,
+      "historical_native_units": {
+        "L": 9,
+        "R": 47
+      },
+      "historical_ordered_locator_sha256": "c349af9fd4c7ea522a602afb44d751c1d7dd5b45bb1f910170d637d8c421a5da",
+      "modern_declared_loci": 56,
+      "modern_present_loci": 56,
+      "modern_present_kinds": {
+        "L0": 9,
+        "P0": 47
+      },
+      "modern_ordered_declared_identifier_sha256": "ffc1ec5f9c67a6f8f19b2c312b9c0399b32ddfede2bce0ae8578172c8c2fd96b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f76v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 41,
+      "historical_native_units": {
+        "P": 41
+      },
+      "historical_ordered_locator_sha256": "779fb8c557c1b90726c51acf8f7fa903f7f7192773765a195970702dfaf40f3f",
+      "modern_declared_loci": 41,
+      "modern_present_loci": 41,
+      "modern_present_kinds": {
+        "P0": 41
+      },
+      "modern_ordered_declared_identifier_sha256": "49e6a6e790ee6abbfebd803acedef26f16a2cdb6887cce4e18dca494e4a313cd",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f77r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 50,
+      "historical_native_units": {
+        "N": 4,
+        "P": 40,
+        "X": 6
+      },
+      "historical_ordered_locator_sha256": "c3f2f215cd8e4ccbacf09c16bc89cbfa432adcf572b63b6fbc546509ef66d418",
+      "modern_declared_loci": 50,
+      "modern_present_loci": 50,
+      "modern_present_kinds": {
+        "Ln": 3,
+        "Lt": 7,
+        "P0": 40
+      },
+      "modern_ordered_declared_identifier_sha256": "fbab9b916c541ef31255c11ededd20683d9d06a75aa968ef3a33b3f7e255becb",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f77v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "L": 3,
+        "N": 5,
+        "P": 37
+      },
+      "historical_ordered_locator_sha256": "b8232770e9d14e8cb6347ce1d30766912a0b4a7e1abeb87e276eddd637aee95d",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "Ln": 2,
+        "Lt": 6,
+        "P0": 37
+      },
+      "modern_ordered_declared_identifier_sha256": "02457d35af83efa40e569b636d9528ee7b99bf421434be8ced99a7e576bfb9bc",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f78r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 47,
+      "historical_native_units": {
+        "P": 41,
+        "X": 6
+      },
+      "historical_ordered_locator_sha256": "8e3433ddc4616a43d77c032ad349e4d31bb92666b1be2e4d1ddcca4b831200a9",
+      "modern_declared_loci": 47,
+      "modern_present_loci": 47,
+      "modern_present_kinds": {
+        "Lt": 6,
+        "P0": 41
+      },
+      "modern_ordered_declared_identifier_sha256": "75e3b9b1262bc2fd0dc8265dd3494d74dd3445ac641bc32f60d72d6032d4bad3",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f78v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 32,
+      "historical_native_units": {
+        "P": 32
+      },
+      "historical_ordered_locator_sha256": "b27f3a3fb39d719667e9f58ce5959dba6539e5798e4f184d2fb3205709f08b29",
+      "modern_declared_loci": 32,
+      "modern_present_loci": 32,
+      "modern_present_kinds": {
+        "P0": 32
+      },
+      "modern_ordered_declared_identifier_sha256": "be8e6e9e3c8ff1b2bf31138bdb7fd50d5c2d04f548eddc42c8ba067382ff0ae2",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f79r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 44,
+      "historical_native_units": {
+        "P": 44
+      },
+      "historical_ordered_locator_sha256": "2d008592e3a1e823e812d38f731cc531fb134913853fb2045fd631aa78f90f19",
+      "modern_declared_loci": 44,
+      "modern_present_loci": 44,
+      "modern_present_kinds": {
+        "P0": 44
+      },
+      "modern_ordered_declared_identifier_sha256": "afa5fe43a9dbf671257f3f5580cb30551a2e2b7e102821e74ed729ba3d7941a4",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f79v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 42,
+      "historical_native_units": {
+        "P": 42
+      },
+      "historical_ordered_locator_sha256": "1437929f7fe1c973ceb48315fa3cf2b08cce21851806792ffa7c23a074a77314",
+      "modern_declared_loci": 42,
+      "modern_present_loci": 42,
+      "modern_present_kinds": {
+        "P0": 42
+      },
+      "modern_ordered_declared_identifier_sha256": "04f79fe602c215939cc57cd11f6deac4e7e5bd45dbabbc8e51025268438b9ec5",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f7r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "4888dddec9528fd623ab327cd67eab7055a94385c6fdf91c98e2e624d2a80ca4",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "39133cb41d58f4b892d3f3f552e91edede08d502634aa8a6f7f33f8085e151dc",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f7v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "ac4e98709f11255b14a0733b7f48cbbb1d2a014cc95505d7e1b87309153e64b5",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "20c7061755f24e54bf33af6e0b0c123ecdfeeaf3b8dd0462dbfa161958f95da0",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f80r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 53,
+      "historical_native_units": {
+        "P": 43,
+        "X": 10
+      },
+      "historical_ordered_locator_sha256": "7b16fe6ed3a2953ae1fa4a46312094c7cb1985d3c016f413e7bcd41c554a87e0",
+      "modern_declared_loci": 53,
+      "modern_present_loci": 53,
+      "modern_present_kinds": {
+        "Ln": 10,
+        "P0": 43
+      },
+      "modern_ordered_declared_identifier_sha256": "1d898a9487216e880cf4a9698aa8d3dceaca7b6f30f22afa4a6fb10e131d616f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f80v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 44,
+      "historical_native_units": {
+        "P": 44
+      },
+      "historical_ordered_locator_sha256": "1ca511f0ff5c7fe71e3c9de3d6a251c43937cdf03061bab98eabc0bc8811beca",
+      "modern_declared_loci": 44,
+      "modern_present_loci": 44,
+      "modern_present_kinds": {
+        "P0": 44
+      },
+      "modern_ordered_declared_identifier_sha256": "23cebe092d49d12ed7c867e3943b0401cd76cfb166528170308bc66c29d26a4f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f81r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 31,
+      "historical_native_units": {
+        "P": 31
+      },
+      "historical_ordered_locator_sha256": "8afe65e81d197d3dbe10a3bf42fe4994d1b7f8c47e5a9c36891d7ec09d3b3ead",
+      "modern_declared_loci": 31,
+      "modern_present_loci": 31,
+      "modern_present_kinds": {
+        "P0": 31
+      },
+      "modern_ordered_declared_identifier_sha256": "1d58f6fdcc368cca39d79012d4c3ffb8b644a46de6ef85c1db0959ae794deb96",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f81v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 28,
+      "historical_native_units": {
+        "P": 27,
+        "X": 1
+      },
+      "historical_ordered_locator_sha256": "7924f3d4987063dfcb17f0fe1681f9c5d4f8b0f825def3f7c430ed5bff51cfee",
+      "modern_declared_loci": 28,
+      "modern_present_loci": 28,
+      "modern_present_kinds": {
+        "Lt": 1,
+        "P0": 27
+      },
+      "modern_ordered_declared_identifier_sha256": "e4ed2543ccc5bc8b4deac89456a8073648eed117fee303daf2c9878ef2fe30b1",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f82r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "L1": 1,
+        "L2": 12,
+        "P1": 9,
+        "P2": 23
+      },
+      "historical_ordered_locator_sha256": "5b5b0c82d8d9fef97b5a9adb346c967bbf1d7eb319688d50cb57b396c4319ee1",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "Ln": 10,
+        "Lt": 3,
+        "P0": 31,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "b4b36f059d5530cf2689c70a34d27e01d3f88e08080019d715a2310af1de9869",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f82v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 48,
+      "historical_native_units": {
+        "L1": 4,
+        "L2": 2,
+        "L3": 8,
+        "P": 34
+      },
+      "historical_ordered_locator_sha256": "6f581c13fd7bd0652df8f6b024219cc9c542cc4974d600bc6f8b1f3b7f12acb0",
+      "modern_declared_loci": 48,
+      "modern_present_loci": 48,
+      "modern_present_kinds": {
+        "Ln": 6,
+        "Lt": 8,
+        "P0": 34
+      },
+      "modern_ordered_declared_identifier_sha256": "156a423d4630536bf53b1bdabb1d215787b428810067da06d55538a33e492445",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f83r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 55,
+      "historical_native_units": {
+        "P": 44,
+        "W": 2,
+        "X": 3,
+        "Y": 2,
+        "Z": 4
+      },
+      "historical_ordered_locator_sha256": "47c6da302c2fdb3416862ca666c1213878c296cf32ad8ca08e67caf35f3b5721",
+      "modern_declared_loci": 55,
+      "modern_present_loci": 55,
+      "modern_present_kinds": {
+        "Lt": 4,
+        "P0": 24,
+        "P1": 20,
+        "Pb": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "ccd9d4aadc721f6eb4c743f84716e2b83438bfc454eee28b5758262c50cd0a4c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f83v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 35,
+      "historical_native_units": {
+        "P1": 8,
+        "P2": 23,
+        "X": 2,
+        "Y": 2
+      },
+      "historical_ordered_locator_sha256": "0704e1d344ae888c5e6d5f0649a46955976e7347acdc2f9d3de00208d687da03",
+      "modern_declared_loci": 35,
+      "modern_present_loci": 35,
+      "modern_present_kinds": {
+        "Ln": 1,
+        "Lt": 3,
+        "P0": 31
+      },
+      "modern_ordered_declared_identifier_sha256": "53066e55ae9881aaa08a8a275d4e5eac0b383d98d3924f180a82a78b5a7a3d00",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f84r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 47,
+      "historical_native_units": {
+        "P": 34,
+        "X": 12,
+        "Y": 1
+      },
+      "historical_ordered_locator_sha256": "6ed9b54b02545e383b8d68ffeb7fe3b3359f5dfd16447440a63776ecabdf504c",
+      "modern_declared_loci": 47,
+      "modern_present_loci": 47,
+      "modern_present_kinds": {
+        "Ln": 11,
+        "Lt": 2,
+        "P0": 24,
+        "P1": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "45f3d7ee4d7b346138e29bd5e5d6863e2549d15dfb9747624ba1292ff7f8f927",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f84v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 51,
+      "historical_native_units": {
+        "N": 2,
+        "P": 39,
+        "X": 4,
+        "Y": 6
+      },
+      "historical_ordered_locator_sha256": "698b2f5fb5dd23b358407679a7512b0906251388abb99c9d8eda72a9a5d88f17",
+      "modern_declared_loci": 51,
+      "modern_present_loci": 51,
+      "modern_present_kinds": {
+        "P0": 39,
+        "P1": 2,
+        "Pb": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "2500854387105529dde65af61f3f5a6ee60a53ccc252f1a859711f2c3029615f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f85r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 35,
+      "historical_native_units": {
+        "P": 34,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "b74695f397d6288060dc29ac65f2642996dd2ca7a695ecfca820028d61cd18f9",
+      "modern_declared_loci": 35,
+      "modern_present_loci": 35,
+      "modern_present_kinds": {
+        "P0": 33,
+        "Pc": 1,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "43122f387250834306ca5524b7cde47cd2b5ce4184b420c8808912c24467defb",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f85r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 24,
+      "historical_native_units": {
+        "C1": 1,
+        "C2": 1,
+        "P": 22
+      },
+      "historical_ordered_locator_sha256": "c434e90303fe777c975627de969cd76022697445a2e3e802414693d47e19b921",
+      "modern_declared_loci": 24,
+      "modern_present_loci": 24,
+      "modern_present_kinds": {
+        "Cc": 2,
+        "Pb": 22
+      },
+      "modern_ordered_declared_identifier_sha256": "be098e09c99aa157f279dd1475a5f52573959fa5dc13de5a43a795013e5e42db",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f86v3",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 36,
+      "historical_native_units": {
+        "P1": 8,
+        "P2": 6,
+        "P3": 8,
+        "P4": 6,
+        "Q": 8
+      },
+      "historical_ordered_locator_sha256": "6978e75a464c4ff120841e945b1b20d4a6e2deb9e5940315025a4bdac37ebbc8",
+      "modern_declared_loci": 36,
+      "modern_present_loci": 36,
+      "modern_present_kinds": {
+        "P0": 8,
+        "Pb": 28
+      },
+      "modern_ordered_declared_identifier_sha256": "f3655ab8c04d85d1d3ad00d100b0a46edc0d0091df2b97e36e3f15f1192673ba",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f86v4",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "C": 4,
+        "P": 4,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "2b5c49758c7909b2d5e6ae63866a3098f1efbace255373573f1d8de53df5d509",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "Cc": 4,
+        "P0": 4,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "fe9376825e2566875dc78d07ae188667ae4899a5118aa3d5dbc9ddda7effacaa",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f86v5",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 39,
+      "historical_native_units": {
+        "P": 38,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "323d25bcca65e4aa9dd52fcfe88208294495bd61a4cffed781418f90dfbc519f",
+      "modern_declared_loci": 39,
+      "modern_present_loci": 39,
+      "modern_present_kinds": {
+        "P0": 38,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "6de68d2a03a469bf525ac4f9630cee985c3e3879a40d400d943611f9c47a29de",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f86v6",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 45,
+      "historical_native_units": {
+        "P": 45
+      },
+      "historical_ordered_locator_sha256": "d625b557cbc1fef1ca27123de4152b6e5579c9941890cd8ce35df7564cce7b52",
+      "modern_declared_loci": 45,
+      "modern_present_loci": 45,
+      "modern_present_kinds": {
+        "P0": 45
+      },
+      "modern_ordered_declared_identifier_sha256": "07502d14a416628ac050fb1503106a1d479979b5fb60dcd96863ee6c1ad9123f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f87r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 16
+      },
+      "historical_ordered_locator_sha256": "69807fb034431e620b8317a759add0176a6eeb432e9c4fa44b8dd3498eb95256",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "b5769285f1ac2a2c7001684475db725a4e84dd1deaefc134aa4cd53058df319c",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f87v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 16,
+      "historical_native_units": {
+        "P": 16
+      },
+      "historical_ordered_locator_sha256": "7eb50761d6c69711b9438c373c78c49061b26b87b4d5e5802fe2327b4aeb2988",
+      "modern_declared_loci": 16,
+      "modern_present_loci": 16,
+      "modern_present_kinds": {
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "6e61264b9a643260c9673f60b2ebc666d1b5f4d2ebe53c5b93e51f26c71c50cc",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f88r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 31,
+      "historical_native_units": {
+        "P1": 5,
+        "P2": 5,
+        "P3": 6,
+        "b": 3,
+        "m": 6,
+        "t": 6
+      },
+      "historical_ordered_locator_sha256": "7819672681fbdd9663b1444ccdcdb0d48e86e51561245fe88bd6f33a22c7b07c",
+      "modern_declared_loci": 31,
+      "modern_present_loci": 31,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 12,
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "ba23a75c86cf63b1934749453e71884bf715f7f4d3b440fc3d8fad1dce73de7f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f88v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 30,
+      "historical_native_units": {
+        "P1": 5,
+        "P2": 12,
+        "b": 4,
+        "m": 4,
+        "t": 5
+      },
+      "historical_ordered_locator_sha256": "59ad9034c7b0bde2cdfae95dcf1ddade0fe2567f4b8b152a6d7a4945c4c8f5d0",
+      "modern_declared_loci": 30,
+      "modern_present_loci": 30,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 10,
+        "P0": 17
+      },
+      "modern_ordered_declared_identifier_sha256": "6f84abb3f69c7e17d236222a9d085546456b808f0817881c31760432065ebc2b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f89r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 27,
+      "historical_native_units": {
+        "P1": 5,
+        "P2": 9,
+        "b": 4,
+        "m": 4,
+        "t": 5
+      },
+      "historical_ordered_locator_sha256": "02419736acf530298a1ccf1a224858c19295cfc0db2f6075f6b64912167b4e83",
+      "modern_declared_loci": 27,
+      "modern_present_loci": 27,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 10,
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "36fe4174d0f53c75453f93de36a098e3f0d720de2a88197cd91524296fec1b43",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f89r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 34,
+      "historical_native_units": {
+        "L1": 5,
+        "L2": 3,
+        "L3": 6,
+        "L4": 6,
+        "P1": 3,
+        "P2": 4,
+        "P3": 7
+      },
+      "historical_ordered_locator_sha256": "35dd1846d8117366be8d8582d32c63e8e8a6b7498cf77200b25ebdef580560ed",
+      "modern_declared_loci": 34,
+      "modern_present_loci": 34,
+      "modern_present_kinds": {
+        "Lc": 5,
+        "Lf": 15,
+        "P0": 14
+      },
+      "modern_ordered_declared_identifier_sha256": "0e77aed281465f6e4628bbde8bee5b4f712094de95dc4aafba7693547e237dd9",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f89v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 24,
+      "historical_native_units": {
+        "P1": 16,
+        "b": 4,
+        "t": 4
+      },
+      "historical_ordered_locator_sha256": "6300ad5bf782efd766692399766cef5131aa882290fb3f33ae479fa10317a75d",
+      "modern_declared_loci": 24,
+      "modern_present_loci": 24,
+      "modern_present_kinds": {
+        "Lc": 2,
+        "Lf": 6,
+        "P0": 16
+      },
+      "modern_ordered_declared_identifier_sha256": "a8a6cd6dbd4c9e96b9e8dc02f80c54450cbc6d60624cb1dbe9257487727e0d36",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f89v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 28,
+      "historical_native_units": {
+        "L1": 6,
+        "L2": 4,
+        "L3": 6,
+        "P1": 4,
+        "P2": 8
+      },
+      "historical_ordered_locator_sha256": "6c5fd3d8fdbc648b9948cfa4a70edff4c29fb7aeff0106159368c48856aa1dcd",
+      "modern_declared_loci": 28,
+      "modern_present_loci": 27,
+      "modern_present_kinds": {
+        "Lc": 3,
+        "Lf": 12,
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "9120e31c86619c10241defbeed2b6c7d60d9bfec047ef04af7aabe34fbc7348e",
+      "modern_nonexistent_loci": [
+        "f89v2.26,!Lf"
+      ],
+      "modern_minus_historical_present_count": -1
+    },
+    {
+      "page_id": "f8r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 21,
+      "historical_native_units": {
+        "P1": 7,
+        "P2": 4,
+        "P3": 7,
+        "T1": 1,
+        "T2": 1,
+        "T3": 1
+      },
+      "historical_ordered_locator_sha256": "5986a613b859ba6c905178cbd4b40510b84fe0af86a9f3cf0a96b9dedeaa4e56",
+      "modern_declared_loci": 21,
+      "modern_present_loci": 21,
+      "modern_present_kinds": {
+        "P0": 18,
+        "Pt": 3
+      },
+      "modern_ordered_declared_identifier_sha256": "3b4bcaa65bd6dbf3dfe490bd73682864d5414fe424033d44577ab08d045f3784",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f8v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 17,
+      "historical_native_units": {
+        "P": 17
+      },
+      "historical_ordered_locator_sha256": "c90b13343e2bc1334b725b716a0e8a539ccb948101608104e307e965aeb8a784",
+      "modern_declared_loci": 17,
+      "modern_present_loci": 17,
+      "modern_present_kinds": {
+        "P0": 17
+      },
+      "modern_ordered_declared_identifier_sha256": "255841aa7c0639a05143743dbd610006cf178812cad9566e936a5485ad911852",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f90r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "51d69a15530fa997c1dd6ddb7a939752bd06ec550ba4f0c50587a7c13374f2cc",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 8,
+        "Pr": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "54471a48239f005c387be011d9d2f6358ac0fbec76cb8905e22c3e4a943eeea0",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f90r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 6,
+      "historical_native_units": {
+        "P": 6
+      },
+      "historical_ordered_locator_sha256": "f257df23831aeb356fe2b4250a6f3e9ba6b4e984570b18124f04798ff4e83199",
+      "modern_declared_loci": 6,
+      "modern_present_loci": 6,
+      "modern_present_kinds": {
+        "P0": 6
+      },
+      "modern_ordered_declared_identifier_sha256": "fc5ce17ee97a3d7101202877dbc7adfb7711b15c3ce0bc6b3103becd7f845f80",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f90v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "2ddaac69bba7eaaef4d9dc91b6513441fd0b84fc7363c146e0f8e3d31e10b451",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "1e443672c97e84e0318457b56fa9677865bb796618352498ec6329afa9d307a7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f90v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 8,
+      "historical_native_units": {
+        "P": 8
+      },
+      "historical_ordered_locator_sha256": "3365df2ccd8ad65345a4504808564ac00c38f84bb45cf559fb5e4845017b188b",
+      "modern_declared_loci": 8,
+      "modern_present_loci": 8,
+      "modern_present_kinds": {
+        "P0": 8
+      },
+      "modern_ordered_declared_identifier_sha256": "d8e931b818a5bf659e02296cc958f71ee6b95610604709c6b91374d8f3010951",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f93r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 32,
+      "historical_native_units": {
+        "P": 32
+      },
+      "historical_ordered_locator_sha256": "791c95a287174235a6861bba75d762f3f9a894cdc7dee66c5f7ae5b35eb89655",
+      "modern_declared_loci": 32,
+      "modern_present_loci": 32,
+      "modern_present_kinds": {
+        "P0": 32
+      },
+      "modern_ordered_declared_identifier_sha256": "428428b69b3776663ab41073e31b7d677b15cf613c506286302f93509b31f131",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f93v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 10
+      },
+      "historical_ordered_locator_sha256": "fd034fccba160d394553aaf3ccd583fdf2474c12485ea8e314b1f3d2e5daa6c0",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 10
+      },
+      "modern_ordered_declared_identifier_sha256": "29d2cbf46f4c3c49e042d3dacc0a0ebb980a9cccc2ed5633de4e8b185193f83d",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f94r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 8,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "8bc8183fdf6c79089707a268eabbd3439f170e7e4ca3014ad6d70de397f6293c",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 8,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "e233d794caf1776ca284a555332b0b0610c326b5cad31c226fbf2db038d6828b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f94v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "692e8958ed47eb101c54c62338b231b5568c24de5d2c1e9831f84e9a31500c12",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "515ea2a825b1bd4405317fc9fc039c7def09f23a415a6027134c97eaf1185aa3",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f95r1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 11,
+      "historical_native_units": {
+        "P": 11
+      },
+      "historical_ordered_locator_sha256": "8088f0d632e008d2752ad31f09bb242380c4a7a4729ec895d65fca96b47ce393",
+      "modern_declared_loci": 11,
+      "modern_present_loci": 11,
+      "modern_present_kinds": {
+        "P0": 11
+      },
+      "modern_ordered_declared_identifier_sha256": "786612a2038bd1a0e09929378aeece0141ce3f8fe24ae7e9f9dcb51fed5948c0",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f95r2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 9,
+      "historical_native_units": {
+        "P": 9
+      },
+      "historical_ordered_locator_sha256": "b88e6aa9cf6e1ab9899a09e1542c74dd7779dc661add32bfc467896d9a0226f0",
+      "modern_declared_loci": 9,
+      "modern_present_loci": 9,
+      "modern_present_kinds": {
+        "P0": 9
+      },
+      "modern_ordered_declared_identifier_sha256": "9a8a21679c4b941c8965ad03246fcdc5c8faaff3b6595beaa8008a7705049edb",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f95v1",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "173744dd9dda1e7b1246eaf669596bdabced364024b740b6e771ae411839bd66",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "cb941a5a641445df99a77b605500eb7329c337b671e3883bb0c57adf7153881b",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f95v2",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 7,
+      "historical_native_units": {
+        "P": 7
+      },
+      "historical_ordered_locator_sha256": "712961bcb3eb5c59304e04207efc0842d68a4458cd079ca1ef36ba91b81558e4",
+      "modern_declared_loci": 7,
+      "modern_present_loci": 7,
+      "modern_present_kinds": {
+        "P0": 7
+      },
+      "modern_ordered_declared_identifier_sha256": "865adec555f4d5bf47523519be63ae87a72aa9b190c4ee02437bc15160a876b8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f96r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "f91c98cc01d16c42af7247389529264a28ae5b0df603c566cedb2a4b67794ba7",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "5531f12f66c3e5472c0d18abc777b0260c22559172bb952f817d64597930f2f7",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f96v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 13,
+      "historical_native_units": {
+        "P": 13
+      },
+      "historical_ordered_locator_sha256": "2a46c49a519908eac5582a6f713d63c68e05e20ff78a265c6f533c7b1f906844",
+      "modern_declared_loci": 13,
+      "modern_present_loci": 13,
+      "modern_present_kinds": {
+        "P0": 13
+      },
+      "modern_ordered_declared_identifier_sha256": "d03eac3454f1beb94a8a4cec2160570b1df315502f2543f4665c96a826abe832",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f99r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 52,
+      "historical_native_units": {
+        "L1": 14,
+        "L2": 9,
+        "L3": 9,
+        "L4": 2,
+        "P1": 4,
+        "P2": 4,
+        "P3": 4,
+        "P4": 6
+      },
+      "historical_ordered_locator_sha256": "b6ba308b8981166e057ac5106d24c6c6fb6af720fec6e372b9efd372057347d5",
+      "modern_declared_loci": 52,
+      "modern_present_loci": 52,
+      "modern_present_kinds": {
+        "Lc": 4,
+        "Lf": 30,
+        "P0": 18
+      },
+      "modern_ordered_declared_identifier_sha256": "a917b1791cb7fbd9940717ba1740ca524f5b63f8ed4cac6e38bf3bee329791b8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f99v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 44,
+      "historical_native_units": {
+        "L1": 9,
+        "L2": 7,
+        "L3": 7,
+        "L4": 2,
+        "P1": 4,
+        "P2": 4,
+        "P3": 11
+      },
+      "historical_ordered_locator_sha256": "a3917dc070917eb4ca991be30bddfa2931bbc80189602da969cea8e0a57bf3fb",
+      "modern_declared_loci": 44,
+      "modern_present_loci": 44,
+      "modern_present_kinds": {
+        "Lc": 4,
+        "Lf": 21,
+        "P0": 19
+      },
+      "modern_ordered_declared_identifier_sha256": "154a0cda8bd4f244f788de5dfba43429c0729a0893bad6422ff8b2f30c43d3ca",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f9r",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 10,
+      "historical_native_units": {
+        "P": 9,
+        "T": 1
+      },
+      "historical_ordered_locator_sha256": "db359d8d4dfad793f1fdcf83660baf1e89ac744948fdeb21d1c00b496a8292fb",
+      "modern_declared_loci": 10,
+      "modern_present_loci": 10,
+      "modern_present_kinds": {
+        "P0": 9,
+        "Pc": 1
+      },
+      "modern_ordered_declared_identifier_sha256": "e9ac18db49a0eaf177b65f5d625d1d538ac5375359b3d10c36dbcfed0d3e3ed8",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    },
+    {
+      "page_id": "f9v",
+      "status": "shared_exact_page_id",
+      "historical_H_records": 12,
+      "historical_native_units": {
+        "P": 12
+      },
+      "historical_ordered_locator_sha256": "75b0f14415113134cdbc762f4493b0030336cf24e179b5dadc1439d74b203b18",
+      "modern_declared_loci": 12,
+      "modern_present_loci": 12,
+      "modern_present_kinds": {
+        "P0": 12
+      },
+      "modern_ordered_declared_identifier_sha256": "1aa9023eb6b60dd8c464eeee41d72f0c09cd59418b9e262824ed4ad857a7bb1f",
+      "modern_nonexistent_loci": [],
+      "modern_minus_historical_present_count": 0
+    }
+  ],
+  "different_count_pages": [
+    {
+      "page_id": "f106r",
+      "historical_H_records": 47,
+      "modern_present_loci": 46,
+      "difference": -1,
+      "historical_locators_in_source_order": [
+        "f106r.P.1;H",
+        "f106r.P.2;H",
+        "f106r.P.3;H",
+        "f106r.P.4;H",
+        "f106r.P.5;H",
+        "f106r.P.6;H",
+        "f106r.P.7;H",
+        "f106r.P.8;H",
+        "f106r.P.9;H",
+        "f106r.P.10;H",
+        "f106r.P.11;H",
+        "f106r.P.12;H",
+        "f106r.P.13;H",
+        "f106r.P.14;H",
+        "f106r.P.15;H",
+        "f106r.P.16;H",
+        "f106r.P.17;H",
+        "f106r.P.18;H",
+        "f106r.P.19;H",
+        "f106r.P.20;H",
+        "f106r.P.21;H",
+        "f106r.P.22;H",
+        "f106r.P.23;H",
+        "f106r.P.24;H",
+        "f106r.P.25;H",
+        "f106r.P.26;H",
+        "f106r.P.27;H",
+        "f106r.P.28;H",
+        "f106r.P.29;H",
+        "f106r.P.30;H",
+        "f106r.P.31;H",
+        "f106r.P.32;H",
+        "f106r.P.33;H",
+        "f106r.P.34;H",
+        "f106r.P.35;H",
+        "f106r.P.36;H",
+        "f106r.P.37;H",
+        "f106r.P.38;H",
+        "f106r.P.39;H",
+        "f106r.P.40;H",
+        "f106r.P.41;H",
+        "f106r.P.42;H",
+        "f106r.P.43;H",
+        "f106r.P.44;H",
+        "f106r.P.45;H",
+        "f106r.P.46;H",
+        "f106r.P.47;H"
+      ],
+      "modern_declared_identifiers_in_source_order": [
+        "f106r.1,@P0",
+        "f106r.2,+P0",
+        "f106r.3,+P0",
+        "f106r.4,+P0",
+        "f106r.5,+P0",
+        "f106r.6,+P0",
+        "f106r.7,+P0",
+        "f106r.8,+P0",
+        "f106r.9,+P0",
+        "f106r.10,+P0",
+        "f106r.11,+P0",
+        "f106r.12,+P0",
+        "f106r.13,+P0",
+        "f106r.14,+P0",
+        "f106r.15,+P0",
+        "f106r.16,+P0",
+        "f106r.17,+P0",
+        "f106r.18,+P0",
+        "f106r.19,+P0",
+        "f106r.20,+P0",
+        "f106r.21,+P0",
+        "f106r.22,+P0",
+        "f106r.23,+P0",
+        "f106r.24,+P0",
+        "f106r.25,+P0",
+        "f106r.26,+P0",
+        "f106r.27,+P0",
+        "f106r.28,+P0",
+        "f106r.30,+P0",
+        "f106r.31,+P0",
+        "f106r.32,+P0",
+        "f106r.33,+P0",
+        "f106r.34,+P0",
+        "f106r.35,+P0",
+        "f106r.36,+P0",
+        "f106r.37,+P0",
+        "f106r.38,+P0",
+        "f106r.39,+P0",
+        "f106r.40,+P0",
+        "f106r.41,+P0",
+        "f106r.42,+P0",
+        "f106r.43,+P0",
+        "f106r.44,+P0",
+        "f106r.45,+P0",
+        "f106r.46,+P0",
+        "f106r.47,+P0"
+      ],
+      "modern_nonexistent_loci": []
+    },
+    {
+      "page_id": "f46v",
+      "historical_H_records": 12,
+      "modern_present_loci": 13,
+      "difference": 1,
+      "historical_locators_in_source_order": [
+        "f46v.P.1;H",
+        "f46v.P.2;H",
+        "f46v.P.3;H",
+        "f46v.P.4;H",
+        "f46v.P.5;H",
+        "f46v.P.6;H",
+        "f46v.P.7;H",
+        "f46v.P.8;H",
+        "f46v.P.9;H",
+        "f46v.P.10;H",
+        "f46v.P.11;H",
+        "f46v.P.12;H"
+      ],
+      "modern_declared_identifiers_in_source_order": [
+        "f46v.1,@P0",
+        "f46v.2,+P0",
+        "f46v.3,+P0",
+        "f46v.4,+P0",
+        "f46v.5,+P0",
+        "f46v.6,+P0",
+        "f46v.7,+P0",
+        "f46v.8,=Pt",
+        "f46v.9,+P1",
+        "f46v.10,+P1",
+        "f46v.11,+P1",
+        "f46v.12,+P1",
+        "f46v.13,+P1"
+      ],
+      "modern_nonexistent_loci": []
+    },
+    {
+      "page_id": "f75v",
+      "historical_H_records": 69,
+      "modern_present_loci": 70,
+      "difference": 1,
+      "historical_locators_in_source_order": [
+        "f75v.K.1;H",
+        "f75v.K.2;H",
+        "f75v.K.3;H",
+        "f75v.K.4;H",
+        "f75v.K.4a;H",
+        "f75v.P1.1;H",
+        "f75v.P1.2;H",
+        "f75v.P1.3;H",
+        "f75v.P1.4;H",
+        "f75v.P1.5;H",
+        "f75v.P1.6;H",
+        "f75v.P1.7;H",
+        "f75v.P1.8;H",
+        "f75v.P1.9;H",
+        "f75v.P1.10;H",
+        "f75v.P1.11;H",
+        "f75v.L1.1;H",
+        "f75v.L1.2;H",
+        "f75v.L1.3;H",
+        "f75v.L1.4;H",
+        "f75v.L1.5;H",
+        "f75v.L1.6;H",
+        "f75v.L1.7;H",
+        "f75v.L1.8;H",
+        "f75v.L1.9;H",
+        "f75v.L1.10;H",
+        "f75v.L1.11;H",
+        "f75v.L1.12;H",
+        "f75v.L1.13;H",
+        "f75v.L1.14;H",
+        "f75v.L1.15;H",
+        "f75v.L1.16;H",
+        "f75v.L1.17;H",
+        "f75v.L1.18;H",
+        "f75v.L1.19;H",
+        "f75v.L1.20;H",
+        "f75v.P2.12;H",
+        "f75v.P2.13;H",
+        "f75v.P2.14;H",
+        "f75v.P2.15;H",
+        "f75v.P2.16;H",
+        "f75v.P2.17;H",
+        "f75v.P2.18;H",
+        "f75v.P2.19;H",
+        "f75v.P2.20;H",
+        "f75v.P2.21;H",
+        "f75v.P2.22;H",
+        "f75v.P2.23;H",
+        "f75v.L2.1;H",
+        "f75v.L2.2;H",
+        "f75v.L2.3;H",
+        "f75v.L2.4;H",
+        "f75v.P3.24;H",
+        "f75v.P3.25;H",
+        "f75v.P3.26;H",
+        "f75v.P3.27;H",
+        "f75v.P3.28;H",
+        "f75v.P3.29;H",
+        "f75v.P3.30;H",
+        "f75v.P3.31;H",
+        "f75v.P3.32;H",
+        "f75v.P3.33;H",
+        "f75v.P3.34;H",
+        "f75v.L3.27;H",
+        "f75v.L3.28;H",
+        "f75v.L3.29;H",
+        "f75v.P4.30;H",
+        "f75v.P4.31;H",
+        "f75v.P4.32;H"
+      ],
+      "modern_declared_identifiers_in_source_order": [
+        "f75v.1,@P0",
+        "f75v.2,=L0",
+        "f75v.3,*P0",
+        "f75v.4,=L0",
+        "f75v.5,*P0",
+        "f75v.6,=L0",
+        "f75v.7,*P0",
+        "f75v.8,~L0",
+        "f75v.9,+L0",
+        "f75v.10,*P0",
+        "f75v.11,=L0",
+        "f75v.12,*P0",
+        "f75v.13,+P0",
+        "f75v.14,+P0",
+        "f75v.15,+P0",
+        "f75v.16,+P0",
+        "f75v.17,+P0",
+        "f75v.18,@Ln",
+        "f75v.19,+Ln",
+        "f75v.20,@Ln",
+        "f75v.21,+Ln",
+        "f75v.22,@Ln",
+        "f75v.23,+Ln",
+        "f75v.24,@Ln",
+        "f75v.25,+Ln",
+        "f75v.26,@Ln",
+        "f75v.27,+Ln",
+        "f75v.28,@Ln",
+        "f75v.29,+Ln",
+        "f75v.30,@Ln",
+        "f75v.31,+Ln",
+        "f75v.32,@Ln",
+        "f75v.33,+Ln",
+        "f75v.34,@Ln",
+        "f75v.35,+Ln",
+        "f75v.36,@Ln",
+        "f75v.37,+Ln",
+        "f75v.38,@P0",
+        "f75v.39,+P0",
+        "f75v.40,+P0",
+        "f75v.41,+P0",
+        "f75v.42,+P0",
+        "f75v.43,+P0",
+        "f75v.44,+P0",
+        "f75v.45,+P0",
+        "f75v.46,+P0",
+        "f75v.47,+P0",
+        "f75v.48,+P0",
+        "f75v.49,+P0",
+        "f75v.50,@Lt",
+        "f75v.51,=Lt",
+        "f75v.52,=Lt",
+        "f75v.53,*Lt",
+        "f75v.54,+Lt",
+        "f75v.55,+Lt",
+        "f75v.56,+Lt",
+        "f75v.57,+Pb",
+        "f75v.58,+Pb",
+        "f75v.59,+Pb",
+        "f75v.60,@P1",
+        "f75v.61,+P1",
+        "f75v.62,+P1",
+        "f75v.63,+P1",
+        "f75v.64,+P1",
+        "f75v.65,+P1",
+        "f75v.66,+P1",
+        "f75v.67,+P1",
+        "f75v.68,+P1",
+        "f75v.69,+P1",
+        "f75v.70,+P1"
+      ],
+      "modern_nonexistent_loci": []
+    },
+    {
+      "page_id": "f89v2",
+      "historical_H_records": 28,
+      "modern_present_loci": 27,
+      "difference": -1,
+      "historical_locators_in_source_order": [
+        "f89v2.L1.0;H",
+        "f89v2.L1.1;H",
+        "f89v2.L1.2;H",
+        "f89v2.L1.3;H",
+        "f89v2.L1.4;H",
+        "f89v2.L1.5;H",
+        "f89v2.P1.1;H",
+        "f89v2.P1.2;H",
+        "f89v2.P1.3;H",
+        "f89v2.P1.4;H",
+        "f89v2.L2.0;H",
+        "f89v2.L2.1;H",
+        "f89v2.L2.2;H",
+        "f89v2.L2.3;H",
+        "f89v2.P2.5;H",
+        "f89v2.P2.6;H",
+        "f89v2.P2.7;H",
+        "f89v2.P2.8;H",
+        "f89v2.P2.9;H",
+        "f89v2.P2.10;H",
+        "f89v2.P2.12;H",
+        "f89v2.P2.13;H",
+        "f89v2.L3.0;H",
+        "f89v2.L3.1;H",
+        "f89v2.L3.2;H",
+        "f89v2.L3.3a;H",
+        "f89v2.L3.3b;H",
+        "f89v2.L3.4;H"
+      ],
+      "modern_declared_identifiers_in_source_order": [
+        "f89v2.1,@Lc",
+        "f89v2.2,@Lf",
+        "f89v2.3,@Lf",
+        "f89v2.4,@Lf",
+        "f89v2.5,@Lf",
+        "f89v2.6,@Lf",
+        "f89v2.7,@P0",
+        "f89v2.8,+P0",
+        "f89v2.9,+P0",
+        "f89v2.10,+P0",
+        "f89v2.11,@Lc",
+        "f89v2.12,@Lf",
+        "f89v2.13,@Lf",
+        "f89v2.14,@Lf",
+        "f89v2.15,@P0",
+        "f89v2.16,+P0",
+        "f89v2.17,+P0",
+        "f89v2.18,+P0",
+        "f89v2.19,+P0",
+        "f89v2.20,+P0",
+        "f89v2.21,+P0",
+        "f89v2.22,+P0",
+        "f89v2.23,@Lc",
+        "f89v2.24,@Lf",
+        "f89v2.25,@Lf",
+        "f89v2.26,!Lf",
+        "f89v2.27,@Lf",
+        "f89v2.28,@Lf"
+      ],
+      "modern_nonexistent_loci": [
+        "f89v2.26,!Lf"
+      ]
+    }
+  ]
+}
