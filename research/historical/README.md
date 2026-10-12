@@ -34,6 +34,10 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [equal-join provenance census](JOIN_PROVENANCE.md) locates every repeated
+joining edge in the original H record order. None bridges an excluded/empty H
+record; all source descriptors, overlap counts and singleton cases are retained
+without asserting physical-line or glyph alignment.
 
 ## Method
 
