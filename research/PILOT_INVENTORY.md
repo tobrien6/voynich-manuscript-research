@@ -1,4 +1,4 @@
-# Boundary-focused pilot inventory
+# Boundary observation record and standalone 100r comparison
 
 ## Question, sources, and method
 
@@ -8,6 +8,13 @@ was committed before image downloads or inspection (protocol-only commit
 `ef2ffda`, rebased from the original `56bd5b4`). Ten Yale canvases cover all
 six catalog parts, with no substitutions after inspection. Each record is a
 scan/surface, not necessarily one physical leaf or one text panel.
+
+Nine canvases overlap the [section boundary survey](boundary-pilot/INVENTORY.md).
+This record additionally inspects `100r`, the latest exactly labeled standalone
+recto in Part V. The other survey includes the later composite labeled
+`101v (part) and 102r`. These are different selection rules; neither substitutes
+an image after seeing its contents. The nine shared scans are repeated source
+material, not nine additional independent manuscript samples.
 
 Section ranges and attributions are **reported claims** from S002; S001 calls
 the bathing illustrations balneological, whereas S002 calls Part III
@@ -62,6 +69,15 @@ All ten selected scans were available for inspection. Two cautions follow:
   panels. `85v and 86r (foldout)` is one scan with multiple panels and creases.
   Canvas, folio side, text region, and physical leaf need separate identifiers
   before statistical sampling or transcription alignment.
+
+Comparison with the boundary survey shows agreement on the broad layout
+descriptions of the nine shared scans: text-heavy Part I boundaries, circular
+diagrams, human/enclosure scenes, the multi-region foldout, the large plant on
+`87r`, and marginal markers on `103r`. This is agreement between AI-assisted
+descriptive records, not independent verification of glyph readings, exact
+counts, or depicted meanings. The additional `100r` record provides a separately
+linked plant/root and container layout without describing a composite
+`101v`/`102r` scan as one isolated folio-side sample.
 
 The sample deliberately favors boundary rectos. It is not random or
 representative, and it cannot establish feature frequencies. It does not
