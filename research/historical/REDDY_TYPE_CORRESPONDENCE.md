@@ -147,7 +147,7 @@ python3 scripts/audit_historical_reddy_types.py --reference /path/to/local/refer
 cmp /tmp/reddy-type-correspondence.json research/historical/reddy-type-correspondence.json
 ```
 
-Thirteen focused tests cover bijective relabeling, merges, splits, nonfunctional
+Fifteen focused tests cover bijective relabeling, merges, splits, nonfunctional
 relations, empty/singleton cases, asterisk/Unicode transport, unmatched/count/
 order failures, duplicate keys, hash collisions, fifteen dependency pins,
 complete parent rejection before scoring and output failure preservation.
@@ -157,6 +157,10 @@ repeated-type sets and complete support accounting. Tests include equal A/B
 totals with different edge events, and equal immediate events with different
 nonadjacent equality partitions. One hundred twenty temporary early/late
 direct/symlink/hardlink alias cases preserve all twenty-four protected files.
+Two additional regressions retain protected names and entry-time resolved
+targets when input entries disappear or symlinks change during calculation or
+serialization. Matching names also account for case and Unicode normalization.
+These checks are pre-write safeguards, not an atomic filesystem transaction.
 
 The complete report replays byte for byte. An independent raw ZIP/annotation
 scanner importing none of the accepted readers/normalizer or new producer
@@ -164,8 +168,12 @@ checks every paired position, both node tables, all graph edges and supports,
 original-order digest, pair contingency, repeated-type sets/scopes, all five
 discordant events and every join. Its Reddy-only equality count uses cross-H
 type frequency products within target classes, rather than the producer's
-marginal subtraction. Report SHA-256:
+marginal subtraction. Original report SHA-256:
 `651c5b9227c9f7559863cb64329a2b89e39eedd37bd11effd4bc619fa3f27ef3`.
+The later output-guard repair refreshes only `producer_sha256`; every other
+report value and both preregistered plans are unchanged. The complete repaired
+report SHA-256 is
+`e082834abaf5f72ba0aba72062edcb810ddf91dd35dac985e74d802a202b2ef5`.
 
 ## Rights, interpretation and next work
 
