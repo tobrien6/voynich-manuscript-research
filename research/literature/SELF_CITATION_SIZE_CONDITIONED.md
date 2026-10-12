@@ -6,6 +6,8 @@ of required sizes. The predeclared secondary common cohort retains **1,426**
 loci. Its ZL3b join bench-sequence points lie inside both standardized seed
 ranges; the other **22/24** points lie above their ranges. Both results and every
 unsupported cell are retained in the [complete report](self-citation-size-conditioned.json).
+The [combined figure](figures/GENERATOR_INTERIOR_COMPARISON.md) renders both
+comparison stages and preserves the undefined primary family explicitly.
 
 This follows the [parent interior diagnostic](SELF_CITATION_INTERIOR.md), PR #137,
 which exposed different row-size mixtures and had all 24 unconditioned points
