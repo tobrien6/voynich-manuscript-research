@@ -13,6 +13,9 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'research/line-wrap/boundary'
 PROTOCOL_COMMIT = '93d77fa935be05abbd9110f613eb60038663463c'
+# The squash merge preserves the frozen bytes in main history; the original
+# topic-plan commit remains chronology, rather than a runtime dependency.
+PROTOCOL_SOURCE_COMMIT = '4fe88fd8df8ae35ff9761b6442fd6adda0a27ee0'
 REFERENCES = ('research/line-wrap/PROTOCOL.md', 'research/line-wrap/parameters.json',
               'research/line-wrap/RESULTS.md', 'scripts/greedy_wrap_control.py',
               'research/line-wrap/interior/PROOF.md', 'research/transliteration/ENDPOINT_EDIT_DISTANCE.md',
@@ -33,7 +36,7 @@ def frozen_inputs():
     for name in ('PLAN.md', 'settings.json'):
         path = BASE + '/' + name
         raw = (ROOT / path).read_bytes()
-        old = subprocess.check_output(['git', 'show', PROTOCOL_COMMIT + ':' + path], cwd=ROOT)
+        old = subprocess.check_output(['git', 'show', PROTOCOL_SOURCE_COMMIT + ':' + path], cwd=ROOT)
         require(raw == old, 'frozen protocol differs: ' + path)
         current[name] = raw
     settings = json.loads(current['settings.json'])
