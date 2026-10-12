@@ -68,32 +68,56 @@ to the fixed simulation and does not estimate a manuscript effect.
 
 ## Reproduction and checks
 
-With the exact producer files pinned in the plan:
+For the current checkout with the accepted repaired producer:
 
 ```sh
 python3 -m unittest discover -s tests -p 'test_grouped_predictor_controls.py' -v
-python3 scripts/grouped_predictor_controls.py --check research/baselines/grouped-predictor-controls.json
-```
-
-A later compatibility companion preserves the original report's exact bytes
-and producer pins while checking a current producer after a CLI-only repair:
-
-```sh
 python3 scripts/verify_grouped_predictor_controls.py --check research/baselines/grouped-controls-verification.json
 ```
 
+A later compatibility companion preserves the original report's exact bytes
+and producer pins while checking a current producer after a CLI-only repair.
+The original generator deliberately requires its historical producer hash.
+Its complete `--check` report also reproduces in a separate disposable bundle
+when the two inert snapshots are restored to their original script paths.
+Both reproduction routes were checked without a `.git` directory or raw
+manuscript corpus; the saved layout, pinned helper files and plan suffice.
+
 Its [receipt](grouped-controls-verification.json) records the original and
-current producer hashes separately. The verifier retrieves the frozen source
-from the published pre-benchmark Git commit and compares its entire Python
-syntax tree with the current source, excluding only the body of the sole
-top-level `main`. Signatures, decorators, imports, constants and every scientific
-function remain compared. It never calls that CLI. All 192 dataset records
+current producer hashes separately. Two inert
+[producer](frozen/grouped-length-prediction-v1.source.txt) and
+[benchmark](frozen/grouped-predictor-controls-v1.source.txt) source snapshots
+preserve the exact bytes extracted from the published pre-benchmark commit,
+checked against the hashes already in the unchanged result. The compatibility
+verifier reads these text files without importing or executing them. They
+permit verification from a fresh clone even after a
+squash merge. The verifier reads the frozen producer and compares its entire Python
+syntax tree with the current source, excluding the body of the sole top-level
+`main` and an explicitly reviewed output helper. The helper must match exact
+syntax SHA-256 `7f75d126ee0229fbcdb9418339a2169ef53da39126738d7f4dc69d0bde377822`;
+no other added helper is allowed. Signatures, decorators, imports, constants
+and every scientific function remain compared. The verifier never calls that
+CLI or helper. All 192 dataset records
 must replay exactly, including every fitted-count and generated-sequence hash.
-Six additional tests reject changes to scientific statements, missing/duplicate
-entry points, altered frozen records, missing freeze history, and output
+Ten additional tests reject changes to scientific statements, missing/duplicate
+entry points, altered frozen records, missing source snapshots, unreviewed or
+changed helpers, helper calls added to scientific functions, and output
 aliases. A new current producer requires a newly recorded receipt; it cannot
 silently satisfy an old current-producer hash. CLI behavior still needs its
-own review and tests. The initial receipt records unchanged producer bytes.
+own review and tests. Inert snapshots also have output-alias protection and
+can be read without a `.git` directory. When a source catalog is present, the
+receipt writer also protects its native sources through hardlink aliases.
+It checks again before writing, rejecting an alias created during verification.
+
+The initial v1 receipt excluded only the CLI body and recorded unchanged
+producer bytes. After the parent review added a top-level output helper, that
+rule correctly rejected it. The post-benchmark v2 verifier adds only the
+specific audited helper's syntax hash; it does not alter the generator,
+estimator, plan or frozen results. The repaired producer was independently
+checked in a disposable checkout before integration. The current receipt
+records original producer `3a987a93...` and repaired producer `10d090fa...`
+separately and reproduces all 192 original datasets. Parent PR #76 is accepted
+with its scientific report bytes unchanged.
 
 The complete report replays exactly in its recorded Python environment.
 Eight new tests cover exact draw boundaries, always-consumed innovations,

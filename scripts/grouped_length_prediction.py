@@ -266,6 +266,14 @@ def report():
             "treatments": results}
 
 
+def protect_output(destination, protected):
+    """Reject resolved paths and existing inode aliases of protected inputs."""
+    output = destination.resolve()
+    if output in protected or (output.exists() and any(
+            output.samefile(source) for source in protected if source.exists())):
+        raise ValueError("output must not overwrite a pinned input or plan")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
@@ -275,13 +283,14 @@ def main():
         protected = {(ROOT / path).resolve() for path in PINS} | {PLAN.resolve(), (ROOT / "data/transliterations.json").resolve()}
         protected.update((ROOT / source["path"]).resolve() for source in json.loads(
             (ROOT / "data/transliterations.json").read_text())["sources"])
-        if args.output and args.output.resolve() in protected:
-            raise ValueError("output must not overwrite a pinned input or plan")
+        if args.output:
+            protect_output(args.output, protected)
         result = report()
         if args.check and result != json.loads(args.check.read_text()):
             raise ValueError("committed grouped-prediction report differs from replay")
         rendered = json.dumps(result, indent=2, ensure_ascii=False) + "\n"
         if args.output:
+            protect_output(args.output, protected)
             args.output.write_text(rendered)
         elif not args.check:
             print(rendered, end="")

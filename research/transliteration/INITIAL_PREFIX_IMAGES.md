@@ -170,3 +170,9 @@ bytes, not future server output or correct readings. No glyph inventory,
 decipherment rule, or English translation is established. The image review's
 `may_apply_as_source_correction` flag is false; any later correction needs an
 independent region review and an explicit versioned decision.
+
+The [separate nonblind AI inspection](PREFIX_SECOND_OBSERVER.md) supports the
+proposed row matches and provisionally reproduces the f78r `l` comparison.
+It records the small adjacent mark at f18v's initial cluster and leaves its
+`r`-token segmentation unresolved. It supplies additional inspection evidence;
+independent human adjudication and any versioned correction remain pending.

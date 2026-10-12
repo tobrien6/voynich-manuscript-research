@@ -6,7 +6,6 @@ import hashlib
 import json
 from pathlib import Path
 import platform
-import subprocess
 import sys
 
 
@@ -16,6 +15,11 @@ ENGINE = "scripts/grouped_length_prediction.py"
 PROGRAM = "scripts/grouped_predictor_controls.py"
 RESULT = "research/baselines/grouped-predictor-controls.json"
 RESULT_SHA256 = "c89b5fbc1bbe06d005eca566c2ea44d4751943f34eb5648e5c0198f3c0e5d1bc"
+GUARD_AST_SHA256 = "7f75d126ee0229fbcdb9418339a2169ef53da39126738d7f4dc69d0bde377822"
+SNAPSHOTS = {
+    ENGINE: "research/baselines/frozen/grouped-length-prediction-v1.source.txt",
+    PROGRAM: "research/baselines/frozen/grouped-predictor-controls-v1.source.txt",
+}
 
 
 def sha(raw):
@@ -23,26 +27,37 @@ def sha(raw):
 
 
 def scientific_ast(raw):
-    """Compare everything except the body of the sole top-level CLI main.
+    """Compare scientific code outside the CLI body and one audited helper.
 
     Keep its name, arguments, decorators and all other module statements.
     Moving code outside main, changing a constant, import or scoring function,
-    or adding another main fails equivalence. The CLI main is never called.
+    or adding another main fails equivalence. Only the reviewed protect_output
+    definition with its exact syntax hash may be added outside main. Neither
+    the CLI main nor that helper is called by this verifier.
     """
     tree = ast.parse(raw)
     mains = [node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name == "main"]
     if len(mains) != 1:
         raise ValueError("exactly one top-level CLI main required")
     mains[0].body = [ast.Pass()]
+    helpers = [node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name == "protect_output"]
+    if len(helpers) > 1:
+        raise ValueError("duplicate output helper")
+    if helpers:
+        encoded = ast.dump(helpers[0], include_attributes=False).encode()
+        if sha(encoded) != GUARD_AST_SHA256:
+            raise ValueError("output helper differs from the explicitly reviewed syntax")
+        tree.body.remove(helpers[0])
     return ast.dump(tree, include_attributes=False)
 
 
 def frozen_file(path, root=ROOT):
+    if path not in SNAPSHOTS:
+        raise ValueError("unsupported frozen source artifact")
     try:
-        return subprocess.run(["git", "show", FROZEN + ":" + path], cwd=root,
-                              check=True, capture_output=True).stdout
-    except (OSError, subprocess.CalledProcessError) as error:
-        raise ValueError("pre-benchmark Git commit is unavailable; do not substitute a new producer") from error
+        return (root / SNAPSHOTS[path]).read_bytes()
+    except OSError as error:
+        raise ValueError("frozen source snapshot is unavailable; do not substitute a new producer") from error
 
 
 def verified_inputs(root=ROOT):
@@ -57,7 +72,7 @@ def verified_inputs(root=ROOT):
     if sha(original) != stored["input_pins"][ENGINE]:
         raise ValueError("pre-benchmark producer does not match the frozen result")
     if scientific_ast(original) != scientific_ast(current):
-        raise ValueError("producer scientific AST changed; CLI-only compatibility does not apply")
+        raise ValueError("producer scientific AST changed; reviewed CLI-guard compatibility does not apply")
     program = (root / PROGRAM).read_bytes()
     if sha(program) != stored["implementation_sha256"] or program != frozen_file(PROGRAM, root):
         raise ValueError("frozen benchmark program changed")
@@ -101,12 +116,18 @@ def verify(progress=None):
     if (stored["replicates_per_case"] != benchmark.REPLICATES or stored["total_datasets"] != 192
             or regenerated != stored["cases"]):
         raise ValueError("frozen dataset fields differ from current producer replay")
-    return {"schema_version": 1, "method": "frozen-grouped-controls-cli-compatibility-v1",
+    helper_present = any(isinstance(node, ast.FunctionDef) and node.name == "protect_output"
+                         for node in ast.parse((ROOT / ENGINE).read_bytes()).body)
+    return {"schema_version": 2, "method": "frozen-grouped-controls-reviewed-cli-guard-compatibility-v2",
             "freeze_commit": FROZEN, "frozen_result_sha256": RESULT_SHA256,
+            "frozen_source_snapshots": {name: {"path": path, "sha256": sha(frozen_file(name))}
+                                        for name, path in SNAPSHOTS.items()},
             "frozen_producer_sha256": stored["input_pins"][ENGINE],
             "current_producer_sha256": hashes[ENGINE],
             "producer_bytes_changed": hashes[ENGINE] != stored["input_pins"][ENGINE],
-            "scientific_ast_identical_excluding_only_main_body": True,
+            "scientific_ast_identical_outside_reviewed_cli_guard": True,
+            "excluded_cli_main_body": True,
+            "reviewed_output_helper_ast_sha256": GUARD_AST_SHA256 if helper_present else None,
             "benchmark_program_sha256": stored["implementation_sha256"],
             "benchmark_plan_sha256": stored["plan_sha256"], "current_input_sha256": hashes,
             "python_version": platform.python_version(), "datasets_replayed": 192,
@@ -119,7 +140,12 @@ def protect_output(path, root=ROOT):
     resolved = path.resolve()
     data = json.loads((root / RESULT).read_bytes())
     protected = {root / name for name in data["input_pins"]}
+    protected.update(root / name for name in SNAPSHOTS.values())
     protected.update(root / name for name in (PROGRAM, RESULT, "research/baselines/GROUPED_CONTROL_PLAN.md"))
+    catalog = root / "data/transliterations.json"
+    if catalog.exists():
+        protected.add(catalog)
+        protected.update(root / source["path"] for source in json.loads(catalog.read_bytes())["sources"])
     protected.add(Path(__file__).resolve())
     if (resolved.is_relative_to((root / "data").resolve())
             or resolved.is_relative_to((root / "scripts").resolve())
@@ -136,11 +162,12 @@ def main():
     args = parser.parse_args()
     try:
         if args.output:
-            protect_output(args.output)
+            protect_output(args.output, root=ROOT)
         receipt = verify(lambda message: print(message, file=sys.stderr))
         if args.check and receipt != json.loads(args.check.read_bytes()):
             raise ValueError("compatibility receipt differs from current exact replay")
         if args.output:
+            protect_output(args.output, root=ROOT)
             args.output.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
     except (ValueError, OSError, KeyError, TypeError, SyntaxError) as error:
         parser.exit(1, f"frozen grouped-controls verification failed: {error}\n")

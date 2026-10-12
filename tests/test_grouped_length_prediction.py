@@ -1,11 +1,17 @@
 from collections import Counter
+import contextlib
 import copy
 from fractions import Fraction
+import io
+import json
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 
+from scripts import grouped_length_prediction as module
 from scripts.audit_transcription_images import dependency_components
 from scripts.grouped_length_prediction import (
     aggregate, declare_folds, evaluate, fit, fold_for, group_index,
@@ -179,6 +185,41 @@ class GroupedLengthPredictionTests(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("must not overwrite", result.stderr)
             self.assertEqual(path.read_bytes(), before)
+
+    def test_hardlink_aliases_preserve_all_synthetic_inputs_and_ordinary_outputs_work(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            native = root / "data/native.txt"
+            native.write_text("synthetic native input")
+            catalog = root / "data/transliterations.json"
+            catalog.write_text(json.dumps({"sources": [{"path": "data/native.txt"}]}))
+            plan = root / "plan.md"
+            plan.write_text("synthetic plan")
+            pins = {name: "0" * 64 for name in ("parent.json", "coverage.json", "canvases.csv")}
+            for name in pins:
+                (root / name).write_text("synthetic pinned input")
+            protected = [native, catalog, plan, *(root / name for name in pins)]
+            before = {path: path.read_bytes() for path in protected}
+            with patch.multiple(module, ROOT=root, PLAN=plan, PINS=pins):
+                with patch.object(module, "report", return_value={"synthetic": True}) as calculation:
+                    for index, path in enumerate(protected):
+                        alias = root / f"hardlink-{index}.json"
+                        alias.hardlink_to(path)
+                        with patch("sys.argv", ["audit", "--output", str(alias)]):
+                            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                                module.main()
+                            self.assertEqual(error.exception.code, 1)
+                        self.assertEqual({path: path.read_bytes() for path in protected}, before)
+                    calculation.assert_not_called()
+                    for exists in (False, True):
+                        output = root / f"ordinary-{exists}.json"
+                        if exists:
+                            output.write_text("replaceable synthetic output")
+                        with patch("sys.argv", ["audit", "--output", str(output)]):
+                            module.main()
+                        self.assertEqual(json.loads(output.read_text()), {"synthetic": True})
+                        self.assertEqual({path: path.read_bytes() for path in protected}, before)
 
 
 if __name__ == "__main__":

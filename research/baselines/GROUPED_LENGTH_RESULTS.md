@@ -99,6 +99,13 @@ exactly in the recorded Python environment. A separate Counter-based
 calculation, without calling the production fitting or scoring functions,
 also verified all 8,660 scored locus gains and the four aggregate gain totals.
 
+A post-result maintainer correction rejects output hardlinks to native sources,
+the catalog, plan, and all three pinned report/index inputs, before fitting and
+again before writing. A thirteenth regression uses temporary synthetic inputs,
+checks all six input classes byte for byte, and confirms that ordinary new and
+existing outputs still work. This guard-only revision preserves the frozen
+rules, chronology, fitted values and complete scientific report bytes.
+
 ## Interpretation and next step
 
 This fixed model is limited by the observed results; the study does not refute

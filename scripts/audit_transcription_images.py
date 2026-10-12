@@ -225,6 +225,25 @@ def split_dependency_errors(split, report):
     return errors
 
 
+def protect_output(output, manifest, split=None, root=ROOT):
+    """Keep reports separate from every input used to reproduce the audit."""
+    catalog_path = root / "data/transliterations.json"
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    index_dir = root / "research/image-index"
+    inputs = [manifest, catalog_path,
+              *(root / source["path"] for source in catalog["sources"]),
+              *(index_dir / name for name in ("canvases.csv", "folio-sides.csv", "audit.json"))]
+    if split is not None:
+        inputs.append(split)
+    resolved = output.resolve()
+    if (resolved.is_relative_to((root / "data/raw").resolve()) or
+            resolved.is_relative_to(index_dir.resolve()) or
+            any(resolved == source.resolve() or
+                (output.exists() and source.exists() and output.samefile(source))
+                for source in inputs)):
+        raise ValueError("image report output must not overwrite the manifest, split, source inputs, or image index")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, required=True)
@@ -233,6 +252,8 @@ def main():
     parser.add_argument("--split", type=Path, help="also check split declarations against recomputed image dependencies")
     args = parser.parse_args()
     try:
+        if args.output:
+            protect_output(args.output, args.manifest, args.split, root=ROOT)
         report = audit(args.manifest.read_bytes())
         # JSON round-trip makes tuple-valued convention declarations comparable.
         rendered = json.dumps(report, indent=2, ensure_ascii=False) + "\n"

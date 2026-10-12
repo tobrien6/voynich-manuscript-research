@@ -149,6 +149,30 @@ class HistoricalModernPagesTests(unittest.TestCase):
                 self.assertEqual([path.read_bytes() for path in sources], before)
                 self.assertEqual(output.read_text(), "untouched")
 
+    def test_hardlink_aliases_preserve_synthetic_sources_and_catalogs(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            sources = fixture_root(root)
+            protected = (*sources, root / module.HISTORICAL_CATALOG, root / module.MODERN_CATALOG)
+            before = {path: path.read_bytes() for path in protected}
+            with patch.object(module, "ROOT", root):
+                for index, path in enumerate(protected):
+                    alias = root / f"hardlink-{index}.json"
+                    alias.hardlink_to(path)
+                    with patch("sys.argv", ["audit", "--output", str(alias)]):
+                        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                            module.main()
+                        self.assertEqual(error.exception.code, 1)
+                    self.assertEqual({path: path.read_bytes() for path in protected}, before)
+                for exists in (False, True):
+                    output = root / f"ordinary-{exists}.json"
+                    if exists:
+                        output.write_text("replaceable synthetic output")
+                    with patch("sys.argv", ["audit", "--output", str(output)]):
+                        module.main()
+                    self.assertEqual(json.loads(output.read_text()), module.audit(root))
+                    self.assertEqual({path: path.read_bytes() for path in protected}, before)
+
 
 if __name__ == "__main__":
     unittest.main()
