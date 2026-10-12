@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "study_id": "selected-first-repeat-msi-review-v1",
+  "locus_key": "f1r.15",
+  "selection_group": "paired_agreement",
+  "plan_commit": "a67530863b38a4f98b3bbd72429d1da96d6fc012",
+  "inspection_completed_utc": "2026-10-12T11:21:27.872789+00:00",
+  "observer": "One nonblind AI assistant; native readings, previous notes, release discussion and full images were already exposed.",
+  "input_sha256": {
+    "research/image-index/multispectral-intake.json": "d3414bca64c2b71378cda05402b6a8271c99c2e993d3ccdacecd083e05c917e0",
+    "research/transliteration/immediate_repeat_image_selection.json": "05ba4393132ee988252c58b6b90600f64facb87fa9203b7d73c34f6048428691",
+    "research/transliteration/immediate_repeat_image_review.json": "de7f16d9585f2cd064cc5dd5db03d7721b6d669f58d663ffb8e30992a09befb0",
+    "research/image-index/msi-viewer/inputs.json": "f49dfff6b10f6a0ce6ff9c72fe2666d75fc350df1631eaa2853f25ff30f5bc49",
+    "research/image-index/msi-viewer/viewer.js": "05c024a50899dcaaab045a477934d66b1fc4d4f1cb5f17df10246f48b9e4c028",
+    "scripts/build_msi_viewer.py": "ee88079bfbb3387bcebfb375d0cb1d02ce5580b7bea346fd0490ce3944e11dae",
+    "research/transliteration/MSI_FIRST_REPEAT_PLAN.md": "b2f86f45bb1c142824dd8a30bf2b8fd964c6e6263be44b1f8807dcb3889fdcce"
+  },
+  "encoded_event_slots": {
+    "ZL3b": [
+      7,
+      8
+    ],
+    "IT2a": [
+      6,
+      7
+    ]
+  },
+  "coordinate_convention": "Stored-array integer pixel indices, upper-left origin. Rectangles enclose visible source pixels using the recorded viewer centers/zoom and CSS canvas dimensions; they are review windows, not glyph masks or a capture registration.",
+  "viewport_envelope_rule": "scale=min(css_width/image_width,css_height/image_height)*zoom; continuous center=(center_index+0.5); floor lower bounds, ceil upper bounds, clipped to the original image.",
+  "views": [
+    {
+      "id": "1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp",
+      "kind": "processed",
+      "source_side": "1r",
+      "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G-3_B+14_scl2_r-90.jpg",
+      "local_filename": "msi-1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp.jpg",
+      "source_url": "https://drive.google.com/file/d/1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp/view",
+      "original_metadata": {
+        "byte_count": 19030289,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": null,
+        "jpeg_without_exif_sha256": "4e216559d2bb30eb0d0c7983743037b22e35df546765fe02085170a0ec822dc6",
+        "sha256": "e9e20479a4354c453e7138525800ea7090b628d2313f1046ca60dfc13a72e3d9"
+      },
+      "review_windows": [
+        {
+          "role": "overview",
+          "orientation_mode": "stored",
+          "zoom": 1,
+          "center_pixel_indices": [
+            3065.5,
+            4087.5
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            0,
+            0,
+            6132,
+            8176
+          ]
+        },
+        {
+          "role": "row_context",
+          "orientation_mode": "stored",
+          "zoom": 2,
+          "center_pixel_indices": [
+            2200,
+            4000
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            61,
+            1956,
+            4279,
+            4089
+          ]
+        },
+        {
+          "role": "wide_detail",
+          "orientation_mode": "stored",
+          "zoom": 5,
+          "center_pixel_indices": [
+            3400,
+            4075
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            2545,
+            3257,
+            1711,
+            1637
+          ]
+        },
+        {
+          "role": "fine_detail",
+          "orientation_mode": "stored",
+          "zoom": 10,
+          "center_pixel_indices": [
+            3100,
+            4075
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            2672,
+            3666,
+            857,
+            819
+          ]
+        }
+      ],
+      "row_association": "provisional",
+      "pair_glyph_identity": "unresolved",
+      "source_preference": null,
+      "direct_observation": "Blue/dark writing strokes stand strongly against a yellow-grey textured field. In the proposed repeat neighborhood, neighboring low capped groups have rounded internal marks and curved/descending endings. An oblique, broad leaf-like dark band crosses part of that neighborhood; small edges merge with the band and background texture. Gaps between broad groups remain visible, but fine stroke boundaries differ in strength.",
+      "remaining_uncertainty": "Strong contrast does not separate every small trace from the leaf-like band or prove the two full glyph sequences identical. No minute added/absent stroke is adjudicated."
+    },
+    {
+      "id": "1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9",
+      "kind": "processed",
+      "source_side": "1r",
+      "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G+10_B+14_imga_r-90_hue+100_sat-50.jpg",
+      "local_filename": "msi-1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9.jpg",
+      "source_url": "https://drive.google.com/file/d/1nmibtm1NpKHHwZ9oCQtByGj-btBu0pt9/view",
+      "original_metadata": {
+        "byte_count": 19705623,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": null,
+        "jpeg_without_exif_sha256": "af76f496cfe264e958e92e17f492fbf1ce64cfbd5087db6a7c35523a993d6e5d",
+        "sha256": "79c642c963304a1e2a1729e0b8c710b82603660c9c1e8fffd41a09991394bf07"
+      },
+      "review_windows": [
+        {
+          "role": "overview",
+          "orientation_mode": "stored",
+          "zoom": 1,
+          "center_pixel_indices": [
+            3065.5,
+            4087.5
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            0,
+            0,
+            6132,
+            8176
+          ]
+        },
+        {
+          "role": "row_context",
+          "orientation_mode": "stored",
+          "zoom": 2,
+          "center_pixel_indices": [
+            2200,
+            4000
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            61,
+            1956,
+            4279,
+            4089
+          ]
+        },
+        {
+          "role": "wide_detail",
+          "orientation_mode": "stored",
+          "zoom": 5,
+          "center_pixel_indices": [
+            3400,
+            4075
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            2545,
+            3257,
+            1711,
+            1637
+          ]
+        },
+        {
+          "role": "fine_detail",
+          "orientation_mode": "stored",
+          "zoom": 10,
+          "center_pixel_indices": [
+            3100,
+            4075
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            2672,
+            3666,
+            857,
+            819
+          ]
+        }
+      ],
+      "row_association": "provisional",
+      "pair_glyph_identity": "unresolved",
+      "source_preference": null,
+      "direct_observation": "Writing is blue-violet on a mottled green/grey field; large leaf-like bands are maroon/purple. The same proposed row pattern and neighboring levels are visible. Low caps and curving ends can be followed, with less bright separation at some small edges than in the first processing. The oblique broad form and speckled field still cross the proposed first-group neighborhood.",
+      "remaining_uncertainty": "Muted small-edge contrast and crossing background forms keep fine contours ambiguous. This is not an objective visibility ranking or a source correction."
+    },
+    {
+      "id": "1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt",
+      "kind": "processed",
+      "source_side": "1r",
+      "name": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_22bands_blueRoI_RH_margin_shiftdif_MNF_R+3_G-4_B-5_scga.jpg",
+      "local_filename": "msi-1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt.jpg",
+      "source_url": "https://drive.google.com/file/d/1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt/view",
+      "original_metadata": {
+        "byte_count": 18969779,
+        "exif_orientation": 1,
+        "header_dimensions": [
+          6132,
+          8176
+        ],
+        "icc_profile_sha256": null,
+        "jpeg_without_exif_sha256": "9f60749cb6de0fcdf72bf79a34287257971e14347232e13cb3166707a2180fea",
+        "sha256": "a4dc96aebab02871c15a80e2ec8e6f9d5a7f70f9e00c86beb9f5b0ce8b81a5ef"
+      },
+      "review_windows": [
+        {
+          "role": "overview",
+          "orientation_mode": "stored",
+          "zoom": 1,
+          "center_pixel_indices": [
+            3065.5,
+            4087.5
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            0,
+            0,
+            6132,
+            8176
+          ]
+        },
+        {
+          "role": "row_context",
+          "orientation_mode": "stored",
+          "zoom": 2,
+          "center_pixel_indices": [
+            2200,
+            4000
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            61,
+            1956,
+            4279,
+            4089
+          ]
+        },
+        {
+          "role": "wide_detail",
+          "orientation_mode": "stored",
+          "zoom": 5,
+          "center_pixel_indices": [
+            3400,
+            4075
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            2545,
+            3257,
+            1711,
+            1637
+          ]
+        },
+        {
+          "role": "fine_detail",
+          "orientation_mode": "stored",
+          "zoom": 10,
+          "center_pixel_indices": [
+            3100,
+            4075
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            2672,
+            3666,
+            857,
+            819
+          ]
+        }
+      ],
+      "row_association": "provisional",
+      "pair_glyph_identity": "unresolved",
+      "source_preference": null,
+      "direct_observation": "Blue writing and fine colored outlines appear against a yellow/green textured field. Low capped/rounded groups remain visible in the proposed repeat neighborhood, alongside the same large oblique leaf-like form. Small colored fringes and isolated spots occur around strokes and background features; they do not provide a clean, separately attributable extra glyph stroke.",
+      "remaining_uncertainty": "Color fringes/texture and intersecting broad forms prevent acceptance of every small contour as front-side writing. The processing differs; an independent repeated glyph or a restored reading is not established."
+    },
+    {
+      "id": "yale-1r",
+      "kind": "ordinary_reference",
+      "source_side": "1r",
+      "name": "Ordinary Yale 1r",
+      "local_filename": "yale-1r.jpg",
+      "source_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006076",
+      "original_metadata": {
+        "byte_count": 2309265,
+        "exif_orientation": null,
+        "header_dimensions": [
+          2972,
+          3766
+        ],
+        "icc_profile_sha256": "f6bd2776ef85c5a0a9313989eb60f3db7996bc4af48453353f53840643d8e32b",
+        "jpeg_without_exif_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+        "sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf"
+      },
+      "review_windows": [
+        {
+          "role": "overview",
+          "orientation_mode": "stored",
+          "zoom": 1,
+          "center_pixel_indices": [
+            1485.5,
+            1882.5
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            0,
+            0,
+            2972,
+            3766
+          ]
+        },
+        {
+          "role": "row_context",
+          "orientation_mode": "stored",
+          "zoom": 1.75,
+          "center_pixel_indices": [
+            1500,
+            1850
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            374,
+            774,
+            2253,
+            2153
+          ]
+        },
+        {
+          "role": "wide_detail",
+          "orientation_mode": "stored",
+          "zoom": 5,
+          "center_pixel_indices": [
+            1850,
+            1900
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            1456,
+            1523,
+            789,
+            755
+          ]
+        },
+        {
+          "role": "fine_detail",
+          "orientation_mode": "stored",
+          "zoom": 7.5,
+          "center_pixel_indices": [
+            1850,
+            1900
+          ],
+          "canvas_css_pixels": [
+            565,
+            540
+          ],
+          "visible_native_rectangle": [
+            1587,
+            1649,
+            527,
+            503
+          ]
+        }
+      ],
+      "row_association": "provisional",
+      "pair_glyph_identity": "unresolved",
+      "source_preference": null,
+      "direct_observation": "The ordinary image has brown writing with uneven strength on a stained, textured field. Neighboring low capped groups in the accepted neighborhood have rounded marks and curving endings, with one area fainter and differing small contours. Nearby taller forms and adjacent levels provide context. Pale traces and broad green/brown background marks persist.",
+      "remaining_uncertainty": "The accepted row/window proposal remains provisional. Fading, variable small contours and earlier source segmentation differences do not establish exact physical word boundaries or full glyph equality."
+    }
+  ],
+  "source_informed_correspondence": "The third main writing block and neighboring row patterns allow a provisional association with the accepted f1r.15 proposal. Broad low capped/rounded forms in the terminal neighborhood are compatible with the known repeat, but no unique physical-glyph segmentation or word-to-pixel mapping is established. Same image coordinates were chosen separately after viewing each processed frame; neither matching dimensions nor visual similarity certifies registration.",
+  "neighboring_placements_compared": [
+    "f1r.14: preceding proposed writing level; opening and right-hand sequence differ from the target proposal.",
+    "f1r.16: following proposed level; a taller central sequence and different opening remain distinct."
+  ],
+  "alternative_or_failed_interpretations": [
+    "Treating every dark or colored spot as recto ink is unsupported where broad background forms intersect writing.",
+    "Agreement among three processing outputs is dependent evidence from one surface, not independent confirmation of a repeated glyph.",
+    "The broad row proposal does not uniquely assign all small marks to the two encoded slots, so direct physical equality remains unresolved."
+  ],
+  "result": "All fixed views inspected. Stronger visibility of broad strokes coexists with background/intersection ambiguity; no authoritative repeat/glyph/source decision follows.",
+  "glyph_readings_verified": false,
+  "image_alignment_verified": false,
+  "word_boundaries_verified": false,
+  "source_corrections_applied": false,
+  "apply_to_statistics": false,
+  "untouched_evaluation": false,
+  "qualified_independent_review": null,
+  "limits": [
+    "Only the three accepted selected JPEGs and separate Yale full reference were inspected, not TIFFs, raw bands or the complete archive.",
+    "No contrast/color changes, image enhancement, band reconstruction, automatic registration or glyph mask was performed. Browser decoding/resampling/color management remain display conditions.",
+    "Source glyph readings and full processed-image provenance need qualified independent examination. No decipherment, translation, date, author or foliation-alias inference is proposed."
+  ]
+}

@@ -18,6 +18,12 @@ locus**, whereas the accepted statistic counts each repeating representation
 once across the entire cohort. The three cases cannot estimate type accuracy,
 repeat prevalence or a decipherment mechanism.
 
+The [fixed 1r multispectral follow-up](MSI_FIRST_REPEAT_CHECK.md) compares all
+three accepted selected processed JPEGs with the ordinary full reference.
+Stronger broad-stroke visibility coexists with intersecting background forms
+and uncertain small contours; exact glyph equality and the source/row proposal
+remain unresolved, with the original selection and statistics unchanged.
+
 ## Frozen selection and source accounting
 
 The [plan](IMMEDIATE_REPEAT_IMAGE_PLAN.md) was committed at `f3fcc9f`, and the
