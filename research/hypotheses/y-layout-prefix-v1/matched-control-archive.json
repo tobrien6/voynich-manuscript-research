@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "archive_path": "research/hypotheses/y-layout-prefix-v1/matched-control-results.json.gz",
+  "archive_bytes": 149166,
+  "archive_sha256": "52fa0492e718ff05beca4fc5f4a5754018afc039bbec26da1120779d30dfd700",
+  "decoded_json_bytes": 7315802,
+  "decoded_json_sha256": "d7fd4db30835f607ceec2f58a37cdc2fbbe4dd81e1e9ac7b8a70dcb18328eccf",
+  "packaging": "Lossless gzip of the original complete producer JSON; mtime=0. No scientific field is omitted or changed.",
+  "registered_implementation_commit": "41b707bb47d4ef8fe7b30e8fb1023ae6a98181ff"
+}
