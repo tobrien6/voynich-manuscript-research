@@ -119,7 +119,7 @@ together. If the target snapshot changes, repeat review before reusing it.
 Images and complete historical source texts are linked rather than republished.
 
 The [Newbold original-source follow-up](NEWBOLD_TERMINAL_SOURCE.md) locates the
-credited early reading, the later chapter's draft provenance and the longer
+credited early reading, the later chapter's editorial provenance and the longer
 transcript on printed p. 109, with separate plate/PDF locators. It retains the
 historical final-number claim and all proposed readings as documentary context;
 the unresolved registry gate and source/statistical inputs remain unchanged.

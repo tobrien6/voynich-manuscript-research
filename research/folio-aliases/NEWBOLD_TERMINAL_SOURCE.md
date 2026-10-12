@@ -4,14 +4,17 @@ The credited Newbold 1928 passages can now be inspected in a pinned
 [hosted scan](https://oncle-dom.fr/biblio/1928-Newbold-The%20Cipher%20of%20Roger%20Bacon.pdf).
 Printed p. 73 contains the early opening interpretation; printed p. 108 begins
 Chapter IX, while the longer displayed transcript is on **printed p. 109**.
-The editor explicitly describes that chapter as assembled from differently
-dated papers and drafts. These are historical proposed readings, not accepted
+The editor describes that chapter as based on papers and charts of varying
+kinds. These are historical proposed readings, not accepted
 glyph values or a decipherment.
 
 This follows the two source credits recorded in pending
 [PR #164](https://github.com/tobrien6/voynich-manuscript-research/pull/164).
-Its reviewed head and files remain unchanged. This original-source note stands
-separately and does not depend on acceptance of that PR or its interpretations.
+The source-credit inspection used its recorded head
+`60e14474bcd40412a777b7f4f676d81ea89e75d3`. This original-source note modifies
+and adopts no files from that PR and does not depend on its acceptance or
+interpretations; later changes to that pending contribution are reviewed
+separately.
 
 ## Source and exact locators
 
@@ -30,7 +33,7 @@ file is not asserted. No original physical copy is authenticated.
 | Printed 45 / PDF 81, Part V table | Retains folio ranges 103-108 and 111-116, separately from its equivalent-page totals. |
 | Printed 73 / PDF 117 | Proposes a Latin interpretation after explicit omissions and a presumed spelling correction. The project accepts neither that reading nor its key claim. |
 | Printed 74 / PDF 118, editor note 3 | Refers readers to Chapter IX for a final reading of closing letters. |
-| Printed 108 / PDF 157, Chapter IX opening and editor note 1 | Introduces the transcript and identifies a compilation from varying drafts/dates. |
+| Printed 108 / PDF 157, Chapter IX opening and editor note 1 | Introduces the transcript; the editor identifies papers and charts of varying kinds as its materials. |
 | Printed 109 / PDF 158 | Displays the longer proposed transcript and interpretive alphabet assignments. |
 | Plate X / PDF 119 | Photographic terminal-material reproduction, credited to Wilfrid M. Voynich; no numerical folio label in the caption. |
 | Plate XV / PDF 159 | Reproduction beside a separate hand transcript and printed rendering, with the same credit; no numerical folio label in its caption. |
@@ -44,8 +47,8 @@ pages were inspected, including footnotes, captions and footers.
 
 ## What this changes and what remains open
 
-The historical reading trail includes editorial redirection, differing draft
-contexts, omissions and interpretation choices. These should remain explicit
+The historical reading trail includes editorial redirection, varying source
+materials, omissions and interpretation choices. These should remain explicit
 if that proposal is evaluated under the [project protocol](../DECIPHERMENT_PROTOCOL.md).
 The printed renderings are separate objects from manuscript pixels. No new
 manuscript glyph transcription or comparison with present Yale images is

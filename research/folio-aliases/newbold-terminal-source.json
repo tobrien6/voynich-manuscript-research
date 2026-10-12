@@ -181,7 +181,7 @@
       "pdf_page": 157,
       "printed_page": 108,
       "locator": "Chapter IX opening, note1 and text leading to next page",
-      "reported_action": "Refers to Plate X and introduces a transcript; editor says chapter combines differently dated papers and drafts.",
+      "reported_action": "Refers to Plate X and introduces a transcript; editor says the chapter is based on papers and charts of varying kinds.",
       "scope": "Chapter/context locator cited in the later report; extended displayed transcript continues on printed109."
     },
     {
@@ -213,7 +213,7 @@
     "pr": 164,
     "url": "https://github.com/tobrien6/voynich-manuscript-research/pull/164",
     "inspected_head": "60e14474bcd40412a777b7f4f676d81ea89e75d3",
-    "scope": "Its DImperio Figure23 credit supplied the fixed73/108 source locators. Its files/head are unchanged; this note does not require acceptance of that pending PR.",
+    "scope": "Its DImperio Figure23 credit at the recorded inspection head supplied the fixed73/108 source locators. This note modifies and adopts no files from that PR; later changes to the pending contribution are reviewed separately, and its acceptance is not required.",
     "source_id_collision_comment": "https://github.com/tobrien6/voynich-manuscript-research/pull/164#issuecomment-6123937917"
   },
   "retrieval_limits": [

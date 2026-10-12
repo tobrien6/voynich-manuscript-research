@@ -80,11 +80,12 @@ selective set of primary research papers. Its [records](literature/methods.json)
 pin inspected publication artifacts and distinguish reported measurements and
 nulls from unresolved historical corpus identity. It does not report replicated
 results or a decipherment.
+
 ## S009 - Newbold/Kent 1928 terminal-material contexts
 
 - Work: William Romaine Newbold, *The Cipher of Roger Bacon*, edited by Roland Grubb Kent; title/copyright pages visibly give 1928.
 - Hosted representation: https://oncle-dom.fr/biblio/1928-Newbold-The%20Cipher%20of%20Roger%20Bacon.pdf
 - Publisher identity: https://www.pennpress.org/9781512813340/the-cipher-of-roger-bacon/
 - Accessed: 2026-10-12. PDF: 297 pages, 46,842,963 bytes, SHA-256 `69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891`.
-- Use: [exact terminal-source locators](folio-aliases/NEWBOLD_TERMINAL_SOURCE.md), historical foliation claims, plate/reproduction separation and changing reading/draft contexts.
+- Use: [exact terminal-source locators](folio-aliases/NEWBOLD_TERMINAL_SOURCE.md), historical foliation claims, plate/reproduction separation and changing readings/editorial contexts.
 - Limits: third-party hosted scan, not authenticated physical copy or current custodial representation. Manuscript readings, key interpretations and historical authorship/dating claims remain unaccepted; no current image comparison, verified alias, glyph correction or statistical use. PDF/full extraction/renders remain local.
