@@ -108,6 +108,12 @@ subset, two of 24 points are inside their standardized ranges and 22 are above.
 Every missing cell and excluded key remains recorded; the smaller cohort does
 not repair full-cohort coverage or establish physical unit correspondence.
 
+The [paragraph-context call-site ablation](SELF_CITATION_CONTEXT_ABLATION.md)
+separately suppresses the generator's chooser/morpher arguments across 248
+fixed executions. Mutation-argument suppression increases initial first-y in
+every seed under both chooser settings. All other profiles and interactions
+remain reported; this is finite program dependence without a new manuscript fit.
+
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
    project's modern inputs.
