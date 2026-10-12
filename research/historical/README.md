@@ -44,6 +44,10 @@ the opposing within-record/joining A residuals without new sampling or tails.
 The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
 path and global type deduplication, with signed type covariance, all four
 outcomes and descriptive SD scaling without a calibrated tail.
+The [literal H/Reddy envelope audit](REDDY_ENVELOPES.md) locates the recovered
+paper file's one-record gap in a normalized-empty H record. Every shared key
+retains the same order and fallback-retained count; all eight listed-code count
+differences remain explicit without claiming text or alphabet equivalence.
 
 ## Method
 
