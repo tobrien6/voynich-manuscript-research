@@ -11,7 +11,7 @@
       "pages": [
         {
           "image": "01-project-overview.png",
-          "alt": "A five-stage route from source records and exploratory constraints through candidate rules, evaluation on unseen material, and translation. A leading-y rule has an exploratory diagnostic; a valid frozen evaluation, supported translation and independent reproduction remain pending.",
+          "alt": "Five stages from source records to translation. Inventories and exploratory constraints exist; a leading-y rule has a diagnostic. A valid unseen evaluation, supported translation and independent reproduction remain pending.",
           "caption": "Where the investigation stands",
           "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
           "note": "Snapshot of accepted main 1c74085. An exploratory candidate exists, but no validated decipherment or translation has been established.",
@@ -25,7 +25,7 @@
       "pages": [
         {
           "image": "02-source-and-folio-map.png",
-          "alt": "Ten selected pilot sides across six catalog groups; 213 pinned Yale scan views and 204 explicitly numbered side labels. Definitions distinguish scan views, folio sides and native transcription loci. Seven pilot targets have exact page metadata links requiring image/glyph review; 67r, 68r and 85v retain mapping gaps.",
+          "alt": "Ten pilot sides across six groups; 213 Yale scan views and 204 numbered side labels count distinct units. Seven pilot page links need image/glyph review; 67r, 68r and 85v retain mapping gaps. Shared scans remain dependent evidence.",
           "caption": "What the evidence covers",
           "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
           "note": "Counts describe distinct units, not verified image coverage. Provisional panel/region records do not pass the pilot readiness gate; shared scans and overlapping inventories remain dependent evidence.",
@@ -34,7 +34,7 @@
         },
         {
           "image": "03-transcription-choices.png",
-          "alt": "ZL3b is the working uncertainty-preserving source and IT2a a paired comparison. Edition, spacing and ambiguity policies change representations. Of 2,940 common eligible P0 loci, 2,054 share an encoded chain; 562 split and 767 join loci have different boundaries within that subset.",
+          "alt": "ZL3b and IT2a are related representations. Spacing and ambiguity policies matter. Of 2,940 eligible P0 loci, 2,054 share a chain; 562 split and 767 join loci have boundary disagreements. The counts overlap.",
           "caption": "How transcription choices affect the evidence",
           "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
           "note": "The boundary disagreement counts overlap at 359 loci and must not be added. These related editions do not establish physical glyphs, words or correct readings.",
@@ -48,7 +48,7 @@
       "pages": [
         {
           "image": "04-measured-findings.png",
-          "alt": "Four exploratory findings with adjacent limits: 272 repeated pairs versus 270.77 expected in primary ZL split/exclude; half-constrained interior-order departures in 2,165 common loci with independent positional gradients as an alternative; exact-slot previous-length prediction losses on every fold; primary y selectivity reduced from +0.3923 to +0.1064 by frequency/length matching on the same 13 units.",
+          "alt": "Exploratory findings with limits: 272 repeated pairs versus 270.77 expected; interior order above half-controls with positional alternatives; previous-length prediction loses every fold; matched y selectivity drops from +0.3923 to +0.1064.",
           "caption": "What the tests show",
           "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
           "note": "Studies use different cohorts and statistics on previously exposed data. IT split/join interior treatments are identical dependent comparisons. String lookup and conditional-control departures establish no glyph function, language or translation.",
@@ -57,7 +57,7 @@
         },
         {
           "image": "05-open-work-and-roadmap.png",
-          "alt": "Five next steps: review glyphs and divisions; define evaluation material with exposure and dependencies declared; freeze candidate rules and failure conditions; test without retuning and report all outcomes; independently reproduce and publish supported source-linked passages. Issue 13 remains unresolved.",
+          "alt": "Next: review glyphs and mappings; declare exposure and dependencies; freeze rules and failure conditions; test without retuning; reproduce and translate supported passages. Issue 13 is open, and the proposed 8/2 split remains unestablished.",
           "caption": "What needs to happen next",
           "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
           "note": "Issue #13 was open on 12 October 2026. The proposed 8/2 pilot split is not an established unseen test set. Local reviewers and provisional regions aid review but do not validate a reading.",
