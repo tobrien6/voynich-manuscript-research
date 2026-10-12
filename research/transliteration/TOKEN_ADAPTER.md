@@ -7,6 +7,11 @@ For eligible plain-text loci it also reuses the native token grammar in
 lexer's first-alternative path is reached. This keeps boundary handling shared
 while making the new whole-locus eligibility policy explicit.
 
+Boundary structure is checked after removing comments/tags and interpreting
+drawing interruptions, **before** commas are split or joined. Leading, trailing,
+and consecutive separators remain invalid under either policy; comma joining
+cannot turn a malformed source record into an eligible one.
+
 ## Explicit processing choices
 
 Run from the repository root with Python 3.10 or later:

@@ -42,6 +42,16 @@ class TokenAdapterTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             tokenize("a<! unclosed", "split")
 
+    def test_join_cannot_hide_invalid_uncertain_or_drawing_boundaries(self):
+        invalid = ("a,,b", ",ab", "ab,", "a.,b", "a,.b", "a.<->b", "a<->,b")
+        for policy in ("split", "join"):
+            for text in invalid:
+                with self.subTest(policy=policy, text=text):
+                    result = tokenize(text, policy)
+                    self.assertFalse(result["eligible"])
+                    self.assertIsNone(result["tokens"])
+                    self.assertIn("empty_token_boundary", result["exclusion_reasons"])
+
     def test_identity_type_and_nonexistent_exclusions_remain_visible(self):
         doc = parse_ivtff("#=IVTFF Eva- 2.0 M\n<f67r1>\n"
                           "<f67r1.1,@P0> a,b\n<f67r1.2,+Cc> c.d\n<f67r1.3,!P0> e.f\n")

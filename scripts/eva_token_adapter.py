@@ -55,6 +55,11 @@ def tokenize(text, uncertain_spaces):
     if any(marker in payload for marker in ("]", "}", ";", ":")) and not flags:
         flags.append("unsupported_notation")
     comma_count = payload.count(",")
+    # Joining uncertain spaces must not erase an invalid boundary arrangement.
+    # Validate after drawing/comment handling, before either spacing policy.
+    if not flags and (not payload or payload.startswith((".", ","))
+                      or payload.endswith((".", ",")) or re.search(r"[.,]{2}", payload)):
+        flags.append("empty_token_boundary")
     tokens = None
     if not flags:
         try:
