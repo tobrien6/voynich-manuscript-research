@@ -30,6 +30,11 @@ passing result does not certify untouched material or replace review of the
 actual pre-fit commit. Distinguish material excluded from fitting from a
 stronger claim that it was previously unseen.
 
+Use the [freeze artifact audit](evaluation/FREEZE_RECEIPT.md) to bind the
+declared split, input, rules, and preprocessing files to their exact Git blobs
+and check for later changes. Reviewers must still assess omitted dependencies,
+rule completeness, actual fitting chronology, and the exposure declarations.
+
 ## Run and report the evaluation
 
 Freeze the candidate rules and preprocessing. Apply them to the reserved folios without tuning to those folios. Report all evaluated passages, failures, excluded material, and the reasons for exclusions.

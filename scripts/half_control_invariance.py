@@ -186,8 +186,11 @@ def main():
         protected = {PARENT_PATH.resolve(), HALF_PATH.resolve(), PLAN_PATH.resolve(), catalog.resolve()}
         protected.update((ROOT / source["path"]).resolve()
                          for source in json.loads(catalog.read_text())["sources"])
-        if args.output and args.output.resolve() in protected:
-            raise ValueError("output must not overwrite a pinned input or plan")
+        if args.output:
+            output = args.output.resolve()
+            if output in protected or (output.exists() and any(
+                    output.samefile(source) for source in protected if source.exists())):
+                raise ValueError("output must not overwrite a pinned input or plan")
         result = report()
         if args.check and result != json.loads(args.check.read_text()):
             raise ValueError("invariance diagnostic differs from committed report")
