@@ -1,0 +1,455 @@
+{
+  "endpoint_variants": [
+    {
+      "left_endpoint": "qokaiin",
+      "right_endpoint": "qokaiin",
+      "same_within_variant": true,
+      "selected_row_metadata": [
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.3,+P0",
+          "locus_key": "f82r.3",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "ZL3b",
+          "source_line_number": 4807,
+          "token_count": 6,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        },
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.4,+P0",
+          "locus_key": "f82r.4",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "ZL3b",
+          "source_line_number": 4808,
+          "token_count": 8,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        }
+      ],
+      "source_id": "ZL3b",
+      "uncertain_spaces": "split"
+    },
+    {
+      "left_endpoint": "qokaiin",
+      "right_endpoint": "qokaiin",
+      "same_within_variant": true,
+      "selected_row_metadata": [
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.3,+P0",
+          "locus_key": "f82r.3",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "ZL3b",
+          "source_line_number": 4807,
+          "token_count": 6,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        },
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.4,+P0",
+          "locus_key": "f82r.4",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "ZL3b",
+          "source_line_number": 4808,
+          "token_count": 8,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        }
+      ],
+      "source_id": "ZL3b",
+      "uncertain_spaces": "join"
+    },
+    {
+      "left_endpoint": "qokaiin",
+      "right_endpoint": "qokaiin",
+      "same_within_variant": true,
+      "selected_row_metadata": [
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.3,+P0",
+          "locus_key": "f82r.3",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "IT2a",
+          "source_line_number": 3178,
+          "token_count": 6,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        },
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.4,+P0",
+          "locus_key": "f82r.4",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "IT2a",
+          "source_line_number": 3179,
+          "token_count": 8,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        }
+      ],
+      "source_id": "IT2a",
+      "uncertain_spaces": "split"
+    },
+    {
+      "left_endpoint": "qokaiin",
+      "right_endpoint": "qokaiin",
+      "same_within_variant": true,
+      "selected_row_metadata": [
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.3,+P0",
+          "locus_key": "f82r.3",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "IT2a",
+          "source_line_number": 3178,
+          "token_count": 6,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        },
+        {
+          "adapter_eligible": true,
+          "drawing_interruption_count": 1,
+          "exclusion_reasons": [],
+          "locator": "+",
+          "locus_identifier": "f82r.4,+P0",
+          "locus_key": "f82r.4",
+          "locus_type": "P0",
+          "page_id": "f82r",
+          "source_id": "IT2a",
+          "source_line_number": 3179,
+          "token_count": 8,
+          "transcriber": null,
+          "uncertain_space_count": 0,
+          "variables": {
+            "B": "3",
+            "C": "2",
+            "F": "x",
+            "H": "2",
+            "I": "B",
+            "L": "B",
+            "P": "O",
+            "Q": "M"
+          }
+        }
+      ],
+      "source_id": "IT2a",
+      "uncertain_spaces": "join"
+    }
+  ],
+  "exposure": {
+    "full_page_display_resized_from": [
+      2753,
+      3745
+    ],
+    "full_page_display_resized_to": [
+      2719,
+      3700
+    ],
+    "image_inspected_in_this_chat": true,
+    "independent_blind_or_human_review": false,
+    "known_native_reading_before_image_inspection": true,
+    "known_statistical_result_before_selection": true,
+    "plan_remotely_published_before_inspection": false,
+    "plan_saved_locally_before_image_inspection": true,
+    "region_displays_native_size": true
+  },
+  "image_index_record": {
+    "canvas_index_zero_based": "148",
+    "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006222",
+    "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006222",
+    "explicit_folio_sides": "82r",
+    "full_image_url": "https://collections.library.yale.edu/iiif/2/1006222/full/full/0/default.jpg",
+    "has_multiple_explicit_sides": "False",
+    "has_partial_marker": "False",
+    "image_height": "3745",
+    "image_oid": "1006222",
+    "image_service_url": "https://collections.library.yale.edu/iiif/2/1006222",
+    "image_width": "2753",
+    "label_class": "exact_single_side_label",
+    "viewer_image_number_one_based": "149",
+    "yale_label": "82r"
+  },
+  "inputs_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/transliteration/BOUNDARY_REPEAT_IMAGE_PLAN.md": "1b7df04a0dd8c1d0ceac79e24c01b59892aa1b2eda0003e231f3213502f9f8c2",
+    "research/transliteration/paragraph_boundary_repetition.json": "265b7dd26dfe56f57b8b163f73e6e26cb01c2007b043752e441afd96092ec8ff",
+    "research/transliteration/paragraph_corpus_coverage.json": "2b0b7827460874c1019bc0c4d90cbe8c0f8a7cdc99226cb4b2c14fedc27d63ed"
+  },
+  "inspected_regions": [
+    {
+      "decoded_dimensions": [
+        1840,
+        700
+      ],
+      "id": "top-context",
+      "local_filename": "top-context.jpg",
+      "region_xywh": [
+        250,
+        360,
+        1840,
+        700
+      ],
+      "sha256": "6a583bccf3d5153c108f25baea21567182ed848847497f0310ea7eef10232b70",
+      "url": "https://collections.library.yale.edu/iiif/2/1006222/250,360,1840,700/full/0/default.jpg"
+    },
+    {
+      "decoded_dimensions": [
+        360,
+        150
+      ],
+      "id": "right-endpoint",
+      "local_filename": "right-endpoint.jpg",
+      "region_xywh": [
+        1630,
+        550,
+        360,
+        150
+      ],
+      "sha256": "38167e7d4fb87ce33176884035f98e47eef74f4e50a8781c90eaf52b208eece9",
+      "url": "https://collections.library.yale.edu/iiif/2/1006222/1630,550,360,150/full/0/default.jpg"
+    },
+    {
+      "decoded_dimensions": [
+        260,
+        160
+      ],
+      "id": "left-endpoint",
+      "local_filename": "left-endpoint.jpg",
+      "region_xywh": [
+        280,
+        540,
+        260,
+        160
+      ],
+      "sha256": "292694b907828d19ce1478522683e07462d8eee1e45be0d162c6e44f86e0f04d",
+      "url": "https://collections.library.yale.edu/iiif/2/1006222/280,540,260,160/full/0/default.jpg"
+    }
+  ],
+  "method": "sole encoded boundary-repeat source image check v1",
+  "observations": {
+    "endpoint_shape_comparison": {
+      "direct_observation": "The middle token group in each endpoint window has a 4-like opening with a dark horizontal head/descending stroke, a small rounded loop, a tall looped ascender, a lower angular/arched run with short minim-like strokes, and a curved terminal. The order of these conspicuous features is similar; width, slant, joins and terminal curves differ.",
+      "left_key_region_id": "right-endpoint",
+      "limits": "The precise minim count, connected-stroke grouping and glyph-to-Eva mapping are not independently adjudicated. Known qokaiin readings can bias this comparison. Similar motifs do not prove pixel-identical marks, decoded-word identity or semantic repetition.",
+      "right_key_region_id": "left-endpoint",
+      "status": "provisional_similarity"
+    },
+    "glyph_equivalence_disposition": "unresolved pending independent qualified review",
+    "reading_route_limit": "The endpoint groups are on opposite sides of the central illustration. Their source-defined joining/reading route is not adjudicated by this single image check, even if a provisional shape correspondence is supportable.",
+    "selected_drawing_context": "Each selected source locus has one <-> drawing interruption. Under provisional source-guided grouping, candidate row .3 has three token groups on each side of the central illustration and candidate row .4 has four on each side. Spacing alone does not adjudicate token boundaries; these are provisional associations, not physical-line reconstruction.",
+    "source_correction": "none",
+    "source_row_association": {
+      "basis": [
+        "The .1-.9 source unit matches the nine-start upper text group, with a subsequent group below the intervening drawing.",
+        "Candidate .3 left fragment has the qokeey opening and long benched/gallows group corresponding to lcheckhedy, followed by the shorter qokaly group; the right fragment has the solkaiin-shaped opening, benched middle group and terminal candidate.",
+        "Candidate .4 starts with the compared group, followed by the circle/benched group corresponding to octheol, another benched/gallows group and a short terminal group before the illustration; its right fragment begins with an o-opening tall/looped group rather than a q-shaped opener.",
+        "The word-group counts, drawing placement and several neighboring shapes support the association together; row ordinal alone is not the basis.",
+        "The native endpoint string also appears elsewhere in this source unit, so an isolated matching-looking group would not identify the selected row. Surrounding groups and the drawing context are necessary."
+      ],
+      "status": "provisional"
+    },
+    "top_group_layout": "Nine left-hand text starts/row trajectories in the upper group. The first five source rows wrap around a central banded illustration; right fragments have offset/sloping baselines rather than one straight horizontal alignment with left fragments. Another large text group begins below the horizontal illustrated structure."
+  },
+  "plan_history": {
+    "current_public_document_sha256": "1b7df04a0dd8c1d0ceac79e24c01b59892aa1b2eda0003e231f3213502f9f8c2",
+    "original_before_image_inspection_sha256": "b2c4dc17d13aa549549c1ea13af031728eb67536e99156ec1d85ae224ae383a7",
+    "post_inspection_revision_scope": "Clarify local-only workflow and omit conversation-specific explanation; fixed selection, procedure and limits unchanged. No independently registered or remote pre-inspection freeze is claimed."
+  },
+  "provenance_refresh": {
+    "accepted_parent_merge": "c721f174b4b1ea973c5c0a69f675c82b1df6f786",
+    "accepted_parent_report_sha256": "265b7dd26dfe56f57b8b163f73e6e26cb01c2007b043752e441afd96092ec8ff",
+    "basis": "Parent writer repair changes only implementation fingerprint, with full scientific report and AST outside CLI main unchanged; selected source/endpoints, image bytes, observations and original local plan remain unchanged.",
+    "first_inspection_parent_report_sha256": "451c0859306ab591f0c9e287f147131aa3d94b34bf0998851d2b632fb74dcb99"
+  },
+  "publication_status": "Prepared for first publication after observation; image bytes remain local; independent qualified source-row/glyph review required.",
+  "retrieval": {
+    "decoded_jpeg_dimensions": [
+      2753,
+      3745
+    ],
+    "file_sha256": {
+      "f82r.jpg": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+      "info.json": "cf0d15d3f6aebc1dc634dae9dc69bb43097037e21139b5fa8b897e9d3c50cd67",
+      "live-manifest.json": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309"
+    },
+    "image_info_dimensions": {
+      "height": 3745,
+      "width": 2753
+    },
+    "image_url": "https://collections.library.yale.edu/iiif/2/1006222/full/full/0/default.jpg",
+    "live_canvas_dimensions": {
+      "height": 3745,
+      "width": 2753
+    },
+    "live_canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006222",
+    "live_label": {
+      "none": [
+        "82r"
+      ]
+    },
+    "retrieval_date": "2026-10-12"
+  },
+  "review_status": "single assistant inspection with known source readings; independent row/glyph review required",
+  "schema_version": 1,
+  "selected_native_source_text": [
+    {
+      "key": "f82r.3",
+      "source_id": "ZL3b",
+      "source_line_number": 4807,
+      "text": "qokeey.lcheckhedy.qokaly<->solkaiin.chckhy.qokaiin"
+    },
+    {
+      "key": "f82r.4",
+      "source_id": "ZL3b",
+      "source_line_number": 4808,
+      "text": "qokaiin.octheol.chkeey.ldy<->oteey.qokal.sheckhy.qoky"
+    },
+    {
+      "key": "f82r.3",
+      "source_id": "IT2a",
+      "source_line_number": 3178,
+      "text": "qokeey.lcheckhedy.qokaly<->solkaiin.chckhy.qokaiin"
+    },
+    {
+      "key": "f82r.4",
+      "source_id": "IT2a",
+      "source_line_number": 3179,
+      "text": "qokaiin.octheol.chkeey.ldy<->oteey.qokal.sheckhy.qoky"
+    }
+  ],
+  "selection": {
+    "basis": "sole observed repeat in all four variants of the parent result; purposeful post-statistic selection",
+    "common_unit_id": "paragraph:1c996f3e4c2c0b7b89769cb7965641accc0b9f0fa289f185420c03c75bad6db5",
+    "left_key": "f82r.3",
+    "member_keys": [
+      "f82r.1",
+      "f82r.2",
+      "f82r.3",
+      "f82r.4",
+      "f82r.5",
+      "f82r.6",
+      "f82r.7",
+      "f82r.8",
+      "f82r.9"
+    ],
+    "right_key": "f82r.4"
+  },
+  "sources": [
+    {
+      "alphabet": "Eva-",
+      "id": "ZL3b",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "alphabet": "EvaT",
+      "id": "IT2a",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ]
+}
