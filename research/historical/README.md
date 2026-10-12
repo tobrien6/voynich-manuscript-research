@@ -34,6 +34,12 @@ The [matched native-record control](RECORD_CONDITIONED.md) keeps those input
 streams and all measured joining edges fixed while changing the null's bags.
 It retains the resulting reduction of B's contrast and reversal of A's mean
 contrast, without a causal explanation or significance claim.
+The [matched-null comparison figure](figures/REPEAT_NULLS.md) displays every
+global/record-conditioned ratio with A/B units kept separate, and preserves
+the opposing within-record/joining A residuals without new sampling or tails.
+The [exact conditional B variance](TYPE_VARIANCE.md) preserves that full edge
+path and global type deduplication, with signed type covariance, all four
+outcomes and descriptive SD scaling without a calibrated tail.
 
 ## Method
 
