@@ -60,6 +60,11 @@ The accepted [modern audit](../transliteration/coverage_audit.json) also records
 nonexistent locus. Equal totals do not establish matching content, ordering,
 segmentation, or identifiers. No historical-to-modern locus crosswalk is claimed.
 
+The [exact-page envelope comparison](MODERN_PAGE_ENVELOPES.md) now accounts for
+all H and IT2a page groups: four shared identifiers have different selected-record
+counts, and two identifiers occur only in each source's page set. The equal
+global total hides those discrepancies; the diagnostic supplies no row pairing.
+
 ## Reproduce and next test
 
 Python 3.10 or later, standard library only; run from the repository root:
