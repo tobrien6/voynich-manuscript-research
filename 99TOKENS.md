@@ -81,6 +81,12 @@ sparse cells and every treatment/exclusion in the [complete report](research/hyp
 These exposed-data controls constrain lookup interpretations; they do not
 identify a glyph function, language, or translation.
 
+The [fixed y-lookup image-pair pilot](research/hypotheses/y-lookup-image-v1/RESULTS.md)
+traces two source-stable positive removal gains to their selected target and
+development-reference regions. Nonblind AI inspection describes broad visible
+correspondence with uncertain boundaries; both alignments remain provisional,
+no source correction is applied, and no glyph function or translation is inferred.
+
 ## Evidence standard
 
 - Cite a source and folio for factual statements about the manuscript.
