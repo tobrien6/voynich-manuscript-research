@@ -1,0 +1,283 @@
+{
+  "cases": [
+    {
+      "contradictions_and_limits": [
+        "Different contrast and small contour details prevent an exact shape-equality assertion.",
+        "ZL and IT divide earlier portions of the same encoded locus differently: repeat slots7\u20138 versus6\u20137. Slot coordinates do not identify image glyph coordinates.",
+        "Faint traces, green staining and neighboring strokes remain in the detail; the rectangle is a review window."
+      ],
+      "direct_image_observation": "In the fifth main writing row of the third block, two neighboring groups share a broad horizontal cap, rounded mark and descending/curving terminal stroke. Their ink strength and small stroke contours differ; the first is fainter. Blank space separates the proposed groups, and green staining/fading reduces certainty about small marks.",
+      "group": "paired_agreement",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006076",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+        "image_height": "3766",
+        "image_oid": "1006076",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006076",
+        "image_width": "2972",
+        "yale_label": "1r"
+      },
+      "inspected_files": [
+        {
+          "access_utc": "2026-10-12T08:05:07.277965+00:00",
+          "bytes": 885,
+          "file_name": "1006076-info.json",
+          "height": 3766,
+          "role": "info",
+          "sha256": "7098043b5e7d238091eb612035e4e0c01b5e3f7c256982ec4372ad66e8e39e17",
+          "url": "https://collections.library.yale.edu/iiif/2/1006076/info.json",
+          "width": 2972
+        },
+        {
+          "access_utc": "2026-10-12T08:05:07.277965+00:00",
+          "bytes": 543599,
+          "file_name": "1006076-overview.jpg",
+          "height": 1800,
+          "role": "overview",
+          "sha256": "6a7037996dfd4813846dbeda948b0a8f5cd0e6803fc25243d8bd985d6c1df7d4",
+          "url": "https://collections.library.yale.edu/iiif/2/1006076/full/!1800,1800/0/default.jpg",
+          "width": 1421
+        },
+        {
+          "access_utc": "2026-10-12T08:06:36.031983+00:00",
+          "bytes": 435921,
+          "file_name": "1006076-block.jpg",
+          "height": 950,
+          "native_region": [
+            400,
+            1370,
+            2200,
+            950
+          ],
+          "role": "block",
+          "sha256": "62da471224724684cc2211542cc813eb60a2bd02e0b82cff45ceb3f8ed25b16f",
+          "url": "https://collections.library.yale.edu/iiif/2/1006076/400,1370,2200,950/full/0/default.jpg",
+          "width": 2200
+        },
+        {
+          "access_utc": "2026-10-12T08:08:08.120668+00:00",
+          "bytes": 53980,
+          "file_name": "1006076-detail.jpg",
+          "height": 260,
+          "native_region": [
+            1650,
+            1770,
+            900,
+            260
+          ],
+          "role": "detail",
+          "sha256": "01510e8cdba259bcd605d8967bdb05e32a810fca84358445e58f50c3997968f7",
+          "url": "https://collections.library.yale.edu/iiif/2/1006076/1650,1770,900,260/full/0/default.jpg",
+          "width": 900
+        },
+        {
+          "access_utc": "2026-10-12T08:09:27.473415+00:00",
+          "bytes": 55086,
+          "file_name": "1006076-wide-detail.jpg",
+          "height": 260,
+          "native_region": [
+            1400,
+            1770,
+            900,
+            260
+          ],
+          "role": "wide_detail",
+          "sha256": "48fd666935b4e58b740e5505865d41607414c15e814844d75057fbc4d07cbab5",
+          "url": "https://collections.library.yale.edu/iiif/2/1006076/1400,1770,900,260/full/0/default.jpg",
+          "width": 900
+        }
+      ],
+      "locus_key": "f1r.15",
+      "neighboring_placements_compared": [
+        "f1r.14: immediately preceding main row, with a different opening and different right-hand sequence",
+        "f1r.16: immediately following main row, with a different opening and a taller central sequence"
+      ],
+      "source_informed_correspondence": "The proposed row begins with a loop-and-short-stroke group followed by a taller capped form, consistent in broad order with the known daiin.shckhey opening. The neighboring source rows begin differently. The proposed repeated groups occur toward the right after the taller middle form; this is compatible with both editions' chol.chol but does not establish literal glyph identities or word divisions.",
+      "source_preference": "unresolved",
+      "status": "provisional"
+    },
+    {
+      "contradictions_and_limits": [
+        "Fading, mottled background and overlapping strokes complicate the small upper-trace comparison.",
+        "The broad visible structure is not a verified sh/ch glyph distinction.",
+        "ZL retains @163;s farther along this locus; no glyph identity or treatment of that source notation is changed."
+      ],
+      "direct_image_observation": "In the second main horizontal level of the upper writing block, the two early neighboring groups share a low horizontal/capped structure, a rounded mark and descending/curving stroke. A small curved upper trace is more apparent over the second group, while the first area is faint and mottled. Plant outlines interrupt writing farther to the right.",
+      "group": "ZL_only",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006082",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006082",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006082/full/full/0/default.jpg",
+        "image_height": "3740",
+        "image_oid": "1006082",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006082",
+        "image_width": "2682",
+        "yale_label": "4r"
+      },
+      "inspected_files": [
+        {
+          "access_utc": "2026-10-12T08:05:12.603189+00:00",
+          "bytes": 885,
+          "file_name": "1006082-info.json",
+          "height": 3740,
+          "role": "info",
+          "sha256": "0b0ce428984f7fabcd0baf6a5500b4e838b06c131c400299872231a4b134424d",
+          "url": "https://collections.library.yale.edu/iiif/2/1006082/info.json",
+          "width": 2682
+        },
+        {
+          "access_utc": "2026-10-12T08:05:12.603189+00:00",
+          "bytes": 552846,
+          "file_name": "1006082-overview.jpg",
+          "height": 1800,
+          "role": "overview",
+          "sha256": "8336aa5aefecda66b1759c96028fa307145b6fc051dfe153c6a3afc169d26f9d",
+          "url": "https://collections.library.yale.edu/iiif/2/1006082/full/!1800,1800/0/default.jpg",
+          "width": 1291
+        },
+        {
+          "access_utc": "2026-10-12T08:06:36.509475+00:00",
+          "bytes": 219342,
+          "file_name": "1006082-block.jpg",
+          "height": 480,
+          "native_region": [
+            300,
+            380,
+            1950,
+            480
+          ],
+          "role": "block",
+          "sha256": "651d5593d66373325bceed4afe826209f3b230cc8ac2e501cca422a210eb3e93",
+          "url": "https://collections.library.yale.edu/iiif/2/1006082/300,380,1950,480/full/0/default.jpg",
+          "width": 1950
+        },
+        {
+          "access_utc": "2026-10-12T08:08:08.458005+00:00",
+          "bytes": 41506,
+          "file_name": "1006082-detail.jpg",
+          "height": 220,
+          "native_region": [
+            520,
+            500,
+            700,
+            220
+          ],
+          "role": "detail",
+          "sha256": "a5349c2dd617036ef917018b7644689a21ed9e2afd6f9b75d4788584df4391b2",
+          "url": "https://collections.library.yale.edu/iiif/2/1006082/520,500,700,220/full/0/default.jpg",
+          "width": 700
+        }
+      ],
+      "locus_key": "f4r.2",
+      "neighboring_placements_compared": [
+        "f4r.1: preceding upper row with a taller initial form and a different early sequence",
+        "f4r.3: following row beginning with a taller looped form and a different terminal sequence"
+      ],
+      "source_informed_correspondence": "The short looped opening group and the sequence extending to a longer terminal cluster before the plant are compatible with the known dchor...chaiin source context. The preceding row has a taller opening; the following row begins with a taller looped form. This supports a provisional f4r.2 placement. The possible upper-trace difference is a concrete review question for ZL shol.shol versus IT chol.shol; it does not select an edition.",
+      "source_preference": "unresolved",
+      "status": "provisional"
+    },
+    {
+      "contradictions_and_limits": [
+        "The apostrophes in ZL are native representation characters, not inferred manuscript punctuation or an uncertainty exclusion.",
+        "Similar endings and different starts do not adjudicate whether the two full groups are the same glyph sequence.",
+        "Plant-interrupted native loci must not be equated with independently verified continuous physical rows or words."
+      ],
+      "direct_image_observation": "The third lower-block writing level has two terminal groups to the right of the stem with similar runs of short upright/slanting strokes and a rightward curved ending. Their left-hand traces differ: one starts with a relatively broad curved/looped stroke; the other has smaller elevated marks and a differently shaped hooked start. The writing on the left and right is separated by the plant stem.",
+      "group": "IT_only",
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006078",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006078",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006078/full/full/0/default.jpg",
+        "image_height": "3770",
+        "image_oid": "1006078",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006078",
+        "image_width": "2691",
+        "yale_label": "2r"
+      },
+      "inspected_files": [
+        {
+          "access_utc": "2026-10-12T08:05:14.183628+00:00",
+          "bytes": 885,
+          "file_name": "1006078-info.json",
+          "height": 3770,
+          "role": "info",
+          "sha256": "f0c79624b10e0a9b45006d4f3dcacbea67af77de3e5a84d2311ccede72076fc2",
+          "url": "https://collections.library.yale.edu/iiif/2/1006078/info.json",
+          "width": 2691
+        },
+        {
+          "access_utc": "2026-10-12T08:05:14.183628+00:00",
+          "bytes": 521420,
+          "file_name": "1006078-overview.jpg",
+          "height": 1800,
+          "role": "overview",
+          "sha256": "81fa8840c99e962cb39e9a36a51349ab0a63b07e0ac3a7ceba58b821c332890e",
+          "url": "https://collections.library.yale.edu/iiif/2/1006078/full/!1800,1800/0/default.jpg",
+          "width": 1285
+        },
+        {
+          "access_utc": "2026-10-12T08:06:36.980775+00:00",
+          "bytes": 309112,
+          "file_name": "1006078-block.jpg",
+          "height": 640,
+          "native_region": [
+            300,
+            2370,
+            2150,
+            640
+          ],
+          "role": "block",
+          "sha256": "d2a8f66c1b4a101505cb6f96e530482bd40cbcbc9d5238141f2730a81a347f0f",
+          "url": "https://collections.library.yale.edu/iiif/2/1006078/300,2370,2150,640/full/0/default.jpg",
+          "width": 2150
+        },
+        {
+          "access_utc": "2026-10-12T08:08:09.139753+00:00",
+          "bytes": 44243,
+          "file_name": "1006078-detail.jpg",
+          "height": 310,
+          "native_region": [
+            1930,
+            2510,
+            600,
+            310
+          ],
+          "role": "detail",
+          "sha256": "dcda3c807a1d0bde9d6618a36bfb6bbf3fd8dc9af9a83f581a684cb8a4c5261f",
+          "url": "https://collections.library.yale.edu/iiif/2/1006078/1930,2510,600,310/full/0/default.jpg",
+          "width": 600
+        }
+      ],
+      "locus_key": "f2r.10",
+      "neighboring_placements_compared": [
+        "f2r.9: immediately preceding lower-block level, with different right terminal groups",
+        "f2r.11: immediately following lower-block level, with a taller right-hand terminal form"
+      ],
+      "source_informed_correspondence": "The left-side tall opening and sequence of low groups, together with the right-side taller capped forms before the two terminal groups, are compatible with the known qoky...daiin / cthey.keol... context. The adjacent lower-block levels have different terminal sequences. This supports a provisional f2r.10 placement, while the similar endings coexist with differing starts at the IT saiin.saiin versus ZL saiin.e'a'iin disagreement.",
+      "source_preference": "unresolved",
+      "status": "provisional"
+    }
+  ],
+  "chronology": {
+    "exposure_note_commit": "4f8a82ab44497acee52c8711b95ca99735320c2d",
+    "plan_commit": "f3fcc9f238e5a6aec2a2e18dca44b0ef0a1413f5",
+    "selection_commit": "d447e3d531aba391b4a70b56857c11f6268340f7",
+    "synthetic_tested_selector_commit": "b48848a45e4059e46302b271d4315b9d0b005558"
+  },
+  "coordinate_system": "Native Yale image pixels; upper-left origin, x rightward and y downward; rectangles are [x,y,width,height]. Display resizing does not redefine coordinates.",
+  "glyph_readings_verified": false,
+  "image_alignment_verified": false,
+  "limits": [
+    "Three purposive event cases are not representative of globally distinct types or the manuscript.",
+    "Source alternatives/spacing treatments do not cover all differences between editions.",
+    "No independent human observation, source correction, decipherment or translation follows."
+  ],
+  "observer": "Codex chat01a12dd5-324e-7c21-9037-aea208df166f; source-informed nonblind AI inspection",
+  "schema_version": 1,
+  "selection_path": "research/transliteration/immediate_repeat_image_selection.json",
+  "selection_sha256": "05ba4393132ee988252c58b6b90600f64facb87fa9203b7d73c34f6048428691",
+  "source_corrections_applied": false,
+  "untouched_evaluation": false
+}
