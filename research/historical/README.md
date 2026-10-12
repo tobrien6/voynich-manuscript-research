@@ -68,6 +68,11 @@ all H and IT2a page groups: four shared identifiers have different selected-reco
 counts, and two identifiers occur only in each source's page set. The equal
 global total hides those discrepancies; the diagnostic supplies no row pairing.
 
+The [lossy lowercase comparison](LOWERCASE_PROJECTION.md) then finds 183 matching
+streams on 223 exact shared page IDs, while 39 differing streams retain the same
+symbol frequencies. It preserves omitted-symbol counts and the excluded modern
+envelope separately; those matches do not establish full text or glyph identity.
+
 ## Reproduce and next test
 
 Python 3.10 or later, standard library only; run from the repository root:
