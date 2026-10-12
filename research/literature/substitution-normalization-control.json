@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "method": "fixed synthetic substitution-normalization control v1",
+  "producer_sha256": "4bc4ed684c8f86ac4775e50d505d8e5f70b9aace6db7f4955d0123c85d677145",
+  "source_observation": {
+    "repository": "sravanareddy/deciphervoynich",
+    "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+    "path": "basic_stats.py",
+    "function": "CorpusStats.get_bestsub",
+    "sha256": "12102b9c290838ebe0c60580f62cb449759cb71d13949dbcf5c23c82d1aa4ccc",
+    "basis": "prior static source inspection, not author execution or runtime file verification"
+  },
+  "synthetic_word_counts": [
+    {
+      "word": "A",
+      "occurrences": 1
+    },
+    {
+      "word": "B",
+      "occurrences": 1
+    },
+    {
+      "word": "C",
+      "occurrences": 99
+    },
+    {
+      "word": "XC",
+      "occurrences": 99
+    }
+  ],
+  "declared_candidates": [
+    "B",
+    "C"
+  ],
+  "results": [
+    {
+      "source": "A",
+      "target": "B",
+      "all_occurrences": 200,
+      "selected_occurrences": 2,
+      "selected_mass_fraction": {
+        "numerator": "1",
+        "denominator": "100"
+      },
+      "all_types_before": 4,
+      "all_types_after": 3,
+      "selected_types_before": 2,
+      "selected_types_after": 1,
+      "collision_classes": [
+        {
+          "mapped_synthetic_word": "B",
+          "original_synthetic_counts": [
+            {
+              "word": "A",
+              "occurrences": 1
+            },
+            {
+              "word": "B",
+              "occurrences": 1
+            }
+          ]
+        }
+      ],
+      "subset_entropy_before_bits": 1.0,
+      "subset_entropy_after_bits": -0.0,
+      "whole_entropy_before_bits": 1.080793135896,
+      "whole_entropy_after_bits": 1.070793135896,
+      "subset_entropy_decrease_bits": 1.0,
+      "whole_entropy_decrease_bits": 0.01
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "all_occurrences": 200,
+      "selected_occurrences": 199,
+      "selected_mass_fraction": {
+        "numerator": "199",
+        "denominator": "200"
+      },
+      "all_types_before": 4,
+      "all_types_after": 3,
+      "selected_types_before": 3,
+      "selected_types_after": 2,
+      "collision_classes": [
+        {
+          "mapped_synthetic_word": "C",
+          "original_synthetic_counts": [
+            {
+              "word": "A",
+              "occurrences": 1
+            },
+            {
+              "word": "C",
+              "occurrences": 99
+            }
+          ]
+        }
+      ],
+      "subset_entropy_before_bits": 1.040581350314,
+      "subset_entropy_after_bits": 0.999981784537,
+      "whole_entropy_before_bits": 1.080793135896,
+      "whole_entropy_after_bits": 1.040396567948,
+      "subset_entropy_decrease_bits": 0.040599565777,
+      "whole_entropy_decrease_bits": 0.040396567948
+    }
+  ],
+  "largest_subset_decrease_target": "B",
+  "largest_whole_decrease_target": "C",
+  "scope": "constructed counterexample over two candidates; no manuscript input or historical BESTSUB result evaluated"
+}
