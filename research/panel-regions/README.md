@@ -38,6 +38,14 @@ a targeted review; it does not establish matching glyph strings. The two
 editions share location identifiers and type counts but differ in readings.
 Do not count those editions as two independent manuscript observations.
 
+The [native P0 review checklist](f67r-p0-review.json) retains the two editions'
+unmodified reader text and source-file locators at all seven proposed horizontal
+locations. Only `f67r2.72` has identical native record text; the other six differ.
+For example, `f67r1.1` ends with separate `o.aiin` in ZL and `oaiin` in IT;
+`f67r1.2` contains ZL's `qoekeey` where IT has `qoekshg`. These are encoded
+source discrepancies for image review, not adjudicated spaces or glyphs.
+The identical record is a possible review anchor, not independent confirmation.
+
 No pixel masks, exact bounding boxes, circular/radial locus placement, or
 decoded content are assigned. Both panels reference one leaf and one canvas;
 keep them in the same sampling unit and disclose this image/source exposure.
@@ -69,3 +77,14 @@ location with the original-resolution glyph sequence, including ambiguous
 spaces and alternative readings in each edition. Reject or revise a placement
 when source order or glyphs disagree. Only after recording that review and
 precise regions should a separate verified image/text crosswalk be proposed.
+
+Reproduce the complete checklist with the shared source-pin checks:
+
+```sh
+python3 scripts/build_67r_review.py --check research/panel-regions/f67r-p0-review.json
+```
+
+No alternatives, spaces, paragraph markers, or source comments are resolved.
+The seven locations are explicitly declared by this provisional layout proposal;
+they are not a randomly sampled test of transcription quality. An absent,
+duplicate, nonexistent, or non-P0 target makes the generator fail.
