@@ -81,6 +81,56 @@ class TokenCacheWriterTests(unittest.TestCase):
             self.assertEqual(output.read_text(), expected)
             self.assertEqual({path: path.read_bytes() for path in protected}, before)
 
+    def test_late_build_and_serialization_aliases_preserve_all_cataloged_inputs(self):
+        original_dumps = json.dumps
+        for stage in ("build", "serialization"):
+            for alias_kind in ("symlink", "hardlink"):
+                for source_index in range(3):
+                    with self.subTest(stage=stage, alias_kind=alias_kind, source_index=source_index), \
+                            tempfile.TemporaryDirectory() as directory:
+                        root = Path(directory)
+                        protected = self.source_fixture(root)
+                        before = {path: path.read_bytes() for path in protected}
+                        output = root / "cache.json"
+                        result = {"summary": {"records": 1, "eligible_records": 1}}
+
+                        def introduce_alias():
+                            if alias_kind == "symlink":
+                                output.symlink_to(protected[source_index])
+                            else:
+                                os.link(protected[source_index], output)
+
+                        def produce(*args, **kwargs):
+                            if stage == "build":
+                                introduce_alias()
+                            return result
+
+                        def serialize(*args, **kwargs):
+                            rendered = original_dumps(*args, **kwargs)
+                            if stage == "serialization":
+                                introduce_alias()
+                            return rendered
+
+                        with patch.object(module, "build", side_effect=produce), \
+                                patch.object(module.json, "dumps", side_effect=serialize):
+                            with self.assertRaises(SystemExit) as error:
+                                self.run_cli(root, output)
+                            self.assertEqual(error.exception.code, 1)
+                        self.assertEqual({path: path.read_bytes() for path in protected}, before)
+                        self.assertEqual(output.read_bytes(), before[protected[source_index]])
+
+    def test_existing_regular_cache_can_be_regenerated_without_input_changes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            protected = self.source_fixture(root)
+            before = {path: path.read_bytes() for path in protected}
+            output = root / "cache.json"
+            output.write_text("old synthetic cache\n")
+            expected = json.dumps(build("split", ("ZL3b",), root=root), indent=2, sort_keys=True) + "\n"
+            self.run_cli(root, output)
+            self.assertEqual(output.read_text(), expected)
+            self.assertEqual({path: path.read_bytes() for path in protected}, before)
+
 
 if __name__ == "__main__":
     unittest.main()

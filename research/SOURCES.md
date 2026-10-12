@@ -55,6 +55,24 @@
 - Limitation: fingerprint identifies the hosted digital representation; it does not authenticate an original print or establish a Yale canvas mapping.
 - Reuse: source PDF/render kept local; only a citation, fingerprint, and selected identifier facts are recorded. No open PDF/image reuse license is asserted.
 
+## S007 — Public multispectral release and Read Me
+
+- Publisher: Lisa Fagin Davis; [release notice](https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/), 2024-09-08; [public collection](https://drive.google.com/drive/folders/1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig).
+- Inspected: 2026-10-12; public folder metadata and fixed 1r/116v JPEG selection.
+- [Read Me](https://drive.google.com/file/d/1nzKNlV2BqCEz3VvheAFZ_4IULFwLExng/view): prints 2024-09-09, reports 2014 capture; 58,338 bytes, one page, SHA-256 `02183484db3d238325d87b46f8c48676efeac53bce7a03b4af40f141fa2af157`. Rendered and visually checked.
+- Use: [supplementary source intake](image-index/MULTISPECTRAL_INTAKE.md), exact file identities, orientation/processing limits and finite listing snapshots.
+- Reuse: public viewing/download statement and requested credit retained; no Creative Commons license inferred. Binaries remain local.
+- Limits: dependent views of the same surfaces; no full archive audit, pipeline reconstruction, glyph adjudication, historical attribution, verified legacy alias or translation.
+
+## S008 — D'Imperio report preserved by GovInfo
+
+- Author: M. E. D'Imperio; *The Voynich Manuscript: An Elegant Enigma*, 1978. Rendered cover credits the National Security Agency/Central Security Service.
+- Sources: [GovInfo record](https://www.govinfo.gov/app/details/GOVPUB-D-PURL-gpo58694) and [preserved PDF](https://www.govinfo.gov/content/pkg/GOVPUB-D-PURL-gpo58694/pdf/GOVPUB-D-PURL-gpo58694.pdf).
+- Inspected: 2026-10-12 (America/New_York); cover and PDF pages 4, 31, 32, 38, 81 and 103 rendered in full and visually checked.
+- Representation: 141 PDF pages, 32,892,602 bytes; SHA-256 `e357921308c1ba43e327378a47bec389f755f843b3ad26ec11bb48cc3d6e066a`.
+- Use and limits: selected terminal-reference locators and reproduction credits in the [source follow-up](folio-aliases/ENIGMA_CONTEXT.md); no accepted historical reading, original-source inspection, Yale alias or complete-text absence claim.
+- Reuse: PDF, extracted text and renders remain local; only brief observations, citations and fingerprints are published.
+
 ## Recording future sources
 
 The [historical interlinear intake](historical/README.md) records a recovered
@@ -71,3 +89,20 @@ selective set of primary research papers. Its [records](literature/methods.json)
 pin inspected publication artifacts and distinguish reported measurements and
 nulls from unresolved historical corpus identity. It does not report replicated
 results or a decipherment.
+
+## S009 - Newbold/Kent 1928 terminal-material contexts
+
+- Work: William Romaine Newbold, *The Cipher of Roger Bacon*, edited by Roland Grubb Kent; title/copyright pages visibly give 1928.
+- Hosted representation: https://oncle-dom.fr/biblio/1928-Newbold-The%20Cipher%20of%20Roger%20Bacon.pdf
+- Publisher identity: https://www.pennpress.org/9781512813340/the-cipher-of-roger-bacon/
+- Accessed: 2026-10-12. PDF: 297 pages, 46,842,963 bytes, SHA-256 `69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891`.
+- Use: [exact terminal-source locators](folio-aliases/NEWBOLD_TERMINAL_SOURCE.md), historical foliation claims, plate/reproduction separation and changing readings/editorial contexts.
+- Limits: third-party hosted scan, not authenticated physical copy or current custodial representation. Manuscript readings, key interpretations and historical authorship/dating claims remain unaccepted; no current image comparison, verified alias, glyph correction or statistical use. PDF/full extraction/renders remain local.
+
+## S010 — Newbold's original 1921 lecture
+
+- Work: William Romaine Newbold, *The Voynich Roger Bacon Manuscript: The Mary Scott Newbold Lecture, Lecture V*, in *Transactions of the College of Physicians of Philadelphia*, third series, volume 43 (1921), pp. 431–474; opening footnote reports reading on 20 April 1921.
+- Archive record: https://archive.org/details/transactionsofco3431coll ; public PDF: https://archive.org/download/transactionsofco3431coll/transactionsofco3431coll.pdf
+- Inspected: 2026-10-12. Text PDF derivative: 652 pages, 52,867,297 bytes, SHA-256 `b661753be6315f0b0d5147acc73bb1d8d314fd5d8dc4c43413c9d4e4730dca65`.
+- Use: [original lecture follow-up](folio-aliases/NEWBOLD_1921_LECTURE.md), complete credited pp. 461–474, selected earlier key/context passages, exact printed/PDF locators and the `116V` extraction discrepancy against visually printed `116,`.
+- Limits and reuse: selected visual inspection of a digital derivative; no full-journal or physical-copy authentication. Historical key/readings/authorship/dating remain unaccepted, no modern folio alias or statistical use. Source PDF/full extraction/renders remain local; no blanket scan reuse license asserted.

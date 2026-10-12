@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "amendment": "generator-interior-figure-parent-identities-v1",
+  "original_figure_head": "217ed94c2c407eb8cc710c2a1c2f5f2585917cd1",
+  "original_renderer_sha256": "36950c61442ce79ebfebf64220425f285470fe6b6a05ec78b969cfd155baf3fe",
+  "original_renderer_archive": "research/literature/figures/generator-interior-comparison/first/renderer-first.source.txt.gz",
+  "original_renderer_compressed_sha256": "d4488d7a324d953c9ba8434d14315477799a1c1b3feafc7ae8456e692d191ae0",
+  "original_exports": {
+    "png": {
+      "path": "research/literature/figures/generator-interior-comparison/first/generator-interior-comparison.png.gz",
+      "compressed_sha256": "f90e85dc94a0b8132bb4a1ab694cec7baffdbdc86604e72e6e315c98cc219488",
+      "uncompressed_sha256": "b7a8bdf68de84617cafe05245867d238223af003ec7d6651e01f8b60e0cad0c7"
+    },
+    "svg": {
+      "path": "research/literature/figures/generator-interior-comparison/first/generator-interior-comparison.svg.gz",
+      "compressed_sha256": "d9e3bccbe9b8fb974bcd9de51f60d04105d29447504ec019360a61bfb119703b",
+      "uncompressed_sha256": "6c59c34fa449dc1141758a10f4329b96bac00fe50b5a2175baab0ddd74384b1b"
+    },
+    "json": {
+      "path": "research/literature/figures/generator-interior-comparison/first/generator-interior-comparison.json.gz",
+      "compressed_sha256": "f435edbb3fe7d1e91234ec305cd88576224d2d52e749d2ce32bd96c82e0abef5",
+      "uncompressed_sha256": "00c6469333ff31ca1ffc44afc1eeb5fea00cd91aee81bb90681fdde0db2d732d"
+    }
+  },
+  "original_input_report_sha256": {
+    "research/literature/self-citation-interior.json": "f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d",
+    "research/literature/self-citation-size-conditioned.json": "df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61"
+  },
+  "accepted_parent_report_sha256": "113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829",
+  "effective_size_report_sha256": "2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522",
+  "size_transition_head": "55d7a42c511ca7971de3f46a2ef870c8f9cbf1dd",
+  "allowed_provenance_changed_fields": [
+    "input_report_sha256",
+    "renderer"
+  ],
+  "all_other_provenance_and_artist_positions_must_remain_identical": true,
+  "png_svg_bytes_must_remain_identical": true,
+  "scientific_statistical_selection_functions_changed": false,
+  "local_integer_parser_replaces_global_digit_guard_change": true
+}

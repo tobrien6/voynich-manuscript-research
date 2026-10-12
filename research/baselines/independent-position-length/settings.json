@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "sizes": [3, 4, 5, 6, 7, 8, 9, 10],
+  "families": ["flat", "half_step", "increasing", "decreasing"],
+  "base": 2,
+  "half_step_increment": 3,
+  "gradient_increment": 1,
+  "noise_values": [0, 1],
+  "noise_probability": ["1", "2"],
+  "primary_size": 8,
+  "reference_commit": "45582ca72353d0c1edb78610f811ba50a78712c4",
+  "reference_sha256": {
+    "scripts/interior_length_order.py": "729e8a774a889b6370196ab09b56d228f7b3fe4c747f169a5217488453d28c3a",
+    "scripts/interior_half_controls.py": "c4f3dfae8540a1aa5bfbf197e62054340bd8ac45c24c1479c66ef9e9882cd583"
+  }
+}
