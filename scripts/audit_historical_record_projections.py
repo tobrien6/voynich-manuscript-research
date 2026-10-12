@@ -168,7 +168,9 @@ def main():
         if args.check and encoded(load_json(args.check.read_bytes())) != encoded(result):
             raise ValueError('record-projection report differs from complete pinned replay')
         if args.output:
-            args.output.write_bytes(encoded(result))
+            serialized = encoded(result)
+            protect_outputs([args.output], reads, root=ROOT)
+            args.output.write_bytes(serialized)
         elif not args.check:
             print(encoded(result).decode(), end='')
     except (ValueError, KeyError, OSError, UnicodeError, zipfile.BadZipFile) as error:

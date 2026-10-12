@@ -119,6 +119,13 @@ production readers nor projection function, independently reconstructed all
 **10,428 selected records**, every group/descriptor across 227 union pages and
 all order/multiset/stream/frequency flags.
 
+The maintainer review reproduced an output alias introduced during calculation
+overwriting a protected input, using temporary synthetic files only. The writer
+now repeats protection after serialization and immediately before writing. An
+additional regression covers symlinks and hardlinks introduced at both stages.
+The plan, scientific calculations and all measured results are unchanged; the
+cached report changes only its producer fingerprint. Eleven focused tests pass.
+
 Any later crosswalk needs full source-specific notation and region evidence,
 with empty, ambiguous, split/merged and nonexistent cases preserved. Reusing
 these exposed projections supplies no independent validation or word boundaries.

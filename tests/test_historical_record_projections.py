@@ -144,6 +144,35 @@ class RecordProjectionTests(unittest.TestCase):
                     main()
                 self.assertEqual(output.read_bytes(), b'preserved')
 
+    def test_late_output_aliases_from_calculation_or_serialization_preserve_inputs(self):
+        for stage in ('calculation', 'serialization'):
+            for kind in ('symlink', 'hardlink'):
+                with self.subTest(stage=stage, kind=kind), tempfile.TemporaryDirectory() as d:
+                    root = Path(d) / 'repo'; protected = fixture_root(root)
+                    target = root / 'data/raw/native.txt'; before = target.read_bytes()
+                    output = Path(d) / 'output.json'
+                    loaded = ([], None, {}, set(protected))
+                    result = {'summary': {'shared_exact_page_ids': 0}}
+                    def introduce_alias():
+                        output.symlink_to(target) if kind == 'symlink' else os.link(target, output)
+                    def calculate(*args):
+                        if stage == 'calculation':
+                            introduce_alias()
+                        return result
+                    def serialize(value):
+                        raw = encoded(value)
+                        if stage == 'serialization':
+                            introduce_alias()
+                        return raw
+                    with patch('scripts.audit_historical_record_projections.ROOT', root), \
+                            patch('scripts.audit_historical_record_projections.load_inputs', return_value=loaded), \
+                            patch('scripts.audit_historical_record_projections.build', side_effect=calculate), \
+                            patch('scripts.audit_historical_record_projections.encoded', side_effect=serialize), \
+                            patch('sys.argv', ['audit', '--output', str(output)]), \
+                            redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                        main()
+                    self.assertEqual(target.read_bytes(), before)
+
     def test_real_complete_report_replay(self):
         report = build()
         self.assertEqual(report['summary']['shared_exact_page_ids'], 223)

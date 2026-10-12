@@ -5,7 +5,7 @@
       "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
       "scripts/audit_historical_lowercase_projection.py": "40e7632d92089c7293fb6601a0944817ef79c8266a726ca25a1db4a80142d9a7",
       "scripts/audit_historical_modern_pages.py": "c3b2b4ebff02a8ed2fd2473d6af1cc3a85764564fa849286d66046fc2b8f4deb",
-      "scripts/audit_historical_record_projections.py": "ffbdaf48cd949a5f1376fc881c763fea315d60f1e44b29973aca864a930834f0",
+      "scripts/audit_historical_record_projections.py": "de2c322e73fcdc54087f8ed437a60289aec04f25c53c8332ff010ade597ecc4b",
       "scripts/inspect_ivtff.py": "1e78683efd9cc288917784db5b8398204e541d91f1e978430c2d1abc9bd08f13",
       "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65"
     },
