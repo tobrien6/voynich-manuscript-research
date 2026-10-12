@@ -138,6 +138,19 @@ class InteriorUnitControlTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'reproduction differs'):
             module.verify_ascii(changed, full, halves)
 
+    def test_an_ascii_constant_row_can_become_variable_and_is_still_scored(self):
+        v = converted([('p', 'reverse', ['left', 'ch', 'aa', 'sh', 'right'])])
+        result = module.analyze(v, v[0]['length_corpus_sha256'], trials=5, seed=17)
+        self.assertEqual(result[0]['constant_interior_loci'], 1)
+        self.assertEqual(result[0]['unrestricted']['observed_centered_association'], 0)
+        for grouped in result[1:]:
+            self.assertEqual(grouped['loci'], 1)
+            self.assertEqual(grouped['constant_interior_loci'], 0)
+            self.assertEqual(grouped['newly_constant_from_ascii'], [])
+            self.assertEqual(grouped['unrestricted']['observed_centered_association'], -.5)
+            self.assertEqual(grouped['half']['observed_centered_association'], -.375)
+            self.assertEqual(len(grouped['unrestricted']['control_statistics']), 5)
+
     def test_paired_changes_use_identical_draw_indices_and_retain_all_trials(self):
         v = converted(self.fixture()); analyzed = module.analyze(v, v[0]['length_corpus_sha256'], trials=11, seed=17)
         for result in analyzed[1:]:
