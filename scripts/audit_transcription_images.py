@@ -14,11 +14,11 @@ import re
 try:
     from .audit_transliterations import ROOT, load_sources
     from .index_yale_manifest import build, serialize, side_sort
-    from .validate_evaluation_split import validate
+    from .validate_evaluation_split import load_split_json, validate
 except ImportError:
     from audit_transliterations import ROOT, load_sources
     from index_yale_manifest import build, serialize, side_sort
-    from validate_evaluation_split import validate
+    from validate_evaluation_split import load_split_json, validate
 
 
 SOURCE_IDS = ("ZL3b", "IT2a")
@@ -239,7 +239,7 @@ def main():
         if args.check and json.loads(rendered) != json.loads(args.check.read_text()):
             raise ValueError("committed image coverage report differs")
         if args.split:
-            split = json.loads(args.split.read_text())
+            split = load_split_json(args.split.read_text())
             structural = validate(split)
             errors = structural["errors"]
             if not errors:

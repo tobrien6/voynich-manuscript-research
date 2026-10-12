@@ -1,13 +1,18 @@
+import contextlib
 import hashlib
+import io
 import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
+from scripts import audit_transcription_images as module
 from scripts.audit_transcription_images import audit, make_report, page_reference, split_dependency_errors
 from scripts.index_yale_manifest import build, serialize
 from scripts.ivtff import parse_ivtff
 from tests.test_yale_image_index import canvas, encoded
+from tests.test_evaluation_split import example
 
 
 def sources(text):
@@ -22,6 +27,76 @@ def report(text, canvases):
 
 
 class TranscriptionImageTests(unittest.TestCase):
+    def split_fixture(self):
+        text = "#=IVTFF Eva- 2.0 M\n" + "".join(
+            f"<f{number}r>\n<f{number}r.1,@P0> ab\n" for number in range(1, 4))
+        result = report(text, [canvas(f"{number}r", number) for number in range(1, 4)])
+        split = example()
+        for unit in split["units"]:
+            leaf = unit["folio_ids"][0]
+            unit["dependency_groups"] = ["yale-leaves:" + leaf]
+            unit["canvas_ids"] = result["indexed_canvas_ids_by_leaf"][leaf]
+        return result, split
+
+    def run_split_cli(self, root, raw, result):
+        manifest = root / "manifest.json"
+        manifest.write_bytes(b"synthetic manifest bytes; audit is supplied by fixture")
+        split_path = root / "split.json"
+        split_path.write_text(raw)
+        output = root / "report.json"
+        output.write_text("previous report")
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with patch.object(module, "audit", return_value=result), patch("sys.argv", [
+                "audit", "--manifest", str(manifest), "--split", str(split_path),
+                "--output", str(output)]), contextlib.redirect_stdout(stdout), \
+                contextlib.redirect_stderr(stderr):
+            try:
+                module.main()
+            except SystemExit as error:
+                return error.code, stdout.getvalue(), stderr.getvalue(), output.read_text()
+        return 0, stdout.getvalue(), stderr.getvalue(), output.read_text()
+
+    def test_split_cli_rejects_duplicate_declarations_without_emitting_a_pass(self):
+        result, split = self.split_fixture()
+        raw = json.dumps(split)
+        cases = [raw.replace('"state": "none_reported"',
+                             '"state": "unknown", "state": "none_reported"'),
+                 raw.replace('"state": "none_reported"',
+                             r'"st\u0061te": "unknown", "state": "none_reported"'),
+                 raw.replace('"status": "frozen"',
+                             '"status": "frozen", "status": "frozen"')]
+        with tempfile.TemporaryDirectory() as directory:
+            for text in cases:
+                with self.subTest(text=text[:80]), patch.object(module, "validate", wraps=module.validate) as semantic:
+                    code, out, err, saved = self.run_split_cli(Path(directory), text, result)
+                    semantic.assert_not_called()
+                    self.assertEqual(code, 1)
+                    self.assertIn("duplicate object member", err)
+                    self.assertNotIn("PASS:", out)
+                    self.assertEqual(saved, "previous report")
+
+    def test_split_cli_rejects_non_json_numeric_constants(self):
+        result, split = self.split_fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            for constant in ("NaN", "Infinity", "-Infinity"):
+                raw = json.dumps(split)[:-1] + ', "extra": ' + constant + '}'
+                with self.subTest(constant=constant), patch.object(module, "validate", wraps=module.validate) as semantic:
+                    code, out, err, saved = self.run_split_cli(Path(directory), raw, result)
+                    semantic.assert_not_called()
+                    self.assertEqual(code, 1)
+                    self.assertIn("non-JSON numeric constant", err)
+                    self.assertNotIn("PASS:", out)
+                    self.assertEqual(saved, "previous report")
+
+    def test_split_cli_valid_declarations_keep_the_coarse_dependency_contract(self):
+        result, split = self.split_fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            code, out, err, saved = self.run_split_cli(Path(directory), json.dumps(split), result)
+        self.assertEqual((code, err), (0, ""))
+        self.assertIn("PASS: declared split respects", out)
+        self.assertIn("no input checksum, freeze history, image regions, or exposure history", out)
+        self.assertEqual(json.loads(saved), json.loads(json.dumps(result)))
+
     def test_convention_is_explicit_and_does_not_repair_unknown_names(self):
         self.assertEqual(page_reference("f67r1")["folio_sides"], ["67r"])
         self.assertEqual(page_reference("fRos")["folio_sides"], ["85v", "86r"])
