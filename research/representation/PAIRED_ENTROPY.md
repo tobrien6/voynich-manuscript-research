@@ -103,6 +103,11 @@ IT's split/join token arrays, counts and estimates are exactly identical here;
 they are dependent sensitivity treatments, not separate replications. ZL/IT
 also represent the same manuscript through related source conventions.
 
+The [paired entropy figure](figures/PAIRED_ENTROPY.md) shows all 24 treatments
+in separate notation-policy columns, together with their counting-population
+shifts and complete plot-data provenance. It adds no statistic or uncertainty
+interval.
+
 ## Effect of using a different marginal population
 
 The report separately retains `H(pairs; E) - H(full units; N)` and its
