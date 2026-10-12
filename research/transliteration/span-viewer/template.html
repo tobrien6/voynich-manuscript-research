@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encoded boundary span review</title>
+<style>
+:root{color-scheme:light;--ink:#18313e;--muted:#526672;--line:#d3dde2;--blue:#17658c;--amber:#96520a}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:#f1f5f6;font:16px/1.5 system-ui,sans-serif}
+main{max-width:1120px;margin:auto;padding:32px 24px 64px}h1{font-size:clamp(26px,4vw,40px);line-height:1.15;margin:0 0 12px}
+h2{font-size:24px;margin:0}h3{font-size:18px;margin:0 0 10px}p{margin:10px 0}a{color:var(--blue);text-underline-offset:3px}
+button,input,select{font:inherit}button,input,select{border:1px solid #9dafba;border-radius:7px;background:white;padding:10px;color:var(--ink)}
+button{cursor:pointer}.filters button{align-self:end}button:disabled{opacity:.5;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #1592c9;outline-offset:3px}
+.lead{max-width:86ch;color:var(--muted)}.notice{padding:12px 16px;border-left:4px solid var(--amber);background:#fff5e6;border-radius:4px}
+.filters{display:grid;grid-template-columns:1fr 1.5fr 1.5fr;gap:16px;margin:26px 0 12px}.filters label{display:grid;gap:6px;font-weight:600}.filters input,.filters select{width:100%;min-width:0}
+.wide{grid-column:1/-1}.check{display:flex;gap:9px;align-items:center;margin:16px 0}.check input{width:18px;height:18px}.muted{color:var(--muted)}
+.navigation{display:flex;gap:12px;align-items:center;margin:16px 0;flex-wrap:wrap}.navigation select{flex:1;min-width:220px;max-width:100%}.counts{font-weight:650;margin:12px 0}
+.record{background:white;border:1px solid var(--line);border-radius:12px;padding:24px}.head{display:flex;justify-content:space-between;gap:16px;align-items:start;flex-wrap:wrap}
+.badge{font-size:14px;border:1px solid #d7ba8a;background:#fff5e6;border-radius:20px;padding:4px 10px}.interval{font-size:15px;color:var(--muted)}
+.chain{font:22px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#edf4f7;border:1px solid #d1e1e9;border-radius:7px;padding:14px;overflow:auto;white-space:pre}
+.sources{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:18px 0}.source{min-width:0;border:1px solid var(--line);border-radius:9px;padding:18px}
+.pieces{display:flex;gap:8px;overflow:auto;padding:10px 0 12px;white-space:nowrap}.piece{font:22px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#edf4f7;border:1px solid #bdd1dc;padding:5px 10px;border-radius:6px;flex:none}
+.source code{font-size:14px;overflow-wrap:anywhere}.offsets{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}.hash{font-size:13px;overflow-wrap:anywhere}
+details{margin:16px 0;border-top:1px solid var(--line);padding-top:14px}summary{cursor:pointer;font-weight:650}.empty{padding:30px;border:1px solid var(--line);border-radius:10px;background:white}
+footer{margin-top:28px;color:var(--muted);font-size:14px}.hidden{display:none!important}
+@media(max-width:720px){main{padding:24px 16px 40px}.filters,.sources{grid-template-columns:1fr}.wide{grid-column:auto}.record{padding:18px}.navigation select{min-width:0;width:100%;flex-basis:100%}.chain,.piece{font-size:20px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Encoded boundary span review</h1>
+<p class="lead">Compare complete ZL3b and IT2a token pieces between shared ASCII offsets. These source partitions come from the same fixed, exposed 2,940-locus cohort.</p>
+<p class="notice">Glyph regions and linguistic word divisions remain unresolved. Shared encoded boundaries are agreement between related transcriptions.</p>
+<noscript><p class="notice">Enable JavaScript for search and navigation. The complete source inventory remains available through the linked inventory and method.</p></noscript>
+<section aria-label="Case filters">
+<div class="filters">
+<label>Comma policy<select id="policy"><option value="split">Split uncertain commas</option><option value="join">Join uncertain commas</option></select></label>
+<label>Native locus contains<input id="locus-filter" type="search" placeholder="For example f102r1" autocomplete="off"></label>
+<label>Literal ASCII span contains<input id="span-filter" type="search" placeholder="Case-sensitive, for example oaiin" autocomplete="off"></label>
+<label>Cut pattern<select id="pattern"><option value="all">All cut patterns</option><option value="left_only_internal_cuts">ZL-only internal cuts</option><option value="right_only_internal_cuts">IT-only internal cuts</option><option value="both_sources_internal_cuts">Distinct internal cuts in both sources</option></select></label>
+<label>Local token-count difference<select id="delta"><option value="all">All differences</option><option value="positive">More ZL pieces</option><option value="negative">More IT pieces</option><option value="zero">Equal counts, different cuts</option></select></label>
+<button id="reset" type="button">Reset filters</button>
+</div>
+<label class="check"><input id="hide-drawings" type="checkbox">Hide loci with a recorded drawing interruption</label>
+<p id="counts" class="counts" role="status" aria-live="polite"></p>
+<div class="navigation"><button id="previous" type="button">Previous span</button><label for="case-picker" class="muted">Choose a span</label><select id="case-picker" aria-label="Choose a span"></select><button id="next" type="button">Next span</button></div>
+</section>
+<section id="record" class="record" aria-live="polite" aria-label="Selected encoded span"></section>
+<p id="empty" class="empty hidden">No spans match these filters. Change a filter or reset the view.</p>
+<details><summary>Sources, input identity and scope</summary><div id="provenance"></div></details>
+<footer><p>Offsets refer to the processed, case-preserved ASCII chain, with half-open intervals. They are not raw-file byte positions or image coordinates. Separator types within each span are unresolved; drawing/comma counts describe the entire source locus.</p>
+<p><a href="__REPORT_URL__" target="_blank" rel="noopener">Complete span inventory and method</a> · <a href="https://github.com/tobrien6/voynich-manuscript-research/pull/178" target="_blank" rel="noopener">Input contribution</a></p>
+<p>This local artifact displays existing evidence. It stores no annotations or corrections; opening exposed material creates no untouched evaluation.</p></footer>
+</main>
+<script id="span-data" type="application/json">__DATA__</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('span-data').textContent);
+const byId=Object.fromEntries(data.sources.map(s=>[s.id,s]));
+const controls={policy:document.getElementById('policy'),locus:document.getElementById('locus-filter'),span:document.getElementById('span-filter'),pattern:document.getElementById('pattern'),delta:document.getElementById('delta'),drawings:document.getElementById('hide-drawings')};
+const picker=document.getElementById('case-picker'),record=document.getElementById('record'),empty=document.getElementById('empty'),previous=document.getElementById('previous'),next=document.getElementById('next');
+let filtered=[],position=0;
+function element(tag,text,classes){const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(classes)node.className=classes;return node;}
+function signed(value){return value>0?'+'+value:String(value);}
+function sourceCard(row,side){
+ const id=row[side+'_source_id'],source=byId[id],card=element('article',undefined,'source');
+ card.setAttribute('aria-label',id+' encoded token pieces');card.append(element('h3',id+' · '+source.alphabet));
+ card.append(element('code',row[side+'_locus_identifier']));
+ const pieces=element('div',undefined,'pieces');pieces.setAttribute('tabindex','0');pieces.setAttribute('aria-label',id+' original complete token pieces');
+ row[side+'_original_token_parts'].forEach(value=>pieces.append(element('span',value,'piece')));card.append(pieces);
+ const offsets=row[side+'_only_internal_ascii_offsets'];card.append(element('p','Source-only internal ASCII offsets: '+(offsets.length?offsets.join(', '):'none'),'offsets'));
+ const link=element('a','Original source-file line '+row[side+'_source_file_line']);link.href=source.blob_url+'#L'+row[side+'_source_file_line'];link.target='_blank';link.rel='noopener';card.append(link);
+ card.append(element('p','Whole-locus notation: '+row[side+'_uncertain_space_count_in_locus']+' uncertain comma(s), '+row[side+'_drawing_interruption_count_in_locus']+' drawing interruption(s).','muted'));
+ return card;
+}
+function display(){
+ picker.value=String(position);previous.disabled=position<=0;next.disabled=position>=filtered.length-1;record.replaceChildren();record.classList.toggle('hidden',!filtered.length);empty.classList.toggle('hidden',!!filtered.length);picker.disabled=!filtered.length;
+ if(!filtered.length)return;
+ const row=filtered[position],head=element('div',undefined,'head');head.append(element('h2',row.native_locus_key));head.append(element('span','Glyph/word status unresolved','badge'));record.append(head);
+ record.append(element('p',row.spacing+' policy · encoded interval ['+row.start_ascii_offset+', '+row.end_ascii_offset_exclusive+') · '+row.span_ascii_length+' ASCII letters','interval'));
+ const chain=element('pre',row.span_ascii,'chain');chain.setAttribute('tabindex','0');chain.setAttribute('aria-label','Literal encoded span');record.append(chain);
+ const sources=element('div',undefined,'sources');sources.append(sourceCard(row,'left'),sourceCard(row,'right'));record.append(sources);
+ record.append(element('p','Local native-token difference, ZL minus IT: '+signed(row.left_minus_right_native_token_count)+'. These are complete source token pieces.'));
+ record.append(element('p','The shared endpoints bound an encoded interval. No verified glyph region or span-specific separator classification is assigned.','muted'));
+}
+function applyFilters(preferredKey){
+ const old=filtered[position],identity=old?[old.native_locus_key,old.start_ascii_offset,old.end_ascii_offset_exclusive].join('|'):null;
+ const locus=controls.locus.value.trim().toLowerCase(),span=controls.span.value;
+ filtered=data.rows.filter(row=>row.spacing===controls.policy.value&&row.native_locus_key.toLowerCase().includes(locus)&&row.span_ascii.includes(span)&&(controls.pattern.value==='all'||row.category===controls.pattern.value)&&(controls.delta.value==='all'||(controls.delta.value==='zero'?row.left_minus_right_native_token_count===0:controls.delta.value==='positive'?row.left_minus_right_native_token_count>0:row.left_minus_right_native_token_count<0))&&(!controls.drawings.checked||(!row.left_drawing_interruption_count_in_locus&&!row.right_drawing_interruption_count_in_locus)));
+ const retained=filtered.findIndex(row=>[row.native_locus_key,row.start_ascii_offset,row.end_ascii_offset_exclusive].join('|')===identity);
+ const sameLocus=old?filtered.findIndex(row=>row.native_locus_key===old.native_locus_key):-1;
+ const preferred=preferredKey?filtered.findIndex(row=>row.native_locus_key===preferredKey):-1;position=preferred>=0?preferred:retained>=0?retained:sameLocus>=0?sameLocus:0;
+ picker.replaceChildren(...filtered.map((row,index)=>{const option=element('option',row.native_locus_key+' · ['+row.start_ascii_offset+', '+row.end_ascii_offset_exclusive+')');option.value=String(index);return option;}));
+ const total=data.policy_totals[controls.policy.value],locusCount=new Set(filtered.map(r=>r.native_locus_key)).size;
+ document.getElementById('counts').textContent=filtered.length.toLocaleString()+' '+(filtered.length===1?'span':'spans')+' in '+locusCount.toLocaleString()+' native '+(locusCount===1?'locus':'loci')+' shown · '+total.spans+' spans / '+total.loci+' loci in this policy. Filtered records are dependent views of the same sources.';
+ display();
+}
+Object.values(controls).forEach(control=>control.addEventListener('input',()=>applyFilters()));
+picker.addEventListener('change',()=>{position=Number(picker.value);display();});
+previous.addEventListener('click',()=>{if(position>0){position--;display();}});next.addEventListener('click',()=>{if(position<filtered.length-1){position++;display();}});
+document.getElementById('reset').addEventListener('click',()=>{controls.policy.value='split';controls.locus.value='';controls.span.value='';controls.pattern.value='all';controls.delta.value='all';controls.drawings.checked=false;applyFilters('f67r1.1');});
+const provenance=document.getElementById('provenance');
+provenance.append(element('p','Input commit: '+data.input_commit,'hash'));provenance.append(element('p','Span inventory SHA-256: '+data.inventory_sha256,'hash'));
+data.sources.forEach(source=>{const box=element('div');box.append(element('h3',source.id));box.append(element('p',source.title));box.append(element('p',source.credit));box.append(element('p',source.header_version_statement));box.append(element('p','Source SHA-256: '+source.sha256,'hash'));const link=element('a','Publisher source');link.href=source.url;link.target='_blank';link.rel='noopener';box.append(link);provenance.append(box);});
+provenance.append(element('p','Modern source transliterations are CC0. Encoded intervals, source versions and spacing policies are related and already exposed. No new selection, glyph reading, statistical test, physical word assignment or translation is introduced.'));
+applyFilters('f67r1.1');
+</script>
+</body>
+</html>

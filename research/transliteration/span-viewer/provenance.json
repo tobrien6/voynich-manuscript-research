@@ -1,0 +1,29 @@
+{
+  "embedded_span_records": 1628,
+  "external_resources_loaded": false,
+  "html_sha256": "23b094943c6fa2b74238d9de9e8c5a69b3c2db55838abb8c37537f95f01d6358",
+  "input_commit": "2dd734bad3a8beb1b32cc4b64ad3b8027c0ecbd3",
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/transliteration/boundary_disagreement_spans.json": "4a2bbb4a55384045e3de03996f66caa74463acc4943868a1a12b310ce3552991"
+  },
+  "payload_sha256": "575d3c4171b75d15be572c451a26e244f3ef69b11085dc41105593846b7e3223",
+  "policy_totals": {
+    "join": {
+      "loci": 767,
+      "spans": 978
+    },
+    "split": {
+      "loci": 562,
+      "spans": 650
+    }
+  },
+  "producer_sha256": "87379f4b161f4e28398ecdbf916fa7abc87b1b3ccc42d1a065976b689e690b31",
+  "schema_version": 1,
+  "scope": "Read-only local display of the complete modern paired-Eva span inventory; no glyph/image mapping, correction, new statistic or hosting",
+  "settings_sha256": "ed7cc7ae63b53b4280b5e58f61966b5db1eb7f52746241765dec4d8edfb08b41",
+  "source_corrections_applied": false,
+  "template_sha256": "404bd868c6b6c1a96c334e07c173f2589e8687246630db0f92bf71e81a440918",
+  "verified_glyph_regions": false,
+  "viewer_id": "boundary-span-review-v1"
+}
