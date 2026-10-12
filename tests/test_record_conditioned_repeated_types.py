@@ -26,7 +26,9 @@ class RecordConditionedRepeatTests(unittest.TestCase):
                  [["a"], [], ["a"]], [list("aa"), list("ab")],
                  [list("aab"), list("bbc")], [list("aab"), list("a"), list("aba")],
                  [list("ab"), list("cc"), list("ab")], [list("aaab"), list("aabb")],
-                 [list("ab"), list("ab"), list("ab"), list("ab")]]
+                 [list("ab"), list("ab"), list("ab"), list("ab")],
+                 [list("aab"), list("cc"), list("aba")],
+                 [list("aab"), [], list("bcd"), list("aab")]]
         for rows in cases:
             samples = [counts([t for row in rs for t in row])
                        for rs in product(*(set(permutations(row)) for row in rows))]

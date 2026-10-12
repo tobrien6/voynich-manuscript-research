@@ -1,0 +1,844 @@
+{
+  "assay_version": 1,
+  "scope": "Exploratory matched-input/all-flat-edge native-record-conditioned H A/B assay; exposed approximate inputs",
+  "study_plan_sha256": "c606cb48e3f5a6e8d6805a88f7a3495276a2a0356472a0abd599b9caa6e9f7a3",
+  "human_plan_sha256": "c4d0d84b22dd634c9835a4ba942214551dac4c2866ed8bc1dc694343b5f4d8c4",
+  "runner_sha256": "09027df08829ba0bd772e4b73fecd6fa0d61ff8b54eae37176a2d3b092fd81c8",
+  "metric_helper_sha256": "dccbc20120a4d98200d0c5d351fa784ced56c299c15f2be3b20bc9eff1858e3d",
+  "frozen_dependency_hashes": {
+    "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+    "data/historical/text16e6.zip": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/reconstruct_historical_tokens.py": "030f2a587a296f8a1459dd782bab7ca6caf72e620b141d1e752c5824dbbc5555",
+    "research/historical/parser-plan.json": "43fd8b690edb599a18a29b1848c8a8b5d466bf39e0503d9cd1e6e5190e108308",
+    "research/historical/parsing.json": "ec5e99cea3d1843248c2b9eee476c34c752e094fe84eb3b03a64e1f4cd7e2233",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/global_repeated_types.py": "cebe7bae733a401d7c76d15ee7c4724d2f9aab1efe2433db74e0d6a8d3c0da08",
+    "scripts/historical_repeated_types.py": "90aa860990a9e120833565fa377e7b8c73df8596a66c9e6bec1c412f4e96cc5e",
+    "research/historical/repeated-types-plan.json": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
+    "research/historical/REPEATED_TYPES_PLAN.md": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
+    "research/historical/repeated-types.json": "71c46911b9c38f3b5125d2411707ea5d4a3f364f1d6126fece167aebabe075c6"
+  },
+  "global_study_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/126",
+  "global_study_commit": "ecd5f547ca705ca6daff8e699bd99d5f34dd668a",
+  "source_credit": "Jorge Stolfi; Gabriel Landini and Jim Reeds; Takeshi Takahashi; original transcribers credited in the unmodified member",
+  "source_permission": {
+    "statement_url": "https://www.ic.unicamp.br/~stolfi/EXPORT/00-EXPORT/98-12-28-interln16e6/",
+    "locator": "Permissions section",
+    "terms_summary": "Publisher permits copying, use, modification and republication with due credit and without imposing additional conditions or copyrights on these files or derivatives",
+    "repository_license_applies": false
+  },
+  "seed": 20261012,
+  "trials_per_variant": 10,
+  "algorithm": "sha256-counter-fisher-yates-v1",
+  "frame": "historical-native-record-v1",
+  "edge_scope": "All N-1 adjacent edges in each surviving flat stream, including native-record joins",
+  "condition_on": "Independent uniform permutation of every surviving native-record token bag",
+  "variants": [
+    {
+      "ring_policy": "exclude_R2",
+      "f66r_column_unit": "M",
+      "flat_corpus_sha256": "6011cc2640aa27257c62cec9740dbf706ed22defba3a2142172a9b73b13a8261",
+      "record_corpus_sha256": "63bd8a7f9752c1268038f0f1bcd2a5a3b5e151b7ae4614a292d343ec813faf85",
+      "tokens": 37759,
+      "distinct_types": 8137,
+      "records_including_empty": 5214,
+      "nonempty_records": 5127,
+      "type_record_incidence": 36409,
+      "observed": {
+        "equal_pair_events_A": 313,
+        "distinct_repeating_types_B": 114,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37758,
+        "cross_record_joining_edges": 5126,
+        "within_record_pair_events": 304,
+        "cross_record_pair_events": 9,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 6,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 0,
+        "equal_pair_events_on_index_gap_edges": 0
+      },
+      "forced_repeating_types_under_conditional_null": 1,
+      "exact_conditional_null_means": {
+        "A": {
+          "numerator_hex": "0x2106202d0aebfdd03d",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": 318.7282871450125
+        },
+        "B": {
+          "numerator_hex": "0x8bbbed53600fe0d7e3cdcd583a1834b18a3db445375898a5aa868f963b264ba3b4af73f74fb0e92c19c04d055c8c95fea0160b33b5021e2246f24502223eed5fb30a5071f32b398df09bc01aba7ea8070f6b89cb516c38e9e6795dea1f89823699a84d30785",
+          "denominator_hex": "0x153167cc45dcfd4082b3fc035c333150d01eda6384f465489cf0db744b2f32cdba0937492c85e9822f98330a90124b263df869745f56528451c7514605995b4f9aef8382840600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 105.49457307854077
+        }
+      },
+      "exact_A_scope_contributions": {
+        "within_record": {
+          "numerator_hex": "0xd7c8ae440ee675",
+          "denominator_hex": "0xc37de7450190",
+          "decimal": 282.5728642313802
+        },
+        "cross_record": {
+          "numerator_hex": "0x3bf01a806f6710851",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": 36.155422913632265
+        }
+      },
+      "exact_global_null_means": {
+        "A": {
+          "numerator_hex": "0x4324ee",
+          "denominator_hex": "0x937f",
+          "decimal": 116.53820281257448
+        },
+        "B": {
+          "numerator_hex": "0xdb7af26b0b11ebdcdbe8301d7d0596b8e0e643dc82eeaf51caf244fbb0c62047aa336c263cc22f0f31181e1509cd1f329f41d9521f5d1b5fb96d95982c82f8dc07d2d2f5d3d5ca08610c0a797e7b7fd91ce84900f1ca5317450dae3314f358b069aef256f99ecc7c730d319bab5aa118e48bfbce0507e9138071b348f9c7441487511626a5c86c68397df90963ec4ad7d667644d93b8ce9f298c9b7e6b820b26664ead7ac4203e7f4e5239fe43cc715c398fbf03ad2f0f66ae9504150270515e34c1e374a710bcaab2ed42bf974b9330d892b80762684a18f638aed2d244473df5ce857fd2f9c588e60d166e9dcad4a5840a957359ea9debc39b4f122eedce49b24a976ec5100f0f4cbd31e206610da614672ed329335bbdb107070043650ca06f0794cdd20fe9ad8dc49d2a8b08d455aa350999ec784c3fbbb59f9167cfa98ffec0a9a26933c0aaaa65beaef940c8abfe7fadab8fd9a868fe555fc42e164fc904ce233e64f99d7cc0260539ecd285eefd44a9ec17ccac9d3aacc1efff6e6d9de07ec2d1f3c0c58a98828f11cd8dac2fbad7fe83331e88619e15c72e4ad77fc3b64ae088d5dede29e394f003a461b5462caf668480ee0f1bcd6aa55c861d703d6edb333c2825c19f2e5f31ba50922a63357a16535ca50c6d9b766487159f8d6538f44e25858a9882a84e4845ab9c957785c6d76ffee154670a5eb500ac962e1d9abecd18f1b5accce18a9b06d0ee3c6e5f0a8d12f7fc31a28735e64e403aae0460fe743ba8680c0eef0cd1b95ce61023953b75d09f96ec29d4cbd32a9f1f7d67e852ba09913a1a54fe48e1e48c9d791118e4d48d9c3c948fa03214a338f545c40142c4830d426c4ee884d5749681f26f4d009b92a40cc3353f3ad3ca34db39669cbd3ec6cba2ef71590a5de2312afb883b76d81fe3485c40e594394f0ab356f292b9c32bbd19308130cfece33fd6eb50e7f2db37a99dbe9ef4c385ef627e45eb59e7e2688589cb5363c59c5a3ce1744345e00461f0d884ae8242be9f6a8d37caf08a13c947fd24e05b1f97176b072bb5f484140c22ee2ce7b91f6884b8bf131219e2eed91c8c7cd712aa3a3681c684066afa82819622c1",
+          "denominator_hex": "0x49e4759383d5c2aad1b88388aba0fd1ce9eb8c896c1a483c77ad526ab9693a5691f205cae9da68b8cace294547e06d371fe2aa67edac9d7b899203a855319a9db113b8630f35518bf3db0f88f50545afe4b4525a81dd1eddecd93fcd8fcc2ab29558de07b9e11ba748ddbd6ba23ce2af2461f4510e1aab124c747c28137713e927bf371a9c5dd68e2aee5d38a5dd15597ba1fa754165071bc160347cb9c69b6f1f2aa875011f785276a561acdc087f924dabfc2b0d83db12f23aeb6c3375ca3faee35a774418161a92cf42f313331d25e57b89893412691261ad2ed943e26bd61ea097e4cd603a0c5296b5647c51642790f840c525da5669448301d493b58b6b7d5f25311dfb446a52247fd78227956f87bbb17a0fdaf05a356df18dcc2de83cc9bb0997cafd5ebf6b2c289fc5a15fd0cb5704410b8864195fb9bc235cce3ba81318a14cd434c6925ed25a5d06bd1d6a309b8356518c3761646657e3cc4b99df67d75e5b8ef830c840525fd7cb0864b5b9dc5ddc81323a1652856b2c64bf4e55e958b47f5073ba13a1785e80540fd1e54cf061506a80bb91c0713aff5f5ac5924651a5a57f8a65a925bd8e9ed485fb9898093c43d01dcea5682eda55e434c8eb5f9ac603f3afd6047f2ec87785e8934fb81dcdf89b498139a9019f789a276671f58a690200ffab44810f861a2cd2b4c029ef6204ab65655e95a80b7124adcf819ab7f4b988ed269e1a692ada8dc97ca01f1bb4d3a8851b1996a70bf3663db6b05bee774c17a6fc64e77ca1dbcccbb66ea0cbe9cdc37991476fdb895dddeb8885e2631c946f7f3b8b86b0db611992fbf21461f149ad6f71ae8507a9afedf9456d7eb60605e7e354332d46f1ab4be7834d9bbafdc1730c7b1fd77519d987b658444a54bb4c5c96989a1be91a2f02dee43dae3369a4521e398904796f497eb976e548d491cea52001fed1a37f2411cb6bd4dfc08f915c23c736ece50d16a5fc8d991178a4cb0f78b73130b5ba1544d2b402a614f3c92c11baf00cc0ad030ea34571c818fd1dd9e04873ff191b1f3744a0fedab0cdf818c57928a60d974301eb6a204824cb95926a9b696c33f030f400fd359f2d5b8c89b23",
+          "decimal": 47.52428230487689
+        }
+      },
+      "conditional_minus_global_mean": {
+        "A": {
+          "numerator_hex": "0xc11edd1ea06beec117cc3",
+          "denominator_hex": "0xf4844a324d55e4dda40",
+          "decimal": 202.19008433243798
+        },
+        "B": {
+          "numerator_hex": "0x1cb74bfccd89f9c425b4057d313372ccffd9f08a914309faa449ae2d31a6f8a59d8e8c3d417e56da472c01f9db8571ba1ac5cd853a177b86f23039273ac7274e266572bbe3a5c0637f3a1aa1a0e3c15827159c48fe6dc7dcf21211d41d4db5f59387845d8c7d0b74386ca846d6fc29e6827cf380ed206ec3fa50b81251aa8bdf45a4db7773bee2b3d2594c7a4b525f5428f02def87d0339431d1fbd8128d7e88577ddebb5c450ef1073e3e351a95abf96921de8d8e9db2debc69f06279684c5e934cdc86f3b4828c667b8dcf11200c4d9a60cf3c006dca59cab07268f177450718d85d1b31cfc46e6194a4ceb417a81f543decd259146fae202c8e8c9425836d6ac15f17af99074c50495c997cdf571daebd0d9cf06f6032e7bb5d7483ed1f9f1449ac165afa93db36a1384d5e67c8024ca32ab2d1700737bf6e8b3d6c3eb5c8bd827d3bc6e1ec2fb24e9a3b21d4bd10d732758d6f26fa81190227c37abb96d2297e16a33c7cad5d5d60455a07b55681a5c8a6850759d6dcaf085ac6c8d69b945dc1a5a9701b04f415d96e4ba0c98412344d1e12dceb52638102eb37563e7071918a7105b3a7e1c57911f494138c8e96bdd4534ba8cb45508f3b09f563f3f7a2cb8341a00e629bb2bde1ee7641293ad16cd1282181c5eb920d50415759e33cc75f0863c77621c28f502830663c4ac1690318c4fc37aa21695ed8ad07924ca1291019abde0fe322b0a12b7eeae52d4b91d368a19c138342372543f9ccb5d9ad0fd960e6401fd21583dc84e5568447f1a894cbcaea3760b7b522053c31615c887d061e03b995fb6116ab064db4ebbf2e7316e5394100cc52b1436108c10add624907163e6fedb18a9f7723e846398030020d607b28fcee0d164bc669d73c2694d539f606bba2cbb1d7fa1b76ba059abd99558294a92de3a9c4621754723aa987a6b98d377b3732fca87e3f754f8a2dcb25ceebf601172c182a02d280591e15bc99af3eb359ddee20734041562eeb053eacfe27c269057c9cd01de94bd4ac3a64b48cdda16db7c71977c9b7aede6f1e36fa1f6aa92851f9bbaf5bfe07da5931a8263d167afd473854c4085895fce18f9a1ffafde89488cbf470c20f02df82f75895c797acb73ce221725406f6241d04304c484103fc9dcd4127197de0349358c64b7b3aaa91e6f44d880b04d53c76c3e6d3139b95fd5f84b63c659073a4ccca60d748ed42dd9010556fc130689f0d7cf29c9",
+          "denominator_hex": "0x7ecfbb68bafe3e3d3dbbbcc075cbafd2f8bfca24cb68bf2a7a458ebb4b5ce1d3a520c19e6153c2a0807787ba8f2a65d8272efd2244ad78d66f745025661d93e19e530c68c5d6f0f914c4b5206174df89edf356ff821a09406f9aa06e94f533e7b9c1a2b95d9b322fc80a633ec534cd40fc84f296961856db14aa5d2381e7075b233b93f2c2ca8fd414c3c8b8e5959c77c52f11ed6a29230ea79d0dd21c772813b965417053169d74253980750eff0ab855e804bf6085996f933c530a894503ff5e02e977a90e8d5b0de3b6d1307f4cc72ec15c721abac1123e1778fd6353b97011642fd926c2c9db2ae63579171133353b27d92579cd6b271845da753b110f400d209d08270877bd9357eee3009b6d648e07156e94f30258827aa568e87f98e05a6dd74ed2fa65f54ccf40362985bafc23ed0890651377f5c4ec88703692e4a9fa93b7beed63119c51a986eebb71eca82151ae74c1d2a1ead6f979e1f6f2ac400135e552c0343659a21f920fc6fcb98ca3b3c19dcaecdae2d7249ec34b9a2659c516f57f825089638ab69215c2e8c0bc86f5358c39347715a882b43e186c1a54c38f0507062fd9645012e77740b08ea52edf4c422a9ccee02ed5e9d95c030f86d2397e6cf2222fa98ccd61a755580dc181d6d01cd0599441885acf8158378ded3f86f4498ca13c9d5be45b6fdc6f950d7bfba5729416feb2739c43d59b99a7699195ddb1d7633d94308eff21e1ae5c10c2161e73cdfcbb7f99c096388ff78ba814979bf71cb5b0654e7a0f6f466dbe85876db261aada8e4d200a588a9f42252c55b491c86c3559c36fc9ac6bcece0f843631137718cdb5ebf3efa07e84ce8647a32f07bb9bd45d35cfe6feede53782c2ca60584b0f76d73c1510f208894ea147579aeb0fa45d6607f9b1488e0ad7a8bf96d55df85f13c8bb841e9eeed0998821c7977857e6ba0e5141f825259c11a1ea5c923e582b4940fcd0317929e7d27a83169beefc424386b231fc29579e517949afaa0785a0a47ba9db0bbbed80289b1f180419250e21886e95cb49159e576d07d765919b4647a26f35fcbabf2c3da6c53e682a368adf3a260718687741f8323569ec0a164d70a2e388c2446b489a26d1429f963d050c9f5bae7c7410f05dfd77d6a5c46bc83d84d1ddca6670a98be718f563ddc2dc4afd5bf4b3449cbcec202be00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 57.970290773663876
+        }
+      },
+      "observed_minus_conditional_mean": {
+        "A": {
+          "numerator_hex": "-0x97f0b504d756887d",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": -5.728287145012472
+        },
+        "B": {
+          "numerator_hex": "0xb44163c11b6ab93bf74963fb6d48aae409e1fbfdbf4b8ffb3ad8c065c89fe5618d235f20d893693795c1ea5e5f5c171d973e4297244edcc7fb9de10c5a5bd377ce0388ff97f86720f643fe5458157f8f0947634ae93c7161986a215e0767dc96657b2cf87b",
+          "denominator_hex": "0x153167cc45dcfd4082b3fc035c333150d01eda6384f465489cf0db744b2f32cdba0937492c85e9822f98330a90124b263df869745f56528451c7514605995b4f9aef8382840600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 8.505426921459234
+        }
+      },
+      "observed_over_exact_conditional_mean": {
+        "A": 0.9820276788222243,
+        "B": 1.0806243077084823
+      },
+      "all_ten_controls": [
+        {
+          "trial": 0,
+          "equal_pair_events_A": 336,
+          "distinct_repeating_types_B": 98,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 300,
+          "cross_record_pair_events": 36
+        },
+        {
+          "trial": 1,
+          "equal_pair_events_A": 319,
+          "distinct_repeating_types_B": 120,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 277,
+          "cross_record_pair_events": 42
+        },
+        {
+          "trial": 2,
+          "equal_pair_events_A": 305,
+          "distinct_repeating_types_B": 110,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 261,
+          "cross_record_pair_events": 44
+        },
+        {
+          "trial": 3,
+          "equal_pair_events_A": 301,
+          "distinct_repeating_types_B": 96,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 268,
+          "cross_record_pair_events": 33
+        },
+        {
+          "trial": 4,
+          "equal_pair_events_A": 306,
+          "distinct_repeating_types_B": 103,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 264,
+          "cross_record_pair_events": 42
+        },
+        {
+          "trial": 5,
+          "equal_pair_events_A": 339,
+          "distinct_repeating_types_B": 106,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 294,
+          "cross_record_pair_events": 45
+        },
+        {
+          "trial": 6,
+          "equal_pair_events_A": 311,
+          "distinct_repeating_types_B": 114,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 277,
+          "cross_record_pair_events": 34
+        },
+        {
+          "trial": 7,
+          "equal_pair_events_A": 315,
+          "distinct_repeating_types_B": 116,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 273,
+          "cross_record_pair_events": 42
+        },
+        {
+          "trial": 8,
+          "equal_pair_events_A": 321,
+          "distinct_repeating_types_B": 112,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 285,
+          "cross_record_pair_events": 36
+        },
+        {
+          "trial": 9,
+          "equal_pair_events_A": 310,
+          "distinct_repeating_types_B": 96,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 271,
+          "cross_record_pair_events": 39
+        }
+      ],
+      "ten_control_means": {
+        "A": {
+          "numerator_hex": "0xc5b",
+          "denominator_hex": "0xa",
+          "decimal": 316.3
+        },
+        "B": {
+          "numerator_hex": "0x42f",
+          "denominator_hex": "0xa",
+          "decimal": 107.1
+        }
+      },
+      "observed_over_ten_control_mean": {
+        "A": 0.989566866898514,
+        "B": 1.0644257703081232
+      }
+    },
+    {
+      "ring_policy": "exclude_R2",
+      "f66r_column_unit": "L",
+      "flat_corpus_sha256": "2ba83767113efadc3b9371d38c0b5c9382f73e3b76cd4da097885e8df948dc6f",
+      "record_corpus_sha256": "e53f7bd10aea557abef1fa530649b179adb7704dc7a9207fedee5eeda7fc8370",
+      "tokens": 37776,
+      "distinct_types": 8129,
+      "records_including_empty": 5214,
+      "nonempty_records": 5144,
+      "type_record_incidence": 36426,
+      "observed": {
+        "equal_pair_events_A": 314,
+        "distinct_repeating_types_B": 115,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37775,
+        "cross_record_joining_edges": 5143,
+        "within_record_pair_events": 304,
+        "cross_record_pair_events": 10,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 7,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 0,
+        "equal_pair_events_on_index_gap_edges": 0
+      },
+      "forced_repeating_types_under_conditional_null": 2,
+      "exact_conditional_null_means": {
+        "A": {
+          "numerator_hex": "0x2120a67637ece015fd",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": 319.7282871450125
+        },
+        "B": {
+          "numerator_hex": "0x8d0f03d0246db0abebf90d186fdb67c6973fa1eb6fa7defa34559d4d7fd93ed09050076be27947c43cb9d036058dbab103f591cafaf7834a8c0eba1682988314acb948aa1b6b998df09bc01aba7ea8070f6b89cb516c38e9e6795dea1f89823699a84d30785",
+          "denominator_hex": "0x153167cc45dcfd4082b3fc035c333150d01eda6384f465489cf0db744b2f32cdba0937492c85e9822f98330a90124b263df869745f56528451c7514605995b4f9aef8382840600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 106.49457307854077
+        }
+      },
+      "exact_A_scope_contributions": {
+        "within_record": {
+          "numerator_hex": "0xd7c8ae440ee675",
+          "denominator_hex": "0xc37de7450190",
+          "decimal": 282.5728642313802
+        },
+        "cross_record": {
+          "numerator_hex": "0x3d987f133f7534e11",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": 37.155422913632265
+        }
+      },
+      "exact_global_null_means": {
+        "A": {
+          "numerator_hex": "0x2197bd",
+          "denominator_hex": "0x49c8",
+          "decimal": 116.55723210504024
+        },
+        "B": {
+          "numerator_hex": "0x50a181f961c890692ad69e109663de31b84609a4226bda67962e37bc07468af1aeb56f16e9c93a4cc5e56de816932fcb4610fb7b14f64bbb667c6d7494c3e140c087d338c2f2777d92bd7a0fb0a088bcb1694c936659aaadf9d569c170a3820b986dc300bb78568b0f8d63601b9b159e8d1bc58a4aad8e7036f20e75a141461a432313568ee64aa987527ac8eb3f3740f4325b89ecc18064f173334088cea0b7236763ed988d36d4f6156b03672772f752c6a98aa5c5b70f47db276dda2b2598402d958a375dd09bd272c4d2b8a2bee3cdf936481550e287b749905be03b50d9a9964f380ca4ae09c8cc23bdb1230d78c7e5bb809f427e5b4d59165f65ce7b45a2a7d70708340bed6fe5868cf3ab6327375cd0078cd0581d3b5db5d6ff0e8add74ececefe5dc8eeeb81b6ef66544019c20208a10340a531494f6822e08861e270cfd0ed583885319f413650a5fca07a43516635936787f5ba2f5397204c05352197c342bba952a83355a0ee580eb240a4192f01680589932b347462778b78bbfdbace70f6e546e0e324188275df500239bb4d5332606a146ba1e7e2efbdbb40f7a81dfa27086e7e7587bd2c94a976656d95ee37d01902b86bdc48ad7c8ebf8631013f7b1a32578ecd010eb4cb77aec53ba564b50b233dca6a4f8308f5e2a39cc39e06feee92f81a4b0bad0de5f028760b201e5f1e52d651b1a109add2b6ae73ac89f7961fbaa0e6562bc7d56b61acd9e64690d4f2dde3a31a3fd775aec501d135af5bfa33e43c382cbada5402361c04129e0aaae6f75e45b241a3d1adde6c48b94984fcd0f89757f1f6c7879ea90cd840a25f39e0494e3c0a079418afdd9a5a17c4cbd1d04b33ec680077250e795d2ad616090120efc4d20350127cb2847dd6284517bdabc2f9121771ca40887e883dccccff886fef8a2492c002b53227668c2441e3b5803f2d0053dc402496ab9fa9f4b11f25979009f8bd8a89496dfe41e47bac619bd0feb846f800f4d4e1e7aef29e46ce0a00962cc9b48a856b2348fd5bb895a29b46f521aab0730bedce63e8464677b0c282d09cddaa129ad282e7f779b0edf576fa0634f647a3a2830735",
+          "denominator_hex": "0x1b1f8f53f4a604ffda546904d24c323abf753d8c0134ba2b23f3edac0785f38b11bc0a585fb2627cbe0adcb77a46dbd521624612ea60794f082b7e2f9f01b79623979ad44a4aa9e6c1b092f221c861e9a31d280df9b34ed3259ea75d54185f8af26a81f95cb9da39ab9aac42f84b862004f02915b2b455af32dce828b9746b792a71461b928faed6a6050728524c0112475a7f87ef424dc106597f06f67176e3f4ef6114844907042553f277aa3bdb57d3b8411e1086c4dc6639c1f2601eb26195926e2f663c19bde117dd1f6a61779b589a1e7773929b059453d7db784404415bf4e6d844a29ae81fdb9c8f682176a8928860e9ff2985c2c36f1e39a566809d7febcd412981659ad95c1628b3cb46f7a7888f5f9c8ebcbb8bc17caa4b1bd43a1b18e5305f46234ffef0fe2367d1b571bd6fc1afaad23ae396a2b382de686c9c2d18df56e43b8130908d82a215e53fb8b40ccd94af057e82669a5c93f92378ba3dd21abd66cd02d6b4b24b2082e0347f80ef6bdf1aa87daaafc59f94aeeaf91556f87e13b82de8ab1aa44c908e2805c14f66d31696135e63190db8de5ea448a189663d2014ccd3b7f9fb49723d3f98365fda0b8cb257a37dea235ff1466ed8455ce62271134e5f65e39bc9d584d26eb8fb401aacf99c73d2f838c2f008d7b2532961fbdc9a4857d58c1958dc1f2c610bd97b39a871a704ed769ffb3da8b10bde08c9901c37e87ed7b90e2c819ab72d4d5e226921ddd53dd69d3b846f560aee916afe22eba4b9a068117786c943e3a6fd9a66f2accd0cf9925d0180120d4f989aaba850a2de43996605508d6e482064b078d30e11527e1b08ce6194bf1d70bffb9e2a0ffd2c9d4059e43fda2ea00387742e4afcde41d5cd0bdadaac2d1bf9aefb5893efab8de5604207a71cd4184102380d672da2e0982002607047e90ed6fe6aa549873f7fc20d7ea210d9cd826c18293769b5dcb28823921e9b4d4d55b4ea100dc4518a7b8f68a27f47adcf39aa7a15091e827c52ada7f851812b7b23ce2a7cc5d0e5e4c912440a8c25651a24380d4cb81a11e271e8561f75900b2b275dd7858993fdab797a7a0f6dd1abd540",
+          "decimal": 47.56409238758476
+        }
+      },
+      "conditional_minus_global_mean": {
+        "A": {
+          "numerator_hex": "0x40b70806fbf8c90edb7f",
+          "denominator_hex": "0x518ad2f559b79c6d40",
+          "decimal": 203.17105503997223
+        },
+        "B": {
+          "numerator_hex": "0x70d364e0357b0d15b553462951c941e6faf2fabc80ae0d306ce0b21977f49f3a47b250a3795447afa827c675e6a3fad6d2f5292de1c964a37e44f8713a2f4163b6d36d11b34ff4b8e0eb8a01237dcdf2e395309b0dabc16ad4660f4dcf7276a9659eadac9cc06895cb555e380d5e6c992a1b043d6f971c56ea6905fde05f509c8cc8ccd201ba7bbb1a25efa8619fab286fe9e6fd1a68f62a354fcc153b7226770a0dcb1db836302e67fb2e30c9993108fca2eedf08e77ed26b9e5d50ec8a06dd005531a42fec31017d99039550341758da2ab717a4d95b0cd0420bc19293abbb98cd648f819051066d1b838ad232d1ea9b495022977681129ba13c5a65d4c6c101782f6d857c8866ccb8ec0060f84f3416472b01826fd8e848d7937293226c5120f2a8ad4211e746b7b31e93ecab7008a82d36ac577eef32b384f0e93ef132a4f66a8b5000df7def9a7cb17c38768de12f6be47e545d9acf5e7265286f774998e5a084c262b83515c1728a24fcf381aa60d7fbb85533ee2b505d435024e8a7530f22eb9b9a11bf5fa4f8421cfcc033935d1adf7c5febe3e9f74a9094e31483efaabaf5fb14a59a37cd003ee9c6e89bf7dac7c289544414e4b1794fea6fe0be17be61b0d7a81fcab70e9b0b1701c9d966023be8b2a33f18a15e6a04312bec69a7006bb888d98ec2b62c3cbf356dea1f7092ebaee25d99582f437ac70c2dd52fcc23884cbdd65e936017de97b112debf0eec61781cda6e7abb6280e04becaaf5d233da8cf57103dfe42cd174aa44f43dfe684dbd3496718a42d6f35dfb47296a26415cd99479904f6892a7fe9aea953afce0d210b6b761d65c64787c9073f211e041d7acd54d8c040ec4e70274400e5a0966b4bfc9ae553450d88a093bc8c1c12541d9fef3405b3dca19a45e73e855a7b058eddfeaadf9a8f77f20169be05bd6435887e6ac1dad00cd590a63a66aceeb7319f6dc34981b61f0501f04c670d34c012374b5f84aae5f8033ec9609bb42c487a7b84f8dc8fd79d4b00bd8e08f851a76c99fe3c2a7e031eae910339e8d8c46c93aabf7f5679e31cba0017d001a6e286f9e2bd8866f90fb4bc81cb77e6100b74660400d9036e6e4a042711016709d37ea5cd15518723abe1fa5c400734bd79cfe40a270a15f1d235a2de8d8ff7f51c11687260aba976a3b19860eb589f74cd7b68898e52f555207d2e9e177a01b240d2fef62dc4237c67f5",
+          "denominator_hex": "0x1ea2066882c0f387aadb50fa53e97ad10130500d9a3b86038101eb0bbe036f67012a17ce88e5bc1ea24d8796dbbacb671d722d661cbd514da508c4b3ae3f80b67b74e49ad6aa1db784079bd9cf23e618f22bfc5304c5c42796ae5e17c039dc45dcda8dee40a29d2a9505efdefe76cc6bc0ed3c8e20567a34487d8b32ae76a33fbd20fa600dd14267713cc7a1cab1ef7eaa9d84d0af9ae200b6124b1157cafe45a27e4267de3595cda62dcc8a201f11107870adbc0aba8bf96c94dc0c5418317d476c519eacf80db6d1e9b160a9a0c05be9459095f261c1cf6026b936dae6d7d3ae5247e604cc9ab8f030be5faf1613ce8cce742b39ccdbe79abd3d713b1878e2624c4b8cd1f3759ede28fc68e61c0abb45daca672ab1f0741d3a7011bdff0c77c52dd14627b8adbb3995a40c3b4692762ed3b0375531005c76eafc68a5ccf4ce7e25a105479661a2f8c337c83ae2bc85317ec4a9d634aeb361a920115c60ae693efb492748e42b38a4decfc7470503da96d4d60e51d3392160040c549a8cd7945a6d4d79c040ae91cfb0e958a6b00bf780c764efd8e2d4b60e14751a6b41ef07d169f9c568bfb36843bbe81b5b126509eba295f40b09d7043acb6109197dabf5ee4935af0c865bef3d88ce68ac9343bb93aed7a2011a4ef78142181c9b05df9583c6239c3f07d4416416a1014ea5411bf1c3f743116bc177bcdad4844521bb156a534a59bd7650bd8b25a46311ef25ff218305e58c207c7966efa4d952ba11c4258352b66063610a0152d73f17158e4006d4d87542039eb1213372b8b9b90cecb536f232e07091f8e14bf96b8d8ca498b93adc9921cc95e366b5219c76cb8f1cff0c142304c1541bddae62775fb70f0e7404bbf3bfcaee54396dbe05e2a285d4f5f2acac67d1f7c4820f4b9ad8971f0a14fba0dbfd900b2f95bb7b4ee08c64f7eec43c61e5351456d4d0fb48197214da6d0ef76d357ae40ca82d33f374dc975baf68990da61d66b05d9d17fcb6118dfa43430b9d4e4dbfe383ffd89df558ee89079788201a49687444ef47bde097cf3b3486f348d88c0ed2d874209d7bb9893f9708d39dc4cf0f1f46c2a95265fb8610bc812b1a5c18400da3d9ac4ad4c07fdeeeed6510468b56b2e6b40951742ac741a53e32d32cc87e978d91317043f837a30f8c7a3bdc86ee2600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 58.93048069095601
+        }
+      },
+      "observed_minus_conditional_mean": {
+        "A": {
+          "numerator_hex": "-0x97f0b504d756887d",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": -5.728287145012472
+        },
+        "B": {
+          "numerator_hex": "0xb44163c11b6ab93bf74963fb6d48aae409e1fbfdbf4b8ffb3ad8c065c89fe5618d235f20d893693795c1ea5e5f5c171d973e4297244edcc7fb9de10c5a5bd377ce0388ff97f86720f643fe5458157f8f0947634ae93c7161986a215e0767dc96657b2cf87b",
+          "denominator_hex": "0x153167cc45dcfd4082b3fc035c333150d01eda6384f465489cf0db744b2f32cdba0937492c85e9822f98330a90124b263df869745f56528451c7514605995b4f9aef8382840600000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 8.505426921459234
+        }
+      },
+      "observed_over_exact_conditional_mean": {
+        "A": 0.9820838900550128,
+        "B": 1.0798672333771073
+      },
+      "all_ten_controls": [
+        {
+          "trial": 0,
+          "equal_pair_events_A": 307,
+          "distinct_repeating_types_B": 106,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 273,
+          "cross_record_pair_events": 34
+        },
+        {
+          "trial": 1,
+          "equal_pair_events_A": 322,
+          "distinct_repeating_types_B": 97,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 280,
+          "cross_record_pair_events": 42
+        },
+        {
+          "trial": 2,
+          "equal_pair_events_A": 347,
+          "distinct_repeating_types_B": 105,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 302,
+          "cross_record_pair_events": 45
+        },
+        {
+          "trial": 3,
+          "equal_pair_events_A": 323,
+          "distinct_repeating_types_B": 102,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 289,
+          "cross_record_pair_events": 34
+        },
+        {
+          "trial": 4,
+          "equal_pair_events_A": 321,
+          "distinct_repeating_types_B": 111,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 286,
+          "cross_record_pair_events": 35
+        },
+        {
+          "trial": 5,
+          "equal_pair_events_A": 321,
+          "distinct_repeating_types_B": 106,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 286,
+          "cross_record_pair_events": 35
+        },
+        {
+          "trial": 6,
+          "equal_pair_events_A": 308,
+          "distinct_repeating_types_B": 105,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 261,
+          "cross_record_pair_events": 47
+        },
+        {
+          "trial": 7,
+          "equal_pair_events_A": 271,
+          "distinct_repeating_types_B": 105,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 234,
+          "cross_record_pair_events": 37
+        },
+        {
+          "trial": 8,
+          "equal_pair_events_A": 300,
+          "distinct_repeating_types_B": 108,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 274,
+          "cross_record_pair_events": 26
+        },
+        {
+          "trial": 9,
+          "equal_pair_events_A": 323,
+          "distinct_repeating_types_B": 112,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 278,
+          "cross_record_pair_events": 45
+        }
+      ],
+      "ten_control_means": {
+        "A": {
+          "numerator_hex": "0xc47",
+          "denominator_hex": "0xa",
+          "decimal": 314.3
+        },
+        "B": {
+          "numerator_hex": "0x421",
+          "denominator_hex": "0xa",
+          "decimal": 105.7
+        }
+      },
+      "observed_over_ten_control_mean": {
+        "A": 0.9990454979319122,
+        "B": 1.0879848628192998
+      }
+    },
+    {
+      "ring_policy": "exclude_single_character_tokens",
+      "f66r_column_unit": "M",
+      "flat_corpus_sha256": "2c7e1a6104a4fa5fb43a32246e3060ed8e76307d34c377abce9e6cbb8efaf712",
+      "record_corpus_sha256": "59d077d0b033b3d5a4a2a50c1f5f04144a1a0488fc1a079470c7ed489b8edfb2",
+      "tokens": 37713,
+      "distinct_types": 8133,
+      "records_including_empty": 5214,
+      "nonempty_records": 5127,
+      "type_record_incidence": 36378,
+      "observed": {
+        "equal_pair_events_A": 314,
+        "distinct_repeating_types_B": 114,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37712,
+        "cross_record_joining_edges": 5126,
+        "within_record_pair_events": 305,
+        "cross_record_pair_events": 9,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 6,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 13,
+        "equal_pair_events_on_index_gap_edges": 1
+      },
+      "forced_repeating_types_under_conditional_null": 1,
+      "exact_conditional_null_means": {
+        "A": {
+          "numerator_hex": "0x1efdd7a6b08d77e55",
+          "denominator_hex": "0x18f6db75a67a9c0",
+          "decimal": 317.80770047675026
+        },
+        "B": {
+          "numerator_hex": "0xd8dd09b83325357248672b039ae5bfc638e2ab59fc05557778afdc0e31618935eef0595778ce5c46c900e350001350765488437abbe655363e993a0c9fbaef03e84fc9f5bd2ba92e6ab8ffd0cb10d5d3fa8ecb9dc7aa95f408c639dff54c79b2b95b21162037",
+          "denominator_hex": "0x211f88d986ca9ad28220ce837c75f81c8a2218db8ab91e4ca24ef41f7828009dc8f0d4dcf579e6ffc66a201ae19d796cfbc78fa1cc9e8796c04173540f5f225aa6e6032b1ab3c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 104.75487778515578
+        }
+      },
+      "exact_A_scope_contributions": {
+        "within_record": {
+          "numerator_hex": "0xd719562c083499",
+          "denominator_hex": "0xc37de7450190",
+          "decimal": 281.67592580474536
+        },
+        "cross_record": {
+          "numerator_hex": "0x3be6113fa294c7149",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": 36.131774672004894
+        }
+      },
+      "exact_global_null_means": {
+        "A": {
+          "numerator_hex": "0x430d38",
+          "denominator_hex": "0x9351",
+          "decimal": 116.51939649457746
+        },
+        "B": {
+          "numerator_hex": "0x72ddac3498005512316a576482e0a2622967439cc612dd1b429bb06e656af7250e5af71bba28515f10d897515063176a4c0d61403f80903471539f4bf10b61ef3f77320d2bc947625b99daaf4ea507e18c169e0f756e659a99e2e0d639b273552122ad6e66f21c4b5fca6c25e920c4bf2a63410347b4c9d9940b69e94e654c1a9b5f4de4133c77175faacb7b5675b988222457caa890f72c874d6fad07f15b872cef0b68da346cb3439176f54a31c450d6c6e6e916c3660090bc8fcb59ef993ac56a0ba6f7069c1cd8124b2b4949ccd1139ad7b6d8c8eace920cfae7f1c8e119387930d4b20a1c5916375773b6ce0e966fec14ecc2c08423f34b1ba7bf2775e0e8fab3706a7670805bfee299e6b036abb7206063e4f3217b638d0a6b9fa7ea9f5289927a14740ace9f056a44db35cbef4de04972e0d1a9c99b6abaec6a1873d79383433c651e2991035899274213f90fae6c9dfa833e763e8cd4f424309e50518999e777f3d409da051ac1e121748012bdd3d64ac3439b01840f520fa0f83711de6bea68ff9eae08fbff80fe2e7b9b0865e82a4a76082625ee94e95f0a2b8660d10dcd530a7b2b5778b28695452c75053054665b37e66fa66d266f20166de84b92d012177ae3e7b521ad5c182f39aac3dbf84aeda21d77c7d58ec6cc2c5a4faf657344e5cca4cb7a3a963a48e736ff9c71ef2ec4dc21af941c28f91821ec1eab1fffac59cf580f9cadc029323fd9fa3d7e7631e8bdfa8a6dcaa274c44693c0c41a14a4a77c00d898000f477fbe6e2f7a95c07fa6525c99e7e3e274e9c57794301a1a30479ad8281dc85e4e8a7bbc409c649a2d150920ab317b2a8af9b2e62a32cf386f9a6846ce09090423adfc9a22341996785388d29aeffb8f6a074176369df221f3b278c4bd158eda3df9c824bf69c8c5173d0d15363ba45a3f9fa77d5b00c7f4604eeff041751abf0fd7e537081a113e20b3bbae82590adb72fbef4265cd716763d514da97413d765bea322d53a45dc8c110dd32b39c9a7eaebaca0e4a320ae9b70e20455884a882dad3c1a1b10f6643afd031664e5b84aa1e8f055c675a0939c62b0588fe606bfc26e290b69bcb1ab1679",
+          "denominator_hex": "0x26b8d80b86f6fe3db27f1f5d146b46a577733d6a51d7c3ef0878d5f1d36377d66b2f0df2e70f57288f3da5a5fa018a0a12c5a8074d0cb73f6d210d2822f261fbbae71046e1cde24500c9cae1114711b346cdced776ba312f5054120f4668bede9e6ae06f806b30e302f9bb9176cf1dc504e8d45c4d056ccd637d9b39edfda00d5e2276a3f9ec4e72120a067069fed29a5a0bb84650bfb32b6878c25ee46aa7df1ba96306d6541880ff8ea19cdd5442b52dab4b8715662a50135c065ad0354a7b0730951a3d9bf466f6de76d7c065923b3cdc7b1cc6db435571d3d76b4a3bf9769c109c1b6a0534debc7180963b0cfaa0ba512f0192391371298b7d8ece26545243a325c6633818805955aa666f35967fe203d5e177b49b842f5b6a532b71991ce49ea6f531767b71673663dcdb73867d935efc18d36d36c3d9cb6b0abbf80566e6604f29b97f2653a14b4129315d3fab46ed21c36ad14d8e442f8baf967fd2419696d7e5938b792e83f72f1727efd5b10fb8cc9ad638e922089dc4bb3dc2cdb9af9296875472b0b5609b4ef70e01bd7c914a16a7890a7b6a2f51f276039d7f1482996595c1d384ca6dbcbf16df20ff5f37727d2216127f0c41d3908f2b6eb38029b9279322a4821c97590bac264bbfe044d3617810dc49298a46b5278d6b305b295c3be9591a79f81ecc585223896f1b47ef112c492340f48d0725637f999c3cf4cbcca7105c7be26b2e1c2b84dc0809c0e695ac9fd12c4b4bc086dabd2fba577dad0573183da435cf55605e4eb1e84087d387dd3853848205b8d224f2c055151844b339665cc59da80999358ee259833ceb65d0d6a7ad94cf0934e9479137e8f9f1e6c95c8bc6eb6da4442c9827dd7e84ee9e46337ff0c99e7640bd1301e5b0f8536802f1a33b3ba6878751ad2a79934b03b8912c8ab56bc10c5001721a4dc450f81211893261d71a3c4c4175c2ed2da4bf1ece5643247e9ecb5d337aec4910b696c426e941fe226327a051a582101e9242e5e13a89e6086ce8cf769811bbae3192a93c57e7d33a19d31038d4587ce5b1035ed91fe3ed37aade59cecf1985051fca19d15fcfd8527acc0e82ebccb5f1cf9d00",
+          "decimal": 47.4627429179435
+        }
+      },
+      "conditional_minus_global_mean": {
+        "A": {
+          "numerator_hex": "0x4a2539349ab697de513",
+          "denominator_hex": "0x5e4c76f967d923440",
+          "decimal": 201.2883039821728
+        },
+        "B": {
+          "numerator_hex": "0xb917cb21f8b7c7b23979f2ac2145170beee64d10acfee0587fbc7b1761a1783a2b55b1e6c47a23bd1469364e4b8a4f6238e0b924d0d9b04d052a138cb9f63ea27354ab19ee3181920e03652f734b6225dec1cda5cddfceac521b90e502dbd020a25cad8437d13ae3fda9300c85048bc596e6aadcd3336f72891a58ce9c9a27fcc45fd5f3e044fe3dc6501f70d9adf84fcace4df5ef13d615aa4d5a43a591d1bea60502be4809dceea1d7cd7ca5f0cb907db72fa211376818e43d98a10dc2149ba0e552e62061f234f5a2bea21d48a5a16904a1e72a1612a7976fc9fc39239bfcf12551375d44df0f3484881a3cbc13ef97a87af41ccbee957d8ffe0e4b5afee20a447e2272bf6dc3cec6030b8d894c48b337cf450710c8b7a55116c88f2b5ec29d69690ea608f01deb0cfc9fe0d6178b4f21e29a2f23212c6d791daee74d3c7f3f3d7e0dcd0d7c15c710503c2dd2eca4ea25c6b7070a37aae19cffdbb982d6ddae1ae7b11b63ddb2ad2c230677635b491b96411c36ce49a5d2c75ec7979a9f8d49af163a5f22f4bef0e8151d4368c3a0b42a6f61cc0103369d5f5db2b8c05c9ace096b0c19ebf9915201fd1ac00114caa9816f2b0ae3ade04ecd3847ab991c22081e3a3f48bc9ba76b1ea91992f7dc22982e4b28d8e8486a10bf29c8c0df3b02066cf5f338b6a8aefde8e64bf115fa833340e48ca1944bc0aa271137864e82b0a180d6e36b2bf5808dd65daf2786eda3583986f088bb1342e3f34aeae8e1c5bbb483db83e7a93652a92a0dfc36e8d23c8f3d998a9ec261f40c55ffc155f1794e8dbe4e007627fa07c52685df8d2890d4694a1f3efebf55aed43cc1cb6846d59a6de8e221c9b74175c3c2324986fb83d3166974382eff9bf476681d8c42181c1ffc9b3e71df737392f921b43460cca6e50a2136b0bc6253151f9a60a9d292147aaf251344661a83fa957fa4d4c9b102657597141f05d20d0ab63a3d8721348d2de7e9cd1c7dfc0d026e9878791670e899ab9aca16fd05d8364f2c7f96830b82369a72148338a30da9760f50cbbc3b3d7e81b56ced5f296913888bcdb2e548735f18b28f5580c2aff0a8f04981d8c34abe14688fa9f6e5f3088ac3d8300da4a300842cd7b72824530e7181d8b369a0ffebebac6888eeb074d6c1ddcd3f80b6dab7aac7312582f7340d295737b9302b2f75534458031a164c25022884f6dfb290d401f66e85c7b8370bbef8207feb",
+          "denominator_hex": "0x33b0e4a1c5dd488174589c3a13fcdf098f332eee435e998ce95c4c089dc07c8386d457eba2e6e63aa82356972fcef724a63ea60e9cb4078c621965da83e197dfea007d21ad1baff5c7ecb38b2bf2a30050b37c7827b0e9c2764a8adb64a9ce6c2c4316ffc8657c05fcc477e66623d75d5ff27da58a7a0899d3927ca2ac317b6925b92c308dfc98a48a44682ceb441183b209ba322cedc0d922169b7d8ad1a6eb70efbb9f880f43412d388653b2da30b9944d32efa106dd43df62f6f70d5872a1fa6499be505d25f429cfa50a53267cdb4461481c638e783b24c872766863a5e62edfa2154fe2c1a8377d656c9dab7fec72a35a8c717a47389c1cd8194b6ef6257e86d202ae70de02f2341b9576869eb751a3dafbf059d083ba3eff388596496de8ed66f98e36979846159c37cd1e3df7e95e9856526224a283108650694418556c67acef434d33a88aa090c7e83958357b723378d66f156ceed3110111451cfd7e730556f694b645ad5e7a6845ee0cb1f5f272715889b9fa49f5cb0a37bd82b6f62db7f3598ee334d4b183bee829a1ab00b4c2b7567506e098fe1ac7de31a325730f936dd7a02bd096e4b46fff1a90017b3328dd7de342c575f1d1031833a5d89029e65543c455f47fb12c9fa8dcde7b72c2e138f3c7c34656ab7b8315b03374e4124220af906c68abe5333cb305aa97ded7df2eb8776158525942071d67b1ef2b847187f93fce8d83e27beb65ca13e511309a2e4b409b6714537ef3b61117a020deab7d45da98ab4ad00f516398f57f203000ca4dc0bf1f40d59122cf3ee1e285bb9127af5ca955272c27a1881ef9492c259b402558f02d346c260c47ca6b6bf7198e9ed544061489781bd61e97e4419e8c7a7fd4a7e832294f867afbc75bb4c81d0208f850a93593cba3cebc8619ac40b9e0f2222a162d1637e57df741bc1aa3dc8a537ffb556bfc3c3e1ff17fa513e98334fe9f000cdde35a20fc181dfeacbd0ba357192fa56f32aab541bc055a0e93ba25d63edb9a9ac0ce65771beec1ec7d9f7bf9d8d825ea3c2287f6d8cd5a12883492dfbcd114b955d7aa90cf7b5aaac30fa48e056d209bdfa7cde57e684883bb914d3c12da8417b074aabb05726ee7fe9625bd0a377d9e9b92cfd246fafca5921bac25f32a997b11cb949fe4fe83aa103dd915ce803c7683558d25a8c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 57.29213486721229
+        }
+      },
+      "observed_minus_conditional_mean": {
+        "A": {
+          "numerator_hex": "-0x5f0e78625b148d5",
+          "denominator_hex": "0x18f6db75a67a9c0",
+          "decimal": -3.8077004767502824
+        },
+        "B": {
+          "numerator_hex": "0x1323a555ad3e59a996c294653be2c8051f5045c24061a26a8bc2af5206bb7b2e48c3934edc3631979cb3416f876eb0b22d659be6160330dbdb391baa4dcae5c1fcd70c9d61150ed19547002f34ef2a2c0571346238556a0bf739c6200ab3864d46a4dee9dfc9",
+          "denominator_hex": "0x211f88d986ca9ad28220ce837c75f81c8a2218db8ab91e4ca24ef41f7828009dc8f0d4dcf579e6ffc66a201ae19d796cfbc78fa1cc9e8796c04173540f5f225aa6e6032b1ab3c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 9.245122214844212
+        }
+      },
+      "observed_over_exact_conditional_mean": {
+        "A": 0.9880188539452056,
+        "B": 1.0882548136212353
+      },
+      "all_ten_controls": [
+        {
+          "trial": 0,
+          "equal_pair_events_A": 299,
+          "distinct_repeating_types_B": 105,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 265,
+          "cross_record_pair_events": 34
+        },
+        {
+          "trial": 1,
+          "equal_pair_events_A": 286,
+          "distinct_repeating_types_B": 95,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 260,
+          "cross_record_pair_events": 26
+        },
+        {
+          "trial": 2,
+          "equal_pair_events_A": 326,
+          "distinct_repeating_types_B": 107,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 286,
+          "cross_record_pair_events": 40
+        },
+        {
+          "trial": 3,
+          "equal_pair_events_A": 312,
+          "distinct_repeating_types_B": 109,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 264,
+          "cross_record_pair_events": 48
+        },
+        {
+          "trial": 4,
+          "equal_pair_events_A": 307,
+          "distinct_repeating_types_B": 103,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 265,
+          "cross_record_pair_events": 42
+        },
+        {
+          "trial": 5,
+          "equal_pair_events_A": 309,
+          "distinct_repeating_types_B": 101,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 270,
+          "cross_record_pair_events": 39
+        },
+        {
+          "trial": 6,
+          "equal_pair_events_A": 339,
+          "distinct_repeating_types_B": 93,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 298,
+          "cross_record_pair_events": 41
+        },
+        {
+          "trial": 7,
+          "equal_pair_events_A": 327,
+          "distinct_repeating_types_B": 112,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 297,
+          "cross_record_pair_events": 30
+        },
+        {
+          "trial": 8,
+          "equal_pair_events_A": 317,
+          "distinct_repeating_types_B": 104,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 276,
+          "cross_record_pair_events": 41
+        },
+        {
+          "trial": 9,
+          "equal_pair_events_A": 330,
+          "distinct_repeating_types_B": 110,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 292,
+          "cross_record_pair_events": 38
+        }
+      ],
+      "ten_control_means": {
+        "A": {
+          "numerator_hex": "0x628",
+          "denominator_hex": "0x5",
+          "decimal": 315.2
+        },
+        "B": {
+          "numerator_hex": "0x40f",
+          "denominator_hex": "0xa",
+          "decimal": 103.9
+        }
+      },
+      "observed_over_ten_control_mean": {
+        "A": 0.9961928934010152,
+        "B": 1.09720885466795
+      }
+    },
+    {
+      "ring_policy": "exclude_single_character_tokens",
+      "f66r_column_unit": "L",
+      "flat_corpus_sha256": "2923af51caa2b506238d11d34ef30b843bf102548124aa5519951ca3d638d51d",
+      "record_corpus_sha256": "b3c7f22f1ba9e3d1f88800d4491a63349fd84ff167bc65352cb47fa3a89a5366",
+      "tokens": 37730,
+      "distinct_types": 8127,
+      "records_including_empty": 5214,
+      "nonempty_records": 5144,
+      "type_record_incidence": 36395,
+      "observed": {
+        "equal_pair_events_A": 315,
+        "distinct_repeating_types_B": 115,
+        "asterisk_bearing_pair_events": 0,
+        "asterisk_bearing_repeating_types": 0
+      },
+      "observed_boundary_diagnostics": {
+        "all_adjacent_edges": 37729,
+        "cross_record_joining_edges": 5143,
+        "within_record_pair_events": 305,
+        "cross_record_pair_events": 10,
+        "within_record_repeating_types": 113,
+        "cross_record_repeating_types": 7,
+        "types_repeating_in_both_scopes": 5,
+        "within_record_pre_manual_index_gap_edges": 13,
+        "equal_pair_events_on_index_gap_edges": 1
+      },
+      "forced_repeating_types_under_conditional_null": 2,
+      "exact_conditional_null_means": {
+        "A": {
+          "numerator_hex": "0x1f16ce822633f2815",
+          "denominator_hex": "0x18f6db75a67a9c0",
+          "decimal": 318.80770047675026
+        },
+        "B": {
+          "numerator_hex": "0xdaef0245cb91df1f708937ebd2ad1f480184cce7b4b0e75c42d4cb5028e4093fcb7f66a54825fab6c5678551ae2d280d2444bc74d8b03dafaa9d5141e0b0e12992be2a286ed6e52e6ab8ffd0cb10d5d3fa8ecb9dc7aa95f408c639dff54c79b2b95b21162037",
+          "denominator_hex": "0x211f88d986ca9ad28220ce837c75f81c8a2218db8ab91e4ca24ef41f7828009dc8f0d4dcf579e6ffc66a201ae19d796cfbc78fa1cc9e8796c04173540f5f225aa6e6032b1ab3c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 105.75487778515578
+        }
+      },
+      "exact_A_scope_contributions": {
+        "within_record": {
+          "numerator_hex": "0xd719562c083499",
+          "denominator_hex": "0xc37de7450190",
+          "decimal": 281.67592580474536
+        },
+        "cross_record": {
+          "numerator_hex": "0x3d8e75d272a2eb709",
+          "denominator_hex": "0x1a86492d00e245c0",
+          "decimal": 37.131774672004894
+        }
+      },
+      "exact_global_null_means": {
+        "A": {
+          "numerator_hex": "0x218b77",
+          "denominator_hex": "0x49b1",
+          "decimal": 116.53278558176517
+        },
+        "B": {
+          "numerator_hex": "0x8fb2ce4b00c41e248de770c86b5bd10e020d0a5843c614576fd7e0d619973623ec585486c5777273e29c087cbaccde1f2ce3f47d8d2f508754228c17d74db9b7adb3ba44c01b9bcf5db9838aa265fc6b82dfd99bb7b0e1989fa8480d9a7ecba97b674c4a2635a4e4de69319ba3879a9eee32df6da72b2d7a0d08f617248596f30823e2ae9dc3a5ab3407cde65ad5e0fb203324f6d056c93c43c229d1bc8e6a57a454870a957805c4e34a8ff6919fe85a09f83536a1bdfb2077faf81ae1aba1615cfd2982784d4b5b0f77582e3b7e483ff073756ce0fd8d40216f758953d2816ae87edd6d79badacb61ae0843aa460a28eabc44824a9e9d6cb7133bb243357ce5207ec990e44354f958daffcc74cda5faa69b825716621e349531c229f2ccd3d80ce464db65b41fd1d0a6ed81f29f79e10ca55a6dfb4fa2741ffb355b66e94b3dce28f0f02fe02cc43a2f48e11045613238d2c8b1ddf22cf9f07c2bef8aa4fa02d02247f32d51a4880a704f2d051d33e92c94674b6604b0d79b6a571e7068b32302e10721cc389ff62784f7c39ba852df43f8561d0c4956e8a466b720b94ba875d1f377fa0cecfbcd6e5a096c0516a1473143cf9c8a849ab6698087e85b0d19cfedf7b7e7dd7c50b1125a139925c1538b42c79a354850a9f834e0476c1e88e242fafb849e6a8de5694271b28786d508f1305b63fbaa77eb2b131396752d014d7a41ead077faf607a2ba71df6ceb653a19ad6b9618d390e8885f5251a699a306e09f82851cd2aab96394beb071a577bbb49b860131f36507379e8fcca1f28accfe150b98744784cec4bd2d6eee9c32d39c28da4232723033a6641042dd22577515081f518e915f4a26602c3bc5f9b09201885be1c1ec7a6c328ddb96fbef73afdd758dcc595d43ef113567143e9fee5186d49d3d6ffe9732c51ea4667db765aaa178de303b355c6523249309bfa25b44ff034fa6a128ebfbc4083d2a5988b72d099fc04206ec6d2ee7561aaebf185b8bff50ee3b1a0259eb9fdd240bda317966049f1d7b80cdaf7ecc78bdf9f8b9cd34f74254b72ab780edcdb056ae0023e7fce47b2480595bd036bb201f11872d9f61201157664d0bf",
+          "denominator_hex": "0x3067899c53d1433e29e009330e6996144dbbee1b7cedc5f9502d0041cb5895e98a2b5d61560455d8510a37e42f4bd1f76cfd932e4fe2a02ff507ccd34ed1bbba3f88fa68a0ad2f657802275ec00a27e4519be2781c9208fce2ba3cd41cf4c04bd3e0d61c05c647b5d1d26c1f8b1f5477b90df4009c6528abd70de5cc35bd62983aba1b5029d58bf25ec34290620b798c70e3ed22d7089c397b29f287c72bd04b84be3702b9cd4b3e9e0ce8dcd26bf228dd8aa7c821417d0ad648b3b9a678311736b4fe8ebcb661ffb7f070c286a1c67003e6388ae323f1d6add93377089a3989fdd834fc9f86a059e584aa10545e567644c78f682c8cba16ebcd58567963bcf8992cb5b0e799b7e4eb7fa4c2975ecb274c3b9c89c53eaa7b84f5a86edc867659a34fa51a5d53308e907dd221c05139424757b3f8ecc0e3f5c894a852d0a3289a2231f9392a38080c221548f1e73ed54400e6d2b191b611abd802070d0fb1d93e375645e14f83835bec6533be02f870e7f2bc2a8be59e767ae082888dd64bd2ef7432b980352e03a9c2b911c47a8de2a64943e700ecbf9f0bd7bbc69cba5d889b6a4bd7f29f25caa967cd08a286e8cd4b93ca45917446ca22e9bcfabf03eed910b40de0e714c2abcb8947f7ddaf823ad9b12141eb90029287e149ef20efe075705c8c1dc59ebc46de6ee3c45cd9acfee9dbfcaea9a51e1627e39f643bd28a2fa6b37bdaba6e2ce47c93ac933f3baef180dbf1f95986a381b9e3ed8b62576c7175a09ffb978c043ba1ec0690ec6ce2636b935da746df9e1dd5876ad7bfaf11027e17452fff3fccc11d1c8a947a210707958bbaaa2ea3f995e8b8259508503e1d9c90cbd776244d0363bccf5ca6aa1beb6145a221076b59a8c1ac48d5ad1f83a4e150535f8e55e35e4236fbdacadd84ee2689b5a8539727904c4eb563b59f7945520277c6ce9341baf3e17fab7e272a2e5698d9ce6634306d78ece7ac1a10b3e784569b931ace0c48018dec9f6290668fcf0d9fbd92d2137120814993fb63941a6140f63775e138549a01bc85fb11082115275ea764446d389deddad7e7faab060feb97c990e6b53b758e1db8a76f8f3d17a8f093f0a0",
+          "decimal": 47.49926240666266
+        }
+      },
+      "conditional_minus_global_mean": {
+        "A": {
+          "numerator_hex": "0x8a138ac3a2c05b2d3",
+          "denominator_hex": "0xaec000378d5a440",
+          "decimal": 202.2749148949851
+        },
+        "B": {
+          "numerator_hex": "0xd1d95c81c2214e9ef7a0295834936a139217458768d7c4b422bdc306cd8f3a49c0e1b5c318309f95cd70c2dde79cbe8a0c6b9630e3365dd51aa5d9856f85c0156bc47a9309308b83cfb1761e4a3e1f09fb14840b05bd19a417608e25039827c87b410b6b919efc69c21a53bd2b73462890c211b28be9ec9fcc1312b78bce287146a32f34e42e5e51c74c752c4dec8e65d4d79075d71c00fb72a34938e35faf9cf86ad3b3e6fbeab33c1543ce9c049fed51d0dca9c6bfc484cad5fa820cb2ef83eef3507978203f46f890e20e0f144ce01d69e30f7a1d36eae96d8ecbfe384af049a1aa18536d4cdc531aae85f75ac1b66a8edd2ae9e219d125f538fd4ecb787345914ca8b186275da38a0a0fdff30ef99531e054eb51dce9f8789c12be0191b4275e677e448e09ab63ae6c39d4547c57020f6a38ae68766fcfe59fe163afe5819f14e4b34439749a4ae7ea87162fb46dc18303357b9df9c0d8a55153977b256356d5cdb7e20257bb7883dec79eda3693e1b95fbafcac41cc563748ea37068bc9e8faf45dc56a30579cf72abb5b7cb748001fc8e7a93642610f87aeb6d071093d49b97431de9bc6d732295fdcb410abd88a7ef859c35ecd13ea69f0e00fe0d35a3ad37c0fde56cac8cd3a5a7c7d6e5d82a31cd15680658103cec151b55a0383b9afb01987954bfa35f93e8cc61d646143434fa1c60ac1a511153408948c1ff067d0be2ca0838773dc5ab9d30ddd428ff051ad82081989cffe14d0d3dac65559edd21736350567a3d2599ed7dd376e5032198199525da0b0029bd0807cc5d39c13976f8aa870d74791ede33ced50b583b49c3cdce9192c275720581ba193f6c4fb65db7ffcf9c32b441db59dd7bac7729c69e61258e8e705c0941a74d3eb0e8e801f423c1a6096acf9d0be4a9277c29a17e5adc4874586d081eb7afcbb2654bd3c0fa843979bf59305e84db83cf8401cbc1297002770bf9cfeb1823a857788c1afe135d9dcef31a10bcfdb82c6b0b1cffd9d4041f55cdccbc8e7b63c4ce9248d18ee2775b6c39769e546b8d63734fe9072cd36eb1e885aa3228e13751ccbac3749e073c4987c4d1cb06dbc81fec4d585e30e488474f7dd3d5e74b28afdf372c21e081173f4b05619ef68fe44a50e41a2a68c33c57f2acb1b45fce12e39f91abe29d1c6fea0c6b328bbbc23cff6564a1cc76f76f7dc485abd7115dc7eee5f625e608c5d708cde13b49ac1b4a08dd3124587",
+          "denominator_hex": "0x39a2a8e3662da8479e156715cd24c458d7e242114fc0af0fbee17147dd9af756b129cd5e3b7a8fe3f253f16934fafd3c5cc9349c5b06db56f5c72faac3f9a42dc501cc8ea8b63fb5ef871132526a5e5fed8c1915cc7891d7a24a8de575b65c19713a03219c76999d316a7470fe7e8129fc4de9247138c0efaa83eaca45ed088998eb3a7917555d8a5bb5ab3fb3ce03b66e43768daba13bdcfc55e66cd8d25cdb0b93bd1aba6dfa258cee05faea49ae201f75cbd240940e4af22f35955128373dedd45177ac1be4c25bf3d3b555c0a35ef079ba6de2b8c35ad626cbcefd664c10e6c9335a764a439f5cb394884d78a47f082c03f68ede30eafb043e095ff6d229865df9cbb4545b31d48befde8a12af319673d4554bcdc4fb3a12374b878e8af2334f4d7142d01f17f3a631f57fda016e51112873a39720349a842541f336eb8d808c934a3816256c9d75f5f04fccd6de19c496355e0e681b85be6cff9e4f75987f0618fb098328e51ba304af18413affe3a957a36438cd9652a6829ada9e09a6c904eb6573958ff81e98d57d7cc062b0addc3aa2d326ddbee797cd9529d17d1021b753fca427b06a0c4921e379ecf7a9a4ee8f6cc49d53db7cfac24e69cb53cf13d1aa3d917cce0db8e2071a70e4be5f8753b50cab81e914f13763a5bb21a8cfe412d160954955b1b78a1056b5d5aac095d95a1098e6245e85344a446f3b5b27a9e5ba3eafbb090b1345ecc87c4b28212b1593d159b21a83589dd41581d2bce87f31d2c65ecf8331385aedd4b4a8fb49d913580e83cc190b5223897f8294ffae96281f5e0e7f93b35e8593c7725f07932c1c037823c9d2e96512eed31d9d1eb24dd76f8d39e4d31b87769c601e747820a042254705b32b6b341f74ea4517ee404e16fac6e489052a5bf64c219a6705ba6adc0338c4166a382b938fc172060dc47bf6dc99cde1c2ae1c4f00fa1c3de45540b3c60b470af404fc21c03dadc6bad07635a0612941794adfdfa5cc012745e9e99fd243c61e28efeeb9be7517b524ccc3ab1b85411574e7cbcf37ad82411e647b84a437ff042b3943f23719ee28f5e84f905a94d6cd29514c64a358bce5cc6e8aa16122c4a39700be90b379e66f0c536fa9b1f26139a0ac67489a26792cd829429376c6900c390d55bc4b90a446498d6aa091be881a07041ab317639fc13127c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 58.25561537849313
+        }
+      },
+      "observed_minus_conditional_mean": {
+        "A": {
+          "numerator_hex": "-0x5f0e78625b148d5",
+          "denominator_hex": "0x18f6db75a67a9c0",
+          "decimal": -3.8077004767502824
+        },
+        "B": {
+          "numerator_hex": "0x1323a555ad3e59a996c294653be2c8051f5045c24061a26a8bc2af5206bb7b2e48c3934edc3631979cb3416f876eb0b22d659be6160330dbdb391baa4dcae5c1fcd70c9d61150ed19547002f34ef2a2c0571346238556a0bf739c6200ab3864d46a4dee9dfc9",
+          "denominator_hex": "0x211f88d986ca9ad28220ce837c75f81c8a2218db8ab91e4ca24ef41f7828009dc8f0d4dcf579e6ffc66a201ae19d796cfbc78fa1cc9e8796c04173540f5f225aa6e6032b1ab3c00000000000000000000000000000000000000000000000000000000000000",
+          "decimal": 9.245122214844212
+        }
+      },
+      "observed_over_exact_conditional_mean": {
+        "A": 0.9880564350514238,
+        "B": 1.0874202912287976
+      },
+      "all_ten_controls": [
+        {
+          "trial": 0,
+          "equal_pair_events_A": 321,
+          "distinct_repeating_types_B": 94,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 277,
+          "cross_record_pair_events": 44
+        },
+        {
+          "trial": 1,
+          "equal_pair_events_A": 318,
+          "distinct_repeating_types_B": 102,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 279,
+          "cross_record_pair_events": 39
+        },
+        {
+          "trial": 2,
+          "equal_pair_events_A": 340,
+          "distinct_repeating_types_B": 119,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 302,
+          "cross_record_pair_events": 38
+        },
+        {
+          "trial": 3,
+          "equal_pair_events_A": 326,
+          "distinct_repeating_types_B": 114,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 291,
+          "cross_record_pair_events": 35
+        },
+        {
+          "trial": 4,
+          "equal_pair_events_A": 325,
+          "distinct_repeating_types_B": 110,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 292,
+          "cross_record_pair_events": 33
+        },
+        {
+          "trial": 5,
+          "equal_pair_events_A": 308,
+          "distinct_repeating_types_B": 94,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 273,
+          "cross_record_pair_events": 35
+        },
+        {
+          "trial": 6,
+          "equal_pair_events_A": 337,
+          "distinct_repeating_types_B": 110,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 290,
+          "cross_record_pair_events": 47
+        },
+        {
+          "trial": 7,
+          "equal_pair_events_A": 322,
+          "distinct_repeating_types_B": 106,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 289,
+          "cross_record_pair_events": 33
+        },
+        {
+          "trial": 8,
+          "equal_pair_events_A": 317,
+          "distinct_repeating_types_B": 103,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 279,
+          "cross_record_pair_events": 38
+        },
+        {
+          "trial": 9,
+          "equal_pair_events_A": 350,
+          "distinct_repeating_types_B": 107,
+          "asterisk_bearing_pair_events": 0,
+          "asterisk_bearing_repeating_types": 0,
+          "within_record_pair_events": 297,
+          "cross_record_pair_events": 53
+        }
+      ],
+      "ten_control_means": {
+        "A": {
+          "numerator_hex": "0x660",
+          "denominator_hex": "0x5",
+          "decimal": 326.4
+        },
+        "B": {
+          "numerator_hex": "0x423",
+          "denominator_hex": "0xa",
+          "decimal": 105.9
+        }
+      },
+      "observed_over_ten_control_mean": {
+        "A": 0.9650735294117647,
+        "B": 1.0859301227573182
+      }
+    }
+  ],
+  "limits": "Matched exposed approximate inputs/edges; no causal attribution, verified physical-line identity, original-author replication, calibrated tail, language or decipherment"
+}
