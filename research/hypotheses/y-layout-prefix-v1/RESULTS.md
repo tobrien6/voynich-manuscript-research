@@ -150,6 +150,10 @@ The new hash identifies the corrected replay producer. The registered plan,
 partition, fitting-time declaration, source/input/vocabulary pins, lookup cells,
 effects and decision remain unchanged; the complete report replays.
 
+[The literal-form accounting follow-up](FORM_ACCOUNTING.md) reproduces every
+gain with exact unit-weighted frequency contributions, retaining losses,
+neutral terms and sparse denominators without changing this decision.
+
 Next, preregister matched controls for deleting other prefixes and conditioning
 on original form frequency/length. Review the relevant first-slot glyph regions
 independently against images. Any stronger candidate test needs new exposure-valid

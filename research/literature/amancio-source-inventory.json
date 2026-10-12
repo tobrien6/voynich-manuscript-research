@@ -1,0 +1,81 @@
+{
+  "record_version": 1,
+  "paper_id": "L003",
+  "preprint_id": "1303.0347v1",
+  "abstract_url": "https://arxiv.org/abs/1303.0347v1",
+  "source_url": "https://arxiv.org/src/1303.0347v1",
+  "submitted_at_utc": "2013-03-02T03:57:15Z",
+  "inspected_on": "2026-10-12",
+  "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+  "raw_bundle_redistributed": false,
+  "archive_bytes": 1277841,
+  "archive_sha256": "96e950e110d693a0ebf813b82071cb016777ef825876f262947c34da6338d531",
+  "members": [
+    {
+      "name": "compnat.pdf",
+      "bytes": 45491,
+      "sha256": "1b4234329e68fa23126c8dbdf56be710135789d7fbf151390fb8a22d0641fca4",
+      "role": "figure_pdf"
+    },
+    {
+      "name": "fig-ilustration.pdf",
+      "bytes": 194955,
+      "sha256": "4055e439734a2d69c7b0d4433b6b9a03d7133ecac36259713da08195bb93c351",
+      "role": "figure_pdf"
+    },
+    {
+      "name": "keywords.pdf",
+      "bytes": 171540,
+      "sha256": "1f8c34a3c24bd756f5a07c877c1399333c0bd8af0b5ec0bab5f1ef2a4055857f",
+      "role": "figure_pdf"
+    },
+    {
+      "name": "medias.pdf",
+      "bytes": 397705,
+      "sha256": "715b02ae0551149a92577905df738e1e9109ad366f62b955e2e47e831eb84d8d",
+      "role": "figure_pdf"
+    },
+    {
+      "name": "motivos3ex.pdf",
+      "bytes": 484600,
+      "sha256": "da93f61a5aecaadf99315b58d22eb06a2239a3f8debb51d8f30a46ace620b9a6",
+      "role": "figure_pdf"
+    },
+    {
+      "name": "voynich-preSubmission_DR.bbl",
+      "bytes": 11228,
+      "sha256": "53316906a57788643b1e7e99f485a579c1f9c03f70e292160f3d2d7effe6ee13",
+      "role": "bibliography_bbl"
+    },
+    {
+      "name": "voynich-preSubmission_DR.tex",
+      "bytes": 86037,
+      "sha256": "6182f05d8b679e94ef9702dd617864b5effdd6e5928e76e62377eac18bf8f52f",
+      "role": "article_tex"
+    }
+  ],
+  "pdf_attachment_observations": {
+    "tool": "pdfdetach (Poppler)",
+    "observed_tool_version": "24.04.0",
+    "embedded_files_by_member": {
+      "compnat.pdf": 0,
+      "fig-ilustration.pdf": 0,
+      "keywords.pdf": 0,
+      "medias.pdf": 0,
+      "motivos3ex.pdf": 0
+    }
+  },
+  "text_observations": [
+    {
+      "member": "voynich-preSubmission_DR.tex",
+      "lines": "921-933",
+      "observation": "The Database block and its 37,762-token statement are commented out with leading percent marks"
+    },
+    {
+      "member": "voynich-preSubmission_DR.tex",
+      "observation": "No transcription-selection or manual-parsing section was found in the inspected source"
+    }
+  ],
+  "availability_scope": "These seven archive members and their PDF attachments; no separate processed corpus or statistical analysis implementation found here",
+  "limits": "This inventory is not an exhaustive search or proof that authors never released data; source authoring assets do not establish processed input identity"
+}
