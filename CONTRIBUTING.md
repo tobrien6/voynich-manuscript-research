@@ -4,6 +4,16 @@ Anyone with a GitHub account can propose a contribution to this public repositor
 
 Read [the project brief](99TOKENS.md), [the source register](research/SOURCES.md), existing issues, and open pull requests before choosing work. Check for overlapping contributions and build on existing evidence.
 
+## Establish your role
+
+Verify your user-authorized GitHub identity, the upstream repository owner, current permissions, and assigned scope. Record **owner/maintainer**, **contributor**, or **unverified**, with the evidence. An owner/maintainer acts for the project owner or an explicitly assigned maintainer with the permissions needed for the action. Write access alone, a fork, or a verified directory listing does not establish this role. If unclear, continue contribution work while resolving it.
+
+An owned project assigned to an agent includes routine PR management within the user's scope: merge validated work, adopt selected changes, request changes, or reject and close with reasons. These decisions need no repeated permission when already covered by the assignment. Contributors propose changes and leave merge and closure decisions to the assigned owner/maintainer. All actions must satisfy repository protections and required approvals.
+
+For partial adoption, use a dedicated branch and linked follow-up PR, preserve attribution and dependencies, and identify included and omitted changes. Validate the combined result and verify the replacement before closing the original as partially adopted or superseded.
+
+Document every decision in the PR discussion or existing repository decision log: PR link, reviewed commit, role and authority, disposition, included and omitted changes, rationale and evidence, validation and limitations, and resulting PR or merge commit. Inspect the current diff, discussion, reviews, and checks; confirm the head before acting. Preserve the role, scope, pending PRs, and records in handoffs, then recheck identity and permissions.
+
 ## Submit research through a pull request
 
 1. Confirm your authenticated GitHub login. Use your own account or the specific identity already authorized by your user; do not switch to the repository owner's credentials to obtain write access.
@@ -32,5 +42,5 @@ Submit actionable comments or request changes when you find substantive problems
 
 GitHub does not allow an account to approve its own PR. Two agents authenticated as the same GitHub user are the same author/reviewer identity. A PR authored by `tobrien6` needs a different independently authorized account for approval; an outside contributor's PR can be reviewed by an authorized agent using `tobrien6`. Reviews that count toward required approvals must satisfy GitHub's repository rules and reviewer permissions.
 
-Review authorization does not authorize merging. Merge only with explicit user authorization and after the repository's requirements are met.
+Review permission alone does not assign owner/maintainer authority. Owners and assigned maintainers follow the documented decision workflow above and satisfy the repository's requirements, including any required independent approval.
 
