@@ -149,6 +149,8 @@ def verify_observations(record, report, report_bytes):
     require([item['yale_label'] for item in record['records']] ==
             [entry['yale_label'] for entry in report['entries']],
             'observations omit, duplicate or change terminal views')
+    anchor_review = record.get('terminal_native_locus_review_performed', False)
+    require(type(anchor_review) is bool, 'native-locus review flag must be boolean')
     for item, entry in zip(record['records'], report['entries']):
         require(item['source_page_id'] == entry['source_page_id'] and
                 item['image_metadata'] == entry['image'], 'observation image/page metadata differ')
@@ -182,6 +184,66 @@ def verify_observations(record, report, report_bytes):
                 require(image['url'] == target['image_service_url'] + '/' +
                         ','.join(map(str, region)) + '/full/0/default.jpg',
                         'region URL does not match its coordinates and image service')
+        anchor = item.get('native_locus_review_anchor')
+        require((anchor is not None) == (anchor_review and entry['source_page_id'] == 'f116v'),
+                'native-locus review must retain exactly the terminal verso anchor')
+        if anchor is not None:
+            verify_native_anchor(anchor, entry, report['sources'], images)
+
+
+def verify_native_anchor(anchor, entry, sources, images):
+    """Check the provisional declaration and source contexts, never glyph identity."""
+    require(anchor.get('association_status') == 'provisional' and
+            anchor.get('usable_as_verified_corpus_join') is False and
+            anchor.get('glyph_reading_verified') is False and
+            anchor.get('glyph_correction_proposed') is False and
+            anchor.get('source_record_is_not_physical_row_number') is True,
+            'terminal anchor must retain provisional association and unverified reading scope')
+    require(re.fullmatch('[0-9a-f]{40}', anchor.get('plan_commit', '')) is not None,
+            'missing committed native-anchor plan identity')
+    require(anchor.get('native_locus_key') == 'f116v.1', 'changed terminal native-locus key')
+    catalog = {source['id']: source for source in sources}
+    expected, absent = [], []
+    for edition in entry['editions']:
+        if not edition['header_present']:
+            require(not edition['record_metadata'], 'absent page has native records')
+            absent.append(edition['source_id'])
+            continue
+        require(len(edition['record_metadata']) == len(edition['native_payload_records']) == 1,
+                'terminal native-anchor protocol requires a sole record')
+        metadata, payload = edition['record_metadata'][0], edition['native_payload_records'][0]
+        require(metadata['locus_identifier'] == payload['locus_identifier'] == 'f116v.1,@Lx' and
+                metadata['kind'] == 'Lx', 'terminal native-anchor subtype or identifier changed')
+        source = catalog[edition['source_id']]
+        expected.append({
+            'source_id': edition['source_id'], 'sha256': source['sha256'],
+            'alphabet': source['alphabet'], 'url': source['url'],
+            'locus_identifier': metadata['locus_identifier'],
+            'source_file_line': metadata['source_line_number'],
+            'kind': metadata['kind'], 'locator': metadata['locator'],
+            'native_payload_outside_free_comments': payload['native_payload_outside_free_comments'],
+            'free_comments_present': payload['free_comments_present'],
+        })
+    require(anchor.get('source_contexts') == expected and
+            anchor.get('absent_source_headers') == absent,
+            'native-anchor contexts or absent-edition headers differ from the pinned intake')
+    require(len(images) == 4 and anchor.get('review_region_image_indices') == [2, 3],
+            'native anchor requires the original overview and writing region plus two review windows')
+    upper, broad, narrow = [image.get('region_xywh_full_image_pixels') for image in images[1:]]
+    require(all(region is not None for region in (upper, broad, narrow)),
+            'native anchor requires native-pixel regions')
+    for outer, inner in ((upper, broad), (broad, narrow)):
+        x, y, width, height = outer
+        ix, iy, iw, ih = inner
+        require(x <= ix and y <= iy and ix + iw <= x + width and iy + ih <= y + height and
+                iw * ih < width * height, 'native review window is not a smaller contained region')
+    require(isinstance(anchor.get('physical_position_description'), str) and
+            anchor['physical_position_description'], 'missing physical-position description')
+    for field in ('direct_observations', 'association_basis', 'unresolved_readings'):
+        value = anchor.get(field)
+        require(isinstance(value, list) and value and
+                all(isinstance(text, str) and text for text in value),
+                'missing association evidence or unresolved reading limits')
 
 
 def main():

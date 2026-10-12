@@ -49,7 +49,8 @@ stored Lx record promises complete coverage of all writing on its image.
 ## Image observations
 
 [Observation records](terminal-folio-observations.json) bind this image pass to
-the intake report's byte hash. They retain the five inspected derivative hashes,
+the intake report's byte hash. They retain seven inspected derivative hashes
+(five from the layout intake and two from the native-locus follow-up),
 original dimensions, links and native-pixel region coordinates. Pixels stay
 local; the contribution publishes original observations and links. These are
 one observer's initial layout judgments, not new Voynich glyph readings.
@@ -80,6 +81,38 @@ is 2,570 × 3,787 pixels. The distinct pale surface is largely blank at the
 inspected scale, with creases and faint marks. No comparable upper four-row
 writing block is apparent. Its unnumbered label supplies no native page ID,
 material determination or `117` assignment.
+
+## Provisional native-locus review window
+
+The [follow-up plan](TERMINAL_ANCHOR_PLAN.md) was committed at
+`0d3cd3c0ffacc96a351d04b52f522519ec810df8` before fetching two additional
+derivatives. The same observer had already seen the full image, upper writing,
+source payload and publisher description. Selection uses the sole present Lx
+record on `f116v`, without a readability or agreement filter. This is a
+continuation of the exposed intake, not independent confirmation.
+
+The [context window](https://collections.library.yale.edu/iiif/2/1006277/600,450,650,210/full/0/default.jpg),
+650 × 210 native pixels, retains the left beginning of the lowest apparent
+upper row, some of the row above and adjoining writing. The
+[narrower window](https://collections.library.yale.edu/iiif/2/1006277/620,500,310,120/full/0/default.jpg),
+310 × 120 native pixels, shows two separated writing clusters with a curved
+upper stroke above the second. The windows were chosen from the already exposed
+upper-writing image before requesting their bytes. They include background and
+adjoining context; their edges are not exact glyph or token boxes.
+
+This position is a plausible association with native locus `f116v.1,@Lx`.
+The source ordinal `.1` is retained without converting it to a physical writing
+row number. The [observation record](terminal-folio-observations.json) keeps
+all three present source contexts: ZL3b line 8508 and both RF exports line 5613,
+each with its own alphabet and byte pin. IT2a and GC2a remain absent-header
+sources. Only ZL's record has a free comment. Equal payloads remain dependent
+source evidence, not independently verified glyph readings.
+
+The association remains **provisional** and unavailable as a verified corpus
+join. Neither source token, their exact boundary, nor the adjoining writing is
+adjudicated. No transcription correction, script identity, language, translation
+or historical alias is established. Independent review of both tokens and
+their boundary is the next test.
 
 ## Consequence for the unresolved legacy reference
 
@@ -120,3 +153,9 @@ views, a numbered flyleaf, changed byte binding and wrong region URLs. Automated
 checks validate metadata and the unverified scope, not the four-row judgment,
 numeral interpretation, physical losses, glyph readings or translation. Reopen
 the linked images for those observations.
+
+The native-anchor checks additionally retain every present source context and
+absent source header, the source ordinal and committed plan identity, and both
+contained native-pixel review windows. They reject altered or invented contexts,
+missing windows and verified/correction claims. They verify these declarations
+and coordinates, not the proposed visual association or either token's reading.

@@ -81,6 +81,30 @@
             1900,
             510
           ]
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006277/600,450,650,210/full/0/default.jpg",
+          "pixel_width": 650,
+          "pixel_height": 210,
+          "sha256": "8e98f7f2734ca0349af151bb732b33461cfbc0a0217c33f2f529e262b714719b",
+          "region_xywh_full_image_pixels": [
+            600,
+            450,
+            650,
+            210
+          ]
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006277/620,500,310,120/full/0/default.jpg",
+          "pixel_width": 310,
+          "pixel_height": 120,
+          "sha256": "be9b2ee003439e8a494542ed95dcd66be96a49463e45728c54453a685e0191ba",
+          "region_xywh_full_image_pixels": [
+            620,
+            500,
+            310,
+            120
+          ]
         }
       ],
       "observation_status": "single_observer",
@@ -93,7 +117,82 @@
         "The count is confined to the upper horizontal group, not every small or marginal mark on the page.",
         "Neither the native word pair nor its source-to-image region is glyph-adjudicated by this observation.",
         "A four-row group does not prove or refute the catalog's three-line presumed-key description, which may concern a subset. No key is validated."
-      ]
+      ],
+      "native_locus_review_anchor": {
+        "plan_commit": "0d3cd3c0ffacc96a351d04b52f522519ec810df8",
+        "selection_rule": "Sole present f116v Lx locus; no agreement or readability filter.",
+        "native_locus_key": "f116v.1",
+        "association_status": "provisional",
+        "usable_as_verified_corpus_join": false,
+        "glyph_reading_verified": false,
+        "glyph_correction_proposed": false,
+        "source_record_is_not_physical_row_number": true,
+        "review_region_image_indices": [
+          2,
+          3
+        ],
+        "physical_position_description": "Left beginning of the lowest of the four apparent rows in the upper writing group.",
+        "source_contexts": [
+          {
+            "source_id": "ZL3b",
+            "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+            "alphabet": "Eva-",
+            "url": "https://voynich.nu/data/ZL3b-n.txt",
+            "locus_identifier": "f116v.1,@Lx",
+            "source_file_line": 8508,
+            "kind": "Lx",
+            "locator": "@",
+            "native_payload_outside_free_comments": "oror.sheey",
+            "free_comments_present": true
+          },
+          {
+            "source_id": "RF1b-full",
+            "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+            "alphabet": "Eva-",
+            "url": "https://voynich.nu/data/RF1b-e.txt",
+            "locus_identifier": "f116v.1,@Lx",
+            "source_file_line": 5613,
+            "kind": "Lx",
+            "locator": "@",
+            "native_payload_outside_free_comments": "oror.sheey",
+            "free_comments_present": false
+          },
+          {
+            "source_id": "RF1b-basic",
+            "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+            "alphabet": "Eva-",
+            "url": "https://voynich.nu/data/RF1b-er.txt",
+            "locus_identifier": "f116v.1,@Lx",
+            "source_file_line": 5613,
+            "kind": "Lx",
+            "locator": "@",
+            "native_payload_outside_free_comments": "oror.sheey",
+            "free_comments_present": false
+          }
+        ],
+        "absent_source_headers": [
+          "IT2a",
+          "GC2a"
+        ],
+        "direct_observations": [
+          "Two separated writing clusters occupy the left beginning of the lowest apparent row; adjoining writing continues to their right.",
+          "The narrower window retains both clusters and a small amount of adjoining context. A curved upper stroke is visible above the second cluster.",
+          "The broader window retains part of the row above, colored marks above the first cluster, and the continuation of the lowest row."
+        ],
+        "association_basis": [
+          "The two clusters occur at the position described by the publisher for the native-script pair.",
+          "The accepted source intake contains exactly one present Lx record on this side in ZL3b and each RF export; no alternative present native locus is available on this page in those files.",
+          "This is a plausible position association from source-informed inspection, not a letter-by-letter match or independent replication."
+        ],
+        "unresolved_readings": [
+          "The source spelling oror.sheey, the glyph inventory, and the exact token boundary are not adjudicated by this review.",
+          "The source ordinal .1 is preserved and is not converted to a physical writing-row number.",
+          "Review windows include background and adjoining context; their edges are not verified glyph or token boxes.",
+          "Adjoining writing receives no transcription, language identification or translation.",
+          "All regions are from one already exposed image, inspected by the same observer; equal source payloads are not independent glyph evidence.",
+          "The legacy 117v alias remains unresolved and receives no evidence upgrade from this association."
+        ]
+      }
     },
     {
       "yale_label": "[Back flyleaf recto]",
@@ -147,5 +246,7 @@
     "The alias registry remains unresolved and the flyleaf stays unnumbered."
   ],
   "complementary_numbering_audit_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/57",
-  "accepted_numbering_context_merge": "65aa7fe"
+  "accepted_numbering_context_merge": "65aa7fe",
+  "terminal_native_locus_review_performed": true,
+  "native_locus_review_recorded_at_utc": "2026-10-12T04:27:46Z"
 }

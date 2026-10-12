@@ -39,6 +39,12 @@ ALIAS = {'source_scheme': 'yale_legacy_ms408_catalog', 'source_label': '117v',
          'status': 'unresolved', 'mapping_allowed': False, 'target': None}
 
 
+def pinned_observations():
+    raw = (ROOT / 'research/source-audit/terminal-folio-intake.json').read_bytes()
+    record = json.loads((ROOT / 'research/source-audit/terminal-folio-observations.json').read_text())
+    return json.loads(raw), raw, record
+
+
 class TerminalFolioTests(unittest.TestCase):
     def test_missing_header_empty_header_and_present_locus_are_distinct(self):
         missing = parse_ivtff(HEADER + '<f116r>\n')
@@ -111,10 +117,7 @@ class TerminalFolioTests(unittest.TestCase):
         self.assertTrue(all(not entry['header_present'] for entry in result['f117v_source_controls']))
 
     def test_observation_binding_and_region_metadata_do_not_authorize_an_alias(self):
-        report_path = ROOT / 'research/source-audit/terminal-folio-intake.json'
-        raw = report_path.read_bytes()
-        report = json.loads(raw)
-        observations = json.loads((ROOT / 'research/source-audit/terminal-folio-observations.json').read_text())
+        report, raw, observations = pinned_observations()
         verify_observations(observations, report, raw)
         for change in ('alias', 'new_reading', 'missing', 'page', 'binding', 'region'):
             altered = deepcopy(observations)
@@ -130,6 +133,81 @@ class TerminalFolioTests(unittest.TestCase):
                 altered['intake_report_sha256'] = '0' * 64
             else:
                 altered['records'][1]['inspected_images'][1]['url'] = 'https://example.test/wrong-region'
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_keeps_all_contexts_absent_headers_and_original_ordinal(self):
+        report, raw, observations = pinned_observations()
+        verify_observations(observations, report, raw)
+        anchor = observations['records'][1]['native_locus_review_anchor']
+        self.assertEqual(anchor['native_locus_key'], 'f116v.1')
+        self.assertEqual([source['source_id'] for source in anchor['source_contexts']],
+                         ['ZL3b', 'RF1b-full', 'RF1b-basic'])
+        self.assertEqual(anchor['absent_source_headers'], ['IT2a', 'GC2a'])
+        self.assertEqual([source['source_file_line'] for source in anchor['source_contexts']],
+                         [8508, 5613, 5613])
+        self.assertEqual([source['free_comments_present'] for source in anchor['source_contexts']],
+                         [True, False, False])
+        self.assertFalse(anchor['usable_as_verified_corpus_join'])
+
+    def test_native_anchor_rejects_missing_altered_or_invented_source_context(self):
+        report, raw, observations = pinned_observations()
+        for change in ('missing', 'text', 'line', 'invented', 'absent'):
+            altered = deepcopy(observations)
+            anchor = altered['records'][1]['native_locus_review_anchor']
+            if change == 'missing':
+                anchor['source_contexts'].pop()
+            elif change == 'text':
+                anchor['source_contexts'][0]['native_payload_outside_free_comments'] = 'invented'
+            elif change == 'line':
+                anchor['source_contexts'][0]['source_file_line'] += 1
+            elif change == 'invented':
+                anchor['source_contexts'].append({**anchor['source_contexts'][0], 'source_id': 'IT2a'})
+            else:
+                anchor['absent_source_headers'] = []
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_rejects_verified_claims_and_missing_observation_limits(self):
+        report, raw, observations = pinned_observations()
+        updates = [('association_status', 'confirmed'), ('usable_as_verified_corpus_join', True),
+                   ('glyph_reading_verified', True), ('glyph_correction_proposed', True),
+                   ('source_record_is_not_physical_row_number', False),
+                   ('direct_observations', []), ('association_basis', []),
+                   ('unresolved_readings', []), ('physical_position_description', '')]
+        for field, value in updates:
+            altered = deepcopy(observations)
+            altered['records'][1]['native_locus_review_anchor'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_requires_plan_identity_and_preserved_source_key(self):
+        report, raw, observations = pinned_observations()
+        for field, value in (('plan_commit', ''), ('native_locus_key', 'f116v.4')):
+            altered = deepcopy(observations)
+            altered['records'][1]['native_locus_review_anchor'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                verify_observations(altered, report, raw)
+
+    def test_native_anchor_rejects_missing_misassigned_or_noncontained_windows(self):
+        report, raw, observations = pinned_observations()
+        for change in ('missing_image', 'indices', 'containment', 'missing_anchor', 'flag'):
+            altered = deepcopy(observations)
+            item = altered['records'][1]
+            if change == 'missing_image':
+                item['inspected_images'].pop()
+            elif change == 'indices':
+                item['native_locus_review_anchor']['review_region_image_indices'] = [3, 2]
+            elif change == 'containment':
+                image = item['inspected_images'][3]
+                region = [1100, 500, 310, 120]
+                image['region_xywh_full_image_pixels'] = region
+                image['url'] = item['image_metadata']['image_service_url'] + '/' + \
+                    ','.join(map(str, region)) + '/full/0/default.jpg'
+            elif change == 'missing_anchor':
+                item.pop('native_locus_review_anchor')
+            else:
+                altered['terminal_native_locus_review_performed'] = False
             with self.subTest(change=change), self.assertRaises(ValueError):
                 verify_observations(altered, report, raw)
 
