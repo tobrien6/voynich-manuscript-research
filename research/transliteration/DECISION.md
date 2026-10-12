@@ -61,6 +61,10 @@ describe different editions; reproduce the counts from the pinned bytes.
 
 ## Limits and next experiment
 
+The [native-Eva token adapter](TOKEN_ADAPTER.md) supplies explicit split/join
+spacing policies and traceable eligible/excluded locus records for later tests.
+It is a conservative preprocessing choice, not a glyph adjudication or decoding.
+
 The reader rejects unsupported versions and compact identifiers rather than
 silently dropping them. It handles continuation lines, `fRos`, foldout suffixes,
 transcriber IDs, and inherited page/text metadata, but is not a complete IVTFF
