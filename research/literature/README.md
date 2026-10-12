@@ -101,6 +101,13 @@ All 24 source/spacing/count-policy/centering points exceed their corresponding
 finite ranges. This adds an exposed-data constraint on the fixed setup, with
 all eligibility, group-count mixtures and approximate encoded-row limits retained.
 
+The [exact-size-conditioned follow-up](SELF_CITATION_SIZE_CONDITIONED.md)
+standardizes those outputs to source token-count frequencies. Missing sizes make
+all full-cohort ranges undefined. On the predeclared 1,426-key common supported
+subset, two of 24 points are inside their standardized ranges and 22 are above.
+Every missing cell and excluded key remains recorded; the smaller cohort does
+not repair full-cohort coverage or establish physical unit correspondence.
+
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
    project's modern inputs.
