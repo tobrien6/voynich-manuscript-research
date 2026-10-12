@@ -41,8 +41,8 @@ Both full report byte identities are required before rendering:
 
 | Input | SHA-256 |
 | --- | --- |
-| Original interior report | `f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d` |
-| Exact-size report | `df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61` |
+| Current accepted interior report | `113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829` |
+| Current effective exact-size report | `2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522` |
 
 The renderer reads derivative JSON only, without loading manuscript or native
 Java artifacts or calling either experiment producer. It verifies complete
@@ -52,7 +52,7 @@ unchanged primary targets, null primary ranges, coverage and complete-size seed
 counts. Every plotted point and bar also has its actual Matplotlib artist
 coordinates recorded in provenance, rather than only a copy of input values.
 
-Eleven focused tests pass for these contracts, scalar types, missing seeds/points,
+Thirteen focused tests pass for these contracts, scalar types, missing seeds/points,
 fabricated primary ranges, modified fractions, source denominators, protected
 input/output aliases and failed-render behavior. PNG dimensions are **2,720 ×
 1,856**. Every actual point/bar coordinate matches its exact source record and
@@ -60,6 +60,31 @@ canonical row position; export hashes, SVG text and local-only references are
 checked. The PNG was visually inspected for readable labels, shared axes,
 unobscured points, correct compatible-point marking and explicit undefinedness.
 PNG/SVG/provenance rerender byte-for-byte in the recorded environment.
+
+## Explicit maintenance and first-export preservation
+
+[Figure amendment 1](generator-interior-figure-amendment-1.json) records the
+accepted parent serialization repair and the [size transition](../SELF_CITATION_SIZE_AMENDMENT_1.md).
+The exact first PNG/SVG/provenance and original renderer text remain in
+[hashed inert snapshots](generator-interior-comparison/first/). The original
+input fingerprints remain recorded there, rather than silently replacing the
+first-run evidence.
+
+The effective renderer uses local decimal chunks instead of changing the
+interpreter's global integer conversion guard. Every original rendering/data
+function AST is unchanged except the local fraction parser and main transition
+guard. All **48** actual artist positions, **72** scientific comparison records,
+axis limits, cohort/coverage fields, labels and rendering environment are
+identical. Only `input_report_sha256` and `renderer.script_sha256` differ in
+provenance. **PNG/SVG bytes remain exactly identical.**
+
+[Completed verification](generator-interior-figure-amendment-1-validation.json)
+records 13 focused figure tests and 119 relevant tests, complete byte rerender,
+archive/source AST identities and the unchanged global guard. Negative tests
+reject changed pixels, coordinates, environment or input identities. These are
+post-result maintenance records, with no new data, plotting choices or scientific
+outcome. The figure remains stacked on PR #143 until that parent is accepted;
+retargeting to main does not itself certify review or a decipherment.
 
 ## Reproduce the exports
 

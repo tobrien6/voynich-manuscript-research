@@ -6,6 +6,7 @@ import io
 import json
 from pathlib import Path
 import struct
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -91,6 +92,7 @@ class GeneratorInteriorFigureTests(unittest.TestCase):
                     else:alias.hardlink_to(source)
                     return {'png':b'synthetic','svg':b'synthetic','json':b'{}'}
                 with patch.object(m,'read_data',return_value={}),patch.object(m,'render',side_effect=renderer), \
+                        patch.object(m,'verify_export_transition',return_value=True), \
                         patch('sys.argv',['figure','--new-output-dir',str(output)]),contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):m.main()
                 self.assertEqual(source.read_text(),'preserve')
                 self.assertFalse((output/(m.STEM+'.png')).exists());self.assertFalse((output/(m.STEM+'.json')).exists())
@@ -102,6 +104,7 @@ class GeneratorInteriorFigureTests(unittest.TestCase):
                 parent.rmdir();parent.symlink_to(other,target_is_directory=True)
                 return {'png':b'synthetic','svg':b'synthetic','json':b'{}'}
             with patch.object(m,'read_data',return_value={}),patch.object(m,'render',side_effect=renderer), \
+                        patch.object(m,'verify_export_transition',return_value=True), \
                     patch('sys.argv',['figure','--new-output-dir',str(output)]),contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):m.main()
             self.assertFalse((other/'exports').exists())
 
@@ -136,6 +139,27 @@ class GeneratorInteriorFigureTests(unittest.TestCase):
         for phrase in ('all 24 seed ranges undefined','3/31','12/31','2/24 points inside range','Bench+minim / half'):
             self.assertIn(phrase,text)
         self.assertEqual(provenance['renderer']['script_sha256'],hashlib.sha256(Path(m.__file__).read_bytes()).hexdigest())
+
+    def test_long_fraction_parser_does_not_change_global_integer_guard(self):
+        from scripts.self_citation_interior import packed
+        before=sys.get_int_max_str_digits()
+        value=Fraction(10**21000+17,10**21001+31)
+        self.assertEqual(m.unpack(packed(value)),value)
+        self.assertEqual(sys.get_int_max_str_digits(),before)
+
+    def test_first_figure_transition_rejects_pixel_artist_environment_or_identity_drift(self):
+        output={ext:(FIGURES/(m.STEM+'.'+ext)).read_bytes() for ext in ('png','svg','json')}
+        self.assertTrue(m.verify_export_transition(output))
+        for mutation in ('png','svg','artist','environment','input'):
+            changed=dict(output)
+            if mutation in ('png','svg'):changed[mutation]+=b'changed'
+            else:
+                data=json.loads(changed['json'])
+                if mutation=='artist':data['artist_positions'][0]['source_xy'][0]=0.
+                elif mutation=='environment':data['renderer']['python']='different'
+                else:data['input_report_sha256']={}
+                changed['json']=json.dumps(data).encode()
+            with self.subTest(mutation=mutation),self.assertRaises(ValueError):m.verify_export_transition(changed)
 
 
 if __name__=='__main__':unittest.main()

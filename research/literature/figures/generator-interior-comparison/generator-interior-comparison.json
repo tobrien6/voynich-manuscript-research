@@ -931,8 +931,8 @@
   "common_source_loci": 1426,
   "figure_version": "frozen-generator-interior-comparison-v1",
   "input_report_sha256": {
-    "research/literature/self-citation-interior.json": "f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d",
-    "research/literature/self-citation-size-conditioned.json": "df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61"
+    "research/literature/self-citation-interior.json": "113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829",
+    "research/literature/self-citation-size-conditioned.json": "2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522"
   },
   "output_sha256": {
     "png": "b7a8bdf68de84617cafe05245867d238223af003ec7d6651e01f8b60e0cad0c7",
@@ -2032,7 +2032,7 @@
     "numpy": "2.5.4",
     "pillow": "12.3.0",
     "python": "3.14.3",
-    "script_sha256": "36950c61442ce79ebfebf64220425f285470fe6b6a05ec78b969cfd155baf3fe"
+    "script_sha256": "528fc4127b7e67157a5329702c7b3d3163800d3890b2150b717235c1f0335a5b"
   },
   "schema_version": 1,
   "scope": "48 existing points/ranges and24 undefined primary ranges; no new measurements, calibrated probability coverage, independent treatments or decipherment",

@@ -1,5 +1,7 @@
 """Render both frozen interior diagnostics; no source/model measurement reruns."""
 import argparse
+import ast
+import gzip
 from copy import deepcopy
 from fractions import Fraction
 import hashlib
@@ -8,7 +10,7 @@ import json
 import math
 from pathlib import Path
 import platform
-import sys
+import re
 
 try:
     from .validate_evaluation_split import load_split_json
@@ -17,16 +19,16 @@ except ImportError:
 
 ROOT=Path(__file__).resolve().parents[1]
 INPUTS={
-    'research/literature/self-citation-interior.json':'f23c65bc2b7830522fe4e24f710c266d2f81ad0ef69d46636106c1a5cb9c7b8d',
-    'research/literature/self-citation-size-conditioned.json':'df4b1f52137311083e6da69814ec6f6fc6f2d86b81251ffebf86cea9f46faf61',
+    'research/literature/self-citation-interior.json':'113b4b407691c3765e949de5f8390703bf0fdd94cfa3d6d9a30ed05790ff6829',
+    'research/literature/self-citation-size-conditioned.json':'2610917f3946dc757d2d68a5839cb9be64c1d38b2567449c218bc4a1c6ad0522',
 }
 VARIANTS=[(s,p) for s in ('ZL3b','IT2a') for p in ('split','join')]
 POLICIES=['ascii_letters','bench_sequences','bench_and_minim_sequences']
 SCOPES=['unrestricted','half']
 IDENTITIES=[(s,p,pid,scope) for s,p in VARIANTS for pid in POLICIES for scope in SCOPES]
 STEM='generator-interior-comparison'
-if hasattr(sys,'set_int_max_str_digits'):
-    sys.set_int_max_str_digits(0)
+AMENDMENT='research/literature/figures/generator-interior-figure-amendment-1.json'
+AMENDMENT_SHA256='d7950bc9292b945a4020bf3116db1dc16e11c1bf8486ec6f82a6a2df78032d39'
 
 
 def digest(raw):return hashlib.sha256(raw).hexdigest()
@@ -36,13 +38,23 @@ def encoded(value):
     return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2,allow_nan=False)+'\n').encode()
 
 
+def parse_decimal_integer(value):
+    if type(value) is int:return value
+    if not isinstance(value,str) or not re.fullmatch(r'-?[0-9]+',value):
+        raise ValueError('decimal integer required')
+    negative=value.startswith('-');digits=value[1:] if negative else value;number=0
+    for start in range(0,len(digits),18):
+        piece=digits[start:start+18];number=number*10**len(piece)+int(piece)
+    return -number if negative else number
+
+
 def unpack(value):
     if not isinstance(value,dict) or type(value.get('mean')) is not float:
         raise ValueError('exact numeric record and float display mean required')
     numerator,denominator=value['numerator'],value['denominator']
-    if type(numerator) not in (int,str) or type(denominator) not in (int,str) or int(denominator)<=0:
+    if type(numerator) not in (int,str) or type(denominator) not in (int,str) or parse_decimal_integer(denominator)<=0:
         raise ValueError('invalid exact numerator or denominator')
-    result=Fraction(int(numerator),int(denominator))
+    result=Fraction(parse_decimal_integer(numerator),parse_decimal_integer(denominator))
     if not math.isfinite(value['mean']) or value['mean']!=float(result):
         raise ValueError('display mean differs from exact fraction')
     return result
@@ -219,6 +231,43 @@ def render(data):
     return buffers
 
 
+def verify_export_transition(output):
+    amendment=(ROOT/AMENDMENT).read_bytes()
+    if digest(amendment)!=AMENDMENT_SHA256:raise ValueError('frozen figure amendment changed')
+    record=json.loads(amendment)
+    originals={}
+    for ext,entry in record['original_exports'].items():
+        compressed=(ROOT/entry['path']).read_bytes()
+        if digest(compressed)!=entry['compressed_sha256']:raise ValueError('original figure archive changed')
+        originals[ext]=gzip.decompress(compressed)
+        if digest(originals[ext])!=entry['uncompressed_sha256']:raise ValueError('original figure bytes changed')
+    if output['png']!=originals['png'] or output['svg']!=originals['svg']:
+        raise ValueError('figure maintenance changed PNG/SVG bytes')
+    old,new=json.loads(originals['json']),json.loads(output['json'])
+    for key in old:
+        if key not in record['allowed_provenance_changed_fields'] and encoded(old[key])!=encoded(new[key]):
+            raise ValueError('figure maintenance changed scientific, artist or display data')
+    if set(old)!=set(new):raise ValueError('figure provenance field inventory changed')
+    if new['input_report_sha256']!=INPUTS:
+        raise ValueError('effective figure input identities differ from pinned reports')
+    if set(old['renderer'])!=set(new['renderer']) or any(old['renderer'][key]!=new['renderer'][key] for key in old['renderer'] if key!='script_sha256'):
+        raise ValueError('figure maintenance changed recorded rendering environment')
+    if new['renderer']['script_sha256']!=digest(Path(__file__).read_bytes()):
+        raise ValueError('effective renderer identity differs')
+    raw=(ROOT/record['original_renderer_archive']).read_bytes()
+    if digest(raw)!=record['original_renderer_compressed_sha256']:raise ValueError('original renderer archive changed')
+    source=gzip.decompress(raw)
+    if digest(source)!=record['original_renderer_sha256']:raise ValueError('original renderer source changed')
+    def functions(raw):
+        return {node.name:ast.dump(node,include_attributes=False) for node in ast.parse(raw).body if isinstance(node,ast.FunctionDef)}
+    before,after=functions(source),functions(Path(__file__).read_bytes())
+    if set(after)!=set(before)|{'parse_decimal_integer','verify_export_transition'}:
+        raise ValueError('renderer function inventory changed outside amendment')
+    if any(before[key]!=after[key] for key in before if key not in ('unpack','main')):
+        raise ValueError('renderer changed a protected plotting/data function')
+    return True
+
+
 def new_directory_guard(directory,expected):
     if directory.exists() or directory.is_symlink() or directory.resolve()!=expected:
         raise ValueError('figure output directory must be new and retain its original resolved path')
@@ -243,6 +292,7 @@ def main():
         directory=args.new_output_dir or args.check_dir;expected=directory.resolve()
         if args.new_output_dir:new_directory_guard(directory,expected)
         output=render(read_data())
+        verify_export_transition(output)
         if args.check_dir:
             for ext,raw in output.items():
                 if (directory/(STEM+'.'+ext)).read_bytes()!=raw:raise ValueError('complete deterministic figure export differs: '+ext)
