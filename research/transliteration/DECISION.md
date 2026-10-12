@@ -11,6 +11,12 @@ loci. Preserve both original files and their distinct alphabets; do not pool
 their records or treat them as independent experimental replicates. This is a
 working data choice, not a judgment that either reading is correct.
 
+The [comparator extension](COMPARATORS.md) adds GC2a native v101 and RF1b's
+full/basic Eva exports. RF is a combined reference rather than an independent
+transcriber; each export remains a separately pinned input. The coverage report
+now includes all five exports while the initial ZL/IT comparison below remains
+unchanged.
+
 ## Source records
 
 - **TR-CATALOG:** René Zandbergen, [Transliteration of the Text](https://voynich.nu/transcr.html).
