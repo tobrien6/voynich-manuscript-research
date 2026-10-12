@@ -64,10 +64,10 @@ manuscript evaluation set.
 python3 -m unittest tests.test_recorded_viewer_assets -v
 ```
 
-Eleven focused tests cover all 35 actual recorded entries, archived-record drift,
+Twelve focused tests cover all 35 actual recorded entries, archived-record drift,
 provider/address restrictions, exact downloads and cache reuse, partial/mismatched
 responses, interrupted chunked HTTP bodies, read timeouts, malformed redirect
-addresses, mixed outcomes, existing/late aliases, output isolation and preservation
+addresses, HTTP error-response cleanup, mixed outcomes, existing/late aliases, output isolation and preservation
 of unrelated files. Validation includes one live recorded service-JSON download,
 verified f76r cache reuse accepted by its existing image verifier, and all 17
 lookup inputs reused to produce/check the existing complete local viewer packet.

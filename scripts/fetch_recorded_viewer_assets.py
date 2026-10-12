@@ -189,6 +189,10 @@ def fetch_assets(study, directory, only=None, timeout=20, opener=None):
             item['stored_bytes'] = path.stat().st_size
         except HTTPError as error:
             item.update(status='failed', reason='HTTP response ' + str(error.code))
+            try:
+                error.close()
+            except OSError:
+                pass
         except URLError:
             item.update(status='failed', reason='network or TLS retrieval failure')
         except (ReceiptError, OSError) as error:

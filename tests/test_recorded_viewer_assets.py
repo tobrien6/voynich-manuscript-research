@@ -162,6 +162,25 @@ class RecordedAssetsTests(unittest.TestCase):
                 self.assertFalse((directory / asset['name']).exists())
                 self.assertEqual(list(directory.glob('.recorded-resource-*')), [])
 
+    def test_http_error_response_is_closed_and_failure_receipt_preserves_cache(self):
+        asset = resource()
+        body = io.BytesIO(b'unverified synthetic HTTP error body')
+        error = HTTPError(asset['url'], 503, 'unavailable', {}, body)
+        with tempfile.TemporaryDirectory() as folder:
+            directory = Path(folder)
+            sentinel = directory / 'unrelated.txt'
+            sentinel.write_bytes(b'preserve unrelated bytes')
+            with patch.object(subject, 'load_source', return_value=({'id': 'f76r'}, [asset])):
+                report, path = subject.fetch_assets('f76r', directory,
+                    opener=Opener({asset['url']: error}))
+            self.assertTrue(body.closed)
+            self.assertEqual(report['resources'][0]['status'], 'failed')
+            self.assertEqual(report['resources'][0]['reason'], 'HTTP response 503')
+            self.assertEqual(json.loads(path.read_text()), report)
+            self.assertFalse((directory / asset['name']).exists())
+            self.assertEqual(sentinel.read_bytes(), b'preserve unrelated bytes')
+            self.assertEqual(list(directory.glob('.recorded-resource-*')), [])
+
     def test_mixed_success_and_failure_remain_separate_in_receipt(self):
         good, bad = resource('good.jpg'), resource('bad.jpg')
         bad['url'] = 'https://collections.library.yale.edu/iiif/2/1006210/1,1,2,2/full/0/default.jpg'
