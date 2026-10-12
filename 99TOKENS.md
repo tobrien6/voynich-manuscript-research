@@ -36,6 +36,8 @@ The [section boundary survey](research/boundary-pilot/INVENTORY.md) and [standal
 
 The [working transliteration decision](research/transliteration/DECISION.md) now recommends the pinned ZL3b source for preserving uncertainty, with IT2a for paired sensitivity checks. Source bytes, credits, reuse terms, and structural coverage are recorded in the [data catalog](data/transliterations.json) and [coverage audit](research/transliteration/coverage_audit.json). This supplies the initial source choice; glyph adjudication, image alignment, the evaluation split, and a registered hypothesis remain pending.
 
+The [pilot transcription/image-link audit](research/pilot/TRANSCRIPTION_READINESS.md) now identifies seven selected sides with exact page identifiers in both editions, containing 251 shared present locations. Three targets remain blocked: 67r and 68r use unmapped panel identifiers, while 85v belongs to a shared 85v/86r scan and has no exact transcription page. The [reproducible report](research/pilot/transcription-readiness.json) preserves those gaps and source disagreements; its completeness check fails until the mappings are documented. Exact metadata links still need image/glyph review and do not create untouched evaluation material.
+
 The [reference variant audit](research/transcriptions/REFERENCE_VARIANTS.md) extends the accepted ZL/IT source decision with GC and both RF variants, using the same IVTFF reader. Identical RF alphabet headers conceal different native text, so later analyses must retain exact variant URLs and source hashes. This is a corpus identity check, not a decipherment result.
 
 The [exploratory token and repetition baselines](research/transliteration/BASELINES.md) compare uncertainty policies on 3,884 shared present P0 loci in ZL3b and IT2a, with [complete recorded results](research/transliteration/token_baselines.json). The primary split/exclude treatment has 272 equal adjacent pairs against a conditional expectation of 270.77; other treatments expose sensitivity to preprocessing. This full-corpus exploration does not provide an untouched evaluation set or validate a decoding rule.
@@ -49,6 +51,8 @@ tests transcription sensitivity on identical eligible locus samples. The
 observed effect directions persist, while notation-length measurements and
 individual-locus contrasts remain sensitive to source and uncertainty choices.
 This is exploratory evidence for candidate constraints, not a decipherment.
+
+The [prefix stratification](research/transliteration/PREFIX_STRATA.md) separates source-marked paragraph starts and source Currier labels on 3,848 shared regular P0 locations, excluding 36 same-line fragments. In the primary treatment, first-slot y enrichment occurs in non-paragraph-start loci, while the q contrast within those non-paragraph-start cohorts has opposite signs in source groups A and B. All uncertainty treatments, denominators, and controls are retained in the [complete report](research/transliteration/prefix_strata.json). These exploratory patterns constrain candidate mechanisms on already exposed text; the labels do not identify natural languages and the results do not validate a decipherment.
 
 ## Evidence standard
 
