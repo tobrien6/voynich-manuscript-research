@@ -33,6 +33,14 @@ Inspected 2026-10-11 (America/New_York). `TR` identifiers are local to this regi
 - Limitation: this checks format semantics, not manuscript visibility, a panel/region mapping, or the accuracy of a particular source annotation. It is a targeted inspection, not full conformance validation.
 - Reuse: source PDF remains local; citation, fingerprint and selected paraphrase only are added.
 
+## TR005 — Primary Currier/Eva conversion definition and documentation
+
+- Author: René Zandbergen; [Bitrans directory](https://www.voynich.nu/software/bitrans/), rule definition, version 1.5 manual and software README; inspected 2026-10-12 (America/New_York).
+- Identity and observations: [source intake](../transliteration/CURRIER_CONVERSION_SOURCE.md) and [complete catalog](../transliteration/currier-conversion-source.json) pin all three retrieved artifacts and every rule-row identity, with the complete synthetic two-code round-trip diagnostic.
+- Use: independently documented notation-conversion inputs and stated processing semantics for a future frozen comparison.
+- Limitation: current 2025 material does not authenticate a 2011 preprocessing execution. No corpus conversion, glyph mapping or translation is performed.
+- Reuse: source rule/manual/README remain local; metadata and limited source-linked paraphrase only. The separate dataset CC0 statement is not extended to these artifacts.
+
 ## TR-D001–TR-D005 — Downloaded edition files
 
 | ID | Exact source | Identity evidence |
