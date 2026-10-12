@@ -2,6 +2,8 @@
 
 Ten target folio sides from Beinecke MS 408 were inspected on 2026-10-11 using Yale's digitized images. The sample covers all six catalog sections under the [selection protocol](PROTOCOL.md). It records varied text arrangements and cases where a catalog section name is insufficient as a page-level illustration label. This boundary survey can complement inventories of section interiors; it establishes layout records, not readings of the script.
 
+For the project's decipherment goal, these records help define comparable text regions before selecting and comparing transcriptions. Circular inscriptions, marginal signs, prose-like blocks, and shared foldout panels need distinct handling. All ten scans have been seen by this contributor; they must not be described as unseen held-out material for this contributor's later hypotheses.
+
 ## Sources and method
 
 Section assignments follow the ranges in [Yale's manuscript catalog](https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM). The [Beinecke overview](https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript) supplies the six broad subject categories. Folio labels and image identifiers come from [Yale's IIIF manifest](https://collections.library.yale.edu/manifests/2002046), linked by the [digital collection record](https://collections.library.yale.edu/catalog/2002046). See [source and access notes](SOURCES.md).

@@ -1,4 +1,4 @@
-# Pilot folio inventory protocol
+# Boundary folio inventory protocol
 
 ## Question and scope
 
@@ -8,7 +8,7 @@ This selection rule was saved locally on 2026-10-11 before inspecting the select
 
 ## Selection rule
 
-Use the section ranges in [Yale's manuscript catalog](https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM) (S002). Allocate two entries each to Parts I, II, III and V, and one each to IV and VI. For the four two-entry sections, select the first and last surviving recto in the stated range. For VI, select its first recto. For IV, select the recto included in the complete foldout scan: the manifest labels this `85v and 86r (foldout)`. The full foldout permits a layout observation while retaining its joint folio label.
+Use the section ranges in [Yale's manuscript catalog](https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM). Allocate two entries each to Parts I, II, III and V, and one each to IV and VI. For the four two-entry sections, select the first and last surviving recto in the stated range. For VI, select its first recto. For IV, select the recto included in the complete foldout scan: the manifest labels this `85v and 86r (foldout)`. The full foldout permits a layout observation while retaining its joint folio label.
 
 | Catalog part | Catalog range | Target folio sides |
 | --- | --- | --- |
