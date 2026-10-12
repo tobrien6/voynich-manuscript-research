@@ -91,8 +91,8 @@ From the repository root:
 
 ```sh
 python3 scripts/audit_transliterations.py --check research/transliteration/coverage_audit.json
-python3 scripts/eva_token_adapter.py --uncertain-spaces split --output /tmp/voynich-position-split.json
-python3 scripts/eva_token_adapter.py --uncertain-spaces join --output /tmp/voynich-position-join.json
+python3 scripts/write_eva_token_cache.py --uncertain-spaces split --output /tmp/voynich-position-split.json
+python3 scripts/write_eva_token_cache.py --uncertain-spaces join --output /tmp/voynich-position-join.json
 python3 scripts/verify_locus_position_baseline.py \
   --split /tmp/voynich-position-split.json \
   --join /tmp/voynich-position-join.json \
@@ -105,11 +105,12 @@ summary, and provenance. A changed source/adapter/implementation requires
 investigation before replacing the recorded result. The runner performs no
 network requests and prevents its output from overwriting an input.
 
-The companion's six integration tests additionally exercise token changes,
+The companion's seven integration tests additionally exercise token changes,
 omitted exclusions with reconciled counts, duplicate keys, valid formatting
 changes, historical engine/protocol/result guards, complete receipt replay,
 tampered receipt rejection, and protection against overwriting the baseline,
-protocol, packets or source data. They isolate the separately tested null draws;
+protocol, packets, source data or verifier scripts, including existing hardlink
+aliases. They isolate the separately tested null draws;
 the complete manuscript analysis was also replayed through the real verifier.
 To write a fresh receipt to a separate path, replace `--check` with `--output`.
 

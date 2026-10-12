@@ -3,6 +3,7 @@
 import copy
 from contextlib import redirect_stderr, redirect_stdout
 import io
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -129,6 +130,28 @@ class BaselineVerificationTests(unittest.TestCase):
                 with redirect_stderr(io.StringIO()) as errors:
                     self.assertEqual(verifier.main(arguments + ["--check", str(destination)]), 1)
             self.assertIn("receipt differs", errors.getvalue())
+
+    def test_receipt_rejects_script_targets_and_hardlink_input_aliases(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            paths = {name: Path(temporary) / (name + ".json") for name in self.raw}
+            for name, path in paths.items():
+                path.write_bytes(self.raw[name])
+            arguments = [argument for name, path in paths.items() for argument in ("--" + name, str(path))]
+            protected = [*paths.values(), verifier.ROOT / "data/transliterations.json",
+                         verifier.ROOT / "data/raw/ZL3b-n.txt", verifier.ROOT / "scripts/ivtff.py"]
+            targets = [verifier.ROOT / "scripts/run_locus_position_baseline.py"]
+            for index, source in enumerate(protected):
+                alias = Path(temporary) / f"hardlink-{index}.json"
+                os.link(source, alias)
+                targets.append(alias)
+            for destination in targets:
+                before = destination.read_bytes()
+                with self.subTest(destination=destination.name), patch.object(verifier, "verify") as replay:
+                    with redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()):
+                        status = verifier.main(arguments + ["--output", str(destination)])
+                self.assertEqual(status, 1)
+                replay.assert_not_called()
+                self.assertEqual(destination.read_bytes(), before)
 
 
 if __name__ == "__main__":

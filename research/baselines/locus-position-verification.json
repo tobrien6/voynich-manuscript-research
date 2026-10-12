@@ -35,7 +35,7 @@
     "eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
     "ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
     "token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
-    "verify_locus_position_baseline.py": "fbce6df56b8deffbb265e96714eecb3e1e18babfaad3033cac3958339204ac4e"
+    "verify_locus_position_baseline.py": "cdf5103a2eabd2dd1cd5d38f37402e89638b2c536d1abdae3f70ac6c76c6b1b5"
   },
   "verification_method": "pinned-producer-position-baseline-replay-v1",
   "verified_scientific_report_sha256": "ab0a9ea92aab7330071173769696468a8ba7a9afa91f67e872a99f8d3e251cc2"

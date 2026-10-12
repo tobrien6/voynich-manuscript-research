@@ -34,6 +34,22 @@ def digest(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
+def protect_output(output, paths, root=ROOT):
+    catalog_path = root / "data/transliterations.json"
+    catalog = load_json(catalog_path.read_bytes())
+    inputs = [*paths.values(), BASELINE, engine.PROTOCOL, catalog_path,
+              *(root / source["path"] for source in catalog["sources"])]
+    folders = (root / "data/raw", root / "scripts")
+    resolved = output.resolve()
+    require(not any(resolved.is_relative_to(folder.resolve()) for folder in folders)
+            and not any(resolved == path.resolve() for path in inputs),
+            "Receipt must not replace an analysis input, source, or verifier script")
+    if output.exists():
+        inputs.extend(path for folder in folders for path in folder.rglob("*") if path.is_file())
+        require(not any(path.exists() and output.samefile(path) for path in inputs),
+                "Receipt must not replace an input or script through a hardlink alias")
+
+
 def verify(raw, root=ROOT):
     """Verify complete scientific results against producer-replayed packets."""
     protocol = load_json(raw["protocol"])
@@ -90,12 +106,7 @@ def main(argv=None):
         paths = {"protocol": args.protocol, "baseline": args.baseline,
                  "split": args.split, "join": args.join}
         if args.output:
-            resolved = args.output.resolve()
-            require(resolved not in {path.resolve() for path in paths.values()},
-                    "Receipt must not replace a baseline or analysis input")
-            require(resolved != (ROOT / "data/transliterations.json").resolve() and
-                    not resolved.is_relative_to((ROOT / "data/raw").resolve()),
-                    "Receipt must not replace the source catalog or a pinned raw input")
+            protect_output(args.output, paths, root=ROOT)
         receipt = verify({name: path.read_bytes() for name, path in paths.items()})
         if args.check:
             require(encoded(receipt) == encoded(load_json(args.check.read_bytes())),
