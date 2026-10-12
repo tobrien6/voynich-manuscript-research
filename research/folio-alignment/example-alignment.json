@@ -1,0 +1,208 @@
+{
+  "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "access_date": "2026-10-11",
+  "access_timezone": "America/New_York",
+  "image_index_generator": "scripts/index_yale_manifest.py",
+  "identifier_normalization": "Trim surrounding whitespace, remove optional f prefix, lowercase r/v. No folio aliases or panel truncation.",
+  "requested_count": 8,
+  "matched_count": 6,
+  "label_unmatched_count": 1,
+  "unsupported_identifier_count": 1,
+  "entries": [
+    {
+      "requested_identifier": "f70v",
+      "canonical_folio_side": "70v",
+      "status": "matched",
+      "matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006200",
+          "canvas_index": 126,
+          "canvas_label": "70v (part)",
+          "label_folio_references": [
+            "70v"
+          ],
+          "partial_view": true,
+          "combined_view": false,
+          "image_oid": "1006200",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006200",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg"
+          ]
+        },
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006201",
+          "canvas_index": 127,
+          "canvas_label": "70v (part)",
+          "label_folio_references": [
+            "70v"
+          ],
+          "partial_view": true,
+          "combined_view": false,
+          "image_oid": "1006201",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006201",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006201/full/full/0/default.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "requested_identifier": "85r",
+      "canonical_folio_side": "85r",
+      "status": "matched",
+      "matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228",
+          "canvas_index": 154,
+          "canvas_label": "85r (part) (part of 85-86 foldout)",
+          "label_folio_references": [
+            "85r"
+          ],
+          "partial_view": true,
+          "combined_view": false,
+          "image_oid": "1006228",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006228",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006228/full/full/0/default.jpg"
+          ]
+        },
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+          "canvas_index": 155,
+          "canvas_label": "85r (part) 86v (part) (part of 85-86 foldout)",
+          "label_folio_references": [
+            "85r",
+            "86v"
+          ],
+          "partial_view": true,
+          "combined_view": true,
+          "image_oid": "1006229",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006229",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006229/full/full/0/default.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "requested_identifier": "86v",
+      "canonical_folio_side": "86v",
+      "status": "matched",
+      "matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+          "canvas_index": 155,
+          "canvas_label": "85r (part) 86v (part) (part of 85-86 foldout)",
+          "label_folio_references": [
+            "85r",
+            "86v"
+          ],
+          "partial_view": true,
+          "combined_view": true,
+          "image_oid": "1006229",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006229",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006229/full/full/0/default.jpg"
+          ]
+        },
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230",
+          "canvas_index": 156,
+          "canvas_label": "86v (part) (part of 85-86 foldout)",
+          "label_folio_references": [
+            "86v"
+          ],
+          "partial_view": true,
+          "combined_view": false,
+          "image_oid": "1006230",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006230",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006230/full/full/0/default.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "requested_identifier": "85v",
+      "canonical_folio_side": "85v",
+      "status": "matched",
+      "matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+          "canvas_index": 157,
+          "canvas_label": "85v and 86r (foldout)",
+          "label_folio_references": [
+            "85v",
+            "86r"
+          ],
+          "partial_view": false,
+          "combined_view": true,
+          "image_oid": "1006231",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006231",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "requested_identifier": "86r",
+      "canonical_folio_side": "86r",
+      "status": "matched",
+      "matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+          "canvas_index": 157,
+          "canvas_label": "85v and 86r (foldout)",
+          "label_folio_references": [
+            "85v",
+            "86r"
+          ],
+          "partial_view": false,
+          "combined_view": true,
+          "image_oid": "1006231",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006231",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "requested_identifier": "116v",
+      "canonical_folio_side": "116v",
+      "status": "matched",
+      "matches": [
+        {
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+          "canvas_index": 205,
+          "canvas_label": "116v",
+          "label_folio_references": [
+            "116v"
+          ],
+          "partial_view": false,
+          "combined_view": false,
+          "image_oid": "1006277",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006277",
+          "image_urls": [
+            "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "requested_identifier": "117v",
+      "canonical_folio_side": "117v",
+      "status": "label_unmatched",
+      "matches": []
+    },
+    {
+      "requested_identifier": "f67r1",
+      "canonical_folio_side": null,
+      "status": "unsupported_identifier",
+      "reason": "Expected an optional f prefix, positive folio number, and r/v. Panel and line suffixes require an explicit convention-specific mapping.",
+      "matches": []
+    }
+  ]
+}
