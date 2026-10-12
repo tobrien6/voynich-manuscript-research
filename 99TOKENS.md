@@ -18,7 +18,11 @@ The manuscript is held by Yale's Beinecke Rare Book and Manuscript Library as MS
 
 Produce a pilot inventory of 10 folios selected across the illustrated sections described in Yale's overview. Document the selection rule before collecting observations. For each folio, record the stable image link, section attribution and source, visible text layout, illustration description, and uncertain observations. Deliver the inventory with a short note explaining coverage and sampling limitations.
 
-This is the first planned task; the inventory and analyses have not yet been completed.
+The [first pilot inventory](research/pilot/INVENTORY.md) is complete: ten target folio sides across all six catalog sections, including one shared foldout view. Its [sampling protocol](research/pilot/SAMPLING.md) was fixed before image inspection. The inventory records source links, text layouts, illustration descriptions, and uncertainties; transcription and statistical analyses remain future work.
+
+## Next task
+
+Independently review the ten pilot observations against Yale's images, then extend the inventory to section interiors and versos. Keep catalog section labels separate from observed motifs: the pilot includes a text-only page within the biological range and a whole-plant page without visible jars within the pharmaceutical range. Resolve foldout panel conventions before joining this inventory to a transcription.
 
 ## Evidence standard
 

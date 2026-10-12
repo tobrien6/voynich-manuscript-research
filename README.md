@@ -8,9 +8,10 @@ Explore the manuscript's digitized folios, documented history, illustrations, an
 
 - [Project brief and research plan](99TOKENS.md)
 - [Primary source register](research/SOURCES.md)
+- [Ten-folio pilot inventory and findings](research/pilot/INVENTORY.md)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
 
-The project is at the scoping stage. No new transcription, statistical result, or decipherment claim has been established.
+A first ten-folio visual inventory covers all six catalog sections, with a selection protocol, source links, descriptive observations, and explicit uncertainties. No new transcription, statistical result, or decipherment claim has been established.
 
 ## Research practice
 
