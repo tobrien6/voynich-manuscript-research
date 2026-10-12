@@ -20,6 +20,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Pilot transcription/image-link readiness](research/pilot/TRANSCRIPTION_READINESS.md): seven exact page links and three explicit mapping gaps.
 - [Three provisional f76r image/native-locus anchors](research/pilot/F76R_ANCHORS.md): frozen selections, both native readings, and source-linked review windows awaiting independent row checks.
 - [Local f76r image/native-text comparison](research/pilot/viewer/README.md): a reproducible read-only HTML artifact with literal source context and provisional review windows.
+- [Recorded local viewer asset retrieval](research/assets/README.md): fetch fixed accepted image/service receipts into private hash-checked caches without changing the evidence or publishing pixels.
 - [Offline f76r comparison packet](research/pilot/offline-packet/README.md): verified local copies of the five recorded resources preserve the accepted three-anchor viewer without live image requests.
 - [Native foldout page conventions](research/pilot/NATIVE_PAGE_CONVENTIONS.md): documented carrier and panel ordering, with region/glyph review pending.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)

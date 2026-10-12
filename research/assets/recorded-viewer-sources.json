@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "purpose": "Retrieve only fixed accepted successful local viewer resources; no new image selection or pixel adjudication",
+  "sources": [
+    {
+      "id": "f76r",
+      "accepted_commit": "c6ce2571c52d5880cb8361f3a9074e106f662c7a",
+      "record_path": "research/pilot/f76r-anchor-review.json",
+      "record_sha256": "6953f252e3347211be3ca22b2265fefec3c94f77efafd971dd3e0a846b7e959f",
+      "layout": "f76r"
+    },
+    {
+      "id": "y-lookup",
+      "accepted_commit": "e3f129934cdf6ca0432001936db390996dff4290",
+      "record_path": "research/hypotheses/y-lookup-image-v1/image-review.json",
+      "record_sha256": "4086e03b9c5098d0daabe3f06d64c779cc1dabb0e1f5b53e864803210b7b45a1",
+      "layout": "retrieved"
+    },
+    {
+      "id": "immediate-repeat",
+      "accepted_commit": "9ff8325887ebf9d0ee9f3e2744e6d30c0ad760d4",
+      "record_path": "research/transliteration/immediate_repeat_image_review.json",
+      "record_sha256": "de7f16d9585f2cd064cc5dd5db03d7721b6d669f58d663ffb8e30992a09befb0",
+      "layout": "cases"
+    }
+  ]
+}
