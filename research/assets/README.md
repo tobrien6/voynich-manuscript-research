@@ -14,7 +14,7 @@ change the download list. The cited Git objects must be available locally.
 | --- | ---: | --- |
 | `f76r` | 4 JPEG windows and 1 service JSON | [f76r review/verifier](../pilot/F76R_ANCHORS.md) |
 | `y-lookup` | 12 JPEG windows, 1 GIF reference and 4 service JSONs | [local lookup viewer](../hypotheses/y-lookup-image-v1/viewer/README.md) |
-| `immediate-repeat` | 10 JPEG windows and 3 service JSONs | [repeat-image packet](../transliteration/IMMEDIATE_REPEAT_IMAGES.md) |
+| `immediate-repeat` | 10 JPEG windows and 3 service JSONs | [local repeat viewer](../transliteration/repeat-viewer/README.md) |
 
 Only recorded successful resources are requested. Earlier failed requests stay
 in the original records and are not substituted with a new image or endpoint.
@@ -33,6 +33,21 @@ one exact recorded filename, repeat `--only` as needed:
 ```sh
 python3 scripts/fetch_recorded_viewer_assets.py --study f76r --directory /tmp/f76r-image-inputs --only f76r-info.json
 ```
+
+For the repeat viewer, replace the capitalized paths below with an image cache
+outside Git checkouts and a separate fresh packet directory:
+
+```sh
+python3 scripts/fetch_recorded_viewer_assets.py \
+  --study immediate-repeat --directory LOCAL_IMAGE_DIRECTORY
+python3 scripts/build_immediate_repeat_viewer.py \
+  --image-directory LOCAL_IMAGE_DIRECTORY --output FRESH_LOCAL_PACKET_DIRECTORY
+python3 scripts/build_immediate_repeat_viewer.py \
+  --image-directory LOCAL_IMAGE_DIRECTORY --check FRESH_LOCAL_PACKET_DIRECTORY
+```
+
+Follow the [viewer guide](../transliteration/repeat-viewer/README.md) to open the
+packet. Retrieval receipts and unrelated cache files are not copied into it.
 
 A subset is labeled separately from the complete inventory in the retrieval
 receipt. The local receipt records the source commit/digest, requested URLs,

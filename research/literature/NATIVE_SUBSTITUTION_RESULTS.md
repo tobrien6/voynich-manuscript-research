@@ -94,6 +94,10 @@ published method or its interpretation.
 
 ## Reproduction and validation
 
+The [complete maximizing-partner figure](figures/NATIVE_SUBSTITUTION_RANKINGS.md)
+shows all 35 codepoints under both metrics, with each winner's affected mass
+and the unassigned zero-optimum case retained. It adds no new measurement.
+
 ```sh
 PYTHONPATH=tests python3 -m unittest test_native_substitution_normalizations test_substitution_entropy_control -v
 python3 scripts/native_substitution_normalizations.py \
