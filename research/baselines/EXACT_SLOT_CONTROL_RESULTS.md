@@ -130,9 +130,9 @@ the separate exact-slot integer-array/weighted-mixture engine. It calls no
 production fine fit, probability or score function. It checks every complete
 fine-evaluation digest, every retained field/aggregate, all old 192 dataset
 records, all 3,510,528 scored transitions and 7,021,056 exact fine probabilities.
-The derived coarse receipt has a separate full arithmetic replay. Complete
-producer byte replay is required as well; results are reported only after both
-full routes pass.
+The derived coarse receipt passed a separate full arithmetic replay. Complete
+producer replay reproduced the report bytes for all 256 datasets. Both full
+routes passed before these results were submitted for review.
 
 Tests cover draw boundaries/consumption, binary versus ten-class oracles,
 stream separation, unchanged old generation, explicit original/current source
