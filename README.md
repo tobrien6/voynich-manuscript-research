@@ -23,6 +23,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Recorded local viewer asset retrieval](research/assets/README.md): fetch fixed accepted image/service receipts into private hash-checked caches without changing the evidence or publishing pixels.
 - [Offline f76r comparison packet](research/pilot/offline-packet/README.md): verified local copies of the five recorded resources preserve the accepted three-anchor viewer without live image requests.
 - [Native foldout page conventions](research/pilot/NATIVE_PAGE_CONVENTIONS.md): documented carrier and panel ordering, with region/glyph review pending.
+- [Guarded 67r checklist writer](research/panel-regions/F67R_REVIEW_WRITER.md): create the accepted seven-record checklist exclusively and check complete JSON types while preserving the frozen collector and provisional mappings.
 - [Section boundary survey, including the shared 102r scan](research/boundary-pilot/INVENTORY.md)
 - [Standalone-recto boundary inventory](research/PILOT_INVENTORY.md) and [selection protocol](research/PILOT_SELECTION.md)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
