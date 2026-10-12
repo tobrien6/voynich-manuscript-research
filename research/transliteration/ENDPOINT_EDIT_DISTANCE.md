@@ -144,3 +144,10 @@ A later mechanism comparison should freeze a justified representation and
 joint predictions, show how much variation remains under its controls, preserve
 all unfavorable/invariant cases, and evaluate on honestly prospective material
 with explicit dependency and exposure records. No English reading is proposed.
+
+The [fixed endpoint-length control](ENDPOINT_LENGTH_CONTROL.md) preserves every
+original boundary and cost but conditions on the original endpoint-length
+pattern. Both preplanned controls give small positive centered costs while
+retaining variation in only 8–10 units. The original contrast is therefore
+sensitive to these stricter reference distributions; neither result identifies
+a copying process, language or decipherment.
