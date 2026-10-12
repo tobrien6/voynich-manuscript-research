@@ -1,0 +1,1933 @@
+{
+  "source_report_sha256": "8a770fcd41340960b985e5e035c1b135f91137b2d0aa4acffdd6c075fc2d47a0",
+  "units": "percentage points; equal native-row weight",
+  "scope": "descriptive deterministic seed grid; no confidence band or manuscript comparison",
+  "points": [
+    {
+      "seed": 1,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "-21598097",
+        "denominator": "18623404800"
+      },
+      "percentage_points": -0.11597286979446422
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "2385073199",
+        "denominator": "111740428800"
+      },
+      "percentage_points": 2.134476504711605
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "-1413774941",
+        "denominator": "44696171520"
+      },
+      "percentage_points": -3.163078386629567
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "-1295225741",
+        "denominator": "74493619200"
+      },
+      "percentage_points": -1.7387069589444784
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-3451",
+        "denominator": "157740"
+      },
+      "percentage_points": -2.187777355141372
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-7761631",
+        "denominator": "86126040"
+      },
+      "percentage_points": -9.011944587258395
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-8153",
+        "denominator": "473220"
+      },
+      "percentage_points": -1.7228773086513673
+    },
+    {
+      "seed": 1,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "56747",
+        "denominator": "4784780"
+      },
+      "percentage_points": 1.1859897424750983
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "32981",
+        "denominator": "2966040"
+      },
+      "percentage_points": 1.1119539857857614
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "46691",
+        "denominator": "3813480"
+      },
+      "percentage_points": 1.2243672446164657
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-84817",
+        "denominator": "2966040"
+      },
+      "percentage_points": -2.8596040511928362
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-87001",
+        "denominator": "8898120"
+      },
+      "percentage_points": -0.977745860923431
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-123719",
+        "denominator": "6541920"
+      },
+      "percentage_points": -1.8911726221048257
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-1799",
+        "denominator": "29205"
+      },
+      "percentage_points": -6.159904126005821
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "53",
+        "denominator": "545160"
+      },
+      "percentage_points": 0.009721916501577518
+    },
+    {
+      "seed": 2,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-451",
+        "denominator": "84960"
+      },
+      "percentage_points": -0.5308380414312618
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 962,
+      "mean_difference_exact": {
+        "numerator": "36649049",
+        "denominator": "31992348960"
+      },
+      "percentage_points": 0.11455566781239561
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 962,
+      "mean_difference_exact": {
+        "numerator": "88632659",
+        "denominator": "6398469792"
+      },
+      "percentage_points": 1.385216495212923
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 962,
+      "mean_difference_exact": {
+        "numerator": "-159746489",
+        "denominator": "15996174480"
+      },
+      "percentage_points": -0.9986543295069135
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 962,
+      "mean_difference_exact": {
+        "numerator": "-1589054627",
+        "denominator": "111973221360"
+      },
+      "percentage_points": -1.4191380829270803
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 237,
+      "mean_difference_exact": {
+        "numerator": "-13733",
+        "denominator": "1877040"
+      },
+      "percentage_points": -0.7316306525167284
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 237,
+      "mean_difference_exact": {
+        "numerator": "-9849803",
+        "denominator": "170810640"
+      },
+      "percentage_points": -5.76650435827651
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 237,
+      "mean_difference_exact": {
+        "numerator": "3977",
+        "denominator": "1877040"
+      },
+      "percentage_points": 0.2118761454204492
+    },
+    {
+      "seed": 3,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 237,
+      "mean_difference_exact": {
+        "numerator": "-4291411",
+        "denominator": "170810640"
+      },
+      "percentage_points": -2.5123792054171803
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "34777",
+        "denominator": "2652804"
+      },
+      "percentage_points": 1.3109524865010758
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "35611",
+        "denominator": "1205820"
+      },
+      "percentage_points": 2.9532600222255394
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "-91279",
+        "denominator": "3789720"
+      },
+      "percentage_points": -2.4085948302249243
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "-69677",
+        "denominator": "5305608"
+      },
+      "percentage_points": -1.3132707881924184
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-9106",
+        "denominator": "419265"
+      },
+      "percentage_points": -2.1718960561935767
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-237793",
+        "denominator": "6708240"
+      },
+      "percentage_points": -3.5447896914839063
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-7181",
+        "denominator": "419265"
+      },
+      "percentage_points": -1.7127592334203905
+    },
+    {
+      "seed": 4,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "9223",
+        "denominator": "6708240"
+      },
+      "percentage_points": 0.13748762715704865
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-2765",
+        "denominator": "253704"
+      },
+      "percentage_points": -1.0898527417778199
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "3956",
+        "denominator": "1109955"
+      },
+      "percentage_points": 0.35641084548472685
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-89357",
+        "denominator": "4439820"
+      },
+      "percentage_points": -2.0126266380168567
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-47383",
+        "denominator": "3805560"
+      },
+      "percentage_points": -1.2450992757964663
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-593",
+        "denominator": "37485"
+      },
+      "percentage_points": -1.581966119781246
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-35747",
+        "denominator": "659736"
+      },
+      "percentage_points": -5.4183794730013215
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-509",
+        "denominator": "299880"
+      },
+      "percentage_points": -0.16973456049086302
+    },
+    {
+      "seed": 5,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-8887",
+        "denominator": "733040"
+      },
+      "percentage_points": -1.2123485757939538
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "26617677",
+        "denominator": "2082200120"
+      },
+      "percentage_points": 1.2783438414171255
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "4409365171",
+        "denominator": "224877612960"
+      },
+      "percentage_points": 1.9607844075543053
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "-60949873",
+        "denominator": "2810970162"
+      },
+      "percentage_points": -2.1682860182562123
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "-5303207803",
+        "denominator": "224877612960"
+      },
+      "percentage_points": -2.358264005560796
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "-1597301",
+        "denominator": "83963880"
+      },
+      "percentage_points": -1.902366827259531
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "-568699",
+        "denominator": "10495485"
+      },
+      "percentage_points": -5.4185109120731445
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "-148987",
+        "denominator": "10495485"
+      },
+      "percentage_points": -1.41953420923378
+    },
+    {
+      "seed": 6,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "681491",
+        "denominator": "83963880"
+      },
+      "percentage_points": 0.8116478180855863
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "18251",
+        "denominator": "3347190"
+      },
+      "percentage_points": 0.5452633402943963
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "44449",
+        "denominator": "1912680"
+      },
+      "percentage_points": 2.3239119978250415
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "-2033",
+        "denominator": "145530"
+      },
+      "percentage_points": -1.396962825534254
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 966,
+      "mean_difference_exact": {
+        "numerator": "-19447",
+        "denominator": "1673595"
+      },
+      "percentage_points": -1.1619896091945783
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "-2032",
+        "denominator": "161469"
+      },
+      "percentage_points": -1.2584458936390268
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "-98689",
+        "denominator": "2152920"
+      },
+      "percentage_points": -4.583960388681419
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "8461",
+        "denominator": "1291752"
+      },
+      "percentage_points": 0.6550018889074684
+    },
+    {
+      "seed": 7,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 233,
+      "mean_difference_exact": {
+        "numerator": "10741",
+        "denominator": "1614690"
+      },
+      "percentage_points": 0.6652050858059442
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 964,
+      "mean_difference_exact": {
+        "numerator": "1604173",
+        "denominator": "115795680"
+      },
+      "percentage_points": 1.3853478817171763
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 964,
+      "mean_difference_exact": {
+        "numerator": "42559",
+        "denominator": "4511520"
+      },
+      "percentage_points": 0.9433406036103131
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 964,
+      "mean_difference_exact": {
+        "numerator": "-2662999",
+        "denominator": "115795680"
+      },
+      "percentage_points": -2.299739506689714
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 964,
+      "mean_difference_exact": {
+        "numerator": "-971921",
+        "denominator": "49626720"
+      },
+      "percentage_points": -1.9584631021353014
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 235,
+      "mean_difference_exact": {
+        "numerator": "-30901",
+        "denominator": "1085700"
+      },
+      "percentage_points": -2.8461821866077184
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 235,
+      "mean_difference_exact": {
+        "numerator": "-5406",
+        "denominator": "90475"
+      },
+      "percentage_points": -5.975131251726997
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 235,
+      "mean_difference_exact": {
+        "numerator": "733",
+        "denominator": "2171400"
+      },
+      "percentage_points": 0.03375702311872525
+    },
+    {
+      "seed": 8,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 235,
+      "mean_difference_exact": {
+        "numerator": "-205",
+        "denominator": "65142"
+      },
+      "percentage_points": -0.3146971232077615
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "96059",
+        "denominator": "6652800"
+      },
+      "percentage_points": 1.4438882876382877
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "101609",
+        "denominator": "4435200"
+      },
+      "percentage_points": 2.290967712842713
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "-13879",
+        "denominator": "633600"
+      },
+      "percentage_points": -2.1904987373737375
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 960,
+      "mean_difference_exact": {
+        "numerator": "-310951",
+        "denominator": "26611200"
+      },
+      "percentage_points": -1.1684967231842232
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-281",
+        "denominator": "13384"
+      },
+      "percentage_points": -2.099521817095039
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-3275",
+        "denominator": "55209"
+      },
+      "percentage_points": -5.93200383995363
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-155",
+        "denominator": "13384"
+      },
+      "percentage_points": -1.1580992229527793
+    },
+    {
+      "seed": 9,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 239,
+      "mean_difference_exact": {
+        "numerator": "-29842",
+        "denominator": "828135"
+      },
+      "percentage_points": -3.6035187499622645
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "7369",
+        "denominator": "457380"
+      },
+      "percentage_points": 1.6111329747693384
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "-5399",
+        "denominator": "5305608"
+      },
+      "percentage_points": -0.10176025066307198
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "-295913",
+        "denominator": "13264020"
+      },
+      "percentage_points": -2.2309450679356635
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 957,
+      "mean_difference_exact": {
+        "numerator": "-106039",
+        "denominator": "13264020"
+      },
+      "percentage_points": -0.7994484326772728
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-2341",
+        "denominator": "111804"
+      },
+      "percentage_points": -2.0938427963221353
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-310777",
+        "denominator": "6708240"
+      },
+      "percentage_points": -4.632765076979953
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-4948",
+        "denominator": "419265"
+      },
+      "percentage_points": -1.1801605190034943
+    },
+    {
+      "seed": 10,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 242,
+      "mean_difference_exact": {
+        "numerator": "-1801",
+        "denominator": "191664"
+      },
+      "percentage_points": -0.9396652475164871
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "67169",
+        "denominator": "2215290"
+      },
+      "percentage_points": 3.0320635221573697
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "3403",
+        "denominator": "189882"
+      },
+      "percentage_points": 1.7921656607787995
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "-284027",
+        "denominator": "26583480"
+      },
+      "percentage_points": -1.0684342305823016
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "-494419",
+        "denominator": "26583480"
+      },
+      "percentage_points": -1.8598731242109763
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-99259",
+        "denominator": "3326400"
+      },
+      "percentage_points": -2.9839766714766713
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-457873",
+        "denominator": "6652800"
+      },
+      "percentage_points": -6.8824104136604145
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-45511",
+        "denominator": "2217600"
+      },
+      "percentage_points": -2.0522637085137085
+    },
+    {
+      "seed": 11,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-43867",
+        "denominator": "3326400"
+      },
+      "percentage_points": -1.3187530062530062
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "49109",
+        "denominator": "4430580"
+      },
+      "percentage_points": 1.1084101855738977
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "100861",
+        "denominator": "26583480"
+      },
+      "percentage_points": 0.37941232675330694
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "-276481",
+        "denominator": "13291740"
+      },
+      "percentage_points": -2.080096360596882
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "-701731",
+        "denominator": "26583480"
+      },
+      "percentage_points": -2.6397258748666466
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-37",
+        "denominator": "2700"
+      },
+      "percentage_points": -1.3703703703703705
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-344171",
+        "denominator": "6652800"
+      },
+      "percentage_points": -5.173325517075518
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-187",
+        "denominator": "43200"
+      },
+      "percentage_points": -0.43287037037037035
+    },
+    {
+      "seed": 12,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-8227",
+        "denominator": "831600"
+      },
+      "percentage_points": -0.9892977392977392
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "871",
+        "denominator": "1268520"
+      },
+      "percentage_points": 0.0686626935326207
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "19197",
+        "denominator": "591976"
+      },
+      "percentage_points": 3.2428679541062473
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-19963",
+        "denominator": "1268520"
+      },
+      "percentage_points": -1.5737237095197552
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-156011",
+        "denominator": "26638920"
+      },
+      "percentage_points": -0.5856506194695581
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-101071",
+        "denominator": "6597360"
+      },
+      "percentage_points": -1.5319915845125929
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-5122",
+        "denominator": "82467"
+      },
+      "percentage_points": -6.21096923617932
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-40339",
+        "denominator": "6597360"
+      },
+      "percentage_points": -0.6114415463154959
+    },
+    {
+      "seed": 13,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "2179",
+        "denominator": "274890"
+      },
+      "percentage_points": 0.7926807086470952
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "54599",
+        "denominator": "6659730"
+      },
+      "percentage_points": 0.8198380414821621
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "7411",
+        "denominator": "302715"
+      },
+      "percentage_points": 2.448177328510315
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-3659",
+        "denominator": "161448"
+      },
+      "percentage_points": -2.266364402160448
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 961,
+      "mean_difference_exact": {
+        "numerator": "-15667",
+        "denominator": "807240"
+      },
+      "percentage_points": -1.940810663495367
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-479",
+        "denominator": "33320"
+      },
+      "percentage_points": -1.437575030012005
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-174109",
+        "denominator": "3298680"
+      },
+      "percentage_points": -5.2781415596541645
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "-8657",
+        "denominator": "599760"
+      },
+      "percentage_points": -1.4434106976123784
+    },
+    {
+      "seed": 14,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 238,
+      "mean_difference_exact": {
+        "numerator": "6883",
+        "denominator": "824670"
+      },
+      "percentage_points": 0.834636885057053
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "14349211",
+        "denominator": "1958316360"
+      },
+      "percentage_points": 0.7327320188450042
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "16438129",
+        "denominator": "5874949080"
+      },
+      "percentage_points": 0.2798003655207851
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "-174816977",
+        "denominator": "11749898160"
+      },
+      "percentage_points": -1.4878169548322282
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 959,
+      "mean_difference_exact": {
+        "numerator": "-9438137",
+        "denominator": "734368635"
+      },
+      "percentage_points": -1.2852042625703914
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-33893",
+        "denominator": "6652800"
+      },
+      "percentage_points": -0.5094546657046657
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-1456813",
+        "denominator": "28828800"
+      },
+      "percentage_points": -5.053325147075148
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "27169",
+        "denominator": "6652800"
+      },
+      "percentage_points": 0.4083844396344396
+    },
+    {
+      "seed": 15,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 240,
+      "mean_difference_exact": {
+        "numerator": "-291059",
+        "denominator": "21621600"
+      },
+      "percentage_points": -1.3461492211492212
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-59959",
+        "denominator": "10515960"
+      },
+      "percentage_points": -0.570171434657416
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "6909011",
+        "denominator": "347026680"
+      },
+      "percentage_points": 1.9909163756515782
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-748169",
+        "denominator": "34702668"
+      },
+      "percentage_points": -2.155940863105972
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-773419",
+        "denominator": "57837780"
+      },
+      "percentage_points": -1.3372211035762438
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-10691",
+        "denominator": "654192"
+      },
+      "percentage_points": -1.6342297062636044
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-421",
+        "denominator": "7392"
+      },
+      "percentage_points": -5.69534632034632
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-10691",
+        "denominator": "654192"
+      },
+      "percentage_points": -1.6342297062636044
+    },
+    {
+      "seed": 16,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "23899",
+        "denominator": "726880"
+      },
+      "percentage_points": 3.2878879594981294
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 956,
+      "mean_difference_exact": {
+        "numerator": "93719",
+        "denominator": "26500320"
+      },
+      "percentage_points": 0.35365233325484374
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 956,
+      "mean_difference_exact": {
+        "numerator": "108721",
+        "denominator": "3312540"
+      },
+      "percentage_points": 3.282103763275311
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 956,
+      "mean_difference_exact": {
+        "numerator": "-23713",
+        "denominator": "1261920"
+      },
+      "percentage_points": -1.8791207049575251
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 956,
+      "mean_difference_exact": {
+        "numerator": "-113077",
+        "denominator": "4416720"
+      },
+      "percentage_points": -2.56020304660472
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 243,
+      "mean_difference_exact": {
+        "numerator": "-11393",
+        "denominator": "962280"
+      },
+      "percentage_points": -1.1839589308725111
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 243,
+      "mean_difference_exact": {
+        "numerator": "-25903",
+        "denominator": "374220"
+      },
+      "percentage_points": -6.921864144086366
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 243,
+      "mean_difference_exact": {
+        "numerator": "5441",
+        "denominator": "481140"
+      },
+      "percentage_points": 1.1308558839423035
+    },
+    {
+      "seed": 17,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 243,
+      "mean_difference_exact": {
+        "numerator": "7877",
+        "denominator": "449064"
+      },
+      "percentage_points": 1.7540929577966615
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 958,
+      "mean_difference_exact": {
+        "numerator": "-67763",
+        "denominator": "26555760"
+      },
+      "percentage_points": -0.2551725124794018
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 958,
+      "mean_difference_exact": {
+        "numerator": "1879",
+        "denominator": "79035"
+      },
+      "percentage_points": 2.377427721895363
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 958,
+      "mean_difference_exact": {
+        "numerator": "-26113",
+        "denominator": "3319470"
+      },
+      "percentage_points": -0.7866617261189287
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 958,
+      "mean_difference_exact": {
+        "numerator": "-539927",
+        "denominator": "26555760"
+      },
+      "percentage_points": -2.0331822549985388
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 241,
+      "mean_difference_exact": {
+        "numerator": "-113279",
+        "denominator": "6680520"
+      },
+      "percentage_points": -1.695661415578428
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 241,
+      "mean_difference_exact": {
+        "numerator": "-49587",
+        "denominator": "742280"
+      },
+      "percentage_points": -6.680363205259471
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 241,
+      "mean_difference_exact": {
+        "numerator": "-8549",
+        "denominator": "1113420"
+      },
+      "percentage_points": -0.7678144815074276
+    },
+    {
+      "seed": 18,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 241,
+      "mean_difference_exact": {
+        "numerator": "-115303",
+        "denominator": "3340260"
+      },
+      "percentage_points": -3.451916916647207
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 968,
+      "mean_difference_exact": {
+        "numerator": "2419",
+        "denominator": "119790"
+      },
+      "percentage_points": 2.019367225978796
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 968,
+      "mean_difference_exact": {
+        "numerator": "97037",
+        "denominator": "6708240"
+      },
+      "percentage_points": 1.4465344114104444
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 968,
+      "mean_difference_exact": {
+        "numerator": "-319223",
+        "denominator": "13416480"
+      },
+      "percentage_points": -2.3793349671448847
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 968,
+      "mean_difference_exact": {
+        "numerator": "-55631",
+        "denominator": "3354120"
+      },
+      "percentage_points": -1.6585870511490346
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 231,
+      "mean_difference_exact": {
+        "numerator": "-6731",
+        "denominator": "320166"
+      },
+      "percentage_points": -2.1023469075417127
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 231,
+      "mean_difference_exact": {
+        "numerator": "-46159",
+        "denominator": "914760"
+      },
+      "percentage_points": -5.046023000568455
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 231,
+      "mean_difference_exact": {
+        "numerator": "-14527",
+        "denominator": "1280664"
+      },
+      "percentage_points": -1.1343334395282447
+    },
+    {
+      "seed": 19,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 231,
+      "mean_difference_exact": {
+        "numerator": "-6449",
+        "denominator": "914760"
+      },
+      "percentage_points": -0.7049936595391141
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "31723",
+        "denominator": "6673590"
+      },
+      "percentage_points": 0.47535134762549097
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": false,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "72791",
+        "denominator": "5338872"
+      },
+      "percentage_points": 1.363415343166122
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-27985",
+        "denominator": "1779624"
+      },
+      "percentage_points": -1.5725231846727175
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": false,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 963,
+      "mean_difference_exact": {
+        "numerator": "-14317",
+        "denominator": "593208"
+      },
+      "percentage_points": -2.4134873433938853
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "q",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-48",
+        "denominator": "3245"
+      },
+      "percentage_points": -1.4791987673343605
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": true,
+      "boundary": "first",
+      "prefix": "y",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-45383",
+        "denominator": "1090320"
+      },
+      "percentage_points": -4.162356005576345
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "q",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-4969",
+        "denominator": "934560"
+      },
+      "percentage_points": -0.5316940592364321
+    },
+    {
+      "seed": 20,
+      "model_paragraph_initial": true,
+      "boundary": "last",
+      "prefix": "y",
+      "eligible_rows": 236,
+      "mean_difference_exact": {
+        "numerator": "-88037",
+        "denominator": "6541920"
+      },
+      "percentage_points": -1.3457364198889623
+    }
+  ],
+  "renderer": {
+    "matplotlib": "3.11.2",
+    "python": "3.14.3",
+    "font": "DejaVu Sans"
+  },
+  "figure_producer_sha256": "592e5e7e18b4cd7737203ccd63e3bdf614b8079d521dc5e469045d8f2cc3d2be"
+}

@@ -90,6 +90,11 @@ diagnostic lines in either run; full log fingerprints remain in the record.
 
 ## Reproduction and next use
 
+A [fixed twenty-seed census](SELF_CITATION_PREFIX_SEEDS.md) uses this bridge
+to describe native q/y first/last contrasts under unchanged release settings.
+It retains all seeds and reports descriptive variation without a manuscript
+target, calibrated probability or mechanism-fit claim.
+
 The observer uses the accepted source-build report as its control and an
 unchanged local author release checkout. Supply the same Java installation
 used by that report and new output/work paths:
