@@ -10,6 +10,11 @@ The bounded [certificate record](certificates.json) retains every declared
 attempt. These are known mathematical calibrations, not blind predictions,
 an IID simulation or a sample of manuscript rows.
 
+The [local orbit guide](viewer/README.md) displays every accepted condition and
+stream with exact values and synthetic width diagrams. It makes the distinction
+between nonzero realizations and zero conditional means visible, without a new
+calculation or manuscript comparison.
+
 ## Fixed classes
 
 Raw weights below are completed-row event weights conditional on the first
