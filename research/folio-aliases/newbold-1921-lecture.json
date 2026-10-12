@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "observation_id": "newbold-1921-lecture-v1",
+  "source_id": "S010",
+  "inspected_on": "2026-10-12",
+  "access_timezone": "America/New_York",
+  "recorded_utc": "2026-10-12T13:02:27.624650+00:00",
+  "contribution_role": {
+    "role": "owner/maintainer",
+    "authenticated_github_login": "tobrien6",
+    "upstream_owner": "tobrien6",
+    "verified_permissions": [
+      "admin",
+      "maintain",
+      "push",
+      "pull",
+      "triage"
+    ],
+    "assigned_scope": "Continuous contributions to the user-selected Voynich project; focused source note through a topic branch and PR."
+  },
+  "source": {
+    "author": "William Romaine Newbold",
+    "article_title": "The Voynich Roger Bacon Manuscript",
+    "lecture_series": "The Mary Scott Newbold Lecture",
+    "lecture_number": "V",
+    "journal": "Transactions of the College of Physicians of Philadelphia",
+    "series": 3,
+    "volume": 43,
+    "visible_publication_year": 1921,
+    "reported_reading_date": "1921-04-20",
+    "article_printed_pages": "431-474",
+    "archive_identifier": "transactionsofco3431coll",
+    "record_url": "https://archive.org/details/transactionsofco3431coll",
+    "metadata_url": "https://archive.org/metadata/transactionsofco3431coll",
+    "pdf_url": "https://archive.org/download/transactionsofco3431coll/transactionsofco3431coll.pdf",
+    "representation": "Archive Text PDF derivative",
+    "bytes": 52867297,
+    "sha256": "b661753be6315f0b0d5147acc73bb1d8d314fd5d8dc4c43413c9d4e4730dca65",
+    "pdf_pages": 652,
+    "physical_copy_authenticated": false,
+    "complete_digitization_chain_authenticated": false
+  },
+  "inspection": {
+    "method": "Complete-page Poppler rendering and visual inspection; local text extraction and public page-index JSON used only for navigation and the recorded extraction discrepancy.",
+    "visually_inspected_pdf_pages": [
+      7,
+      8,
+      11,
+      518,
+      519,
+      520,
+      542,
+      543,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562
+    ],
+    "printed_page_correspondences": [
+      {
+        "pdf_page": 7,
+        "printed_page": null,
+        "role": "volume title"
+      },
+      {
+        "pdf_page": 8,
+        "printed_page": null,
+        "role": "publication notice"
+      },
+      {
+        "pdf_page": 11,
+        "printed_page": "v",
+        "role": "contents"
+      },
+      {
+        "pdf_page": 518,
+        "printed_page": 430,
+        "role": "end of preceding Voynich sketch"
+      },
+      {
+        "pdf_page": 519,
+        "printed_page": null,
+        "role": "lecture opening and reading-date footnote",
+        "located_as_printed_page": 431,
+        "locator_basis": "Contents entry plus following visible printed432; number not visible on lecture opening."
+      },
+      {
+        "pdf_page": 520,
+        "printed_page": 432,
+        "role": "following printed page"
+      },
+      {
+        "pdf_page": 542,
+        "printed_page": 454,
+        "role": "proposed final-page key and note26"
+      },
+      {
+        "pdf_page": 543,
+        "printed_page": 455,
+        "role": "adjacent historical argument"
+      },
+      {
+        "pdf_page": 546,
+        "printed_page": 458,
+        "role": "preceding historical context"
+      },
+      {
+        "pdf_page": 547,
+        "printed_page": 459,
+        "role": "second-part/slides note begins"
+      },
+      {
+        "pdf_page": 548,
+        "printed_page": 460,
+        "role": "second-part/slides note continues"
+      },
+      {
+        "pdf_page": 549,
+        "printed_page": 461,
+        "role": "physical description"
+      },
+      {
+        "pdf_page": 550,
+        "printed_page": 462,
+        "role": "contents table and note34"
+      },
+      {
+        "pdf_page": 551,
+        "printed_page": 463,
+        "role": "slide list begins"
+      },
+      {
+        "pdf_page": 552,
+        "printed_page": 464,
+        "role": "slide list and PlateI"
+      },
+      {
+        "pdf_page": 553,
+        "printed_page": 465,
+        "role": "slide list and astronomical discussion"
+      },
+      {
+        "pdf_page": 554,
+        "printed_page": 466,
+        "role": "slide list"
+      },
+      {
+        "pdf_page": 555,
+        "printed_page": 467,
+        "role": "PlateII"
+      },
+      {
+        "pdf_page": 556,
+        "printed_page": 468,
+        "role": "slide list and PlateIII context"
+      },
+      {
+        "pdf_page": 557,
+        "printed_page": 469,
+        "role": "PlateIII"
+      },
+      {
+        "pdf_page": 558,
+        "printed_page": 470,
+        "role": "slide list and PlateIV context"
+      },
+      {
+        "pdf_page": 559,
+        "printed_page": 471,
+        "role": "PlateIV"
+      },
+      {
+        "pdf_page": 560,
+        "printed_page": 472,
+        "role": "PlateV and surrounding text"
+      },
+      {
+        "pdf_page": 561,
+        "printed_page": 473,
+        "role": "interpretation and note37"
+      },
+      {
+        "pdf_page": 562,
+        "printed_page": 474,
+        "role": "last slide description and note37 continuation"
+      }
+    ],
+    "complete_credited_printed_range_inspected": "461-474",
+    "whole_44_page_article_visually_inspected": false,
+    "whole_journal_visually_inspected": false,
+    "global_page_offset_used_for_uninspected_locators": false,
+    "pdftotext_version": "pdftotext version 24.04.0",
+    "page_index": {
+      "url": "https://ia800807.us.archive.org/13/items/transactionsofco3431coll/transactionsofco3431coll_page_numbers.json",
+      "bytes": 109780,
+      "sha256": "91b7956fb8a8ba7e26e055fdd87fcf6cf659497be50db8c508e55f1972b13d1e",
+      "entries": 652,
+      "role": "Navigation only; provider leafNum is not used as an assumed zero-based PDF index."
+    }
+  },
+  "observations": [
+    {
+      "printed_page": 454,
+      "pdf_page": 542,
+      "locator": "opening paragraph and note26",
+      "reported_action": "Attributes a name reading to a final-page key, displays a short opening, removes designated elements to obtain proposed Latin and assigns alphabet values.",
+      "historical_reading_accepted": false
+    },
+    {
+      "printed_pages": [
+        459,
+        460
+      ],
+      "pdf_pages": [
+        547,
+        548
+      ],
+      "locator": "bracketed lecture note",
+      "reported_action": "Printing cost prevents complete second-part reproduction; reading operations and confidence in exact wording remain limited.",
+      "cipher_layer_claim_accepted": false,
+      "source_reports_incomplete_second_part_reproduction": true
+    },
+    {
+      "printed_page": 461,
+      "pdf_page": 549,
+      "locator": "opening paragraph",
+      "reported_last_leaf_number": 116,
+      "source_literal_numeric_designation": "116",
+      "source_designation_has_verso_suffix": false,
+      "reported_missing_leaves": 8,
+      "reported_equivalent_present_quarto_pages": 246,
+      "reported_equivalent_minimum_original_pages": 262,
+      "reported_terminal_material": "Key only; historical claim.",
+      "modern_canvas_count_inferred": false
+    },
+    {
+      "printed_page": 462,
+      "pdf_page": 550,
+      "locator": "paragraph and note34 PartV table",
+      "source_folio_ranges": [
+        "103-108",
+        "111-116"
+      ],
+      "reported_part_v_leaves": 12,
+      "reported_part_v_text_pages": 24,
+      "source_missing_folios": [
+        "109",
+        "110"
+      ],
+      "reported_missing_pages": 4,
+      "reported_part_v_total_pages": 28,
+      "reported_terminal_material": "Twenty-fourth page is the last of the manuscript and contains the Key only; historical claim."
+    },
+    {
+      "printed_pages": "463-474",
+      "pdf_pages": "551-562",
+      "locator": "slide list and PlatesI-V",
+      "source_plate_labels": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "terminal_short_text_reproduction_present_in_this_inspected_range": false,
+      "scope": "Bounded complete-page inspection only, not whole-volume or other-edition absence."
+    }
+  ],
+  "extraction_discrepancy": {
+    "printed_page": 461,
+    "pdf_page": 549,
+    "field": "reported final-leaf number",
+    "visually_printed_text": "116,",
+    "local_pdftotext_text": "116V,",
+    "scope": "AddedV in this one extracted occurrence is not a printed verso designation."
+  },
+  "book_comparison": {
+    "source_id": "S009",
+    "record_path": "research/folio-aliases/newbold-terminal-source.json",
+    "accepted_pr": "https://github.com/tobrien6/voynich-manuscript-research/pull/190",
+    "accepted_reviewed_head": "1b2ea29f0d21b33df1732bf455494d4b46846d73",
+    "accepted_merge": "650786aa7d6711bdb09f6ae474e7b81fe015a324",
+    "source_ledger_preserved": true,
+    "source_ledger_sha256": "0e25099797f7055204eb945abdc4dfaf36bf1cb2c4a6aa3d314d43aface9ba4d",
+    "visually_reinspected_book_pdf_pages": [
+      78,
+      81,
+      117,
+      158
+    ],
+    "credited_original_pages": "461-474",
+    "specific_physical_description_facts_and_part_v_ranges_correspond": true,
+    "complete_chapter_text_identity_asserted": false,
+    "short_printed_opening_word_sequence_on_lecture_p454_matches_book_p73": true,
+    "longer_book_proposal_printed_page": 109,
+    "longer_book_proposal_pdf_page": 158,
+    "comparison_scope": "Selected printed historical representations and explicit editor credit; no new manuscript glyph transcription or complete rule/reading equivalence."
+  },
+  "retrieval_limits": [
+    {
+      "source": "canonical archive PDF route",
+      "outcome": "Partial download timeout followed by HTTP500 on resume; incomplete bytes were not treated as evidence.",
+      "completion": "Resumed same file through provider-supplied public storage URL; final size and PDF parse verified."
+    },
+    {
+      "source": "Google Books record2GMo-2QNt0cC normal public PDF link",
+      "outcome": "HTTP429; no alternate account/client identity retries and no Google PDF contents inspected.",
+      "identity_scope": "Record title/length not used to conflate Voynich sketch with Newbold lecture."
+    }
+  ],
+  "registry_snapshot": {
+    "path": "research/folio-aliases/decisions.json",
+    "sha256": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8"
+  },
+  "status": "documentary_source_context_only",
+  "mapping_allowed": false,
+  "verified_target": null,
+  "apply_to_statistics": false,
+  "historical_readings_accepted": false,
+  "new_manuscript_glyph_transcription": false,
+  "current_yale_image_comparison": false,
+  "reference_7_identified": false,
+  "reuse_scope": "Source PDF, complete text extraction, page index and renders remain local; only selected facts, original inspection notes, links and fingerprints are published. No blanket source-scan reuse license asserted.",
+  "next_test": "Inspect the actual Kennedy/Churchill reference7 and an explicit custodial correction or source-to-current-final-surface correspondence. Keep historical reading claims separate from an evaluated decipherment."
+}

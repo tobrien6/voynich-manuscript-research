@@ -153,6 +153,13 @@ private local path.
 
 ## Interpretation and next test
 
+The [fixed known-process calibration](EXACT_SLOT_CONTROL_RESULTS.md) reuses all
+192 old synthetic datasets and adds 64 independent alternating-position cases.
+This exact estimator misses all quarter-persistence cases that the coarse model
+detects, detects all strong-persistence cases and learns the constructed position
+profile. The native losses therefore do not establish absence of moderate
+dependence. Neither the native model nor this result was tuned to those controls.
+
 The new models lose on all four exposed treatments and all folds; the original
 coarse predictor's mixed gains and failed criterion remain unchanged. This limits
 the stated exact-slot/matched-weight predictors. It does not show that counts

@@ -7,6 +7,7 @@ from itertools import product
 import json
 import os
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -194,6 +195,38 @@ class BoundaryCalibrationTests(unittest.TestCase):
         with patch.object(producer.subprocess, 'check_output', return_value=b'changed'):
             with self.assertRaisesRegex(ValueError, 'frozen protocol differs'):
                 producer.frozen_inputs()
+
+    def test_protocol_verification_does_not_require_the_topic_object(self):
+        original_lookup = producer.subprocess.check_output
+        calls = []
+        def main_only_lookup(args, **kwargs):
+            calls.append(args)
+            if any(isinstance(arg, str) and arg.startswith(producer.PROTOCOL_COMMIT + ':') for arg in args):
+                raise subprocess.CalledProcessError(128, args)
+            return original_lookup(args, **kwargs)
+        with patch.object(producer.subprocess, 'check_output', side_effect=main_only_lookup):
+            settings, hashes = producer.frozen_inputs()
+        self.assertEqual(settings, self.settings)
+        self.assertEqual(hashes, self.report['protocol_sha256'])
+        self.assertEqual([args[2].split(':')[0] for args in calls[:2]], [producer.PROTOCOL_SOURCE_COMMIT] * 2)
+
+    def test_repair_preserves_every_original_field_except_two_runtime_fingerprints(self):
+        raw = subprocess.check_output(['git', 'show', producer.PROTOCOL_SOURCE_COMMIT + ':' + producer.BASE + '/results.json'],
+                                      cwd=producer.ROOT)
+        self.assertEqual(producer.sha(raw), '6aa35b7ace4bcac9f968139aea286eed2b7ecb194a7d1f9d1c41e3f367ec5bba')
+        original = json.loads(raw)
+        current = dict(self.report)
+        old_hashes = original.pop('implementation_sha256')
+        new_hashes = current.pop('implementation_sha256')
+        self.assertEqual(original, current)
+        paths = {'scripts/wrap_boundary_costs.py', 'tests/test_wrap_boundary_costs.py'}
+        self.assertEqual(set(old_hashes), paths)
+        self.assertEqual(set(new_hashes), paths)
+        for path in paths:
+            archived = subprocess.check_output(['git', 'show', producer.PROTOCOL_SOURCE_COMMIT + ':' + path], cwd=producer.ROOT)
+            self.assertEqual(old_hashes[path], producer.sha(archived))
+            self.assertEqual(new_hashes[path], producer.sha((producer.ROOT / path).read_bytes()))
+        self.assertNotEqual(old_hashes, new_hashes)
 
     def test_existing_alias_and_late_output_preservation(self):
         with tempfile.TemporaryDirectory() as folder:
