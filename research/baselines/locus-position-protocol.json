@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "analysis_id": "locus-position-ascii-length-v1",
+  "analysis_status": "exploratory",
+  "recorded_on": "2026-10-11",
+  "sources": {
+    "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "IT2a": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+  },
+  "locus_kinds": ["P0", "P1"],
+  "locators": ["@", "+", "*"],
+  "spacing_policies": ["split", "join"],
+  "minimum_tokens_in_every_source_and_policy": 2,
+  "cohort": "intersection of accepted locus keys across both sources and both spacing policies, requiring selected kind and locator in every case",
+  "unit": "case-preserving ASCII letter count of each encoded token, not manuscript glyph count",
+  "metric": "equal-locus mean of first-token length minus mean remaining-token length",
+  "null": "independently choose a uniformly random token as first within each fixed locus; remaining tokens retain their multiset",
+  "null_replicates": 2000,
+  "seed": "voynich-locus-position-v1-2026-10-11",
+  "randomness": "SHA-256 counter draws with rejection sampling; source ID, spacing policy, replicate index and locus key are included in each draw",
+  "empirical_interval_quantiles": [0.025, 0.975],
+  "inference_limit": "descriptive conditioned shuffle comparison; no confirmatory p-value, unseen-material claim, language identification, decipherment or translation"
+}
