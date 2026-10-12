@@ -155,3 +155,9 @@ on original form frequency/length. Review the relevant first-slot glyph regions
 independently against images. Any stronger candidate test needs new exposure-valid
 material and a reviewed unit/split definition. Preserve this v1 and its limits
 when revising the proposed mechanism.
+
+The [matched other-prefix control](MATCHED_CONTROL_RESULTS.md) adds a frozen
+post-result comparison with exact-length/log-frequency matching and pooled
+non-y deletion gains. All eight adjusted selective contrasts are negative on
+its 12-unit joint frame. Its different coverage and weighting do not replace
+the original v1 diagnostic or establish a manuscript mechanism.
