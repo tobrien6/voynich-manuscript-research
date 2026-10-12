@@ -1,0 +1,2560 @@
+{
+  "artist_positions": [
+    {
+      "bar_center_y": 0.0,
+      "bar_x": 0.02911589440587702,
+      "metric": "subset",
+      "positive_partners": [
+        "V"
+      ],
+      "source_symbol": "*"
+    },
+    {
+      "bar_center_y": 1.0,
+      "bar_x": 0.0,
+      "metric": "subset",
+      "positive_partners": [],
+      "source_symbol": "1"
+    },
+    {
+      "bar_center_y": 2.0,
+      "bar_x": 0.30493895145469685,
+      "metric": "subset",
+      "positive_partners": [
+        "R"
+      ],
+      "source_symbol": "2"
+    },
+    {
+      "bar_center_y": 3.0,
+      "bar_x": 0.46182861701812,
+      "metric": "subset",
+      "positive_partners": [
+        "U"
+      ],
+      "source_symbol": "3"
+    },
+    {
+      "bar_center_y": 4.0,
+      "bar_x": 0.13767921843650904,
+      "metric": "subset",
+      "positive_partners": [
+        "S"
+      ],
+      "source_symbol": "4"
+    },
+    {
+      "bar_center_y": 5.0,
+      "bar_x": 0.010569470270704947,
+      "metric": "subset",
+      "positive_partners": [
+        "J"
+      ],
+      "source_symbol": "5"
+    },
+    {
+      "bar_center_y": 6.0,
+      "bar_x": 0.18181818181818182,
+      "metric": "subset",
+      "positive_partners": [
+        "L"
+      ],
+      "source_symbol": "6"
+    },
+    {
+      "bar_center_y": 7.0,
+      "bar_x": 0.4032784742295919,
+      "metric": "subset",
+      "positive_partners": [
+        "C"
+      ],
+      "source_symbol": "8"
+    },
+    {
+      "bar_center_y": 8.0,
+      "bar_x": 0.1723976020539767,
+      "metric": "subset",
+      "positive_partners": [
+        "O"
+      ],
+      "source_symbol": "9"
+    },
+    {
+      "bar_center_y": 9.0,
+      "bar_x": 0.30210874334837684,
+      "metric": "subset",
+      "positive_partners": [
+        "O"
+      ],
+      "source_symbol": "A"
+    },
+    {
+      "bar_center_y": 10.0,
+      "bar_x": 0.2596784417254701,
+      "metric": "subset",
+      "positive_partners": [
+        "P"
+      ],
+      "source_symbol": "B"
+    },
+    {
+      "bar_center_y": 11.0,
+      "bar_x": 0.4032784742295919,
+      "metric": "subset",
+      "positive_partners": [
+        "8"
+      ],
+      "source_symbol": "C"
+    },
+    {
+      "bar_center_y": 12.0,
+      "bar_x": 0.3466380358070058,
+      "metric": "subset",
+      "positive_partners": [
+        "G"
+      ],
+      "source_symbol": "D"
+    },
+    {
+      "bar_center_y": 13.0,
+      "bar_x": 0.6280353914044241,
+      "metric": "subset",
+      "positive_partners": [
+        "R"
+      ],
+      "source_symbol": "E"
+    },
+    {
+      "bar_center_y": 14.0,
+      "bar_x": 0.6524309383257143,
+      "metric": "subset",
+      "positive_partners": [
+        "P"
+      ],
+      "source_symbol": "F"
+    },
+    {
+      "bar_center_y": 15.0,
+      "bar_x": 0.36458736318105495,
+      "metric": "subset",
+      "positive_partners": [
+        "K"
+      ],
+      "source_symbol": "G"
+    },
+    {
+      "bar_center_y": 16.0,
+      "bar_x": 0.36363636363636365,
+      "metric": "subset",
+      "positive_partners": [
+        "L"
+      ],
+      "source_symbol": "H"
+    },
+    {
+      "bar_center_y": 17.0,
+      "bar_x": 0.027586206896551724,
+      "metric": "subset",
+      "positive_partners": [
+        "U"
+      ],
+      "source_symbol": "I"
+    },
+    {
+      "bar_center_y": 18.0,
+      "bar_x": 0.5068834477211216,
+      "metric": "subset",
+      "positive_partners": [
+        "T"
+      ],
+      "source_symbol": "J"
+    },
+    {
+      "bar_center_y": 19.0,
+      "bar_x": 0.36458736318105495,
+      "metric": "subset",
+      "positive_partners": [
+        "G"
+      ],
+      "source_symbol": "K"
+    },
+    {
+      "bar_center_y": 20.0,
+      "bar_x": 0.36363636363636365,
+      "metric": "subset",
+      "positive_partners": [
+        "H"
+      ],
+      "source_symbol": "L"
+    },
+    {
+      "bar_center_y": 21.0,
+      "bar_x": 0.828903087271131,
+      "metric": "subset",
+      "positive_partners": [
+        "N"
+      ],
+      "source_symbol": "M"
+    },
+    {
+      "bar_center_y": 22.0,
+      "bar_x": 0.828903087271131,
+      "metric": "subset",
+      "positive_partners": [
+        "M"
+      ],
+      "source_symbol": "N"
+    },
+    {
+      "bar_center_y": 23.0,
+      "bar_x": 0.30210874334837684,
+      "metric": "subset",
+      "positive_partners": [
+        "A"
+      ],
+      "source_symbol": "O"
+    },
+    {
+      "bar_center_y": 24.0,
+      "bar_x": 0.6524309383257143,
+      "metric": "subset",
+      "positive_partners": [
+        "F"
+      ],
+      "source_symbol": "P"
+    },
+    {
+      "bar_center_y": 25.0,
+      "bar_x": 0.7301152419542825,
+      "metric": "subset",
+      "positive_partners": [
+        "X"
+      ],
+      "source_symbol": "Q"
+    },
+    {
+      "bar_center_y": 26.0,
+      "bar_x": 0.6280353914044241,
+      "metric": "subset",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "R"
+    },
+    {
+      "bar_center_y": 27.0,
+      "bar_x": 0.6563449186731846,
+      "metric": "subset",
+      "positive_partners": [
+        "Z"
+      ],
+      "source_symbol": "S"
+    },
+    {
+      "bar_center_y": 28.0,
+      "bar_x": 0.5068834477211216,
+      "metric": "subset",
+      "positive_partners": [
+        "J"
+      ],
+      "source_symbol": "T"
+    },
+    {
+      "bar_center_y": 29.0,
+      "bar_x": 0.46182861701812,
+      "metric": "subset",
+      "positive_partners": [
+        "3"
+      ],
+      "source_symbol": "U"
+    },
+    {
+      "bar_center_y": 30.0,
+      "bar_x": 0.23471943024947564,
+      "metric": "subset",
+      "positive_partners": [
+        "B"
+      ],
+      "source_symbol": "V"
+    },
+    {
+      "bar_center_y": 31.0,
+      "bar_x": 0.3942595530017189,
+      "metric": "subset",
+      "positive_partners": [
+        "Q"
+      ],
+      "source_symbol": "W"
+    },
+    {
+      "bar_center_y": 32.0,
+      "bar_x": 0.7301152419542825,
+      "metric": "subset",
+      "positive_partners": [
+        "Q"
+      ],
+      "source_symbol": "X"
+    },
+    {
+      "bar_center_y": 33.0,
+      "bar_x": 0.19539641879121983,
+      "metric": "subset",
+      "positive_partners": [
+        "W"
+      ],
+      "source_symbol": "Y"
+    },
+    {
+      "bar_center_y": 34.0,
+      "bar_x": 0.6563449186731846,
+      "metric": "subset",
+      "positive_partners": [
+        "S"
+      ],
+      "source_symbol": "Z"
+    },
+    {
+      "bar_center_y": 0.0,
+      "bar_x": 0.004369151102624618,
+      "metric": "whole",
+      "positive_partners": [
+        "C"
+      ],
+      "source_symbol": "*"
+    },
+    {
+      "bar_center_y": 1.0,
+      "bar_x": 0.0,
+      "metric": "whole",
+      "positive_partners": [],
+      "source_symbol": "1"
+    },
+    {
+      "bar_center_y": 2.0,
+      "bar_x": 0.07782397861447915,
+      "metric": "whole",
+      "positive_partners": [
+        "8"
+      ],
+      "source_symbol": "2"
+    },
+    {
+      "bar_center_y": 3.0,
+      "bar_x": 0.022208092654310504,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "3"
+    },
+    {
+      "bar_center_y": 4.0,
+      "bar_x": 0.06106644882064858,
+      "metric": "whole",
+      "positive_partners": [
+        "S"
+      ],
+      "source_symbol": "4"
+    },
+    {
+      "bar_center_y": 5.0,
+      "bar_x": 0.00037690938661975886,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "5"
+    },
+    {
+      "bar_center_y": 6.0,
+      "bar_x": 0.0030788678727441438,
+      "metric": "whole",
+      "positive_partners": [
+        "9"
+      ],
+      "source_symbol": "6"
+    },
+    {
+      "bar_center_y": 7.0,
+      "bar_x": 0.231489223628636,
+      "metric": "whole",
+      "positive_partners": [
+        "C"
+      ],
+      "source_symbol": "8"
+    },
+    {
+      "bar_center_y": 8.0,
+      "bar_x": 0.1382648950268667,
+      "metric": "whole",
+      "positive_partners": [
+        "O"
+      ],
+      "source_symbol": "9"
+    },
+    {
+      "bar_center_y": 9.0,
+      "bar_x": 0.22838851013033226,
+      "metric": "whole",
+      "positive_partners": [
+        "O"
+      ],
+      "source_symbol": "A"
+    },
+    {
+      "bar_center_y": 10.0,
+      "bar_x": 0.052363489006715606,
+      "metric": "whole",
+      "positive_partners": [
+        "F"
+      ],
+      "source_symbol": "B"
+    },
+    {
+      "bar_center_y": 11.0,
+      "bar_x": 0.231489223628636,
+      "metric": "whole",
+      "positive_partners": [
+        "8"
+      ],
+      "source_symbol": "C"
+    },
+    {
+      "bar_center_y": 12.0,
+      "bar_x": 0.009698122844438474,
+      "metric": "whole",
+      "positive_partners": [
+        "M"
+      ],
+      "source_symbol": "D"
+    },
+    {
+      "bar_center_y": 13.0,
+      "bar_x": 0.258109447669307,
+      "metric": "whole",
+      "positive_partners": [
+        "R"
+      ],
+      "source_symbol": "E"
+    },
+    {
+      "bar_center_y": 14.0,
+      "bar_x": 0.2897880442094552,
+      "metric": "whole",
+      "positive_partners": [
+        "P"
+      ],
+      "source_symbol": "F"
+    },
+    {
+      "bar_center_y": 15.0,
+      "bar_x": 0.005831459537165928,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "G"
+    },
+    {
+      "bar_center_y": 16.0,
+      "bar_x": 0.001605867736273396,
+      "metric": "whole",
+      "positive_partners": [
+        "R"
+      ],
+      "source_symbol": "H"
+    },
+    {
+      "bar_center_y": 17.0,
+      "bar_x": 0.0011035174783389098,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "I"
+    },
+    {
+      "bar_center_y": 18.0,
+      "bar_x": 0.05456370953484333,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "J"
+    },
+    {
+      "bar_center_y": 19.0,
+      "bar_x": 0.004770700249559167,
+      "metric": "whole",
+      "positive_partners": [
+        "M"
+      ],
+      "source_symbol": "K"
+    },
+    {
+      "bar_center_y": 20.0,
+      "bar_x": 0.0013036261759801734,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "L"
+    },
+    {
+      "bar_center_y": 21.0,
+      "bar_x": 0.14227620680265882,
+      "metric": "whole",
+      "positive_partners": [
+        "R"
+      ],
+      "source_symbol": "M"
+    },
+    {
+      "bar_center_y": 22.0,
+      "bar_x": 0.14136149144176077,
+      "metric": "whole",
+      "positive_partners": [
+        "M"
+      ],
+      "source_symbol": "N"
+    },
+    {
+      "bar_center_y": 23.0,
+      "bar_x": 0.22838851013033226,
+      "metric": "whole",
+      "positive_partners": [
+        "A"
+      ],
+      "source_symbol": "O"
+    },
+    {
+      "bar_center_y": 24.0,
+      "bar_x": 0.2897880442094552,
+      "metric": "whole",
+      "positive_partners": [
+        "F"
+      ],
+      "source_symbol": "P"
+    },
+    {
+      "bar_center_y": 25.0,
+      "bar_x": 0.038225750833681856,
+      "metric": "whole",
+      "positive_partners": [
+        "C"
+      ],
+      "source_symbol": "Q"
+    },
+    {
+      "bar_center_y": 26.0,
+      "bar_x": 0.258109447669307,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "R"
+    },
+    {
+      "bar_center_y": 27.0,
+      "bar_x": 0.25314615917684286,
+      "metric": "whole",
+      "positive_partners": [
+        "Z"
+      ],
+      "source_symbol": "S"
+    },
+    {
+      "bar_center_y": 28.0,
+      "bar_x": 0.045039239421529646,
+      "metric": "whole",
+      "positive_partners": [
+        "M"
+      ],
+      "source_symbol": "T"
+    },
+    {
+      "bar_center_y": 29.0,
+      "bar_x": 0.011237325203908353,
+      "metric": "whole",
+      "positive_partners": [
+        "E"
+      ],
+      "source_symbol": "U"
+    },
+    {
+      "bar_center_y": 30.0,
+      "bar_x": 0.013788844798887728,
+      "metric": "whole",
+      "positive_partners": [
+        "F"
+      ],
+      "source_symbol": "V"
+    },
+    {
+      "bar_center_y": 31.0,
+      "bar_x": 0.007613338458681982,
+      "metric": "whole",
+      "positive_partners": [
+        "8"
+      ],
+      "source_symbol": "W"
+    },
+    {
+      "bar_center_y": 32.0,
+      "bar_x": 0.06535557526550072,
+      "metric": "whole",
+      "positive_partners": [
+        "C"
+      ],
+      "source_symbol": "X"
+    },
+    {
+      "bar_center_y": 33.0,
+      "bar_x": 0.0030291432950162187,
+      "metric": "whole",
+      "positive_partners": [
+        "C"
+      ],
+      "source_symbol": "Y"
+    },
+    {
+      "bar_center_y": 34.0,
+      "bar_x": 0.25314615917684286,
+      "metric": "whole",
+      "positive_partners": [
+        "S"
+      ],
+      "source_symbol": "Z"
+    }
+  ],
+  "changed_maximizing_sets": 21,
+  "input_report_sha256": "07ebfc89fc44aefc95aa7dda2d399010ccbd0a7a707c563c9a2bed1954ac453d",
+  "native_symbols": 35,
+  "native_word_types": 3920,
+  "output_sha256": {
+    "png": "373acc62fbf76bec21f9fe9705e3dfee2b1d255ad4c4dbb689a849acc0ed64bc",
+    "svg": "87b167d97e06675093063a2e5a8e96d05cf7cc90564a4aacd4c3136604d58490"
+  },
+  "pair_records": 595,
+  "renderer": {
+    "dejavu_sans_sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+    "freetype": "2.6.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.4",
+    "pillow": "12.3.0",
+    "python": "3.14.3",
+    "script_sha256": "8d39cf2930ec263b7fbbbe05b8fa66060f158b894f8230429c53521c822eb683"
+  },
+  "rows": [
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+002A",
+      "source_symbol": "*",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.02911589440587701959",
+          "metric": "subset",
+          "positive_maximizers": [
+            "V"
+          ],
+          "possible_maximizers": [
+            "V"
+          ],
+          "source_symbol": "*",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.02911589440587702,
+        "winners": [
+          {
+            "affected_occurrences": 232,
+            "all_occurrences": 17597,
+            "partner": "V",
+            "score_bits_decimal_80digits": "0.029115894405877019587763865654497627268445875961540703367962318808721097773202914"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00436915110262461830",
+          "metric": "whole",
+          "positive_maximizers": [
+            "C"
+          ],
+          "possible_maximizers": [
+            "C"
+          ],
+          "source_symbol": "*",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.004369151102624618,
+        "winners": [
+          {
+            "affected_occurrences": 8362,
+            "all_occurrences": 17597,
+            "partner": "C",
+            "score_bits_decimal_80digits": "0.004369151102624618295683448325043650553859507739301900652538932126000987444106957"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0031",
+      "source_symbol": "1",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00000000000000000000",
+          "metric": "subset",
+          "positive_maximizers": [],
+          "possible_maximizers": [
+            "*",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "source_symbol": "1",
+          "status": "no_positive_optimum"
+        },
+        "score_x": 0.0,
+        "winners": []
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00000000000000000000",
+          "metric": "whole",
+          "positive_maximizers": [],
+          "possible_maximizers": [
+            "*",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "source_symbol": "1",
+          "status": "no_positive_optimum"
+        },
+        "score_x": 0.0,
+        "winners": []
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0032",
+      "source_symbol": "2",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.30493895145469685833",
+          "metric": "subset",
+          "positive_maximizers": [
+            "R"
+          ],
+          "possible_maximizers": [
+            "R"
+          ],
+          "source_symbol": "2",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.30493895145469685,
+        "winners": [
+          {
+            "affected_occurrences": 3459,
+            "all_occurrences": 17597,
+            "partner": "R",
+            "score_bits_decimal_80digits": "0.30493895145469685833012007747481107211000272535412739056838902976014157718795015"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.07782397861447915201",
+          "metric": "whole",
+          "positive_maximizers": [
+            "8"
+          ],
+          "possible_maximizers": [
+            "8"
+          ],
+          "source_symbol": "2",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.07782397861447915,
+        "winners": [
+          {
+            "affected_occurrences": 7079,
+            "all_occurrences": 17597,
+            "partner": "8",
+            "score_bits_decimal_80digits": "0.07782397861447915200773220661363373455399040939689367987379893610967886607215956"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0033",
+      "source_symbol": "3",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.46182861701812001400",
+          "metric": "subset",
+          "positive_maximizers": [
+            "U"
+          ],
+          "possible_maximizers": [
+            "U"
+          ],
+          "source_symbol": "3",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.46182861701812,
+        "winners": [
+          {
+            "affected_occurrences": 135,
+            "all_occurrences": 17597,
+            "partner": "U",
+            "score_bits_decimal_80digits": "0.46182861701812001399553292243342052842910959363532974245559037220861603343807463"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.02220809265431050484",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "3",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.022208092654310504,
+        "winners": [
+          {
+            "affected_occurrences": 5164,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.022208092654310504838623321782291375432027366432768929977148618017967763153961297"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0034",
+      "source_symbol": "4",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.13767921843650903933",
+          "metric": "subset",
+          "positive_maximizers": [
+            "S"
+          ],
+          "possible_maximizers": [
+            "S"
+          ],
+          "source_symbol": "4",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.13767921843650904,
+        "winners": [
+          {
+            "affected_occurrences": 7805,
+            "all_occurrences": 17597,
+            "partner": "S",
+            "score_bits_decimal_80digits": "0.13767921843650903932795877744970718888021323302770496352124260089410029378316977"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.06106644882064857941",
+          "metric": "whole",
+          "positive_maximizers": [
+            "S"
+          ],
+          "possible_maximizers": [
+            "S"
+          ],
+          "source_symbol": "4",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.06106644882064858,
+        "winners": [
+          {
+            "affected_occurrences": 7805,
+            "all_occurrences": 17597,
+            "partner": "S",
+            "score_bits_decimal_80digits": "0.06106644882064857941437280547792036194863126008872178441116659089495100261281128"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0035",
+      "source_symbol": "5",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.01056947027070494675",
+          "metric": "subset",
+          "positive_maximizers": [
+            "J"
+          ],
+          "possible_maximizers": [
+            "J"
+          ],
+          "source_symbol": "5",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.010569470270704947,
+        "winners": [
+          {
+            "affected_occurrences": 369,
+            "all_occurrences": 17597,
+            "partner": "J",
+            "score_bits_decimal_80digits": "0.010569470270704946746262429583306092610392220815804832797996568965221993180821206"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00037690938661975887",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "5",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.00037690938661975886,
+        "winners": [
+          {
+            "affected_occurrences": 5085,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.000376909386619758871629797727308331241715410952094807151843914467936766895068419"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0036",
+      "source_symbol": "6",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.18181818181818181818",
+          "metric": "subset",
+          "positive_maximizers": [
+            "L"
+          ],
+          "possible_maximizers": [
+            "L"
+          ],
+          "source_symbol": "6",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.18181818181818182,
+        "winners": [
+          {
+            "affected_occurrences": 22,
+            "all_occurrences": 17597,
+            "partner": "L",
+            "score_bits_decimal_80digits": "0.18181818181818181818181818181818181818181818181818181818181818181818181818181818"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00307886787274414362",
+          "metric": "whole",
+          "positive_maximizers": [
+            "9"
+          ],
+          "possible_maximizers": [
+            "9"
+          ],
+          "source_symbol": "6",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.0030788678727441438,
+        "winners": [
+          {
+            "affected_occurrences": 8386,
+            "all_occurrences": 17597,
+            "partner": "9",
+            "score_bits_decimal_80digits": "0.003078867872744143616802313170295568274628245786255822414688332393735508466089643"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0038",
+      "source_symbol": "8",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.40327847422959187596",
+          "metric": "subset",
+          "positive_maximizers": [
+            "C"
+          ],
+          "possible_maximizers": [
+            "C"
+          ],
+          "source_symbol": "8",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.4032784742295919,
+        "winners": [
+          {
+            "affected_occurrences": 10101,
+            "all_occurrences": 17597,
+            "partner": "C",
+            "score_bits_decimal_80digits": "0.40327847422959187596352902942159596949583939181503816571811657488476150285375614"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.23148922362863599131",
+          "metric": "whole",
+          "positive_maximizers": [
+            "C"
+          ],
+          "possible_maximizers": [
+            "C"
+          ],
+          "source_symbol": "8",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.231489223628636,
+        "winners": [
+          {
+            "affected_occurrences": 10101,
+            "all_occurrences": 17597,
+            "partner": "C",
+            "score_bits_decimal_80digits": "0.23148922362863599131145119771481166607248245136805708427110845728879785988099057"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0039",
+      "source_symbol": "9",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.17239760205397670539",
+          "metric": "subset",
+          "positive_maximizers": [
+            "O"
+          ],
+          "possible_maximizers": [
+            "O"
+          ],
+          "source_symbol": "9",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.1723976020539767,
+        "winners": [
+          {
+            "affected_occurrences": 14113,
+            "all_occurrences": 17597,
+            "partner": "O",
+            "score_bits_decimal_80digits": "0.17239760205397670538876294311212625828700905202820536758732187531892187382220427"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.13826489502686669564",
+          "metric": "whole",
+          "positive_maximizers": [
+            "O"
+          ],
+          "possible_maximizers": [
+            "O"
+          ],
+          "source_symbol": "9",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.1382648950268667,
+        "winners": [
+          {
+            "affected_occurrences": 14113,
+            "all_occurrences": 17597,
+            "partner": "O",
+            "score_bits_decimal_80digits": "0.13826489502686669563855267466849109980136152476411106170141919795282970990809622"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0041",
+      "source_symbol": "A",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.30210874334837683123",
+          "metric": "subset",
+          "positive_maximizers": [
+            "O"
+          ],
+          "possible_maximizers": [
+            "O"
+          ],
+          "source_symbol": "A",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.30210874334837684,
+        "winners": [
+          {
+            "affected_occurrences": 13303,
+            "all_occurrences": 17597,
+            "partner": "O",
+            "score_bits_decimal_80digits": "0.30210874334837683122965015941185658859367702868936585319824984476620415219847302"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.22838851013033227174",
+          "metric": "whole",
+          "positive_maximizers": [
+            "O"
+          ],
+          "possible_maximizers": [
+            "O"
+          ],
+          "source_symbol": "A",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.22838851013033226,
+        "winners": [
+          {
+            "affected_occurrences": 13303,
+            "all_occurrences": 17597,
+            "partner": "O",
+            "score_bits_decimal_80digits": "0.22838851013033227174223083881661238836515801060718497159153933539380654865580989"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0042",
+      "source_symbol": "B",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.25967844172547012277",
+          "metric": "subset",
+          "positive_maximizers": [
+            "P"
+          ],
+          "possible_maximizers": [
+            "P"
+          ],
+          "source_symbol": "B",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.2596784417254701,
+        "winners": [
+          {
+            "affected_occurrences": 3304,
+            "all_occurrences": 17597,
+            "partner": "P",
+            "score_bits_decimal_80digits": "0.25967844172547012277252000174021653793726310656348717022594787277415822294131555"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.05236348900671560375",
+          "metric": "whole",
+          "positive_maximizers": [
+            "F"
+          ],
+          "possible_maximizers": [
+            "F"
+          ],
+          "source_symbol": "B",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.052363489006715606,
+        "winners": [
+          {
+            "affected_occurrences": 5972,
+            "all_occurrences": 17597,
+            "partner": "F",
+            "score_bits_decimal_80digits": "0.052363489006715603748701184439764733183636524692020799719264855553132748963737618"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0043",
+      "source_symbol": "C",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.40327847422959187596",
+          "metric": "subset",
+          "positive_maximizers": [
+            "8"
+          ],
+          "possible_maximizers": [
+            "8"
+          ],
+          "source_symbol": "C",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.4032784742295919,
+        "winners": [
+          {
+            "affected_occurrences": 10101,
+            "all_occurrences": 17597,
+            "partner": "8",
+            "score_bits_decimal_80digits": "0.40327847422959187596352902942159596949583939181503816571811657488476150285375614"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.23148922362863599131",
+          "metric": "whole",
+          "positive_maximizers": [
+            "8"
+          ],
+          "possible_maximizers": [
+            "8"
+          ],
+          "source_symbol": "C",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.231489223628636,
+        "winners": [
+          {
+            "affected_occurrences": 10101,
+            "all_occurrences": 17597,
+            "partner": "8",
+            "score_bits_decimal_80digits": "0.23148922362863599131145119771481166607248245136805708427110845728879785988099057"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0044",
+      "source_symbol": "D",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.34663803580700579476",
+          "metric": "subset",
+          "positive_maximizers": [
+            "G"
+          ],
+          "possible_maximizers": [
+            "G"
+          ],
+          "source_symbol": "D",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.3466380358070058,
+        "winners": [
+          {
+            "affected_occurrences": 70,
+            "all_occurrences": 17597,
+            "partner": "G",
+            "score_bits_decimal_80digits": "0.34663803580700579475833786422186212255483328098903327920145391272671262928784611"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00969812284443847373",
+          "metric": "whole",
+          "positive_maximizers": [
+            "M"
+          ],
+          "possible_maximizers": [
+            "M"
+          ],
+          "source_symbol": "D",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.009698122844438474,
+        "winners": [
+          {
+            "affected_occurrences": 1768,
+            "all_occurrences": 17597,
+            "partner": "M",
+            "score_bits_decimal_80digits": "0.009698122844438473733043658871644316636927529863477719258738501471775567342256921"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0045",
+      "source_symbol": "E",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.62803539140442408933",
+          "metric": "subset",
+          "positive_maximizers": [
+            "R"
+          ],
+          "possible_maximizers": [
+            "R"
+          ],
+          "source_symbol": "E",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.6280353914044241,
+        "winners": [
+          {
+            "affected_occurrences": 7232,
+            "all_occurrences": 17597,
+            "partner": "R",
+            "score_bits_decimal_80digits": "0.62803539140442408933213067842935417399235470681190048839646591874027583421584887"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.25810944766930698494",
+          "metric": "whole",
+          "positive_maximizers": [
+            "R"
+          ],
+          "possible_maximizers": [
+            "R"
+          ],
+          "source_symbol": "E",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.258109447669307,
+        "winners": [
+          {
+            "affected_occurrences": 7232,
+            "all_occurrences": 17597,
+            "partner": "R",
+            "score_bits_decimal_80digits": "0.25810944766930698494345451306478884959440298003430495721334554323632862607541166"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0046",
+      "source_symbol": "F",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.65243093832571431572",
+          "metric": "subset",
+          "positive_maximizers": [
+            "P"
+          ],
+          "possible_maximizers": [
+            "P"
+          ],
+          "source_symbol": "F",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.6524309383257143,
+        "winners": [
+          {
+            "affected_occurrences": 7816,
+            "all_occurrences": 17597,
+            "partner": "P",
+            "score_bits_decimal_80digits": "0.65243093832571431572492169880214357973406169791330983939112542585762670939870339"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.28978804420945519644",
+          "metric": "whole",
+          "positive_maximizers": [
+            "P"
+          ],
+          "possible_maximizers": [
+            "P"
+          ],
+          "source_symbol": "F",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.2897880442094552,
+        "winners": [
+          {
+            "affected_occurrences": 7816,
+            "all_occurrences": 17597,
+            "partner": "P",
+            "score_bits_decimal_80digits": "0.28978804420945519643723293730962972206634234420017217165886437054629825314884730"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0047",
+      "source_symbol": "G",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.36458736318105493211",
+          "metric": "subset",
+          "positive_maximizers": [
+            "K"
+          ],
+          "possible_maximizers": [
+            "K"
+          ],
+          "source_symbol": "G",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.36458736318105495,
+        "winners": [
+          {
+            "affected_occurrences": 44,
+            "all_occurrences": 17597,
+            "partner": "K",
+            "score_bits_decimal_80digits": "0.36458736318105493210777700166308783593552339583272914603334682021392209224982330"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00583145953716592742",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "G",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.005831459537165928,
+        "winners": [
+          {
+            "affected_occurrences": 5109,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.005831459537165927417540761112801666253254898364407382243939922848893357044415264"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0048",
+      "source_symbol": "H",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.36363636363636363636",
+          "metric": "subset",
+          "positive_maximizers": [
+            "L"
+          ],
+          "possible_maximizers": [
+            "L"
+          ],
+          "source_symbol": "H",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.36363636363636365,
+        "winners": [
+          {
+            "affected_occurrences": 11,
+            "all_occurrences": 17597,
+            "partner": "L",
+            "score_bits_decimal_80digits": "0.36363636363636363636363636363636363636363636363636363636363636363636363636363636"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00160586773627339599",
+          "metric": "whole",
+          "positive_maximizers": [
+            "R"
+          ],
+          "possible_maximizers": [
+            "R"
+          ],
+          "source_symbol": "H",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.001605867736273396,
+        "winners": [
+          {
+            "affected_occurrences": 2637,
+            "all_occurrences": 17597,
+            "partner": "R",
+            "score_bits_decimal_80digits": "0.001605867736273395985842915752468600372299394783553829169970038523814980135993399"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0049",
+      "source_symbol": "I",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.02758620689655172414",
+          "metric": "subset",
+          "positive_maximizers": [
+            "U"
+          ],
+          "possible_maximizers": [
+            "U"
+          ],
+          "source_symbol": "I",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.027586206896551724,
+        "winners": [
+          {
+            "affected_occurrences": 145,
+            "all_occurrences": 17597,
+            "partner": "U",
+            "score_bits_decimal_80digits": "0.027586206896551724137931034482758620689655172413793103448275862068965517241379310"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00110351747833890984",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "I",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.0011035174783389098,
+        "winners": [
+          {
+            "affected_occurrences": 5173,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.001103517478338909835106002420869385317416640419632560021572244003682121535645120"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+004A",
+      "source_symbol": "J",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.50688344772112162875",
+          "metric": "subset",
+          "positive_maximizers": [
+            "T"
+          ],
+          "possible_maximizers": [
+            "T"
+          ],
+          "source_symbol": "J",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.5068834477211216,
+        "winners": [
+          {
+            "affected_occurrences": 647,
+            "all_occurrences": 17597,
+            "partner": "T",
+            "score_bits_decimal_80digits": "0.50688344772112162874686945455507137355193995778652126521617338346192595794001012"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.05456370953484333410",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "J",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.05456370953484333,
+        "winners": [
+          {
+            "affected_occurrences": 5380,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.054563709534843334095152411609180687834445983473664426486841898130644182910622009"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+004B",
+      "source_symbol": "K",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.36458736318105493211",
+          "metric": "subset",
+          "positive_maximizers": [
+            "G"
+          ],
+          "possible_maximizers": [
+            "G"
+          ],
+          "source_symbol": "K",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.36458736318105495,
+        "winners": [
+          {
+            "affected_occurrences": 44,
+            "all_occurrences": 17597,
+            "partner": "G",
+            "score_bits_decimal_80digits": "0.36458736318105493210777700166308783593552339583272914603334682021392209224982330"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00477070024955916716",
+          "metric": "whole",
+          "positive_maximizers": [
+            "M"
+          ],
+          "possible_maximizers": [
+            "M"
+          ],
+          "source_symbol": "K",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.004770700249559167,
+        "winners": [
+          {
+            "affected_occurrences": 1742,
+            "all_occurrences": 17597,
+            "partner": "M",
+            "score_bits_decimal_80digits": "0.004770700249559167160722003644307080106976401476471835690766722723332948362101180"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+004C",
+      "source_symbol": "L",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.36363636363636363636",
+          "metric": "subset",
+          "positive_maximizers": [
+            "H"
+          ],
+          "possible_maximizers": [
+            "H"
+          ],
+          "source_symbol": "L",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.36363636363636365,
+        "winners": [
+          {
+            "affected_occurrences": 11,
+            "all_occurrences": 17597,
+            "partner": "H",
+            "score_bits_decimal_80digits": "0.36363636363636363636363636363636363636363636363636363636363636363636363636363636"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00130362617598017344",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "L",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.0013036261759801734,
+        "winners": [
+          {
+            "affected_occurrences": 5089,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.001303626175980173436913877791211889419030055454158838882820389024008313996392296"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+004D",
+      "source_symbol": "M",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.82890308727113102090",
+          "metric": "subset",
+          "positive_maximizers": [
+            "N"
+          ],
+          "possible_maximizers": [
+            "N"
+          ],
+          "source_symbol": "M",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.828903087271131,
+        "winners": [
+          {
+            "affected_occurrences": 3001,
+            "all_occurrences": 17597,
+            "partner": "N",
+            "score_bits_decimal_80digits": "0.82890308727113102089517860022915475894639866520491242760289509568098697242973249"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.14227620680265881869",
+          "metric": "whole",
+          "positive_maximizers": [
+            "R"
+          ],
+          "possible_maximizers": [
+            "R"
+          ],
+          "source_symbol": "M",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.14227620680265882,
+        "winners": [
+          {
+            "affected_occurrences": 4231,
+            "all_occurrences": 17597,
+            "partner": "R",
+            "score_bits_decimal_80digits": "0.14227620680265881869300058491317560028122085355059824029398720585501037030874063"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+004E",
+      "source_symbol": "N",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.82890308727113102090",
+          "metric": "subset",
+          "positive_maximizers": [
+            "M"
+          ],
+          "possible_maximizers": [
+            "M"
+          ],
+          "source_symbol": "N",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.828903087271131,
+        "winners": [
+          {
+            "affected_occurrences": 3001,
+            "all_occurrences": 17597,
+            "partner": "M",
+            "score_bits_decimal_80digits": "0.82890308727113102089517860022915475894639866520491242760289509568098697242973249"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.14136149144176076568",
+          "metric": "whole",
+          "positive_maximizers": [
+            "M"
+          ],
+          "possible_maximizers": [
+            "M"
+          ],
+          "source_symbol": "N",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.14136149144176077,
+        "winners": [
+          {
+            "affected_occurrences": 3001,
+            "all_occurrences": 17597,
+            "partner": "M",
+            "score_bits_decimal_80digits": "0.14136149144176076568201574014250687228494302405409684578259295232929714748318616"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+004F",
+      "source_symbol": "O",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.30210874334837683123",
+          "metric": "subset",
+          "positive_maximizers": [
+            "A"
+          ],
+          "possible_maximizers": [
+            "A"
+          ],
+          "source_symbol": "O",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.30210874334837684,
+        "winners": [
+          {
+            "affected_occurrences": 13303,
+            "all_occurrences": 17597,
+            "partner": "A",
+            "score_bits_decimal_80digits": "0.30210874334837683122965015941185658859367702868936585319824984476620415219847302"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.22838851013033227174",
+          "metric": "whole",
+          "positive_maximizers": [
+            "A"
+          ],
+          "possible_maximizers": [
+            "A"
+          ],
+          "source_symbol": "O",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.22838851013033226,
+        "winners": [
+          {
+            "affected_occurrences": 13303,
+            "all_occurrences": 17597,
+            "partner": "A",
+            "score_bits_decimal_80digits": "0.22838851013033227174223083881661238836515801060718497159153933539380654865580989"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0050",
+      "source_symbol": "P",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.65243093832571431572",
+          "metric": "subset",
+          "positive_maximizers": [
+            "F"
+          ],
+          "possible_maximizers": [
+            "F"
+          ],
+          "source_symbol": "P",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.6524309383257143,
+        "winners": [
+          {
+            "affected_occurrences": 7816,
+            "all_occurrences": 17597,
+            "partner": "F",
+            "score_bits_decimal_80digits": "0.65243093832571431572492169880214357973406169791330983939112542585762670939870339"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.28978804420945519644",
+          "metric": "whole",
+          "positive_maximizers": [
+            "F"
+          ],
+          "possible_maximizers": [
+            "F"
+          ],
+          "source_symbol": "P",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.2897880442094552,
+        "winners": [
+          {
+            "affected_occurrences": 7816,
+            "all_occurrences": 17597,
+            "partner": "F",
+            "score_bits_decimal_80digits": "0.28978804420945519643723293730962972206634234420017217165886437054629825314884730"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0051",
+      "source_symbol": "Q",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.73011524195428245856",
+          "metric": "subset",
+          "positive_maximizers": [
+            "X"
+          ],
+          "possible_maximizers": [
+            "X"
+          ],
+          "source_symbol": "Q",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.7301152419542825,
+        "winners": [
+          {
+            "affected_occurrences": 637,
+            "all_occurrences": 17597,
+            "partner": "X",
+            "score_bits_decimal_80digits": "0.73011524195428245855512628975063140889312596748675567249606630789754094499832633"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.03822575083368185734",
+          "metric": "whole",
+          "positive_maximizers": [
+            "C"
+          ],
+          "possible_maximizers": [
+            "C"
+          ],
+          "source_symbol": "Q",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.038225750833681856,
+        "winners": [
+          {
+            "affected_occurrences": 8405,
+            "all_occurrences": 17597,
+            "partner": "C",
+            "score_bits_decimal_80digits": "0.038225750833681857337514181331101725915080638852709949410238554700649536878663783"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0052",
+      "source_symbol": "R",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.62803539140442408933",
+          "metric": "subset",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "R",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.6280353914044241,
+        "winners": [
+          {
+            "affected_occurrences": 7232,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.62803539140442408933213067842935417399235470681190048839646591874027583421584887"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.25810944766930698494",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "R",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.258109447669307,
+        "winners": [
+          {
+            "affected_occurrences": 7232,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.25810944766930698494345451306478884959440298003430495721334554323632862607541166"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+0053",
+      "source_symbol": "S",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.65634491867318457628",
+          "metric": "subset",
+          "positive_maximizers": [
+            "Z"
+          ],
+          "possible_maximizers": [
+            "Z"
+          ],
+          "source_symbol": "S",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.6563449186731846,
+        "winners": [
+          {
+            "affected_occurrences": 6787,
+            "all_occurrences": 17597,
+            "partner": "Z",
+            "score_bits_decimal_80digits": "0.65634491867318457628253991176654899078870142273485393021110789248025936176863516"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.25314615917684285499",
+          "metric": "whole",
+          "positive_maximizers": [
+            "Z"
+          ],
+          "possible_maximizers": [
+            "Z"
+          ],
+          "source_symbol": "S",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.25314615917684286,
+        "winners": [
+          {
+            "affected_occurrences": 6787,
+            "all_occurrences": 17597,
+            "partner": "Z",
+            "score_bits_decimal_80digits": "0.25314615917684285498832746383812968122310146934713039861014884731849294131520869"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0054",
+      "source_symbol": "T",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.50688344772112162875",
+          "metric": "subset",
+          "positive_maximizers": [
+            "J"
+          ],
+          "possible_maximizers": [
+            "J"
+          ],
+          "source_symbol": "T",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.5068834477211216,
+        "winners": [
+          {
+            "affected_occurrences": 647,
+            "all_occurrences": 17597,
+            "partner": "J",
+            "score_bits_decimal_80digits": "0.50688344772112162874686945455507137355193995778652126521617338346192595794001012"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.04503923942152964671",
+          "metric": "whole",
+          "positive_maximizers": [
+            "M"
+          ],
+          "possible_maximizers": [
+            "M"
+          ],
+          "source_symbol": "T",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.045039239421529646,
+        "winners": [
+          {
+            "affected_occurrences": 2008,
+            "all_occurrences": 17597,
+            "partner": "M",
+            "score_bits_decimal_80digits": "0.045039239421529646709126086310234931051592738058591324212910030834064489223400523"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0055",
+      "source_symbol": "U",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.46182861701812001400",
+          "metric": "subset",
+          "positive_maximizers": [
+            "3"
+          ],
+          "possible_maximizers": [
+            "3"
+          ],
+          "source_symbol": "U",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.46182861701812,
+        "winners": [
+          {
+            "affected_occurrences": 135,
+            "all_occurrences": 17597,
+            "partner": "3",
+            "score_bits_decimal_80digits": "0.46182861701812001399553292243342052842910959363532974245559037220861603343807463"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.01123732520390835344",
+          "metric": "whole",
+          "positive_maximizers": [
+            "E"
+          ],
+          "possible_maximizers": [
+            "E"
+          ],
+          "source_symbol": "U",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.011237325203908353,
+        "winners": [
+          {
+            "affected_occurrences": 5119,
+            "all_occurrences": 17597,
+            "partner": "E",
+            "score_bits_decimal_80digits": "0.011237325203908353438647586931665198100292912266876017565231011345373323865359020"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0056",
+      "source_symbol": "V",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.23471943024947564942",
+          "metric": "subset",
+          "positive_maximizers": [
+            "B"
+          ],
+          "possible_maximizers": [
+            "B"
+          ],
+          "source_symbol": "V",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.23471943024947564,
+        "winners": [
+          {
+            "affected_occurrences": 864,
+            "all_occurrences": 17597,
+            "partner": "B",
+            "score_bits_decimal_80digits": "0.23471943024947564941907590256494927990530682832299173498436635267788178135764882"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.01378884479888772765",
+          "metric": "whole",
+          "positive_maximizers": [
+            "F"
+          ],
+          "possible_maximizers": [
+            "F"
+          ],
+          "source_symbol": "V",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.013788844798887728,
+        "winners": [
+          {
+            "affected_occurrences": 5407,
+            "all_occurrences": 17597,
+            "partner": "F",
+            "score_bits_decimal_80digits": "0.013788844798887727646595022583552226321142678001548045824849250926655963907159394"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0057",
+      "source_symbol": "W",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.39425955300171886104",
+          "metric": "subset",
+          "positive_maximizers": [
+            "Q"
+          ],
+          "possible_maximizers": [
+            "Q"
+          ],
+          "source_symbol": "W",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.3942595530017189,
+        "winners": [
+          {
+            "affected_occurrences": 290,
+            "all_occurrences": 17597,
+            "partner": "Q",
+            "score_bits_decimal_80digits": "0.39425955300171886104013465456537853583997988813003199848851551716558164604689968"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00761333845868198210",
+          "metric": "whole",
+          "positive_maximizers": [
+            "8"
+          ],
+          "possible_maximizers": [
+            "8"
+          ],
+          "source_symbol": "W",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.007613338458681982,
+        "winners": [
+          {
+            "affected_occurrences": 6292,
+            "all_occurrences": 17597,
+            "partner": "8",
+            "score_bits_decimal_80digits": "0.007613338458681982104334143169924055395738810843051183556113414027908688621432972"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0058",
+      "source_symbol": "X",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.73011524195428245856",
+          "metric": "subset",
+          "positive_maximizers": [
+            "Q"
+          ],
+          "possible_maximizers": [
+            "Q"
+          ],
+          "source_symbol": "X",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.7301152419542825,
+        "winners": [
+          {
+            "affected_occurrences": 637,
+            "all_occurrences": 17597,
+            "partner": "Q",
+            "score_bits_decimal_80digits": "0.73011524195428245855512628975063140889312596748675567249606630789754094499832633"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.06535557526550071914",
+          "metric": "whole",
+          "positive_maximizers": [
+            "C"
+          ],
+          "possible_maximizers": [
+            "C"
+          ],
+          "source_symbol": "X",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.06535557526550072,
+        "winners": [
+          {
+            "affected_occurrences": 8479,
+            "all_occurrences": 17597,
+            "partner": "C",
+            "score_bits_decimal_80digits": "0.065355575265500719141270140887095782585748349346257065452349307538472246029708961"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": true,
+      "source_codepoint": "U+0059",
+      "source_symbol": "Y",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.19539641879121983042",
+          "metric": "subset",
+          "positive_maximizers": [
+            "W"
+          ],
+          "possible_maximizers": [
+            "W"
+          ],
+          "source_symbol": "Y",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.19539641879121983,
+        "winners": [
+          {
+            "affected_occurrences": 68,
+            "all_occurrences": 17597,
+            "partner": "W",
+            "score_bits_decimal_80digits": "0.19539641879121983041736722413724140080711156167003881241323532537925407905307572"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.00302914329501621885",
+          "metric": "whole",
+          "positive_maximizers": [
+            "C"
+          ],
+          "possible_maximizers": [
+            "C"
+          ],
+          "source_symbol": "Y",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.0030291432950162187,
+        "winners": [
+          {
+            "affected_occurrences": 8287,
+            "all_occurrences": 17597,
+            "partner": "C",
+            "score_bits_decimal_80digits": "0.00302914329501621884979928688381208982613320360232349892586513048758856371702702"
+          }
+        ]
+      }
+    },
+    {
+      "maximizing_sets_differ": false,
+      "source_codepoint": "U+005A",
+      "source_symbol": "Z",
+      "subset": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.65634491867318457628",
+          "metric": "subset",
+          "positive_maximizers": [
+            "S"
+          ],
+          "possible_maximizers": [
+            "S"
+          ],
+          "source_symbol": "Z",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.6563449186731846,
+        "winners": [
+          {
+            "affected_occurrences": 6787,
+            "all_occurrences": 17597,
+            "partner": "S",
+            "score_bits_decimal_80digits": "0.65634491867318457628253991176654899078870142273485393021110789248025936176863516"
+          }
+        ]
+      },
+      "whole": {
+        "ranking": {
+          "candidate_count": 34,
+          "maximum_bits_20dp": "0.25314615917684285499",
+          "metric": "whole",
+          "positive_maximizers": [
+            "S"
+          ],
+          "possible_maximizers": [
+            "S"
+          ],
+          "source_symbol": "Z",
+          "status": "resolved_positive"
+        },
+        "score_x": 0.25314615917684286,
+        "winners": [
+          {
+            "affected_occurrences": 6787,
+            "all_occurrences": 17597,
+            "partner": "S",
+            "score_bits_decimal_80digits": "0.25314615917684285498832746383812968122310146934713039861014884731849294131520869"
+          }
+        ]
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "70 existing maxima over35 notation codepoints; no new corpus measurement, physical mapping or decipherment",
+  "shared_x_limits": [
+    0.0,
+    1.226776569161274
+  ],
+  "token_occurrences": 17597
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "packet_id": "f76r-accepted-offline-packet-v1",
+  "accepted_viewer_commit": "dc01f9b27847d5ffd5aefb1e2a74f69799b11c3c",
+  "input_sha256": {
+    "research/pilot/viewer/f76r.html": "3644c007e5644bc5422922a9e31defa64b81a240aa7f7bbc88c83b779fd5804e",
+    "research/pilot/viewer/inputs.json": "ce73dec063aab324c50a64ca039178c45ec4e276dbf327f40af759c69366c079",
+    "research/pilot/f76r-anchor-review.json": "6953f252e3347211be3ca22b2265fefec3c94f77efafd971dd3e0a846b7e959f",
+    "research/pilot/f76r-anchor-selection.json": "dcce8de127dca3b12d5e9deae223ff6fad5c39ce413a88de8d92de85415c1d87",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+  },
+  "scope": "Local copies of five recorded resources beside the unchanged accepted native contexts; no downloads or new observations"
+}

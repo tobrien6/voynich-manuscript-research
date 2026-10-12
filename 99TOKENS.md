@@ -32,7 +32,7 @@ Before developing a candidate, commit a provisional split of eight development f
 
 The [visual inventory](research/pilot/INVENTORY.md) now records ten selected target folio sides with Yale image identifiers, visible text layouts, illustrations, and uncertainties. Its [selection protocol](research/pilot/SAMPLING.md), [machine-readable records](research/pilot/inventory.json), and [source-check script](scripts/verify_pilot.py) make the contribution checkable. Several canvases contain multiple foldout panels retained within one record. The pilot-specific development/evaluation split, frozen candidate, independent observation review, and translations remain pending. The visual inspection of all ten images must be disclosed when defining prior exposure for a later split.
 
-The [local f76r comparison guide](research/pilot/viewer/README.md) explains how to open the accepted HTML viewer from a local clone. Choose and zoom among [three provisional image/native-text anchors](research/pilot/F76R_ANCHORS.md), with literal ZL3b/IT2a rows, neighbors, unresolved readings and source-file links beside the recorded review windows. Yale images require an internet connection. Row associations remain provisional, glyph adjudication remains pending, and opening this previously exposed material creates no untouched evaluation evidence.
+The [local f76r comparison guide](research/pilot/viewer/README.md) explains how to open the accepted HTML viewer from a local clone. Choose and zoom among [three provisional image/native-text anchors](research/pilot/F76R_ANCHORS.md), with literal ZL3b/IT2a rows, neighbors, unresolved readings and source-file links beside the recorded review windows. Its Yale images require an internet connection. The [offline packet guide](research/pilot/offline-packet/README.md) adds the [recorded asset helper](research/assets/README.md) and exact fetch/build/check commands: reuse a verified five-file cache to view the same windows locally, with internet needed for missing assets or public evidence links. Keep image caches, packets and retrieval receipts local. Row associations remain provisional, glyph adjudication remains pending, and opening this previously exposed material creates no untouched evaluation evidence.
 
 The [section boundary survey](research/boundary-pilot/INVENTORY.md) and [standalone-recto boundary inventory](research/PILOT_INVENTORY.md), with its [selection protocol](research/PILOT_SELECTION.md) and [CSV](research/data/pilot-folios.csv), add complementary boundary records. The survey includes 102r within a shared scan; the standalone-recto rule selects 100r instead. These inventories share most of their images, so their observations do not create independent manuscript samples. Prior exposure must be recorded across all inventories when defining a later split.
 
@@ -60,6 +60,18 @@ cases at [f67r1.1](research/panel-regions/67R_BOUNDARY_CASE.md) and
 context while leaving glyph regions and word divisions unresolved. No source
 correction, accuracy ranking, independent or untouched evaluation, decipherment,
 or translation follows from literal-string or visible-gap agreement.
+
+The [native separator provenance ledger](research/transliteration/BOUNDARY_SEPARATOR_PROVENANCE.md)
+locates period, uncertain-comma and drawing notation at 1,458 distinct encoded
+offsets across 970 native loci with a source-only cut under at least one spacing
+policy. Of these offsets, 409 disagree only when commas split, 773 only when
+commas join, and 276 under both policies. Both sources are traced on the same
+2,940-key cohort; paired coordinates are assigned only on identical strings.
+The [complete records](research/transliteration/boundary_separator_provenance.json)
+preserve native marker ranges, neighboring letter positions and every original
+alternative. These source-notation differences make spacing sensitivity
+traceable while leaving physical word/glyph boundaries, source accuracy and
+translation unresolved.
 
 The [exploratory token and repetition baselines](research/transliteration/BASELINES.md) compare uncertainty policies on 3,884 shared present P0 loci in ZL3b and IT2a, with [complete recorded results](research/transliteration/token_baselines.json). The primary split/exclude treatment has 272 equal adjacent pairs against a conditional expectation of 270.77; other treatments expose sensitivity to preprocessing. This full-corpus exploration does not provide an untouched evaluation set or validate a decoding rule.
 

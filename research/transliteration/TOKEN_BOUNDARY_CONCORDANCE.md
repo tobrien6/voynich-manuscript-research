@@ -132,6 +132,14 @@ against independently assigned manuscript regions, retaining image uncertainty;
 test any frozen segmentation rule on exposure-valid reserved material under the
 [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
 
+The [minimal shared-anchor span inventory](BOUNDARY_DISAGREEMENT_SPANS.md)
+localizes every identical-chain boundary disagreement to complete source-token
+partitions between shared encoded offsets, without assigning physical words.
+
 The [exact token-count accounting](BOUNDARY_COUNT_ACCOUNTING.md) separates
 same-chain boundary contributions from the unaligned different-chain remainder
 and retains equal-token-count cases with different encoded boundaries.
+
+The [native separator provenance ledger](BOUNDARY_SEPARATOR_PROVENANCE.md)
+traces periods, uncertain commas and drawing notation at every source-only cut,
+keeping encoded source coordinates separate from manuscript word decisions.

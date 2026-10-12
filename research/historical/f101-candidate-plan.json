@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "plan_id": "fixed-f101-native-record-candidates-v1",
+  "accepted_parent_merge": "ed787c56848b893add21c4a51b219fe9f5f08501",
+  "historical_page_ids": [
+    "f101r1",
+    "f101v2"
+  ],
+  "modern_page_ids": [
+    "f101r",
+    "f101v"
+  ],
+  "candidate_pairs": [
+    [
+      "f101r1",
+      "f101r"
+    ],
+    [
+      "f101r1",
+      "f101v"
+    ],
+    [
+      "f101v2",
+      "f101r"
+    ],
+    [
+      "f101v2",
+      "f101v"
+    ]
+  ],
+  "accepted_page_aliases": [],
+  "apply_to_statistics": false,
+  "untouched_evaluation": false,
+  "frozen_sha256": {
+    "research/historical/record-projections.json": "161734c02648c5dfa0bf09dc91ed26bf8c3113a378317ef870f13d66c9dcb6e9",
+    "research/historical/RECORD_PROJECTION_PLAN.md": "3d45b9b9f1c39f9093e2bf3a9490cdb6526792f6c5fa3039fc9ab860687b831b",
+    "research/historical/lowercase-projection.json": "62831f53cfdd6f8773d05abb1037b1682789c912985a4edd1c6bd1415db1af37",
+    "scripts/audit_historical_record_projections.py": "de2c322e73fcdc54087f8ed437a60289aec04f25c53c8332ff010ade597ecc4b",
+    "scripts/audit_historical_lowercase_projection.py": "40e7632d92089c7293fb6601a0944817ef79c8266a726ca25a1db4a80142d9a7",
+    "scripts/audit_historical_modern_pages.py": "c3b2b4ebff02a8ed2fd2473d6af1cc3a85764564fa849286d66046fc2b8f4deb",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/inspect_ivtff.py": "1e78683efd9cc288917784db5b8398204e541d91f1e978430c2d1abc9bd08f13",
+    "scripts/audit_eva_token_coverage.py": "dcd97f39c14ac78137cf5c3f1d622d72aa0229a5e8d6b64651d236bae69baf1e",
+    "scripts/paragraph_token_corpus.py": "8aa29f952bdff32499919b3f3a24413ddb45d057a544bed51afd9cd2eb2bd2c6"
+  }
+}

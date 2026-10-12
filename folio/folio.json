@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Voynich Manuscript Research",
-  "subtitle": "Evidence, transcription choices, exploratory findings, and the path to a tested reading",
-  "updated": "2026-10-11",
+  "subtitle": "The investigation at a glance: evidence, transcription, findings and next tests",
+  "updated": "2026-10-12",
   "aspect": "portrait",
   "cover": "01-project-overview.png",
   "sections": [
@@ -11,12 +11,12 @@
       "pages": [
         {
           "image": "01-project-overview.png",
-          "alt": "Five research stages: corpus records and exploratory constraints are recorded; a registered hypothesis, validated translation, and independent reproduction remain pending.",
-          "caption": "Where the project stands",
-          "credit": "Generated with image_gen from the project brief. Manuscript-like illustrations are schematic, not source facsimiles.",
-          "note": "Originally rendered from fee42b7; claims rechecked at a7298ab. No validated decipherment or translation is established.",
+          "alt": "A five-stage route from source records and exploratory constraints through candidate rules, evaluation on unseen material, and translation. A leading-y rule has an exploratory diagnostic; a valid frozen evaluation, supported translation and independent reproduction remain pending.",
+          "caption": "Where the investigation stands",
+          "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
+          "note": "Snapshot of accepted main 1c74085. An exploratory candidate exists, but no validated decipherment or translation has been established.",
           "status": "current",
-          "updated": "2026-10-11"
+          "updated": "2026-10-12"
         }
       ]
     },
@@ -25,21 +25,21 @@
       "pages": [
         {
           "image": "02-source-and-folio-map.png",
-          "alt": "The ten-side pilot spans six catalog groups. The Yale index has 213 scan views and 204 explicitly labeled numbered sides. Scan views, folio sides, and text loci are distinct units.",
+          "alt": "Ten selected pilot sides across six catalog groups; 213 pinned Yale scan views and 204 explicitly numbered side labels. Definitions distinguish scan views, folio sides and native transcription loci. Seven pilot targets have exact page metadata links requiring image/glyph review; 67r, 68r and 85v retain mapping gaps.",
           "caption": "What the evidence covers",
-          "credit": "Generated with image_gen from the pilot inventory and Yale image-index audit; all diagrams and manuscript-like illustrations are schematic.",
-          "note": "Metadata counts do not establish image coverage. Shared scans and overlapping inventories are shared evidence. Image-to-text review remains necessary.",
+          "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
+          "note": "Counts describe distinct units, not verified image coverage. Provisional panel/region records do not pass the pilot readiness gate; shared scans and overlapping inventories remain dependent evidence.",
           "status": "current",
-          "updated": "2026-10-11"
+          "updated": "2026-10-12"
         },
         {
           "image": "03-transcription-choices.png",
-          "alt": "ZL3b and IT2a share 5,214 present text locations. GC2a and RF full and basic are representation comparators. Spacing, source versions, alphabets, and uncertainty policies affect measurements.",
-          "caption": "How the text is represented",
-          "credit": "Generated with image_gen from the transliteration decision and comparator audits. Glyph-like marks are schematic, not a transcription.",
-          "note": "Transliteration records shapes and uncertainty; it supplies no decoded meaning. Paired representations are not independent experiments.",
+          "alt": "ZL3b is the working uncertainty-preserving source and IT2a a paired comparison. Edition, spacing and ambiguity policies change representations. Of 2,940 common eligible P0 loci, 2,054 share an encoded chain; 562 split and 767 join loci have different boundaries within that subset.",
+          "caption": "How transcription choices affect the evidence",
+          "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
+          "note": "The boundary disagreement counts overlap at 359 loci and must not be added. These related editions do not establish physical glyphs, words or correct readings.",
           "status": "current",
-          "updated": "2026-10-11"
+          "updated": "2026-10-12"
         }
       ]
     },
@@ -48,21 +48,21 @@
       "pages": [
         {
           "image": "04-measured-findings.png",
-          "alt": "For 3,884 shared P0 locations, the primary ZL split/exclude treatment yields 272 equal adjacent pairs versus an expectation of 270.77. Split and joined spacing retain 33,299 and 30,908 tokens.",
-          "caption": "What has been measured",
-          "credit": "Generated with image_gen from the merged token and repetition baseline report, PR #21. Token circles illustrate the control schematically.",
-          "note": "An exploratory conditional-control result on encoded tokens, not established words or glyphs. It supplies no untouched test set or validated decoding.",
+          "alt": "Four exploratory findings with adjacent limits: 272 repeated pairs versus 270.77 expected in primary ZL split/exclude; half-constrained interior-order departures in 2,165 common loci with independent positional gradients as an alternative; exact-slot previous-length prediction losses on every fold; primary y selectivity reduced from +0.3923 to +0.1064 by frequency/length matching on the same 13 units.",
+          "caption": "What the tests show",
+          "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
+          "note": "Studies use different cohorts and statistics on previously exposed data. IT split/join interior treatments are identical dependent comparisons. String lookup and conditional-control departures establish no glyph function, language or translation.",
           "status": "current",
-          "updated": "2026-10-11"
+          "updated": "2026-10-12"
         },
         {
           "image": "05-open-work-and-roadmap.png",
-          "alt": "PRs 28 and 33 preserve paragraph and source annotation differences; PR 32 records seven pilot links and three mapping gaps. Issue 13 remains open. Mapping review, a frozen split, registration, and reproduction are future steps.",
+          "alt": "Five next steps: review glyphs and divisions; define evaluation material with exposure and dependencies declared; freeze candidate rules and failure conditions; test without retuning and report all outcomes; independently reproduce and publish supported source-linked passages. Issue 13 remains unresolved.",
           "caption": "What needs to happen next",
-          "credit": "Generated and updated with image_gen from main a7298ab, PRs #28, #32, #33, issue #13, and the evaluation protocol. All illustrations are schematic.",
-          "note": "Merged work and open foliation questions were checked at a7298ab. The proposed 8/2 pilot split is not established. No validated translation or untouched evaluation set exists.",
+          "credit": "Generated with built-in image_gen from accepted public project reports at main 1c74085. Layout and diagrams are explanatory, not manuscript evidence.",
+          "note": "Issue #13 was open on 12 October 2026. The proposed 8/2 pilot split is not an established unseen test set. Local reviewers and provisional regions aid review but do not validate a reading.",
           "status": "current",
-          "updated": "2026-10-11"
+          "updated": "2026-10-12"
         }
       ]
     }
