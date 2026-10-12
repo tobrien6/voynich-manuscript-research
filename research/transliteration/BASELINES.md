@@ -35,6 +35,14 @@ or apostrophe counts once, `@nnn;` counts once, and ligature braces do not count
 For example, `ch` counts as two notation units. These lengths are neither
 manuscript glyph counts nor phonetic measurements.
 
+Word-boundary validation precedes the uncertain-space policy. The author's
+[IVTFF 2.0 consolidation notes](https://voynich.nu/extra/sp_transcr.html) prohibit
+the four space markers at a locus edge or consecutively between tokens. Both
+policies reject these structures: joining a comma must not silently repair
+`,a`, `a,`, `a,,b`, or a comma adjacent to a period/drawing interruption.
+Formatting comments, paragraph markers, and tags do not supply missing token
+content. This validation also applies to callers of the shared `tokenize` API.
+
 For repetition, count equal adjacent retained tokens within each locus. The
 control uniformly shuffles that locus's retained representations over its
 retained slots, preserving token multiplicities and excluded positions. It never
