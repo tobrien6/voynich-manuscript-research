@@ -81,6 +81,8 @@ class SelfCitationInteriorTests(unittest.TestCase):
         results=m.measure(rows,policies())
         self.assertEqual([r['constant_interiors'] for r in results],[1,1,1])
         self.assertTrue(all(r['rows']==2 for r in results))
+        self.assertEqual([r['constant_interiors'] for r in m.measure(rows[:1],policies())],[0,1,1])
+        self.assertEqual([r['constant_interiors'] for r in m.measure(rows[1:],policies())],[1,0,0])
         single=m.measure([('case',['left','Ch','iin','cthh','right'])],policies())
         self.assertEqual([r['scope_audit']['pattern_hits'].get('Ch',0) for r in single],[0,1,1])
         self.assertTrue(all(r['scope_audit']['pattern_hits'].get('cph',0)==0 for r in single))

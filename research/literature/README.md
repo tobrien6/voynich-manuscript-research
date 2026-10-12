@@ -95,6 +95,12 @@ compares a source-informed model profile with an explicitly exposed B cohort.
 All 31 control/observer pairs preserve bytes; 24 of 32 related target points
 fall outside the finite seed ranges. Unit/context equivalence remains unverified.
 
+The [fixed generator interior-order comparison](SELF_CITATION_INTERIOR.md)
+reuses those same 31 archived cases and retains 1,590 common manuscript keys.
+All 24 source/spacing/count-policy/centering points exceed their corresponding
+finite ranges. This adds an exposed-data constraint on the fixed setup, with
+all eligibility, group-count mixtures and approximate encoded-row limits retained.
+
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
    project's modern inputs.
