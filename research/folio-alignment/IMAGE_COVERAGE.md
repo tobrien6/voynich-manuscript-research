@@ -118,7 +118,12 @@ python3 scripts/audit_transcription_images.py \
 python3 -m unittest tests.test_transcription_images -v
 ```
 
-Use `--output PATH` to write a report. For an actual split declaration:
+Use `--output PATH` to write a separate report. The writer rejects the manifest,
+split, source catalog, cataloged input files, raw-data directory, and image-index
+directory as destinations, including symlink and hardlink aliases of input
+files. It checks the destination before computing the audit. This preserves
+inputs for replay; it does not change source pins or the coverage method.
+For an actual split declaration:
 
 ```sh
 python3 scripts/audit_transcription_images.py \
