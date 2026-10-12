@@ -12,6 +12,7 @@ import unittest
 from unittest.mock import patch
 
 from scripts.audit_eva_token_coverage import encoded
+from scripts.audit_transliterations import ROOT
 from scripts.endpoint_length_layout import (
     PLAN, METRIC, TEST, FAMILIES, build, draws, identity_orders, costs, path_moments,
     pair_expectations, rational, main, family,
@@ -162,6 +163,93 @@ class EndpointLengthLayoutTests(unittest.TestCase):
                 raw=encoded(value);target.symlink_to(root/PLAN);return raw
             with patch('scripts.endpoint_length_layout.encoded',side_effect=late),self.assertRaises(SystemExit):run(target)
             self.assertEqual((root/PLAN).read_bytes(),b'preserve input\n')
+
+    def test_complete_report_by_integer_bit_draws_recursive_edits_and_partition_paths(self):
+        # Added after first execution. No production draw/distance/order/moment
+        # function computes expected values in this verifier.
+        import json,hashlib
+        report=json.loads((ROOT/'research/baselines/endpoint_length_layout.json').read_bytes())
+        self.assertIs(report['synthetic_only'],True)
+        self.assertIs(report['manuscript_inputs_used'],False)
+        self.assertIs(report['pending_parent_inputs_used'],False)
+        inputs=report['inputs']
+        self.assertEqual(hashlib.sha256((ROOT/inputs['plan_path']).read_bytes()).hexdigest(),inputs['plan_sha256'])
+        self.assertEqual(hashlib.sha256((ROOT/inputs['metric_path']).read_bytes()).hexdigest(),inputs['metric_sha256'])
+        self.assertEqual(hashlib.sha256((ROOT/'scripts/endpoint_length_layout.py').read_bytes()).hexdigest(),inputs['implementation_sha256'])
+        expected_rational=lambda f:{'numerator':f.numerator,'denominator':f.denominator}
+        expected_hist=lambda values:[{'value':expected_rational(x),'count':n} for x,n in sorted(Counter(values).items())]
+        fixed=[('blocked_lengths',[1,1,1,2,2,2]),('alternating_lengths',[1,2,1,2,1,2]),('uniform_short',[1,1,1,1,1,1])]
+        self.assertEqual(len(report['families']),3)
+        def words(lengths,number):
+            bits=format(number,f'0{sum(lengths)}b');offset=0;result=[]
+            for size in lengths:
+                result.append(''.join('a' if bit=='0' else 'b' for bit in bits[offset:offset+size]));offset+=size
+            return result
+        path_count=draw_count=0
+        for f,(name,lengths) in zip(report['families'],fixed):
+            count=2**sum(lengths)
+            self.assertEqual(f['family_id'],name);self.assertEqual(f['lengths'],lengths)
+            self.assertEqual(f['boundary_count'],5);self.assertEqual(f['draw_count'],count)
+            self.assertEqual(f['uniform_draw_probability'],expected_rational(Fraction(1,count)))
+            self.assertEqual(len(f['draws']),count)
+            original_cross=sum(a!=b for a,b in zip(lengths,lengths[1:]))
+            self.assertEqual(f['original_cross_length_boundaries'],original_cross)
+            paths=[grouped_orders(lengths,choice) for choice in (False,True)]
+            observations=[];centers=[[],[]];variances=[[],[]];means=[[],[]];invariants=[0,0]
+            for index,d in enumerate(f['draws']):
+                tokens=words(lengths,index);draw_count+=1
+                self.assertEqual(d['draw_index'],index);self.assertEqual(d['tokens'],tokens)
+                self.assertEqual(d['probability'],expected_rational(Fraction(1,count)))
+                cost=lambda a,b:Fraction(independent_edit(tokens[a],tokens[b]),max(len(tokens[a]),len(tokens[b])))
+                observed=sum((cost(i,i+1) for i in range(5)),Fraction());observations.append(observed)
+                self.assertEqual(d['observed_cost_sum'],expected_rational(observed))
+                self.assertEqual(len(d['controls']),2)
+                for ci,c in enumerate(d['controls']):
+                    scores=[sum((cost(a,b) for a,b in zip(path,path[1:])),Fraction()) for path in paths[ci]]
+                    path_count+=len(scores)
+                    mean=sum(scores,Fraction())/len(scores)
+                    variance=sum(((x-mean)**2 for x in scores),Fraction())/len(scores)
+                    center=observed-mean
+                    self.assertEqual(c['control_id'],('unrestricted_interior','fixed_length_pattern')[ci])
+                    self.assertEqual(c['possible_identity_orders'],len(scores))
+                    self.assertEqual(c['conditional_mean_cost_sum'],expected_rational(mean))
+                    self.assertEqual(c['conditional_variance_cost_sum'],expected_rational(variance))
+                    self.assertEqual(c['centered_cost_sum'],expected_rational(center))
+                    self.assertEqual(c['path_cost_histogram'],expected_hist(scores))
+                    self.assertEqual(c['invariant'],variance==0)
+                    centers[ci].append(center);variances[ci].append(variance);means[ci].append(mean);invariants[ci]+=variance==0
+            observed_expectation=sum(observations,Fraction())/count
+            self.assertEqual(f['expected_observed_cost_sum'],expected_rational(observed_expectation))
+            self.assertEqual(observed_expectation,Fraction(5,2)+Fraction(original_cross,8))
+            expected_prediction={'observed':expected_rational(observed_expectation)}
+            self.assertEqual(len(f['controls']),2)
+            for ci,c in enumerate(f['controls']):
+                mean=sum(means[ci],Fraction())/count;center=sum(centers[ci],Fraction())/count
+                crossing=sum((sum(lengths[a]!=lengths[b] for a,b in zip(path,path[1:])) for path in paths[ci]),Fraction())/len(paths[ci])
+                self.assertEqual(mean,Fraction(5,2)+crossing/Fraction(8))
+                self.assertEqual(c['control_id'],('unrestricted_interior','fixed_length_pattern')[ci])
+                self.assertEqual(c['possible_identity_orders'],len(paths[ci]))
+                self.assertEqual(c['expected_conditional_mean_cost_sum'],expected_rational(mean))
+                self.assertEqual(c['expected_centered_cost_sum'],expected_rational(center))
+                self.assertEqual(c['expected_centered_mean_cost'],float(center/5))
+                self.assertEqual(c['expected_within_draw_conditional_variance_cost_sum'],expected_rational(sum(variances[ci],Fraction())/count))
+                self.assertEqual(c['centered_cost_sum_histogram'],expected_hist(centers[ci]))
+                self.assertEqual(c['negative_draws'],sum(x<0 for x in centers[ci]))
+                self.assertEqual(c['zero_draws'],sum(x==0 for x in centers[ci]))
+                self.assertEqual(c['positive_draws'],sum(x>0 for x in centers[ci]))
+                self.assertEqual(c['invariant_draws'],invariants[ci]);self.assertEqual(c['varying_draws'],count-invariants[ci])
+                self.assertEqual(c['expected_cross_length_boundaries'],expected_rational(crossing))
+                expected_prediction['unrestricted' if ci==0 else 'length_fixed']=expected_rational(mean)
+                if ci==1:self.assertEqual(center,0)
+            self.assertEqual(f['predicted_mean_cost_sums'],expected_prediction)
+        self.assertEqual(draw_count,1088);self.assertEqual(path_count,31744)
+        self.assertEqual(len(report['pair_expectations']),4)
+        for r,(left,right) in zip(report['pair_expectations'],product((1,2),repeat=2)):
+            self.assertEqual((r['left_length'],r['right_length']),(left,right))
+            pairs=[(words([left],a)[0],words([right],b)[0]) for a in range(2**left) for b in range(2**right)]
+            costs=[Fraction(independent_edit(a,b),max(left,right)) for a,b in pairs]
+            self.assertEqual(r['pair_count'],len(pairs))
+            self.assertEqual(r['expected_cost'],expected_rational(sum(costs,Fraction())/len(pairs)))
 
 
 if __name__=='__main__':unittest.main()
