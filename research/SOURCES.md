@@ -55,6 +55,15 @@
 - Limitation: fingerprint identifies the hosted digital representation; it does not authenticate an original print or establish a Yale canvas mapping.
 - Reuse: source PDF/render kept local; only a citation, fingerprint, and selected identifier facts are recorded. No open PDF/image reuse license is asserted.
 
+## S007 — Public multispectral release and Read Me
+
+- Publisher: Lisa Fagin Davis; [release notice](https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/), 2024-09-08; [public collection](https://drive.google.com/drive/folders/1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig).
+- Inspected: 2026-10-12; public folder metadata and fixed 1r/116v JPEG selection.
+- [Read Me](https://drive.google.com/file/d/1nzKNlV2BqCEz3VvheAFZ_4IULFwLExng/view): prints 2024-09-09, reports 2014 capture; 58,338 bytes, one page, SHA-256 `02183484db3d238325d87b46f8c48676efeac53bce7a03b4af40f141fa2af157`. Rendered and visually checked.
+- Use: [supplementary source intake](image-index/MULTISPECTRAL_INTAKE.md), exact file identities, orientation/processing limits and finite listing snapshots.
+- Reuse: public viewing/download statement and requested credit retained; no Creative Commons license inferred. Binaries remain local.
+- Limits: dependent views of the same surfaces; no full archive audit, pipeline reconstruction, glyph adjudication, historical attribution, verified legacy alias or translation.
+
 ## Recording future sources
 
 The [historical interlinear intake](historical/README.md) records a recovered

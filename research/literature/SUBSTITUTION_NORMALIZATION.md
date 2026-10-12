@@ -97,9 +97,15 @@ cmp NEW_REPORT.json research/literature/substitution-normalization-control.json
 The standard-library producer accepts no corpus input and makes no network
 request. It records the inspected source identity as provenance, not as a
 runtime verification or execution of that file. New outputs are created
-exclusively. The report rejects duplicate/non-finite JSON on checking.
+exclusively. The report rejects duplicate/non-finite JSON on checking. A post-result
+maintainer correction also preserves scalar types in the complete comparison:
+Boolean values cannot replace integer counts or floating entropy scores, and
+integer/float substitutions are rejected. The actual CLI regressions preserve
+cache bytes on success and failure. This checker repair changes only the
+producer fingerprint; every synthetic count, score, class and ranking remains
+unchanged, with the original producer/result retained in history.
 
-Five focused tests pass: a balanced merge has known 1-bit and 0.5-bit scores;
+The original five focused tests cover a balanced merge with known 1-bit and 0.5-bit scores;
 a non-colliding substitution leaves entropy unchanged; simultaneous merges
 obey mass weighting and direction symmetry; a separate direct before/after
 entropy implementation verifies the complete toy reversal and exact masses;
@@ -107,7 +113,7 @@ invalid counts/mappings fail. Complete report replay, producer identity,
 links and whitespace pass. Python 3.14.3 was used; printed entropy decimals
 are numerical approximations, while the mass ratios and mathematical identity
 are exact. Only original synthetic counts/code and public source references
-are published.
+are published. Two added typed-cache CLI regressions bring the focused total to seven.
 
 The [native B comparison](NATIVE_SUBSTITUTION_RESULTS.md) separately freezes
 all 595 symbol pairs and both metrics before scoring. Twenty-one maximizing

@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "status": "source_container_diagnostic_only",
+  "usable_as_verified_locus_crosswalk": false,
+  "usable_for_statistical_evaluation": false,
+  "image_region_verified": false,
+  "source_corrections_applied": false,
+  "selection": {
+    "parent_pr": 135,
+    "parent_head": "f17218e729f27948baa4df70f626adfb84549b7b",
+    "parent_path": "research/historical/record-projections.json",
+    "parent_sha256": "edf476f25e194306f6d700010e87148105049d3c189a696759e305e66766b15f",
+    "rule": "Every exact shared page with equal joined lowercase streams but unequal nonempty record projection bags; retain all one-sided projection groups on that page",
+    "selected_page_ids": [
+      "f46v"
+    ],
+    "source_exposure_before_this_note": true
+  },
+  "inputs": {
+    "historical": {
+      "id": "LS16e6",
+      "archive_sha256": "0419e8031447c88ba08eb93e7b7a95c58f92c6c7e6d913d4bbc4701271c6f876",
+      "archive_bytes": 347914,
+      "member": "L16+H-EV/TEXT16E6.EVT",
+      "member_sha256": "f764f41d02b47810bdbb48946fc24b88e85746ee7fe5f229957770e7c781e319",
+      "member_bytes": 1720292
+    },
+    "modern": {
+      "id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "bytes": 342104,
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    },
+    "catalog_sha256": {
+      "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
+      "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+    }
+  },
+  "reader_sha256": {
+    "scripts/audit_historical_modern_pages.py": "c3b2b4ebff02a8ed2fd2473d6af1cc3a85764564fa849286d66046fc2b8f4deb",
+    "scripts/audit_historical_interlinear.py": "5f232e7dc54c741514ed001d28fe0d99eb2632e3a1a69087e6854fa7b53ed2f3",
+    "scripts/audit_historical_lowercase_projection.py": "40e7632d92089c7293fb6601a0944817ef79c8266a726ca25a1db4a80142d9a7",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+  },
+  "publisher_convention": {
+    "url": "https://www.voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "issue": "2.0.2 (2025-07-08)",
+    "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "printed_pages": [
+      21,
+      22
+    ],
+    "tables": [
+      8,
+      9
+    ],
+    "locator_equals": "Source convention: same line as preceding item with intervening white space",
+    "kind_Pt": "Source convention: right-justified title-like item on the preceding line",
+    "physical_mapping_verified": false
+  },
+  "native_records": [
+    {
+      "source_id": "LS16e6",
+      "native_locator": "f46v.P.7;H",
+      "source_file_line": 10665,
+      "reader_native_text": "dchedy.cheeky.dam.ched.l.chedy.chedy-{plant}okeedchs{&S}y.qokeedy.chete!dar.or.aick!y-",
+      "native_unit": "P",
+      "projection": {
+        "lowercase_symbols": 61,
+        "sha256": "f9ad7be2ce8db880058260e6b4c218eede2c4851dec43989c0dc8995b5dacb3c"
+      },
+      "transcriber": "H"
+    },
+    {
+      "source_id": "IT2a",
+      "native_locator": "f46v.7,+P0",
+      "source_file_line": 1227,
+      "reader_native_text": "dchedy.cheeky.dam.ched.l.chedy.chedy",
+      "locator": "+",
+      "locus_kind": "P0",
+      "projection": {
+        "lowercase_symbols": 30,
+        "sha256": "8838405de2c3ea19e7a0b4d8802d0795ada04b510221d74b3c1736b8e49d548a"
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "native_locator": "f46v.8,=Pt",
+      "source_file_line": 1228,
+      "reader_native_text": "okeedchsy.qokeedy.chetedar.or.aicky",
+      "locator": "=",
+      "locus_kind": "Pt",
+      "projection": {
+        "lowercase_symbols": 31,
+        "sha256": "8e907f3ef149d56bdcfa601a72f140632d35196d1d398f55b245d9028c4dec55"
+      }
+    }
+  ],
+  "comparison": {
+    "operation": "Concatenate the two IT2a lowercase projections in native source order, without inserting a separator",
+    "equals_historical_lowercase_projection": true,
+    "historical_symbols": 61,
+    "modern_first_symbols": 30,
+    "modern_second_symbols": 31,
+    "full_native_body_identity_claim": false,
+    "historical_plant_comment_retained_in_reader_text": true,
+    "historical_alignment_fillers_retained_in_reader_text": true
+  },
+  "modern_default_adapter_records": [
+    {
+      "spacing": "split",
+      "native_locator": "f46v.7,+P0",
+      "default_selected_kinds": [
+        "P0",
+        "P1"
+      ],
+      "eligible": true,
+      "exclusion_reasons": [],
+      "tokens": [
+        "dchedy",
+        "cheeky",
+        "dam",
+        "ched",
+        "l",
+        "chedy",
+        "chedy"
+      ],
+      "token_count": 7
+    },
+    {
+      "spacing": "split",
+      "native_locator": "f46v.8,=Pt",
+      "default_selected_kinds": [
+        "P0",
+        "P1"
+      ],
+      "eligible": false,
+      "exclusion_reasons": [
+        "unselected_locus_kind"
+      ],
+      "tokens": null,
+      "token_count": null
+    },
+    {
+      "spacing": "join",
+      "native_locator": "f46v.7,+P0",
+      "default_selected_kinds": [
+        "P0",
+        "P1"
+      ],
+      "eligible": true,
+      "exclusion_reasons": [],
+      "tokens": [
+        "dchedy",
+        "cheeky",
+        "dam",
+        "ched",
+        "l",
+        "chedy",
+        "chedy"
+      ],
+      "token_count": 7
+    },
+    {
+      "spacing": "join",
+      "native_locator": "f46v.8,=Pt",
+      "default_selected_kinds": [
+        "P0",
+        "P1"
+      ],
+      "eligible": false,
+      "exclusion_reasons": [
+        "unselected_locus_kind"
+      ],
+      "tokens": null,
+      "token_count": null
+    }
+  ],
+  "limits": [
+    "The historical P unit is not the modern P0/P1/Pt selection scheme",
+    "The projection erases within-body spaces, unknown/rare signs, case and other notation",
+    "Source locator/type definitions do not verify manuscript placement, title meaning or a physical line join",
+    "The default adapter excludes the Pt envelope without deleting it from the original source",
+    "No paragraph/word/glyph accuracy, independence, untouched test, decipherment or translation claim"
+  ]
+}

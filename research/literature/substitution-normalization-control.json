@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "method": "fixed synthetic substitution-normalization control v1",
-  "producer_sha256": "4bc4ed684c8f86ac4775e50d505d8e5f70b9aace6db7f4955d0123c85d677145",
+  "producer_sha256": "b4be747f08996e6898cadf151344cac6a2c36be9ced8d8c62afd5ac47bd1443f",
   "source_observation": {
     "repository": "sravanareddy/deciphervoynich",
     "commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",

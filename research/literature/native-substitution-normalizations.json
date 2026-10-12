@@ -44,10 +44,10 @@
   ],
   "word_frequency_table_digest": "b8254067aa2c8baf9b96a73c9f3617986629b731a8ec051e148aa8e30cd9e4df",
   "plan_sha256": "a12c77d198e9121aef3bc93e7143516148d6efca6681ee47a1269134004e3638",
-  "producer_sha256": "86a730e9c975ab2b26037d62b1003f58f855e633df4819af0b320544ab517207",
+  "producer_sha256": "a899568a9bcb478dd4e35790a4dbf8c46fb026ddf23e6518c495f2f2cbdc8d86",
   "parent_pins": {
-    "scripts/substitution_entropy_control.py": "4bc4ed684c8f86ac4775e50d505d8e5f70b9aace6db7f4955d0123c85d677145",
-    "research/literature/substitution-normalization-control.json": "c3bfa5ae655f992da7d34602b6e47a0b98ec600c41cdb9a05fe7a78f219d4cbd"
+    "scripts/substitution_entropy_control.py": "b4be747f08996e6898cadf151344cac6a2c36be9ced8d8c62afd5ac47bd1443f",
+    "research/literature/substitution-normalization-control.json": "a701c04d7e41363d2b38538f15c6d9540e15198402834f19d457f0401e1db82a"
   },
   "decimal_precision": 80,
   "numerical_guard_bits": "1E-60",

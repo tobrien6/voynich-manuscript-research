@@ -16,7 +16,11 @@ The unchanged [plan](NATIVE_SUBSTITUTION_PLAN.md) was committed at
 `9a708c9fe5d8c357c43fa931a8d58297fec63474`. The producer and its synthetic tests
 were committed, pushed and remotely verified at
 `ba60d4546cdd9f355dff0a0f64c58cb3e7d65534` before the first native pair-score
-calculation. Both files' identities are retained in the result. This sequence
+calculation. Those first identities are retained in the frozen result and the
+[accepted-parent transition receipt](NATIVE_SUBSTITUTION_PARENT_TRANSITION.md).
+The effective producer updates only two dependency pins after #153 acceptance;
+all measurement functions, original plan and scientific results are unchanged.
+This sequence
 is an author declaration supported by the preserved Git records, not blind
 registration or untouched evaluation material.
 
@@ -38,7 +42,8 @@ replacement; their distributions remain unchanged.
 
 The [synthetic normalization note](SUBSTITUTION_NORMALIZATION.md) derives the
 identity `whole decrease = (affected occurrences / all occurrences) * subset
-decrease`. The original parent helper supplies collision classes, but its
+decrease`. The accepted parent helper supplies the same unchanged collision
+classes; its
 floating-point entropy scores are not used for rankings here. Integer prime
 exponents represent each information numerator exactly; normalized rational
 prime signatures identify exact score equality. Scores are evaluated with
@@ -101,7 +106,10 @@ cmp NEW_REPORT.json research/literature/native-substitution-normalizations.json
 
 The standard-library producer checks both pinned parent artifacts before
 reading native input and makes no network request. Python 3.14.3 was used.
-All thirteen focused native/parent tests pass. Synthetic cases test known
+All seventeen focused native/accepted-parent tests pass (ten native, seven parent).
+The original eight native tests and first report remain frozen; two native
+transition checks verify their identities and complete scientific preservation.
+Synthetic cases test known
 entropy values, exact prime information, different-count-scale ties, zero
 maxima, preserved numerical ambiguity, dependency/input drift and typed JSON
 comparison. The complete report regenerates identically.

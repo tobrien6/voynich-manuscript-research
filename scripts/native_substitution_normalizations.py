@@ -16,8 +16,8 @@ PLAN = ROOT / 'research/literature/NATIVE_SUBSTITUTION_PLAN.md'
 REPORT = ROOT / 'research/literature/native-substitution-normalizations.json'
 INPUT_SHA = '723cb2746da37c8272005f71298917abfed60412b23597b2b8aecb95dc7a0ee4'
 PINS = {
-    'scripts/substitution_entropy_control.py': '4bc4ed684c8f86ac4775e50d505d8e5f70b9aace6db7f4955d0123c85d677145',
-    'research/literature/substitution-normalization-control.json': 'c3bfa5ae655f992da7d34602b6e47a0b98ec600c41cdb9a05fe7a78f219d4cbd',
+    'scripts/substitution_entropy_control.py': 'b4be747f08996e6898cadf151344cac6a2c36be9ced8d8c62afd5ac47bd1443f',
+    'research/literature/substitution-normalization-control.json': 'a701c04d7e41363d2b38538f15c6d9540e15198402834f19d457f0401e1db82a',
 }
 PRECISION = 80
 GUARD = Decimal('1e-60')

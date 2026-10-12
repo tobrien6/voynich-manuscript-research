@@ -1,12 +1,16 @@
 from decimal import Decimal
 from fractions import Fraction
+import ast
+import gzip
+import hashlib
+import json
 import math
 from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
 
-from scripts.native_substitution_normalizations import canonical_hash, decimal_score, factors, information_vector, load, native_counts, produce, ranking, signature
+from scripts.native_substitution_normalizations import ROOT, PINS, canonical_hash, decimal_score, factors, information_vector, load, native_counts, produce, ranking, signature
 
 
 class NativeSubstitutionTests(unittest.TestCase):
@@ -76,6 +80,45 @@ class NativeSubstitutionTests(unittest.TestCase):
         for raw in [b'{"count":1,"count":2}', b'{"count":NaN}']:
             with self.assertRaises(ValueError):
                 load(raw)
+
+    def test_parent_transition_preserves_first_report_and_measurement_functions(self):
+        base = ROOT / 'research/literature/frozen'
+        first_raw = gzip.decompress((base / 'native-substitution-first.json.gz').read_bytes())
+        self.assertEqual(hashlib.sha256(first_raw).hexdigest(),
+                         '9adbf8948fea9cfa9f576d6f70210f7da1f70fbc0914c4877baab28989fcf8c3')
+        first = json.loads(first_raw)
+        current = load((ROOT / 'research/literature/native-substitution-normalizations.json').read_bytes())
+        self.assertEqual([key for key in first if canonical_hash(first[key]) != canonical_hash(current[key])],
+                         ['producer_sha256', 'parent_pins'])
+        functions = lambda raw: {n.name: ast.dump(n, include_attributes=False)
+                                 for n in ast.parse(raw).body if isinstance(n, ast.FunctionDef)}
+        original = gzip.decompress((base / 'native-substitution-first.source.txt.gz').read_bytes())
+        self.assertEqual(hashlib.sha256(original).hexdigest(),
+                         '86a730e9c975ab2b26037d62b1003f58f855e633df4819af0b320544ab517207')
+        self.assertEqual(functions(original), functions((ROOT / 'scripts/native_substitution_normalizations.py').read_bytes()))
+        self.assertEqual(first['producer_sha256'], hashlib.sha256(original).hexdigest())
+
+    def test_accepted_parent_pins_and_frozen_artifacts_have_exact_identities(self):
+        receipt = load((ROOT / 'research/literature/native-substitution-parent-transition.json').read_bytes())
+        for item in receipt['frozen_first_artifacts']:
+            packed = (ROOT / item['path']).read_bytes()
+            raw = gzip.decompress(packed)
+            self.assertEqual(hashlib.sha256(packed).hexdigest(), item['gzip_sha256'])
+            self.assertEqual(hashlib.sha256(raw).hexdigest(), item['uncompressed_sha256'])
+            self.assertEqual(len(raw), item['uncompressed_bytes'])
+        self.assertEqual(receipt['accepted_parent']['pins'], PINS)
+        for path, fingerprint in PINS.items():
+            self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), fingerprint)
+        original = load(gzip.decompress((ROOT / 'research/literature/frozen/native-substitution-parent-first.json.gz').read_bytes()))
+        current = load((ROOT / 'research/literature/substitution-normalization-control.json').read_bytes())
+        self.assertEqual([key for key in original if canonical_hash(original[key]) != canonical_hash(current[key])],
+                         ['producer_sha256'])
+        functions = lambda raw: {n.name: ast.dump(n, include_attributes=False)
+                                 for n in ast.parse(raw).body if isinstance(n, ast.FunctionDef)}
+        before = functions(gzip.decompress((ROOT / 'research/literature/frozen/native-substitution-parent-first.source.txt.gz').read_bytes()))
+        after = functions((ROOT / 'scripts/substitution_entropy_control.py').read_bytes())
+        for name in ('entropy', 'measure'):
+            self.assertEqual(before[name], after[name])
 
 
 if __name__ == '__main__':
