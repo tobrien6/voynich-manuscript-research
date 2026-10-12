@@ -1,0 +1,359 @@
+{
+  "title": "Voynich pilot inventory: ten target folio sides / ten Yale canvases",
+  "version": "1.0",
+  "inspected_on": "2026-10-11",
+  "timezone": "America/New_York",
+  "selection_protocol": "SAMPLING.md",
+  "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+  "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+  "manifest_canvas_count": 213,
+  "observation_unit": "One selected Yale canvas per target folio side; a canvas may contain multiple foldout panels or folio sides.",
+  "observation_scope": "Qualitative visible layout and forms, inspected in full-surface JPEG derivatives with maximum dimension 1800 pixels. No glyph transcription or decipherment.",
+  "records": [
+    {
+      "target": "1r",
+      "yale_label": "1r",
+      "image_id": "1006076",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006076",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006076/full/!1800,1800/0/default.jpg",
+      "source_width": 2972,
+      "source_height": 3766,
+      "inspection_width": 1421,
+      "inspection_height": 1800,
+      "inspection_sha256": "6a7037996dfd4813846dbeda948b0a8f5cd0e6803fc25243d8bd985d6c1df7d4",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "I",
+        "description": "Botanical",
+        "range": "1r–66v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Horizontal text arranged in separated blocks, with larger initial marks and several red marks near the left edges of blocks.",
+      "observed_illustration": "Faint green forms and red patches are visible beneath or among the text. A distinct, clearly outlined whole-plant drawing is not established on this recto at the inspected scale.",
+      "uncertainties": [
+        "Whether faint colored forms are show-through, transferred pigment, or marks on this side is unresolved.",
+        "Faded text and surface discoloration limit fine glyph observations."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "2r",
+      "yale_label": "2r",
+      "image_id": "1006078",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006078",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006078",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006078/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006078/full/!1800,1800/0/default.jpg",
+      "source_width": 2691,
+      "source_height": 3770,
+      "inspection_width": 1285,
+      "inspection_height": 1800,
+      "inspection_sha256": "81fa8840c99e962cb39e9a36a51349ab0a63b07e0ac3a7ceba58b821c332890e",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "I",
+        "description": "Botanical",
+        "range": "1r–66v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Text blocks occupy spaces to both sides of upper stems and lower foliage; line lengths respond to the illustration.",
+      "observed_illustration": "A tall branching plant form has lobed green leaves, three unfilled brush-like heads, red-green stems, and a red curling root at the bottom.",
+      "uncertainties": [
+        "No botanical species identification is attempted.",
+        "Similar shapes or colors do not establish a textual reading."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "67r",
+      "yale_label": "67r",
+      "image_id": "1006194",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006194",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006194/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006194/full/!1800,1800/0/default.jpg",
+      "source_width": 4972,
+      "source_height": 3738,
+      "inspection_width": 1800,
+      "inspection_height": 1353,
+      "inspection_sha256": "ed3657b74b4705da1b2605b12e0a9cda501df9384b8e0f8f5ce392498ee41e84",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "II",
+        "description": "Astronomical/astrological",
+        "range": "67r–73v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "The left panel has a short horizontal text block above a circular diagram and writing around and within rings. The right panel includes circular/radial writing and a short text block below.",
+      "observed_illustration": "Two adjacent diagram panels are visible. The left has a central face with alternating red and blue rays and star-like forms; the right has smaller crescent/disc forms around a central radiating motif.",
+      "uncertainties": [
+        "The exact Yale label is 67r, although the scan contains two drawn panels separated by a fold.",
+        "Panel-to-transcription identifiers are not resolved; treat this as one canvas record.",
+        "Astronomical identities and readings are not inferred."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "68r",
+      "yale_label": "68r",
+      "image_id": "1006196",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006196",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006196/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006196/full/!1800,1800/0/default.jpg",
+      "source_width": 7993,
+      "source_height": 3828,
+      "inspection_width": 1800,
+      "inspection_height": 862,
+      "inspection_sha256": "da1c31e2187794fdba8b4b4b7da0eecd48cd40f403e39586d44dfecd39816cb5",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "II",
+        "description": "Astronomical/astrological",
+        "range": "67r–73v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Short horizontal text blocks occur at the tops of the left and middle panels, with short inscriptions near star-like forms. The right circular diagram has radial and perimeter writing.",
+      "observed_illustration": "A wide unfolded image contains three drawn panels: two fields of star-like marks and circular face motifs, and a larger segmented circle with a central face.",
+      "uncertainties": [
+        "The exact Yale label is 68r; it does not encode the three visible panel boundaries.",
+        "Panel names and correspondences to transcription editions remain unassigned.",
+        "No constellation, calendar, or star-name identification is made."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "75r",
+      "yale_label": "75r",
+      "image_id": "1006208",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006208",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006208/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006208/full/!1800,1800/0/default.jpg",
+      "source_width": 2852,
+      "source_height": 3759,
+      "inspection_width": 1366,
+      "inspection_height": 1800,
+      "inspection_sha256": "3c695db7b2d80a4e0ac246b8258691ac4bbb5d160e669744ef666f81a5f5f146",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "III",
+        "description": "Biological (catalog); balneological (overview)",
+        "range": "75r–84v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Dense horizontal text surrounds a central vertical illustration and a lower-right illustrated area; the available text width changes around figures and green regions.",
+      "observed_illustration": "Small human figures appear within or alongside green-filled lobed areas, a narrow vertical green channel, and blue outlines. A thin curved connection extends toward a lower-right group.",
+      "uncertainties": [
+        "The functions of the structures and the activity of the figures remain interpretations.",
+        "Green-filled areas are described by visible form; their material is not identified."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "76r",
+      "yale_label": "76r",
+      "image_id": "1006210",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006210",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006210/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006210/full/!1800,1800/0/default.jpg",
+      "source_width": 2793,
+      "source_height": 3769,
+      "inspection_width": 1334,
+      "inspection_height": 1800,
+      "inspection_sha256": "173637eb7569a6fc67a9ef50124ca5f982f29aa76606cebd0e9a287f9194537d",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "III",
+        "description": "Biological (catalog); balneological (overview)",
+        "range": "75r–84v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "A broad dense block of horizontal writing covers most of the page; isolated marks appear in the left margin and some lines begin with enlarged forms.",
+      "observed_illustration": "No large figurative, pool, or tube illustration is visible on the selected recto at the inspected scale.",
+      "uncertainties": [
+        "This observation applies to 76r only, not the verso or all of Part III.",
+        "The meaning and possible ordering of marginal signs are not established."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "85v",
+      "yale_label": "85v and 86r (foldout)",
+      "image_id": "1006231",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006231",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006231/full/!1800,1800/0/default.jpg",
+      "source_width": 7925,
+      "source_height": 7268,
+      "inspection_width": 1800,
+      "inspection_height": 1651,
+      "inspection_sha256": "0f16acfa51a93c8ba44dcd4c0f7e619648a4144fd4f6d07bed5271694f022daf",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "IV",
+        "description": "Nine-medallion foldout (catalog); cosmological (overview)",
+        "range": "85r–86v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Writing follows circular rims and interior/radial paths, with short inscriptions among connecting forms across the unfolded surface.",
+      "observed_illustration": "Nine large connected circular forms occupy a broad folded sheet. The central form contains clustered tower/vessel-like outlines; surrounding forms include colored rays, star-like marks, and patterned connections.",
+      "uncertainties": [
+        "The complete Yale label is 85v and 86r (foldout); descriptions cover the shared image, not an isolated 85v panel.",
+        "86r is context within the same canvas, not an independently sampled extra record.",
+        "Map, building, astronomical, and biological interpretations are not tested.",
+        "Small lettering and fold intersections are difficult to inspect in a whole-image derivative."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "87r",
+      "yale_label": "87r",
+      "image_id": "1006232",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006232",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006232/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006232/full/!1800,1800/0/default.jpg",
+      "source_width": 2753,
+      "source_height": 3745,
+      "inspection_width": 1323,
+      "inspection_height": 1800,
+      "inspection_sha256": "ae7805f6346da270a16fc21350835b1bd156fed183a605730dd383f78bafc2ed",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "V",
+        "description": "Pharmaceutical",
+        "range": "87r–102v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Two main horizontal text blocks occupy the upper and middle-left spaces beside a large plant illustration on the right.",
+      "observed_illustration": "One large plant form has broad green leaves, blue-green tipped flower-like heads, and a branching red root. No separate vessel drawing is clearly visible on this recto.",
+      "uncertainties": [
+        "A pharmaceutical catalog range does not imply vessels appear on every page.",
+        "The plant identity and purpose are unresolved."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "88r",
+      "yale_label": "88r",
+      "image_id": "1037112",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037112",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1037112",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1037112/full/!1800,1800/0/default.jpg",
+      "source_width": 2714,
+      "source_height": 3735,
+      "inspection_width": 1308,
+      "inspection_height": 1800,
+      "inspection_sha256": "4d4483d7a911ba9f6c683d4aca54c06aa8bb4d3c3a874154aa37f64ebe902d90",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "V",
+        "description": "Pharmaceutical",
+        "range": "87r–102v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Short inscriptions occur beside separate plant/root forms; horizontal text blocks separate successive illustrated rows.",
+      "observed_illustration": "Several detached root/plant forms run across the page in rows. Three tall, multicolored vessel-like drawings stand along the left side.",
+      "uncertainties": [
+        "Detached forms are not identified as specific herbs or preparation stages.",
+        "A one-to-one mapping between inscriptions and depicted forms has not been checked."
+      ],
+      "independent_review_status": "pending"
+    },
+    {
+      "target": "103r",
+      "yale_label": "103r",
+      "image_id": "1006254",
+      "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254",
+      "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006254",
+      "full_image_url": "https://collections.library.yale.edu/iiif/2/1006254/full/full/0/default.jpg",
+      "inspection_image_url": "https://collections.library.yale.edu/iiif/2/1006254/full/!1800,1800/0/default.jpg",
+      "source_width": 2688,
+      "source_height": 3805,
+      "inspection_width": 1272,
+      "inspection_height": 1800,
+      "inspection_sha256": "e48af246e7a9995c6deaae9405c696149ffe503bdb47c8636183aa5950afcffc",
+      "inspected_on": "2026-10-11",
+      "inspection_status": "visually inspected",
+      "catalog_section": {
+        "part": "VI",
+        "description": "Continuous text with marginal stars",
+        "range": "103r–117v",
+        "source": "S002"
+      },
+      "source_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "observed_text_layout": "Horizontal writing fills a broad single column in repeated blocks beside a vertical sequence of star-like marks on the left.",
+      "observed_illustration": "The left margin has red-filled and unfilled star-like marks; a brown discolored area overlaps writing at the upper right. No large plant or human figure is visible.",
+      "uncertainties": [
+        "Stars may mark entries, but the purpose and segmentation of the text require separate work.",
+        "Recipes are a possibility reported by the overview, not a reading established here.",
+        "Discoloration reduces local legibility."
+      ],
+      "independent_review_status": "pending"
+    }
+  ]
+}
