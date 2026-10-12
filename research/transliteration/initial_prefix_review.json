@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "selection_report": "research/transliteration/initial_prefix_selection.json",
+  "selection_report_sha256": "e21bf5b6edec8a10c1116eb47701d7bea08f9df859bf132cc5894e0320a8893b",
+  "selection_plan_commit": "57e35db",
+  "inspected_on": "2026-10-11",
+  "inspection_timezone": "America/New_York",
+  "observer": "Codex source-image review; one observer, not independently replicated",
+  "review_scope": "Visible initial shapes and provisional source-to-row alignment only",
+  "may_apply_as_source_correction": false,
+  "notation_reference": {
+    "url": "https://voynich.nu/img/extra/eva01.gif",
+    "pixel_width": 640,
+    "pixel_height": 1032,
+    "sha256": "c470d909c07c586f327a4a84f35efa879f765745744a0439690ed706f7b3e09f"
+  },
+  "notation_reference_context_url": "https://voynich.nu/transcr.html",
+  "cases": [
+    {
+      "locus_key": "f18v.5",
+      "selection_case": {
+        "locus_key": "f18v.5",
+        "page_id": "f18v",
+        "discordant_features": [
+          "y"
+        ],
+        "variants": [
+          {
+            "source_id": "ZL3b",
+            "uncertain_spaces": "split",
+            "locus_identifier": "f18v.5,+P0",
+            "source_line_number": 781,
+            "first_token": "ychoees",
+            "token_count": 7
+          },
+          {
+            "source_id": "ZL3b",
+            "uncertain_spaces": "join",
+            "locus_identifier": "f18v.5,+P0",
+            "source_line_number": 781,
+            "first_token": "ychoees",
+            "token_count": 6
+          },
+          {
+            "source_id": "IT2a",
+            "uncertain_spaces": "split",
+            "locus_identifier": "f18v.5,+P0",
+            "source_line_number": 466,
+            "first_token": "r",
+            "token_count": 8
+          },
+          {
+            "source_id": "IT2a",
+            "uncertain_spaces": "join",
+            "locus_identifier": "f18v.5,+P0",
+            "source_line_number": 466,
+            "first_token": "r",
+            "token_count": 8
+          }
+        ],
+        "image": {
+          "yale_label": "18v",
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006109",
+          "image_oid": "1006109",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006109",
+          "full_image_url": "https://collections.library.yale.edu/iiif/2/1006109/full/full/0/default.jpg",
+          "image_service_url": "https://collections.library.yale.edu/iiif/2/1006109",
+          "image_width": "2846",
+          "image_height": "3781"
+        }
+      },
+      "inspected_images": [
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006109/full/full/0/default.jpg",
+          "pixel_width": 2846,
+          "pixel_height": 3781,
+          "sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f"
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006109/1400,650,1300,380/full/0/default.jpg",
+          "pixel_width": 1300,
+          "pixel_height": 380,
+          "sha256": "7b787c3f39865d9a0052ef1ced1d9ed9fd108775775c02c6292ae14a51273075",
+          "region_xywh_full_image_pixels": [
+            1400,
+            650,
+            1300,
+            380
+          ]
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006109/1250,770,650,140/full/0/default.jpg",
+          "pixel_width": 650,
+          "pixel_height": 140,
+          "sha256": "acb8e386736b8a572958060e379216e57b77c0cc2bdd3b053bbdf4bdce1282ca",
+          "region_xywh_full_image_pixels": [
+            1250,
+            770,
+            650,
+            140
+          ]
+        }
+      ],
+      "source_difference": "ZL begins ychoees; IT begins r followed by the separate token ychoees. Both spacing policies preserve this first-slot difference.",
+      "row_alignment_status": "single_observer_provisional",
+      "row_alignment_evidence": "The fifth visible text row in the upper-right block is bracketed by the q-starting rows represented as f18v.4 and f18v.6. Their repeated tall forms and the target row sequence support this alignment; the locus number alone is not the evidence.",
+      "direct_observation": "The proposed row begins with one prominent looped shape with a descending curved stroke, then connected low forms. The region includes the blank area before that start; no separately spaced preceding r-shaped sign is apparent at this resolution.",
+      "interpretation_status": "single_observer_provisional_preference",
+      "preferred_first_slot_representation": "ZL3b literal y prefix",
+      "interpretation": "The initial shape resembles Basic Eva y, provisionally supporting the ZL first-slot feature over the IT isolated r token. This does not adjudicate the entire word, prove an underlying glyph count, or certify the transcription.",
+      "unresolved": "A second observer must check the proposed row and whether a small or combined initial sign warrants IT's segmentation."
+    },
+    {
+      "locus_key": "f78r.21",
+      "selection_case": {
+        "locus_key": "f78r.21",
+        "page_id": "f78r",
+        "discordant_features": [
+          "q"
+        ],
+        "variants": [
+          {
+            "source_id": "ZL3b",
+            "uncertain_spaces": "split",
+            "locus_identifier": "f78r.21,+P0",
+            "source_line_number": 4402,
+            "first_token": "lchedy",
+            "token_count": 4
+          },
+          {
+            "source_id": "ZL3b",
+            "uncertain_spaces": "join",
+            "locus_identifier": "f78r.21,+P0",
+            "source_line_number": 4402,
+            "first_token": "lchedy",
+            "token_count": 4
+          },
+          {
+            "source_id": "IT2a",
+            "uncertain_spaces": "split",
+            "locus_identifier": "f78r.21,+P0",
+            "source_line_number": 2867,
+            "first_token": "qchedy",
+            "token_count": 4
+          },
+          {
+            "source_id": "IT2a",
+            "uncertain_spaces": "join",
+            "locus_identifier": "f78r.21,+P0",
+            "source_line_number": 2867,
+            "first_token": "qchedy",
+            "token_count": 4
+          }
+        ],
+        "image": {
+          "yale_label": "78r",
+          "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006214",
+          "image_oid": "1006214",
+          "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006214",
+          "full_image_url": "https://collections.library.yale.edu/iiif/2/1006214/full/full/0/default.jpg",
+          "image_service_url": "https://collections.library.yale.edu/iiif/2/1006214",
+          "image_width": "2793",
+          "image_height": "3761"
+        }
+      },
+      "inspected_images": [
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006214/full/full/0/default.jpg",
+          "pixel_width": 2793,
+          "pixel_height": 3761,
+          "sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893"
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006214/310,1550,1000,310/full/0/default.jpg",
+          "pixel_width": 1000,
+          "pixel_height": 310,
+          "sha256": "4b6625a99e2b359258e12db6af8eb50f3c2327afb66e441e31a32a9542c6e73f",
+          "region_xywh_full_image_pixels": [
+            310,
+            1550,
+            1000,
+            310
+          ]
+        },
+        {
+          "url": "https://collections.library.yale.edu/iiif/2/1006214/350,1650,700,130/full/0/default.jpg",
+          "pixel_width": 700,
+          "pixel_height": 130,
+          "sha256": "1895f5b48268c6e8c36869944962ca37f81b91708564d897c0602d562fe2195f",
+          "region_xywh_full_image_pixels": [
+            350,
+            1650,
+            700,
+            130
+          ]
+        }
+      ],
+      "source_difference": "ZL begins lchedy; IT begins qchedy. Both spacing policies preserve this q-prefix disagreement.",
+      "row_alignment_status": "single_observer_provisional",
+      "row_alignment_evidence": "The proposed line follows the row represented as f78r.20 and precedes the y-starting f78r.22. It lies left of the upper circular illustration; the next token shares the qokain representation in both editions. Two label loci precede the paragraph block, so locus 21 is not simply visible text row 21.",
+      "direct_observation": "The first shape has a compact loop/crossed top and a relatively short oblique descending stroke. The next token begins with a more extended, near-vertical descending stroke. The contrast is visible in the initial-region derivative.",
+      "interpretation_status": "unresolved",
+      "preferred_first_slot_representation": null,
+      "interpretation": "A shape contrast is visible, but this observation alone does not define the boundary between handwritten l and q variants in the publisher's scheme. Neither source representation is adopted.",
+      "unresolved": "Independently check the row alignment and compare agreed l/q shapes in this writing hand before assigning a representation."
+    }
+  ],
+  "limits": [
+    "The selection excludes many uncertain or unsupported loci; two cases do not estimate corpus-wide source accuracy.",
+    "The complete source files and previous aggregate patterns were already exposed; this is not untouched evaluation material.",
+    "Image hashes identify inspected derivatives, not stable future server responses or correct readings.",
+    "No source files, decoding inputs, glyph inventory, or translation are changed."
+  ]
+}
