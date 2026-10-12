@@ -98,6 +98,8 @@ def tokenize(text, uncertain_spaces):
                 raise ValueError('unclosed inline annotation')
             code = text[index:end + 1]
             if code in {'<->', '<~>'}:
+                if separator_pending:
+                    raise ValueError('consecutive word separators')
                 finish()
                 separator_pending = True
             elif code not in {'<%>', '<$>'} and not TAG.fullmatch(code):
@@ -105,9 +107,13 @@ def tokenize(text, uncertain_spaces):
             index = end + 1
             continue
         if char in '.,':
+            # Validate source boundaries before applying the uncertain-space
+            # policy. Joining a comma cannot repair an empty or doubled gap.
+            if separator_pending or not has_content:
+                raise ValueError('empty or consecutive word separator')
             if char == '.' or uncertain_spaces == 'split':
                 finish()
-                separator_pending = True
+            separator_pending = True
             index += 1
             continue
         if char == '[':
@@ -141,10 +147,10 @@ def tokenize(text, uncertain_spaces):
         unreadable |= unknown
         has_content = True
         separator_pending = False
+    if separator_pending:
+        raise ValueError('trailing word separator')
     if has_content:
         finish()
-    elif separator_pending:
-        raise ValueError('trailing word separator')
     return tokens
 
 
