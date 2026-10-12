@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "access_date_local": "2026-10-11",
+  "timezone": "America/New_York",
+  "listing_source": "TR001",
+  "format_source": "TR002",
+  "normalization": "Accepted IVTFF reader strips locator padding and joins wrapped records; no tokenization or reading resolution.",
+  "editions": [
+    {
+      "id": "GC2a",
+      "filename": "GC2a-n.txt",
+      "edition": "GC 2a, 2023-02-05; modified 2025-06-25",
+      "alphabet": "v101",
+      "url": "https://voynich.nu/data/GC2a-n.txt",
+      "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "source_id": "TR-D003",
+      "role": "alternative alphabet; conversion required for glyph comparisons",
+      "license": "CC0-1.0",
+      "license_source_id": "TR003",
+      "credit": "Glen Claston; IVTFF conversion hosted by Ren\u00e9 Zandbergen"
+    },
+    {
+      "id": "RF1b-full",
+      "filename": "RF1b-e.txt",
+      "edition": "RF 1b, full Eva variant as linked by publisher",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/RF1b-e.txt",
+      "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+      "source_id": "TR-D004",
+      "role": "derived reference; not independent of ZL/GC",
+      "license": "CC0-1.0",
+      "license_source_id": "TR003",
+      "credit": "Ren\u00e9 Zandbergen; reference derived from Zandbergen\u2013Landini and Glen Claston transliterations"
+    },
+    {
+      "id": "RF1b-basic",
+      "filename": "RF1b-er.txt",
+      "edition": "RF 1b, basic Eva variant as linked by publisher",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/RF1b-er.txt",
+      "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+      "source_id": "TR-D005",
+      "role": "derived reference variant; not interchangeable with full",
+      "license": "CC0-1.0",
+      "license_source_id": "TR003",
+      "credit": "Ren\u00e9 Zandbergen; reference derived from Zandbergen\u2013Landini and Glen Claston transliterations"
+    }
+  ],
+  "exact_record_comparisons": [
+    [
+      "RF1b-full",
+      "RF1b-basic"
+    ]
+  ],
+  "base_catalog": "data/transliterations.json",
+  "base_source_ids": [
+    "ZL3b",
+    "IT2a"
+  ],
+  "license": "CC0-1.0",
+  "license_statement_url": "https://voynich.nu/roadmap.html"
+}
