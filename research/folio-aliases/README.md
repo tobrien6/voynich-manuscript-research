@@ -123,3 +123,9 @@ credited early reading, the later chapter's editorial provenance and the longer
 transcript on printed p. 109, with separate plate/PDF locators. It retains the
 historical final-number claim and all proposed readings as documentary context;
 the unresolved registry gate and source/statistical inputs remain unchanged.
+
+The [fixed historical-photograph comparison](NEWBOLD_PHOTO_SURFACE.md) records
+broad layout correspondence between Newbold's Plates X/XV and Yale's image
+labeled 116v, with the adjacent recto as a fixed context. It preserves crop,
+orientation, representation and prior-exposure limits; the association is a
+nonblind AI observation and does not verify the legacy catalog alias.
