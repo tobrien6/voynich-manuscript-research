@@ -130,6 +130,13 @@ reading of the manuscript.
 
 ## Exact variance supplement
 
+The [early/crossing/late decomposition](INTERIOR_EDGE_COMPONENTS.md) locates the
+same accepted effect without changing a control or tail. The primary ASCII
+half-centered contributions are +0.02622437, +0.01954377 and +0.02156168, so the
+positive departure extends inside both halves. All components use the original
+whole-locus normalization and denominator; no component probability or direct
+neighbor-dependence conclusion is supplied.
+
 The [exact-moment audit](HALF_MOMENTS.md) supplies ideal occurrence-permutation
 variances on this unchanged cohort, reproduces every accepted invariant
 identifier, and compares the existing finite-control SD with its ideal ensemble
