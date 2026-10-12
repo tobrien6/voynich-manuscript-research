@@ -23,6 +23,9 @@ units and null scopes that a later replication must match.
 The [planned parsing reconstruction](PARSING.md) now implements four explicit
 exclusion interpretations and preserves their length discrepancies and unmatched
 label phrases. It does not reproduce a published statistic.
+The [label phrase provenance audit](LABEL_PHRASES.md) traces the unmatched names
+to other native codes and retains repeated strings elsewhere, without changing
+the H parser or establishing the authors' input.
 
 ## Method
 
