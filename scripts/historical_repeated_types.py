@@ -110,22 +110,30 @@ def run_study(root=ROOT):
     }
 
 
+def protect_output(path):
+    protected = {ROOT / name for name in FROZEN_PATHS}
+    protected.update((ROOT / PLAN_PATH, ROOT / "research/historical/REPEATED_TYPES_PLAN.md",
+                      Path(__file__), Path(__file__).with_name("global_repeated_types.py")))
+    if any(path.resolve() == source.resolve()
+           or path.exists() and source.exists() and path.samefile(source) for source in protected):
+        raise ValueError("assay output must not overwrite frozen inputs, plan or code")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--check", type=Path)
     args = parser.parse_args()
     try:
-        protected = {ROOT / name for name in FROZEN_PATHS}
-        protected.update((ROOT / PLAN_PATH, ROOT / "research/historical/REPEATED_TYPES_PLAN.md",
-                          Path(__file__), Path(__file__).with_name("global_repeated_types.py")))
-        if args.output and args.output.resolve() in {p.resolve() for p in protected}:
-            raise ValueError("assay output must not overwrite frozen inputs, plan or code")
+        if args.output:
+            protect_output(args.output)
         result = run_study(ROOT)
         if args.check and result != json.loads(args.check.read_text()):
             raise ValueError("repeated-type assay differs from recorded report")
         if args.output:
-            args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+            payload = json.dumps(result, indent=2, allow_nan=False) + "\n"
+            protect_output(args.output)
+            args.output.write_text(payload, encoding="utf-8")
         elif not args.check:
             print(json.dumps(result, indent=2, allow_nan=False))
     except (ValueError, KeyError, OSError) as error:

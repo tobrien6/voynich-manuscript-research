@@ -2,6 +2,7 @@ import contextlib
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import shutil
 import tempfile
@@ -78,6 +79,68 @@ class HistoricalRepeatedTypeTests(unittest.TestCase):
                 with patch("sys.argv", ["assay", "--output", str(output)]):
                     with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
                         module.main()
+            self.assertEqual(output.read_text(), "preserve output")
+
+    def test_every_protected_path_rejects_direct_symlink_and_hardlink_aliases(self):
+        names = (*module.FROZEN_PATHS, module.PLAN_PATH, "research/historical/REPEATED_TYPES_PLAN.md",
+                 "scripts/historical_repeated_types.py", "scripts/global_repeated_types.py")
+        for name in names:
+            for kind in ("direct", "symlink", "hardlink"):
+                with self.subTest(name=name, kind=kind), tempfile.TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    source = root / name
+                    source.parent.mkdir(parents=True)
+                    source.write_bytes(b"preserve frozen input")
+                    output = source if kind == "direct" else root / "output.json"
+                    if kind == "symlink":
+                        output.symlink_to(source)
+                    elif kind == "hardlink":
+                        os.link(source, output)
+                    with patch.object(module, "ROOT", root), patch.object(module, "__file__", str(root / "scripts/historical_repeated_types.py")):
+                        with patch.object(module, "run_study") as build, patch("sys.argv", ["assay", "--output", str(output)]):
+                            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                                module.main()
+                            self.assertEqual(error.exception.code, 1)
+                            build.assert_not_called()
+                    self.assertEqual(source.read_bytes(), b"preserve frozen input")
+                    self.assertEqual(output.read_bytes(), b"preserve frozen input")
+
+    def test_aliases_created_during_computation_are_rechecked_before_writing(self):
+        names = (*module.FROZEN_PATHS, module.PLAN_PATH, "research/historical/REPEATED_TYPES_PLAN.md",
+                 "scripts/historical_repeated_types.py", "scripts/global_repeated_types.py")
+        for name in names:
+            for kind in ("symlink", "hardlink"):
+                with self.subTest(name=name, kind=kind), tempfile.TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    source = root / name
+                    source.parent.mkdir(parents=True)
+                    source.write_bytes(b"preserve frozen input")
+                    output = root / "output.json"
+                    def build(_root):
+                        if kind == "symlink":
+                            output.symlink_to(source)
+                        else:
+                            os.link(source, output)
+                        return {"synthetic": "would overwrite source without the late check"}
+                    with patch.object(module, "ROOT", root), patch.object(module, "__file__", str(root / "scripts/historical_repeated_types.py")):
+                        with patch.object(module, "run_study", side_effect=build), patch("sys.argv", ["assay", "--output", str(output)]):
+                            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                                module.main()
+                            self.assertEqual(error.exception.code, 1)
+                    self.assertEqual(source.read_bytes(), b"preserve frozen input")
+                    self.assertEqual(output.read_bytes(), b"preserve frozen input")
+
+    def test_check_mismatch_preserves_preexisting_output(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output, check = root / "output.json", root / "check.json"
+            output.write_text("preserve output")
+            check.write_text('{}')
+            with patch.object(module, "ROOT", root), patch.object(module, "run_study", return_value={"different": 1}):
+                with patch("sys.argv", ["assay", "--output", str(output), "--check", str(check)]):
+                    with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                        module.main()
+                    self.assertEqual(error.exception.code, 1)
             self.assertEqual(output.read_text(), "preserve output")
 
 

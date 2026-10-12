@@ -3,7 +3,7 @@
   "scope": "Exploratory approximate-H whole-text A/B assay; no exact historical replication or significance claim",
   "study_plan_sha256": "e6eeef696532ec765a5efc9eefa9c6d38de4c24a5974ec072743b50b0e004fa5",
   "human_plan_sha256": "daa6daf2ef5de41e6619d43a50569ba04cdbab7432b965fab0f387d62689a561",
-  "runner_sha256": "90aa860990a9e120833565fa377e7b8c73df8596a66c9e6bec1c412f4e96cc5e",
+  "runner_sha256": "9a8918d6ecd7fa2ddcf52802ee96ef7646c5c21c089069db18d0c10e77e51268",
   "metric_helper_sha256": "cebe7bae733a401d7c76d15ee7c4724d2f9aab1efe2433db74e0d6a8d3c0da08",
   "frozen_dependency_hashes": {
     "data/historical/interlinear-16e6.json": "94c4e098a40bcd7ed3a4d5dedd869243836deb58eb98c42cb93ba8534f7bbe30",
