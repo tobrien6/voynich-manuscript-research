@@ -146,6 +146,13 @@ Those calculations reuse only source parsing/cohort selection, not production
 segmentation, scoring, expectation or control functions. The complete report
 also replays from the exact pinned inputs and recorded Python environment.
 
+A post-result maintainer correction makes the cache comparison preserve JSON
+scalar types: booleans previously compared equal to integer 0/1, so an invalid
+schema/count could pass. A fourteenth regression rejects boolean and integer/
+decimal substitutions while accepting equivalent object key order. The original
+plan, statistical functions, maps, draw keys and scientific report values are
+unchanged; the report's producer fingerprint reflects this validation repair.
+
 ## Limits and next test
 
 The sign of this interior-order constraint persists under these finite maps,

@@ -221,6 +221,24 @@ class InteriorUnitControlTests(unittest.TestCase):
             self.assertEqual(error.exception.code, 1)
             self.assertEqual({p: p.read_bytes() for p in before}, before)
 
+    def test_complete_cli_cache_comparison_preserves_scalar_types_and_key_order(self):
+        actual = {'schema_version': 1, 'count': 0, 'statistics': [0.0, 1.0]}
+        with tempfile.TemporaryDirectory() as folder:
+            saved = Path(folder) / 'cache.json'
+            for expected in [dict(actual, schema_version=True), dict(actual, count=False),
+                             dict(actual, count=0.0), dict(actual, statistics=[False, 1.0]),
+                             dict(actual, statistics=[0.0, 1])]:
+                saved.write_text(json.dumps(expected))
+                with patch.object(module, 'report', return_value=actual), \
+                        patch('sys.argv', ['units', '--check', str(saved)]), \
+                        contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as failed:
+                    module.main()
+                self.assertEqual(failed.exception.code, 1)
+            saved.write_text('{"statistics": [0.0, 1.0], "count": 0, "schema_version": 1}')
+            with patch.object(module, 'report', return_value=actual), \
+                    patch('sys.argv', ['units', '--check', str(saved)]), contextlib.redirect_stdout(io.StringIO()):
+                module.main()
+
 
 if __name__ == '__main__':
     unittest.main()

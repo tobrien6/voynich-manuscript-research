@@ -282,6 +282,12 @@ def protect_output(path, root=ROOT):
         raise ValueError("output must not overwrite sources, code, pinned inputs or plan")
 
 
+def same_report(actual, expected):
+    """Compare complete parsed records while preserving JSON scalar types."""
+    options = {"sort_keys": True, "separators": (",", ":"), "ensure_ascii": False, "allow_nan": False}
+    return json.dumps(actual, **options) == json.dumps(expected, **options)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     destination = parser.add_mutually_exclusive_group(required=True)
@@ -292,7 +298,7 @@ def main():
         if args.output:
             protect_output(args.output, root=ROOT)
         result = report(lambda message: print(message, file=sys.stderr))
-        if args.check and result != load_split_json(args.check.read_text()):
+        if args.check and not same_report(result, load_split_json(args.check.read_text())):
             raise ValueError("saved unit-sensitivity report differs from complete replay")
         if args.output:
             protect_output(args.output, root=ROOT)

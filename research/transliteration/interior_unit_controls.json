@@ -20,7 +20,7 @@
     "scripts/validate_evaluation_split.py": "f967f3ead88326870905fec2e64582b711246bc1bb3e057aba786dfaff5e172d"
   },
   "plan_sha256": "f8bb092a8dd16e592088ea1d7073c5c85ac1d691cfa8664451c337af6e4a91a6",
-  "implementation_sha256": "9cf357161d365209a5e58093175740ad1fba0be6c7485c35eb68658e625adc25",
+  "implementation_sha256": "d56fa06a3280582c4bade8bcd8f52c60b52c671ab1660ea72f8226f522738f90",
   "source_reference": {
     "author": "Gabriel Landini",
     "title": "EVA Alphabet Font Version 2 Reference",
