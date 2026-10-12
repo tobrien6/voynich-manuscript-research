@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "viewer_id": "f76r-native-comparison-v1",
+  "accepted_input_commit": "c6ce2571c52d5880cb8361f3a9074e106f662c7a",
+  "input_sha256": {
+    "research/pilot/f76r-anchor-review.json": "6953f252e3347211be3ca22b2265fefec3c94f77efafd971dd3e0a846b7e959f",
+    "research/pilot/f76r-anchor-selection.json": "dcce8de127dca3b12d5e9deae223ff6fad5c39ce413a88de8d92de85415c1d87",
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27"
+  },
+  "scope": "Read-only display of accepted provisional anchors; no saved annotations, corrections or hosting integration"
+}
