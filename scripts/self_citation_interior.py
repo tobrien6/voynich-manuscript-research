@@ -8,7 +8,6 @@ import json
 from pathlib import Path
 import platform
 import re
-import sys
 
 try:
     from . import self_citation_prefix_profile as prefix
@@ -37,12 +36,6 @@ POLICIES = ['ascii_letters', 'bench_sequences', 'bench_and_minim_sequences']
 SCOPES = ['unrestricted', 'half']
 PIN_MANIFEST_SHA256 = '8d1b9e97d61ce0052b6e0d15e764f5e46007652ef81fa05d22f1f347d10a9d6e'
 
-# Exact means can have many-digit denominators. All model/source bytes are
-# checksum-verified before these bounded finite sums are evaluated.
-if hasattr(sys, 'set_int_max_str_digits'):
-    sys.set_int_max_str_digits(0)
-
-
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
@@ -59,14 +52,39 @@ def same_json(left, right):
     return canonical(left) == canonical(right)
 
 
+def decimal_integer(value):
+    """Format an exact integer locally, retaining the interpreter's digit limit."""
+    if type(value) is not int:
+        raise ValueError('exact integer required')
+    sign = '-' if value < 0 else ''
+    remaining = abs(value)
+    pieces = []
+    while remaining:
+        remaining, piece = divmod(remaining, 10 ** 9)
+        pieces.append(piece)
+    return sign + (str(pieces[-1]) + ''.join(f'{piece:09d}' for piece in reversed(pieces[:-1])) if pieces else '0')
+
+
+def parse_decimal_integer(value):
+    if not isinstance(value, str) or not re.fullmatch(r'-?[0-9]+', value):
+        raise ValueError('decimal integer string required')
+    negative = value.startswith('-')
+    digits = value[1:] if negative else value
+    result = 0
+    for offset in range(0, len(digits), 9):
+        piece = digits[offset:offset + 9]
+        result = result * 10 ** len(piece) + int(piece)
+    return -result if negative else result
+
+
 def packed(value):
     if value is None:
         return None
-    return {'numerator': str(value.numerator), 'denominator': str(value.denominator), 'mean': float(value)}
+    return {'numerator': decimal_integer(value.numerator), 'denominator': decimal_integer(value.denominator), 'mean': float(value)}
 
 
 def unpack(value):
-    return Fraction(int(value['numerator']), int(value['denominator'])) if value is not None else None
+    return Fraction(parse_decimal_integer(value['numerator']), parse_decimal_integer(value['denominator'])) if value is not None else None
 
 
 def load_inputs(root=ROOT):

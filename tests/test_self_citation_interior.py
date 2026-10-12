@@ -5,6 +5,8 @@ import hashlib
 import io
 import itertools
 import json
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -141,6 +143,26 @@ class SelfCitationInteriorTests(unittest.TestCase):
         self.assertTrue(m.same_json({5:1,10:2},{'10':2,'5':1}))
         value=Fraction(10**5000+1,10**5001+1)
         self.assertEqual(m.unpack(m.packed(value)),value)
+
+    def test_large_fraction_roundtrip_preserves_the_interpreter_digit_guard(self):
+        value=Fraction(-(10**9000+1),10**9001+3)
+        previous=sys.get_int_max_str_digits() if hasattr(sys,'get_int_max_str_digits') else None
+        try:
+            if previous is not None:sys.set_int_max_str_digits(640)
+            encoded=m.packed(value)
+            self.assertEqual(len(encoded['numerator']),9002)
+            self.assertEqual(m.unpack(encoded),value)
+            self.assertEqual(m.decimal_integer(0),'0')
+            for invalid in ('','-','1_0','1.0','+1','\u0661'):
+                with self.assertRaises(ValueError):m.parse_decimal_integer(invalid)
+            if previous is not None:self.assertEqual(sys.get_int_max_str_digits(),640)
+        finally:
+            if previous is not None:sys.set_int_max_str_digits(previous)
+        for module in ('scripts.self_citation_interior','scripts.verify_self_citation_interior_math'):
+            code=('import sys,importlib; before=sys.get_int_max_str_digits() if hasattr(sys,"get_int_max_str_digits") else None; '
+                  f'importlib.import_module({module!r}); '
+                  'assert before==(sys.get_int_max_str_digits() if hasattr(sys,"get_int_max_str_digits") else None)')
+            subprocess.run([sys.executable,'-c',code],cwd=m.ROOT,check=True,capture_output=True,timeout=10)
 
     def test_every_fixed_run_receipt_is_verified_before_measurement(self):
         with tempfile.TemporaryDirectory() as folder:
