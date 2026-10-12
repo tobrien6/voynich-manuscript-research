@@ -94,3 +94,9 @@ foldout panels in dependency review before a real split. Do not obtain a
 nominally complete pilot by dropping the three blocked targets: that would
 omit the selected astronomical diagrams and cosmological foldout and change
 the original six-section sampling rule.
+
+The follow-up [native page convention record](NATIVE_PAGE_CONVENTIONS.md) now
+documents the publisher's container/panel distinction and the `fRos` name for
+the shared surface. It supplies an initial source/image cross-check, with
+independent review and precise text regions still pending. It does not change
+this audit's exact-identifier rule or fill IT2a's absent `fRos` page.

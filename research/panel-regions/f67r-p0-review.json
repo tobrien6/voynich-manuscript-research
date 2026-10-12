@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "method": "67r-provisional-p0-review-v1",
+  "proposal": "research/panel-regions/f67r-proposal.json",
+  "usable_as_verified_corpus_join": false,
+  "normalization": "none; preserve native reader text and annotations",
+  "sources": [
+    {
+      "source_id": "ZL3b",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "alphabet": "Eva-",
+      "url": "https://voynich.nu/data/ZL3b-n.txt"
+    },
+    {
+      "source_id": "IT2a",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "alphabet": "EvaT",
+      "url": "https://voynich.nu/data/IT2a-n.txt"
+    }
+  ],
+  "locations": 7,
+  "identical_native_record_text": 1,
+  "different_native_record_text": 6,
+  "source_file_line_scope": "physical file line, not a reconstructed manuscript line",
+  "limits": "Related editions are not independent witnesses; native-text equality does not establish glyph identity or image placement.",
+  "records": [
+    {
+      "locus_key": "f67r1.1",
+      "proposed_region": "left panel, upper horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.1,@P0",
+          "source_file_line": 2823,
+          "native_text": "<%>teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.o.aiin"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.1,@P0",
+          "source_file_line": 1768,
+          "native_text": "<%>teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.oaiin"
+        }
+      ],
+      "native_record_text_identical": false
+    },
+    {
+      "locus_key": "f67r1.2",
+      "proposed_region": "left panel, upper horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.2,+P0",
+          "source_file_line": 2824,
+          "native_text": "daiir.okeody.qoekeey.sar.oeteody.oteey.keey.keo.keeoda[l:?]"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.2,+P0",
+          "source_file_line": 1769,
+          "native_text": "daiir.okeody.qoekshg.sar.oeteody.oteey.keey.keo.keeodal"
+        }
+      ],
+      "native_record_text_identical": false
+    },
+    {
+      "locus_key": "f67r1.3",
+      "proposed_region": "left panel, upper horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.3,+P0",
+          "source_file_line": 2825,
+          "native_text": "ycheo.s.o,iim.[che:eee]os.aiin.okesoe.ar.am.shees.dalaiin.dam"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.3,+P0",
+          "source_file_line": 1770,
+          "native_text": "ycheo.s.o.g.cheos.aiin.okesoe.aram.shees.dalaiin.dam"
+        }
+      ],
+      "native_record_text_identical": false
+    },
+    {
+      "locus_key": "f67r1.4",
+      "proposed_region": "left panel, upper horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r1.4,+P0",
+          "source_file_line": 2826,
+          "native_text": "cheodaiin.[ch:a]ekeey.s.ar.air.s,o,ar.cheey.dair.cthey<$>"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r1.4,+P0",
+          "source_file_line": 1771,
+          "native_text": "cheodaiin.chekeey.sar.air.soar.cheey.dair.cthey<$>"
+        }
+      ],
+      "native_record_text_identical": false
+    },
+    {
+      "locus_key": "f67r2.72",
+      "proposed_region": "right panel, lower horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r2.72,@P0",
+          "source_file_line": 2942,
+          "native_text": "<%>dar.aldaiin.ydaiin.qkoy.ydaiin.qofair.ypair.ykoaiin.ydoly.ytalchos.oly.okey"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r2.72,@P0",
+          "source_file_line": 1859,
+          "native_text": "<%>dar.aldaiin.ydaiin.qkoy.ydaiin.qofair.ypair.ykoaiin.ydoly.ytalchos.oly.okey"
+        }
+      ],
+      "native_record_text_identical": true
+    },
+    {
+      "locus_key": "f67r2.73",
+      "proposed_region": "right panel, lower horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r2.73,+P0",
+          "source_file_line": 2944,
+          "native_text": "sshey.sy,shees.qeykeey.ykchey.ykchey.qokeochy.oaiin.okol.ar.olar"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r2.73,+P0",
+          "source_file_line": 1860,
+          "native_text": "sshey.syshees.qeykeey.ykchey.ykchey.qokeochy.oaiin.okalar.ol"
+        }
+      ],
+      "native_record_text_identical": false
+    },
+    {
+      "locus_key": "f67r2.74",
+      "proposed_region": "right panel, lower horizontal block",
+      "image_glyph_verification": "pending",
+      "readings": [
+        {
+          "source_id": "ZL3b",
+          "locus_identifier": "f67r2.74,+P0",
+          "source_file_line": 2945,
+          "native_text": "yshey.qokeeody.cheos.oeeos.qockhy.chos.aiin.okeeody.qokoaiin.odain.ar.air.ay<$>"
+        },
+        {
+          "source_id": "IT2a",
+          "locus_identifier": "f67r2.74,+P0",
+          "source_file_line": 1861,
+          "native_text": "yshey.qokeeody.cheos.oeeos.qockhy.chos.aiin.okeeody.qokoaiin.odaiin.ar.oirsg<$>"
+        }
+      ],
+      "native_record_text_identical": false
+    }
+  ]
+}

@@ -77,3 +77,7 @@ Tests cover split/join behavior, formatting whitespace, drawing boundaries, comm
 This is a preprocessing replay on already inspected inputs. It defines no corpus split, computes no shuffle comparison or token-frequency result, and establishes no untouched evaluation set. Record this exposure and adapter version before a later mechanism test. A stronger claim requires a prospectively reserved set and a frozen analysis plan under the [evaluation protocol](../DECIPHERMENT_PROTOCOL.md).
 
 Next, use the stable records to implement the registered baseline and shuffle controls, with a common eligible cohort and appropriate folio/panel grouping. Any relaxation of the exclusion rule should receive a new adapter version and an explicit comparison against this conservative output.
+
+The [coverage/provenance audit](TOKEN_COVERAGE.md) separates source denominators,
+exports exact selected/eligible/excluded native-key sets with cohort digests, and
+verifies cached adapter JSON against a complete pinned-producer replay.
