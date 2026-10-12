@@ -43,6 +43,7 @@ Link to source images and transcriptions until their reuse terms have been check
 
 ## Research notes
 
+- [Grouped symbol prediction](research/baselines/GROUPED_SYMBOL_RESULTS.md): fixed zero/one/two-predecessor token models on 91 image-dependency groups, with all twelve paired treatments and component losses retained.
 - [Paired symbol entropy](research/representation/PAIRED_ENTROPY.md): a fixed 2,485-locus descriptive sensitivity analysis across source/spacing, declared notation units and segment boundaries, with all frequency populations retained.
 - [Synthetic greedy-wrapping control](research/line-wrap/RESULTS.md): an exact and sampled layout counterexample with all declared positive and zero cases, without fitting manuscript geometry.
 - [Image checks of initial-prefix disagreements](research/transliteration/INITIAL_PREFIX_IMAGES.md): two deterministically selected source disagreements and a planned same-page shape comparison, with linked manuscript regions and provisional preferences awaiting independent review. No source corrections are applied.
