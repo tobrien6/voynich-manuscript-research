@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "method": "three-page discordant paragraph-end image pilot v1",
+  "annotation_audit_sha256": "9e0b47b7422e2311e262460d669a4016d882cdf318e2989434f601dc71177a7f",
+  "image_index_sha256": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+  "selection_plan_commit": "a6530c5",
+  "selection_rule": "first three discordant pages sorted by numeric folio then literal page identifier",
+  "inspection_date_local": "2026-10-11",
+  "inspection_timezone": "America/New_York",
+  "sources": [
+    {
+      "id": "ZL3b",
+      "url": "https://voynich.nu/data/ZL3b-n.txt",
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "alphabet": "Eva-"
+    },
+    {
+      "id": "IT2a",
+      "url": "https://voynich.nu/data/IT2a-n.txt",
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "alphabet": "EvaT"
+    }
+  ],
+  "records": [
+    {
+      "page": "f9r",
+      "discordant_key": "f9r.9",
+      "source_contexts": [
+        {
+          "source_id": "ZL3b",
+          "present_generic_p_locus_count": 10,
+          "source_locators": [
+            "+",
+            "@"
+          ],
+          "adjacent_context": [
+            {
+              "locus_id": "f9r.8,+P0",
+              "file_line_number": 427,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f9r.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f9r.9,+P0",
+              "file_line_number": 428,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f9r.9",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f9r.10,+Pc",
+              "file_line_number": 429,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f9r.10",
+              "kind": "Pc"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "present_generic_p_locus_count": 10,
+          "source_locators": [
+            "+",
+            "@"
+          ],
+          "adjacent_context": [
+            {
+              "locus_id": "f9r.8,+P0",
+              "file_line_number": 254,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f9r.8",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f9r.9,+P0",
+              "file_line_number": 255,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f9r.9",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f9r.10,+Pc",
+              "file_line_number": 256,
+              "paragraph_start": true,
+              "paragraph_end": true,
+              "start_marker_count": 1,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f9r.10",
+              "kind": "Pc"
+            }
+          ]
+        }
+      ],
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006092",
+        "image_oid": "1006092",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006092",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006092/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006092",
+        "yale_label": "9r"
+      },
+      "inspection": {
+        "url": "https://collections.library.yale.edu/iiif/2/1006092/full/!2200,2200/0/default.jpg",
+        "sha256": "b70faa3bf4ed7df782291d5caf391cca642308084fcb8f6dca4c57f5f50d30b3",
+        "pixel_width": 1584,
+        "pixel_height": 2200,
+        "local_filename": "f9r.jpg"
+      },
+      "direct_observations": "The writing occupies ten ordered horizontal rows near the top of the page, with a large plant interrupting many rows. The tenth row is much shorter and indented within the left text area. The gap above it is not visibly a distinct blank separator.",
+      "observed_horizontal_row_count": 10,
+      "source_row_association": {
+        "status": "provisional",
+        "basis": "The candidate is the ninth row, immediately above the short final row of the lower text group. Drawing-separated fragments complicate treating rows as uninterrupted lines."
+      },
+      "paragraph_disposition": "unresolved",
+      "reason": "A short indented line is visible, but no clear enlarged gap establishes that it is a separate paragraph. Retain both source conventions pending independent image and glyph-level review.",
+      "review_status": "AI-assisted initial observation; independent human review pending",
+      "exposure": {
+        "inspected_in_this_chat": true,
+        "previous_project_exposure": "not independently established; do not claim unseen material"
+      }
+    },
+    {
+      "page": "f16r",
+      "discordant_key": "f16r.3",
+      "source_contexts": [
+        {
+          "source_id": "ZL3b",
+          "present_generic_p_locus_count": 13,
+          "source_locators": [
+            "*",
+            "+",
+            "@"
+          ],
+          "adjacent_context": [
+            {
+              "locus_id": "f16r.2,+P0",
+              "file_line_number": 654,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f16r.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f16r.3,+P0",
+              "file_line_number": 655,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f16r.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f16r.4,+Pc",
+              "file_line_number": 656,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f16r.4",
+              "kind": "Pc"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "present_generic_p_locus_count": 13,
+          "source_locators": [
+            "*",
+            "+",
+            "@"
+          ],
+          "adjacent_context": [
+            {
+              "locus_id": "f16r.2,+P0",
+              "file_line_number": 383,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f16r.2",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f16r.3,+P0",
+              "file_line_number": 384,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f16r.3",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f16r.4,+Pc",
+              "file_line_number": 385,
+              "paragraph_start": true,
+              "paragraph_end": true,
+              "start_marker_count": 1,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f16r.4",
+              "kind": "Pc"
+            }
+          ]
+        }
+      ],
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006104",
+        "image_oid": "1006104",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006104",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006104/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006104",
+        "yale_label": "16r"
+      },
+      "inspection": {
+        "url": "https://collections.library.yale.edu/iiif/2/1006104/full/!2200,2200/0/default.jpg",
+        "sha256": "2c739e87d7d01e46e34cee5b3bbb00c85f6ff26d3ad0afbe9161bce570ee8638",
+        "pixel_width": 1556,
+        "pixel_height": 2200,
+        "local_filename": "f16r.jpg"
+      },
+      "direct_observations": "The upper writing has thirteen ordered horizontal rows beside a large plant. The fourth row is short and indented relative to the first three and the row below. It lies within the continuous vertical sequence of writing, with no clear blank band above it.",
+      "observed_horizontal_row_count": 13,
+      "source_row_association": {
+        "status": "provisional",
+        "basis": "The candidate is the third row, immediately above the short fourth row. The left margin resumes on the fifth row; a unique glyph-level association has not been independently checked."
+      },
+      "paragraph_disposition": "unresolved",
+      "reason": "A short indented line is visible, but no clear enlarged gap establishes that it is a separate paragraph. Retain both source conventions pending independent image and glyph-level review.",
+      "review_status": "AI-assisted initial observation; independent human review pending",
+      "exposure": {
+        "inspected_in_this_chat": true,
+        "previous_project_exposure": "not independently established; do not claim unseen material"
+      }
+    },
+    {
+      "page": "f18r",
+      "discordant_key": "f18r.13",
+      "source_contexts": [
+        {
+          "source_id": "ZL3b",
+          "present_generic_p_locus_count": 14,
+          "source_locators": [
+            "+",
+            "@"
+          ],
+          "adjacent_context": [
+            {
+              "locus_id": "f18r.12,+P0",
+              "file_line_number": 766,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f18r.12",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f18r.13,+P0",
+              "file_line_number": 767,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f18r.13",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f18r.14,+Pc",
+              "file_line_number": 768,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f18r.14",
+              "kind": "Pc"
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "present_generic_p_locus_count": 14,
+          "source_locators": [
+            "+",
+            "@"
+          ],
+          "adjacent_context": [
+            {
+              "locus_id": "f18r.12,+P0",
+              "file_line_number": 458,
+              "paragraph_start": false,
+              "paragraph_end": false,
+              "start_marker_count": 0,
+              "end_marker_count": 0,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f18r.12",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f18r.13,+P0",
+              "file_line_number": 459,
+              "paragraph_start": false,
+              "paragraph_end": true,
+              "start_marker_count": 0,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f18r.13",
+              "kind": "P0"
+            },
+            {
+              "locus_id": "f18r.14,+Pc",
+              "file_line_number": 460,
+              "paragraph_start": true,
+              "paragraph_end": true,
+              "start_marker_count": 1,
+              "end_marker_count": 1,
+              "currier_label": "A",
+              "locator": "+",
+              "key": "f18r.14",
+              "kind": "Pc"
+            }
+          ]
+        }
+      ],
+      "image": {
+        "canvas_uri": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006108",
+        "image_oid": "1006108",
+        "catalog_image_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006108",
+        "full_image_url": "https://collections.library.yale.edu/iiif/2/1006108/full/full/0/default.jpg",
+        "image_service_url": "https://collections.library.yale.edu/iiif/2/1006108",
+        "yale_label": "18r"
+      },
+      "inspection": {
+        "url": "https://collections.library.yale.edu/iiif/2/1006108/full/!2200,2200/0/default.jpg",
+        "sha256": "fd0b5ce50ac5457d52044f456aa7e0a21c18593b6ccf468f2e43dc20798185c6",
+        "pixel_width": 1557,
+        "pixel_height": 2200,
+        "local_filename": "f18r.jpg"
+      },
+      "direct_observations": "The writing has fourteen ordered horizontal rows near the upper left, with some fragments to the right of the plant. The last row is short and indented beneath the preceding row. Its separation looks comparable to nearby line spacing, without a clear intervening blank band.",
+      "observed_horizontal_row_count": 14,
+      "source_row_association": {
+        "status": "provisional",
+        "basis": "The candidate is the thirteenth row, immediately above the short last row. Image count and source order support a provisional row association; glyph-level matching remains pending."
+      },
+      "paragraph_disposition": "unresolved",
+      "reason": "A short indented line is visible, but no clear enlarged gap establishes that it is a separate paragraph. Retain both source conventions pending independent image and glyph-level review.",
+      "review_status": "AI-assisted initial observation; independent human review pending",
+      "exposure": {
+        "inspected_in_this_chat": true,
+        "previous_project_exposure": "not independently established; do not claim unseen material"
+      }
+    }
+  ],
+  "limits": [
+    "Purposive sample; no manuscript-wide error rate.",
+    "P0-only audit excludes centered Pc loci; the surrounding generic-P context is retained here.",
+    "Image association is provisional and all paragraph divisions remain unresolved.",
+    "No glyph transcription, decoding, translation, or source-file correction.",
+    "Images are linked and kept local; they are not redistributed."
+  ]
+}
