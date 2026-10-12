@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "comparison_id": "fixed-self-citation-prefix-profile-v1",
+  "status": "frozen_before_new_feature_measurements",
+  "source_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+  "configuration_path": "executable/conf.properties",
+  "configuration_sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800",
+  "runtime": "Zulu OpenJDK/javac 17.0.16, Java 8 target, UTF-8, en/US, UTC",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "candidate_parameters_fitted": false,
+  "source_ids": [
+    "ZL3b",
+    "IT2a"
+  ],
+  "spacing_policies": [
+    "split",
+    "join"
+  ],
+  "prefixes": [
+    "q",
+    "y"
+  ],
+  "boundaries": [
+    "first",
+    "last"
+  ],
+  "paragraph_initial_groups": [
+    false,
+    true
+  ],
+  "cohort_rule": "Accepted conservative common P0 cohort, both source L labels B, no drawing interruption in any source/policy; regular locators and >=2 plain tokens in every case.",
+  "generated_row_rule": "Exclude initialization, retain every observed generated row with >=2 strict ASCII groups; preserve exclusions and trace flags.",
+  "generated_total_rows_rule": "Manuscript selected-key count plus one initialization row.",
+  "statistic": "Equal-unit mean of boundary prefix indicator minus mean of other group indicators in that same locus/row.",
+  "compatibility_criterion": "Each of the 32 source/policy/group/boundary/prefix target points is checked for membership in the inclusive minimum-to-maximum range across all 31 fixed seeds. Report every point and gap; no calibrated confidence/tail probability or global model acceptance.",
+  "failure_rule": "Any failed process, missing row/trace, unsupported notation or full-byte divergence between uninstrumented and observed runs makes the complete planned simulation comparison unavailable; retain all failures without seed replacement.",
+  "author_code_change": "Exactly the known observer insertion from PR #100; no algorithm/random/state changes.",
+  "observer_snapshot": {
+    "pull_request": "https://github.com/tobrien6/voynich-manuscript-research/pull/100",
+    "head": "b71d705cfefc8ffc2cc214a1908d7f1ed62ec0bc",
+    "artifacts": [
+      {
+        "path": "scripts/trace_self_citation_rows.py",
+        "sha256": "1508360aec3ff31849947e0fdcd2ee53d18c8247910160bd445c84e4e7300e5f"
+      },
+      {
+        "path": "scripts/replay_self_citation.py",
+        "sha256": "6a560e8af8d18c2d0ed7121e6a68a57db98888de1bab287c7658082da5c29b3e"
+      }
+    ]
+  },
+  "prior_exposure": [
+    "Manuscript inputs and preceding prefix results are fully exposed.",
+    "Source code and the seed-19/1200-row release bytes and row/count diagnostics are exposed.",
+    "No new seed-ensemble prefix statistic has been computed before this record."
+  ],
+  "evaluation_claim": "Exploratory encoded-unit diagnostic on exposed data; no untouched manuscript split or glyph/physical-line equivalence.",
+  "source_and_program_context_equivalence_verified": false,
+  "paper_sample_identity_verified": false,
+  "mechanism_or_translation_validated": false
+}
