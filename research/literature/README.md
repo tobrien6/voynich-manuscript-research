@@ -12,6 +12,11 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The separate [Reddy/Knight source intake](REDDY_SOURCE_INTAKE.md) recovers a
+paper-associated 2015 repository snapshot. Its full/B input counts and all
+native annotated/page streams agree, while exact 2011 preprocessing and the
+Table 2 predictor remain unresolved.
+
 The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
 Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
 attachments yielded no separate processed corpus or analysis implementation;
@@ -72,6 +77,11 @@ of the experiment. The [control generator](../token-controls/README.md) similarl
 requires a declared row unit; a locus is not automatically a complete physical
 line. Neither result can be relabeled as a published whole-text statistic by
 changing its display label.
+
+The [distinct repeating-representation follow-up](../transliteration/REPEATING_TYPES.md)
+implements a type count on the accepted modern P0 cohort, with an exact mean
+under its existing fixed-gap within-locus control. It does not reproduce L003's
+historical input, whole-text shuffle scope, or normalized numerical result.
 
 ## Minimum plan for a later replication
 
