@@ -192,7 +192,9 @@ def main():
         if args.check and encoded(strict_json(args.check.read_bytes())) != encoded(report):
             raise ValueError('boundary report differs from complete pinned producer replay')
         if args.output:
-            args.output.write_bytes(encoded(report))
+            output_bytes = encoded(report)
+            protect_outputs([args.output], [ROOT / PLAN, ROOT / COVERAGE], root=ROOT)
+            args.output.write_bytes(output_bytes)
     except (ValueError, OSError, KeyError) as error:
         parser.exit(1, f'paragraph boundary report failed: {error}\n')
     print(f"Verified {report['cohort']['common_eligible_units']} common paragraphs; "
