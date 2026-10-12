@@ -12,6 +12,11 @@ text corpora used by their authors. No historical corpus has been recovered or
 processed in this contribution. PDFs and the supplement are linked, not copied
 into this repository.
 
+The [author source-bundle inventory](AMANCIO_SOURCE_ARTIFACTS.md) separately pins
+Amancio et al.'s arXiv v1 authoring assets. The seven-member bundle and its PDF
+attachments yielded no separate processed corpus or analysis implementation;
+that observation is limited to the inspected artifact.
+
 The separate [self-citation implementation audit](COPYING_MECHANISM.md), with
 [source fingerprints and observations](copying-mechanism.json), adds L004 and
 an explicit comparison contract for a published copying mechanism. It separates
@@ -74,6 +79,11 @@ under its existing fixed-gap within-locus control. It does not reproduce L003's
 historical input, whole-text shuffle scope, or normalized numerical result.
 
 ## Minimum plan for a later replication
+
+The [additional Java 17 source replay and row ledger](SELF_CITATION_JAVA17.md)
+add a second observed runtime result and explicit initialization denominators to
+the copying-mechanism work. The release bytes match the Java 22 receipt in PR #88;
+this remains software evidence, with no manuscript mechanism or translation test.
 
 1. Select one paper, measurement, table, and null before inspecting new results.
    Freeze the plan and distinguish a historical replication from a test on the
