@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "method": "source-informed provisional two-direction f102r1 boundary image review v1",
+  "inspection_date_local": "2026-10-12",
+  "timezone": "America/New_York",
+  "pre_inspection_selection_commit": "9d9d33ef1235eca9e760c987951cd760f1328af7",
+  "selection_path": "research/panel-regions/102r-boundary-pair-selection.json",
+  "input_sha256": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/image-index/audit.json": "812032c85bbbb8e3d196bdd9bfb5eef075a0569d842c2935fec8e861cf684ddc",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46",
+    "research/panel-regions/102r-boundary-pair-selection.json": "603c4c32a8dbb1f881d9762f591161c9e4744546695ffed33ca489798d3deee8",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f"
+  },
+  "publisher_convention": {
+    "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+    "document_issue": "2.0.2 (8 July 2025)",
+    "sha256": "7ac9c4a82064763cac8767cca6f661cc4e1b4503ab9342acc03032ddb6939d49",
+    "printed_pages_inspected": [
+      11,
+      12,
+      38
+    ],
+    "claim": "Appendix: f102r is a placeholder, with written f102r1 and f102r2. Generic recto numbering proceeds left to right away from the binding. f101v1/f101v2 text is included in f101v.",
+    "precise_image_region_defined": false
+  },
+  "yale_carrier": {
+    "image_oid": "1006251",
+    "label": "101v (part) and 102r",
+    "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+    "image_record_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006251",
+    "image_service_id": "https://collections.library.yale.edu/iiif/2/1006251",
+    "original_dimensions": [
+      8176,
+      3864
+    ],
+    "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "dependency_group": "yale-leaves:100+101+102",
+    "native_page_region_status": "provisional, not independently verified"
+  },
+  "native_page_presence": [
+    {
+      "source_id": "ZL3b",
+      "page_id": "f102r",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {}
+    },
+    {
+      "source_id": "ZL3b",
+      "page_id": "f102r1",
+      "header_present": true,
+      "present_loci": 17,
+      "present_loci_by_kind": {
+        "Lc": 3,
+        "Lf": 1,
+        "P0": 13
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "page_id": "f102r2",
+      "header_present": true,
+      "present_loci": 22,
+      "present_loci_by_kind": {
+        "Lc": 5,
+        "Lf": 2,
+        "P0": 15
+      }
+    },
+    {
+      "source_id": "ZL3b",
+      "page_id": "f101v",
+      "header_present": true,
+      "present_loci": 28,
+      "present_loci_by_kind": {
+        "Lf": 18,
+        "P0": 9,
+        "Pc": 1
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "page_id": "f102r",
+      "header_present": false,
+      "present_loci": 0,
+      "present_loci_by_kind": {}
+    },
+    {
+      "source_id": "IT2a",
+      "page_id": "f102r1",
+      "header_present": true,
+      "present_loci": 17,
+      "present_loci_by_kind": {
+        "Lc": 3,
+        "Lf": 1,
+        "P0": 13
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "page_id": "f102r2",
+      "header_present": true,
+      "present_loci": 20,
+      "present_loci_by_kind": {
+        "Lc": 3,
+        "Lf": 2,
+        "P0": 15
+      }
+    },
+    {
+      "source_id": "IT2a",
+      "page_id": "f101v",
+      "header_present": true,
+      "present_loci": 28,
+      "present_loci_by_kind": {
+        "Lf": 18,
+        "P0": 9,
+        "Pc": 1
+      }
+    }
+  ],
+  "carrier_observation": "The shared scan shows part of a written/illustrated left surface, a middle illustrated surface beside the visible gutter, and a further unfolded right surface. The middle surface has three main horizontal blocks of four, four and five visible rows among plant-like and container-like drawings. This is consistent with native f102r1 P0 block lengths, without defining a panel mask or verified row join.",
+  "provisional_correspondence": "f102r1 is the middle recto portion nearest the binding; f102r2 is farther right. Selected f102r1.14 and .15 provisionally match rows two and three of its lowest five-row block.",
+  "images": [
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006251/full/2400,/0/default.jpg",
+      "viewing_rectangle_original_pixels": null,
+      "returned_dimensions": [
+        2400,
+        1134
+      ],
+      "bytes": 657689,
+      "sha256": "b5ef09de004cdd23e1acca8db4b654b03ce5851600e1bd082a85728c8f4e0449",
+      "rectangle_is_verified_glyph_mask": false
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006251/3000,1850,2300,500/1500,/0/default.jpg",
+      "viewing_rectangle_original_pixels": [
+        3000,
+        1850,
+        2300,
+        500
+      ],
+      "returned_dimensions": [
+        1500,
+        326
+      ],
+      "bytes": 136922,
+      "sha256": "dc6d38a5636b99cbd30cee8acf9c3eec6f998c244a248ba97c75a65b069faacc",
+      "rectangle_is_verified_glyph_mask": false
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006251/4400,1990,800,300/full/0/default.jpg",
+      "viewing_rectangle_original_pixels": [
+        4400,
+        1990,
+        800,
+        300
+      ],
+      "returned_dimensions": [
+        800,
+        300
+      ],
+      "bytes": 64759,
+      "sha256": "081ce8a7ab6c252179e8669dae2d29e58de61c9039b0bf8c8dcd9ca6766021d9",
+      "rectangle_is_verified_glyph_mask": false
+    }
+  ],
+  "cases": [
+    {
+      "native_locus_key": "f102r1.14",
+      "additional_boundary_source": "ZL3b",
+      "additional_boundary_ascii_offset": 38,
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "source_path": "data/raw/ZL3b-n.txt",
+          "source_url": "https://voynich.nu/data/ZL3b-n.txt",
+          "alphabet": "Eva-",
+          "locus_identifier": "f102r1.14,+P0",
+          "source_file_line": 6537,
+          "native_text": "doeey.keeol.qokeo.daor.shey.qoteol.okol.chos.s.or.oeeaiin",
+          "treatments": [
+            {
+              "uncertain_spaces": "split",
+              "token_values": [
+                "doeey",
+                "keeol",
+                "qokeo",
+                "daor",
+                "shey",
+                "qoteol",
+                "okol",
+                "chos",
+                "s",
+                "or",
+                "oeeaiin"
+              ],
+              "token_count": 11,
+              "chain_ascii": "doeeykeeolqokeodaorsheyqoteolokolchossoroeeaiin",
+              "chain_ascii_length": 47,
+              "chain_ascii_sha256": "8707ed04fd2d2de6cbab9f56b72b400f24273dc90a230af17c0bf4e102c9d20d",
+              "boundary_offsets": [
+                5,
+                10,
+                15,
+                19,
+                23,
+                29,
+                33,
+                37,
+                38,
+                40
+              ]
+            },
+            {
+              "uncertain_spaces": "join",
+              "token_values": [
+                "doeey",
+                "keeol",
+                "qokeo",
+                "daor",
+                "shey",
+                "qoteol",
+                "okol",
+                "chos",
+                "s",
+                "or",
+                "oeeaiin"
+              ],
+              "token_count": 11,
+              "chain_ascii": "doeeykeeolqokeodaorsheyqoteolokolchossoroeeaiin",
+              "chain_ascii_length": 47,
+              "chain_ascii_sha256": "8707ed04fd2d2de6cbab9f56b72b400f24273dc90a230af17c0bf4e102c9d20d",
+              "boundary_offsets": [
+                5,
+                10,
+                15,
+                19,
+                23,
+                29,
+                33,
+                37,
+                38,
+                40
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "source_path": "data/raw/IT2a-n.txt",
+          "source_url": "https://voynich.nu/data/IT2a-n.txt",
+          "alphabet": "EvaT",
+          "locus_identifier": "f102r1.14,+P0",
+          "source_file_line": 4250,
+          "native_text": "doeey.keeol.qokeo.daor.shey.qoteol.okol.chos.sor.oeeaiin",
+          "treatments": [
+            {
+              "uncertain_spaces": "split",
+              "token_values": [
+                "doeey",
+                "keeol",
+                "qokeo",
+                "daor",
+                "shey",
+                "qoteol",
+                "okol",
+                "chos",
+                "sor",
+                "oeeaiin"
+              ],
+              "token_count": 10,
+              "chain_ascii": "doeeykeeolqokeodaorsheyqoteolokolchossoroeeaiin",
+              "chain_ascii_length": 47,
+              "chain_ascii_sha256": "8707ed04fd2d2de6cbab9f56b72b400f24273dc90a230af17c0bf4e102c9d20d",
+              "boundary_offsets": [
+                5,
+                10,
+                15,
+                19,
+                23,
+                29,
+                33,
+                37,
+                40
+              ]
+            },
+            {
+              "uncertain_spaces": "join",
+              "token_values": [
+                "doeey",
+                "keeol",
+                "qokeo",
+                "daor",
+                "shey",
+                "qoteol",
+                "okol",
+                "chos",
+                "sor",
+                "oeeaiin"
+              ],
+              "token_count": 10,
+              "chain_ascii": "doeeykeeolqokeodaorsheyqoteolokolchossoroeeaiin",
+              "chain_ascii_length": 47,
+              "chain_ascii_sha256": "8707ed04fd2d2de6cbab9f56b72b400f24273dc90a230af17c0bf4e102c9d20d",
+              "boundary_offsets": [
+                5,
+                10,
+                15,
+                19,
+                23,
+                29,
+                33,
+                37,
+                40
+              ]
+            }
+          ]
+        }
+      ],
+      "provisional_row_assignment": "lowest middle-panel five-row block; full row 2 from top",
+      "image_observation": "In the second full row of the lowest middle-panel text block, separate curved forms precede a longer sequence of oval and upright strokes. At the proposed s/or grouping, a blank gap is visible and no connecting ink stroke is apparent at the inspected scale. Glyph correspondence and word division remain unresolved.",
+      "preferred_source_grouping": null,
+      "verified_glyph_region": null,
+      "word_division_status": "unresolved",
+      "source_corrections_applied": false
+    },
+    {
+      "native_locus_key": "f102r1.15",
+      "additional_boundary_source": "IT2a",
+      "additional_boundary_ascii_offset": 39,
+      "source_readings": [
+        {
+          "source_id": "ZL3b",
+          "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+          "source_path": "data/raw/ZL3b-n.txt",
+          "source_url": "https://voynich.nu/data/ZL3b-n.txt",
+          "alphabet": "Eva-",
+          "locus_identifier": "f102r1.15,+P0",
+          "source_file_line": 6538,
+          "native_text": "or.chol.daiin.dykeor.sheey.qokeody.dor.os.ykeeykam",
+          "treatments": [
+            {
+              "uncertain_spaces": "split",
+              "token_values": [
+                "or",
+                "chol",
+                "daiin",
+                "dykeor",
+                "sheey",
+                "qokeody",
+                "dor",
+                "os",
+                "ykeeykam"
+              ],
+              "token_count": 9,
+              "chain_ascii": "orcholdaiindykeorsheeyqokeodydorosykeeykam",
+              "chain_ascii_length": 42,
+              "chain_ascii_sha256": "b5d544be09b967f76f1d322471e2fdce8c5b102f2c1aaab123bacd762eb5b2d1",
+              "boundary_offsets": [
+                2,
+                6,
+                11,
+                17,
+                22,
+                29,
+                32,
+                34
+              ]
+            },
+            {
+              "uncertain_spaces": "join",
+              "token_values": [
+                "or",
+                "chol",
+                "daiin",
+                "dykeor",
+                "sheey",
+                "qokeody",
+                "dor",
+                "os",
+                "ykeeykam"
+              ],
+              "token_count": 9,
+              "chain_ascii": "orcholdaiindykeorsheeyqokeodydorosykeeykam",
+              "chain_ascii_length": 42,
+              "chain_ascii_sha256": "b5d544be09b967f76f1d322471e2fdce8c5b102f2c1aaab123bacd762eb5b2d1",
+              "boundary_offsets": [
+                2,
+                6,
+                11,
+                17,
+                22,
+                29,
+                32,
+                34
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "IT2a",
+          "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+          "source_path": "data/raw/IT2a-n.txt",
+          "source_url": "https://voynich.nu/data/IT2a-n.txt",
+          "alphabet": "EvaT",
+          "locus_identifier": "f102r1.15,+P0",
+          "source_file_line": 4251,
+          "native_text": "or.chol.daiin.dykeor.sheey.qokeody.dor.os.ykeey.kam",
+          "treatments": [
+            {
+              "uncertain_spaces": "split",
+              "token_values": [
+                "or",
+                "chol",
+                "daiin",
+                "dykeor",
+                "sheey",
+                "qokeody",
+                "dor",
+                "os",
+                "ykeey",
+                "kam"
+              ],
+              "token_count": 10,
+              "chain_ascii": "orcholdaiindykeorsheeyqokeodydorosykeeykam",
+              "chain_ascii_length": 42,
+              "chain_ascii_sha256": "b5d544be09b967f76f1d322471e2fdce8c5b102f2c1aaab123bacd762eb5b2d1",
+              "boundary_offsets": [
+                2,
+                6,
+                11,
+                17,
+                22,
+                29,
+                32,
+                34,
+                39
+              ]
+            },
+            {
+              "uncertain_spaces": "join",
+              "token_values": [
+                "or",
+                "chol",
+                "daiin",
+                "dykeor",
+                "sheey",
+                "qokeody",
+                "dor",
+                "os",
+                "ykeey",
+                "kam"
+              ],
+              "token_count": 10,
+              "chain_ascii": "orcholdaiindykeorsheeyqokeodydorosykeeykam",
+              "chain_ascii_length": 42,
+              "chain_ascii_sha256": "b5d544be09b967f76f1d322471e2fdce8c5b102f2c1aaab123bacd762eb5b2d1",
+              "boundary_offsets": [
+                2,
+                6,
+                11,
+                17,
+                22,
+                29,
+                32,
+                34,
+                39
+              ]
+            }
+          ]
+        }
+      ],
+      "provisional_row_assignment": "lowest middle-panel five-row block; full row 3 from top",
+      "image_observation": "In the following row, the terminal group contains tall uprights, smaller rounded marks and descending strokes. Adjacent ink is crowded near the proposed ykeey/kam grouping; the internal grouping is less visually isolated than the blank space to the left of the whole terminal group. No glyph boundary or linguistic word division is adjudicated.",
+      "preferred_source_grouping": null,
+      "verified_glyph_region": null,
+      "word_division_status": "unresolved",
+      "source_corrections_applied": false
+    }
+  ],
+  "exposure": {
+    "source_text_and_selection_report_before_pixels": true,
+    "target_specific_image_inspection_after_selection_commit": true,
+    "carrier_previously_in_project_inventories": true,
+    "blinded_or_independent_review": false,
+    "untouched_evaluation": false,
+    "independent_manuscript_samples": false
+  },
+  "usable_as_verified_corpus_join": false,
+  "apply_to_statistics": false,
+  "source_corrections_applied": false,
+  "independent_review_status": "pending",
+  "interpretation": "The two adjacent loci retain opposite source-boundary directions. Visible gaps or crowded strokes alone do not establish linguistic words, prefer an edition, or validate a decipherment. No glyph mask, correction, language or translation is supplied."
+}

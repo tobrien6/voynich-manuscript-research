@@ -46,6 +46,14 @@
         "Exact historical input bytes and preprocessing are not recovered here",
         "Do not equate this historical Currier source with current GC2a"
       ],
+      "related_source_intake": {
+        "source_repository": "https://github.com/sravanareddy/deciphervoynich",
+        "source_commit": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+        "manifest": "reddy-source-manifest.json",
+        "report": "reddy-source-intake.json",
+        "note": "REDDY_SOURCE_INTAKE.md",
+        "status": "Later author-associated input candidate recovered; all reported full/B counts and internal page/B/full vectors match; Table 2 prediction unreplicated"
+      },
       "replication_status": "methods_only"
     },
     {
