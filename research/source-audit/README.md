@@ -26,6 +26,8 @@ The [Dee documentary trail](DEE_EVIDENCE.md) now identifies a published numeral-
 
 **Next test.** Compare the catalog's foliation scheme with documented transcription conventions and collation research. Verify the correspondence of this passage before recording an alias between the identifiers.
 
+The [terminal-folio intake and image pass](TERMINAL_FOLIOS.md) now distinguishes the 50 P0 records on current 116r from the single Lx record on 116v in ZL/RF and the absent IT/GC verso headers. It links the visible recto numeral and four apparent upper writing rows on the verso, keeping physical rows, source records, the unnumbered flyleaf and historical page counters separate. The legacy alias remains unresolved.
+
 ## 3. Image canvases and physical folios are different units
 
 The script parses explicit number-plus-side references from canvas labels. It ignores unlabeled foldout panel numbers, preserves compound labels, and deduplicates numbered references. It does not inspect image content to reconstruct leaves.
