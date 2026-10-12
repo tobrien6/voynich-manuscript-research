@@ -45,6 +45,14 @@ The report includes source hashes, cohort digests, excluded keys and native
 locator counts. It generates no new significance tests. The editions and
 policies are dependent readings of the same manuscript material.
 
+This analysis uses the earlier position tokenizer's **token-level** exclusion
+rules. The [conservative native-Eva adapter](TOKEN_ADAPTER.md) instead excludes
+whole loci containing alternatives, unreadable material, rare codes or
+ligatures, and defaults to P0/P1 selection. Adapter-based prefix checks and
+denominator audits therefore have separate cohorts and length conventions;
+direct numerical comparison requires an explicitly matched selection. Neither
+cross-edition comparison constitutes independent manuscript replication.
+
 ## Observations
 
 The common first-slot cohort contains **3,759 loci** (96.78% of the shared P0
