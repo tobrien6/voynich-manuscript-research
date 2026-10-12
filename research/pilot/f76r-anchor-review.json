@@ -495,7 +495,7 @@
     "All three anchors use one page, two related editions and one observer; they are not independent manuscript samples.",
     "Region choices were made after viewing the page; only native locus selection was frozen beforehand.",
     "The full/full image request returned HTTP 504. The official overview and native-pixel region requests succeeded. No full-resolution whole image was inspected.",
-    "Bitmap dimensions were checked with macOS sips. The offline verifier checks declared geometry and optional local byte hashes; it does not decode images or validate visual judgments.",
+    "Bitmap dimensions were checked with macOS sips. The offline verifier checks declared geometry, optional local byte hashes and bitmap header dimensions using the accepted prefix-review helper; it does not decode pixels or validate visual judgments.",
     "No glyph classification, word-boundary correction, decipherment, translation or untouched evaluation is established."
   ]
 }

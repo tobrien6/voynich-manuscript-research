@@ -88,13 +88,14 @@ For optional byte verification, download the four URLs and `info.json` into a
 local directory using the `local_filename` values recorded in the JSON, then
 run `python3 scripts/verify_f76r_review.py --image-dir DIRECTORY`. Local pixels
 are not required for the offline source/metadata check. The verifier checks
-geometry declarations and byte digests; it does not decode the JPEG files or
-validate visual judgments. The recorded pre-inspection commit is a chronology
+geometry declarations, byte digests, and optional local bitmap header dimensions
+using the accepted prefix-review helper; it does not decode pixels or validate
+visual judgments. The recorded pre-inspection commit is a chronology
 reference for human review, not certification of an unexposed sample.
 
-Twelve focused tests cover deterministic selection, lower-median ordering,
+Thirteen focused tests cover deterministic selection, lower-median ordering,
 source-specific exclusions, preserved native uncertainty/context, complete
-anchor coverage, image identities and native bounds, changed local bytes,
+anchor coverage, image identities and native bounds, changed local bytes/headers,
 unsupported confirmation/correction claims, and retention of an unresolved
 attempt. The current selection reproduces and all five local inspected files
 (four bitmaps and service metadata) match their recorded digests.

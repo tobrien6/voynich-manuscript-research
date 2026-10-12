@@ -9,8 +9,10 @@ import sys
 
 try:
     from .select_f76r_anchors import ROOT, selection, require
+    from .verify_initial_prefix_review import bitmap_dimensions
 except ImportError:
     from select_f76r_anchors import ROOT, selection, require
+    from verify_initial_prefix_review import bitmap_dimensions
 
 
 SELECTION = ROOT / "research/pilot/f76r-anchor-selection.json"
@@ -69,6 +71,8 @@ def verify(record, image_dir=None):
             local = (image_dir / item["local_filename"]).read_bytes()
             require(len(local) == item["bytes"] and digest(local) == item["sha256"],
                     "Local inspected image bytes differ")
+            require(bitmap_dimensions(local) == (item["width"], item["height"]),
+                    "Local bitmap header dimensions differ")
     metadata = record["service_metadata"]
     require(metadata["url"] == service + "/info.json" and metadata["local_filename"] == "f76r-info.json"
             and metadata["service_id"] == service
@@ -125,7 +129,7 @@ def main():
     print(f"PASS: {count} frozen native contexts, image identities and review regions verify")
     if args.image_dir is not None:
         print("All local inspected-file and service-metadata bytes match")
-    print("Bitmap dimensions were inspected separately; visual judgments and row associations need independent review")
+    print("Visual judgments and row associations need independent review; bitmap headers do not decode pixels")
     return 0
 
 

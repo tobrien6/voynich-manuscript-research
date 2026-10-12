@@ -2,6 +2,7 @@
 
 from copy import deepcopy
 import json
+import hashlib
 from pathlib import Path
 import tempfile
 import unittest
@@ -86,6 +87,19 @@ class ReviewTests(unittest.TestCase):
             (path / self.record["inspection_files"][0]["local_filename"]).write_bytes(b"wrong image")
             with self.assertRaisesRegex(ValueError, "Local inspected image bytes differ"):
                 verify(self.record, path)
+
+    def test_matching_hash_cannot_hide_wrong_bitmap_dimensions(self):
+        # Minimal JPEG SOF header: the shared helper reads dimensions, not pixels.
+        data = bytes.fromhex("ffd8ffc000080801c8007b01")  # 123 by 456
+        record = deepcopy(self.record)
+        item = record["inspection_files"][0]
+        item["sha256"] = hashlib.sha256(data).hexdigest()
+        item["bytes"] = len(data)
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder)
+            (path / item["local_filename"]).write_bytes(data)
+            with self.assertRaisesRegex(ValueError, "Local bitmap header dimensions differ"):
+                verify(record, path)
 
 
 if __name__ == "__main__":
