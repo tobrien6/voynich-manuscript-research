@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "analysis_id": "grouped-symbol-event-role-accounting-v1",
+  "reference_pr": 123,
+  "reference_report_sha256": "9afa08f7073188be5930191110517bb3bd88a2ef61c681931489782aeff4dc3c",
+  "reference_producer_sha256": "b02e32a636b4f4b42c2798e5ce6f15128410d3eb97c9e3b14206b6cc4f1a4458",
+  "reference_accepted_at_plan": false,
+  "analysis_status": "descriptive post-result accounting of previously exposed model/corpus",
+  "role_order": [
+    "initial_unit",
+    "second_unit",
+    "later_unit",
+    "termination"
+  ],
+  "parent_loss_tolerance_bits": 1e-10,
+  "input_pins": {
+    "data/transliterations.json": "13f5692b57259e50c575f841eb96e351945abf19f94a0c035668dda4c96a5b27",
+    "research/baselines/eva-unit-protocol.json": "a2ded6526829759169d9462708ea00f969ebe47127acf5c90e2f0b1e7e2fc3ec",
+    "research/folio-alignment/transcription-image-coverage.json": "05ff84a7f0d94881ea411851be31d05fec502f0b30e116f809f5c19d0f061b46",
+    "research/image-index/canvases.csv": "a0b03f8f012331e61a1e89b65f6462be0f1d28f896a068a8cc2cd0f63a255b0f",
+    "research/representation/PAIRED_ENTROPY_PLAN.md": "7ad639ce39a3d8a81eb02b5cc7b28e44926989f7568c34c8d8f87af1f3183dd1",
+    "research/representation/paired-entropy-plan.json": "aecdd268ef21c5a8ef6167f00a79a2f29361fd4cde5a598bc266bb63b3b8c52a",
+    "research/representation/paired_symbol_entropy.json": "3555bb88a361c4f487cb58bef3045877fa50fc3b1c3ddec2c71ecbaebc5d57b6",
+    "scripts/audit_transcription_images.py": "a3d9c789fa04e41a715d2247e40d16b43827de88c32afaaeb9e302d4ed7d9e5e",
+    "scripts/audit_transliterations.py": "780d3a5e3f36edf61444be1b7c4006dfa84ba4e64c1ec25c3b919fb478a27d5b",
+    "scripts/eva_token_adapter.py": "71e24940506d1d8ccc7864b9a519fa0aeab8e935ece52bff4a445d47f270aebf",
+    "scripts/eva_unit_sensitivity.py": "4a780a8c2d26380951c34bd219d27bd9995ab8c451617dbc68c3bb8feddff4f8",
+    "scripts/index_yale_manifest.py": "cf5cea25e41495b710ba4a9c8eedffe809eec392d1a43126e6706a10a12ba3a5",
+    "scripts/ivtff.py": "8f90c7c90cb7008b8477a8a7b2a093848acf3b36e112d99925e55c023bd59b65",
+    "scripts/locus_position_baseline.py": "305104fadc07be62fe81f881acd3a87b36d4f7a06efd620acc5f01a58b096d33",
+    "scripts/paired_symbol_entropy.py": "d1701a2f7be862098a278ac1ef770f9df069a4f0ad8dfde1dec7b6af58a655ad",
+    "scripts/repetition_moments.py": "e758237cc966a4723e3613b8d7cce96e96f685ba682cdc1668558cf153749370",
+    "scripts/run_locus_position_baseline.py": "bbcc15941b9ccad60b9227388f11e16a710be1096476155eebd8b7679b1b04d1",
+    "scripts/shuffle_token_lines.py": "917b590cde2d190207464ce7a12cfd5e647f4b105cd7648ef57fce5afe957c4f",
+    "scripts/token_baselines.py": "9a87478647284744d64ba1bf7a7d15bd0bffd2416c5000c396a2d193e2ba532f",
+    "scripts/validate_evaluation_split.py": "f967f3ead88326870905fec2e64582b711246bc1bb3e057aba786dfaff5e172d"
+  }
+}
