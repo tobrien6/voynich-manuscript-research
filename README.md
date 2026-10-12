@@ -14,6 +14,7 @@ Research on the digitized folios, illustrations, and documented history should a
 - [Project brief and research plan](99TOKENS.md)
 - [Decipherment and translation evaluation protocol](research/DECIPHERMENT_PROTOCOL.md)
 - [Primary source register](research/SOURCES.md)
+- [Section boundary survey and image mappings](research/boundary-pilot/INVENTORY.md)
 - [Ten-folio visual inventory](research/pilot/INVENTORY.md) and [machine-readable records](research/pilot/inventory.json)
 - [Yale image-to-folio crosswalk and foliation audit](research/image-index/README.md)
 - [Yale's digitized manuscript](https://collections.library.yale.edu/catalog/2002046)
