@@ -59,6 +59,11 @@ Agreement at this identifier does not create four independent observations or
 adjudicate its glyphs, segmentation, or image alignment. IT's spacing inputs
 and all numerical results coincide.
 
+The [source-image check](BOUNDARY_REPEAT_IMAGE_CHECK.md) supplies official
+native-scale review regions for this pair. Several contextual shapes support a
+provisional row association; exact glyph equivalence and the reading route
+around the central illustration remain unresolved.
+
 The report preserves every original locus and boundary. Locator pairs are
 60 `@ -> +`, 585 `+ -> +`, three `* -> +`, three `= -> =`, and one `+ -> =`.
 Seventy-five boundaries touch at least one locus containing a drawing
