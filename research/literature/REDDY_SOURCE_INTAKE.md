@@ -8,6 +8,12 @@ the full file. This supplies a concrete input candidate for a later
 letter-prediction comparison, closing the register's source-recovery gap while
 leaving the original 2011 preprocessing and Table 2 procedure unresolved.
 
+The [current cited-source/publication-sample audit](REDDY_CITED_SOURCE.md)
+recovers current bytes at the paper's exact URL and inventories their distinct,
+irregular envelope structure. All 258 Figure 1 tokens match the recovered f81v
+full/B streams literally. This corroborates one publication sample while
+leaving complete 2011 corpus identity and legacy parsing unresolved.
+
 The [separate literal H/Reddy envelope audit](../historical/REDDY_ENVELOPES.md)
 now accounts for the native release's extra normalized-empty H record. All
 5,213 shared keys retain the same order and fallback-retained token counts;

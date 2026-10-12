@@ -1,0 +1,65 @@
+{
+  "plan_version": 1,
+  "scope": "Descriptive current cited-source native-envelope census and fixed published Figure1 literal-token comparison with recovered Reddy full/B files; no historical byte authentication or glyph/translation claim",
+  "cited_paper_url_literal": "http://www.voynich.net/reeds/gillogly/voynich.now",
+  "current_cited_retrieval_url": "https://www.voynich.net/reeds/gillogly/voynich.now",
+  "mirror_url": "https://www.voynich.nu/hist/rand/voynich_now.txt",
+  "reference_files": {
+    "cited-voynich.now": {
+      "bytes": 164743,
+      "sha256": "d919262e625b106d3aaf23dde02aa9f06ea320c154aeda464fdaa87245732425"
+    },
+    "mirror-voynich-now.txt": {
+      "bytes": 164743,
+      "sha256": "d919262e625b106d3aaf23dde02aa9f06ea320c154aeda464fdaa87245732425"
+    },
+    "paper.pdf": {
+      "bytes": 966546,
+      "sha256": "842e285c544bffefc1eefa58704cbde6a5e93f0706542dc6a67d374f2c7da599"
+    },
+    "figure1.txt": {
+      "bytes": 1315,
+      "sha256": "e4ad579d69aeb4f2ed5a19c7ece85de6fecc60a8d13ca1cb1df5ed71173eea44"
+    }
+  },
+  "current_cited_tokenization": false,
+  "cited_comment_model": "Balanced/nested curly comment mask carried across physical LF lines; retain errors and all raw prefix-envelope candidates, including masked candidates",
+  "cited_locator_policy": "Literal line-initial angle-envelope string; first dot only separates page prefix from opaque suffix; no H tag, unit alias or physical-locus crosswalk assumed",
+  "figure": {
+    "number": 1,
+    "page_label": "f81v",
+    "pdf_page_1based": 2,
+    "printed_page": 79,
+    "crop_pixels_at_dpi": 72,
+    "crop_x": 314,
+    "crop_y": 373,
+    "crop_width": 226,
+    "crop_height": 317,
+    "pdftotext_version": "24.04.0",
+    "layout": true,
+    "nopgbrk": true,
+    "first_token": "BAR",
+    "last_two_tokens": [
+      "OPON",
+      "OEFOE"
+    ],
+    "token_rule": "Unchanged whitespace split; require literal ASCII A-Z/0-9/asterisk tokens; no symbol repair/case fold"
+  },
+  "comparison_cases": [
+    "full",
+    "b"
+  ],
+  "retain_all_mismatch_positions": true,
+  "comparison_scope": "Exact nominal page f81v only, all original tokens and native reference-record descriptors; paragraph whitespace has no native-line alignment implication",
+  "raw_sources_redistributed": false,
+  "author_program_executed": false,
+  "source_snapshot": "643b881b2937bae8193814d8ff5d6e99a48bf7c5",
+  "prior_exposure": "Whole sources available; accepted source/population inventories, printed Figure1 text/layout, extracted text identity/anchors and three leading current-cited header formats inspected; no untouched evaluation",
+  "dependency_hashes": {
+    "research/literature/methods.json": "7391036ed67a786d18341de145c8a40059031f7efce895bb1ebee52d4e66082e",
+    "research/literature/reddy-source-manifest.json": "432bf44fe6f37bc82d8884bb692b7b9582adbdb8d79dbf138b7fb2b2af1f37e3",
+    "research/literature/REDDY_SOURCE_PLAN.md": "04d18954d426349f2672e947c05636f696f17d16dc1b9a078971fba0a15f9431",
+    "research/literature/reddy-source-intake.json": "feff6059e8ad9a5341d71e1d6d5d33866a70094487e447f3ae177ce3b4e8b4b6",
+    "scripts/audit_reddy_sources.py": "00a6157b33aeabae60110c7e70ef0b858ea86d11e447e401dd064117fde45c52"
+  }
+}
