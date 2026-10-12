@@ -52,6 +52,19 @@ class TokenControlTests(unittest.TestCase):
             self.assertEqual(output.encode(), (FIXTURE.parent / name).read_bytes())
             self.assertEqual(MODULE.make_control(raw, scope, 1729, 0), MODULE.make_control(raw, scope, 1729, 0))
 
+    def test_excluded_slots_stay_fixed_in_both_scopes(self):
+        source = json.loads(FIXTURE.read_bytes())
+        source["lines"][1]["tokens"] = [None, "D", None, "E", "F"]
+        source["lines"][2]["tokens"] = [None, None]
+        raw = json.dumps(source).encode()
+        for scope in ("line", "folio-side"):
+            control = MODULE.make_control(raw, scope, 1729, 0)
+            for original, shuffled in zip(source["lines"], control["lines"]):
+                self.assertEqual([token is None for token in original["tokens"]],
+                                 [token is None for token in shuffled["tokens"]])
+            self.assertEqual(control["control"]["excluded_slot_count"], 5)
+            self.assertEqual(control["control"]["token_count"], 11)
+
     def test_ambiguous_input_or_stale_token_annotations_are_rejected(self):
         original = json.loads(FIXTURE.read_bytes())
         variants = []

@@ -28,8 +28,9 @@ def validate(corpus):
     provenance = corpus.get("provenance")
     require(isinstance(provenance, dict), "provenance is required")
     require(provenance.get("kind") in ("synthetic", "transcription"), "Record synthetic or transcription provenance")
-    require(isinstance(provenance.get("tokenization"), str) and provenance["tokenization"].strip(),
-            "Record tokenization and treatment of ambiguity")
+    for field in ("tokenization", "unit_definition"):
+        require(isinstance(provenance.get(field), str) and provenance[field].strip(),
+                f"Record provenance {field}, including the treatment of source ambiguity and sampling units")
     if provenance["kind"] == "synthetic":
         require(isinstance(provenance.get("description"), str) and provenance["description"].strip(),
                 "Describe the synthetic fixture")
@@ -56,8 +57,8 @@ def validate(corpus):
         seen.add(identity)
         tokens = line.get("tokens")
         require(isinstance(tokens, list), f"Tokens must be a list at {identity}")
-        require(all(isinstance(token, str) and token and not any(c.isspace() for c in token) for token in tokens),
-                f"Each token must be a nonempty string without whitespace at {identity}")
+        require(all(token is None or isinstance(token, str) and token and not any(c.isspace() for c in token) for token in tokens),
+                f"Each slot must be an excluded null or a nonempty string without whitespace at {identity}")
 
 
 class HashDraws:
@@ -104,13 +105,15 @@ def make_control(raw, scope, seed, trial):
         parameters = [ALGORITHM, digest, scope, seed, trial, list(unit)]
         encoded = json.dumps(parameters, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
         draws = HashDraws(hashlib.sha256(encoded).digest())
-        original = [token for index in indices for token in corpus["lines"][index]["tokens"]]
+        original = [token for index in indices for token in corpus["lines"][index]["tokens"] if token is not None]
         permuted = shuffle(original, draws)
         require(Counter(original) == Counter(permuted), "Internal error: permutation changed the token multiset")
         offset = 0
         for index in indices:
-            count = len(corpus["lines"][index]["tokens"])
-            result["lines"][index]["tokens"] = permuted[offset:offset + count]
+            slots = corpus["lines"][index]["tokens"]
+            count = sum(token is not None for token in slots)
+            eligible = iter(permuted[offset:offset + count])
+            result["lines"][index]["tokens"] = [None if token is None else next(eligible) for token in slots]
             offset += count
     result["control"] = {
         "algorithm": ALGORITHM,
@@ -119,7 +122,9 @@ def make_control(raw, scope, seed, trial):
         "trial": trial,
         "input_sha256": digest,
         "line_count": len(corpus["lines"]),
-        "token_count": sum(len(line["tokens"]) for line in corpus["lines"]),
+        "token_count": sum(token is not None for line in corpus["lines"] for token in line["tokens"]),
+        "slot_count": sum(len(line["tokens"]) for line in corpus["lines"]),
+        "excluded_slot_count": sum(token is None for line in corpus["lines"] for token in line["tokens"]),
         "unit_count": len(groups),
     }
     return result

@@ -4,10 +4,11 @@
   "provenance": {
     "kind": "synthetic",
     "description": "Invented tokens and invented folio-side identifiers for software validation; no manuscript transcription.",
-    "tokenization": "Each listed string is one opaque token. Duplicate tokens, empty lines, and a singleton are retained. No glyph normalization."
+    "tokenization": "Each listed string is one opaque token. Null is a fixed excluded slot. Duplicate tokens, an excluded position, empty lines, and a singleton are retained. No glyph normalization.",
+    "unit_definition": "Each row is a fabricated line assigned to an invented folio side; no IVTFF locus or physical manuscript line is represented."
   },
   "lines": [
-    {"folio_side": "1r", "line_id": "1", "tokens": ["A", "B", "A", "C"], "context": "invented first line region"},
+    {"folio_side": "1r", "line_id": "1", "tokens": ["A", null, "B", "A", "C"], "context": "invented first line region"},
     {"folio_side": "1r", "line_id": "2", "tokens": ["D", "E", "F"]},
     {"folio_side": "1r", "line_id": "3", "tokens": []},
     {"folio_side": "2v", "line_id": "1", "tokens": ["X", "Y", "Z"]},

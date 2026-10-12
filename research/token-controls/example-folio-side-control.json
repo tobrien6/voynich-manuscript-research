@@ -4,17 +4,19 @@
   "provenance": {
     "kind": "synthetic",
     "description": "Invented tokens and invented folio-side identifiers for software validation; no manuscript transcription.",
-    "tokenization": "Each listed string is one opaque token. Duplicate tokens, empty lines, and a singleton are retained. No glyph normalization."
+    "tokenization": "Each listed string is one opaque token. Null is a fixed excluded slot. Duplicate tokens, an excluded position, empty lines, and a singleton are retained. No glyph normalization.",
+    "unit_definition": "Each row is a fabricated line assigned to an invented folio side; no IVTFF locus or physical manuscript line is represented."
   },
   "lines": [
     {
       "folio_side": "1r",
       "line_id": "1",
       "tokens": [
-        "A",
-        "F",
         "E",
-        "B"
+        null,
+        "C",
+        "F",
+        "A"
       ],
       "context": "invented first line region"
     },
@@ -22,9 +24,9 @@
       "folio_side": "1r",
       "line_id": "2",
       "tokens": [
-        "C",
-        "A",
-        "D"
+        "B",
+        "D",
+        "A"
       ]
     },
     {
@@ -36,16 +38,16 @@
       "folio_side": "2v",
       "line_id": "1",
       "tokens": [
-        "Z",
         "X",
-        "Y"
+        "Y",
+        "Q"
       ]
     },
     {
       "folio_side": "2v",
       "line_id": "2",
       "tokens": [
-        "Q"
+        "Z"
       ]
     }
   ],
@@ -54,9 +56,11 @@
     "scope": "folio-side",
     "seed": 1729,
     "trial": 0,
-    "input_sha256": "ef30ed663b6e7938652747a5e5b5019805042ee0a0d21332b332091275a7dd7e",
+    "input_sha256": "e49b2b7e2a07335fa7341569cd04578b8754ceff8c291296a78452cef9592a6a",
     "line_count": 5,
     "token_count": 11,
+    "slot_count": 12,
+    "excluded_slot_count": 1,
     "unit_count": 2
   }
 }
