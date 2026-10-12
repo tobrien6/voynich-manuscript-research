@@ -1,8 +1,13 @@
 from copy import deepcopy
+from contextlib import redirect_stderr, redirect_stdout
+import io
 import json
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 
+from scripts import audit_terminal_folios as module
 from scripts.audit_terminal_folios import ROOT, SOURCE_IDS, audit, build_report, source_page, verify_observations
 from scripts.ivtff import parse_ivtff
 
@@ -46,6 +51,53 @@ def pinned_observations():
 
 
 class TerminalFolioTests(unittest.TestCase):
+    def test_cli_output_preserves_inputs_readers_and_their_aliases(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = [root / path for path in module.INPUTS.values()]
+            paths += [root / 'data/raw/source.txt', root / 'scripts/reader.py',
+                      root / 'research/source-audit/terminal-folio-observations.json',
+                      root / 'research/source-audit/TERMINAL_FOLIO_PLAN.md',
+                      root / 'research/source-audit/TERMINAL_ANCHOR_PLAN.md',
+                      root / 'supplied-check.json', root / 'supplied-observations.json']
+            for path in paths:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text('synthetic protected input')
+            (root / module.INPUTS['source_catalog']).write_text(json.dumps(
+                {'sources': [{'path': 'data/raw/source.txt'}]}))
+            before = {path: path.read_bytes() for path in paths}
+            targets = list(paths) + [root / 'scripts/new.py', root / 'data/raw/new.txt']
+            for index, path in enumerate(paths):
+                for kind in ('symlink', 'hardlink'):
+                    alias = root / f'{kind}-{index}.json'
+                    if kind == 'symlink':
+                        alias.symlink_to(path)
+                    else:
+                        alias.hardlink_to(path)
+                    targets.append(alias)
+            for target in targets:
+                with self.subTest(target=target.name), patch.object(module, 'ROOT', root), \
+                        patch.object(module, 'audit') as replay, \
+                        patch('sys.argv', ['audit', '--output', str(target), '--check',
+                                           str(paths[-2]), '--observations', str(paths[-1])]), \
+                        redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()), \
+                        self.assertRaises(SystemExit) as error:
+                    module.main()
+                self.assertEqual(error.exception.code, 1)
+                replay.assert_not_called()
+                self.assertEqual({path: path.read_bytes() for path in paths}, before)
+            for existing in (False, True):
+                output = root / f'ordinary-{existing}.json'
+                if existing:
+                    output.write_text('replaceable synthetic report')
+                with patch.object(module, 'ROOT', root), \
+                        patch.object(module, 'audit', return_value={'fixture': 'okay'}), \
+                        patch('sys.argv', ['audit', '--output', str(output)]), \
+                        redirect_stdout(io.StringIO()):
+                    module.main()
+                self.assertEqual(json.loads(output.read_text()), {'fixture': 'okay'})
+                self.assertEqual({path: path.read_bytes() for path in paths}, before)
+
     def test_missing_header_empty_header_and_present_locus_are_distinct(self):
         missing = parse_ivtff(HEADER + '<f116r>\n')
         empty = parse_ivtff(HEADER + '<f116v>\n')

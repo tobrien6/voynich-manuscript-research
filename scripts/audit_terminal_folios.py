@@ -26,6 +26,31 @@ except ImportError:
 
 SOURCE_IDS = ('ZL3b', 'IT2a', 'GC2a', 'RF1b-full', 'RF1b-basic')
 TARGETS = (('116r', 'f116r'), ('116v', 'f116v'), ('[Back flyleaf recto]', None))
+INPUTS = {
+    'source_catalog': 'data/transliterations.json',
+    'canvas_index': 'research/image-index/canvases.csv',
+    'index_audit': 'research/image-index/audit.json',
+    'folio_aliases': 'research/folio-aliases/decisions.json',
+}
+
+
+def protect_output(output, root=ROOT, extra_inputs=()):
+    """Reject input and reader aliases before auditing or writing."""
+    catalog = json.loads((root / INPUTS['source_catalog']).read_bytes())
+    protected = [root / path for path in INPUTS.values()]
+    protected.extend(root / source['path'] for source in catalog['sources'])
+    protected.extend(path for path in extra_inputs if path is not None)
+    protected.extend(root / 'research/source-audit' / name for name in (
+        'terminal-folio-observations.json', 'TERMINAL_FOLIO_PLAN.md', 'TERMINAL_ANCHOR_PLAN.md'))
+    folders = (root / 'scripts', root / 'data/raw')
+    resolved = output.resolve()
+    require(not any(resolved.is_relative_to(folder.resolve()) for folder in folders)
+            and not any(resolved == path.resolve() for path in protected),
+            'output must not overwrite an input, source, plan, or reader')
+    if output.exists():
+        protected.extend(path for folder in folders for path in folder.rglob('*') if path.is_file())
+        require(not any(path.exists() and output.samefile(path) for path in protected),
+                'output must not overwrite an input or reader through a hardlink alias')
 
 
 def require(condition, message):
@@ -119,12 +144,7 @@ def build_report(sources, canvas_rows, alias):
 
 
 def audit(root=ROOT):
-    paths = {
-        'source_catalog': 'data/transliterations.json',
-        'canvas_index': 'research/image-index/canvases.csv',
-        'index_audit': 'research/image-index/audit.json',
-        'folio_aliases': 'research/folio-aliases/decisions.json',
-    }
+    paths = INPUTS
     raw = {name: (root / path).read_bytes() for name, path in paths.items()}
     registry = json.loads(raw['folio_aliases'])
     manifest_sha256 = json.loads(raw['index_audit'])['manifest_sha256']
@@ -253,6 +273,8 @@ def main():
     parser.add_argument('--observations', type=Path, help='check observation metadata against --check')
     args = parser.parse_args()
     try:
+        if args.output:
+            protect_output(args.output, root=ROOT, extra_inputs=(args.check, args.observations))
         report = audit()
         if args.check and report != json.loads(args.check.read_text()):
             raise ValueError('committed terminal intake differs from recomputation')

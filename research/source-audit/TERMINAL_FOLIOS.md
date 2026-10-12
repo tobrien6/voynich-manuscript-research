@@ -159,3 +159,8 @@ absent source header, the source ordinal and committed plan identity, and both
 contained native-pixel review windows. They reject altered or invented contexts,
 missing windows and verified/correction claims. They verify these declarations
 and coordinates, not the proposed visual association or either token's reading.
+
+The CLI rejects output paths that overwrite source bytes, input metadata,
+readers, observation records, either plan, or supplied check/observation inputs,
+including symlink and hardlink aliases. An unrelated report output remains
+allowed. The output-protection regression checks preservation before replay.
