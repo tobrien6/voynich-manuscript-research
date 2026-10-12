@@ -6,6 +6,11 @@ Its accepted pair-event count remains 272 against 270.7699 expected. These
 statistics weight repetition differently; an above-mean type count alone
 supplies no calibrated excess, uncertainty interval, or decipherment evidence.
 
+The [fixed immediate-repeat image pilot](IMMEDIATE_REPEAT_IMAGES.md) connects
+three selected within-locus events to paired native readings and provisional
+Yale image windows. It retains all eight treatments and distinguishes the
+event sample from the globally deduplicated type statistic.
+
 ## Counting unit and source comparison
 
 [Amancio et al. (2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067310),

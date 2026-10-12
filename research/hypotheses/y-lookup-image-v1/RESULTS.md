@@ -166,3 +166,8 @@ independent human review of these exact regions and alternative placements,
 followed by an explicit versioned glyph/token decision before any source change
 or renewed statistical interpretation. The original diagnostic and its
 prior-exposure limits remain intact.
+
+The [local pair reviewer](viewer/README.md) displays these same accepted native
+contexts and recorded whole/row/group windows, with image-byte checks and
+separately collapsible original AI observations. It adds an inspection interface
+without changing either selected pair, its images, the observations or status.
