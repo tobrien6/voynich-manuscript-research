@@ -20,6 +20,9 @@ named archive and prescribes additional parsing and manual exclusions. Those
 steps have not been implemented here. No published result is reproduced.
 The [published-methods register](../literature/README.md) records the measurement
 units and null scopes that a later replication must match.
+The [planned parsing reconstruction](PARSING.md) now implements four explicit
+exclusion interpretations and preserves their length discrepancies and unmatched
+label phrases. It does not reproduce a published statistic.
 
 ## Method
 
@@ -59,6 +62,11 @@ The accepted [modern audit](../transliteration/coverage_audit.json) also records
 5,214 **present** IT2a loci; its 5,215 total records include one explicitly
 nonexistent locus. Equal totals do not establish matching content, ordering,
 segmentation, or identifiers. No historical-to-modern locus crosswalk is claimed.
+
+The [exact-page envelope comparison](MODERN_PAGE_ENVELOPES.md) now accounts for
+all H and IT2a page groups: four shared identifiers have different selected-record
+counts, and two identifiers occur only in each source's page set. The equal
+global total hides those discrepancies; the diagnostic supplies no row pairing.
 
 ## Reproduce and next test
 

@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "scope": "Bounded static implementation/methods audit; no third-party execution, manuscript mechanism test, numerical replication, decipherment or translation",
+  "inspected_on": "2026-10-12",
+  "inspection_timezone": "America/New_York",
+  "paper": {
+    "id": "L004",
+    "title": "A possible generating algorithm of the Voynich manuscript",
+    "authors": [
+      "Torsten Timm",
+      "Andreas Schinner"
+    ],
+    "url": "https://doi.org/10.1080/01611194.2019.1596999",
+    "venue": "Cryptologia 44(1), 1-19",
+    "online_publication": "2019-05-25",
+    "issue_year": 2020,
+    "inspected_scope": "Publisher metadata, abstract and software link; full article endpoint unavailable",
+    "authors_reported_claim": "Self-citation mechanism and reproduction of selected statistical properties including both Zipf laws",
+    "claim_status": "Authors statement; not reproduced or validated here"
+  },
+  "software": {
+    "repository": "https://github.com/TorstenTimm/SelfCitationTextgenerator",
+    "archive_record_url": "https://zenodo.org/records/2531632",
+    "archive_version": "v1.0.1",
+    "archive_published_on": "2019-01-04",
+    "archive_tag_commit": "9e98c9122a0f490905e8b66f3911fc7ce095fd26",
+    "archive_zip_downloaded": false,
+    "archive_zip_identity_verified": false,
+    "packaged_jar_inspected_or_executed": false,
+    "source_files_executed": false,
+    "current_branch_snapshot": "a6ede2202dd7ad6285ce2c007bf22c2a0e7709b7",
+    "revision_comparison": {
+      "compared_files": 11,
+      "different_paths": [
+        "README.md",
+        "source/src/main/resources/conf.properties",
+        "source/src/main/java/de/voynich/text/util/Config.java"
+      ],
+      "identity_scope": "Selected fetched files only; source revision, binary, archive and analyzed paper output remain separate identities"
+    }
+  },
+  "artifact_fingerprints": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/README.md",
+      "bytes": 28,
+      "sha256": "e8f2bd038f2564fcd9bccf9755d46b3032d5aa16cc412780d65a779dfdd49e39",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/pom.xml",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/pom.xml",
+      "bytes": 4092,
+      "sha256": "7bd371e133fa88cd6e3638d7e53afbff9bfea55f373537a84d4eba783e295516",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/resources/conf.properties",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/resources/conf.properties",
+      "bytes": 5165,
+      "sha256": "e21b977d15f7543c2d14ab91455f1a8543dba3719b4600779933de6fda62380d",
+      "kind": "configuration",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "bytes": 14824,
+      "sha256": "7afa236373a997d2e2ccef9a8e7ee799c5766b63ddf161bab8b72ce0f3bbf1e9",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Config.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Config.java",
+      "bytes": 23193,
+      "sha256": "f6cfdbe3dfa14def6f67b9197bdd18c3eb340fb3d7972da04bf315749e23adb7",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+      "bytes": 871,
+      "sha256": "62c756d5f8490d7ee70d6ac508ca765f6dc023cfb604d40f5632e7eabd8857e9",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/random/RealRandomNumberGenerator.java",
+      "bytes": 509,
+      "sha256": "419c1e639924ed179c980c04c853f6e9f1a7db2e301963c59681c7dd3edc178f",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/PositionSourceGroupChooser.java",
+      "bytes": 14220,
+      "sha256": "e2208e05496acbe30abc79998084332c988cb32327d064a55647b97d11085611",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+      "bytes": 6243,
+      "sha256": "9b919d7b58a5c2b533131d946d1ac28b4b6f4b356a37d5f2ef0d26346e50c360",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+      "bytes": 32733,
+      "sha256": "a35454d7e6adbda8a86471433e58849c2fe5674f625a09cb68facf4e61eec614",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/Converter.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Converter.java",
+      "bytes": 2608,
+      "sha256": "28fda083bee68928873b2df349474b45b7511211465646bba5db73f1e5c6f869",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "executable/conf.properties",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/executable/conf.properties",
+      "bytes": 5496,
+      "sha256": "00944114753a7019e920199ed2d076065e30aed5e8402057b710d78ad0e1e800",
+      "kind": "configuration",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/PropertiesLoader.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/PropertiesLoader.java",
+      "bytes": 2292,
+      "sha256": "bed2a5f67bb08362909b275bc4a3342d95ae57cc0540dee46262552a2263b6bb",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Constants.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/Constants.java",
+      "bytes": 2215,
+      "sha256": "bda4ef3df6e5be3ea40ceeca66de001e30f873632380d940ce6e792bf3807248",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/StatisticHelper.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/StatisticHelper.java",
+      "bytes": 14988,
+      "sha256": "e40bffd4518c3555771fb3d502908d1ff7af5e516648d080111c384512cc9918",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/CurveLineCanFollow.java",
+      "bytes": 14827,
+      "sha256": "62e3051c61c8126ad80ea24c4e17488f0093f247e62bc638493574d55015a0a2",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+      "bytes": 3192,
+      "sha256": "5d9f34e70bf1d71a4274280fec70518fc441a91ff1349fc16288d244e5eaa4d5",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/GlyphGroup.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/GlyphGroup.java",
+      "bytes": 5703,
+      "sha256": "397f764b6b9c792d6bd8f98430363554890474a5c34a204e3e10033b57b1b37b",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/Glyph.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/Glyph.java",
+      "bytes": 26311,
+      "sha256": "130222af0e736a79dbfa507b24d0a2d182169ece6899ea64ac9147fc11c5169e",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "bytes": 2283,
+      "sha256": "b6c1dd6533d142624cfd3c9ed59fc5eb9df5c20024ad54e9ff73571e1da3c6ba",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "source/src/main/java/de/voynich/text/util/StringUtil.java",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/StringUtil.java",
+      "bytes": 6041,
+      "sha256": "334a4f3d820b5625841b639eebb9cfb10667884c9594c2bb60dcf8e9cf383a25",
+      "kind": "source_or_release_metadata",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    },
+    {
+      "path": "executable/generate/vms_generated.txt",
+      "url": "https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/9e98c9122a0f490905e8b66f3911fc7ce095fd26/executable/generate/vms_generated.txt",
+      "bytes": 62795,
+      "sha256": "a9f8237c9d7428ed148718d5aef2563a220b0df3fbc137eea197751af8ce2956",
+      "kind": "supplied_generated_text",
+      "inspection_scope": "Fingerprint and selected methods/properties; not a complete software audit"
+    }
+  ],
+  "selected_configurations": [
+    {
+      "path": "source/src/main/resources/conf.properties",
+      "selected_property_values": {
+        "text.lines_to_create": "1200",
+        "text.max_line_length": "55",
+        "text.min_line_length": "15",
+        "text.lines_per_page": "29",
+        "text.max_repeat_count": "3",
+        "method.random": "pseudo",
+        "method.random.pseudo.seed": "19",
+        "method.canFollow": "curveline",
+        "method.canFollow.error_rate": "0",
+        "method.sourceChooser": "page",
+        "method.sourceChooser.same_position_probability": "28",
+        "method.morph": "slim",
+        "method.morph.add_remove.probability": "20",
+        "method.morph.combine_split.probability": "30",
+        "method.morph.replace.probability": "50",
+        "method.morph.reuse_last.probability": "10",
+        "method.morph.combined.dismiss_as_source_probability": "30",
+        "method.morph.use_word_final_substitutions": "true",
+        "method.suggestions": "top",
+        "method.suggestions.probability": "40",
+        "method.suggestions.iType_min_percentage": "20",
+        "method.suggestions.olType_min_percentage": "25",
+        "method.suggestions.dyType_min_percentage": "25"
+      },
+      "initial_line_source_attribution": "Constants.SAMPLE_CURRIER_B_TEXT_LINE attributes it to f103v.P.9; text not copied into this audit"
+    },
+    {
+      "path": "executable/conf.properties",
+      "selected_property_values": {
+        "text.lines_to_create": "1200",
+        "text.max_line_length": "55",
+        "text.min_line_length": "15",
+        "text.lines_per_page": "29",
+        "text.max_repeat_count": "3",
+        "method.random": "pseudo",
+        "method.random.pseudo.seed": "19",
+        "method.canFollow": "curveline",
+        "method.canFollow.error_rate": "0",
+        "method.sourceChooser": "page",
+        "method.sourceChooser.same_position_probability": "28",
+        "method.morph": "slim",
+        "method.morph.add_remove.probability": "20",
+        "method.morph.combine_split.probability": "30",
+        "method.morph.replace.probability": "50",
+        "method.morph.reuse_last.probability": "10",
+        "method.morph.combined.dismiss_as_source_probability": "30",
+        "method.morph.use_word_final_substitutions": "true",
+        "method.suggestions": "top",
+        "method.suggestions.probability": "40",
+        "method.suggestions.iType_min_percentage": "20",
+        "method.suggestions.olType_min_percentage": "25",
+        "method.suggestions.dyType_min_percentage": "25"
+      },
+      "initial_line_source_attribution": "Constants.SAMPLE_CURRIER_B_TEXT_LINE attributes it to f103v.P.9; text not copied into this audit"
+    }
+  ],
+  "supplied_output_observations": {
+    "path": "executable/generate/vms_generated.txt",
+    "comment_lines": 35,
+    "nonblank_noncomment_lines": 1200,
+    "selected_header_properties": {
+      "text.lines_to_create": "1200",
+      "method.random": "pseudo",
+      "method.random.pseudo.seed": "19",
+      "method.canFollow": "curveline",
+      "method.sourceChooser": "page",
+      "method.morph": "slim",
+      "method.suggestions": "top"
+    },
+    "identity_limit": "Supplied artifact not regenerated; equality to the paper sample unproven"
+  },
+  "observations": [
+    {
+      "id": "initialization",
+      "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "first_method_line": 55,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java#L55",
+      "statement": "initStatistics() remembers supplied initial groups and includes initial lines in output; Constants attributes the shipped line to f103v.P.9",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "context",
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java",
+      "first_method_line": 31,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/PageSourceGroupChooser.java#L31",
+      "statement": "Source selection has local page, paragraph-initial, dictionary-random and suggestion branches; chooseFromPage() also selects by writing position",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "mutations",
+      "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+      "first_method_line": 48,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java#L48",
+      "statement": "Add/remove, combine/split and replacement branches are conditional on source state and position; configured parameters are not observed event proportions",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "layout",
+      "path": "source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java",
+      "first_method_line": 119,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/SelfCitationTextGenerator.java#L119",
+      "statement": "Page/paragraph creation, repeat restrictions and line-space trimming are explicit parts of generation",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "units",
+      "path": "source/src/main/java/de/voynich/text/GlyphGroup.java",
+      "first_method_line": 23,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/GlyphGroup.java#L23",
+      "statement": "getTokenCount() counts algorithmic segments, length() counts string characters, and parse() uses Glyph.determineStartLigature()",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "dictionary_mode",
+      "path": "source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java",
+      "first_method_line": 76,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/canfollow/VoynichCanFollow.java#L76",
+      "statement": "Optional isValid() tests vocabulary membership; shipped configuration selects curveline instead",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "seed",
+      "path": "source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java",
+      "first_method_line": 20,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/random/PseudoRandomNumberGenerator.java#L20",
+      "statement": "seed(int) initializes java.util.Random; rand(int) uses nextInt(max) with a zero special case",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "effective_config",
+      "path": "source/src/main/java/de/voynich/text/util/Config.java",
+      "first_method_line": 93,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Config.java#L93",
+      "statement": "External configuration file is preferred; otherwise PropertiesLoader is used. Seed parsing at line 232 uses a numeric value or Constants default 19, rather than an established auto-search",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "incomplete_header",
+      "path": "source/src/main/java/de/voynich/text/util/Config.java",
+      "first_method_line": 346,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/util/Config.java#L346",
+      "statement": "toString() omits same-position probability and combined-group dismissal probability and prints only initialLines[0]",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "runtime_order",
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "first_method_line": 12,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java#L12",
+      "statement": "Random selection indexes an unsorted dictionary key list; StatisticHelper uses HashMap",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "ligature_order",
+      "path": "source/src/main/java/de/voynich/text/Glyph.java",
+      "first_method_line": 443,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/Glyph.java#L443",
+      "statement": "After a special eee case, determineStartLigature() scans map keys",
+      "evidence_kind": "source_observation"
+    },
+    {
+      "id": "portability",
+      "path": "source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java",
+      "first_method_line": 12,
+      "permalink": "https://github.com/TorstenTimm/SelfCitationTextgenerator/blob/9e98c9122a0f490905e8b66f3911fc7ce095fd26/source/src/main/java/de/voynich/text/sourcechooser/ChooserHelper.java#L12",
+      "statement": "A numeric seed alone does not establish portability across runtimes or modified implementations; output replay and runtime pins are needed. No runtime discrepancy was tested",
+      "evidence_kind": "inference"
+    }
+  ],
+  "prospective_comparison_status": "Requirements only; no registered or frozen mechanism experiment",
+  "limits": [
+    "Abstract claims do not substitute for inspecting complete paper methods",
+    "Exact Zenodo ZIP/JAR and paper-output identities remain unverified",
+    "No cross-runtime reproducibility test was executed",
+    "Source-defined segments, generated groups, native notation characters and manuscript glyphs are distinct units",
+    "Matching a shuffle statistic or selected surface distribution does not identify mechanism or meaning",
+    "A manuscript-derived initial line or dictionary is an input dependency and exposure"
+  ],
+  "reuse": "Only links, file identities, selected facts and original analysis are added; original code, binaries and supplied output are not redistributed",
+  "conditional_branch_example": {
+    "path": "source/src/main/java/de/voynich/text/morph/SlimGroupMorpher.java",
+    "first_method_line": 48,
+    "context": "Ordinary position (not paragraph-initial plus line-initial); source type not COMBINE; configured add/remove=20 and combine/split=30",
+    "enumerated_random_values": 100,
+    "branch_counts": {
+      "add_remove": 21,
+      "combine_split": 30,
+      "replace": 49
+    },
+    "interpretation": "Conditional static branch count, not a measured mutation proportion or full generator run"
+  },
+  "java_contract_sources": [
+    {
+      "url": "https://docs.oracle.com/javase/8/docs/api/java/util/Random.html",
+      "locator": "Class contract",
+      "statement": "Same seed and method-call sequence yield the same pseudorandom numbers"
+    },
+    {
+      "url": "https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html",
+      "locator": "Class contract",
+      "statement": "Iteration order is not guaranteed"
+    }
+  ]
+}
