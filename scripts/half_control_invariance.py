@@ -90,6 +90,7 @@ def classify(rows):
     if not rows or len({(page, key) for page, key, _ in rows}) != len(rows):
         raise ValueError("nonempty rows with unique page/locus identities required")
     invariant, narrow, additional = [], [], []
+    invariant_sizes, additional_sizes = Counter(), Counter()
     for page, key, lengths in rows:
         witness = variation_witness(lengths)
         both_constant = all(len(set(block)) == 1 for block in halves(lengths))
@@ -100,8 +101,10 @@ def classify(rows):
                 raise ValueError("constant-half statistic has a variation witness")
         if witness is None:
             invariant.append(item)
+            invariant_sizes[len(lengths)] += 1
             if not both_constant:
                 additional.append(item)
+                additional_sizes[len(lengths)] += 1
     return {
         "loci": len(rows),
         "length_corpus_sha256": hashlib.sha256(parent.compact(rows)).hexdigest(),
@@ -111,6 +114,8 @@ def classify(rows):
         "varying_loci_with_verified_witness": len(rows) - len(invariant),
         "invariant_identifiers": invariant,
         "additional_invariant_identifiers": additional,
+        "invariant_interior_size_counts": {str(size): count for size, count in sorted(invariant_sizes.items())},
+        "additional_invariant_interior_size_counts": {str(size): count for size, count in sorted(additional_sizes.items())},
         "accepted_effect_denominator": len(rows),
     }
 

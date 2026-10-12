@@ -64,6 +64,8 @@ The [interior notation-length order analysis](research/transliteration/INTERIOR_
 
 The [early/late-half sensitivity test](research/transliteration/INTERIOR_HALVES.md) preserves each half's interior length distribution on that identical cohort. Centered effects decrease but remain beyond all 999 controls in each treatment; the primary effect changes from 0.089062 to 0.067330. This limits a coarse positional explanation while retaining finer gradients and other mechanisms as alternatives.
 
+The [exact half-control invariance audit](research/transliteration/HALF_DEGENERACY.md) identifies 55 invariant loci in the primary treatment, including 14 nonconstant-half cases outside the earlier narrow counter. Every varying locus has a verified swap witness; all 2,165 loci remain in the original denominator, with no changes to effects, controls or tails.
+
 The [catalog-section prefix analysis](research/transliteration/SECTION_STRATA.md) separates first-slot contrasts across Yale's six numeric ranges and source-marked paragraph starts, with [complete results](research/transliteration/section_strata.json). It retains 29 paragraph-start annotation disagreements and source-specific eligibility. Non-start y contrasts are positive in all six ranges, while the final-text paragraph-start contrast is near zero and differs in sign between sources. These exposed-data measurements preserve small cohorts, unresolved foliation, and representation limits; they do not establish a section's meaning or a decipherment.
 
 ## Evidence standard

@@ -93,6 +93,8 @@ class HalfControlInvarianceTests(unittest.TestCase):
         self.assertEqual(result["additional_invariant_identifiers"],
                          [{"page_id": "f1r", "locus_key": "f1r.1"}])
         self.assertEqual(len(result["invariant_identifiers"]), 2)
+        self.assertEqual(result["invariant_interior_size_counts"], {"3": 1, "4": 1})
+        self.assertEqual(result["additional_invariant_interior_size_counts"], {"3": 1})
 
     def test_report_pin_rejects_drift(self):
         with tempfile.TemporaryDirectory() as directory:
