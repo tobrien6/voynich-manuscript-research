@@ -62,3 +62,8 @@ to the current surface. Check the final recto/verso and the basis for the
 catalog's description. Record that evidence and scholarly review before
 changing the alias gate. Historical counter normalization must be a separately
 versioned decision with its own source-specific support.
+
+The [publisher-preview follow-up](CATALOG_EDITORIAL_FLAG.md) records an editorial
+`[sic]` after the legacy label in a translated catalog passage, with exact
+printed/PDF locators. It supplies a documentary lead without a replacement
+label or verified alias; the same unresolved gate remains.

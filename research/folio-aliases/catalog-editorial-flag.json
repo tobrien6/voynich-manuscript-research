@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "observation_id": "legacy-catalog-editorial-flag-v1",
+  "inspected_on": "2026-10-12",
+  "access_timezone": "America/New_York",
+  "sources": {
+    "publisher_pdf": {
+      "url": "https://www.melusina.com/archivos/Voynich.pdf",
+      "sha256": "39b193dcf57df11ee532c917958e360a16223e55ab5f589e7bd2738e010b5240",
+      "bytes": 353697,
+      "pdf_pages": 17,
+      "title": "El manuscrito Voynich",
+      "authors": [
+        "Gerry Kennedy",
+        "Rob Churchill"
+      ],
+      "visible_publication_year": null,
+      "visually_inspected_pdf_pages": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "printed_page_correspondences": [
+        {
+          "pdf_page": 7,
+          "printed_page": 22
+        },
+        {
+          "pdf_page": 8,
+          "printed_page": 23
+        },
+        {
+          "pdf_page": 9,
+          "printed_page": 24
+        }
+      ],
+      "observations": [
+        {
+          "pdf_page": 9,
+          "printed_page": 24,
+          "locator": "Part VI translated catalog block",
+          "short_verbatim": "117v [sic]",
+          "range_as_printed": "103r-117v"
+        },
+        {
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "printed_pages": [
+            22,
+            23
+          ],
+          "locator": "Separate smaller-set quotation, reference callout 7",
+          "reported_final_number": "116",
+          "reference_7_checked": false
+        }
+      ],
+      "literal_text_layer_search": {
+        "117v": {
+          "count": 2,
+          "pdf_pages": [
+            9
+          ]
+        },
+        "116v": {
+          "count": 0,
+          "scope": "Retrieved 17-page file only"
+        },
+        "[sic]": {
+          "count": 1,
+          "pdf_pages": [
+            9
+          ]
+        }
+      },
+      "scope": "Publisher representation of a translated catalog passage; not custodial correction or physical collation."
+    },
+    "legacy_catalog": {
+      "url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM",
+      "sha256": "6b10556ef5a7d94b0fb125d2f4116f2d6f3b4a567a6e876e0fee256e8b8356c4",
+      "bytes": 12040,
+      "locator": "Part VI",
+      "range_as_printed": "103r-117v",
+      "terminal_label": "117v",
+      "sic_immediately_after_terminal_label": false
+    }
+  },
+  "registry_snapshot": {
+    "path": "research/folio-aliases/decisions.json",
+    "sha256": "627ae452e40b2ea176ac50a641c1fb31c58fcbbcfa5fffddd4ed87415995dfc8"
+  },
+  "status": "documentary_lead_only",
+  "mapping_allowed": false,
+  "verified_target": null,
+  "apply_to_statistics": false,
+  "next_test": "Inspect original English edition and reference 7, then seek explicit custodial correction or scholarly catalog-to-surface comparison."
+}
