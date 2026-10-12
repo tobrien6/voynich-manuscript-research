@@ -67,8 +67,7 @@ substitution with larger-group priority. Its left-to-right clause concerns
 repeated occurrences of the same rule. Equal-length overlapping rules can
 depend on file order, and rule-block separators alter priority (section 3.8,
 pages 16–17). Direction 2 uses the right column as input. Header alphabet checks,
-protected comments,
-boundary markers and whole-text reversibility are separate concerns. A future
+protected comments, boundary markers and whole-text reversibility are separate concerns. A future
 implementation must declare those semantics and its unmatched-symbol policy;
 replacing entries in arbitrary sequence is insufficient.
 
@@ -100,7 +99,9 @@ reverse interpretation is `N`. This is a string-segmentation ambiguity despite
 both columns having unique entries. It demonstrates why per-row uniqueness
 and a bidirectional header do not prove that every possible string round-trips.
 It neither identifies an actual manuscript token nor reproduces Bitrans's
-complete behavior on arbitrary annotated input.
+complete behavior on arbitrary plain or annotated input. This diagnostic's
+per-position longest-match parser does not emulate the program's full rule
+scheduling and overlap behavior.
 
 A second diagnostic used a prefix trie, rather than a list of matching
 definitions. It independently reproduced every one of the 1,444 outcomes and
